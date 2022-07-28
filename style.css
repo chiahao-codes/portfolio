@@ -8,7 +8,7 @@ body{
     height: 100vh;
     overflow: hidden;
     color:hsl(50, 80%, 60%);
-    filter: brightness(100%), contrast(150%)
+    filter: brightness(110%), contrast(150%)
     
 }
 
