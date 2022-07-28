@@ -7,11 +7,16 @@ body{
     margin:0%;
     height: 100vh;
     overflow: hidden;
-    color:hsl(0,0%,85%);
+    color:rgb(248, 248, 35);
+    filter: brightness(110%), contrast(150%)
+    
 }
 
 .main{
-    margin: auto;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
