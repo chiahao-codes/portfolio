@@ -9,3 +9,11 @@ body{
     overflow: hidden;
     color:hsl(0,0%,85%);
 }
+
+.main{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
