@@ -23,10 +23,10 @@ body{
     grid-template-rows: auto;
     justify-content: center;
     align-content: center;
-    
+    row-gap: calc(.25em + .001vmin);
 }
 
-.main > h2 {
+.main > h2, .main>h1 {
     text-align: center;
 }
 
