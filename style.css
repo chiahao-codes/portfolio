@@ -3,12 +3,12 @@
 }
 
 body{
-    background-color: hsl(0, 0%, 8%);
+    background-color: hsl(0, 0%, 10%);
     margin:0%;
     height: 100vh;
     overflow: hidden;
     color:hsl(50, 80%, 60%);
-    filter: brightness(110%), contrast(150%)
+    filter: brightness(120%), contrast(150%)
     
 }
 
