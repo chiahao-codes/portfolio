@@ -8,7 +8,8 @@ body{
     height: 100vh;
     overflow: hidden;
     color:hsl(50, 80%, 60%);
-    filter: brightness(120%), contrast(150%)
+    filter: brightness(120%), contrast(150%);
+    font-family: "Cormorant SC", sans-serif;
     
 }
 
