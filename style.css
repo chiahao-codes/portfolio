@@ -24,8 +24,4 @@ body{
     flex-direction: column;
 }
 
-.main > h2{
-    position:absolute;
-    top:-1%;
-}
 
