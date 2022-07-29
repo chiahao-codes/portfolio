@@ -23,7 +23,7 @@ body{
     grid-template-rows: auto;
     justify-content: center;
     align-content: center;
-    row-gap: calc(.20em);
+    row-gap: calc(.10em);
 }
 
 .main > h2, .main>h1 {
