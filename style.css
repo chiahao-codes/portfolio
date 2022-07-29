@@ -1,5 +1,9 @@
-*{
+html{
     box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
 }
 
 body{
@@ -27,6 +31,5 @@ body{
 
 .main > h2, .main>h1 {
     text-align: center;
-    bottom:0%;
 }
 
