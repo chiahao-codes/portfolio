@@ -35,9 +35,12 @@ body{
 
 footer{
     width: 100%;
+    height: min(40vh, fit-content);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     background-color: azure;
+    bottom: 0px;
+
 }
 
