@@ -35,7 +35,7 @@ body{
 .navContainer{
     position: fixed;
     width: 100%;
-    height: auto;
+    height: 5vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
