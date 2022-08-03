@@ -117,3 +117,7 @@ body{
 .menuElement:hover{
     opacity: 0.5;
 }
+
+.fas .fa-home{
+color:aliceblue;
+}
