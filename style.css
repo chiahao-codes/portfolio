@@ -118,6 +118,6 @@ body{
     opacity: 0.5;
 }
 
-.fas .fa-home{
+div > .fas .fa-home{
 color:red;
 }
