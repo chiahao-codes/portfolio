@@ -70,6 +70,20 @@ body{
             justify-content: center;
             align-items: center;
         }
+
+        .bubble > span > .icon{
+            opacity: .70;
+        }
+
+        .bubble:hover{
+            cursor:pointer;
+        }
+
+        .bubble>span>.icon:hover {
+          opacity: 1;
+        }
+
+
 }
 
 
