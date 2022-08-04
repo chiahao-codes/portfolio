@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-color: #121214;
+    background-color:black;
     margin: 0%;
     height: 100vh;
     width: 100vw;
@@ -115,13 +115,12 @@ body {
         height: 100px;
         position: absolute;
         bottom: 60px;
-        background-color:#121214;
-       
+        background-color:black;
     }
 
 
     #bgNavBubble {
-        background-color: #121214;
+        background-color: black;
         position: absolute;
         width: 70px;
         height: 70px;
