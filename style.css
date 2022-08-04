@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-color:black;
+    background-color: black;
     margin: 0%;
     height: 100vh;
     width: 100vw;
@@ -79,8 +79,8 @@ body {
         transform: translateY(110%);
     }
 
-    .icon{
-        opacity:0;
+    .icon {
+        opacity: 0;
         color: white;
         font-size: calc(1.5em + .25vmin);
     }
@@ -91,8 +91,9 @@ body {
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
             0 1px 2px rgba(0, 0, 0, 0.24);
     }
-    #bubble1 > .icon{
-        opacity:1;
+
+    #bubble1>.icon {
+        opacity: 1;
     }
 
     #menuWrapper {
@@ -110,16 +111,34 @@ body {
         cursor: pointer;
     }
     */
-    
-
-    #menu2,#menu3,#menu4 > i {
+    #menu2>i {
         font-size: calc(1.5em + .25vmin);
         color: white;
         opacity: .55;
     }
 
-    #menu2,#menu3,#menu4:hover{
-        opacity:1;
+    #menu3>i {
+        font-size: calc(1.5em + .25vmin);
+        color: white;
+        opacity: .55;
+    }
+
+    #menu4>i {
+        font-size: calc(1.5em + .25vmin);
+        color: white;
+        opacity: .55;
+    }
+
+    #menu2:hover {
+        opacity: 1;
+    }
+
+    #menu3:hover {
+        opacity: 1;
+    }
+
+    #menu4:hover {
+        opacity: 1;
     }
 
     .bgNavBubbleWrapper {
@@ -127,7 +146,7 @@ body {
         height: 100px;
         position: absolute;
         bottom: 60px;
-        background-color:black;
+        background-color: black;
     }
 
 
@@ -143,8 +162,6 @@ body {
     }
 
 }
-
-
 
 
 
