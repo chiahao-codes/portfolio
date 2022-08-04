@@ -129,17 +129,17 @@ body {
         opacity: .55;
     }
 
-    #menuWrapper >#menu2:hover {
+    .navBar > #menuWrappe>#menu2:hover {
         opacity: 1;
         cursor: pointer;
     }
 
-    #menuWrapper >#menu3:hover {
+    .navBar > #menuWrapper>#menu3:hover {
         opacity: 1;
         cursor: pointer;
     }
 
-    #menuWrapper >#menu4:hover {
+    .navBar > #menuWrapper>#menu4:hover {
         opacity: 1;
         cursor: pointer;
     }
