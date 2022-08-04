@@ -63,7 +63,7 @@ body{
         }
     
         .bubble {
-            background-color: #fff;
+            background-color: inherit;
             width: calc(50px + .025vmin);
             height: calc(50px + .025vmin);
             bottom: 5%;
@@ -75,7 +75,8 @@ body{
         }
 
         .icon{
-            opacity: 0;
+            color: white;
+            opacity: 0.75;
         }
 
         .bubble:hover{
