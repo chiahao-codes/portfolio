@@ -50,7 +50,7 @@ body{
             width: 100%;
             background-color: inherit;
             height: 100%;
-            position: absolute;
+            position: relative;
         }
     
         #bubbleWrapper {
@@ -58,12 +58,14 @@ body{
             justify-content: space-around;
             align-items: center;
             width: 100%;
+            position: absolute;
+            bottom:2.5%;
         }
     
         .bubble {
             background-color: #fff;
-            width: calc(50px + .025vmin);
-            height: calc(50px + .025vmin);
+            width: calc(50px * .025vmin);
+            height: calc(50px * .025vmin);
             bottom: 5%;
             border-radius: 50%;
             display: flex;
