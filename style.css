@@ -139,7 +139,7 @@ body {
         border-radius: 50%;
         bottom: -50px;
         left: 200px;
-        transform: translateX(-200%);
+        transform: translateX(-180%);
     }
 
 }
