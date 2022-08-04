@@ -75,12 +75,23 @@ body{
             z-index: 1;
             transform:translateY(110%);
         }
+#menuWrapper {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
 
-        .icon{
-            color: white;
-            opacity: 0.75;
-            font-size: calc(1.5em + .25vmin);
-        }
+.menuElement {
+    transform: translateY(100%);
+    cursor: pointer;
+}
+
+.icon {
+    color: white;
+    opacity: 0.75;
+    font-size: calc(1.5em + .25vmin);
+}
 
         .bubble:hover{
             cursor:pointer;
@@ -99,20 +110,8 @@ body{
 
 /*
 
-#menuWrapper {
-    border-color: red;
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
 
-.menuElement {
-    opacity: 0.4;
-    transform: translateY(100%);
-    cursor: pointer;
-    border-color: yellow;
-}
+
 
 
 .icon {
