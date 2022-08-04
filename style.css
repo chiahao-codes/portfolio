@@ -49,14 +49,14 @@ body{
         .navBar {
             width: 100%;
             background-color: inherit;
-            height: 6vh;
+            height: 100%;
             position: absolute;
         }
     
         #bubbleWrapper {
-            bottom: 2%;
             display: flex;
             justify-content: space-around;
+            align-items: center;
             width: 100%;
         }
     
