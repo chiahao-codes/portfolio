@@ -66,12 +66,13 @@ body{
             background-color: inherit;
             width: calc(50px + .025vmin);
             height: calc(50px + .025vmin);
-            bottom: 5%;
+            bottom: 9%;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
             z-index: 1;
+            transform:translateY(110%);
         }
 
         .icon{
