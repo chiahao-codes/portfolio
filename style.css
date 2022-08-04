@@ -13,6 +13,7 @@ body{
     width: 100vw;
     filter: brightness(120%), contrast(150%);
     font-family: "Cormorant SC", sans-serif;
+    overflow: hidden;
 }
 
 @media screen and (min-width:768px){
