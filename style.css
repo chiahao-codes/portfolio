@@ -15,60 +15,68 @@ body{
     font-family: "Cormorant SC", sans-serif;
 }
 
-.main{
-    color: hsl(50, 80%, 60%);
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    justify-content: center;
-    align-content: center;
+@media screen and (min-width:768px){
+    .main {
+            color: hsl(50, 80%, 60%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            justify-content: center;
+            align-content: center;
+        }
+    
+        .main>h2,
+        .main>h1 {
+            text-align: center;
+        }
+    
+        .navContainer {
+            position: fixed;
+            width: 100%;
+            height: 9vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background-color: hsl(0, 0%, 11%);
+            bottom: 0px;
+            left: 0px;
+        }
+    
+        .navBar {
+            width: 100%;
+            background-color: inherit;
+            height: 6vh;
+            position: absolute;
+        }
+    
+        #bubbleWrapper {
+            bottom: 2%;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+    
+        .bubble {
+            background-color: #fff;
+            width: calc(50px + .025vmin);
+            height: calc(50px + .025vmin);
+            bottom: 5%;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 }
 
-.main > h2, .main>h1 {
-    text-align: center;
-}
 
-.navContainer{
-    position: fixed;
-    width: 100%;
-    height: 9vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    background-color: hsl(0, 0%, 11%);
-    bottom: 0px;
-    left:0px;
-}
 
-.navBar {
-    width:100%;
-    background-color: inherit;
-    height:6vh;
-    position: absolute;
-}
 
-#bubbleWrapper {
-    bottom: 2%;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    border-color: green;
-}
 
-.bubble {
-    background-color: #fff;
-    width:calc(50px + .025vmin);
-    height:calc(50px + .025vmin);
-    bottom: 5%;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/*
 
 #menuWrapper {
     border-color: red;
@@ -84,10 +92,6 @@ body{
     cursor: pointer;
     border-color: yellow;
 }
-
-/*
-
-
 
 
 .icon {
