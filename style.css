@@ -115,12 +115,12 @@ body {
         height: 100px;
         position: absolute;
         bottom: 60px;
-        background-color: hsl(0, 0%, 7%);
+        background-color: white;
     }
 
 
     #bgNavBubble {
-        background-color: hsl(0, 0%, 7%);
+        background-color: white;
         position: absolute;
         width: 70px;
         height: 70px;
