@@ -71,17 +71,18 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
+            z-index: 1;
         }
 
-        .bubble > span > .icon{
-            opacity: .70;
+        .icon{
+            opacity: 0;
         }
 
         .bubble:hover{
             cursor:pointer;
         }
 
-        .bubble>span>.icon:hover {
+        .icon:hover {
           opacity: 1;
         }
 
