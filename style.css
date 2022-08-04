@@ -106,19 +106,19 @@ body {
         transform: translateY(100%);
     }
 
-    .menuElement:hover{
+    /*.menuElement:hover {
         cursor: pointer;
     }
+    */
+    
 
-        #menu2,
-        #menu3,
-        #menu4 > i {
+    #menu2,#menu3,#menu4 > i {
         font-size: calc(1.5em + .25vmin);
         color: white;
         opacity: .55;
     }
 
-    #menu2,#menu3,#menu4 > i:hover{
+    #menu2,#menu3,#menu4:hover{
         opacity:1;
     }
 
