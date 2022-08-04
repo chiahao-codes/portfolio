@@ -107,10 +107,6 @@ body {
         transform: translateY(100%);
     }
 
-    /*.menuElement:hover {
-        cursor: pointer;
-    }
-    */
     #menu2>i {
         font-size: calc(1.5em + .25vmin);
         color: white;
@@ -129,20 +125,12 @@ body {
         opacity: .55;
     }
 
-    .navBar > #menuWrappe>#menu2:hover {
-        opacity: 1;
-        cursor: pointer;
-    }
+    .menuElement:hover {
+            cursor: pointer;
+            opacity: 1;
+        }
 
-    .navBar > #menuWrapper>#menu3:hover {
-        opacity: 1;
-        cursor: pointer;
-    }
-
-    .navBar > #menuWrapper>#menu4:hover {
-        opacity: 1;
-        cursor: pointer;
-    }
+    
 
     .bgNavBubbleWrapper {
         width: 100%;
