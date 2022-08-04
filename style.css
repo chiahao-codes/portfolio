@@ -129,16 +129,19 @@ body {
         opacity: .55;
     }
 
-    #menu2:hover {
+    #menuWrapper >#menu2:hover {
         opacity: 1;
+        cursor: pointer;
     }
 
-    #menu3:hover {
+    #menuWrapper >#menu3:hover {
         opacity: 1;
+        cursor: pointer;
     }
 
-    #menu4:hover {
+    #menuWrapper >#menu4:hover {
         opacity: 1;
+        cursor: pointer;
     }
 
     .bgNavBubbleWrapper {
