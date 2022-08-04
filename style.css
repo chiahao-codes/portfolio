@@ -60,12 +60,12 @@ body{
 
 .bubble {
     background-color: #fff;
-    width:calc(50px + .0025vmin);
-    height:calc(50px + .0025vmin);
+    width:calc(50px + .025vmin);
+    height:calc(50px + .025vmin);
     bottom: 5%;
     border-radius: 50%;
-    z-index: 1;
-    transform: translateY(110%);
+   
+    
     display: flex;
     justify-content: center;
     align-items: center;
