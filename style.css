@@ -77,6 +77,7 @@ body{
         .icon{
             color: white;
             opacity: 0.75;
+            font-size: calc(1.5em + .25vmin);
         }
 
         .bubble:hover{
