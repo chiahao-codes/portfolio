@@ -80,9 +80,6 @@ body {
     background-color: inherit;
     width: calc(58px + .025vmin);
     height: calc(58px + .025vmin);
-    bottom: calc(85px + .025vmin);
-    left:auto;
-    right:auto;
     border-radius: 50%;
     display: flex;
     justify-content: center;
