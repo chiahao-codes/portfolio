@@ -115,11 +115,9 @@ body {
     }
 
     .menuElement {
-        transform: translateY(80%);
-        font-size: calc(1.5em + .25vmin);
+        font-size: calc(2em + .25vmin);
         color: white;
         opacity: .55;
-        bottom: calc(11% + .25vmin);
     }
 
     .menuElement:hover {
