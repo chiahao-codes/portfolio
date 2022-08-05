@@ -105,7 +105,9 @@ body {
         background-color: hsl(0, 0%, 11%);
         transform: translateY(0%);
         box-shadow: 0 1px 0 3px rgba(0, 0, 0, 0.12),
-            0 1px 0 2px rgba(0, 0, 0, 0.24);
+            1px 1px 0 2px rgba(0, 0, 0, 0.24);
+        left: calc(20% + .025vmin);
+        transform: translateX(-20%);
     }
 
     #bubble1>.icon {
