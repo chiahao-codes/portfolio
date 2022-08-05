@@ -126,7 +126,13 @@ body {
             opacity: 1;
         }
 
-   
+   #menu1{
+    opacity:0;
+   }
+
+   #menu1:hover{
+    cursor: default;
+   }
 
 }
 
