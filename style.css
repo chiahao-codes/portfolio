@@ -96,6 +96,11 @@ body {
         font-size: calc(1.6em + .25vmin);
     }
 
+#bubbleWrapper > .bgBubble{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #bgBubble1 {
     background-color: black;
@@ -105,10 +110,9 @@ body {
 }
 
 
-    #bubble1 {
+#bubble1 {
         background-color: hsl(0, 0%, 11%);
-        left:50%;
-        transform: translateY(0%) translateX(-50%);
+        transform: translateY(0%);
         box-shadow: 0px 1px 0 3px rgba(0, 0, 0, 0.12),
             1px 1px 0 2px rgba(0, 0, 0, 0.24), 2px 1px 0 2px rgba(0, 0, 0, 0.24);
     }
