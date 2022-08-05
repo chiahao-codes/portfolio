@@ -63,7 +63,7 @@ body {
         align-items: center;
         width: 100%;
         position: absolute;
-        bottom: calc(5% + .25vmin);
+        bottom: calc(10% + .25vmin);
     }
     
     #bgBubble1 {
