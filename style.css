@@ -57,43 +57,41 @@ body {
         position: relative;
     }
 
+#bubbleWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: calc(10% + .25vmin);
+}
 
-    .bubble {
-        background-color: inherit;
-        width: calc(50px + .025vmin);
-        height: calc(50px + .025vmin);
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 1;
-        transform: translateY(110%);
-    }
-
+.bubble {
+    background-color: inherit;
+    width: calc(50px + .025vmin);
+    height: calc(50px + .025vmin);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(110%);
+}
     .icon {
         opacity: 0;
         color: white;
         font-size: calc(1.6em + .25vmin);
     }
 
-         #bubbleWrapper {
-             display: flex;
-             justify-content: space-around;
-             align-items: center;
-             width: 100%;
-             position: absolute;
-             bottom: calc(10% + .25vmin);
-         }
-    
-         #bgBubble1 {
-             background-color: black;
-             position: absolute;
-             width: calc(70px + .025vmin);
-             height: calc(70px + .025vmin);
-             border-radius: 50%;
-             left: calc(200px + 1vmin);
-             transform: translateX(-180%);
-         }
+
+#bgBubble1 {
+    background-color: black;
+    position: absolute;
+    width: calc(70px + .025vmin);
+    height: calc(70px + .025vmin);
+    border-radius: 50%;
+}
+
 
     #bubble1 {
         background-color: hsl(0, 0%, 11%);
