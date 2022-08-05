@@ -100,9 +100,6 @@ body {
     width: calc(70px + .025vmin);
     height: calc(70px + .025vmin);
     border-radius: 50%;
-    bottom:-50px;
-    left: 50px;
-    transform: translateX(-50%);
 }
 
 
