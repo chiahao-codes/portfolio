@@ -96,7 +96,7 @@ body {
         font-size: calc(1.6em + .25vmin);
     }
 
-#bubbleWrapper > .bgBubble{
+.navBar > #bubbleWrapper > .bgBubble{
     display: flex;
     justify-content: center;
     align-items: center;
