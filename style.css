@@ -57,6 +57,15 @@ body {
         position: relative;
     }
 
+#bgWrapper{
+    width:100%;
+    height: calc(100px + .25vmin);
+    filter: url(#goo);
+    background-color: inherit;
+    position: absolute;
+    bottom:calc(60px + .025vmin);
+}
+
 #bubbleWrapper {
     display: flex;
     justify-content: space-around;
