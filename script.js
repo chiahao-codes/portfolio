@@ -5,7 +5,12 @@ function move(id) {
       { duration: 0.15, y: `45%`, opacity: 0, ease: "ease-out" },
       0
     );
-    timeLine.to(`#bubble1`, { duration: .1, y: `110%`, boxShadow: `none`, ease: `ease-out` }, 0);
+}
+
+
+
+/**
+ * timeLine.to(`#bubble1`, { duration: .1, y: `110%`, boxShadow: `none`, ease: `ease-out` }, 0);
     timeLine.to( `#bubble2`, { duration: 0.1, y: `110%`, boxShadow: `none`, ease: `ease-out`, },0);
     timeLine.to(
       `#bubble3`,
@@ -53,4 +58,4 @@ function move(id) {
       },
       0
     );
-}
+ */
