@@ -1,4 +1,4 @@
-function move(id, position, color) {
+function move(id) {
     let timeLine = gsap.timeline();
     timeLine.to(
       ".navBar > #bubbleWrapper > .bgBubble",
