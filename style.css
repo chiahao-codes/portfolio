@@ -64,7 +64,7 @@ body {
     filter: url(#goo);
     background-color: inherit;
     position: absolute;
-    bottom:calc(60px + .025vmin);
+    
 }
 
 #bubbleWrapper {
@@ -73,7 +73,7 @@ body {
     align-items: center;
     width: 100%;
     position: absolute;
-    bottom: calc(10% + .25vmin);
+    
 }
 
 .bubble {
@@ -97,6 +97,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
 }
 
 #bgBubble1 {
