@@ -70,6 +70,7 @@ body {
 }
 
 .bubble {
+    font-size: calc(2.2em + .25vmin);
     background-color: inherit;
     width: calc(3.6em + .025vmin);
     height: calc(3.6em + .025vmin);
@@ -132,7 +133,7 @@ body {
 
     .menuElement {
         transform: translateY(25%);
-        font-size: calc(1em + .25vmin);
+        font-size: calc(2.2em + .25vmin);
         color: white;
         opacity: .55;
     }
