@@ -101,11 +101,11 @@ body {
 
 #bgWrapper {
     filter:url(#goo);
-    width: 100%;
+    width: 100vw;
     height: calc(100px + .25vmin);
     background-color: black;
     position: absolute;
-    bottom: calc(60px + .025vmin);
+    bottom: calc(40px + .025vmin);
 }
 
 #bg {
@@ -122,8 +122,6 @@ body {
    height:calc(70px + .025vmin);
    border-radius: 50%;
    bottom:calc(-50px + .025vmin);
-   left:calc(200px + .025vmin);
-   transform: translateX(-200%);
 }
 
 
