@@ -100,6 +100,7 @@ body {
 }
 
 #bgWrapper {
+    
     width: 100%;
     height: calc(100px + .25vmin);
     background-color: black;
@@ -109,7 +110,7 @@ body {
 
 #bg {
     background-color: black;
-    width:100%;
+    width:120%;
     height:100%;
     margin-left:-10%;
 }
