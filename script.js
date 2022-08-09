@@ -1,25 +1,37 @@
+let timeLine = gsap.timeline();
+
 function move(id) {
-    let timeLine = gsap.timeline();
-    timeLine
-      .to(
-        ".navBar > #bubbleWrapper > .bgBubble",
-        { duration: 0.1, y: `62%`, opacity:0, ease: "ease-out" },
-        0
-      )
-      .to(
-        `.menuElement`,
-        {
-          duration: 0.1,
-          y: `45%`,
-          fontSize: `calc(1.6em + .25vmin)`,
-          color: `white`,
-          opacity: 0.55,
-        },
-        ">"
-      );
+  timeLine
+    .to(
+      ".navBar > #bubbleWrapper > .bgBubble",
+      { duration: 0.1, y: `62%`, opacity: 0, ease: "ease-out" },
+      0
+    )
+    .to(
+      `.menuElement`,
+      {
+        duration: 0.05,
+        y: `45%`,
+        fontSize: `calc(1.6em + .25vmin)`,
+        color: `white`,
+        opacity: 0.55,
+      },
+      0
+    );
 }
 
-
+function load() {
+    //initial boxshadow animation;
+    timeLine.to("#bubble1", {
+      duration: 0.1,
+      backgroundColor: `hsl(0, 0%, 11%)`,
+      y: "-10%",
+      boxShadow: `0 calc(1px + .0215vmin) calc(3px+.0122vmin) rgba(0, 0, 0, 0.12),
+            0 calc(1px + .0215vmin) calc(3px+.0202vmin) rgba(0, 0, 0, 0.24);`,
+      ease:`ease-out`
+    }, 0)
+    .to( `#bubble1>.icon`, {duration:0.1, opacity: 1},0)
+}
 
 /**
  * timeLine.to(`#bubble1`, { duration: .1, y: `110%`, boxShadow: `none`, ease: `ease-out` }, 0);
