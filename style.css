@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-color: black;
+    background-color: hsl(0, 0%, 4%);
     margin: 0%;
     height: 100vh;
     width: 100vw;
@@ -108,7 +108,7 @@ body {
 }
 
 #bg {
-    background-color: lightblue;
+    background-color: hsl(0, 0%, 4%);
     width:120%;
     height:100%;
     margin-left:-10%;
@@ -116,7 +116,7 @@ body {
 
 #bgBubble{
    position: absolute;
-   background-color: darkgreen;
+   background-color: inherit;
    width:calc(4.375em + .025vmin);
    height:calc(4.375em + .025vmin);
    border-radius: 50%;
