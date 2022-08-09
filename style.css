@@ -78,7 +78,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 1;
-    transform: translateY(120%);
+    transform: translateY(145%);
 }
 
 .icon {
@@ -89,7 +89,7 @@ body {
 
 #bubble1 {
     background-color: inherit ;
-    transform: translateY(25%);
+    transform: translateY(35%);
     box-shadow: 0 calc(.0625em + .0215vmin) calc(.1875em+.0122vmin) rgba(0, 0, 0, 0.12),
         0 calc(.0625em + .0215vmin) calc(.1875em+.0202vmin) rgba(0, 0, 0, 0.24);
 
