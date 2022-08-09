@@ -100,16 +100,16 @@ body {
 }
 
 #bgWrapper {
-    
+    filter:url(#goo);
     width: 100%;
     height: calc(100px + .25vmin);
-    background-color: black;
+    background-color: red;
     position: absolute;
     bottom: calc(40px + .025vmin);
 }
 
 #bg {
-    background-color: black;
+    background-color: lightblue;
     width:120%;
     height:100%;
     margin-left:-10%;
