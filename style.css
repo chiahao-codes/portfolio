@@ -108,19 +108,19 @@ body {
     border-radius: 50%;
 }
 
-/**/
-
-#bubble1 {
+/*#bubble1 {
     background-color: hsl(0, 0%, 11%);
     transform: translateY(-10%);
     box-shadow: 0 calc(1px + .0215vmin) calc(3px+.0122vmin) rgba(0, 0, 0, 0.12),
         0 calc(1px + .0215vmin) calc(3px+.0202vmin) rgba(0, 0, 0, 0.24);
+#bubble1>.icon {
+        opacity: 1;
+    }
+}*/
 
-}
 
- #bubble1>.icon {
-     opacity: 1;
- }
+
+
    
     #menuWrapper {
         position: absolute;
