@@ -52,7 +52,7 @@ body {
     }
 
     .navBar {
-        width: 100%;
+        width: 110%;
         background-color: inherit;
         height: 70%;
         position: absolute;
@@ -101,6 +101,7 @@ body {
 
 #bgWrapper {
     filter:url(#goo);
+    background-color:teal;
     width: 100%;
     height: calc(6.25em + .25vmin);
     position: absolute;
@@ -108,7 +109,7 @@ body {
 }
 
 #bg {
-    background-color: black;
+    background-color: gray;
     width:130%;
     height:100%;
     margin-left:-20%;
@@ -117,7 +118,7 @@ body {
 
 #bgBubble{
    position: absolute;
-   background-color: black;
+   background-color: green;
    width:calc(4.375em + .025vmin);
    height:calc(4.375em + .025vmin);
    border-radius: 50%;
