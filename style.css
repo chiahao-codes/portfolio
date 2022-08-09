@@ -132,8 +132,8 @@ body {
     }
 
     .menuElement {
-        transform: translateY(20%);
-        font-size: calc(1.6em + .25vmin);
+        transform: translateY(25%);
+        font-size: calc(1em + .25vmin);
         color: white;
         opacity: .55;
     }
