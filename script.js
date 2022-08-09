@@ -3,20 +3,20 @@ function move(id) {
     timeLine
       .to(
         ".navBar > #bubbleWrapper > .bgBubble",
-        { duration: 0.11, y: `45%`, ease: "ease-out" },
+        { duration: 0.1, y: `60%`, ease: "ease-out" },
         0
       )
       .to(".navBar > #bubbleWrapper > .bgBubble", {duration:0.1, opacity:0, ease:"ease-out"}, ">")
       .to(
         `.menuElement`,
         {
-          duration: 0.05,
+          duration: 0.1,
           y: `45%`,
           fontSize: `calc(1.6em + .25vmin)`,
           color: `white`,
           opacity: 0.55,
         },
-        ">"
+        0
       );
 }
 
