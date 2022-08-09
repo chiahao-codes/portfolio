@@ -121,8 +121,8 @@ body {
    height:calc(4.375em + .025vmin);
    border-radius: 50%;
    bottom:-50%;
-   left:9%;
-   transform:translateX(-9%);
+   left:9.5%;
+   transform:translateX(-9.5%);
 }
 
 #menuWrapper {
