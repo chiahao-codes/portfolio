@@ -89,7 +89,7 @@ body {
 
 #bubble1 {
     background-color: inherit ;
-    transform: translateY(-10%);
+    transform: translateY(-20%);
     box-shadow: 0 calc(1px + .0215vmin) calc(3px+.0122vmin) rgba(0, 0, 0, 0.12),
         0 calc(1px + .0215vmin) calc(3px+.0202vmin) rgba(0, 0, 0, 0.24);
 
@@ -136,7 +136,7 @@ body {
     }
 
     .menuElement {
-        transform: translateY(45%);
+        transform: translateY(35%);
         font-size: calc(1.6em + .25vmin);
         color: white;
         opacity: .55;
