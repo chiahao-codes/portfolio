@@ -84,7 +84,7 @@ body {
 .icon {
         opacity: 0;
         color: white;
-        font-size: calc(1.6em + .25vmin);
+        font-size: calc(1.7em + .25vmin);
     }
 
 #bubble1 {
@@ -132,7 +132,7 @@ body {
 
     .menuElement {
         transform: translateY(25%);
-        font-size: calc(1em + .25vmin);
+        font-size: calc(1.5em + .25vmin);
         color: white;
         opacity: .55;
     }
