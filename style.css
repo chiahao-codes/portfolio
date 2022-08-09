@@ -89,7 +89,7 @@ body {
 
 #bubble1 {
     background-color: inherit ;
-    transform: translateY(-3%);
+    transform: translateY(5%);
     box-shadow: 0 calc(1px + .0215vmin) calc(3px+.0122vmin) rgba(0, 0, 0, 0.12),
         0 calc(1px + .0215vmin) calc(3px+.0202vmin) rgba(0, 0, 0, 0.24);
 
@@ -122,8 +122,8 @@ body {
    height:calc(70px + .025vmin);
    border-radius: 50%;
    bottom:calc(-50px + .025vmin);
-   left:calc(70px + .025vmin);
-   transform: translateX(-70%);
+   left:calc(90px + .025vmin);
+   transform: translateX(-90%);
 }
 
 
