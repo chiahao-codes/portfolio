@@ -1,20 +1,23 @@
 function move(id) {
     let timeLine = gsap.timeline();
-    timeLine.to(
-      ".navBar > #bubbleWrapper > .bgBubble",
-      { duration: 0.15, y: `45%`, opacity: 0, ease: "ease-out" },
-      0
-    );
-    timeLine.to(`.menuElement`,
-      {
-        duration: 0.05,
-        y: `45%`,
-        fontSize: `calc(1.6em + .25vmin)`,
-        color: `white`,
-        opacity: 0.55,
-      },
-      0
-    );
+    timeLine
+      .to(
+        ".navBar > #bubbleWrapper > .bgBubble",
+        { duration: 0.11, y: `45%`, ease: "ease-out" },
+        0
+      )
+      .to(".navBar > #bubbleWrapper > .bgBubble", {duration:0.1, opacity:0, ease:"ease-out"}, ">")
+      .to(
+        `.menuElement`,
+        {
+          duration: 0.05,
+          y: `45%`,
+          fontSize: `calc(1.6em + .25vmin)`,
+          color: `white`,
+          opacity: 0.55,
+        },
+        ">"
+      );
 }
 
 
