@@ -124,8 +124,6 @@ body {
    bottom:calc(-50px + .025vmin);
 }
 
-
-   
 #menuWrapper {
         position: absolute;
         width: 100%;
@@ -134,7 +132,7 @@ body {
     }
 
     .menuElement {
-        transform: translateY(15%);
+        transform: translateY(20%);
         font-size: calc(1.6em + .25vmin);
         color: white;
         opacity: .55;
