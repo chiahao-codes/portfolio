@@ -26,7 +26,7 @@ function boxShadow() {
     y:`-10%`,
     boxShadow: `0 calc(1px + .0215vmin) calc(3px+.0122vmin) rgba(0, 0, 0, 0.12),
         0 calc(1px + .0215vmin) calc(3px+.0202vmin) rgba(0, 0, 0, 0.24)`
-    }, 0)
+    ,ease:`ease-out`}, 0)
     .to(`#bubble1>.icon`, {duration:.1, opacity:1}, 0)
 }
 
