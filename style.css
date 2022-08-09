@@ -41,7 +41,6 @@ body {
 
     .navContainer {
         position: fixed;
-       
         width: 100%;
         height: 9vh;
         display: flex;
@@ -55,18 +54,11 @@ body {
     .navBar {
         width: 100%;
         background-color: inherit;
-        height: 100%;
-        position: relative;
+        height: 70%;
+        position: absolute;
     }
 
-#bgWrapper{
-    width:100%;
-    height: calc(100px + .25vmin);
-    filter: url(#goo);
-    background-color: inherit;
-    position: absolute;
-    bottom:calc(60px + .025vmin);
-}
+
 
 #bubbleWrapper {
     display: flex;
@@ -74,7 +66,7 @@ body {
     align-items: center;
     width: 100%;
     position: absolute;
-    bottom: calc(10% + .25vmin);
+    bottom: calc(2.5em + .25vmin);
 }
 
 .bubble {
@@ -88,51 +80,63 @@ body {
     z-index: 1;
     transform: translateY(110%);
 }
-    .icon {
+
+.icon {
         opacity: 0;
         color: white;
         font-size: calc(1.6em + .25vmin);
     }
 
-.navBar > #bubbleWrapper > .bgBubble{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-#bgBubble1 {
-    background-color: black;
-    width: calc(70px + .025vmin);
-    height: calc(70px + .025vmin);
-    border-radius: 50%;
-}
-
-/**/
-
 #bubble1 {
-    background-color: hsl(0, 0%, 11%);
+    
     transform: translateY(-10%);
     box-shadow: 0 calc(1px + .0215vmin) calc(3px+.0122vmin) rgba(0, 0, 0, 0.12),
         0 calc(1px + .0215vmin) calc(3px+.0202vmin) rgba(0, 0, 0, 0.24);
 
 }
-#bubble1>.icon {
-    opacity: 1;
+
+#bubble1 > span {
+    opacity:1;
+}
+
+#bgWrapper {
+    filter:url(#goo);
+    width: 100%;
+    height: calc(100px + .25vmin);
+    background-color: black;
+    position: absolute;
+    bottom: calc(60px + .025vmin);
+}
+
+#bg {
+    background-color: black;
+    width:120%;
+    height:100%;
+    margin-left:-10%;
+}
+
+#bgBubble{
+   position: absolute;
+   background-color: darkgreen;
+   width:calc(70px + .025vmin);
+   height:calc(70px + .025vmin);
+   border-radius: 50%;
+   bottom:calc(-50px + .025vmin);
+   left:calc(50px + .025vmin);
+   transform: translateX(-50%);
 }
 
 
    
-    #menuWrapper {
+#menuWrapper {
         position: absolute;
         width: 100%;
         display: flex;
         justify-content: space-around;
-        align-items: center;
     }
 
     .menuElement {
-        transform: translateY(45%);
+        transform: translateY(100%);
         font-size: calc(1.6em + .25vmin);
         color: white;
         opacity: .55;
