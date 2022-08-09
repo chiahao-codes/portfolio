@@ -71,8 +71,8 @@ body {
 
 .bubble {
     background-color: inherit;
-    width: calc(58px + .025vmin);
-    height: calc(58px + .025vmin);
+    width: calc(3.6em + .025vmin);
+    height: calc(3.6em + .025vmin);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -90,8 +90,8 @@ body {
 #bubble1 {
     background-color: inherit ;
     transform: translateY(20%);
-    box-shadow: 0 calc(1px + .0215vmin) calc(3px+.0122vmin) rgba(0, 0, 0, 0.12),
-        0 calc(1px + .0215vmin) calc(3px+.0202vmin) rgba(0, 0, 0, 0.24);
+    box-shadow: 0 calc(.0625em + .0215vmin) calc(.1875em+.0122vmin) rgba(0, 0, 0, 0.12),
+        0 calc(.0625em + .0215vmin) calc(.1875em+.0202vmin) rgba(0, 0, 0, 0.24);
 
 }
 
@@ -102,10 +102,9 @@ body {
 #bgWrapper {
     filter:url(#goo);
     width: 100%;
-    height: calc(100px + .25vmin);
-    background-color: red;
+    height: calc(6.25em + .25vmin);
     position: absolute;
-    bottom: calc(40px + .025vmin);
+    bottom: calc(2.5em + .025vmin);
 }
 
 #bg {
@@ -118,10 +117,10 @@ body {
 #bgBubble{
    position: absolute;
    background-color: darkgreen;
-   width:calc(70px + .025vmin);
-   height:calc(70px + .025vmin);
+   width:calc(4.375em + .025vmin);
+   height:calc(4.375em + .025vmin);
    border-radius: 50%;
-   bottom:calc(-50px + .025vmin);
+   bottom:calc(-3.125em + .025vmin);
 }
 
 #menuWrapper {
