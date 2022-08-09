@@ -120,7 +120,7 @@ body {
    width:calc(4.375em + .025vmin);
    height:calc(4.375em + .025vmin);
    border-radius: 50%;
-   bottom:-25%;
+   bottom:-50%;
 }
 
 #menuWrapper {
