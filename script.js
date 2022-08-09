@@ -3,10 +3,9 @@ function move(id) {
     timeLine
       .to(
         ".navBar > #bubbleWrapper > .bgBubble",
-        { duration: 0.1, y: `62%`, ease: "ease-out" },
+        { duration: 0.1, y: `62%`, opacity:0, ease: "ease-out" },
         0
       )
-      .to(".navBar > #bubbleWrapper > .bgBubble", {duration:0.1, opacity:0, ease:"ease-out"}, 0)
       .to(
         `.menuElement`,
         {
