@@ -22,6 +22,7 @@ body {
 @media screen and (min-width:768px) {
     .main {
         color: hsl(50, 80%, 60%);
+        filter:contrast(150%);
         position: absolute;
         top: 50%;
         left: 50%;
