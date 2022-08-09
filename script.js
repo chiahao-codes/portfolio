@@ -5,7 +5,7 @@ function move(id) {
       { duration: 0.15, y: `45%`, opacity: 0, ease: "ease-out" },
       0
     );
-    timeline.to(`.menuElement`,
+    timeLine.to(`.menuElement`,
       {
         duration: 0.05,
         y: `45%`,
