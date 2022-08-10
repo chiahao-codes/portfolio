@@ -102,7 +102,7 @@ body {
 #bgWrapper {
     filter:url(#goo);
     background-color:teal;
-    width: 101vw;
+    width: 100%;
     height: calc(6.25em + .25vmin);
     position: absolute;
     bottom: calc(2.7em + .025vmin);
