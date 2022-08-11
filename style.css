@@ -107,7 +107,7 @@ body {
     width: 110%;
     height: calc(6.25em + .25vmin);
     position: absolute;
-    bottom: calc(1.7em + .025vmin);
+    bottom: calc(2.7em + .025vmin);
 }
 
 #bg {
