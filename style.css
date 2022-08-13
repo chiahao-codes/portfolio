@@ -124,7 +124,7 @@ body {
     width: 100%;
     height: calc(6.25em + .25vmin);
     position: absolute;
-    bottom: calc(3.5em + .025vmin);
+    bottom: calc(3.75em + .025vmin);
 }
 
 #bg {
@@ -140,7 +140,7 @@ body {
    width:calc(4.375em + .025vmin);
    height:calc(4.375em + .025vmin);
    border-radius: 50%;
-   bottom:-50%;
+   bottom:-60%;
    transform:translateX(10.2vw);
 }
 
