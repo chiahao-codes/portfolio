@@ -73,6 +73,7 @@ body {
         background-color: hsl(0, 0%, 12%);
         height: calc(4em + .025vmin);
         position: absolute;
+        bottom:0;
     }
 
 
