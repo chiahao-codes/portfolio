@@ -113,7 +113,6 @@ body {
 
 #bgWrapper {
     filter:url(#goo);
-    
     width: 110%;
     height: calc(6.25em + .25vmin);
     position: absolute;
@@ -124,6 +123,7 @@ body {
     background-color: black;
     width:120%;
     height:100%;
+    margin-left:-20px;
 }
 
 #bgBubble{
