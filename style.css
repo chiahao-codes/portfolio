@@ -70,7 +70,7 @@ body {
     .navBar {
         width: 100%;
         background-color: hsl(0, 0%, 12%);
-        height: 70%;
+        height: calc(4em + .025vmin);
         position: absolute;
     }
 
