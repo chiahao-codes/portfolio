@@ -111,7 +111,7 @@ body {
 
 #bgWrapper {
     filter:url(#goo);
-    background-color:teal;
+    
     width: 110%;
     height: calc(6.25em + .25vmin);
     position: absolute;
@@ -126,7 +126,7 @@ body {
 
 #bgBubble{
    position: absolute;
-   background-color: green;
+   background-color: black;
    width:calc(4.375em + .025vmin);
    height:calc(4.375em + .025vmin);
    border-radius: 50%;
