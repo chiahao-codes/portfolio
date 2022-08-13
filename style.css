@@ -82,7 +82,7 @@ body {
     align-items: center;
     width: 100%;
     position: absolute;
-    bottom: calc(2.5em + .25vmin);
+    bottom: calc(1.5em + .25vmin);
 }
 
 .bubble {
