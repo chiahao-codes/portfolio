@@ -124,7 +124,7 @@ body {
     width: 100%;
     height: calc(6.25em + .25vmin);
     position: absolute;
-    bottom: calc(3.75em + .025vmin);
+    bottom: calc(4em + .025vmin);
 }
 
 #bg {
