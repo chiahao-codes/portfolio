@@ -83,7 +83,7 @@ body {
     align-items: center;
     width: 100%;
     position: absolute;
-    bottom: 5%;
+    bottom: calc(1.5em + .25vmin);
 }
 
 .bubble {
@@ -124,7 +124,7 @@ body {
     width: 100%;
     height: calc(6.25em + .25vmin);
     position: absolute;
-    bottom: calc(2.7em + .025vmin);
+    bottom: calc(3em + .025vmin);
 }
 
 #bg {
