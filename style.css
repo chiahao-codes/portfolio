@@ -118,22 +118,24 @@ body {
     margin-left:-20%;
 }
 
-#bgBubble{
-   position: absolute;
-   background-color: black;
-   width:calc(4.375em + .025vmin);
-   height:calc(4.375em + .025vmin);
-   border-radius: 50%;
-   bottom:-60%;
-   transform: translateX(-.25vw);
+
+
+#bgBubble {
+    position: absolute;
+    background-color: black;
+    width: calc(4.375em + .025vmin);
+    height: calc(4.375em + .025vmin);
+    border-radius: 50%;
+    bottom:-5%;
+    
+    /*bottom: -60%;
+    transform: translateX(-.25vw);
+    left: 12%;*/
    
 }
 
-@media screen and (min-width:1300px) and (max-width:1600px) {
-  #bgBubble{
-    left: 12%;
-  }  
-}
+
+
 
 #menuWrapper {
         position: absolute;
