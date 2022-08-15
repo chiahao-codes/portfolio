@@ -127,6 +127,7 @@ body {
     height: calc(4.375em + .025vmin);
     border-radius: 50%;
     bottom:-5%;
+    z-index: 0;
     
     /*bottom: -60%;
     transform: translateX(-.25vw);
