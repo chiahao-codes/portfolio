@@ -125,13 +125,13 @@ body {
    height:calc(4.375em + .025vmin);
    border-radius: 50%;
    bottom:-60%;
-   left:10%;
+   transform: translateX(-.25vw);
    
 }
 
 @media screen and (min-width:1300px) and (max-width:1600px) {
   #bgBubble{
-    transform: translateX(-.5vw);
+    left: 10%;
   }  
 }
 
