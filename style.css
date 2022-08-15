@@ -18,6 +18,10 @@ body {
     margin:0;
 }
 
+@media screen and (max-width:1600px) {
+    
+
+
 .navContainer{
     width: 100%;
         min-width: 100%;
@@ -127,7 +131,13 @@ body {
     border-radius: 50%;
     bottom: -60%;
     transform: translateX(-.15vw);
+    
+}
+
+@media screen and (min-width:1400px) {
+#bgBubble{
     left: 10.3%;
+} 
 }
 
 
@@ -162,21 +172,5 @@ body {
    }
 
 
-
-
-
-/*
-
-
-
-
-
-
-
-
-
-.menuElement:hover {
-    opacity: 0.5;
 }
 
-}*/
