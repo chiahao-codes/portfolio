@@ -74,21 +74,6 @@ body {
 }
 
 
-#bgBubble {
-    position: absolute;
-    background-color: black;
-    width: calc(4.375em + .025vmin);
-    height: calc(4.375em + .025vmin);
-    border-radius: 50%;
-    bottom: -5%;
-    z-index: 0;
-
-    /*bottom: -60%;
-    transform: translateX(-.25vw);
-    left: 12%;*/
-
-}
-
 .bubble {
     background-color: hsl(0, 0%, 12%);
     width: calc(3.6em + .025vmin);
@@ -134,11 +119,16 @@ body {
     margin-left:-20%;
 }
 
-
-
-
-
-
+#bgBubble {
+    position: absolute;
+    background-color: black;
+    width: calc(4.375em + .025vmin);
+    height: calc(4.375em + .025vmin);
+    border-radius: 50%;
+    bottom: -60%;
+    transform: translateX(-.25vw);
+    left: 12%;
+}
 
 
 #menuWrapper {
