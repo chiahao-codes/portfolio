@@ -32,7 +32,7 @@ body {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-@media screen and (min-width:768px) {
+
     .main {
         color: hsl(50, 80%, 60%);
         filter:contrast(150%);
@@ -125,7 +125,14 @@ body {
    height:calc(4.375em + .025vmin);
    border-radius: 50%;
    bottom:-60%;
-   transform:translateX(10.2vw);
+   left:10%;
+   
+}
+
+@media screen and (min-width:1300px) and (max-width:1600px) {
+  #bgBubble{
+    transform: translateX(-3.2vw);
+  }  
 }
 
 #menuWrapper {
@@ -158,7 +165,7 @@ body {
     cursor: default;
    }
 
-}
+
 
 
 
