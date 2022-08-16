@@ -224,7 +224,11 @@ body {
     .menuElement {
         transform: translateY(25%);
         font-size: calc(1.5em + .25vmin);
-        color: white;
+        
+    }
+
+    .menuElement > a > i {
+        color:white;
         opacity: .55;
     }
 
