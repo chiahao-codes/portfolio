@@ -118,9 +118,6 @@ body {
     bottom:67px ;
 }
 
-/*calc(6.25em + .25vmin)
-calc(4em + .025vmin)
-*/
 
 #bg {
     background-color: black;
@@ -132,10 +129,10 @@ calc(4em + .025vmin)
 #bgBubble {
     position: absolute;
     background-color: black;
-    width: calc(4.375em + .025vmin);
-    height: calc(4.375em + .025vmin);
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    bottom: -60%;
+    bottom: -50px;
     transform: translateX(-50%);
     left:110px;
     
