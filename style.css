@@ -201,7 +201,7 @@ body {
 }
 @media screen and (min-width:400px) and (max-width:499px) {
     #bgBubble {
-        left: calc(11% - 5vw);
+        left: calc(12% - 5vw);
     }
 }
 @media screen and (min-width:320px) and (max-width:399px) {
