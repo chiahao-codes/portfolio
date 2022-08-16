@@ -136,7 +136,7 @@ calc(4em + .025vmin)
     height: calc(4.375em + .025vmin);
     border-radius: 50%;
     bottom: -60%;
-    transform: translateX(-1vw);
+    transform: translateX(-50%);
     left:110px;
     
 }
