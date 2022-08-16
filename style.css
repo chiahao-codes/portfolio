@@ -136,19 +136,19 @@ body {
 
 @media screen and (min-width:1400px) {
 #bgBubble{
-    left: calc(11% - .5vw);
+    left: calc(11% - .6vw);
 } 
 }
 
 @media screen and (min-width:1300px) and (max-width:1399px) {
     #bgBubble {
-        left: calc(11% - 1.2vw);
+        left: calc(11% - .9vw);
     }
 }
 
 @media screen and (min-width:1200px) and (max-width:1299px) {
     #bgBubble {
-        left: calc(11% - 1.5vw);
+        left: calc(11% - 1.2vw);
     }
 }
 
@@ -183,6 +183,22 @@ body {
 }
 
 @media screen and (min-width:600px) and (max-width:699px) {
+    #bgBubble {
+        left: calc(8% - .1vw);
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:599px) {
+    #bgBubble {
+        left: calc(8% - .1vw);
+    }
+}
+@media screen and (min-width:400px) and (max-width:499px) {
+    #bgBubble {
+        left: calc(8% - .1vw);
+    }
+}
+@media screen and (min-width:320px) and (max-width:399px) {
     #bgBubble {
         left: calc(8% - .1vw);
     }
