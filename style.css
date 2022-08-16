@@ -136,7 +136,7 @@ body {
 
 @media screen and (min-width:1400px) {
 #bgBubble{
-    left: calc(10% - .5vw);
+    left: calc(11% - .5vw);
 } 
 }
 
@@ -158,18 +158,35 @@ body {
     }
 }
 
-@media screen and (min-width:900px) and (max-width:1099px) {
+@media screen and (min-width:1000px) and (max-width:1099px) {
     #bgBubble {
         left: calc(11% - 2vw);
     }
 }
 
-@media screen and (min-width:450px) and (max-width:699px) {
+@media screen and (min-width:900px) and (max-width:999px) {
     #bgBubble {
         left: calc(8% - .1vw);
     }
 }
 
+@media screen and (min-width:800px) and (max-width:899px) {
+    #bgBubble {
+        left: calc(8% - .1vw);
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:799px) {
+    #bgBubble {
+        left: calc(8% - .1vw);
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:699px) {
+    #bgBubble {
+        left: calc(8% - .1vw);
+    }
+}
 
 
 #menuWrapper {
