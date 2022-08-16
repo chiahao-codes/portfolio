@@ -133,7 +133,7 @@ body {
     height: 70px;
     border-radius: 50%;
     bottom: -60px;
-    transform: translateX(-.8vw);
+    transform: translateX(-.25vw);
 }
 
 @media screen and (min-width:1500px) and (max-width:1600px) {
