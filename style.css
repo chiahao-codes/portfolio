@@ -152,7 +152,7 @@ body {
     }
 }
 
-@media screen and (min-width:1000px) and (max-width:1199px) {
+@media screen and (min-width:700px) and (max-width:999px) {
     #bgBubble {
         left: 8.9%;
     }
