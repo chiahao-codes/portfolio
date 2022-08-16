@@ -64,6 +64,7 @@ body {
         height: calc(4em + .025vmin);
         position: fixed;
         bottom:0;
+        z-index: 0;
     }
 
 
