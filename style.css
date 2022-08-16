@@ -81,9 +81,9 @@ body {
 
 .bubble {
     background-color: hsl(0, 0%, 12%);
-    width: calc(50px + .025vmin);
-    height: calc(50px + .025vmin);
-    bottom:calc(83px + .025vmin);
+    width: calc(53px + .025vmin);
+    height: calc(53px + .025vmin);
+    bottom:calc(85px + .025vmin);
     border-radius: 50%;
     display: flex;
     justify-content: center;
