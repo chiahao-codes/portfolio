@@ -113,10 +113,14 @@ body {
 #bgWrapper {
     filter:url(#goo);
     width: 100%;
-    height: calc(6.25em + .25vmin);
+    height:100px ;
     position: absolute;
-    bottom: calc(4em + .025vmin);
+    bottom:60px ;
 }
+
+/*calc(6.25em + .25vmin)
+calc(4em + .025vmin)
+*/
 
 #bg {
     background-color: black;
