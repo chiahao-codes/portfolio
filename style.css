@@ -132,7 +132,7 @@ body {
     height: calc(4.375em + .025vmin);
     border-radius: 50%;
     bottom: -60%;
-    transform: translateX(-1.5vw);
+    transform: translateX(-1.2vw);
     left:11%;
     
 }
