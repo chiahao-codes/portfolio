@@ -158,6 +158,11 @@ body {
     }
 }
 
+@media screen and (min-width:450px) and (max-width:699px) {
+    #bgBubble {
+        left: calc(8% - .1vw);
+    }
+}
 
 
 
