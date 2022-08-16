@@ -136,7 +136,7 @@ body {
 
 @media screen and (min-width:1400px) {
 #bgBubble{
-    left: calc(11% - .8vw);
+    left: calc(11% - .77vw);
 } 
 }
 
@@ -152,9 +152,9 @@ body {
     }
 }
 
-@media screen and (min-width:700px) and (max-width:999px) {
+@media screen and (min-width:1100px) and (max-width:1199px) {
     #bgBubble {
-        left: calc(9% - .1vw);
+        left: calc(11% - 1.8vw);
     }
 }
 
