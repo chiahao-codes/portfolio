@@ -145,67 +145,67 @@ contact:
 
 @media screen and (min-width:1500px) {
     #bgBubble {
-        left: calc(66% - .59vw);
+        left: calc(63% - .59vw);
     }
 }
 
 @media screen and (min-width:1400px) and (max-width:1499px) {
     #bgBubble {
-        left: calc(66% - .7vw);
+        left: calc(63% - .7vw);
     }
 }
 
 @media screen and (min-width:1300px) and (max-width:1399px) {
     #bgBubble {
-        left: calc(66% - .95vw);
+        left: calc(63% - .95vw);
     }
 }
 
 @media screen and (min-width:1200px) and (max-width:1299px) {
     #bgBubble {
-        left: calc(66% - 1.2vw);
+        left: calc(63% - 1.2vw);
     }
 }
 
 @media screen and (min-width:1100px) and (max-width:1199px) {
     #bgBubble {
-        left: calc(66% - 1.5vw);
+        left: calc(63% - 1.5vw);
     }
 }
 
 @media screen and (min-width:1000px) and (max-width:1099px) {
     #bgBubble {
-        left: calc(66% - 1.8vw);
+        left: calc(63% - 1.8vw);
     }
 }
 
 @media screen and (min-width:900px) and (max-width:999px) {
     #bgBubble {
-        left: calc(66% - 2vw);
+        left: calc(63% - 2vw);
     }
 }
 
 @media screen and (min-width:800px) and (max-width:899px) {
     #bgBubble {
-        left: calc(66% - 2.4vw);
+        left: calc(63% - 2.4vw);
     }
 }
 
 @media screen and (min-width:700px) and (max-width:799px) {
     #bgBubble {
-        left: calc(66% - 2.9vw);
+        left: calc(63% - 2.9vw);
     }
 }
 
 @media screen and (min-width:600px) and (max-width:699px) {
     #bgBubble {
-        left: calc(66% - 3.5vw);
+        left: calc(63% - 3.5vw);
     }
 }
 
 @media screen and (min-width:500px) and (max-width:599px) {
     #bgBubble {
-        left: calc(66% - 4.1vw);
+        left: calc(63% - 4.1vw);
     }
 }
 
