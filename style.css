@@ -169,13 +169,13 @@ contact:
 
 @media screen and (min-width:1100px) and (max-width:1199.99px) {
     #bgBubble {
-        left: calc(61% - 1.5vw);
+        left: calc(61% - 1.3vw);
     }
 }
 
 @media screen and (min-width:1000px) and (max-width:1099.99px) {
     #bgBubble {
-        left: calc(61% - 1.8vw);
+        left: calc(61% - 1.6vw);
     }
 }
 
@@ -205,13 +205,13 @@ contact:
 
 @media screen and (min-width:500px) and (max-width:599.99px) {
     #bgBubble {
-        left: calc(61% - 4.1vw);
+        left: calc(61% - 5.7vw);
     }
 }
 
 @media screen and (min-width:400px) and (max-width:499.99px) {
     #bgBubble {
-        left: calc(61% - 6.4vw);
+        left: calc(61% - 6.2vw);
     }
 }
 
