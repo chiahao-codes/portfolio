@@ -18,7 +18,7 @@ body {
     margin:0;
 }
 
-.menuElement{
+#menuWrapper > .menuElement{
     visibility: hidden;
 }
 
@@ -225,7 +225,7 @@ body {
         align-items: center;
     }
 
-    .menuElement {
+#menuWrapper > .menuElement {
         transform: translateY(25%);
         font-size: calc(1.5em + .25vmin);
         visibility: visible;
