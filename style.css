@@ -138,31 +138,31 @@ body {
 
 @media screen and (min-width:1500px) {
     #bgBubble {
-        left: calc(38% - .59vw);
+        left: calc(35% - .59vw);
     }
 }
 
 @media screen and (min-width:1400px) and (max-width:1499px) {
     #bgBubble {
-        left: calc(38% - .7vw);
+        left: calc(35% - .7vw);
     }
 }
 
 @media screen and (min-width:1300px) and (max-width:1399px) {
     #bgBubble {
-        left: calc(38% - .95vw);
+        left: calc(35% - .95vw);
     }
 }
 
 @media screen and (min-width:1200px) and (max-width:1299px) {
     #bgBubble {
-        left: calc(38% - 1.2vw);
+        left: calc(35% - 1.2vw);
     }
 }
 
 @media screen and (min-width:1100px) and (max-width:1199px) {
     #bgBubble {
-        left: calc(38% - 1.5vw);
+        left: calc(35% - 1.5vw);
     }
 }
 
