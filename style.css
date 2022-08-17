@@ -99,14 +99,14 @@ body {
         filter: contrast(150%), brightness(100%);
     }
 
-#bubble2 {
+#bubble3 {
     background-color: hsl(0, 0%, 12%) ;
     transform: translateY(0%);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
         0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-#bubble2 > span {
+#bubble3 > span {
     opacity:1;
 }
 
@@ -136,81 +136,88 @@ body {
     transform: translateX(-.25vw);
 }
 
+/*left percentage per icon;
+home: 11%;
+projects:36%;
+about:
+contact: 
+*/
+
 @media screen and (min-width:1500px) {
     #bgBubble {
-        left: calc(36% - .59vw);
+        left: calc(66% - .59vw);
     }
 }
 
 @media screen and (min-width:1400px) and (max-width:1499px) {
     #bgBubble {
-        left: calc(36% - .7vw);
+        left: calc(66% - .7vw);
     }
 }
 
 @media screen and (min-width:1300px) and (max-width:1399px) {
     #bgBubble {
-        left: calc(36% - .95vw);
+        left: calc(66% - .95vw);
     }
 }
 
 @media screen and (min-width:1200px) and (max-width:1299px) {
     #bgBubble {
-        left: calc(36% - 1.2vw);
+        left: calc(66% - 1.2vw);
     }
 }
 
 @media screen and (min-width:1100px) and (max-width:1199px) {
     #bgBubble {
-        left: calc(36% - 1.5vw);
+        left: calc(66% - 1.5vw);
     }
 }
 
 @media screen and (min-width:1000px) and (max-width:1099px) {
     #bgBubble {
-        left: calc(11% - 1.8vw);
+        left: calc(66% - 1.8vw);
     }
 }
 
 @media screen and (min-width:900px) and (max-width:999px) {
     #bgBubble {
-        left: calc(11% - 2vw);
+        left: calc(66% - 2vw);
     }
 }
 
 @media screen and (min-width:800px) and (max-width:899px) {
     #bgBubble {
-        left: calc(11% - 2.4vw);
+        left: calc(66% - 2.4vw);
     }
 }
 
 @media screen and (min-width:700px) and (max-width:799px) {
     #bgBubble {
-        left: calc(11% - 2.9vw);
+        left: calc(66% - 2.9vw);
     }
 }
 
 @media screen and (min-width:600px) and (max-width:699px) {
     #bgBubble {
-        left: calc(11% - 3.5vw);
+        left: calc(66% - 3.5vw);
     }
 }
 
 @media screen and (min-width:500px) and (max-width:599px) {
     #bgBubble {
-        left: calc(11% - 4.1vw);
+        left: calc(66% - 4.1vw);
     }
 }
 
 @media screen and (min-width:400px) and (max-width:499px) {
     #bgBubble {
-        left: calc(9% - 5vw);
+        left: calc(63% - 5vw);
     }
 }
 
 @media screen and (min-width:320px) and (max-width:399px) {
     #bgBubble {
-        left: calc(9% - 5.4vw);
+        left: calc(63% - 5.4vw);
     }
 }
 
@@ -243,11 +250,11 @@ body {
             filter:contrast(150%), brightness(100%);
         }
 
-   #menu2{
+   #menu3{
     opacity:0;
    }
 
-   #menu2:hover{
+   #menu3:hover{
     cursor: default;
    }
 
