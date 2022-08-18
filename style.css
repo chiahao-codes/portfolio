@@ -37,7 +37,7 @@ body {
 
 
     .main {
-        color: hsl(50, 80%, 11%);
+        color: yellow;
         filter:contrast(150%);
         position: absolute;
         top: 50%;
