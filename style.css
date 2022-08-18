@@ -205,7 +205,7 @@ contact:
 
 @media screen and (min-width:500px) and (max-width:599.99px) {
     #bgBubble {
-        left: calc(61% - 5.5vw);
+        left: calc(61% - 5vw);
     }
 }
 
