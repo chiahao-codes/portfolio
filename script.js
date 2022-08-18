@@ -12,7 +12,7 @@ a href= "contact.html" target="_self">
 
 function move(id, position) {
   timeLine
-    to("#bgBubble", { duration: 0.15, bottom: "-40%", ease: "ease-out" }, 0)
+    .to("#bgBubble", { duration: 0.15, bottom: "-40%", ease: "ease-out" }, 0)
       .to(
         "#bubble1",
         { duration: 0.1, y: "155%", boxShadow: "none", ease: "ease-out" },
