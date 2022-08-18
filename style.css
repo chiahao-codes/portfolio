@@ -163,7 +163,7 @@ contact:86.2
 
 @media screen and (min-width:1200px) and (max-width:1299.99px) {
     #bgBubble {
-        left: calc(11% - 1.2vw);
+        left: calc(11% - 1vw);
     }
 }
 
