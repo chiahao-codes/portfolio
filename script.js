@@ -1,5 +1,15 @@
 let timeLine = gsap.timeline();
 
+/**
+ * 
+a href="index.html" target="_self">
+a href= "projects.html" target="_self">
+a href= "about.html" target="_self">
+a href= "contact.html" target="_self">
+ */
+
+
+
 function move(id, position) {
   timeLine
     to("#bgBubble", { duration: 0.15, bottom: "-40%", ease: "ease-out" }, 0)
