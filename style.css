@@ -145,79 +145,79 @@ contact:
 
 @media screen and (min-width:1500px) {
     #bgBubble {
-        left: calc(92% - .59vw);
+        left: calc(90% - .59vw);
     }
 }
 
 @media screen and (min-width:1400px) and (max-width:1499.99px) {
     #bgBubble {
-        left: calc(92% - .7vw);
+        left: calc(90% - .7vw);
     }
 }
 
 @media screen and (min-width:1300px) and (max-width:1399.99px) {
     #bgBubble {
-        left: calc(92% - .95vw);
+        left: calc(90% - .95vw);
     }
 }
 
 @media screen and (min-width:1200px) and (max-width:1299.99px) {
     #bgBubble {
-        left: calc(92% - 1.2vw);
+        left: calc(90% - 1.2vw);
     }
 }
 
 @media screen and (min-width:1100px) and (max-width:1199.99px) {
     #bgBubble {
-        left: calc(92% - 1.3vw);
+        left: calc(90% - 1.3vw);
     }
 }
 
 @media screen and (min-width:1000px) and (max-width:1099.99px) {
     #bgBubble {
-        left: calc(92% - 1.6vw);
+        left: calc(90% - 1.6vw);
     }
 }
 
 @media screen and (min-width:900px) and (max-width:999.99px) {
     #bgBubble {
-        left: calc(92% - 2vw);
+        left: calc(90% - 2vw);
     }
 }
 
 @media screen and (min-width:800px) and (max-width:899.99px) {
     #bgBubble {
-        left: calc(92% - 2.4vw);
+        left: calc(90% - 2.4vw);
     }
 }
 
 @media screen and (min-width:700px) and (max-width:799.99px) {
     #bgBubble {
-        left: calc(92% - 2.9vw);
+        left: calc(90% - 2.9vw);
     }
 }
 
 @media screen and (min-width:600px) and (max-width:699.99px) {
     #bgBubble {
-        left: calc(92% - 3.7vw);
+        left: calc(90% - 3.7vw);
     }
 }
 
 @media screen and (min-width:500px) and (max-width:599.99px) {
     #bgBubble {
-        left: calc(92% - 5vw);
+        left: calc(90% - 5vw);
     }
 }
 
 @media screen and (min-width:400px) and (max-width:499.99px) {
     #bgBubble {
-        left: calc(92% - 6.2vw);
+        left: calc(90% - 6.2vw);
     }
 }
 
 @media screen and (min-width:320px) and (max-width:399.99px) {
     #bgBubble {
-        left: calc(92% - 7.3vw);
+        left: calc(90% - 7.3vw);
     }
 }
 
