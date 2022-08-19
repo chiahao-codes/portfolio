@@ -1,13 +1,22 @@
 let timeLine = gsap.timeline();
 let bgBubble = document.getElementById("bgBubble");
 let menu1 = document.getElementById("menu1");
-let viewport = window.innerWidth;
-console.log(`Viewport width:${viewport}`);
+let viewport;
+
+function getViewPort() {
+  viewport = window.innerWidth;
+  console.log(`Viewport width:${viewport}`);
+}
 
 window.addEventListener("load", () => {
   menu1.style.opacity = 0;
   menu1.style.cursor = "pointer";
   move(1, "11%");
+  getViewPort();
+})
+
+window.addEventListener("change", () => {
+  getViewPort();
 })
 
 /**
@@ -74,7 +83,8 @@ function move(id, position) {
       `#menu${id}`,
       { duration: 0.1, cursor: "default", ease: "ease-out" },
       "-=0.1"
-    );
+  )
+  .then(mediaQ(bgBubble,))
 
   // restore the other menu element opacity to 1, cursor to pointer;
   let menuIds = [1, 2, 3, 4];
