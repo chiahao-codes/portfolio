@@ -16,13 +16,16 @@ window.addEventListener("load", () => {
 })
 
 
-let viewportCheck = window.matchMedia("max-width:0px");
+let viewportCheck = window.matchMedia("max-width:100px");
 
-viewportCheck.addEventListener("change", () => {
-getViewPort();
-console.log(`Viewport width:${viewport}`);
-})
-
+viewportCheck.onchange = (e) => {
+  if (e.matches) {
+    console.log(`Viewport is 100px`);
+  } else {
+    getViewPort();
+    console.log(`Viewport width:${viewport}`);
+  }
+}
 /**
  * 
 a href="index.html" target="_self">
