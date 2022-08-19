@@ -4,8 +4,7 @@ let menu1 = document.getElementById("menu1");
 let viewport;
 
 function getViewPort() {
-  viewport = window.innerWidth;
-  console.log(`Viewport width:${viewport}`);
+ return viewport = window.innerWidth;
 }
 
 window.addEventListener("load", () => {
@@ -13,10 +12,15 @@ window.addEventListener("load", () => {
   menu1.style.cursor = "pointer";
   move(1, "11%");
   getViewPort();
+  console.log(`Viewport width:${viewport}`);
 })
 
-window.addEventListener("change", () => {
-  getViewPort();
+
+let viewportCheck = window.matchMedia("max-width:0px");
+
+viewportCheck.addEventListener("change", () => {
+getViewPort();
+console.log(`Viewport width:${viewport}`);
 })
 
 /**
