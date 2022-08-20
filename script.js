@@ -1,6 +1,7 @@
 let timeLine = gsap.timeline();
 let bgBubble = document.getElementById("bgBubble");
 let menuElements = document.getElementsByClassName("menuElement");
+console.log(menuElements);
 let viewport;
 
 function getViewPort() {
@@ -37,11 +38,13 @@ function giveMenuIdClickEvent() {
   let percent = ["11%", "36%", "61%", "86.2%"];
   for (let i = 1; i <= menuElements.length; i++) {
     let id = i.toString();
-    menuElements[i].addEventListener("click", () => {
+    /**
+     *  menuElements[i].addEventListener("click", () => {
       let percentage = percent[i - 1];
       move(id, percentage);
       mediaQ(bgBubble, viewport, percentage);
     });
+     */
   }
 }
 
