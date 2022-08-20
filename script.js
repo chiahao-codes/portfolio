@@ -12,13 +12,14 @@ window.addEventListener("load", () => {
   menu1.style.cursor = "pointer"; */
   getViewPort();
   console.log(`Viewport width:${viewport}`);
-  move(1, "11%");
+  mediaQ(bgBubble, viewport, "11%");
 })
 
 
 window.addEventListener("resize", () => {
   getViewPort();
   console.log(`Viewport width:${viewport}`);
+  mediaQ(bgBubble, viewport, "11%");
 });
 
 
@@ -87,7 +88,6 @@ function move(id, position) {
       { duration: 0.1, cursor: "default", ease: "ease-out" },
       "-=0.1"
   )
-  .then(mediaQ(bgBubble,viewport, position))
 
   // restore the other menu element opacity to 1, cursor to pointer;
   let menuIds = [1, 2, 3, 4];

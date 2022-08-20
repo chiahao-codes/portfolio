@@ -152,19 +152,19 @@ body {
         cursor: pointer;
     }
 
+  .menuElement>i {
+      color: white;
+      opacity: .55;
+  }
 
+  .menuElement:hover {
+      cursor: pointer;
+      opacity: 1;
+      filter: contrast(150%), brightness(100%);
+  }
 
 /*
-        .menuElement>i {
-            color: white;
-            opacity: .55;
-        }
-    
-        .menuElement:hover {
-            cursor: pointer;
-            opacity: 1;
-            filter: contrast(150%), brightness(100%);
-        }
+      
 
 
 #menu1 {
