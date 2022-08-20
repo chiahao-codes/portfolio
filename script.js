@@ -8,18 +8,20 @@ function getViewPort() {
 }
 
 window.addEventListener("load", () => {
-  menu1.style.opacity = 0;
-  menu1.style.cursor = "pointer";
-  move(1, "11%");
+  /**menu1.style.opacity = 0;
+  menu1.style.cursor = "pointer"; */
   getViewPort();
   console.log(`Viewport width:${viewport}`);
+  move(1, "11%");
 })
 
 
 window.addEventListener("resize", () => {
   getViewPort();
   console.log(`Viewport width:${viewport}`);
-})
+});
+
+
 /**
  * 
 a href="index.html" target="_self">
@@ -85,13 +87,18 @@ function move(id, position) {
       { duration: 0.1, cursor: "default", ease: "ease-out" },
       "-=0.1"
   )
-  .then(mediaQ(bgBubble,))
+  .then(mediaQ(bgBubble,viewport, position))
 
   // restore the other menu element opacity to 1, cursor to pointer;
   let menuIds = [1, 2, 3, 4];
   for (let i of menuIds) {
     if (i!== id) {
       timeLine.to(`#menu${i} > i`, { duration: 0.15, opacity: .55, ease: "ease-out" }, "-=0.1")
+      timeLine.to(
+        `#menu${i}:hover`,
+        { duration: 0.15, opacity: 1, ease: "ease-out" },
+        "-=0.1"
+      );
     }
   }
 }
