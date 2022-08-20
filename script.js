@@ -1,6 +1,6 @@
 let timeLine = gsap.timeline();
 let bgBubble = document.getElementById("bgBubble");
-let menu1 = document.getElementById("menu1");
+let menuElements = document.getElementsByClassName("menuElement");
 let viewport;
 
 function getViewPort() {
@@ -19,12 +19,43 @@ window.addEventListener("load", () => {
 window.addEventListener("resize", () => {
   getViewPort();
   console.log(`Viewport width:${viewport}`);
-  mediaQ(bgBubble, viewport, "11%");
+  // iterate through menuElements and check ids;
+  for (let menuEl of menuElements) {
+    let menuId = menuEl.id;
+    if (menuId === "1") {
+      mediaQ(bgBubble, viewport, "11%");
+    } else if (menuId === "2") {
+      mediaQ(bgBubble, viewport, "36%");
+    } else if (menuId === "3") {
+      mediaQ(bgBubble, viewport, "61%");
+    } else{
+      mediaQ(bgBubble, viewport, "86.2%");
+    }
+  }
 });
 
+menuElements.addEventListener("click", () => {
+  if (menuElements.namedItem("1")) {
+    move("1", "11%");
+    mediaQ(bgBubble, viewport, "11%");
+  } else if (menuElements.namedItem("2")) {
+    move("2", "36%");
+    mediaQ(bgBubble, viewport, "36%");
+  } else if (menuElements.namedItem("3")) {
+    move("3", "61%");
+    mediaQ(bgBubble, viewport, "61%");
+  } else {
+    move("4", "86.2%");
+    mediaQ(bgBubble, viewport, "86.2%");
+  }
+})
 
 /**
  * 
+ * home: 11;
+projects:36;
+about:61
+contact:86.2 
 a href="index.html" target="_self">
 a href= "projects.html" target="_self">
 a href= "about.html" target="_self">
@@ -82,18 +113,17 @@ function move(id, position) {
       { duration: 0.15, y: "0%", opacity: 1, ease: "ease-out" },
       "-=0.1"
     )
-    .to(`#menu${id}`, { duration: 0.15, opacity: 0, ease: "ease-out" }, "-=0.1")
+    .to(`#${id}`, { duration: 0.15, opacity: 0, ease: "ease-out" }, "-=0.1")
     .to(
-      `#menu${id}`,
-      { duration: 0.1, cursor: "default", ease: "ease-out" },
-      "-=0.1"
-  )
+      `#${id}`,{ duration: 0.1, cursor: "default", ease: "ease-out" },"-=0.1")
 
-  // restore the other menu element opacity to 1, cursor to pointer;
+  // restore the other menu element opacity to .55 and hover effect to 1, cursor to pointer;
   let menuIds = [1, 2, 3, 4];
   for (let i of menuIds) {
+    i = i.toString();
     if (i!== id) {
-      timeLine.to(`#menu${i} > i`, { duration: 0.15, opacity: .55, ease: "ease-out" }, "-=0.1")
+      timeLine.to(`#${i}`, { duration: 0.15, opacity: .55, ease: "ease-out" }, 0)
+      document.styleSheets[0].insertRule(`#${i}:hover{opacity:1; filter:contrast(150%), brightness(100%)}`)
     }
     console.log(i);
   }
