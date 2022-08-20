@@ -171,98 +171,13 @@ function mediaQ(bgB, view, position) {
      bgB.style.marginLeft = `calc(${position} - 5vw)`;
   }
    if (view >= 400 && view <= 499.99) {
-     bgB.style.marginLeft = `calc(${position} - 5.99vw)`;
+     bgB.style.marginLeft = `calc(${position} - 6vw)`;
   }
    if (view >= 320 && view <= 399.99) {
-     bgB.style.marginLeft = `calc(${position} - 6.2vw)`;
+     bgB.style.marginLeft = `calc(${position} - 6.3vw)`;
   }
 }
 
-  /** Then, in a separate function, run this:
-   * /*left percentage per icon;
-home: 11;
-projects:36;
-about:61
-contact:86.2 
 
-   * 
-   *  screen and (min-width:1500px) {
-    #bgBubble {
-        left: calc(11% - .59vw);
-    }
-}
-
- screen and (min-width:1400px) and (max-width:1499.99px) {
-    #bgBubble {
-        left: calc(11% - .7vw);
-    }
-}
-
- screen and (min-width:1300px) and (max-width:1399.99px) {
-    #bgBubble {
-        left: calc(11% - .91vw);
-    }
-}
-
- screen and (min-width:1200px) and (max-width:1299.99px) {
-    #bgBubble {
-        left: calc(11% - 1vw);
-    }
-}
-
- screen and (min-width:1100px) and (max-width:1199.99px) {
-    #bgBubble {
-        left: calc(11% - 1.3vw);
-    }
-}
-
- screen and (min-width:1000px) and (max-width:1099.99px) {
-    #bgBubble {
-        left: calc(11% - 1.6vw);
-    }
-}
-
- screen and (min-width:900px) and (max-width:999.99px) {
-    #bgBubble {
-        left: calc(11% - 2vw);
-    }
-}
-
- screen and (min-width:800px) and (max-width:899.99px) {
-    #bgBubble {
-        left: calc(11% - 2.4vw);
-    }
-}
-
- screen and (min-width:700px) and (max-width:799.99px) {
-    #bgBubble {
-        left: calc(11% - 2.9vw);
-    }
-}
-
- screen and (min-width:600px) and (max-width:699.99px) {
-    #bgBubble {
-        left: calc(11% - 3.7vw);
-    }
-}
-
- screen and (min-width:500px) and (max-width:599.99px) {
-    #bgBubble {
-        left: calc(11% - 5vw);
-    }
-}
-
- screen and (min-width:400px) and (max-width:499.99px) {
-    #bgBubble {
-        left: calc(11% - 6.2vw);
-    }
-}
-
- screen and (min-width:320px) and (max-width:399.99px) {
-    #bgBubble {
-        left: calc(11% - 7.3vw);
-    }
-}
-   */
 
 
