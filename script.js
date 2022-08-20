@@ -174,7 +174,7 @@ function mediaQ(bgB, view, position) {
      bgB.style.marginLeft = `calc(${position} - 6.2vw)`;
   }
    if (view >= 320 && view <= 399.99) {
-     bgB.style.marginLeft = `calc(${position} - 7.3vw)`;
+     bgB.style.marginLeft = `calc(${position} - 6.6vw)`;
   }
 }
 
