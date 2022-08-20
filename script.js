@@ -1,57 +1,60 @@
 let timeLine = gsap.timeline();
 let bgBubble = document.getElementById("bgBubble");
 let menuElements = document.getElementsByClassName("menuElement");
-console.log(menuElements);
+
 let viewport;
+let currBgBubblePercent;
+
+console.log(menuElements);
 
 function getViewPort() {
  return viewport = window.innerWidth;
 }
 
 window.addEventListener("load", () => {
-  getViewPort();
+  currBgBubblePercent = "11%";
+  mediaQ(bgBubble, viewport, currBgBubblePercent);
   giveMenuIdClickEvent();
-  mediaQ(bgBubble, viewport, "11%");
+  
 })
 
 
 window.addEventListener("resize", () => {
   getViewPort();
   console.log(`Viewport width:${viewport}`);
-  // iterate through menuElements and check ids;
-  for (let menuEl of menuElements) {
-    let menuId = menuEl.id;
-    if (menuId === "1") {
-      mediaQ(bgBubble, viewport, "11%");
-    } else if (menuId === "2") {
-      mediaQ(bgBubble, viewport, "36%");
-    } else if (menuId === "3") {
-      mediaQ(bgBubble, viewport, "61%");
-    } else{
-      mediaQ(bgBubble, viewport, "86.2%");
-    }
+
+  if (currBgBubblePercent === "11%") {
+    //turn off opacity of menuElements;
+    menuElements[0].style.opacity = "0";
+    mediaQ(bgBubble, viewport, currBgBubblePercent);
+  } else if (currBgBubblePercent === "36%") {
+    menuElements[1].style.opacity = "0";
+    mediaQ(bgBubble, viewport, currBgBubblePercent);
+  } else if (currBgBubblePercent === "62%") {
+    menuElements[2].style.opacity = "0";
+    mediaQ(bgBubble, viewport, currBgBubblePercent);
+  } else {
+    menuElements[3].style.opacity = "0";
+    mediaQ(bgBubble, viewport, currBgBubblePercent);
   }
+  
 });
 
 
 function giveMenuIdClickEvent() {
   let percent = ["11%", "36%", "61%", "86.2%"];
-  for (let i = 1; i <= menuElements.length; i++) {
+  for (let i = 0; i < menuElements.length; i++) {
     let id = i.toString();
+    menuElements[i].addEventListener("click", () => {
+      alert("Hi...");
+    });
     /**
-     *  menuElements[i].addEventListener("click", () => {
-      let percentage = percent[i - 1];
+     *  let percentage = percent[i - 1];
       move(id, percentage);
       mediaQ(bgBubble, viewport, percentage);
-    });
      */
   }
 }
-
-
-
-  
-
 
 /**
  * 
@@ -132,7 +135,6 @@ function move(id, position) {
   }
 }
 
-  
 
 function mediaQ(bgB, view, position) {
   if (view >= 1500) {
