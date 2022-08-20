@@ -8,9 +8,8 @@ function getViewPort() {
 }
 
 window.addEventListener("load", () => {
-  /**menu1.style.opacity = 0;
-  menu1.style.cursor = "pointer"; */
   getViewPort();
+  giveMenuIdClickEvent();
   console.log(`Viewport width:${viewport}`);
   mediaQ(bgBubble, viewport, "11%");
 })
@@ -34,21 +33,23 @@ window.addEventListener("resize", () => {
   }
 });
 
-menuElements.addEventListener("click", () => {
-  if (menuElements.namedItem("1")) {
-    move("1", "11%");
-    mediaQ(bgBubble, viewport, "11%");
-  } else if (menuElements.namedItem("2")) {
-    move("2", "36%");
-    mediaQ(bgBubble, viewport, "36%");
-  } else if (menuElements.namedItem("3")) {
-    move("3", "61%");
-    mediaQ(bgBubble, viewport, "61%");
-  } else {
-    move("4", "86.2%");
-    mediaQ(bgBubble, viewport, "86.2%");
+
+function giveMenuIdClickEvent() {
+  let percent = ["11%", "36%", "61%", "86.2%"];
+  for (let i = 1; i <= menuElements.length; i++) {
+    let id = i.toString();
+    menuElements.namedItem(id).addEventListener("click", () => {
+      let percentage = percent[i - 1];
+      move(id, percentage);
+      mediaQ(bgBubble, viewport, percentage);
+    });
   }
-})
+}
+
+
+
+  
+
 
 /**
  * 
