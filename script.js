@@ -44,15 +44,12 @@ window.addEventListener("resize", () => {
 function giveMenuIdClickEvent() {
   let percent = ["11%", "36%", "61%", "86.2%"];
   for (let i = 0; i < menuElements.length; i++) {
-    let id = i.toString();
+    let id = (i + 1).toString();
     menuElements[i].addEventListener("click", () => {
-      alert("Hi...");
+      getViewPort()
+       move(id, percent[i]);
+       mediaQ(bgBubble, viewport, percent[i]);
     });
-    /**
-     *  let percentage = percent[i - 1];
-      move(id, percentage);
-      mediaQ(bgBubble, viewport, percentage);
-     */
   }
 }
 
