@@ -94,12 +94,8 @@ function move(id, position) {
   for (let i of menuIds) {
     if (i!== id) {
       timeLine.to(`#menu${i} > i`, { duration: 0.15, opacity: .55, ease: "ease-out" }, "-=0.1")
-      timeLine.to(
-        `#menu${i}:hover`,
-        { duration: 0.15, opacity: 1, ease: "ease-out" },
-        "-=0.1"
-      );
     }
+    console.log(i);
   }
 }
 
