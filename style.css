@@ -157,7 +157,7 @@ body {
       opacity: .55;
   }
 
-  .menuElement:hover {
+  .menuElement > i:hover {
       cursor: pointer;
       opacity: 1;
       filter: contrast(150%), brightness(100%);
