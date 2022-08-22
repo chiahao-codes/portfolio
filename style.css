@@ -115,7 +115,7 @@ body {
     width: 100%;
     height:100px ;
     position: absolute;
-    bottom:67px ;
+    bottom:calc(67px + .025vmin) ;
 }
 
 
@@ -132,7 +132,7 @@ body {
     width: calc(70px + 0.025vmin);
     height: calc(70px + .025vmin);
     border-radius: 50%;
-    bottom: -60px;
+    bottom: calc(-60px + .025vmin);
     transform: translateX(-.25vw);
 }
 
