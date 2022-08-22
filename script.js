@@ -116,9 +116,9 @@ function move(id, position) {
       { duration: 0.15, y: "0%", opacity: 1, ease: "ease-out" },
       "-=0.1"
     )
-    .to(`${id}`, { duration: 0.15, opacity: 0, ease: "ease-out" }, "-=0.1")
+    .to(`#menuWrapper >${id}`, { duration: 0.15, opacity: 0, ease: "ease-out" }, "-=0.1")
     .to(
-      `${id}`,{ duration: 0.1, cursor: "default", ease: "ease-out" },"-=0.1")
+      `#menuWrapper >${id}`,{ duration: 0.1, cursor: "default", ease: "ease-out" },"-=0.1")
 
 }
 
@@ -127,8 +127,8 @@ function move(id, position) {
   for (let i of menuIds) {
     i = i.toString();
     if (i!== id) {
-      timeLine.to(`${i}`, { duration: 0.15, opacity: .55, ease: "ease-out" }, 0)
-      document.styleSheets[0].insertRule(`${i}:hover{opacity:1; filter:contrast(150%), brightness(100%)}`)
+      timeLine.to(`#menuWrapper >${i}`, { duration: 0.15, opacity: .55, ease: "ease-out" }, 0)
+      document.styleSheets[0].insertRule(`#menuWrapper >${i}:hover{opacity:1; filter:contrast(150%), brightness(100%)}`)
     }
     console.log(i);
   }
