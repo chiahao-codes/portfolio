@@ -129,8 +129,8 @@ body {
 #bgBubble {
     position: absolute;
     background-color: black;
-    width: 70px;
-    height: 70px;
+    width: calc(70px + 0.025vmin);
+    height: calc(70px + .025vmin);
     border-radius: 50%;
     bottom: -60px;
     transform: translateX(-.25vw);
