@@ -90,14 +90,14 @@ function move(id, position) {
       0
     )
     .to(".icon", { duration: 0.05, opacity: 0, ease: "ease-out" }, 0)
-    .to(
+    /** .to(
       "#bgBubble",
       { duration: 0.2, left: position, ease: "ease-in-out" },
       0.1
-    )
+  )*/
     .to(
       "#bgBubble",
-      { duration: 0.15, bottom: "-50px", ease: "ease-out" },
+      { duration: 0.15, bottom: "calc(-50px + .025vmin)", ease: "ease-out" },
       "-=0.2"
     )
     .to(
@@ -116,7 +116,7 @@ function move(id, position) {
       `#bubble${id}> span`,
       { duration: 0.15, y: "0%", opacity: 1, ease: "ease-out" },
       "-=0.1"
-    )
+    );
 }
 
 
