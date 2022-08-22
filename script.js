@@ -47,7 +47,7 @@ function giveMenuIdClickEvent() {
     let id = (i + 1).toString();
     menuElements[i].addEventListener("click", () => {
       getViewPort()
-       move(id, percent[i]);
+       move(id);
        mediaQ(bgBubble, viewport, percent[i]);
     });
   }
@@ -65,7 +65,7 @@ a href= "about.html" target="_self">
 a href= "contact.html" target="_self">
  */
 
-function move(id, position) {
+function move(id) {
   
   timeLine
     .to("#bgBubble", { duration: 0.15, bottom: "-40%", ease: "ease-out" }, 0)
