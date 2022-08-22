@@ -66,6 +66,7 @@ a href= "contact.html" target="_self">
  */
 
 function move(id, position) {
+  
   timeLine
     .to("#bgBubble", { duration: 0.15, bottom: "-40%", ease: "ease-out" }, 0)
     .to(
@@ -123,10 +124,11 @@ function move(id, position) {
 }
 
  // restore the other menu element opacity to .55 and hover effect to 1, cursor to pointer;
-  let menuIds = [1, 2, 3, 4];
+let menuIds = [1, 2, 3, 4];
+let menuId = id;
   for (let i of menuIds) {
     i = i.toString();
-    if (i!== id) {
+    if (i!== menuId) {
       timeLine.to(`#menuWrapper >${i}`, { duration: 0.15, opacity: .55, ease: "ease-out" }, 0)
       document.styleSheets[0].insertRule(`#menuWrapper >${i}:hover{opacity:1; filter:contrast(150%), brightness(100%)}`)
     }
