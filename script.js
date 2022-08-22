@@ -134,6 +134,7 @@ function move(id, position) {
   }
 
 function mediaQ(bgB, view, position) {
+  console.log("mediaQ running...")
   if (view >= 1500) {
   bgB.style.marginLeft = `calc(${position} - .59vw)`
   }
