@@ -46,11 +46,11 @@ function giveMenuIdClickEvent() {
   for (let i = 0; i < menuElements.length; i++) {
     let id = (i + 1).toString();
     menuElements[i].addEventListener("click", () => {
-      getViewPort()
-       move(id);
-       mediaQ(bgBubble, viewport, percent[i]);
+      getViewPort();
+      move(id, percent[i]);
     });
   }
+  mediaQ(bgBubble, viewport, percent[i]);
 }
 
 /**
@@ -65,7 +65,7 @@ a href= "about.html" target="_self">
 a href= "contact.html" target="_self">
  */
 
-function move(id) {
+function move(id, position) {
   
   timeLine
     .to("#bgBubble", { duration: 0.15, bottom: "-40%", ease: "ease-out" }, 0)
@@ -90,14 +90,15 @@ function move(id) {
       0
     )
     .to(".icon", { duration: 0.05, opacity: 0, ease: "ease-out" }, 0)
-    /** .to(
+    /***/
+    .to(
       "#bgBubble",
       { duration: 0.2, left: position, ease: "ease-in-out" },
       0.1
-  )*/
+    )
     .to(
       "#bgBubble",
-      { duration: 0.15, bottom: "calc(-50px + .025vmin)", ease: "ease-out" },
+      { duration: 0.15, bottom: "-50px", ease: "ease-out" },
       "-=0.2"
     )
     .to(
