@@ -117,26 +117,33 @@ function move(id, position) {
       { duration: 0.15, y: "0%", opacity: 1, ease: "ease-out" },
       "-=0.1"
     )
-    .to(`#menuWrapper >${id}`, { duration: 0.15, opacity: 0, ease: "ease-out" }, "-=0.1")
+}
+
+
+  
+function restoreMenuElems() {
+  /**
+   *  .to(`#menuWrapper >${id}`, { duration: 0.15, opacity: 0, ease: "ease-out" }, "-=0.1")
     .to(
       `#menuWrapper >${id}`,{ duration: 0.1, cursor: "default", ease: "ease-out" },"-=0.1")
 
-}
 
- // restore the other menu element opacity to .55 and hover effect to 1, cursor to pointer;
-let menuIds = [1, 2, 3, 4];
-let menuId = id;
+       // restore the other menu element opacity to .55 and hover effect to 1, cursor to pointer;
+let menuIds = [1, 2, 3, 4]; 
+
   for (let i of menuIds) {
     i = i.toString();
-    if (i!== menuId) {
+    if (i!== id) {
       timeLine.to(`#menuWrapper >${i}`, { duration: 0.15, opacity: .55, ease: "ease-out" }, 0)
       document.styleSheets[0].insertRule(`#menuWrapper >${i}:hover{opacity:1; filter:contrast(150%), brightness(100%)}`)
     }
     console.log(i);
-  }
+}
+   */
+}
 
 function mediaQ(bgB, view, position) {
-  console.log("mediaQ running...")
+  console.log(`view:${view}, position:${position}`);
   if (view >= 1500) {
   bgB.style.marginLeft = `calc(${position} - .59vw)`
   }
