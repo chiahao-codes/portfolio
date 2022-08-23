@@ -33,6 +33,7 @@ window.addEventListener("resize", () => {
 
 
 function giveMenuIdClickEvent() {
+  console.log("giveMenuIdClickEvent()")
   for (let i = 0; i < menuElements.length; i++) {
     let id = (i + 1).toString();
     menuElements[i].addEventListener("click", () => { 
@@ -42,11 +43,6 @@ function giveMenuIdClickEvent() {
 }
 
 /**
- * 
- * home: 11;
-projects:36;
-about:61
-contact:86.2 
 a href="index.html" target="_self">
 a href= "projects.html" target="_self">
 a href= "about.html" target="_self">
@@ -54,8 +50,8 @@ a href= "contact.html" target="_self">
  */
 
 function move(id, position) {
+  console.log("move()")
   currBgBubblePercent = position;
-
   timeLine
     .to(
       "#bgBubble",
@@ -117,6 +113,7 @@ function move(id, position) {
 
   
 function turnOffClickedMenuElem(currBgBubblePercent) {
+  console.log("turnOffClickedMenuElem()");
   for (let i = 0; i < menuElements.length; i++) {
     if (percentMap[i] === currBgBubblePercent) {
       menuElements[i].style.opacity = "0";
@@ -128,42 +125,11 @@ function turnOffClickedMenuElem(currBgBubblePercent) {
 }
 
   /**
-   * 
-   * 
-   *  if (currBgBubblePercent === "11%") {
-     //turn off opacity of menuElements;
-     menuElements[0].style.opacity = "0";
-     mediaQ(bgBubble, viewport, currBgBubblePercent);
-   } else if (currBgBubblePercent === "36%") {
-     menuElements[1].style.opacity = "0";
-     mediaQ(bgBubble, viewport, currBgBubblePercent);
-   } else if (currBgBubblePercent === "62%") {
-     menuElements[2].style.opacity = "0";
-     mediaQ(bgBubble, viewport, currBgBubblePercent);
-   } else {
-     menuElements[3].style.opacity = "0";
-     mediaQ(bgBubble, viewport, currBgBubblePercent);
-   }
-   *  .to(`#menuWrapper >${id}`, { duration: 0.15, opacity: 0, ease: "ease-out" }, "-=0.1")
-    .to(
-      `#menuWrapper >${id}`,{ duration: 0.1, cursor: "default", ease: "ease-out" },"-=0.1")
-
-
-       // restore the other menu element opacity to .55 and hover effect to 1, cursor to pointer;
-let menuIds = [1, 2, 3, 4]; 
-
-  for (let i of menuIds) {
-    i = i.toString();
-    if (i!== id) {
-      timeLine.to(`#menuWrapper >${i}`, { duration: 0.15, opacity: .55, ease: "ease-out" }, 0)
-      document.styleSheets[0].insertRule(`#menuWrapper >${i}:hover{opacity:1; filter:contrast(150%), brightness(100%)}`)
-    }
-    console.log(i);
-}
    */
 
 
 function mediaQ(bgB, view, position) {
+  console.log("mediaQ()")
   console.log(`view:${view}, position:${position}`);
   
   if (view >= 1500) {
