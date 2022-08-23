@@ -22,22 +22,7 @@ window.addEventListener("load", () => {
 window.addEventListener("resize", () => {
   getViewPort();
   console.log(`Viewport width:${viewport}`);
-
-  if (currBgBubblePercent === "11%") {
-    //turn off opacity of menuElements;
-    menuElements[0].style.opacity = "0";
-    mediaQ(bgBubble, viewport, currBgBubblePercent);
-  } else if (currBgBubblePercent === "36%") {
-    menuElements[1].style.opacity = "0";
-    mediaQ(bgBubble, viewport, currBgBubblePercent);
-  } else if (currBgBubblePercent === "62%") {
-    menuElements[2].style.opacity = "0";
-    mediaQ(bgBubble, viewport, currBgBubblePercent);
-  } else {
-    menuElements[3].style.opacity = "0";
-    mediaQ(bgBubble, viewport, currBgBubblePercent);
-  }
-  
+  restoreMenuElems(currBgBubblePercent);
 });
 
 
@@ -97,12 +82,12 @@ function move(id, position) {
     .to(".icon", { duration: 0.05, opacity: 0, ease: "ease-out" }, 0)
     .to(
       "#bgBubble",
-      { duration: 0.3, left: position, ease: "ease-in-out" },
+      { duration: 0.35, left: position, ease: "ease-in-out" },
       0.1
     )
     .to(
       "#bgBubble",
-      { duration: 0.2, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
+      { duration: 0.25, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
       "-=0.2"
     )
     .to(
@@ -122,14 +107,29 @@ function move(id, position) {
       { duration: 0.15, y: "0%", opacity: 1, ease: "ease-out" },
       "-=0.1"
   );
+
+  restoreMenuElems(currBgBubblePercent)
   
-  getViewPort();
-  mediaQ(bgBubble, viewport, currBgBubblePercent);
 }
 
 
   
-function restoreMenuElems() {
+function restoreMenuElems(currBgBubblePercent) {
+
+   if (currBgBubblePercent === "11%") {
+     //turn off opacity of menuElements;
+     menuElements[0].style.opacity = "0";
+     mediaQ(bgBubble, viewport, currBgBubblePercent);
+   } else if (currBgBubblePercent === "36%") {
+     menuElements[1].style.opacity = "0";
+     mediaQ(bgBubble, viewport, currBgBubblePercent);
+   } else if (currBgBubblePercent === "62%") {
+     menuElements[2].style.opacity = "0";
+     mediaQ(bgBubble, viewport, currBgBubblePercent);
+   } else {
+     menuElements[3].style.opacity = "0";
+     mediaQ(bgBubble, viewport, currBgBubblePercent);
+   }
   /**
    *  .to(`#menuWrapper >${id}`, { duration: 0.15, opacity: 0, ease: "ease-out" }, "-=0.1")
     .to(
