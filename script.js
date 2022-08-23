@@ -121,7 +121,9 @@ function move(id, position) {
       `#bubble${id}> span`,
       { duration: 0.15, y: "0%", opacity: 1, ease: "ease-out" },
       "-=0.1"
-    );
+  );
+  
+  getViewPort();
   mediaQ(bgBubble, viewport, currBgBubblePercent);
 }
 
