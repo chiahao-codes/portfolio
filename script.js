@@ -3,6 +3,12 @@ let bgBubble = document.getElementById("bgBubble");
 let menuElements = document.getElementsByClassName("menuElement");
 let viewport;
 let currBgBubblePercent;
+let percentMap = {
+  0: "11%",
+  1: "36%",
+  2: "62%",
+  3: "86.2%",
+};
 
 console.log(menuElements);
 
@@ -22,20 +28,17 @@ window.addEventListener("load", () => {
 window.addEventListener("resize", () => {
   getViewPort();
   console.log(`Viewport width:${viewport}`);
-  restoreMenuElems(currBgBubblePercent);
+  turnOffClickedMenuElem(currBgBubblePercent);
 });
 
 
 function giveMenuIdClickEvent() {
-  let percent = ["11%", "36%", "61%", "86.2%"];
   for (let i = 0; i < menuElements.length; i++) {
     let id = (i + 1).toString();
-    menuElements[i].addEventListener("click", () => {
-      getViewPort();
-      move(id, percent[i]);
+    menuElements[i].addEventListener("click", () => { 
+      move(id, percentMap[i]);
     });
   }
-  
 }
 
 /**
@@ -82,12 +85,12 @@ function move(id, position) {
     .to(".icon", { duration: 0.05, opacity: 0, ease: "ease-out" }, 0)
     .to(
       "#bgBubble",
-      { duration: 0.35, left: position, ease: "ease-in-out" },
+      { duration: 0.2, left: position, ease: "ease-in-out" },
       0.1
     )
     .to(
       "#bgBubble",
-      { duration: 0.25, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
+      { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
       "-=0.2"
     )
     .to(
@@ -108,15 +111,26 @@ function move(id, position) {
       "-=0.1"
   );
 
-  restoreMenuElems(currBgBubblePercent)
-  
+  turnOffClickedMenuElem(currBgBubblePercent);
 }
 
 
   
-function restoreMenuElems(currBgBubblePercent) {
+function turnOffClickedMenuElem(currBgBubblePercent) {
+  for (let i = 0; i < menuElements.length; i++) {
+    if (percentMap[i] === currBgBubblePercent) {
+      menuElements[i].style.opacity = "0";
+    } else {
+      menuElements[i].style.opacity = "1";
+    }
+  }
+  mediaQ(bgBubble, viewport, currBgBubblePercent);
+}
 
-   if (currBgBubblePercent === "11%") {
+  /**
+   * 
+   * 
+   *  if (currBgBubblePercent === "11%") {
      //turn off opacity of menuElements;
      menuElements[0].style.opacity = "0";
      mediaQ(bgBubble, viewport, currBgBubblePercent);
@@ -130,7 +144,6 @@ function restoreMenuElems(currBgBubblePercent) {
      menuElements[3].style.opacity = "0";
      mediaQ(bgBubble, viewport, currBgBubblePercent);
    }
-  /**
    *  .to(`#menuWrapper >${id}`, { duration: 0.15, opacity: 0, ease: "ease-out" }, "-=0.1")
     .to(
       `#menuWrapper >${id}`,{ duration: 0.1, cursor: "default", ease: "ease-out" },"-=0.1")
@@ -148,7 +161,7 @@ let menuIds = [1, 2, 3, 4];
     console.log(i);
 }
    */
-}
+
 
 function mediaQ(bgB, view, position) {
   console.log(`view:${view}, position:${position}`);
