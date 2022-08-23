@@ -50,7 +50,7 @@ function giveMenuIdClickEvent() {
       move(id, percent[i]);
     });
   }
-  mediaQ(bgBubble, viewport, percent[i]);
+  
 }
 
 /**
