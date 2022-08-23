@@ -69,7 +69,11 @@ function move(id, position) {
   currBgBubblePercent = position;
 
   timeLine
-    .to("#bgBubble", { duration: 0.15, bottom: "-40%", ease: "ease-out" }, 0)
+    .to(
+      "#bgBubble",
+      { duration: 0.15, bottom: "calc(-40px + .025vmin)", ease: "ease-out" },
+      0
+    )
     .to(
       "#bubble1",
       { duration: 0.1, y: "155%", boxShadow: "none", ease: "ease-out" },
@@ -99,7 +103,7 @@ function move(id, position) {
     )
     .to(
       "#bgBubble",
-      { duration: 0.15, bottom: "-50px", ease: "ease-out" },
+      { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
       "-=0.2"
     )
     .to(
@@ -118,7 +122,7 @@ function move(id, position) {
       `#bubble${id}> span`,
       { duration: 0.15, y: "0%", opacity: 1, ease: "ease-out" },
       "-=0.1"
-  );
+    );
   mediaQ(bgBubble, viewport, currBgBubblePercent);
 }
 
