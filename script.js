@@ -66,7 +66,8 @@ a href= "contact.html" target="_self">
  */
 
 function move(id, position) {
-  
+  currBgBubblePercent = position;
+
   timeLine
     .to("#bgBubble", { duration: 0.15, bottom: "-40%", ease: "ease-out" }, 0)
     .to(
@@ -117,7 +118,8 @@ function move(id, position) {
       `#bubble${id}> span`,
       { duration: 0.15, y: "0%", opacity: 1, ease: "ease-out" },
       "-=0.1"
-    );
+  );
+  mediaQ(bgBubble, viewport, currBgBubblePercent);
 }
 
 
@@ -145,44 +147,45 @@ let menuIds = [1, 2, 3, 4];
 
 function mediaQ(bgB, view, position) {
   console.log(`view:${view}, position:${position}`);
+  bgB.style.position = "relative";
   if (view >= 1500) {
-  bgB.style.marginLeft = `calc(${position} - .59vw)`
+  bgB.style.left = `calc(${position} - .59vw)`
   }
   if (view >= 1400 && view<=1499.99) {
-    bgB.style.marginLeft = `calc(${position} - .7vw)`;
+    bgB.style.left = `calc(${position} - .7vw)`;
   }
   if (view >= 1300 && view <= 1399.99) {
-    bgB.style.marginLeft = `calc(${position} - .91vw)`;
+    bgB.style.left = `calc(${position} - .91vw)`;
   }
   if (view >= 1200 && view <= 1299.99) {
-    bgB.style.marginLeft = `calc(${position} - 1vw)`;
+    bgB.style.left = `calc(${position} - 1vw)`;
   }
   if (view >= 1100 && view <= 1199.99) {
-    bgB.style.marginLeft = `calc(${position} - 1.3vw)`;
+    bgB.style.left = `calc(${position} - 1.3vw)`;
   }
   if (view >= 1000 && view <= 1099.99) {
-    bgB.style.marginLeft = `calc(${position} - 1.6vw)`;
+    bgB.style.left = `calc(${position} - 1.6vw)`;
   }
   if (view >= 900 && view <= 999.99) {
-    bgB.style.marginLeft = `calc(${position} - 2vw)`;
+    bgB.style.left = `calc(${position} - 2vw)`;
   }
   if (view >= 800 && view <= 899.99) {
-    bgB.style.marginLeft = `calc(${position} - 2.4vw)`;
+    bgB.style.left = `calc(${position} - 2.4vw)`;
   }
   if (view >= 700 && view <= 799.99) {
-    bgB.style.marginLeft = `calc(${position} - 2.9vw)`;
+    bgB.style.left = `calc(${position} - 2.9vw)`;
   }
   if (view >= 600 && view <= 699.99) {
-    bgB.style.marginLeft = `calc(${position} - 3.7vw)`;
+    bgB.style.left = `calc(${position} - 3.7vw)`;
   }
    if (view >= 500 && view <= 599.99) {
-     bgB.style.marginLeft = `calc(${position} - 5vw)`;
+     bgB.style.left = `calc(${position} - 5vw)`;
   }
    if (view >= 400 && view <= 499.99) {
-     bgB.style.marginLeft = `calc(${position} - 6.1vw)`;
+     bgB.style.left = `calc(${position} - 6.1vw)`;
   }
    if (view >= 320 && view <= 399.99) {
-     bgB.style.marginLeft = `calc(${position} - 6.5vw)`;
+     bgB.style.left = `calc(${position} - 6.5vw)`;
   }
 }
 
