@@ -6,7 +6,7 @@ let currBgBubblePercent;
 let percentMap = {
   0: "11%",
   1: "36%",
-  2: "62%",
+  2: "60%",
   3: "86.2%",
 };
 
@@ -18,7 +18,7 @@ function getViewPort() {
 
 window.addEventListener("load", () => {
   getViewPort();
-  currBgBubblePercent = "11%";
+  currBgBubblePercent = "60%";
   mediaQ(bgBubble, viewport, currBgBubblePercent);
   giveMenuIdClickEvent();
   
@@ -81,7 +81,7 @@ function move(id, position) {
     .to(".icon", { duration: 0.05, opacity: 0, ease: "ease-out" }, 0)
     .to(
       "#bgBubble",
-      { duration: 0.2, left: `calc(${position} - 1vw)`, ease: "ease-in-out" },
+      { duration: 0.2, left: position, ease: "ease-in-out" },
       0.1
     )
     .to(
@@ -105,7 +105,7 @@ function move(id, position) {
       `#bubble${id}> span`,
       { duration: 0.15, y: "0%", opacity: 1, ease: "ease-out" },
       "-=0.1"
-    );
+  );
 
   turnOffClickedMenuElem(currBgBubblePercent);
 }
