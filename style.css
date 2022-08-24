@@ -106,7 +106,7 @@ body {
         filter: contrast(150%), brightness(100%);
     }
 
-    /*
+  
          #bubble1 {
              background-color: hsl(0, 0%, 12%);
              transform: translateY(0%);
@@ -117,7 +117,6 @@ body {
          #bubble1>span {
              opacity: 1;
          }
-    */
 
        
         
@@ -152,14 +151,13 @@ body {
         position: absolute;
         width: 100%;
         top:5%;
-        left:5%;
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
 
 #menuWrapper > .menuElement {
-        transform: translateY(15%);
+        transform: translateY(25%);
         font-size: calc(1.5em + .25vmin);
         visibility: visible;
         cursor: pointer;
