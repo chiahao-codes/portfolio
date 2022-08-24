@@ -167,6 +167,11 @@ body {
         align-items: center;
     }
 
+#menuWrapper>.menuElement>a{
+    position:absolute;
+    margin: auto;
+}
+
   .menuElement> a > i {
       color: white;
       opacity: .55;
