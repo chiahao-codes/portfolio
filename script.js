@@ -103,7 +103,7 @@ function move(id, position) {
        .to(
          `#bubble${id}`,
          {
-           duration: 0.15,
+           duration: 0.17,
            y: "0%",
            backgroundColor: "hsl(0, 0%, 12%)",
            opacity: 1,
@@ -114,7 +114,7 @@ function move(id, position) {
        )
        .to(
          `#bubble${id}> span`,
-         { duration: 0.15, y: "0%", opacity: 1, ease: "ease-out" },
+         { duration: 0.17, y: "0%", opacity: 1, ease: "ease-out" },
          "-=0.1"
        );
 
