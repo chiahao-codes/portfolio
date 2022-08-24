@@ -94,9 +94,8 @@ function move(id, position) {
       },
       0
   )
-     timeLine
        .to(
-         bgB,
+         "#bgBubble",
          { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
          "-=0.2"
        )
@@ -138,6 +137,7 @@ function turnOffClickedMenuElem(currBgBubblePercent) {
  
 
 function gsapMatchMedia(bgB, view, position, timeLine) {
+  console.log("gsapMatch...")
 
   if (view >= 1500) {
       timeLine.to(
