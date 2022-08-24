@@ -21,7 +21,6 @@ window.addEventListener("load", () => {
   getViewPort();
   currBgBubblePercent = "11%";
   gsapMatchMedia(bgBubble, viewport, currBgBubblePercent, timeLine);
- // mediaQ(bgBubble, viewport, currBgBubblePercent);
   turnOffClickedMenuElem(currBgBubblePercent);
   giveMenuIdClickEvent();
   
@@ -33,7 +32,8 @@ window.addEventListener("resize", () => {
   getViewPort();
   console.log(`Viewport width:${viewport}`);
   turnOffClickedMenuElem(currBgBubblePercent);
-  gsapMatchMedia(bgBubble, viewport, currBgBubblePercent, timeLine);
+  mediaQ(bgBubble, viewport, currBgBubblePercent);
+  //gsapMatchMedia(bgBubble, viewport, currBgBubblePercent, timeLine);
 });
 
 
