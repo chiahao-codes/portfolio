@@ -20,8 +20,8 @@ function getViewPort() {
 window.addEventListener("load", () => {
   getViewPort();
   currBgBubblePercent = "11%";
+  mediaQ(bgBubble, viewport, currBgBubblePercent);
   turnOffClickedMenuElem(currBgBubblePercent);
-  
   giveMenuIdClickEvent();
   
 })
