@@ -27,6 +27,7 @@ window.addEventListener("load", () => {
 })
 
 
+
 window.addEventListener("resize", () => {
   getViewPort();
   console.log(`Viewport width:${viewport}`);
