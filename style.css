@@ -18,7 +18,15 @@ body {
     margin:0;
 }
 
+.main{
+    visibility: hidden;
+}
+
 .menuElement{
+    visibility:hidden;
+}
+
+.navBar{
     visibility:hidden;
 }
 
@@ -49,6 +57,7 @@ body {
         justify-content: center;
         align-content: center;
         z-index: 1;
+        visibility: visible;
     }
 
     .main>h2,
@@ -58,6 +67,7 @@ body {
     
 
     .navBar {
+        visibility: visible;
         width: 100%;
         left:0;
         background-color: hsl(0, 0%, 12%);
