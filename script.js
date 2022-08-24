@@ -7,7 +7,7 @@ let viewport, currBgBubblePercent;
 let percentMap = {
   0: "11%",
   1: "36%",
-  2: "60.9%",
+  2: "61%",
   3: "86.2%",
 };
 
