@@ -48,10 +48,10 @@ function giveMenuIdClickEvent() {
 }
 
 /**
-a href="index.html" target="_self">
-a href= "projects.html" target="_self">
-a href= "about.html" target="_self">
-a href= "contact.html" target="_self">
+<a href="index.html" target="_self">
+<a href= "projects.html" target="_self">
+<a href= "about.html" target="_self">
+<a href= "contact.html" target="_self">
  */
 
 function move(id, position) {
