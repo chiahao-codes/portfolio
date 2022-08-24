@@ -20,7 +20,8 @@ function getViewPort() {
 window.addEventListener("load", () => {
   getViewPort();
   currBgBubblePercent = "11%";
-  mediaQ(bgBubble, viewport, currBgBubblePercent);
+  gsapMatchMedia(bgBubble, viewport, currBgBubblePercent, timeLine);
+ // mediaQ(bgBubble, viewport, currBgBubblePercent);
   turnOffClickedMenuElem(currBgBubblePercent);
   giveMenuIdClickEvent();
   
@@ -32,6 +33,7 @@ window.addEventListener("resize", () => {
   getViewPort();
   console.log(`Viewport width:${viewport}`);
   turnOffClickedMenuElem(currBgBubblePercent);
+  gsapMatchMedia(bgBubble, viewport, currBgBubblePercent, timeLine);
 });
 
 
@@ -81,35 +83,41 @@ function move(id, position) {
       { duration: 0.1, y: "155%", boxShadow: "none", ease: "ease-out" },
       0
     )
-    .to(".icon", { duration: 0.05, opacity: 0, onComplete:gsapMatchMedia, ease: "ease-out"}, 0)
-
     .to(
-      "#bgBubble",
-      { duration: 0.2, left: position, ease: "ease-in-out" },
-      0.1
-    )
-    .to(
-      "#bgBubble",
-      { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
-      "-=0.2"
-    )
-    .to(
-      `#bubble${id}`,
+      ".icon",
       {
-        duration: 0.15,
-        y: "0%",
-        backgroundColor: "hsl(0, 0%, 12%)",
-        opacity: 1,
-        boxShadow: "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
+        duration: 0.05,
+        opacity: 0,
+        onComplete: gsapMatchMedia,
+        onCompleteParams: ["#bgBubble", viewport, currBgBubblePercent, timeLine],
         ease: "ease-out",
       },
-      "-=0.1"
-    )
-    .to(
-      `#bubble${id}> span`,
-      { duration: 0.15, y: "0%", opacity: 1, ease: "ease-out" },
-      "-=0.1"
-  );
+      0
+  )
+     timeLine
+       .to(
+         bgB,
+         { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
+         "-=0.2"
+       )
+
+       .to(
+         `#bubble${id}`,
+         {
+           duration: 0.15,
+           y: "0%",
+           backgroundColor: "hsl(0, 0%, 12%)",
+           opacity: 1,
+           boxShadow: "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
+           ease: "ease-out",
+         },
+         "-=0.1"
+       )
+       .to(
+         `#bubble${id}> span`,
+         { duration: 0.15, y: "0%", opacity: 1, ease: "ease-out" },
+         "-=0.1"
+       );
 
   turnOffClickedMenuElem(currBgBubblePercent);
 }
@@ -129,8 +137,155 @@ function turnOffClickedMenuElem(currBgBubblePercent) {
 
  
 
-function gsapMatchMedia(bgB, id, view, position, timeLine) {
-  alert("gsapMatchMedia()...")
+function gsapMatchMedia(bgB, view, position, timeLine) {
+
+  if (view >= 1500) {
+      timeLine.to(
+        bgB,
+        {
+          duration: 0.2,
+          left: `calc(${position} - .59vw)`,
+          ease: "ease-in-out",
+        },
+        0
+      );
+   }
+  if (view >= 1400 && view <= 1499.99) {
+      timeLine.to(
+        bgB,
+        {
+          duration: 0.2,
+          left: `calc(${position} - .7vw)`,
+          ease: "ease-in-out",
+        },
+        0
+      );
+   }
+  if (view >= 1300 && view <= 1399.99) {
+      timeLine.to(
+        bgB,
+        {
+          duration: 0.2,
+          left: `calc(${position} - .91vw)`,
+          ease: "ease-in-out",
+        },
+        0
+      );
+    
+   }
+  if (view >= 1200 && view <= 1299.99) {
+      timeLine.to(
+        bgB,
+        {
+          duration: 0.2,
+          left: `calc(${position} - 1vw)`,
+          ease: "ease-in-out",
+        },
+        0
+      );
+   
+   }
+  if (view >= 1100 && view <= 1199.99) {
+      timeLine.to(
+        bgB,
+        {
+          duration: 0.2,
+          left: `calc(${position} - 1.3vw)`,
+          ease: "ease-in-out",
+        },
+        0
+      );
+     
+   }
+  if (view >= 1000 && view <= 1099.99) {
+        timeLine.to(
+          bgB,
+          {
+            duration: 0.2,
+            left: `calc(${position} - 1.6vw)`,
+            ease: "ease-in-out",
+          },
+          0
+        );
+   }
+  if (view >= 900 && view <= 999.99) {
+       timeLine.to(
+         bgB,
+         {
+           duration: 0.2,
+           left: `calc(${position} - 2vw)`,
+           ease: "ease-in-out",
+         },
+         0
+       );
+   }
+  if (view >= 800 && view <= 899.99) {
+       timeLine.to(
+         bgB,
+         {
+           duration: 0.2,
+           left: `calc(${position} - 2.4vw)`,
+           ease: "ease-in-out",
+         },
+         0
+       );
+   }
+  if (view >= 700 && view <= 799.99) {
+      timeLine.to(
+        bgB,
+        {
+          duration: 0.2,
+          left: `calc(${position} - 2.9vw)`,
+          ease: "ease-in-out",
+        },
+        0
+      );
+   }
+  if (view >= 600 && view <= 699.99) {
+     timeLine.to(
+       bgB,
+       {
+         duration: 0.2,
+         left: `calc(${position} - 3.7vw)`,
+         ease: "ease-in-out",
+       },
+       0
+     );
+   }
+  if (view >= 500 && view <= 599.99) {
+      timeLine.to(
+        bgB,
+        {
+          duration: 0.2,
+          left: `calc(${position} - 5vw)`,
+          ease: "ease-in-out",
+        },
+        0
+      );
+   }
+  if (view >= 400 && view <= 499.99) {
+      timeLine.to(
+        bgB,
+        {
+          duration: 0.2,
+          left: `calc(${position} - 6.1vw)`,
+          ease: "ease-in-out",
+        },
+        0
+      );
+   }
+  if (view >= 320 && view <= 399.99) {
+      timeLine.to(
+        bgB,
+        {
+          duration: 0.2,
+          left: `calc(${position} - 6.5vw)`,
+          ease: "ease-in-out",
+        },
+        0
+      );
+   }
+ 
   /**
    * 
    */
