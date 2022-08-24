@@ -4,6 +4,7 @@ let bubble = document.getElementsByClassName("bubble");
 let menuElements = document.getElementsByClassName("menuElement");
 let viewport;
 let currBgBubblePercent;
+let startingBubble = 2;
 let percentMap = {
   0: "11%",
   1: "36%",
@@ -21,7 +22,14 @@ window.addEventListener("load", () => {
   getViewPort();
   currBgBubblePercent = "60%";
   turnOffClickedMenuElem(currBgBubblePercent);
-  bubble[2].firstChild.style.opacity = "1";
+  for (let i = 0; i < bubble.length; i++){
+    if (bubble[i] === startingBubble) {
+      bubble[2].firstChild.style.opacity = "1";
+    } else {
+      bubble[i].firstChild.style.opacity = "0";
+    }
+  } 
+  
   giveMenuIdClickEvent();
   
 })

@@ -93,14 +93,14 @@ body {
 }
 
 .icon {
-        opacity: 0;
+        
         color: white;
         font-size: calc(1.7em + .25vmin);
         filter: contrast(150%), brightness(100%);
     }
 
 /*
-
+opacity: 0;
 #bubble1 {
     background-color: hsl(0, 0%, 12%);
     transform: translateY(0%);
