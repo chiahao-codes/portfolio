@@ -2,8 +2,7 @@ let timeLine = gsap.timeline();
 let bgBubble = document.getElementById("bgBubble");
 let bubble = document.getElementsByClassName("bubble");
 let menuElements = document.getElementsByClassName("menuElement");
-let viewport;
-let currBgBubblePercent;
+let viewport, currBgBubblePercent;
 
 let percentMap = {
   0: "11%",
