@@ -152,13 +152,14 @@ body {
         position: absolute;
         width: 100%;
         top:5%;
+        left:5%;
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
 
 #menuWrapper > .menuElement {
-        transform: translateY(35%), translateX(10%);
+        transform: translateY(40%);
         font-size: calc(1.5em + .25vmin);
         visibility: visible;
         cursor: pointer;
