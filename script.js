@@ -23,8 +23,8 @@ window.addEventListener("load", () => {
   currBgBubblePercent = "60%";
   turnOffClickedMenuElem(currBgBubblePercent);
   for (let i = 0; i < bubble.length; i++){
-    if (bubble[i] === startingBubble) {
-      bubble[2].firstChild.style.opacity = "1";
+    if (i === startingBubble) {
+      bubble[i].firstChild.style.opacity = "1";
     } else {
       bubble[i].firstChild.style.opacity = "0";
     }
