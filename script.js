@@ -22,6 +22,7 @@ window.addEventListener("load", () => {
   getViewPort();
   currBgBubblePercent = "60%";
   turnOffClickedMenuElem(currBgBubblePercent);
+  console.log(`bubble collection:${bubble}`)
   for (let i = 0; i < bubble.length; i++){
     if (i === startingBubble) {
       bubble[i].firstChild.style.opacity = "1";
