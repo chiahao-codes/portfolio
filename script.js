@@ -1,5 +1,6 @@
 let timeLine = gsap.timeline();
 let bgBubble = document.getElementById("bgBubble");
+let bubble = document.getElementsByClassName("bubble");
 let menuElements = document.getElementsByClassName("menuElement");
 let viewport;
 let currBgBubblePercent;
@@ -20,7 +21,7 @@ window.addEventListener("load", () => {
   getViewPort();
   currBgBubblePercent = "60%";
   turnOffClickedMenuElem(currBgBubblePercent);
-  //mediaQ(bgBubble, viewport, currBgBubblePercent);
+  bubble[2].firstChild.style.opacity = "1";
   giveMenuIdClickEvent();
   
 })
