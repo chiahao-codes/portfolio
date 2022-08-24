@@ -7,7 +7,7 @@ let viewport, currBgBubblePercent;
 let percentMap = {
   0: "11%",
   1: "36%",
-  2: "61%",
+  2: "60.87%",
   3: "86.2%",
 };
 
@@ -96,7 +96,7 @@ function move(id, position) {
   )
        .to(
          "#bgBubble",
-         { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
+         { duration: 0.17, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
          "-=0.2"
        )
 
@@ -143,7 +143,7 @@ function gsapMatchMedia(bgB, view, position, timeLine) {
       timeLine.to(
         bgB,
         {
-          duration: 0.2,
+          duration: 0.23,
           left: `calc(${position} - .59vw)`,
           ease: "ease-in-out",
         },
@@ -154,7 +154,7 @@ function gsapMatchMedia(bgB, view, position, timeLine) {
       timeLine.to(
         bgB,
         {
-          duration: 0.2,
+          duration: 0.23,
           left: `calc(${position} - .7vw)`,
           ease: "ease-in-out",
         },
@@ -165,7 +165,7 @@ function gsapMatchMedia(bgB, view, position, timeLine) {
       timeLine.to(
         bgB,
         {
-          duration: 0.2,
+          duration: 0.23,
           left: `calc(${position} - .91vw)`,
           ease: "ease-in-out",
         },
@@ -177,7 +177,7 @@ function gsapMatchMedia(bgB, view, position, timeLine) {
       timeLine.to(
         bgB,
         {
-          duration: 0.2,
+          duration: 0.23,
           left: `calc(${position} - 1vw)`,
           ease: "ease-in-out",
         },
@@ -189,7 +189,7 @@ function gsapMatchMedia(bgB, view, position, timeLine) {
       timeLine.to(
         bgB,
         {
-          duration: 0.2,
+          duration: 0.23,
           left: `calc(${position} - 1.3vw)`,
           ease: "ease-in-out",
         },
@@ -201,7 +201,7 @@ function gsapMatchMedia(bgB, view, position, timeLine) {
         timeLine.to(
           bgB,
           {
-            duration: 0.2,
+            duration: 0.23,
             left: `calc(${position} - 1.6vw)`,
             ease: "ease-in-out",
           },
@@ -212,7 +212,7 @@ function gsapMatchMedia(bgB, view, position, timeLine) {
        timeLine.to(
          bgB,
          {
-           duration: 0.2,
+           duration: 0.23,
            left: `calc(${position} - 2vw)`,
            ease: "ease-in-out",
          },
@@ -223,7 +223,7 @@ function gsapMatchMedia(bgB, view, position, timeLine) {
        timeLine.to(
          bgB,
          {
-           duration: 0.2,
+           duration: 0.23,
            left: `calc(${position} - 2.4vw)`,
            ease: "ease-in-out",
          },
@@ -234,7 +234,7 @@ function gsapMatchMedia(bgB, view, position, timeLine) {
       timeLine.to(
         bgB,
         {
-          duration: 0.2,
+          duration: 0.23,
           left: `calc(${position} - 2.9vw)`,
           ease: "ease-in-out",
         },
@@ -245,7 +245,7 @@ function gsapMatchMedia(bgB, view, position, timeLine) {
      timeLine.to(
        bgB,
        {
-         duration: 0.2,
+         duration: 0.23,
          left: `calc(${position} - 3.7vw)`,
          ease: "ease-in-out",
        },
@@ -256,7 +256,7 @@ function gsapMatchMedia(bgB, view, position, timeLine) {
       timeLine.to(
         bgB,
         {
-          duration: 0.2,
+          duration: 0.23,
           left: `calc(${position} - 5vw)`,
           ease: "ease-in-out",
         },
@@ -267,7 +267,7 @@ function gsapMatchMedia(bgB, view, position, timeLine) {
       timeLine.to(
         bgB,
         {
-          duration: 0.2,
+          duration: 0.23,
           left: `calc(${position} - 6.1vw)`,
           ease: "ease-in-out",
         },
@@ -278,7 +278,7 @@ function gsapMatchMedia(bgB, view, position, timeLine) {
       timeLine.to(
         bgB,
         {
-          duration: 0.2,
+          duration: 0.23,
           left: `calc(${position} - 6.5vw)`,
           ease: "ease-in-out",
         },
