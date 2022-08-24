@@ -7,7 +7,7 @@ let viewport, currBgBubblePercent;
 let percentMap = {
   0: "11%",
   1: "36%",
-  2: "60%",
+  2: "62%",
   3: "86.2%",
 };
 
@@ -19,7 +19,7 @@ function getViewPort() {
 
 window.addEventListener("load", () => {
   getViewPort();
-  currBgBubblePercent = "60%";
+  currBgBubblePercent = "11%";
   turnOffClickedMenuElem(currBgBubblePercent);
   
   giveMenuIdClickEvent();
