@@ -162,6 +162,9 @@ body {
         font-size: calc(1.5em + .25vmin);
         visibility: visible;
         cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
   .menuElement> a > i {
