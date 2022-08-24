@@ -1,4 +1,5 @@
 let timeLine = gsap.timeline();
+let mm = gsap.matchMedia();
 let bgBubble = document.getElementById("bgBubble");
 let bubble = document.getElementsByClassName("bubble");
 let menuElements = document.getElementsByClassName("menuElement");
@@ -53,7 +54,7 @@ a href= "contact.html" target="_self">
  */
 
 function move(id, position) {
-  console.log("move()")
+  
   currBgBubblePercent = position;
   timeLine
     .to(
@@ -81,7 +82,8 @@ function move(id, position) {
       { duration: 0.1, y: "155%", boxShadow: "none", ease: "ease-out" },
       0
     )
-    .to(".icon", { duration: 0.05, opacity: 0, ease: "ease-out" }, 0)
+    .to(".icon", { duration: 0.05, opacity: 0, onComplete:gsapMatchMedia, ease: "ease-out"}, 0)
+
     .to(
       "#bgBubble",
       { duration: 0.2, left: position, ease: "ease-in-out" },
@@ -124,16 +126,54 @@ function turnOffClickedMenuElem(currBgBubblePercent) {
       menuElements[i].style.opacity = "1";
     }
   }
-  mediaQ(bgBubble, viewport, currBgBubblePercent);
 }
 
+ 
+
+function gsapMatchMedia(bgB, id, view, position, mm, timeLine) {
+  alert("gsapMatchMedia()...")
   /**
+   * mm.add("(min-width:1500px)", () => {
+    timeLine
+      .to(
+        "#bgBubble",
+        {
+          duration: 0.2,
+          left: `calc(${position} - .59vw)`,
+          ease: "ease-in-out",
+        },
+        0.1
+      )
+      .to(
+        "#bgBubble",
+        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
+        "-=0.2"
+      )
+      .to(
+        `#bubble${id}`,
+        {
+          duration: 0.15,
+          y: "0%",
+          backgroundColor: "hsl(0, 0%, 12%)",
+          opacity: 1,
+          boxShadow: "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
+          ease: "ease-out",
+        },
+        "-=0.1"
+      )
+      .to(
+        `#bubble${id}> span`,
+        { duration: 0.15, y: "0%", opacity: 1, ease: "ease-out" },
+        "-=0.1"
+      );
+  });
    */
+}
+
+
 
 
 function mediaQ(bgB, view, position) {
-  console.log("mediaQ()")
-  console.log(`view:${view}, position:${position}`);
   
   if (view >= 1500) {
   bgB.style.left = `calc(${position} - .59vw)`
