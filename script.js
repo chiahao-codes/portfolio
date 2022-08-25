@@ -133,7 +133,7 @@ function turnOffClickedMenuElem(currBgBubblePercent) {
       menuElements[i].style.color = "white";
       styleSheet[0].insertRule(`@media screen and (min-width:320px){
         #menuWrapper > #${i}:hover{opacity:1, filter:contrast(150%) brightness(100%)}
-      }`)
+      }`, 0);
     }
   }
 }
