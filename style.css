@@ -150,7 +150,7 @@ body {
 #menuWrapper {
         position: absolute;
         width: 100%;
-        top:5%;
+        top:10%;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -165,11 +165,6 @@ body {
         justify-content: center;
         align-items: center;
     }
-
-/*#menuWrapper>.menuElement>a {
-    position: absolute;
-    margin: auto;
-}*/
 
 
   .menuElement> a > i {
