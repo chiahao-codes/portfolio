@@ -12,6 +12,7 @@ let percentMap = {
 };
 
 console.log(menuElements);
+console.log(bgBubble);
 
 function getViewPort() {
  return viewport = window.innerWidth;
@@ -20,9 +21,11 @@ function getViewPort() {
 window.addEventListener("load", () => {
   getViewPort();
   currBgBubblePercent = "11%";
-  gsapMatchMedia(bgBubble, viewport, currBgBubblePercent, timeLine);
-  turnOffClickedMenuElem(currBgBubblePercent);
   giveMenuIdClickEvent();
+  move("1", currBgBubblePercent);
+  //gsapMatchMedia(bgBubble, viewport, currBgBubblePercent, timeLine);
+  //turnOffClickedMenuElem(currBgBubblePercent);
+  
   
 })
 
@@ -124,7 +127,6 @@ function move(id, position) {
 
   
 function turnOffClickedMenuElem(currBgBubblePercent) {
-  console.log("turnOffClickedMenuElem()");
   for (let i = 0; i < menuElements.length; i++) {
     if (percentMap[i] === currBgBubblePercent) {
       menuElements[i].style.opacity = "0";
@@ -137,7 +139,6 @@ function turnOffClickedMenuElem(currBgBubblePercent) {
  
 
 function gsapMatchMedia(bgB, view, position, timeLine) {
-  console.log("gsapMatch...")
 
   if (view >= 1500) {
       timeLine.to(
