@@ -128,7 +128,10 @@ function turnOffClickedMenuElem(currBgBubblePercent) {
   for (let i = 0; i < menuElements.length; i++) {
     if (percentMap[i] === currBgBubblePercent) {
       menuElements[i].style.opacity = "0";
-    } 
+    } else {
+      menuElements[i].style.opacity = ".55";
+      menuElements[i].style.color = "white";
+    }
   }
 }
 
