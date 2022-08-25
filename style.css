@@ -150,6 +150,8 @@ body {
         font-size: calc(1.5em + .25vmin);
         visibility: visible;
         cursor: pointer;
+        color: white;
+        opacity: .55;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -163,8 +165,7 @@ body {
 
 /*
  #menuWrapper>.menuElement {
-     color: white;
-     opacity: .55;
+    
  }
 
  
