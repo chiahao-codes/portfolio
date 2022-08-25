@@ -2,6 +2,7 @@ let timeLine = gsap.timeline();
 let bgBubble = document.getElementById("bgBubble");
 let bubble = document.getElementsByClassName("bubble");
 let menuElements = document.getElementsByClassName("menuElement");
+let styleSheet = document.styleSheets;
 let viewport, currBgBubblePercent;
 
 let percentMap = {
@@ -11,6 +12,7 @@ let percentMap = {
   3: "86.2%",
 };
 
+console.log(styleSheet);
 console.log(menuElements);
 console.log(bgBubble);
 
@@ -129,9 +131,11 @@ function turnOffClickedMenuElem(currBgBubblePercent) {
     } else {
       menuElements[i].style.opacity = ".55";
       //add hover rule:
-      document.styleSheets[0].insertRule(`#menuWrapper > #${i} > i:hover{
+      /**
+       * document.styleSheets[0].insertRule(`#menuWrapper > #${i} > i:hover{
         opacity: 1; filter:contrast(150%), brightness(100%);
       }`)
+       */
     }
   }
 }
