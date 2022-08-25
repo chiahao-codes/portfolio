@@ -157,7 +157,7 @@ body {
     }
 
 #menuWrapper > .menuElement {
-        transform: translateY(100%);
+        transform: translateY(40%);
         font-size: calc(1.5em + .25vmin);
         visibility: visible;
         cursor: pointer;
