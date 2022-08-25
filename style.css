@@ -150,14 +150,14 @@ body {
 #menuWrapper {
         position: absolute;
         width: 100%;
-        top:25%;
+        top:5%;
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
 
 #menuWrapper > .menuElement {
-        /*transform: translateY(40%);*/
+        transform: translateY(30%);
         font-size: calc(1.5em + .25vmin);
         visibility: visible;
         cursor: pointer;
