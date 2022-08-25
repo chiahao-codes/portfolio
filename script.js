@@ -130,11 +130,15 @@ function turnOffClickedMenuElem(currBgBubblePercent) {
       menuElements[i].style.opacity = "0";
     } else {
       menuElements[i].style.opacity = ".55";
+      menuElements[i].style.color = "white";
+      styleSheet[0].insertRule(`@media screen (min-width:320px){
+        #menuWrapper > #${i} > i:hover{
+        opacity: 1; filter:contrast(150%), brightness(100%);
+      }
+    }`);
       //add hover rule:
       /**
-       * document.styleSheets[0].insertRule(`#menuWrapper > #${i} > i:hover{
-        opacity: 1; filter:contrast(150%), brightness(100%);
-      }`)
+       *
        */
     }
   }
