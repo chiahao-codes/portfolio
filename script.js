@@ -22,7 +22,7 @@ window.addEventListener("load", () => {
   getViewPort();
   currBgBubblePercent = "11%";
   giveMenuIdClickEvent(bgBubble);
-  mediaQ(bgBubble, viewport, currBgBubblePercent);
+  resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
   turnOffClickedMenuElem(currBgBubblePercent);
 })
 
@@ -32,7 +32,7 @@ window.addEventListener("resize", () => {
   getViewPort();
   console.log(`Viewport width:${viewport}`);
   turnOffClickedMenuElem(currBgBubblePercent);
-  mediaQ(bgBubble, viewport, currBgBubblePercent);
+  resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
 });
 
 
@@ -87,7 +87,7 @@ function move(id, position, bgBubble) {
       {
         duration: 0.05,
         opacity: 0,
-        onComplete: gsapMatchMedia,
+        onComplete: gsapAnimationResizeBgbLeft,
         onCompleteParams: [bgBubble, viewport, currBgBubblePercent, timeLine],
         ease: "ease-out",
       },
@@ -128,13 +128,19 @@ function turnOffClickedMenuElem(currBgBubblePercent) {
       menuElements[i].style.opacity = "0";
     } else {
       menuElements[i].style.opacity = ".55";
+      //add hover rule:
+      document.styleSheets[0].insertRule(`#menuWrapper > #${i} > i:hover{
+        opacity: 1; filter:contrast(150%), brightness(100%);
+      }`)
     }
   }
 }
 
- 
+function insertAnchorTags() {
+   document.styleSheets[0]
+ }
 
-function gsapMatchMedia(bgB, view, position, timeLine) {
+function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   console.log("gsapMatch running")
 
   if (view >= 1500) {
@@ -292,7 +298,7 @@ function gsapMatchMedia(bgB, view, position, timeLine) {
 
 
 
-function mediaQ(bgB, view, position) {
+function resizeBgbLeft(bgB, view, position) {
   
   if (view >= 1500) {
   bgB.style.left = `calc(${position} - .59vw)`

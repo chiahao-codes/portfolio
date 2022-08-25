@@ -156,15 +156,18 @@ body {
     }
 
 
-  #menuWrapper > .menuElement {
-      color: white;
-      opacity: .55;
-  }
 
-  #menuWrapper > .menuElement > i:hover {
-      opacity: 1;
-      filter: contrast(150%), brightness(100%);
-  }
+/*
+ #menuWrapper>.menuElement {
+     color: white;
+     opacity: .55;
+ }
+
+ #menuWrapper>.menuElement>i:hover {
+     opacity: 1;
+     filter: contrast(150%), brightness(100%);
+ }
+*/
 
 }
 
