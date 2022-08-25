@@ -1,4 +1,7 @@
 let timeLine = gsap.timeline();
+let jss = require("jss");
+console.log(jss);
+let sheet = jss.createStyleSheet();
 let bgBubble = document.getElementById("bgBubble");
 let bubble = document.getElementsByClassName("bubble");
 let menuElements = document.getElementsByClassName("menuElement");
