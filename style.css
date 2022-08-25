@@ -156,12 +156,12 @@ body {
     }
 
 
-  .menuElement> a > i {
+  .menuElement {
       color: white;
       opacity: .55;
   }
 
-  .menuElement > a > i:hover {
+  .menuElement:hover {
       opacity: 1;
       filter: contrast(150%), brightness(100%);
   }
