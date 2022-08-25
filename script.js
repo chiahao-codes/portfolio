@@ -1,5 +1,5 @@
+import jss from "jss";
 let timeLine = gsap.timeline();
-let jss = require("jss");
 let sheet = jss.createStyleSheet({}, {meta: 'styleSheet2' });
 
 let bgBubble = document.getElementById("bgBubble");
