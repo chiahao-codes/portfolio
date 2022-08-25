@@ -1,11 +1,9 @@
 let timeLine = gsap.timeline();
 let jss = require("jss");
-console.log(jss);
-let sheet = jss.createStyleSheet();
+let sheet = jss.createStyleSheet({}, {meta: 'styleSheet2' });
+
 let bgBubble = document.getElementById("bgBubble");
-let bubble = document.getElementsByClassName("bubble");
 let menuElements = document.getElementsByClassName("menuElement");
-let styleSheet = document.styleSheets;
 let viewport, currBgBubblePercent;
 
 let percentMap = {
@@ -15,7 +13,6 @@ let percentMap = {
   3: "86.2%",
 };
 
-console.log(styleSheet);
 console.log(menuElements);
 console.log(bgBubble);
 
@@ -28,7 +25,7 @@ window.addEventListener("load", () => {
   currBgBubblePercent = "11%";
   giveMenuIdClickEvent(bgBubble);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
-  turnOffClickedMenuElem(currBgBubblePercent);
+  turnOffClickedMenuElem(currBgBubblePercent, sheet);
 })
 
 
@@ -127,13 +124,18 @@ function move(id, position, bgBubble) {
 
 
   
-function turnOffClickedMenuElem(currBgBubblePercent) {
+function turnOffClickedMenuElem(currBgBubblePercent, sheet) {
   for (let i = 0; i < menuElements.length; i++) {
     if (percentMap[i] === currBgBubblePercent) {
       menuElements[i].style.opacity = "0";
     } else {
       menuElements[i].style.opacity = ".55";
       menuElements[i].style.color = "white";
+      i = i.toString();
+      sheet.addRule(`#menuWrapper> #${i}:hover {
+            opacity: 1;
+            filter: contrast(150%), brightness(100%);
+        }`);
     }
   }
 }
