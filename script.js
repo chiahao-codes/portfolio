@@ -136,8 +136,8 @@ function turnOffClickedMenuElem(currBgBubblePercent) {
   }
 }
 
-function insertAnchorTags() {
-   document.styleSheets[0]
+function insertAnchorTag() {
+  
  }
 
 function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
