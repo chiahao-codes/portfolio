@@ -22,11 +22,9 @@ window.addEventListener("load", () => {
   getViewPort();
   currBgBubblePercent = "11%";
   giveMenuIdClickEvent();
-  move("1", currBgBubblePercent);
+  mediaQ(bgBubble, viewport, currBgBubblePercent);
   //gsapMatchMedia(bgBubble, viewport, currBgBubblePercent, timeLine);
-  //turnOffClickedMenuElem(currBgBubblePercent);
-  
-  
+  turnOffClickedMenuElem(currBgBubblePercent);
 })
 
 
