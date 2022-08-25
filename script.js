@@ -1,6 +1,6 @@
-import jss from "jss";
+
 let timeLine = gsap.timeline();
-let sheet = jss.createStyleSheet({}, {meta: 'styleSheet2' });
+
 
 let bgBubble = document.getElementById("bgBubble");
 let menuElements = document.getElementsByClassName("menuElement");
@@ -25,7 +25,7 @@ window.addEventListener("load", () => {
   currBgBubblePercent = "11%";
   giveMenuIdClickEvent(bgBubble);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
-  turnOffClickedMenuElem(currBgBubblePercent, sheet);
+  turnOffClickedMenuElem(currBgBubblePercent);
 })
 
 
@@ -124,7 +124,7 @@ function move(id, position, bgBubble) {
 
 
   
-function turnOffClickedMenuElem(currBgBubblePercent, sheet) {
+function turnOffClickedMenuElem(currBgBubblePercent) {
   for (let i = 0; i < menuElements.length; i++) {
     if (percentMap[i] === currBgBubblePercent) {
       menuElements[i].style.opacity = "0";
@@ -132,7 +132,7 @@ function turnOffClickedMenuElem(currBgBubblePercent, sheet) {
       menuElements[i].style.opacity = ".55";
       menuElements[i].style.color = "white";
       i = i.toString();
-      sheet.addRule(`#menuWrapper> #${i}:hover {
+      document.styleSheets[0].insertRule(`#menuWrapper> #${i}:hover {
             opacity: 1;
             filter: contrast(150%), brightness(100%);
         }`);
