@@ -23,7 +23,6 @@ window.addEventListener("load", () => {
   currBgBubblePercent = "11%";
   giveMenuIdClickEvent();
   mediaQ(bgBubble, viewport, currBgBubblePercent);
-  //gsapMatchMedia(bgBubble, viewport, currBgBubblePercent, timeLine);
   turnOffClickedMenuElem(currBgBubblePercent);
 })
 
@@ -34,7 +33,6 @@ window.addEventListener("resize", () => {
   console.log(`Viewport width:${viewport}`);
   turnOffClickedMenuElem(currBgBubblePercent);
   mediaQ(bgBubble, viewport, currBgBubblePercent);
-  //gsapMatchMedia(bgBubble, viewport, currBgBubblePercent, timeLine);
 });
 
 
@@ -137,6 +135,7 @@ function turnOffClickedMenuElem(currBgBubblePercent) {
  
 
 function gsapMatchMedia(bgB, view, position, timeLine) {
+  console.log("gsapMatch running")
 
   if (view >= 1500) {
       timeLine.to(
