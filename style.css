@@ -18,9 +18,6 @@ body {
     margin:0;
 }
 
-.main{
-    visibility: hidden;
-}
 
 .menuElement{
     visibility:hidden;
@@ -57,7 +54,6 @@ body {
         justify-content: center;
         align-content: center;
         z-index: 2;
-        visibility:visible;
     }
 
     .main>h2,
