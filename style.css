@@ -161,7 +161,7 @@ body {
       opacity: .55;
   }
 
-  #menuWrapper > .menuElement:hover {
+  #menuWrapper > .menuElement > i:hover {
       opacity: 1;
       filter: contrast(150%), brightness(100%);
   }
