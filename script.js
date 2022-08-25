@@ -21,7 +21,7 @@ function getViewPort() {
 window.addEventListener("load", () => {
   getViewPort();
   currBgBubblePercent = "11%";
-  giveMenuIdClickEvent();
+  giveMenuIdClickEvent(bgBubble);
   mediaQ(bgBubble, viewport, currBgBubblePercent);
   turnOffClickedMenuElem(currBgBubblePercent);
 })
@@ -36,12 +36,12 @@ window.addEventListener("resize", () => {
 });
 
 
-function giveMenuIdClickEvent() {
+function giveMenuIdClickEvent(bgBubble) {
   console.log("giveMenuIdClickEvent()")
   for (let i = 0; i < menuElements.length; i++) {
     let id = (i + 1).toString();
     menuElements[i].addEventListener("click", () => { 
-      move(id, percentMap[i]);
+      move(id, percentMap[i], bgBubble);
     });
   }
 }
@@ -53,12 +53,12 @@ function giveMenuIdClickEvent() {
 <a href= "contact.html" target="_self">
  */
 
-function move(id, position) {
-  
+function move(id, position, bgBubble) {
   currBgBubblePercent = position;
+  console.log(`move(), ${currBgBubblePercent}`);
   timeLine
     .to(
-      "#bgBubble",
+      bgBubble,
       { duration: 0.15, bottom: "calc(-40px + .025vmin)", ease: "ease-out" },
       0
     )
@@ -88,13 +88,13 @@ function move(id, position) {
         duration: 0.05,
         opacity: 0,
         onComplete: gsapMatchMedia,
-        onCompleteParams: ["#bgBubble", viewport, currBgBubblePercent, timeLine],
+        onCompleteParams: [bgBubble, viewport, currBgBubblePercent, timeLine],
         ease: "ease-out",
       },
       0
   )
        .to(
-         "#bgBubble",
+         bgBubble,
          { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
          "-=0.2"
        )
