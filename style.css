@@ -157,7 +157,7 @@ body {
     }
 
 #menuWrapper > .menuElement {
-        transform: translateY(20%);
+        transform: translateY(100%);
         font-size: calc(1.5em + .25vmin);
         visibility: visible;
         cursor: pointer;
@@ -166,10 +166,11 @@ body {
         align-items: center;
     }
 
-#menuWrapper>.menuElement>a{
-    position:absolute;
+/*#menuWrapper>.menuElement>a {
+    position: absolute;
     margin: auto;
-}
+}*/
+
 
   .menuElement> a > i {
       color: white;
