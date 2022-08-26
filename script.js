@@ -1,7 +1,4 @@
-
 let timeLine = gsap.timeline();
-
-
 let bgBubble = document.getElementById("bgBubble");
 let menuElements = document.getElementsByClassName("menuElement");
 let viewport, currBgBubblePercent;
@@ -125,14 +122,15 @@ function move(id, position, bgBubble) {
 
   
 function turnOffClickedMenuElem(currBgBubblePercent) {
+  let iString;
   for (let i = 0; i < menuElements.length; i++) {
     if (percentMap[i] === currBgBubblePercent) {
       menuElements[i].style.opacity = "0";
     } else {
       menuElements[i].style.opacity = ".55";
       menuElements[i].style.color = "white";
-      i = i.toString();
-      document.styleSheets[0].insertRule(`#menuWrapper> #${i}:hover {
+      iString = i.toString()
+      document.styleSheets[0].insertRule(`#menuWrapper> #${iString}:hover {
             opacity: 1;
             filter: contrast(150%), brightness(100%);
         }`);
