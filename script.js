@@ -118,7 +118,7 @@ function move(id, position, bgBubble) {
 }
 
 function addStyleTag(istring, style) {
-  style.innerHTML = `#menuWrapper > #${istring}:hover{opacity:1;filter:contrast(150%) brightness(110%)`;
+  style.innerHTML = `#menuWrapper > .menuElement:hover{opacity:1;filter:contrast(150%) brightness(110%)`;
   document.head.appendChild(style);
 }
 
@@ -130,16 +130,17 @@ function removeStyleTag(istring, style) {
 function turnOffClickedMenuElem(currBgBubblePercent) {
   let iString,style = document.createElement("style");
   for (let i = 0; i < menuElements.length; i++) {
-    iString = i.toString();
+    //iString = i.toString();
     if (percentMap[i] === currBgBubblePercent) {
       menuElements[i].style.opacity = "0";
       //removeStyleTag(iString, style);
     } else {
       menuElements[i].style.opacity = ".55";
       menuElements[i].style.color = "white";
-      addStyleTag(iString, style);
+      
     }
   }
+  addStyleTag(style);
 }
 
 function insertAnchorTag() {
