@@ -130,6 +130,7 @@ function turnOffClickedMenuElem(currBgBubblePercent) {
       menuElements[i].style.opacity = ".55";
       menuElements[i].style.color = "white";
       iString = i.toString()
+      console.log(iString, typeof iString);
       document.styleSheets[0].insertRule(`#menuWrapper> #${iString}:hover {
             opacity: 1;
             filter: contrast(150%), brightness(100%);
