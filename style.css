@@ -8,39 +8,43 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    height: 100vh;
-    width: 100vw;
-    font-family: "Cormorant SC", sans-serif;
-    overflow: hidden;
-    position: relative;
+body{
     background-color: black;
-    margin:0;
-}
-
-.main {
-    color: yellow;
-    filter: contrast(150%), brightness(120%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    justify-content: center;
-    align-content: center;
-    z-index: 2;
-}
-
-.main>h2,
-.main>h1 {
-    text-align: center;
+    visibility: hidden;
 }
 
 
 @media screen and (min-width:320px) and (max-width:2400px) {
 
+    body {
+            visibility: visible;
+            height: 100vh;
+            width: 100vw;
+            font-family: "Cormorant SC", sans-serif;
+            overflow: hidden;
+            position: relative;
+            margin: 0;
+        }
+
+.main {
+        color: yellow;
+        filter: contrast(150%), brightness(120%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-content: center;
+        z-index: 2;
+    }
+
+    .main>h2,
+    .main>h1 {
+        text-align: center;
+    }
 .navContainer{
     width: 100%;
         min-width: 100%;
