@@ -10,8 +10,6 @@ let percentMap = {
   3: "86.2%",
 };
 
-console.log(menuElements);
-console.log(bgBubble);
 
 function getViewPort() {
  return viewport = window.innerWidth;
@@ -119,19 +117,27 @@ function move(id, position, bgBubble) {
   turnOffClickedMenuElem(currBgBubblePercent);
 }
 
+function addStyleTag(istring, style) {
+  style.innerHTML = `#menuWrapper > #${istring}:hover{opacity:1;filter:contrast(150%) brightness(110%)`;
+  document.head.appendChild(style);
+}
 
+function removeStyleTag(istring, style) {
+  style.innerHTML
+  document.head.removeChild(style);
+}
   
 function turnOffClickedMenuElem(currBgBubblePercent) {
-  let iString;
+  let iString,style = document.createElement("style");
   for (let i = 0; i < menuElements.length; i++) {
+    iString = i.toString();
     if (percentMap[i] === currBgBubblePercent) {
       menuElements[i].style.opacity = "0";
+      //removeStyleTag(iString, style);
     } else {
       menuElements[i].style.opacity = ".55";
       menuElements[i].style.color = "white";
-      iString = i.toString()
-      console.log(iString, typeof iString);
-      document.styleSheets[0].insertRule("#menuWrapper>.menuElement:hover{opacity:1;filter:contrast(150%) brightness(110%)");
+      addStyleTag(iString, style);
     }
   }
 }
