@@ -38,7 +38,7 @@ function giveMenuIdClickEvent(bgBubble) {
   for (let i = 0; i < menuElements.length; i++) {
     let id = (i + 1).toString();
     menuElements[i].addEventListener("click", () => { 
-      move(id, percentMap[i], bgBubble);
+      move(id, percentMap[i], bgBubble, menuElements);
     });
   }
 }
@@ -50,9 +50,9 @@ function giveMenuIdClickEvent(bgBubble) {
 <a href= "contact.html" target="_self">
  */
 
-function move(id, position, bgBubble) {
+function move(id, position, bgBubble, menuElements) {
   currBgBubblePercent = position;
-  console.log(`move(), ${currBgBubblePercent}`);
+  
   timeLine
     .to(
       bgBubble,
@@ -91,12 +91,6 @@ function move(id, position, bgBubble) {
       0
   )
        .to(
-         bgBubble,
-         { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
-         "-=0.2"
-       )
-
-       .to(
          `#bubble${id}`,
          {
            duration: 0.15,
@@ -110,11 +104,14 @@ function move(id, position, bgBubble) {
        )
        .to(
          `#bubble${id}> span`,
-         { duration: 0.15, y: "0%", opacity: 1, ease: "ease-out" },
+         {
+           duration: 0.15, y: "0%", opacity: 1, ease: "ease-out", onComplete: turnOffClickedMenuElem,
+           onCompleteParams:[currBgBubblePercent, menuElements]
+         },
          "-=0.1"
        );
 
-  turnOffClickedMenuElem(currBgBubblePercent, menuElements);
+  //turnOffClickedMenuElem(currBgBubblePercent, menuElements);
 }
 
   
@@ -306,9 +303,10 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       );
    }
  
-  /**
-   * 
-   */
+  timeLine.to(
+         bgBubble,
+         { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out", delay:".1" },
+       )
 }
 
 
