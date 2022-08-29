@@ -305,7 +305,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
  
   timeLine.to(
          bgBubble,
-         { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out", delay:".1" },
+         { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
        )
 }
 
