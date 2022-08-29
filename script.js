@@ -119,7 +119,7 @@ function move(id, position, bgBubble) {
 
   
 function turnOffClickedMenuElem(currBgBubblePercent, menuElements) {
- 
+ console.log(`turnOffClickedMenuElem running...`)
   for (let i = 0; i < menuElements.length; i++) {
     //iString = i.toString();
     if (percentMap[i] === currBgBubblePercent) {
