@@ -1,3 +1,19 @@
+window.addEventListener("load", () => {
+  getViewPort();
+  currBgBubblePercent = "11%";
+  giveMenuIdClickEvent(bgBubble);
+  resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
+  turnOffClickedMenuElem(currBgBubblePercent, menuElements);
+});
+
+window.addEventListener("resize", () => {
+  getViewPort();
+  console.log(`Viewport width:${viewport}`);
+  turnOffClickedMenuElem(currBgBubblePercent, menuElements);
+  resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
+});
+
+
 let timeLine = gsap.timeline();
 let bgBubble = document.getElementById("bgBubble");
 let menuElements = document.getElementsByClassName("menuElement");
@@ -15,22 +31,6 @@ function getViewPort() {
  return viewport = window.innerWidth;
 }
 
-window.addEventListener("load", () => {
-  getViewPort();
-  currBgBubblePercent = "11%";
-  giveMenuIdClickEvent(bgBubble);
-  resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
-  turnOffClickedMenuElem(currBgBubblePercent);
-})
-
-
-
-window.addEventListener("resize", () => {
-  getViewPort();
-  console.log(`Viewport width:${viewport}`);
-  turnOffClickedMenuElem(currBgBubblePercent);
-  resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
-});
 
 
 function giveMenuIdClickEvent(bgBubble) {
@@ -114,21 +114,12 @@ function move(id, position, bgBubble) {
          "-=0.1"
        );
 
-  turnOffClickedMenuElem(currBgBubblePercent);
+  turnOffClickedMenuElem(currBgBubblePercent, menuElements);
 }
 
-function addStyleTag(istring, style) {
-  style.innerHTML = `#menuWrapper > .menuElement:hover{opacity:1;filter:contrast(150%) brightness(110%)`;
-  document.head.appendChild(style);
-}
-
-function removeStyleTag(istring, style) {
-  style.innerHTML
-  document.head.removeChild(style);
-}
   
-function turnOffClickedMenuElem(currBgBubblePercent) {
-  let iString,style = document.createElement("style");
+function turnOffClickedMenuElem(currBgBubblePercent, menuElements) {
+ 
   for (let i = 0; i < menuElements.length; i++) {
     //iString = i.toString();
     if (percentMap[i] === currBgBubblePercent) {
@@ -137,10 +128,14 @@ function turnOffClickedMenuElem(currBgBubblePercent) {
     } else {
       menuElements[i].style.opacity = ".55";
       menuElements[i].style.color = "white";
-      
+      menuElements[i].addEventListener("mouseenter", (i, menuElements) => {
+        menuElements[i].style.opacity = "1";
+      });
+       menuElements[i].addEventListener("mouseleave", (i, menuElements) => {
+         menuElements[i].style.opacity = ".55";
+       });
     }
   }
-  addStyleTag(style);
 }
 
 function insertAnchorTag() {
