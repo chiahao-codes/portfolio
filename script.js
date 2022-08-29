@@ -128,12 +128,26 @@ function turnOffClickedMenuElem(currBgBubblePercent, menuElements) {
     } else {
       menuElements[i].style.opacity = ".55";
       menuElements[i].style.color = "white";
-      menuElements[i].addEventListener("mouseenter", (i, menuElements) => {
-        menuElements[i].style.opacity = "1";
-      });
-       menuElements[i].addEventListener("mouseleave", (i, menuElements) => {
-         menuElements[i].style.opacity = ".55";
+      menuElements[i].addEventListener("mouseenter", ()=>{mouseEnter(i, menuElements)});
+      menuElements[i].addEventListener("mouseleave", () => {
+         mouseLeave(i, menuElements);
        });
+    }
+  }
+}
+
+function mouseEnter(num, menuElements) {
+  for (let i = 0; i < menuElements.length; i++) {
+    if (i === num) {
+      menuElements[i].style.opacity = "1";
+    }
+  }
+}
+
+function mouseLeave(num, menuElements) {
+  for (let i = 0; i < menuElements.length; i++) {
+    if (i === num) {
+      menuElements[i].style.opacity = ".55";
     }
   }
 }
