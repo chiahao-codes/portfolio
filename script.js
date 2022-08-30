@@ -176,11 +176,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
         },
         0
       )
-      .to(
-        bgB,
-        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
-        "-=.1"
-      );
+      
   }
   if (view >= 1400 && view <= 1499.99) {
     timeLine
@@ -193,11 +189,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
         },
         0
       )
-      .to(
-        bgB,
-        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
-        "-=.1"
-      );
+      
   }
   if (view >= 1300 && view <= 1399.99) {
     timeLine
@@ -210,11 +202,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
         },
         0
       )
-      .to(
-        bgB,
-        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
-        "-=.1"
-      );
+      
   }
   if (view >= 1200 && view <= 1299.99) {
     timeLine
@@ -227,11 +215,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
         },
         0
       )
-      .to(
-        bgB,
-        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
-        "-=.1"
-      );
+      
   }
   if (view >= 1100 && view <= 1199.99) {
     timeLine
@@ -244,11 +228,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
         },
         0
       )
-      .to(
-        bgB,
-        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
-        "-=.1"
-      );
+      
   }
   if (view >= 1000 && view <= 1099.99) {
     timeLine
@@ -261,11 +241,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
         },
         0
       )
-      .to(
-        bgB,
-        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
-        "-=.1"
-      );
+      
   }
   if (view >= 900 && view <= 999.99) {
     timeLine
@@ -278,11 +254,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
         },
         0
       )
-      .to(
-        bgB,
-        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
-        "-=.1"
-      );
+      
   }
   if (view >= 800 && view <= 899.99) {
     timeLine
@@ -295,11 +267,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
         },
         0
       )
-      .to(
-        bgB,
-        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
-        "-=.1"
-      );
+      
   }
   if (view >= 700 && view <= 799.99) {
     timeLine
@@ -312,11 +280,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
         },
         0
       )
-      .to(
-        bgB,
-        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
-        "-=.1"
-      );
+      
   }
   if (view >= 600 && view <= 699.99) {
     timeLine
@@ -329,11 +293,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
         },
         0
       )
-      .to(
-        bgB,
-        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
-        "-=.1"
-      );
+      
   }
   if (view >= 500 && view <= 599.99) {
     timeLine
@@ -346,11 +306,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
         },
         0
       )
-      .to(
-        bgB,
-        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
-        "-=.1"
-      );
+      
   }
   if (view >= 400 && view <= 499.99) {
     timeLine
@@ -363,11 +319,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
         },
         0
       )
-      .to(
-        bgB,
-        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
-        "-=.1"
-      );
+      
   }
   if (view >= 320 && view <= 399.99) {
     timeLine
@@ -380,17 +332,12 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
         },
         0
       )
-      .to(
+  }
+  timeLine.to(
         bgB,
         { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
-        "-=.1"
+        0
       );
-  }
-
-  /** timeLine.to(
-         bgB,
-         { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
-       "-=.1") */
 }
 
 
