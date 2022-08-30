@@ -57,7 +57,7 @@ function move(id, position, bgBubble) {
   timeLine
     .to(
       bgBubble,
-      { duration: 0.15, bottom: "calc(-40px + .025vmin)", ease: "ease-out" },
+      { duration: 0.1, bottom: "calc(-40px + .025vmin)", ease: "ease-out" },
       0
     )
     .to(
