@@ -2,8 +2,8 @@ window.addEventListener("load", () => {
   getViewPort();
   currBgBubblePercent = "11%";
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
+  giveMenuIdClickEvent(bgBubble);
   turnOffClickedMenuElem(currBgBubblePercent);
-  console.log(menuElements)
 });
 
 window.addEventListener("resize", () => {
@@ -31,16 +31,20 @@ function getViewPort() {
  return viewport = window.innerWidth;
 }
 
+ function giveMenuIdClickEvent(bgBubble) {
+   console.log("giveMenuIdClickEvent()");
+   for (let i = 0; i < menuElements.length; i++) {
+     menuElements[i].firstChild.addEventListener("click", () => {
+       console.log("Hello...");
+       let id = (i + 1).toString();
+       move(id, percentMap[i], bgBubble);
+       turnOffClickedMenuElem(currBgBubblePercent);
+     });
+   }
+ }
+
 /**
- * function giveMenuIdClickEvent(bgBubble) {
-  console.log("giveMenuIdClickEvent()")
-  for (let i = 0; i < menuElements.length; i++) {
-    let id = (i + 1).toString();
-    menuElements[i].addEventListener("click", () => { 
-      move(id, percentMap[i], bgBubble);
-    });
-  }
-}
+ * 
 <a href="index.html" target="_self">
 <a href= "projects.html" target="_self">
 <a href= "about.html" target="_self">
@@ -110,7 +114,6 @@ function move(id, position, bgBubble) {
       },
       "-=0.1"
     );
-  turnOffClickedMenuElem(currBgBubblePercent);
 }
 
   
@@ -127,11 +130,6 @@ function turnOffClickedMenuElem(currBgBubblePercent) {
          mouseLeave(i);
       });
     }
-    menuElements[i].firstChild.addEventListener("click", () => {
-      console.log("Hello...");
-      let id = (i + 1).toString();
-      move(id, percentMap[i], bgBubble);
-    })
   }
 }
 
