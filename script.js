@@ -1,7 +1,7 @@
 window.addEventListener("load", () => {
   getViewPort();
   currBgBubblePercent = "11%";
-  giveMenuIdClickEvent(bgBubble);
+  //giveMenuIdClickEvent(bgBubble);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
   turnOffClickedMenuElem(currBgBubblePercent);
 });
@@ -127,6 +127,8 @@ function turnOffClickedMenuElem(currBgBubblePercent) {
     }
     menuElements[i].addEventListener("click", () => {
       console.log("Hello...");
+      let id = (i + 1).toString();
+      move(id, percentMap[i], bgBubble);
     })
   }
 }
