@@ -1,7 +1,6 @@
 window.addEventListener("load", () => {
   getViewPort();
   currBgBubblePercent = "11%";
-  //giveMenuIdClickEvent(bgBubble);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
   turnOffClickedMenuElem(currBgBubblePercent);
   console.log(menuElements)
@@ -32,9 +31,8 @@ function getViewPort() {
  return viewport = window.innerWidth;
 }
 
-
-
-function giveMenuIdClickEvent(bgBubble) {
+/**
+ * function giveMenuIdClickEvent(bgBubble) {
   console.log("giveMenuIdClickEvent()")
   for (let i = 0; i < menuElements.length; i++) {
     let id = (i + 1).toString();
@@ -43,8 +41,6 @@ function giveMenuIdClickEvent(bgBubble) {
     });
   }
 }
-
-/**
 <a href="index.html" target="_self">
 <a href= "projects.html" target="_self">
 <a href= "about.html" target="_self">
