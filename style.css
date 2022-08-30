@@ -50,7 +50,9 @@ html {
     .main>h1 {
         text-align: center;
     }
- #homeBody > .navContainer{
+
+    
+ .navContainer{
     width: 100%;
         min-width: 100%;
         height: 100%;
