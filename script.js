@@ -1,6 +1,5 @@
 window.addEventListener("load", () => {
   getViewPort();
-  currBgBubblePercent = "11%";
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
   giveMenuIdClickEvent(bgBubble);
   turnOffClickedMenuElem(currBgBubblePercent);
@@ -18,7 +17,8 @@ let timeLine = gsap.timeline();
 let bgBubble = document.getElementById("bgBubble");
 let menuElements = document.getElementsByClassName("menuElement");
 console.log(menuElements)
-let viewport, currBgBubblePercent;
+let viewport,
+  currBgBubblePercent = "11%";
 
 let percentMap = {
   0: "11%",
