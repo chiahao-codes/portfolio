@@ -123,8 +123,11 @@ function turnOffClickedMenuElem(currBgBubblePercent) {
       menuElements[i].addEventListener("mouseenter", ()=>{mouseEnter(i)});
       menuElements[i].addEventListener("mouseleave", () => {
          mouseLeave(i);
-       });
+      });
     }
+    menuElements[i].addEventListener("click", () => {
+      console.log("Hello...");
+    })
   }
 }
 
