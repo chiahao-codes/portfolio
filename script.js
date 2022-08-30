@@ -40,6 +40,22 @@ function getViewPort() {
        let id = (i + 1).toString();
        move(id, percentMap[i], bgBubble);
        turnOffClickedMenuElem(currBgBubblePercent);
+       
+       switch (i) {
+         case 0:
+           window.open("index.html", "_self");
+           break;
+         case 1:
+           window.open("projects.html", "_self");
+           break;
+         case 2:
+           window.open("about.html", "_self");
+           break;
+         case 3:
+           window.open("contact.html", "_self");
+           break;
+       }
+       
      });
    }
  }
