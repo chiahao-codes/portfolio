@@ -4,6 +4,7 @@ window.addEventListener("load", () => {
   //giveMenuIdClickEvent(bgBubble);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
   turnOffClickedMenuElem(currBgBubblePercent);
+  console.log(menuElements)
 });
 
 window.addEventListener("resize", () => {
