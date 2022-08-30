@@ -51,6 +51,7 @@ function giveMenuIdClickEvent(bgBubble) {
  */
 
 function move(id, position, bgBubble) {
+  console.log("move()")
   currBgBubblePercent = position;
 
   timeLine
