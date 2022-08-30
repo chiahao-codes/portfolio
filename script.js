@@ -125,16 +125,16 @@ function turnOffClickedMenuElem(currBgBubblePercent) {
  console.log(`turnOffClickedMenuElem running...`)
   for (let i = 0; i < menuElements.length; i++) {
     if (percentMap[i] === currBgBubblePercent) {
-      menuElements[i].style.opacity = "0";
+      menuElements[i].firstChild.style.opacity = "0";
     } else {
-      menuElements[i].style.opacity = ".55";
-      menuElements[i].style.color = "white";
-      menuElements[i].addEventListener("mouseenter", ()=>{mouseEnter(i)});
-      menuElements[i].addEventListener("mouseleave", () => {
+      menuElements[i].firstChild.style.opacity = ".55";
+      menuElements[i].firstChild.style.color = "white";
+      menuElements[i].firstChild.addEventListener("mouseenter", ()=>{mouseEnter(i)});
+      menuElements[i].firstChild.addEventListener("mouseleave", () => {
          mouseLeave(i);
       });
     }
-    menuElements[i].addEventListener("click", () => {
+    menuElements[i].firstChild.addEventListener("click", () => {
       console.log("Hello...");
       let id = (i + 1).toString();
       move(id, percentMap[i], bgBubble);
