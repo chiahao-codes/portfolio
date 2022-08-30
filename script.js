@@ -86,13 +86,13 @@ function move(id, position, bgBubble) {
       {
         duration: 0.05,
         opacity: 0,
-        onComplete: gsapAnimationResizeBgbLeft,
-        onCompleteParams: [bgBubble, viewport, currBgBubblePercent, timeLine],
         ease: "ease-out",
       },
       0
-    )
-    .to(
+  )
+  gsapAnimationResizeBgbLeft(bgBubble, viewport, currBgBubblePercent, timeLine);
+  
+    timeLine.to(
       `#bubble${id}`,
       {
         duration: 0.15,
@@ -111,13 +111,10 @@ function move(id, position, bgBubble) {
         y: "0%",
         opacity: 1,
         ease: "ease-out",
-        //onComplete: turnOffClickedMenuElem,
-        //onCompleteParams: [currBgBubblePercent],
       },
       "-=0.1"
     );
   turnOffClickedMenuElem(currBgBubblePercent);
-  //
 }
 
   
@@ -170,7 +167,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       .to(
         bgB,
         {
-          duration: 0.201,
+          duration: 0.20,
           left: `calc(${position} - .59vw)`,
           ease: "ease-in-out",
         },
@@ -183,7 +180,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       .to(
         bgB,
         {
-          duration: 0.201,
+          duration: 0.20,
           left: `calc(${position} - .7vw)`,
           ease: "ease-in-out",
         },
@@ -196,7 +193,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       .to(
         bgB,
         {
-          duration: 0.201,
+          duration: 0.20,
           left: `calc(${position} - .91vw)`,
           ease: "ease-in-out",
         },
@@ -209,7 +206,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       .to(
         bgB,
         {
-          duration: 0.201,
+          duration: 0.20,
           left: `calc(${position} - 1vw)`,
           ease: "ease-in-out",
         },
@@ -222,7 +219,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       .to(
         bgB,
         {
-          duration: 0.201,
+          duration: 0.20,
           left: `calc(${position} - 1.3vw)`,
           ease: "ease-in-out",
         },
@@ -235,7 +232,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       .to(
         bgB,
         {
-          duration: 0.201,
+          duration: 0.20,
           left: `calc(${position} - 1.6vw)`,
           ease: "ease-in-out",
         },
@@ -248,7 +245,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       .to(
         bgB,
         {
-          duration: 0.201,
+          duration: 0.20,
           left: `calc(${position} - 2vw)`,
           ease: "ease-in-out",
         },
@@ -261,7 +258,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       .to(
         bgB,
         {
-          duration: 0.201,
+          duration: 0.20,
           left: `calc(${position} - 2.4vw)`,
           ease: "ease-in-out",
         },
@@ -274,7 +271,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       .to(
         bgB,
         {
-          duration: 0.201,
+          duration: 0.20,
           left: `calc(${position} - 2.9vw)`,
           ease: "ease-in-out",
         },
@@ -287,7 +284,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       .to(
         bgB,
         {
-          duration: 0.201,
+          duration: 0.20,
           left: `calc(${position} - 3.7vw)`,
           ease: "ease-in-out",
         },
@@ -300,7 +297,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       .to(
         bgB,
         {
-          duration: 0.201,
+          duration: 0.20,
           left: `calc(${position} - 5vw)`,
           ease: "ease-in-out",
         },
@@ -313,7 +310,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       .to(
         bgB,
         {
-          duration: 0.201,
+          duration: 0.20,
           left: `calc(${position} - 6.1vw)`,
           ease: "ease-in-out",
         },
@@ -326,7 +323,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       .to(
         bgB,
         {
-          duration: 0.201,
+          duration: 0.20,
           left: `calc(${position} - 6.5vw)`,
           ease: "ease-in-out",
         },
