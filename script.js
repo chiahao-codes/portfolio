@@ -18,7 +18,7 @@ let bgBubble = document.getElementById("bgBubble");
 let menuElements = document.getElementsByClassName("menuElement");
 console.log(menuElements)
 let viewport,
-  currBgBubblePercent = "11%";
+  currBgBubblePercent;
 
 let percentMap = {
   0: "11%",
@@ -135,6 +135,9 @@ function move(id, position, bgBubble) {
 
   
 function turnOffClickedMenuElem(currBgBubblePercent) {
+  if (!currBgBubblePercent) {
+    currBgBubblePercent = "11%";
+  }
  console.log(`turnOffClickedMenuElem running...`)
   for (let i = 0; i < menuElements.length; i++) {
     if (percentMap[i] === currBgBubblePercent) {
