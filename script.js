@@ -1,15 +1,15 @@
 window.addEventListener("load", () => {
   getViewPort();
   currBgBubblePercent = "11%";
-  giveMenuIdClickEvent(bgBubble, menuElements);
+  giveMenuIdClickEvent(bgBubble);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
-  turnOffClickedMenuElem(currBgBubblePercent, menuElements);
+  turnOffClickedMenuElem(currBgBubblePercent);
 });
 
 window.addEventListener("resize", () => {
   getViewPort();
   console.log(`Viewport width:${viewport}`);
-  turnOffClickedMenuElem(currBgBubblePercent, menuElements);
+  turnOffClickedMenuElem(currBgBubblePercent);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
 });
 
@@ -33,12 +33,12 @@ function getViewPort() {
 
 
 
-function giveMenuIdClickEvent(bgBubble, menuElements) {
+function giveMenuIdClickEvent(bgBubble) {
   console.log("giveMenuIdClickEvent()")
   for (let i = 0; i < menuElements.length; i++) {
     let id = (i + 1).toString();
     menuElements[i].addEventListener("click", () => { 
-      move(id, percentMap[i], bgBubble, menuElements);
+      move(id, percentMap[i], bgBubble);
     });
   }
 }
@@ -50,7 +50,7 @@ function giveMenuIdClickEvent(bgBubble, menuElements) {
 <a href= "contact.html" target="_self">
  */
 
-function move(id, position, bgBubble, menuElements) {
+function move(id, position, bgBubble) {
   currBgBubblePercent = position;
 
   timeLine
@@ -104,14 +104,14 @@ function move(id, position, bgBubble, menuElements) {
       opacity: 1,
       ease: "ease-out",
       onComplete: turnOffClickedMenuElem,
-      onCompleteParams: [currBgBubblePercent, menuElements],
+      onCompleteParams: [currBgBubblePercent],
     }, 0);
 
   //"-=0.1"
 }
 
   
-function turnOffClickedMenuElem(currBgBubblePercent, menuElements) {
+function turnOffClickedMenuElem(currBgBubblePercent) {
  console.log(`turnOffClickedMenuElem running...`)
   for (let i = 0; i < menuElements.length; i++) {
     if (percentMap[i] === currBgBubblePercent) {
@@ -119,15 +119,15 @@ function turnOffClickedMenuElem(currBgBubblePercent, menuElements) {
     } else {
       menuElements[i].style.opacity = ".55";
       menuElements[i].style.color = "white";
-      menuElements[i].addEventListener("mouseenter", ()=>{mouseEnter(i, menuElements)});
+      menuElements[i].addEventListener("mouseenter", ()=>{mouseEnter(i)});
       menuElements[i].addEventListener("mouseleave", () => {
-         mouseLeave(i, menuElements);
+         mouseLeave(i);
        });
     }
   }
 }
 
-function mouseEnter(num, menuElements) {
+function mouseEnter(num) {
   for (let i = 0; i < menuElements.length; i++) {
     if (i === num) {
       menuElements[i].style.opacity = "1";
@@ -135,7 +135,7 @@ function mouseEnter(num, menuElements) {
   }
 }
 
-function mouseLeave(num, menuElements) {
+function mouseLeave(num) {
   for (let i = 0; i < menuElements.length; i++) {
     if (i === num) {
       menuElements[i].style.opacity = ".55";
@@ -148,10 +148,11 @@ function insertAnchorTag() {
  }
 
 function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
-  console.log("gsapMatch running")
+  console.log("gsapMatch running");
 
   if (view >= 1500) {
-      timeLine.to(
+    timeLine
+      .to(
         bgB,
         {
           duration: 0.201,
@@ -159,10 +160,16 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
           ease: "ease-in-out",
         },
         0
+      )
+      .to(
+        bgB,
+        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
+        "-=.1"
       );
-   }
+  }
   if (view >= 1400 && view <= 1499.99) {
-      timeLine.to(
+    timeLine
+      .to(
         bgB,
         {
           duration: 0.201,
@@ -170,10 +177,16 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
           ease: "ease-in-out",
         },
         0
+      )
+      .to(
+        bgB,
+        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
+        "-=.1"
       );
-   }
+  }
   if (view >= 1300 && view <= 1399.99) {
-      timeLine.to(
+    timeLine
+      .to(
         bgB,
         {
           duration: 0.201,
@@ -181,11 +194,16 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
           ease: "ease-in-out",
         },
         0
+      )
+      .to(
+        bgB,
+        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
+        "-=.1"
       );
-    
-   }
+  }
   if (view >= 1200 && view <= 1299.99) {
-      timeLine.to(
+    timeLine
+      .to(
         bgB,
         {
           duration: 0.201,
@@ -193,11 +211,16 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
           ease: "ease-in-out",
         },
         0
+      )
+      .to(
+        bgB,
+        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
+        "-=.1"
       );
-   
-   }
+  }
   if (view >= 1100 && view <= 1199.99) {
-      timeLine.to(
+    timeLine
+      .to(
         bgB,
         {
           duration: 0.201,
@@ -205,44 +228,67 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
           ease: "ease-in-out",
         },
         0
+      )
+      .to(
+        bgB,
+        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
+        "-=.1"
       );
-     
-   }
+  }
   if (view >= 1000 && view <= 1099.99) {
-        timeLine.to(
-          bgB,
-          {
-            duration: 0.201,
-            left: `calc(${position} - 1.6vw)`,
-            ease: "ease-in-out",
-          },
-          0
-        );
-   }
+    timeLine
+      .to(
+        bgB,
+        {
+          duration: 0.201,
+          left: `calc(${position} - 1.6vw)`,
+          ease: "ease-in-out",
+        },
+        0
+      )
+      .to(
+        bgB,
+        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
+        "-=.1"
+      );
+  }
   if (view >= 900 && view <= 999.99) {
-       timeLine.to(
-         bgB,
-         {
-           duration: 0.201,
-           left: `calc(${position} - 2vw)`,
-           ease: "ease-in-out",
-         },
-         0
-       );
-   }
+    timeLine
+      .to(
+        bgB,
+        {
+          duration: 0.201,
+          left: `calc(${position} - 2vw)`,
+          ease: "ease-in-out",
+        },
+        0
+      )
+      .to(
+        bgB,
+        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
+        "-=.1"
+      );
+  }
   if (view >= 800 && view <= 899.99) {
-       timeLine.to(
-         bgB,
-         {
-           duration: 0.201,
-           left: `calc(${position} - 2.4vw)`,
-           ease: "ease-in-out",
-         },
-         0
-       );
-   }
+    timeLine
+      .to(
+        bgB,
+        {
+          duration: 0.201,
+          left: `calc(${position} - 2.4vw)`,
+          ease: "ease-in-out",
+        },
+        0
+      )
+      .to(
+        bgB,
+        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
+        "-=.1"
+      );
+  }
   if (view >= 700 && view <= 799.99) {
-      timeLine.to(
+    timeLine
+      .to(
         bgB,
         {
           duration: 0.201,
@@ -250,21 +296,33 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
           ease: "ease-in-out",
         },
         0
+      )
+      .to(
+        bgB,
+        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
+        "-=.1"
       );
-   }
+  }
   if (view >= 600 && view <= 699.99) {
-     timeLine.to(
-       bgB,
-       {
-         duration: 0.201,
-         left: `calc(${position} - 3.7vw)`,
-         ease: "ease-in-out",
-       },
-       0
-     );
-   }
+    timeLine
+      .to(
+        bgB,
+        {
+          duration: 0.201,
+          left: `calc(${position} - 3.7vw)`,
+          ease: "ease-in-out",
+        },
+        0
+      )
+      .to(
+        bgB,
+        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
+        "-=.1"
+      );
+  }
   if (view >= 500 && view <= 599.99) {
-      timeLine.to(
+    timeLine
+      .to(
         bgB,
         {
           duration: 0.201,
@@ -272,10 +330,16 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
           ease: "ease-in-out",
         },
         0
+      )
+      .to(
+        bgB,
+        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
+        "-=.1"
       );
-   }
+  }
   if (view >= 400 && view <= 499.99) {
-      timeLine.to(
+    timeLine
+      .to(
         bgB,
         {
           duration: 0.201,
@@ -283,10 +347,16 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
           ease: "ease-in-out",
         },
         0
+      )
+      .to(
+        bgB,
+        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
+        "-=.1"
       );
-   }
+  }
   if (view >= 320 && view <= 399.99) {
-      timeLine.to(
+    timeLine
+      .to(
         bgB,
         {
           duration: 0.201,
@@ -294,13 +364,18 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
           ease: "ease-in-out",
         },
         0
+      )
+      .to(
+        bgB,
+        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
+        "-=.1"
       );
-   }
- 
-  timeLine.to(
-         bgBubble,
+  }
+
+  /** timeLine.to(
+         bgB,
          { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
-       )
+       "-=.1") */
 }
 
 
