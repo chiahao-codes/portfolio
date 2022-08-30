@@ -111,12 +111,12 @@ function move(id, position, bgBubble) {
         y: "0%",
         opacity: 1,
         ease: "ease-out",
-        onComplete: turnOffClickedMenuElem,
-        onCompleteParams: [currBgBubblePercent],
+        //onComplete: turnOffClickedMenuElem,
+        //onCompleteParams: [currBgBubblePercent],
       },
       "-=0.1"
     );
-
+  turnOffClickedMenuElem(currBgBubblePercent);
   //
 }
 
