@@ -145,7 +145,7 @@ function turnOffClickedMenuElem(currBgBubblePercent) {
 function mouseEnter(num) {
   for (let i = 0; i < menuElements.length; i++) {
     if (i === num) {
-      menuElements[i].style.opacity = "1";
+      menuElements[i].firstChild.style.opacity = "1";
     }
   }
 }
@@ -153,7 +153,7 @@ function mouseEnter(num) {
 function mouseLeave(num) {
   for (let i = 0; i < menuElements.length; i++) {
     if (i === num) {
-      menuElements[i].style.opacity = ".55";
+      menuElements[i].firstChild.style.opacity = ".55";
     }
   }
 }
