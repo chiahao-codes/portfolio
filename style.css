@@ -72,7 +72,16 @@ html {
 
 }
 
-
+ .navContainer>.navBar {
+     visibility: visible;
+     width: 100%;
+     left: 0;
+     background-color: hsl(0, 0%, 12%);
+     height: calc(4em + .025vmin);
+     position: fixed;
+     bottom: 0;
+     z-index: 1;
+ }
         .projectsNavContainer> .projectsNavBar {
         visibility: visible;
         width: 100%;

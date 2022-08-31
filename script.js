@@ -16,7 +16,6 @@ window.addEventListener("resize", () => {
 let timeLine = gsap.timeline();
 let bgBubble = document.getElementById("bgBubble");
 let menuElements = document.getElementsByClassName("menuElement");
-console.log(menuElements)
 let viewport,
   currBgBubblePercent;
 
