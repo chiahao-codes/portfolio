@@ -70,6 +70,7 @@ function getViewPort() {
 function move(id, position, bgBubble) {
   console.log(`move() running, id:${id}, position:${position}, bgBubble;${bgBubble}`);
   currBgBubblePercent = position;
+  sessionStorage.setItem("currBgBubblePercent", currBgBubblePercent);
 
   timeLine
     .to(
@@ -135,7 +136,8 @@ function move(id, position, bgBubble) {
   
 function turnOffClickedMenuElem(currBgBubblePercent) {
   console.log(`turnOffClickedMenuElem running...`);
-  if (!currBgBubblePercent) {
+  let currSessionStorage = sessionStorage.getItem("currBgBubblePercent");
+  if (!currSessionStorage) {
     currBgBubblePercent = "11%"
   }
   for (let i = 0; i < menuElements.length; i++) {
@@ -352,7 +354,8 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
 
 function resizeBgbLeft(bgB, view, position) {
 
-  if (!position) {
+  let windowSessionStorage = sessionStorage.getItem("currBgBubblePercent");
+  if (!windowSessionStorage) {
     position = "11%";
   }
   
