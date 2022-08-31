@@ -44,8 +44,8 @@ function getViewPort() {
    for (let i = 0; i < menuElements.length; i++) {
      menuElements[i].firstChild.addEventListener("click", () => {
        console.log("Hello...");
-       let id = (i + 1).toString();
-       move(id, percentMap[i], bgBubble);
+       let id = (i + 1).toString(), currBgBubblePercent = percentMap[i];
+       move(id, currBgBubblePercent, bgBubble);
        turnOffClickedMenuElem(currBgBubblePercent);
        
        switch (i) {
@@ -77,7 +77,7 @@ function getViewPort() {
 
 function move(id, position, bgBubble) {
   console.log(`move() running, id:${id}, position:${position}, bgBubble;${bgBubble}`);
-  currBgBubblePercent = position;
+ 
   sessionStorage.setItem("currBgBubblePercent", currBgBubblePercent);
 
   timeLine
@@ -361,11 +361,6 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
 
 
 function resizeBgbLeft(bgB, view, position) {
-
-  let windowSessionStorage = sessionStorage.getItem("currBgBubblePercent");
-  if (!windowSessionStorage) {
-    position = "11%";
-  }
   
   if (view >= 1500) {
   bgB.style.left = `calc(${position} - .59vw)`
