@@ -1,13 +1,17 @@
 window.addEventListener("load", () => {
   //check local storage for currBgBubblePercent;
-  currBgBubblePercent = localStorage.getItem("currBgBubblePercent");
+  getViewPort();
+  giveMenuIdClickEvent(bgBubble);
+  currBgBubblePercent = localStorage.getItem();
   if (!currBgBubblePercent) {
+    console.log("no local storage, set it to 11%");
     currBgBubblePercent = "11%"
   }
-  getViewPort();
   turnOffClickedMenuElem(currBgBubblePercent);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
-  giveMenuIdClickEvent(bgBubble);
+  if (window.closed) {
+    localStorage.clear();
+  }
 });
 
 
@@ -15,17 +19,11 @@ window.addEventListener("load", () => {
 window.addEventListener("resize", () => {
   getViewPort();
   console.log(`Viewport width:${viewport}`);
-  currBgBubblePercent = localStorage.getItem("currBgBubblePercent");
-  if (!currBgBubblePercent) {
-    currBgBubblePercent = "11%";
-  }
   turnOffClickedMenuElem(currBgBubblePercent);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
 });
 
-if (window.closed) {
-  localStorage.clear();
-}
+
 
 let timeLine = gsap.timeline();
 let bgBubble = document.getElementById("bgBubble");
@@ -53,21 +51,25 @@ function getViewPort() {
        let id = (i + 1).toString(), currBgBubblePercent = percentMap[i];
        switch (i) {
          case 0:
+           console.log(id, currBgBubblePercent);
           move(id, currBgBubblePercent, bgBubble);
        turnOffClickedMenuElem(currBgBubblePercent);
            window.open("index.html", "_self");
            break;
          case 1:
+           console.log(id, currBgBubblePercent);
           move(id, currBgBubblePercent, bgBubble);
        turnOffClickedMenuElem(currBgBubblePercent);
            window.open("projects.html", "_self");
            break;
          case 2:
+           console.log(id, currBgBubblePercent);
           move(id, currBgBubblePercent, bgBubble);
        turnOffClickedMenuElem(currBgBubblePercent);
            window.open("about.html", "_self");
            break;
          case 3:
+           console.log(id, currBgBubblePercent);
           move(id, currBgBubblePercent, bgBubble);
        turnOffClickedMenuElem(currBgBubblePercent);
            window.open("contact.html", "_self");
@@ -147,10 +149,7 @@ function move(id, position, bgBubble) {
   
 function turnOffClickedMenuElem(currBgBubblePercent) {
   console.log(`turnOffClickedMenuElem running...`);
-  let currSessionStorage = localStorage.getItem("currBgBubblePercent");
-  if (!currSessionStorage) {
-    currBgBubblePercent = "11%"
-  }
+  
   for (let i = 0; i < menuElements.length; i++) {
     if (percentMap[i] === currBgBubblePercent) {
       menuElements[i].firstChild.style.opacity = "0";
