@@ -156,6 +156,7 @@ function mouseEnter(num) {
   for (let i = 0; i < menuElements.length; i++) {
     if (i === num) {
       menuElements[i].firstChild.style.opacity = "1";
+      menuElements[i].firstChild.style.cursor = "pointer";
     }
   }
 }

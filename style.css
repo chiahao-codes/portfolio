@@ -178,8 +178,6 @@ html {
         transform: translateY(25%);
         font-size: calc(1.5em + .25vmin);
         visibility: visible;
-        cursor: pointer;
-       
         display: flex;
         justify-content: center;
         align-items: center;
