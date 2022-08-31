@@ -168,10 +168,6 @@ function mouseLeave(num) {
   }
 }
 
-function insertAnchorTag() {
-  
- }
-
 function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   console.log("gsapMatch running");
 
@@ -354,6 +350,10 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
 
 
 function resizeBgbLeft(bgB, view, position) {
+
+  if (!position) {
+    position = "11%";
+  }
   
   if (view >= 1500) {
   bgB.style.left = `calc(${position} - .59vw)`
