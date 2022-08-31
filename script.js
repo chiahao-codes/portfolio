@@ -1,8 +1,8 @@
 window.addEventListener("load", () => {
   getViewPort();
+  turnOffClickedMenuElem(currBgBubblePercent);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
   giveMenuIdClickEvent(bgBubble);
-  turnOffClickedMenuElem(currBgBubblePercent);
 });
 
 window.addEventListener("resize", () => {
@@ -135,10 +135,10 @@ function move(id, position, bgBubble) {
 
   
 function turnOffClickedMenuElem(currBgBubblePercent) {
+  console.log(`turnOffClickedMenuElem running...`);
   if (!currBgBubblePercent) {
-    currBgBubblePercent = "11%";
+    currBgBubblePercent = "11%"
   }
- console.log(`turnOffClickedMenuElem running...`)
   for (let i = 0; i < menuElements.length; i++) {
     if (percentMap[i] === currBgBubblePercent) {
       menuElements[i].firstChild.style.opacity = "0";
