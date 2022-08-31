@@ -2,7 +2,7 @@ window.addEventListener("load", () => {
   //check local storage for currBgBubblePercent;
   getViewPort();
   giveMenuIdClickEvent(bgBubble);
-  currBgBubblePercent = localStorage.getItem();
+  currBgBubblePercent = localStorage.getItem("currBgBubblePercent");
   if (!currBgBubblePercent) {
     console.log("no local storage, set it to 11%");
     currBgBubblePercent = "11%"
