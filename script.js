@@ -1,5 +1,9 @@
 window.addEventListener("load", () => {
   getViewPort();
+  currBgBubblePercent = sessionStorage.getItem("currBgBubblePercent");
+  if (!currBgBubblePercent) {
+    currBgBubblePercent = "11%"
+  }
   turnOffClickedMenuElem(currBgBubblePercent);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
   giveMenuIdClickEvent(bgBubble);
@@ -7,6 +11,10 @@ window.addEventListener("load", () => {
 
 window.addEventListener("resize", () => {
   getViewPort();
+  currBgBubblePercent = sessionStorage.getItem("currBgBubblePercent");
+  if (!currBgBubblePercent) {
+    currBgBubblePercent = "11%";
+  }
   console.log(`Viewport width:${viewport}`);
   turnOffClickedMenuElem(currBgBubblePercent);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
