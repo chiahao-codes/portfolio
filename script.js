@@ -93,6 +93,7 @@ function move(id, position, bgBubble) {
     id = "1";
   }
   currBgBubblePercent = position;
+  if (!currBgBubblePercent) currBgBubblePercent = "11%";
   //localStorage.setItem("currBgBubblePercent", currBgBubblePercent);
 
   timeLine
@@ -159,6 +160,7 @@ function move(id, position, bgBubble) {
 
 function turnOffClickedMenuElem(currBgBubblePercent) {
   console.log(`turnOffClickedMenuElem, currBubb:${currBgBubblePercent}`);
+  if (!currBgBubblePercent) currBgBubblePercent = "11%";
 
   for (let i = 0; i < menuElements.length; i++) {
     if (percentMap[i] === currBgBubblePercent) {
