@@ -5,16 +5,11 @@ window.addEventListener("load", () => {
   currBgBubblePercent = localStorage.getItem("currBgBubblePercent");
   if (!currBgBubblePercent) {
     console.log("no local storage, set it to 11%");
-    currBgBubblePercent = "11%"
+    currBgBubblePercent = "11%";
   }
   turnOffClickedMenuElem(currBgBubblePercent);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
-  if (window.closed) {
-    localStorage.clear();
-  }
 });
-
-
 
 window.addEventListener("resize", () => {
   getViewPort();
@@ -23,13 +18,10 @@ window.addEventListener("resize", () => {
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
 });
 
-
-
 let timeLine = gsap.timeline();
 let bgBubble = document.getElementById("bgBubble");
 let menuElements = document.getElementsByClassName("menuElement");
-let viewport,
-  currBgBubblePercent;
+let viewport, currBgBubblePercent;
 
 let percentMap = {
   0: "11%",
@@ -38,51 +30,58 @@ let percentMap = {
   3: "86.2%",
 };
 
-
 function getViewPort() {
- return viewport = window.innerWidth;
+  return (viewport = window.innerWidth);
 }
 
- function giveMenuIdClickEvent(bgBubble) {
-   console.log("giveMenuIdClickEvent()");
-   for (let i = 0; i < menuElements.length; i++) {
-     menuElements[i].firstChild.addEventListener("click", () => {
-       
-       let id = (i + 1).toString(), currBgBubblePercent = percentMap[i];
-       switch (i) {
-         case 0:
-           console.log(id, currBgBubblePercent);
-          move(id, currBgBubblePercent, bgBubble);
-       turnOffClickedMenuElem(currBgBubblePercent);
-           window.open("index.html", "_self");
-           break;
-         case 1:
-           console.log(id, currBgBubblePercent);
-          move(id, currBgBubblePercent, bgBubble);
-       turnOffClickedMenuElem(currBgBubblePercent);
-           window.open("projects.html", "_self");
-           break;
-         case 2:
-           console.log(id, currBgBubblePercent);
-          move(id, currBgBubblePercent, bgBubble);
-       turnOffClickedMenuElem(currBgBubblePercent);
-           window.open("about.html", "_self");
-           break;
-         case 3:
-           console.log(id, currBgBubblePercent);
-          move(id, currBgBubblePercent, bgBubble);
-       turnOffClickedMenuElem(currBgBubblePercent);
-           window.open("contact.html", "_self");
-           break;
-       }
-       
-     });
-   }
- }
+
+async function moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble) {
+let pageMap = {
+  0: "index.html",
+  1: "projects.html",
+  2: "about.html",
+  3: "contact.html"
+}
+  let moveAndTurnOff = new Promise((resolve) => {
+    move(id, currBgBubblePercent, bgBubble);
+    turnOffClickedMenuElem(currBgBubblePercent);
+    resolve("done");
+  });
+  await moveAndTurnOff;
+
+  window.open(`${pageMap[i]}`, "_self");
+}
+
+
+function giveMenuIdClickEvent(bgBubble) {
+  console.log("giveMenuIdClickEvent()");
+  for (let i = 0; i < menuElements.length; i++) {
+    menuElements[i].firstChild.addEventListener("click", () => {
+      let id = (i + 1).toString(),
+        currBgBubblePercent = percentMap[i];
+      switch (i) {
+        case 0:
+         moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble)
+          break;
+        case 1:
+          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble);
+          break;
+        case 2:
+          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble)
+          break;
+        case 3:
+          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble)
+          break;
+      }
+    });
+  }
+}
 
 function move(id, position, bgBubble) {
-  console.log(`move() running, id:${id}, position:${position}, bgBubble;${bgBubble}`);
- 
+  console.log(
+    `move() running, id:${id}, position:${position}, bgBubble;${bgBubble}`
+  );
+
   localStorage.setItem("currBgBubblePercent", currBgBubblePercent);
 
   timeLine
@@ -119,10 +118,11 @@ function move(id, position, bgBubble) {
         ease: "ease-out",
       },
       0
-  )
+    );
   gsapAnimationResizeBgbLeft(bgBubble, viewport, currBgBubblePercent, timeLine);
-  
-    timeLine.to(
+
+  timeLine
+    .to(
       `#bubble${id}`,
       {
         duration: 0.15,
@@ -146,19 +146,20 @@ function move(id, position, bgBubble) {
     );
 }
 
-  
 function turnOffClickedMenuElem(currBgBubblePercent) {
   console.log(`turnOffClickedMenuElem running...`);
-  
+
   for (let i = 0; i < menuElements.length; i++) {
     if (percentMap[i] === currBgBubblePercent) {
       menuElements[i].firstChild.style.opacity = "0";
     } else {
       menuElements[i].firstChild.style.opacity = ".55";
       menuElements[i].firstChild.style.color = "white";
-      menuElements[i].firstChild.addEventListener("mouseenter", ()=>{mouseEnter(i)});
+      menuElements[i].firstChild.addEventListener("mouseenter", () => {
+        mouseEnter(i);
+      });
       menuElements[i].firstChild.addEventListener("mouseleave", () => {
-         mouseLeave(i);
+        mouseLeave(i);
       });
     }
   }
@@ -185,189 +186,160 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   console.log("gsapMatch running");
 
   if (view >= 1500) {
-    timeLine
-      .to(
-        bgB,
-        {
-          duration: 0.20,
-          left: `calc(${position} - .59vw)`,
-          ease: "ease-in-out",
-        },
-        0
-      )
-      
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.2,
+        left: `calc(${position} - .59vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
   }
   if (view >= 1400 && view <= 1499.99) {
-    timeLine
-      .to(
-        bgB,
-        {
-          duration: 0.20,
-          left: `calc(${position} - .7vw)`,
-          ease: "ease-in-out",
-        },
-        0
-      )
-      
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.2,
+        left: `calc(${position} - .7vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
   }
   if (view >= 1300 && view <= 1399.99) {
-    timeLine
-      .to(
-        bgB,
-        {
-          duration: 0.20,
-          left: `calc(${position} - .91vw)`,
-          ease: "ease-in-out",
-        },
-        0
-      )
-      
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.2,
+        left: `calc(${position} - .91vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
   }
   if (view >= 1200 && view <= 1299.99) {
-    timeLine
-      .to(
-        bgB,
-        {
-          duration: 0.20,
-          left: `calc(${position} - 1vw)`,
-          ease: "ease-in-out",
-        },
-        0
-      )
-      
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.2,
+        left: `calc(${position} - 1vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
   }
   if (view >= 1100 && view <= 1199.99) {
-    timeLine
-      .to(
-        bgB,
-        {
-          duration: 0.20,
-          left: `calc(${position} - 1.3vw)`,
-          ease: "ease-in-out",
-        },
-        0
-      )
-      
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.2,
+        left: `calc(${position} - 1.3vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
   }
   if (view >= 1000 && view <= 1099.99) {
-    timeLine
-      .to(
-        bgB,
-        {
-          duration: 0.20,
-          left: `calc(${position} - 1.6vw)`,
-          ease: "ease-in-out",
-        },
-        0
-      )
-      
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.2,
+        left: `calc(${position} - 1.6vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
   }
   if (view >= 900 && view <= 999.99) {
-    timeLine
-      .to(
-        bgB,
-        {
-          duration: 0.20,
-          left: `calc(${position} - 2vw)`,
-          ease: "ease-in-out",
-        },
-        0
-      )
-      
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.2,
+        left: `calc(${position} - 2vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
   }
   if (view >= 800 && view <= 899.99) {
-    timeLine
-      .to(
-        bgB,
-        {
-          duration: 0.20,
-          left: `calc(${position} - 2.4vw)`,
-          ease: "ease-in-out",
-        },
-        0
-      )
-      
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.2,
+        left: `calc(${position} - 2.4vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
   }
   if (view >= 700 && view <= 799.99) {
-    timeLine
-      .to(
-        bgB,
-        {
-          duration: 0.20,
-          left: `calc(${position} - 2.9vw)`,
-          ease: "ease-in-out",
-        },
-        0
-      )
-      
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.2,
+        left: `calc(${position} - 2.9vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
   }
   if (view >= 600 && view <= 699.99) {
-    timeLine
-      .to(
-        bgB,
-        {
-          duration: 0.20,
-          left: `calc(${position} - 3.7vw)`,
-          ease: "ease-in-out",
-        },
-        0
-      )
-      
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.2,
+        left: `calc(${position} - 3.7vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
   }
   if (view >= 500 && view <= 599.99) {
-    timeLine
-      .to(
-        bgB,
-        {
-          duration: 0.20,
-          left: `calc(${position} - 5vw)`,
-          ease: "ease-in-out",
-        },
-        0
-      )
-      
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.2,
+        left: `calc(${position} - 5vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
   }
   if (view >= 400 && view <= 499.99) {
-    timeLine
-      .to(
-        bgB,
-        {
-          duration: 0.20,
-          left: `calc(${position} - 6.1vw)`,
-          ease: "ease-in-out",
-        },
-        0
-      )
-      
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.2,
+        left: `calc(${position} - 6.1vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
   }
   if (view >= 320 && view <= 399.99) {
-    timeLine
-      .to(
-        bgB,
-        {
-          duration: 0.20,
-          left: `calc(${position} - 6.5vw)`,
-          ease: "ease-in-out",
-        },
-        0
-      )
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.2,
+        left: `calc(${position} - 6.5vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
   }
   timeLine.to(
-        bgB,
-        { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
-        0
-      );
+    bgB,
+    { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
+    0
+  );
 }
 
-
-
-
 function resizeBgbLeft(bgB, view, position) {
-  
   if (view >= 1500) {
-  bgB.style.left = `calc(${position} - .59vw)`
+    bgB.style.left = `calc(${position} - .59vw)`;
   }
-  if (view >= 1400 && view<=1499.99) {
+  if (view >= 1400 && view <= 1499.99) {
     bgB.style.left = `calc(${position} - .7vw)`;
   }
   if (view >= 1300 && view <= 1399.99) {
@@ -394,17 +366,13 @@ function resizeBgbLeft(bgB, view, position) {
   if (view >= 600 && view <= 699.99) {
     bgB.style.left = `calc(${position} - 3.7vw)`;
   }
-   if (view >= 500 && view <= 599.99) {
-     bgB.style.left = `calc(${position} - 5vw)`;
+  if (view >= 500 && view <= 599.99) {
+    bgB.style.left = `calc(${position} - 5vw)`;
   }
-   if (view >= 400 && view <= 499.99) {
-     bgB.style.left = `calc(${position} - 6.1vw)`;
+  if (view >= 400 && view <= 499.99) {
+    bgB.style.left = `calc(${position} - 6.1vw)`;
   }
-   if (view >= 320 && view <= 399.99) {
-     bgB.style.left = `calc(${position} - 6.5vw)`;
+  if (view >= 320 && view <= 399.99) {
+    bgB.style.left = `calc(${position} - 6.5vw)`;
   }
 }
-
-
-
-
