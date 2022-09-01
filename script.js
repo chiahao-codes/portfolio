@@ -18,6 +18,7 @@ window.addEventListener("resize", () => {
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
 });
 
+
 let timeLine = gsap.timeline();
 let bgBubble = document.getElementById("bgBubble");
 let menuElements = document.getElementsByClassName("menuElement");
@@ -149,7 +150,7 @@ function move(id, position, bgBubble) {
 }
 
 function turnOffClickedMenuElem(currBgBubblePercent) {
-  console.log(`turnOffClickedMenuElem running...`);
+  console.log(`turnOffClickedMenuElem, currBubb:${currBgBubblePercent}`);
 
   for (let i = 0; i < menuElements.length; i++) {
     if (percentMap[i] === currBgBubblePercent) {
