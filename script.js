@@ -11,7 +11,7 @@ window.addEventListener("load", () => {
   }
    */
 
-  moveBgBubbleAndTurnOffElem(0, id, currBgBubblePercent, bgBubble);
+  moveBgBubbleAndTurnOffElem(0, 1, currBgBubblePercent, bgBubble);
   giveMenuIdClickEvent(bgBubble);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
 });
