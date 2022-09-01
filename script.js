@@ -58,28 +58,21 @@ function giveMenuIdClickEvent(bgBubble) {
     menuElements[i].firstChild.addEventListener("click", () => {
       let id = (i + 1).toString(),
         currBgBubblePercent = percentMap[i];
+      /**.then((page) => {
+              window.open(`${page}`, "_self");
+            }); */
       switch (i) {
         case 0:
-          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble).then((page) => {
-            window.open(`${page}`, "_self");
-         })
+          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble);
           break;
         case 1:
-          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble).then(
-            (page) => {
-              window.open(`${page}`, "_self");
-            }
-          );
+          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble);
           break;
         case 2:
-          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble).then((page) => {
-            window.open(`${page}`, "_self");
-         })
+          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble);
           break;
         case 3:
-          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble).then((page) => {
-            window.open(`${page}`, "_self");
-         })
+          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble);
           break;
       }
     });
