@@ -41,15 +41,14 @@ let pageMap = {
   1: "projects.html",
   2: "about.html",
   3: "contact.html"
-}
-  let moveAndTurnOff = new Promise((resolve) => {
-    move(id, currBgBubblePercent, bgBubble);
-    turnOffClickedMenuElem(currBgBubblePercent);
-    resolve("done");
-  });
-  await moveAndTurnOff;
+  }
+  
+  let page = pageMap[i];
+  move(id, currBgBubblePercent, bgBubble);
+  turnOffClickedMenuElem(currBgBubblePercent);
+  
+  return page
 
-  window.open(`${pageMap[i]}`, "_self");
 }
 
 
@@ -61,16 +60,26 @@ function giveMenuIdClickEvent(bgBubble) {
         currBgBubblePercent = percentMap[i];
       switch (i) {
         case 0:
-         moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble)
+          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble).then((page) => {
+            window.open(`${page}`, "_self");
+         })
           break;
         case 1:
-          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble);
+          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble).then(
+            (page) => {
+              window.open(`${page}`, "_self");
+            }
+          );
           break;
         case 2:
-          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble)
+          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble).then((page) => {
+            window.open(`${page}`, "_self");
+         })
           break;
         case 3:
-          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble)
+          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble).then((page) => {
+            window.open(`${page}`, "_self");
+         })
           break;
       }
     });
