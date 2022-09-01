@@ -23,7 +23,7 @@ window.addEventListener("resize", () => {
 let timeLine = gsap.timeline();
 let bgBubble = document.getElementById("bgBubble");
 let menuElements = document.getElementsByClassName("menuElement");
-let viewport, currBgBubblePercent;
+let viewport, currBgBubblePercent, id;
 
 let percentMap = {
   0: "11%",
@@ -58,7 +58,7 @@ function giveMenuIdClickEvent(bgBubble) {
   console.log("giveMenuIdClickEvent()");
   for (let i = 0; i < menuElements.length; i++) {
     menuElements[i].firstChild.addEventListener("click", () => {
-      let id = (i + 1).toString(),
+      id = (i + 1).toString(),
         currBgBubblePercent = percentMap[i];
       /**.then((page) => {
               window.open(`${page}`, "_self");
