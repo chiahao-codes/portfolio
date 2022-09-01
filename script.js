@@ -83,7 +83,7 @@ function move(id, position, bgBubble) {
   console.log(
     `move() running, id:${id}, position:${position}, bgBubble;${bgBubble}`
   );
-
+  currBgBubblePercent = position;
   localStorage.setItem("currBgBubblePercent", currBgBubblePercent);
 
   timeLine
