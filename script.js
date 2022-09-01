@@ -7,6 +7,7 @@ window.addEventListener("load", () => {
     console.log("no local storage, set it to 11%");
     currBgBubblePercent = "11%";
   }
+  move(id, currBgBubblePercent, bgBubble);
   turnOffClickedMenuElem(currBgBubblePercent);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
 });
@@ -84,6 +85,9 @@ function move(id, position, bgBubble) {
   console.log(
     `move() running, id:${id}, position:${position}, bgBubble;${bgBubble}`
   );
+  if (!id) {
+    id = "1";
+  }
   currBgBubblePercent = position;
   localStorage.setItem("currBgBubblePercent", currBgBubblePercent);
 
