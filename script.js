@@ -1,14 +1,18 @@
 window.addEventListener("load", () => {
   //check local storage for currBgBubblePercent;
   getViewPort();
-  giveMenuIdClickEvent(bgBubble);
-  currBgBubblePercent = localStorage.getItem("currBgBubblePercent");
+ 
+
+  /**
+   * currBgBubblePercent = localStorage.getItem("currBgBubblePercent");
   if (!currBgBubblePercent) {
     console.log("no local storage, set it to 11%");
     currBgBubblePercent = "11%";
   }
-  move(id, currBgBubblePercent, bgBubble);
-  turnOffClickedMenuElem(currBgBubblePercent);
+   */
+
+  moveBgBubbleAndTurnOffElem(0, id, currBgBubblePercent, bgBubble);
+  giveMenuIdClickEvent(bgBubble);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
 });
 
@@ -89,7 +93,7 @@ function move(id, position, bgBubble) {
     id = "1";
   }
   currBgBubblePercent = position;
-  localStorage.setItem("currBgBubblePercent", currBgBubblePercent);
+  //localStorage.setItem("currBgBubblePercent", currBgBubblePercent);
 
   timeLine
     .to(
