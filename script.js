@@ -10,10 +10,10 @@ window.addEventListener("load", () => {
      resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
   } else {
     let idMap = {
-      "11%": 0,
-      "36%": 1,
-      "61%": 2,
-      "86.2%": 3
+      "11%": 1,
+      "36%": 2,
+      "61%": 3,
+      "86.2%": 4
     }
     let initialI = (idMap[currBgBubblePercent] - 1);
     moveBgBubbleAndTurnOffElem(initialI, idMap[currBgBubblePercent], currBgBubblePercent, bgBubble);
