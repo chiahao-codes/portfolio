@@ -44,7 +44,7 @@ function moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble) {
 
   move(id, currBgBubblePercent, bgBubble);
   turnOffClickedMenuElem(currBgBubblePercent);
-  body.style.backgroundColor = "white";
+  body[0].style.backgroundColor = "white";
 
 
 }
