@@ -9,13 +9,14 @@ window.addEventListener("load", () => {
      giveMenuIdClickEvent(bgBubble);
      resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
   } else {
-    for (const [key, value] of percentMap) {
-      if (value === currBgBubblePercent) {
-        let initialId = key;
-        let initialI = (initialId - 1);
-      }
+    let idMap = {
+      "11%": 0,
+      "36%": 1,
+      "61%": 2,
+      "86.2%": 3
     }
-    moveBgBubbleAndTurnOffElem(initialI, inititialId, currBgBubblePercent, bgBubble);
+    let initialI = (idMap[currBgBubblePercent] - 1);
+    moveBgBubbleAndTurnOffElem(initialI, idMap[currBgBubblePercent], currBgBubblePercent, bgBubble);
     giveMenuIdClickEvent(bgBubble);
     resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
   }
