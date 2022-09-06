@@ -20,12 +20,6 @@ window.addEventListener("load", () => {
     giveMenuIdClickEvent(bgBubble);
     resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
   }
-
-  /**
-   * 
-   */
-
- 
 });
 
 window.addEventListener("resize", () => {
@@ -79,24 +73,16 @@ function giveMenuIdClickEvent(bgBubble) {
       /** */
       switch (i) {
         case 0:
-          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble).then((page) => {
-              window.open(`${page}`, "_self");
-            });
+          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble);
           break;
         case 1:
-          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble).then((page) => {
-              window.open(`${page}`, "_self");
-            });
+          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble);
           break;
         case 2:
-          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble).then((page) => {
-              window.open(`${page}`, "_self");
-            });
+          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble);
           break;
         case 3:
-          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble).then((page) => {
-              window.open(`${page}`, "_self");
-            });
+          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble);
           break;
       }
     });
