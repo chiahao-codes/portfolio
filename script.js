@@ -5,21 +5,12 @@ window.addEventListener("load", () => {
   if (!currBgBubblePercent) {
     console.log("no local storage, set it to 11%");
     currBgBubblePercent = "11%";
-     moveBgBubbleAndTurnOffElem(0, 1, currBgBubblePercent, bgBubble);
-     giveMenuIdClickEvent(bgBubble);
-     resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
-  } else {
-    let idMap = {
-      "11%": 1,
-      "36%": 2,
-      "61%": 3,
-      "86.2%": 4
-    }
-    let initialI = (idMap[currBgBubblePercent] - 1);
-    moveBgBubbleAndTurnOffElem(initialI, idMap[currBgBubblePercent], currBgBubblePercent, bgBubble);
-    giveMenuIdClickEvent(bgBubble);
-    resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
-  }
+     
+  } 
+
+  moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
+  giveMenuIdClickEvent(bgBubble);
+  resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
 });
 
 window.addEventListener("resize", () => {
@@ -42,24 +33,16 @@ let percentMap = {
   3: "86.2%",
 };
 
-let pageMap = {
-  0: "index.html",
-  1: "projects.html",
-  2: "about.html",
-  3: "contact.html",
-};
 
 function getViewPort() {
   return (viewport = window.innerWidth);
 }
 
+function moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble) {
 
-async function moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble) {
-  let page = pageMap[i];
   move(id, currBgBubblePercent, bgBubble);
   turnOffClickedMenuElem(currBgBubblePercent);
-  
-  return page
+
 
 }
 
@@ -73,16 +56,16 @@ function giveMenuIdClickEvent(bgBubble) {
       /** */
       switch (i) {
         case 0:
-          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble);
+          moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
           break;
         case 1:
-          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble);
+          moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
           break;
         case 2:
-          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble);
+          moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
           break;
         case 3:
-          moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble);
+          moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
           break;
       }
     });
