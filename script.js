@@ -1,7 +1,6 @@
 window.addEventListener("load", () => {
   //check local storage for currBgBubblePercent;
   getViewPort();
- 
   currBgBubblePercent = localStorage.getItem("currBgBubblePercent");
   if (!currBgBubblePercent) {
     console.log("no local storage, set it to 11%");
@@ -10,7 +9,7 @@ window.addEventListener("load", () => {
      giveMenuIdClickEvent(bgBubble);
      resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
   } else {
-    moveBgBubbleAndTurnOffElem(0, 1, currBgBubblePercent, bgBubble);
+    
     giveMenuIdClickEvent(bgBubble);
     resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
   }
@@ -42,19 +41,19 @@ let percentMap = {
   3: "86.2%",
 };
 
+let pageMap = {
+  0: "index.html",
+  1: "projects.html",
+  2: "about.html",
+  3: "contact.html",
+};
+
 function getViewPort() {
   return (viewport = window.innerWidth);
 }
 
 
 async function moveBgBubbleAndTurnOffElem(i, id, currBgBubblePercent, bgBubble) {
-let pageMap = {
-  0: "index.html",
-  1: "projects.html",
-  2: "about.html",
-  3: "contact.html"
-  }
-  
   let page = pageMap[i];
   move(id, currBgBubblePercent, bgBubble);
   turnOffClickedMenuElem(currBgBubblePercent);
@@ -100,7 +99,7 @@ function move(id, position, bgBubble) {
   }
   currBgBubblePercent = position;
   if (!currBgBubblePercent) currBgBubblePercent = "11%";
-  //localStorage.setItem("currBgBubblePercent", currBgBubblePercent);
+  localStorage.setItem("currBgBubblePercent", currBgBubblePercent);
 
   timeLine
     .to(
