@@ -22,6 +22,8 @@ window.addEventListener("resize", () => {
 
 
 let timeLine = gsap.timeline();
+let body = document.getElementsByTagName("body");
+console.log(body);
 let bgBubble = document.getElementById("bgBubble");
 let menuElements = document.getElementsByClassName("menuElement");
 let viewport, currBgBubblePercent, id;
@@ -42,6 +44,7 @@ function moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble) {
 
   move(id, currBgBubblePercent, bgBubble);
   turnOffClickedMenuElem(currBgBubblePercent);
+  body.style.backgroundColor = "white";
 
 
 }
