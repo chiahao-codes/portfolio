@@ -9,7 +9,13 @@ window.addEventListener("load", () => {
      giveMenuIdClickEvent(bgBubble);
      resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
   } else {
-    
+    for (const [key, value] of percentMap) {
+      if (value === currBgBubblePercent) {
+        let initialId = key;
+        let initialI = (initialId - 1);
+      }
+    }
+    moveBgBubbleAndTurnOffElem(initialI, inititialId, currBgBubblePercent, bgBubble);
     giveMenuIdClickEvent(bgBubble);
     resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
   }
