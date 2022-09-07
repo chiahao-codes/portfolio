@@ -1,13 +1,9 @@
 window.addEventListener("load", () => {
   //check local storage for currBgBubblePercent;
   getViewPort();
-  currBgBubblePercent = localStorage.getItem("currBgBubblePercent");
-  if (!currBgBubblePercent) {
-    console.log("no local storage, set it to 11%");
-    currBgBubblePercent = "11%"; 
-  } 
- 
-  moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
+  localStorage.clear();
+  currBgBubblePercent = "11%";
+ moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
   giveMenuIdClickEvent(bgBubble);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
 });
