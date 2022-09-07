@@ -51,7 +51,7 @@ body > .main {
     width: 100%;
         min-width: 100%;
         height: fit-content;
-        background-color: black;
+        background-color: inherit;
         border-radius: none;
         overflow: hidden;
         position: relative;
@@ -125,7 +125,7 @@ body > .main {
 
 
 #bg {
-    background-color: black;
+    background-color: inherit;
     width:120%;
     height:100%;
     margin-left:-20%;
@@ -133,7 +133,7 @@ body > .main {
 
 #bgBubble {
     position: absolute;
-    background-color: black;
+    background-color: inherit;
     width: calc(70px + 0.025vmin);
     height: calc(70px + .025vmin);
     border-radius: 50%;
