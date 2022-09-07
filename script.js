@@ -56,19 +56,19 @@ function giveMenuIdClickEvent(bgBubble) {
       switch (i) {
         case 0:
           moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
-          body.style.backgroundColor = "black";
+          body.style.backgroundColor = "black"
           break;
         case 1:
           moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
-          body.style.backgroundColor = "white";
+          body.style.backgroundColor = "white"
           break;
         case 2:
           moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
-          body.style.backgroundColor = "navy";
+          body.style.backgroundColor = "navy"
           break;
         case 3:
           moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
-          body.style.backgroundColor = "darkgreen";
+          body.style.backgroundColor = "darkgreen"
           break;
       }
     });
