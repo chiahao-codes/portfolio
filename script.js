@@ -5,9 +5,10 @@ window.addEventListener("load", () => {
   if (!currBgBubblePercent) {
     console.log("no local storage, set it to 11%");
     currBgBubblePercent = "11%";
+    body.style.backgroundColor = "black";
      
   } 
-  body.style.backgroundColor = "black";
+  
   moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
   giveMenuIdClickEvent(bgBubble);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
