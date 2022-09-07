@@ -196,6 +196,7 @@ function gsapResizeBgbLeft(bgB, view, position, timeLine) {
 function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   console.log("gsapMatch running");
   let positionNumbered = parseInt(position) * 100;
+  console.log(positionNumbered);
   let subtractedVw = positionNumbered / 11;
   console.log(subtractedVw);
   if (view >= 1500) {
