@@ -152,9 +152,10 @@ function move(id, position, bgBubble) {
 
 function turnOffClickedMenuElem(currBgBubblePercent) {
   console.log(`turnOffClickedMenuElem, currBubb:${currBgBubblePercent}`);
-  if (!currBgBubblePercent) currBgBubblePercent = "11%";
+  
 
   for (let i = 0; i < menuElements.length; i++) {
+    console.log(`pecercentMap: ${percentMap[i]}`)
     if (percentMap[i] === currBgBubblePercent) {
       menuElements[i].firstChild.style.opacity = "0";
     } else {
