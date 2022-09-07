@@ -3,7 +3,7 @@ window.addEventListener("load", () => {
   getViewPort();
   localStorage.clear();
   currBgBubblePercent = "11%";
- moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
+  moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
   giveMenuIdClickEvent(bgBubble);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
 });
@@ -195,7 +195,8 @@ function gsapResizeBgbLeft(bgB, view, position, timeLine) {
 
 function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   console.log("gsapMatch running");
-let subtractedVw = position / 11;
+  let positionNumbered = parseInt(position) * 100;
+let subtractedVw = positionNumbered / 11;
   if (view >= 1500) {
     timeLine.to(
       bgB,
