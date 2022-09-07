@@ -25,11 +25,17 @@ let viewport, currBgBubblePercent, id;
 
 let percentMap = {
   0: "11%",
-  1: "36%",
-  2: "61%",
-  3: "86.2%",
+  1: "33%",
+  2: "66%",
+  3: "88%",
 };
 
+/**
+ * "36%"
+"61%"
+"86.2%"
+ * 
+ */
 
 function getViewPort() {
   return (viewport = window.innerWidth);
@@ -181,9 +187,15 @@ function mouseLeave(num) {
   }
 }
 
+
+function gsapResizeBgbLeft(bgB, view, position, timeLine) {
+  let subtractedVw = (position / 11);
+  timeLine.to(bgB, {duration:0.219, left:`calc(${position} - calc(${subtractedVw} * .91vw))`, ease:`ease-in-out`})
+}
+
 function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   console.log("gsapMatch running");
-
+let subtractedVw = position / 11;
   if (view >= 1500) {
     timeLine.to(
       bgB,
@@ -211,7 +223,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       bgB,
       {
         duration: 0.219,
-        left: `calc(${position} - .91vw)`,
+        left: `calc(${position} - calc(${subtractedVw} * .91vw))`,
         ease: "ease-in-out",
       },
       0
