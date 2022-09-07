@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
     currBgBubblePercent = "11%";
      
   } 
-
+  body.style.backgroundColor = "black";
   moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
   giveMenuIdClickEvent(bgBubble);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
@@ -22,7 +22,7 @@ window.addEventListener("resize", () => {
 
 
 let timeLine = gsap.timeline();
-let body = document.getElementsByTagName("body");
+let body = document.getElementsByTagName("body")[0];
 console.log(body);
 let bgBubble = document.getElementById("bgBubble");
 let menuElements = document.getElementsByClassName("menuElement");
@@ -44,7 +44,7 @@ function moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble) {
 
   move(id, currBgBubblePercent, bgBubble);
   turnOffClickedMenuElem(currBgBubblePercent);
-  body[0].style.backgroundColor = "white";
+  body.style.backgroundColor = "white";
 
 
 }
