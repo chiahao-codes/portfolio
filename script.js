@@ -4,9 +4,7 @@ window.addEventListener("load", () => {
   currBgBubblePercent = localStorage.getItem("currBgBubblePercent");
   if (!currBgBubblePercent) {
     console.log("no local storage, set it to 11%");
-    currBgBubblePercent = "11%";
-    body.style.backgroundColor = "black";
-     
+    currBgBubblePercent = "11%"; 
   } 
   
   moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
@@ -45,7 +43,7 @@ function moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble) {
 
   move(id, currBgBubblePercent, bgBubble);
   turnOffClickedMenuElem(currBgBubblePercent);
-  body.style.backgroundColor = "white";
+  body.style.backgroundColor = "#329ea8";
 
 
 }
