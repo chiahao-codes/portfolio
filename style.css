@@ -133,7 +133,7 @@ body > .main {
 
 #bgBubble {
     position: absolute;
-    background-color: inherit;
+    background-color: black;
     width: calc(70px + 0.025vmin);
     height: calc(70px + .025vmin);
     border-radius: 50%;
