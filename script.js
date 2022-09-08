@@ -21,6 +21,7 @@ let body = document.getElementsByTagName("body")[0];
 console.log(body);
 let bgBubble = document.getElementById("bgBubble");
 let menuElements = document.getElementsByClassName("menuElement");
+console.log(menuElements);
 let viewport, currBgBubblePercent, id;
 
 let percentMap = {
@@ -152,7 +153,6 @@ function move(id, position, bgBubble) {
 
 function turnOffClickedMenuElem(currBgBubblePercent) {
   console.log(`turnOffClickedMenuElem, currBubb:${currBgBubblePercent}`);
-  
 
   for (let i = 0; i < menuElements.length; i++) {
     console.log(`pecercentMap: ${percentMap[i]}`, typeof percentMap[i]);
@@ -229,7 +229,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       bgB,
       {
         duration: 0.219,
-        left: `calc(${position}% - calc(${subtractedVw} * .91vw))`,
+        left: `calc(${position}% - .91vw)`,
         ease: "ease-in-out",
       },
       0
