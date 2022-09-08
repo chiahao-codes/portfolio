@@ -155,11 +155,10 @@ function turnOffClickedMenuElem(currBgBubblePercent) {
   console.log(`turnOffClickedMenuElem, currBubb:${currBgBubblePercent}`);
 
   for (let i = 0; i < menuElements.length; i++) {
-    console.log(`pecercentMap: ${percentMap[i]}`, typeof percentMap[i]);
-    console.log(`currBubb:${currBgBubblePercent}`, typeof currBgBubblePercent);
+  
     if (percentMap[i] === currBgBubblePercent) {
       menuElements[i].firstChild.style.opacity = "0";
-      console.log(`percentMap matches currBgBubblePercent`)
+     
     } else {
       menuElements[i].firstChild.style.opacity = ".55";
       menuElements[i].firstChild.style.color = "white";
@@ -201,6 +200,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   let positionNumbered = parseInt(position);
   let subtractedVw = positionNumbered / 11;
   subtractedVw = subtractedVw.toString();
+  console.log(subtractedVw, typeof subtractedVw);
   if (view >= 1500) {
     timeLine.to(
       bgB,
