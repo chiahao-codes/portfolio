@@ -159,6 +159,7 @@ function turnOffClickedMenuElem(currBgBubblePercent) {
     console.log(`currBubb:${currBgBubblePercent}`, typeof currBgBubblePercent);
     if (percentMap[i] === currBgBubblePercent) {
       menuElements[i].firstChild.style.opacity = "0";
+      console.log(`percentMap matches currBgBubblePercent`)
     } else {
       menuElements[i].firstChild.style.opacity = ".55";
       menuElements[i].firstChild.style.color = "white";
