@@ -43,7 +43,8 @@ function getViewPort() {
 }
 
 function moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble) {
-
+// perhaps: set currBgBubblePercent = to another variable, then pass to functions below;
+  currBgBubblePercent = currBgBubblePercent;
   move(id, currBgBubblePercent, bgBubble);
   turnOffClickedMenuElem(currBgBubblePercent);
 }
