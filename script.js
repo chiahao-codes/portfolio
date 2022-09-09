@@ -190,11 +190,6 @@ function mouseLeave(num) {
 }
 
 
-function gsapResizeBgbLeft(bgB, view, position, timeLine) {
-  let multiplyViewPortBy = (position / 11);
-  timeLine.to(bgB, {duration:0.219, left:`calc(${position} - calc(${multiplyViewPortBy} * .91vw))`, ease:`ease-in-out`})
-}
-
 function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   console.log("gsapMatch running");
   let positionAsNumberObj = parseInt(position);
@@ -227,11 +222,12 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   if (view >= 1300 && view <= 1399.99) {
     correspondingVw = .91;
     let subtractPositionBy = (correspondingVw * multiplyViewPortBy);
+    
     timeLine.to(
       bgB,
       {
         duration: 0.219,
-        left: `calc(${position}% - ${subtractPositionBy}vw)`,
+        left: `calc(${position} - ${subtractPositionBy}vw)`,
         ease: "ease-in-out",
       },
       0
