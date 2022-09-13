@@ -2,6 +2,7 @@ window.addEventListener("load", () => {
   //check local storage for currBgBubblePercent;
   getViewPort();
   localStorage.clear();
+  body.style.backgroundColor = "black";
   currBgBubblePercent = "11%";
   moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
   giveMenuIdClickEvent(bgBubble);
