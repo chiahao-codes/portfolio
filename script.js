@@ -65,8 +65,8 @@ function giveMenuIdClickEvent(bgBubble) {
         case 1:
           moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
           body.style.backgroundColor = "white";
-          bgWrapper.style.backgroundColor = "inherit";
-          bgBubble.style.backgroundColor = "inherit";
+          //bgWrapper.style.backgroundColor = "inherit";
+          //bgBubble.style.backgroundColor = "inherit";
           break;
         case 2:
           moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
