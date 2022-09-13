@@ -62,13 +62,13 @@ function giveMenuIdClickEvent(bgBubble) {
           moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
           body.style.backgroundColor = "black";
           bgWrapper.style.backgroundColor = "black";
-          bgBubble.style.backgroundColor = "black";
+          
           break;
         case 1:
           moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
           body.style.backgroundColor = "white";
           bgWrapper.style.backgroundColor = "white";
-          bgBubble.style.backgroundColor = "white";
+          
           break;
         case 2:
           moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
