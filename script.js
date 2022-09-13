@@ -61,12 +61,14 @@ function giveMenuIdClickEvent(bgBubble) {
         case 0:
           moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
           body.style.backgroundColor = "black";
+          bgWrapper.style.backgroundColor = "black";
+          bgBubble.style.backgroundColor = "black";
           break;
         case 1:
           moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
           body.style.backgroundColor = "white";
-          //bgWrapper.style.backgroundColor = "inherit";
-          //bgBubble.style.backgroundColor = "inherit";
+          bgWrapper.style.backgroundColor = "white";
+          bgBubble.style.backgroundColor = "white";
           break;
         case 2:
           moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
@@ -195,10 +197,6 @@ function mouseLeave(num) {
 
 function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   console.log("gsapMatch running");
-  let positionAsNumberObj = parseInt(position);
-  let multiplyViewPortBy = positionAsNumberObj / 11; //number object;
-  let correspondingVw;
-  //multiplyViewPortBy = multiplyViewPortBy.toString();
  
   if (view >= 1500) {
     timeLine.to(
