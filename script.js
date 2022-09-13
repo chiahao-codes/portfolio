@@ -2,7 +2,7 @@ window.addEventListener("load", () => {
   //check local storage for currBgBubblePercent;
   getViewPort();
   localStorage.clear();
-  body.style.backgroundColor = "black";
+ 
   currBgBubblePercent = "11%";
   moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
   giveMenuIdClickEvent(bgBubble);
@@ -22,8 +22,8 @@ let body = document.getElementsByTagName("body")[0];
 console.log(body);
 let bgBubble = document.getElementById("bgBubble");
 let bgWrapper = document.getElementById("bgWrapper");
+let bg = document.getElementById("bg");
 let menuElements = document.getElementsByClassName("menuElement");
-console.log(menuElements);
 let viewport, currBgBubblePercent, id;
 
 let percentMap = {
@@ -63,12 +63,16 @@ function giveMenuIdClickEvent(bgBubble) {
           moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
           body.style.backgroundColor = "black";
           bgWrapper.style.backgroundColor = "black";
+          bg.style.backgroundColor = "black";
+          bgBubble.style.backgroundColor = "black";
           
           break;
         case 1:
           moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
           body.style.backgroundColor = "white";
           bgWrapper.style.backgroundColor = "white";
+          bg.style.backgroundColor = "white";
+          bgBubble.style.backgroundColor = "white";
           
           break;
         case 2:
