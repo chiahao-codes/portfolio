@@ -26,9 +26,9 @@ let viewport, currBgBubblePercent, id;
 
 let percentMap = {
   0: "11%",
-  1: "33%",
-  2: "66%",
-  3: "88%",
+  1: "36%",
+  2: "61%",
+  3: "86.2%",
 };
 
 /**
@@ -223,14 +223,13 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
     );
   }
   if (view >= 1300 && view <= 1399.99) {
-    correspondingVw = .91;
-    let subtractPositionBy = (correspondingVw * multiplyViewPortBy);
+    
     
     timeLine.to(
       bgB,
       {
         duration: 0.219,
-        left: `calc(${position} - ${subtractPositionBy}vw)`,
+        left: `calc(${position} - .91vw)`,
         ease: "ease-in-out",
       },
       0
