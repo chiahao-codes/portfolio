@@ -20,6 +20,7 @@ let timeLine = gsap.timeline();
 let body = document.getElementsByTagName("body")[0];
 console.log(body);
 let bgBubble = document.getElementById("bgBubble");
+let bgWrapper = document.getElementById("bgWrapper");
 let menuElements = document.getElementsByClassName("menuElement");
 console.log(menuElements);
 let viewport, currBgBubblePercent, id;
@@ -44,9 +45,6 @@ function getViewPort() {
 
 function moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble) {
 // perhaps: set currBgBubblePercent = to another variable, then pass to functions below;
-  id = id;
-  bgBubble = bgBubble;
-  currBgBubblePercent = currBgBubblePercent;
   move(id, currBgBubblePercent, bgBubble);
   turnOffClickedMenuElem(currBgBubblePercent);
 }
@@ -67,6 +65,8 @@ function giveMenuIdClickEvent(bgBubble) {
         case 1:
           moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
           body.style.backgroundColor = "white";
+          bgWrapper.style.backgroundColor = "inherit";
+          bgBubble.style.backgroundColor = "inherit";
           break;
         case 2:
           moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
