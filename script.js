@@ -200,7 +200,7 @@ function mouseLeave(num) {
 function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   console.log("gsapMatch running");
  
-  if (view >= 1500 && view <=1599.99) {
+  if (view >= 1500 && view <= 1599.99) {
     timeLine.to(
       bgB,
       {
