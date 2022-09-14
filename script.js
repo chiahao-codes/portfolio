@@ -197,7 +197,40 @@ function mouseLeave(num) {
 
 function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
 
- 
+  
+  if (view >= 1650) {
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.219,
+        left: `calc(${position} - .63vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
+  }
+  if (view >= 1600) {
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.219,
+        left: `calc(${position} - .61vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
+  }
+  if (view >= 1599.99) {
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.219,
+        left: `calc(${position} - .58vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
+  }
   if (view >= 1550.99) {
     timeLine.to(
       bgB,
@@ -363,7 +396,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
 
 function resizeBgbLeft(bgB, view, position) {
   if (view >= 1500) {
-    bgB.style.left = `calc(${position} - .59vw)`;
+    bgB.style.left = `calc(${position} - .54vw)`;
   }
   if (view >= 1400 && view <= 1499.99) {
     bgB.style.left = `calc(${position} - .7vw)`;
