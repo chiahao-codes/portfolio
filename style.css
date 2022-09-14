@@ -27,7 +27,7 @@ body{
         }
 
 body > .main {
-        color: hsl(58°,
+        color: hsl(58,
             98%,
             40%);
         filter: contrast(150%), brightness(150%);
