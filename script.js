@@ -197,7 +197,17 @@ function mouseLeave(num) {
 
 function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
 
-  
+  if (view >= 1699.99) {
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.219,
+        left: `calc(${position} - .65vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
+  }
   if (view >= 1650) {
     timeLine.to(
       bgB,
