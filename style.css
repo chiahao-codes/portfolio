@@ -83,7 +83,8 @@ body > .main {
 
 
 .bubble {
-    background-color: hsl(0, 0%, 12%);
+    background-color: #000000;
+    background-image: url("./assets/45-degree-fabric-light.png");
     width: calc(53px + .025vmin);
     height: calc(53px + .025vmin);
     bottom:calc(85px + .025vmin);
@@ -105,10 +106,10 @@ body > .main {
 /*  */
 
 #bubble1 {
-    background-color: hsl(0, 0%, 12%);
+    background-color: #000000;
+    background-image: url("./assets/45-degree-fabric-light.png");
     transform: translateY(0%);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
-        0 1px 2px rgba(0, 0, 0, 0.24);
+    
 }
 
 #bubble1 > span {
