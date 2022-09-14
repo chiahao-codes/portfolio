@@ -27,7 +27,7 @@ body{
         }
 
 body > .main {
-        color: yellow;
+        color: white;
         filter: contrast(150%), brightness(120%);
         position: absolute;
         top: 50%;

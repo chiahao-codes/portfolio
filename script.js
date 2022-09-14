@@ -19,7 +19,7 @@ window.addEventListener("resize", () => {
 
 let timeLine = gsap.timeline();
 let body = document.getElementsByTagName("body")[0];
-console.log(body);
+let mainH1 = document.getElementById("main");
 let bgBubble = document.getElementById("bgBubble");
 let bgWrapper = document.getElementById("bgWrapper");
 let bg = document.getElementById("bg");
@@ -33,19 +33,13 @@ let percentMap = {
   3: "86.2%",
 };
 
-/**
- * "36%"
-"61%"
-"86.2%"
- * 
- */
 
 function getViewPort() {
   return (viewport = window.innerWidth);
 }
 
 function moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble) {
-// perhaps: set currBgBubblePercent = to another variable, then pass to functions below;
+
   move(id, currBgBubblePercent, bgBubble);
   turnOffClickedMenuElem(currBgBubblePercent);
 }
@@ -62,6 +56,7 @@ function giveMenuIdClickEvent(bgBubble) {
         case 0:
           moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
           body.style.backgroundColor = "black";
+          mainH1.style.display = "block";
           bgWrapper.style.backgroundColor = "black";
           bg.style.backgroundColor = "black";
           bgBubble.style.backgroundColor = "black";
@@ -70,6 +65,7 @@ function giveMenuIdClickEvent(bgBubble) {
         case 1:
           moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
           body.style.backgroundColor = "white";
+          mainH1.style.display = "none";
           bgWrapper.style.backgroundColor = "white";
           bg.style.backgroundColor = "white";
           bgBubble.style.backgroundColor = "white";
