@@ -11,7 +11,7 @@ window.addEventListener("load", () => {
 
 window.addEventListener("resize", () => {
   getViewPort();
-  console.log(`Viewport width:${viewport}`);
+
   turnOffClickedMenuElem(currBgBubblePercent);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
 });
@@ -46,7 +46,7 @@ function moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble) {
 
 
 function giveMenuIdClickEvent(bgBubble) {
-  console.log("giveMenuIdClickEvent()");
+ 
   for (let i = 0; i < menuElements.length; i++) {
     menuElements[i].firstChild.addEventListener("click", () => {
       id = (i + 1).toString(),
@@ -86,9 +86,7 @@ function giveMenuIdClickEvent(bgBubble) {
 }
 
 function move(id, position, bgBubble) {
-  console.log(
-    `move() running, id:${id}, position:${position}, bgBubble;${bgBubble}`
-  );
+ 
   if (!id) {
     id = "1";
   }
@@ -159,7 +157,7 @@ function move(id, position, bgBubble) {
 }
 
 function turnOffClickedMenuElem(currBgBubblePercent) {
-  console.log(`turnOffClickedMenuElem, currBubb:${currBgBubblePercent}`);
+ 
 
   for (let i = 0; i < menuElements.length; i++) {
   
@@ -198,9 +196,9 @@ function mouseLeave(num) {
 
 
 function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
-  console.log("gsapMatch running");
+
  
-  if (view >= 1500 && view <= 1599.99) {
+  if (view >= 1500 && view <= 1600) {
     timeLine.to(
       bgB,
       {
