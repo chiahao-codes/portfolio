@@ -63,7 +63,8 @@ body > .main {
      visibility: visible;
      width: 100%;
      left: 0;
-     background-color: hsl(0, 0%, 12%);
+     background-color: #000000;
+     background-image:url("./assets/45-degree-fabric-light.png");
      height: calc(4em + .025vmin);
      position: fixed;
      bottom: 0;
