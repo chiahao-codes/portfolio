@@ -11,6 +11,8 @@ html {
 body{
     visibility: hidden;
     background-color: black;
+    background-image:url("./assets/brilliant.png");
+
 }
 
 

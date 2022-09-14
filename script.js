@@ -56,6 +56,7 @@ function giveMenuIdClickEvent(bgBubble) {
         case 0:
           moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
           body.style.backgroundColor = "black";
+          body.style.backgroundImage = "url(./assets/brilliant.png)";
           mainH1.style.display = "block";
           bgWrapper.style.backgroundColor = "black";
           bg.style.backgroundColor = "black";
