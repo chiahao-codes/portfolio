@@ -3,7 +3,7 @@ window.addEventListener("load", () => {
   getViewPort();
   localStorage.clear();
   console.log(`viewport: ${viewport}`);
-  currBgBubblePercent = "10.99%";
+  currBgBubblePercent = "11%";
   moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
   giveMenuIdClickEvent(bgBubble);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
@@ -27,7 +27,7 @@ let menuElements = document.getElementsByClassName("menuElement");
 let viewport, currBgBubblePercent, id;
 
 let percentMap = {
-  0: "10.99%",
+  0: "11%",
   1: "36%",
   2: "61%",
   3: "86.2%",
