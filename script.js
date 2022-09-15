@@ -158,7 +158,6 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   console.log(`viewport: ${view}`);
 
   if (view >= 1650) {
-    console.log("Good...")
       timeLine.to(
         bgB,
         {
@@ -433,60 +432,53 @@ function mouseLeave(num) {
 
 
 function resizeBgbLeft(bgB, view, position) {
-  if (view >= 1650) {
-    if (position !== "86.2%") {
-      let incrementPosition = parseInt(position) + 0.3;
-      incrementPosition = incrementPosition.toString();
-      position = `${incrementPosition}%`;
-    }
-    timeLine.to(
-      bgB,
-      {
-        duration: 0.219,
-        left: `calc(${position} - .63vw)`,
-        ease: "ease-in-out",
-      },
-      0
-    );
-  }
-  if (view >= 1600) {
-    timeLine.to(
-      bgB,
-      {
-        duration: 0.219,
-        left: `calc(${position} - .61vw)`,
-        ease: "ease-in-out",
-      },
-      0
-    );
-  }
-  if (view <= 1599.99) {
-    if (position !== "86.2%") {
-      let incrementPosition = parseInt(position) + 0.2;
-      incrementPosition = incrementPosition.toString();
-      position = `${incrementPosition}%`;
-    }
-    timeLine.to(
-      bgB,
-      {
-        duration: 0.219,
-        left: `calc(${position} - .58vw)`,
-        ease: "ease-in-out",
-      },
-      0
-    );
-  }
-  if (view >= 1550.99) {
-    timeLine.to(
-      bgB,
-      {
-        duration: 0.219,
-        left: `calc(${position} - .56vw)`,
-        ease: "ease-in-out",
-      },
-      0
-    );
-  }
+   if (view >= 1650) {
+     timeLine.to(
+       bgB,
+       {
+         duration: 0.219,
+         left: `calc(${position} - .50vw)`,
+         ease: "ease-in-out",
+       },
+       0
+     );
+   }
+   if (view >= 1600 && view <= 1649.99) {
+     console.log("running...");
+     timeLine.to(
+       bgB,
+       {
+         duration: 0.219,
+         left: `calc(${position} - .59vw)`,
+         ease: "ease-in-out",
+       },
+       0
+     );
+   }
+   if (view >= 1550 && view <= 1599.99) {
+     if (position !== "86.2%") {
+       timeLine.to(
+         bgB,
+         {
+           duration: 0.219,
+           left: `calc(${position} - .56vw)`,
+           ease: "ease-in-out",
+         },
+         0
+       );
+     } else {
+       timeLine.to(
+         bgB,
+         {
+           duration: 0.219,
+           left: `calc(${position} - .58vw)`,
+           ease: "ease-in-out",
+         },
+         0
+       );
+     }
+   }
+ 
   if (view >= 1500) {
     bgB.style.left = `calc(${position} - .54vw)`;
   }
