@@ -3,7 +3,7 @@ window.addEventListener("load", () => {
   getViewPort();
   localStorage.clear();
   console.log(`viewport: ${viewport}`);
-  currBgBubblePercent = "11%";
+  currBgBubblePercent = "10.99%";
   moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
   giveMenuIdClickEvent(bgBubble);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
@@ -27,7 +27,7 @@ let menuElements = document.getElementsByClassName("menuElement");
 let viewport, currBgBubblePercent, id;
 
 let percentMap = {
-  0: "11%",
+  0: "10.99%",
   1: "36%",
   2: "61%",
   3: "86.2%",
@@ -90,11 +90,8 @@ function giveMenuIdClickEvent(bgBubble) {
 
 function move(id, position, bgBubble) {
  
-  if (!id) {
-    id = "1";
-  }
   currBgBubblePercent = position;
-  if (!currBgBubblePercent) currBgBubblePercent = "11%";
+  
   localStorage.setItem("currBgBubblePercent", currBgBubblePercent);
 
   timeLine
@@ -278,6 +275,12 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   }
 
   if (view >= 1350 && view <= 1399.99) {
+    /** if (position === "11%") {
+      let decrementPosition = parseInt(position) + 0.1111;
+      decrementPosition = decrementPosition.toString();
+      position = `${decrementPosition}%`;
+    }*/
+
     timeLine.to(
       bgB,
       {
