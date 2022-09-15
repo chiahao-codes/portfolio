@@ -27,7 +27,7 @@ let menuElements = document.getElementsByClassName("menuElement");
 let viewport, currBgBubblePercent, id;
 
 let percentMap = {
-  0: "11%",
+  0: "10.4%",
   1: "36%",
   2: "61%",
   3: "86.2%",
