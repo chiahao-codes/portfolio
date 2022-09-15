@@ -59,6 +59,7 @@ function giveMenuIdClickEvent(bgBubble) {
           body.style.backgroundImage = "url(./assets/brilliant.png)";
           mainH1.style.display = "block";
           bgWrapper.style.backgroundColor = "black";
+          bgWrapper.style.backgroundImage = "url(./assets/brilliant.png)";
           bg.style.backgroundColor = "black";
           bgBubble.style.backgroundColor = "black";
           
