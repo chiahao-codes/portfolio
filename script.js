@@ -157,7 +157,7 @@ function move(id, position, bgBubble) {
 function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   console.log(`viewport: ${view}`);
 
-  if (view >= 1650 && view <= 1699.99) {
+  if (view >= 1650) {
     console.log("Good...")
       timeLine.to(
         bgB,
