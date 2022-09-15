@@ -157,18 +157,7 @@ function move(id, position, bgBubble) {
 function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   console.log(`viewport: ${view}`);
 
-  if (view >= 1650) {
-    if (position !== "86.2%") {
-      timeLine.to(
-        bgB,
-        {
-          duration: 0.219,
-          left: `calc(${position} - .59vw)`,
-          ease: "ease-in-out",
-        },
-        0
-      );
-    } else {
+  if (view >= 1650 && view <=1699.99) {
       timeLine.to(
         bgB,
         {
@@ -178,7 +167,6 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
         },
         0
       );
-    }
   }
   if (view >= 1600 && view <= 1649.99) {
     timeLine.to(
