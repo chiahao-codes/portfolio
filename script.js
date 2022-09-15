@@ -3,7 +3,7 @@ window.addEventListener("load", () => {
   getViewPort();
   localStorage.clear();
   console.log(`viewport: ${viewport}`);
-  currBgBubblePercent = "10.99%";
+  currBgBubblePercent = "11%";
   moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
   giveMenuIdClickEvent(bgBubble);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
@@ -27,7 +27,7 @@ let menuElements = document.getElementsByClassName("menuElement");
 let viewport, currBgBubblePercent, id;
 
 let percentMap = {
-  0: "10.99%",
+  0: "11%",
   1: "36%",
   2: "61%",
   3: "86.2%",
@@ -275,21 +275,30 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   }
 
   if (view >= 1350 && view <= 1399.99) {
-    /** if (position === "11%") {
-      let decrementPosition = parseInt(position) + 0.1111;
-      decrementPosition = decrementPosition.toString();
-      position = `${decrementPosition}%`;
-    }*/
+    /** */
+    if (position === "11%") {
+      timeLine.to(
+        bgB,
+        {
+          duration: 0.219,
+          left: `calc(${position} - .91vw)`,
+          ease: "ease-in-out",
+        },
+        0
+      );
+    } else {
+      timeLine.to(
+        bgB,
+        {
+          duration: 0.219,
+          left: `calc(${position} - .90vw)`,
+          ease: "ease-in-out",
+        },
+        0
+      );
+    }
 
-    timeLine.to(
-      bgB,
-      {
-        duration: 0.219,
-        left: `calc(${position} - .90vw)`,
-        ease: "ease-in-out",
-      },
-      0
-    );
+    
   }
 
   if (view >= 1300 && view <= 1349.99) {
