@@ -6,7 +6,7 @@ window.addEventListener("load", () => {
   currBgBubblePercent = "11%";
   moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
   giveMenuIdClickEvent(bgBubble);
-  resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
+  //resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
 });
 
 window.addEventListener("resize", () => {
