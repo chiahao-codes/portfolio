@@ -197,25 +197,6 @@ function mouseLeave(num) {
 
 function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
 
-  if (view >= 1699.99) {
-    /**
-     * if (position !== "86.2%") {
-      let incrementPosition = parseInt(position) + .4;
-      incrementPosition = incrementPosition.toString();
-      position = `${incrementPosition}%`
-    }
-     */
-
-    timeLine.to(
-      bgB,
-      {
-        duration: 0.219,
-        left: `calc(${position} - .65vw)`,
-        ease: "ease-in-out",
-      },
-      0
-    );
-  }
   if (view >= 1650) {
      if (position !== "86.2%") {
        let incrementPosition = parseInt(position) + 0.2;
