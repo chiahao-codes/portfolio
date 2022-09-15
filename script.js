@@ -3,7 +3,7 @@ window.addEventListener("load", () => {
   getViewPort();
   localStorage.clear();
   console.log(`viewport: ${viewport}`);
-  currBgBubblePercent = "11%";
+  currBgBubblePercent = "10.9%";
   moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
   giveMenuIdClickEvent(bgBubble);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
