@@ -167,7 +167,6 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
         },
         0
       );
-      
     } else {
       timeLine.to(
         bgB,
@@ -180,7 +179,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       );
     }
   }
-  if (view >= 1600) {
+  if (view >= 1600 && view <= 1649.99) {
     timeLine.to(
       bgB,
       {
@@ -191,7 +190,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       0
     );
   }
-  if (view <= 1599.99) {
+  if (view >= 1550 && view <= 1599.99) {
     if (position !== "86.2%") {
       timeLine.to(
         bgB,
@@ -214,7 +213,8 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       );
     }
   }
-  if (view >= 1550.99) {
+
+  /** if (view >= 1550.99) {
     timeLine.to(
       bgB,
       {
@@ -224,8 +224,9 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       },
       0
     );
-  }
-  if (view >= 1500) {
+  }*/
+
+  if (view >= 1500 && view <= 1549.99) {
     timeLine.to(
       bgB,
       {
