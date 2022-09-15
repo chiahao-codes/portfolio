@@ -144,6 +144,7 @@ body > .main {
 #bgBubble {
     position: absolute;
     background-color: black;
+    background-image: url("./assets/brilliant.png");
     width: calc(70px + 0.025vmin);
     height: calc(70px + .025vmin);
     border-radius: 50%;
