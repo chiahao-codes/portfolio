@@ -169,7 +169,11 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       );
   }
   if (view >= 1600 && view <= 1649.99) {
-    console.log("running...")
+  
+     let positionNumber = parseInt(position);
+     positionNumber = (positionNumber + 2).toString();
+    position = `${positionNumber}%`;
+    
     timeLine.to(
       bgB,
       {
@@ -444,7 +448,10 @@ function resizeBgbLeft(bgB, view, position) {
      );
    }
    if (view >= 1600 && view <= 1649.99) {
-     console.log("running...");
+     
+     let positionNumber = parseInt(position);
+     positionNumber = (positionNumber + 2).toString();
+     position = `${positionNumber}%`;
      timeLine.to(
        bgB,
        {
