@@ -157,6 +157,21 @@ function move(id, position, bgBubble) {
 function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   console.log(`viewport: ${view}`);
 
+  if (view >= 1700 && view <= 1749.99) {
+    positionNumber = parseInt(position);
+    positionNumber = (positionNumber + 0.9).toString();
+    position = `${positionNumber}%`;
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.219,
+        left: `calc(${position} - .38vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
+  }
+
   if (view >= 1650 && view <= 1699.99) {
       positionNumber = parseInt(position);
       positionNumber = (positionNumber + .12).toString();
@@ -370,6 +385,20 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
 }
 
 function resizeBgbLeft(bgB, view, position) {
+   if (view >= 1700 && view <= 1749.99) {
+     positionNumber = parseInt(position);
+     positionNumber = (positionNumber + 0.9).toString();
+     position = `${positionNumber}%`;
+     timeLine.to(
+       bgB,
+       {
+         duration: 0.219,
+         left: `calc(${position} - .38vw)`,
+         ease: "ease-in-out",
+       },
+       0
+     );
+   }
    if (view >= 1650 && view <= 1699.99) {
 positionNumber = parseInt(position);
      positionNumber = (positionNumber + .12).toString();
