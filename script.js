@@ -159,7 +159,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
 
   if (view >= 1650 && view <= 1699.99) {
       let positionNumber = parseInt(position);
-      positionNumber = (positionNumber + .25).toString();
+      positionNumber = (positionNumber + .22).toString();
       position = `${positionNumber}%`;
       timeLine.to(
         bgB,
@@ -411,7 +411,7 @@ function mouseLeave(num) {
 function resizeBgbLeft(bgB, view, position) {
    if (view >= 1650 && view <= 1699.99) {
 let positionNumber = parseInt(position);
-     positionNumber = (positionNumber + .25).toString();
+     positionNumber = (positionNumber + .22).toString();
      position = `${positionNumber}%`;
      timeLine.to(
        bgB,
