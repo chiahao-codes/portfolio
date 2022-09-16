@@ -162,7 +162,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
         bgB,
         {
           duration: 0.219,
-          left: `calc(${position} - .50vw)`,
+          left: `calc(${position} - .43vw)`,
           ease: "ease-in-out",
         },
         0
@@ -406,12 +406,12 @@ function mouseLeave(num) {
 
 
 function resizeBgbLeft(bgB, view, position) {
-   if (view >= 1650) {
+   if (view >= 1650 && view <= 1699.99) {
      timeLine.to(
        bgB,
        {
          duration: 0.219,
-         left: `calc(${position} - .50vw)`,
+         left: `calc(${position} - .43vw)`,
          ease: "ease-in-out",
        },
        0
