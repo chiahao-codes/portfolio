@@ -443,11 +443,19 @@ positionNumber = parseInt(position);
          0
        );
      
-   }
- 
-  if (view >= 1500) {
-    bgB.style.left = `calc(${position} - .54vw)`;
   }
+  if (view >= 1500 && view <= 1549.99) {
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.219,
+        left: `calc(${position} - .6vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
+  }
+ 
   if (view >= 1400 && view <= 1499.99) {
     bgB.style.left = `calc(${position} - .7vw)`;
   }
