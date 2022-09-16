@@ -157,12 +157,12 @@ function move(id, position, bgBubble) {
 function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   console.log(`viewport: ${view}`);
 
-  if (view >= 1650) {
+  if (view >= 1650 && view <= 1699.99) {
       timeLine.to(
         bgB,
         {
           duration: 0.219,
-          left: `calc(${position} - .45vw)`,
+          left: `calc(${position} - .50vw)`,
           ease: "ease-in-out",
         },
         0
@@ -411,7 +411,7 @@ function resizeBgbLeft(bgB, view, position) {
        bgB,
        {
          duration: 0.219,
-         left: `calc(${position} - .45vw)`,
+         left: `calc(${position} - .50vw)`,
          ease: "ease-in-out",
        },
        0
@@ -420,7 +420,7 @@ function resizeBgbLeft(bgB, view, position) {
    if (view >= 1600 && view <= 1649.99) {
      
      let positionNumber = parseInt(position);
-     positionNumber = (positionNumber + .26).toString();
+     positionNumber = (positionNumber + .25).toString();
      position = `${positionNumber}%`;
      timeLine.to(
        bgB,
