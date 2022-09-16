@@ -24,7 +24,7 @@ let bgBubble = document.getElementById("bgBubble");
 let bgWrapper = document.getElementById("bgWrapper");
 let bg = document.getElementById("bg");
 let menuElements = document.getElementsByClassName("menuElement");
-let viewport, currBgBubblePercent, id;
+let viewport, currBgBubblePercent, id, positionNumber;
 
 let percentMap = {
   0: "11%",
@@ -158,8 +158,8 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   console.log(`viewport: ${view}`);
 
   if (view >= 1650 && view <= 1699.99) {
-      let positionNumber = parseInt(position);
-      positionNumber = (positionNumber + .18).toString();
+      positionNumber = parseInt(position);
+      positionNumber = (positionNumber + .15).toString();
       position = `${positionNumber}%`;
       timeLine.to(
         bgB,
@@ -173,7 +173,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   }
   if (view >= 1600 && view <= 1649.99) {
   
-     let positionNumber = parseInt(position);
+     positionNumber = parseInt(position);
      positionNumber = (positionNumber + .25).toString();
      position = `${positionNumber}%`;
     
@@ -188,7 +188,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
     );
   }
   if (view >= 1550 && view <= 1599.99) {
-    let positionNumber = parseInt(position);
+    positionNumber = parseInt(position);
     positionNumber = (positionNumber + 0.25).toString();
     position = `${positionNumber}%`;
     
@@ -369,49 +369,10 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   );
 }
 
-function turnOffClickedMenuElem(currBgBubblePercent) {
- 
-
-  for (let i = 0; i < menuElements.length; i++) {
-  
-    if (percentMap[i] === currBgBubblePercent) {
-      menuElements[i].firstChild.style.opacity = "0";
-     
-    } else {
-      menuElements[i].firstChild.style.opacity = ".55";
-      menuElements[i].firstChild.style.color = "white";
-      menuElements[i].firstChild.addEventListener("mouseenter", () => {
-        mouseEnter(i);
-      });
-      menuElements[i].firstChild.addEventListener("mouseleave", () => {
-        mouseLeave(i);
-      });
-    }
-  }
-}
-
-function mouseEnter(num) {
-  for (let i = 0; i < menuElements.length; i++) {
-    if (i === num) {
-      menuElements[i].firstChild.style.opacity = "1";
-      menuElements[i].firstChild.style.cursor = "pointer";
-    }
-  }
-}
-
-function mouseLeave(num) {
-  for (let i = 0; i < menuElements.length; i++) {
-    if (i === num) {
-      menuElements[i].firstChild.style.opacity = ".55";
-    }
-  }
-}
-
-
 function resizeBgbLeft(bgB, view, position) {
    if (view >= 1650 && view <= 1699.99) {
-let positionNumber = parseInt(position);
-     positionNumber = (positionNumber + .18).toString();
+positionNumber = parseInt(position);
+     positionNumber = (positionNumber + .15).toString();
      position = `${positionNumber}%`;
      timeLine.to(
        bgB,
@@ -425,7 +386,7 @@ let positionNumber = parseInt(position);
    }
    if (view >= 1600 && view <= 1649.99) {
      
-     let positionNumber = parseInt(position);
+     positionNumber = parseInt(position);
      positionNumber = (positionNumber + .25).toString();
      position = `${positionNumber}%`;
      timeLine.to(
@@ -439,7 +400,7 @@ let positionNumber = parseInt(position);
      );
    }
   if (view >= 1550 && view <= 1599.99) {
-     let positionNumber = parseInt(position);
+     positionNumber = parseInt(position);
      positionNumber = (positionNumber + 0.25).toString();
      position = `${positionNumber}%`;
     
@@ -493,5 +454,39 @@ let positionNumber = parseInt(position);
   }
   if (view >= 320 && view <= 399.99) {
     bgB.style.left = `calc(${position} - 6.5vw)`;
+  }
+}
+
+function turnOffClickedMenuElem(currBgBubblePercent) {
+  for (let i = 0; i < menuElements.length; i++) {
+    if (percentMap[i] === currBgBubblePercent) {
+      menuElements[i].firstChild.style.opacity = "0";
+    } else {
+      menuElements[i].firstChild.style.opacity = ".55";
+      menuElements[i].firstChild.style.color = "white";
+      menuElements[i].firstChild.addEventListener("mouseenter", () => {
+        mouseEnter(i);
+      });
+      menuElements[i].firstChild.addEventListener("mouseleave", () => {
+        mouseLeave(i);
+      });
+    }
+  }
+}
+
+function mouseEnter(num) {
+  for (let i = 0; i < menuElements.length; i++) {
+    if (i === num) {
+      menuElements[i].firstChild.style.opacity = "1";
+      menuElements[i].firstChild.style.cursor = "pointer";
+    }
+  }
+}
+
+function mouseLeave(num) {
+  for (let i = 0; i < menuElements.length; i++) {
+    if (i === num) {
+      menuElements[i].firstChild.style.opacity = ".55";
+    }
   }
 }
