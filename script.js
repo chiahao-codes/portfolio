@@ -186,7 +186,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   }
   if (view >= 1550 && view <= 1599.99) {
     let positionNumber = parseInt(position);
-    positionNumber = (positionNumber + 0.4).toString();
+    positionNumber = (positionNumber + 0.25).toString();
     position = `${positionNumber}%`;
     
       timeLine.to(
@@ -206,7 +206,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       bgB,
       {
         duration: 0.219,
-        left: `calc(${position} - .54vw)`,
+        left: `calc(${position} - .6vw)`,
         ease: "ease-in-out",
       },
       0
