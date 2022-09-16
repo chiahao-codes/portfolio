@@ -235,12 +235,28 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       0
     );
   }
-  if (view >= 1400 && view <= 1499.99) {
+  if (view >= 1450 && view <= 1499.99) {
+    if(position === "86.2%")
+      positionNumber = parseInt(position);
+      positionNumber = (positionNumber - 0.07).toString();
+      position = `${positionNumber}%`;
     timeLine.to(
       bgB,
       {
         duration: 0.219,
         left: `calc(${position} - .7vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
+  }
+
+  if (view >= 1400 && view <= 1449.99) {
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.219,
+        left: `calc(${position} - .85vw)`,
         ease: "ease-in-out",
       },
       0
