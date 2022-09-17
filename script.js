@@ -1,5 +1,5 @@
 window.addEventListener("load", () => {
-  //check local storage for currBgBubblePercent;
+  
   getViewPort();
   localStorage.clear();
   console.log(`viewport: ${viewport}`);
@@ -10,8 +10,6 @@ window.addEventListener("load", () => {
 });
 
 window.addEventListener("resize", () => {
-  //getViewPort();
-  //turnOffClickedMenuElem(currBgBubblePercent);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
 });
 
@@ -254,6 +252,11 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   }
 
   if (view >= 1400 && view <= 1449.99) {
+    positionNumber = parseInt(position);
+   
+      positionNumber = (positionNumber + 0.2).toString();
+  
+    position = `${positionNumber}%`;
     timeLine.to(
       bgB,
       {
@@ -502,7 +505,12 @@ positionNumber = parseInt(position);
       0
     );
   }
- if (view >= 1400 && view <= 1449.99) {
+  if (view >= 1400 && view <= 1449.99) {
+   positionNumber = parseInt(position);
+   
+    positionNumber = (positionNumber + 0.2).toString();
+
+   position = `${positionNumber}%`;
    timeLine.to(
      bgB,
      {
