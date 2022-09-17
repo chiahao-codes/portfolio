@@ -484,10 +484,37 @@ positionNumber = parseInt(position);
       0
     );
   }
- 
-  if (view >= 1400 && view <= 1499.99) {
-    bgB.style.left = `calc(${position} - .7vw)`;
+
+  if (view >= 1450 && view <= 1499.99) {
+    positionNumber = parseInt(position);
+    if (position === "86.2%") {
+      positionNumber = (positionNumber - 0.02).toString();
+    } else {
+      positionNumber = (positionNumber - 0.009).toString();
+    }
+    position = `${positionNumber}%`;
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.219,
+        left: `calc(${position} - .7vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
   }
+ if (view >= 1400 && view <= 1449.99) {
+   timeLine.to(
+     bgB,
+     {
+       duration: 0.219,
+       left: `calc(${position} - .85vw)`,
+       ease: "ease-in-out",
+     },
+     0
+   );
+ }
+ 
   if (view >= 1300 && view <= 1399.99) {
     bgB.style.left = `calc(${position} - .91vw)`;
   }
