@@ -518,11 +518,32 @@ positionNumber = parseInt(position);
      },
      0
    );
- }
- 
-  if (view >= 1300 && view <= 1399.99) {
-    bgB.style.left = `calc(${position} - .91vw)`;
   }
+  
+  if (view >= 1350 && view <= 1399.99) {
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.219,
+        left: `calc(${position} - .90vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
+  }
+
+  if (view >= 1300 && view <= 1349.99) {
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.219,
+        left: `calc(${position} - .93vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
+  }
+ 
   if (view >= 1200 && view <= 1299.99) {
     bgB.style.left = `calc(${position} - 1vw)`;
   }
