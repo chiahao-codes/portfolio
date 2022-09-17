@@ -1,5 +1,4 @@
 window.addEventListener("load", () => {
-  
   getViewPort();
   localStorage.clear();
   console.log(`viewport: ${viewport}`);
@@ -9,11 +8,8 @@ window.addEventListener("load", () => {
  
 });
 
-window.addEventListener("resize", () => {
-  getViewPort();
-  console.log("Resize happening...");
-  resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
-});
+//resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
+window.addEventListener("resize", resizeBgbLeft);
 
 
 let timeLine = gsap.timeline();
@@ -412,7 +408,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   );
 }
 
-function resizeBgbLeft(bgB, view, position) {
+function resizeBgbLeft(bgB = bgBubble, view=viewport, position=currBgBubblePercent) {
    if (view >= 1700 && view <= 1749.99) {
      positionNumber = parseInt(position);
      positionNumber = (positionNumber + .1).toString();
