@@ -10,6 +10,8 @@ window.addEventListener("load", () => {
 });
 
 window.addEventListener("resize", () => {
+  getViewPort();
+  console.log("Resize happening...");
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
 });
 
