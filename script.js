@@ -10,9 +10,8 @@ window.addEventListener("load", () => {
 });
 
 window.addEventListener("resize", () => {
-  getViewPort();
-
-  turnOffClickedMenuElem(currBgBubblePercent);
+  //getViewPort();
+  //turnOffClickedMenuElem(currBgBubblePercent);
   resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
 });
 
