@@ -11,7 +11,7 @@ let percentMap = {
   0: "11%",
   1: "36%",
   2: "61%",
-  3: "86.2%",
+  3: "86.1%",
 };
 
 window.addEventListener("load", () => {
