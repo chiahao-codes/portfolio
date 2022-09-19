@@ -1,17 +1,3 @@
-window.addEventListener("load", () => {
-  getViewPort();
-  localStorage.clear();
-  console.log(`viewport: ${viewport}`);
-  currBgBubblePercent = "11%";
-  moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
-  giveMenuIdClickEvent(bgBubble);
- 
-});
-
-//resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
-window.addEventListener("resize", resizeBgbLeft, timeLine);
-
-
 let timeLine = gsap.timeline();
 let body = document.getElementsByTagName("body")[0];
 let mainH1 = document.getElementById("main");
@@ -28,6 +14,16 @@ let percentMap = {
   3: "86.2%",
 };
 
+window.addEventListener("load", () => {
+  getViewPort();
+  localStorage.clear();
+  console.log(`viewport: ${viewport}`);
+  currBgBubblePercent = "11%";
+  moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
+  giveMenuIdClickEvent(bgBubble);
+});
+//resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
+window.addEventListener("resize", resizeBgbLeft, timeLine);
 
 function getViewPort() {
   return (viewport = window.innerWidth);
