@@ -404,84 +404,46 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   );
 }
 
-function resizeBgbLeft(bgB = bgBubble, view=viewport, position=currBgBubblePercent, tL = timeLine) {
+function resizeBgbLeft(bgB = bgBubble, view = viewport, position = currBgBubblePercent) {
+  console.log("resize running...")
    if (view >= 1700 && view <= 1749.99) {
      positionNumber = parseInt(position);
      positionNumber = (positionNumber + .1).toString();
      position = `${positionNumber}%`;
-     tL.to(
-       bgB,
-       {
-         duration: 0.219,
-         left: `calc(${position} - .40vw)`,
-         ease: "ease-in-out",
-       },
-       0
-     );
+     bgB.style.left = `calc(${position} - .40vw)`;
+   
    }
-   if (view >= 1650 && view <= 1699.99) {
+   else if (view >= 1650 && view <= 1699.99) {
 positionNumber = parseInt(position);
      positionNumber = (positionNumber + .12).toString();
      position = `${positionNumber}%`;
-     tL.to(
-       bgB,
-       {
-         duration: 0.219,
-         left: `calc(${position} - .43vw)`,
-         ease: "ease-in-out",
-       },
-       0
-     );
+      bgB.style.left = `calc(${position} - .43vw)`;
+     
    }
-   if (view >= 1600 && view <= 1649.99) {
+   else if (view >= 1600 && view <= 1649.99) {
      
      positionNumber = parseInt(position);
      positionNumber = (positionNumber + .25).toString();
      position = `${positionNumber}%`;
-     tL.to(
-       bgB,
-       {
-         duration: 0.219,
-         left: `calc(${position} - .56vw)`,
-         ease: "ease-in-out",
-       },
-       0
-     );
+     bgB.style.left = `calc(${position} - .56vw)`;
    }
-  if (view >= 1550 && view <= 1599.99) {
+  else if (view >= 1550 && view <= 1599.99) {
      positionNumber = parseInt(position);
      positionNumber = (positionNumber + 0.25).toString();
      position = `${positionNumber}%`;
-    
-       tL.to(
-         bgB,
-         {
-           duration: 0.219,
-           left: `calc(${position} - .58vw)`,
-           ease: "ease-in-out",
-         },
-         0
-       );
+    bgB.style.left = `calc(${position} - .58vw)`;
      
   }
-  if (view >= 1500 && view <= 1549.99) {
+  else if (view >= 1500 && view <= 1549.99) {
    
       positionNumber = parseInt(position);
       positionNumber = (positionNumber + .1).toString();
       position = `${positionNumber}%`;
-    
-    tL.to(
-      bgB,
-      {
-        duration: 0.219,
-        left: `calc(${position} - .6vw)`,
-        ease: "ease-in-out",
-      },
-      0
-    );
+    bgB.style.left = `calc(${position} - .6vw)`;
+   
   }
 
-  if (view >= 1450 && view <= 1499.99) {
+  else if (view >= 1450 && view <= 1499.99) {
     positionNumber = parseInt(position);
     if (position === "86.2%") {
       positionNumber = (positionNumber - 0.02).toString();
@@ -489,85 +451,54 @@ positionNumber = parseInt(position);
       positionNumber = (positionNumber - 0.009).toString();
     }
     position = `${positionNumber}%`;
-    tL.to(
-      bgB,
-      {
-        duration: 0.219,
-        left: `calc(${position} - .7vw)`,
-        ease: "ease-in-out",
-      },
-      0
-    );
+    bgB.style.left = `calc(${position} - .7vw)`;
+ 
   }
-  if (view >= 1400 && view <= 1449.99) {
+  else if (view >= 1400 && view <= 1449.99) {
    positionNumber = parseInt(position);
-   
-    positionNumber = (positionNumber + 0.2).toString();
-
+   positionNumber = (positionNumber + 0.2).toString();
    position = `${positionNumber}%`;
-   tL.to(
-     bgB,
-     {
-       duration: 0.219,
-       left: `calc(${position} - .85vw)`,
-       ease: "ease-in-out",
-     },
-     0
-   );
+    bgB.style.left = `calc(${position} - .85vw)`;
   }
   
-  if (view >= 1350 && view <= 1399.99) {
-    tL.to(
-      bgB,
-      {
-        duration: 0.219,
-        left: `calc(${position} - .90vw)`,
-        ease: "ease-in-out",
-      },
-      0
-    );
+  else if (view >= 1350 && view <= 1399.99) {
+bgB.style.left = `calc(${position} - .90vw)`;
+  
   }
 
-  if (view >= 1300 && view <= 1349.99) {
-    tL.to(
-      bgB,
-      {
-        duration: 0.219,
-        left: `calc(${position} - .93vw)`,
-        ease: "ease-in-out",
-      },
-      0
-    );
+  else if (view >= 1300 && view <= 1349.99) {
+bgB.style.left = `calc(${position} - .93vw)`;
+  
   }
  
-  if (view >= 1200 && view <= 1299.99) {
+  else if (view >= 1200 && view <= 1299.99) {
     bgB.style.left = `calc(${position} - 1vw)`;
   }
-  if (view >= 1100 && view <= 1199.99) {
+ else if (view >= 1100 && view <= 1199.99) {
     bgB.style.left = `calc(${position} - 1.3vw)`;
   }
-  if (view >= 1000 && view <= 1099.99) {
+  else if (view >= 1000 && view <= 1099.99) {
     bgB.style.left = `calc(${position} - 1.6vw)`;
   }
-  if (view >= 900 && view <= 999.99) {
+  else if (view >= 900 && view <= 999.99) {
     bgB.style.left = `calc(${position} - 2vw)`;
   }
-  if (view >= 800 && view <= 899.99) {
+  else if (view >= 800 && view <= 899.99) {
     bgB.style.left = `calc(${position} - 2.4vw)`;
   }
-  if (view >= 700 && view <= 799.99) {
+  else if (view >= 700 && view <= 799.99) {
     bgB.style.left = `calc(${position} - 2.9vw)`;
   }
-  if (view >= 600 && view <= 699.99) {
+  else if (view >= 600 && view <= 699.99) {
     bgB.style.left = `calc(${position} - 3.7vw)`;
   }
-  if (view >= 500 && view <= 599.99) {
+  else if (view >= 500 && view <= 599.99) {
     bgB.style.left = `calc(${position} - 5vw)`;
   }
-  if (view >= 400 && view <= 499.99) {
+  else if (view >= 400 && view <= 499.99) {
     bgB.style.left = `calc(${position} - 6.1vw)`;
   }
-  if (view >= 320 && view <= 399.99) {
+  else if (view >= 320 && view <= 399.99) {
     bgB.style.left = `calc(${position} - 6.5vw)`;
   }
 }
