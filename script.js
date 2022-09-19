@@ -11,7 +11,7 @@ let percentMap = {
   0: "11%",
   1: "36%",
   2: "61%",
-  3: "86.1%",
+  3: "86%",
 };
 
 window.addEventListener("load", () => {
@@ -228,7 +228,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   }
   if (view >= 1450 && view <= 1499.99) {
     positionNumber = parseInt(position);
-    if (position === "86.2%") {
+    if (position === "86%") {
        positionNumber = (positionNumber - 0.02).toString();
     } else {
       positionNumber = (positionNumber - 0.009).toString();
