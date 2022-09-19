@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
 });
 
 //resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
-window.addEventListener("resize", resizeBgbLeft);
+window.addEventListener("resize", resizeBgbLeft, timeLine);
 
 
 let timeLine = gsap.timeline();
@@ -408,12 +408,12 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   );
 }
 
-function resizeBgbLeft(bgB = bgBubble, view=viewport, position=currBgBubblePercent) {
+function resizeBgbLeft(bgB = bgBubble, view=viewport, position=currBgBubblePercent, tL = timeLine) {
    if (view >= 1700 && view <= 1749.99) {
      positionNumber = parseInt(position);
      positionNumber = (positionNumber + .1).toString();
      position = `${positionNumber}%`;
-     timeLine.to(
+     tL.to(
        bgB,
        {
          duration: 0.219,
@@ -427,7 +427,7 @@ function resizeBgbLeft(bgB = bgBubble, view=viewport, position=currBgBubblePerce
 positionNumber = parseInt(position);
      positionNumber = (positionNumber + .12).toString();
      position = `${positionNumber}%`;
-     timeLine.to(
+     tL.to(
        bgB,
        {
          duration: 0.219,
@@ -442,7 +442,7 @@ positionNumber = parseInt(position);
      positionNumber = parseInt(position);
      positionNumber = (positionNumber + .25).toString();
      position = `${positionNumber}%`;
-     timeLine.to(
+     tL.to(
        bgB,
        {
          duration: 0.219,
@@ -457,7 +457,7 @@ positionNumber = parseInt(position);
      positionNumber = (positionNumber + 0.25).toString();
      position = `${positionNumber}%`;
     
-       timeLine.to(
+       tL.to(
          bgB,
          {
            duration: 0.219,
@@ -474,7 +474,7 @@ positionNumber = parseInt(position);
       positionNumber = (positionNumber + .1).toString();
       position = `${positionNumber}%`;
     
-    timeLine.to(
+    tL.to(
       bgB,
       {
         duration: 0.219,
@@ -493,7 +493,7 @@ positionNumber = parseInt(position);
       positionNumber = (positionNumber - 0.009).toString();
     }
     position = `${positionNumber}%`;
-    timeLine.to(
+    tL.to(
       bgB,
       {
         duration: 0.219,
@@ -509,7 +509,7 @@ positionNumber = parseInt(position);
     positionNumber = (positionNumber + 0.2).toString();
 
    position = `${positionNumber}%`;
-   timeLine.to(
+   tL.to(
      bgB,
      {
        duration: 0.219,
@@ -521,7 +521,7 @@ positionNumber = parseInt(position);
   }
   
   if (view >= 1350 && view <= 1399.99) {
-    timeLine.to(
+    tL.to(
       bgB,
       {
         duration: 0.219,
@@ -533,7 +533,7 @@ positionNumber = parseInt(position);
   }
 
   if (view >= 1300 && view <= 1349.99) {
-    timeLine.to(
+    tL.to(
       bgB,
       {
         duration: 0.219,
