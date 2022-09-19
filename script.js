@@ -259,8 +259,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
 
   if (view >= 1350 && view <= 1399.99) {
      positionNumber = parseInt(position);
-   
-       positionNumber = (positionNumber + 0.2).toString();
+     positionNumber = (positionNumber + 0.1).toString();
      
      position = `${positionNumber}%`;
      
