@@ -23,7 +23,7 @@ window.addEventListener("load", () => {
   giveMenuIdClickEvent(bgBubble);
 });
 //resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
-window.addEventListener("resize", resizeBgbLeft, timeLine);
+//window.addEventListener("resize", resizeBgbLeft);
 
 function getViewPort() {
   return (viewport = window.innerWidth);
