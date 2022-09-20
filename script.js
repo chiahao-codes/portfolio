@@ -317,26 +317,24 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       0
     );
   }
-  /**
-   * if (view >= 1100 && view <= 1149.99) {
-    timeLine.to(
-      bgB,
-      {
-        duration: 0.219,
-        left: `calc(${position} - 1.3vw)`,
-        ease: "ease-in-out",
-      },
-      0
-    );
-  }
-   */
 
-  if (view >= 1000 && view <= 1099.99) {
+  if (view >= 1050 && view <= 1099.99) {
     timeLine.to(
       bgB,
       {
         duration: 0.219,
         left: `calc(${position} - 1.5vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
+  }
+  if (view >= 1000 && view <= 1049.99) {
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.219,
+        left: `calc(${position} - 1.3vw)`,
         ease: "ease-in-out",
       },
       0
