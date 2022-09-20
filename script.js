@@ -355,7 +355,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       0
     );
   }
-  if (view >= 900 && view <= 999.99) {
+  if (view >= 900 && view <= 949.99) {
     timeLine.to(
       bgB,
       {
