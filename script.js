@@ -150,7 +150,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
 
   if (view >= 1700 && view <= 1749.99) {
     positionNumber = parseInt(position);
-    positionNumber = (positionNumber + .1).toString();
+    positionNumber = (positionNumber + 0.1).toString();
     position = `${positionNumber}%`;
     timeLine.to(
       bgB,
@@ -164,25 +164,24 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   }
 
   if (view >= 1650 && view <= 1699.99) {
-      positionNumber = parseInt(position);
-      positionNumber = (positionNumber + .12).toString();
-      position = `${positionNumber}%`;
-      timeLine.to(
-        bgB,
-        {
-          duration: 0.219,
-          left: `calc(${position} - .43vw)`,
-          ease: "ease-in-out",
-        },
-        0
-      );
+    positionNumber = parseInt(position);
+    positionNumber = (positionNumber + 0.12).toString();
+    position = `${positionNumber}%`;
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.219,
+        left: `calc(${position} - .43vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
   }
   if (view >= 1600 && view <= 1649.99) {
-  
-     positionNumber = parseInt(position);
-     positionNumber = (positionNumber + .25).toString();
-     position = `${positionNumber}%`;
-    
+    positionNumber = parseInt(position);
+    positionNumber = (positionNumber + 0.25).toString();
+    position = `${positionNumber}%`;
+
     timeLine.to(
       bgB,
       {
@@ -197,25 +196,23 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
     positionNumber = parseInt(position);
     positionNumber = (positionNumber + 0.12).toString();
     position = `${positionNumber}%`;
-    
-      timeLine.to(
-        bgB,
-        {
-          duration: 0.219,
-          left: `calc(${position} - .58vw)`,
-          ease: "ease-in-out",
-        },
-        0
-      );
-    
+
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.219,
+        left: `calc(${position} - .58vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
   }
 
   if (view >= 1500 && view <= 1549.99) {
-    
-       positionNumber = parseInt(position);
-       positionNumber = (positionNumber + .1).toString();
-       position = `${positionNumber}%`;
-    
+    positionNumber = parseInt(position);
+    positionNumber = (positionNumber + 0.1).toString();
+    position = `${positionNumber}%`;
+
     timeLine.to(
       bgB,
       {
@@ -258,21 +255,20 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   }
 
   if (view >= 1350 && view <= 1399.99) {
-     positionNumber = parseInt(position);
-     positionNumber = (positionNumber + 0.1).toString();
-     
-     position = `${positionNumber}%`;
-     
-      timeLine.to(
-        bgB,
-        {
-          duration: 0.219,
-          left: `calc(${position} - .90vw)`,
-          ease: "ease-in-out",
-        },
-        0
-      );
-    
+    positionNumber = parseInt(position);
+    positionNumber = (positionNumber + 0.1).toString();
+
+    position = `${positionNumber}%`;
+
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.219,
+        left: `calc(${position} - .90vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
   }
 
   if (view >= 1300 && view <= 1349.99) {
@@ -287,17 +283,17 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
     );
   }
 
-   if (view >= 1250 && view <= 1299.99) {
-     timeLine.to(
-       bgB,
-       {
-         duration: 0.219,
-         left: `calc(${position} - .96vw)`,
-         ease: "ease-in-out",
-       },
-       0
-     );
-   }
+  if (view >= 1250 && view <= 1299.99) {
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.219,
+        left: `calc(${position} - .96vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
+  }
   if (view >= 1200 && view <= 1249.99) {
     timeLine.to(
       bgB,
@@ -310,7 +306,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
     );
   }
 
-  if (view >= 1150 && view <= 1199.99) {
+  if (view >= 1100 && view <= 1199.99) {
     timeLine.to(
       bgB,
       {
@@ -321,7 +317,8 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       0
     );
   }
-  if (view >= 1100 && view <= 1149.99) {
+  /**
+   * if (view >= 1100 && view <= 1149.99) {
     timeLine.to(
       bgB,
       {
@@ -332,6 +329,8 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       0
     );
   }
+   */
+
   if (view >= 1000 && view <= 1099.99) {
     timeLine.to(
       bgB,
