@@ -341,17 +341,12 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
     );
   }
   if (view >= 950 && view <= 999.99) {
-    /**
-     *   positionNumber = parseInt(position);
-    positionNumber = (positionNumber + 0.1).toString();
-    position = `${positionNumber}%`;
-     */
 
     timeLine.to(
       bgB,
       {
         duration: 0.219,
-        left: `calc(${position} - 1.6vw)`,
+        left: `calc(${position} - 1.8vw)`,
         ease: "ease-in-out",
       },
       0
