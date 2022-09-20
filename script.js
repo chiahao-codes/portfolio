@@ -16,7 +16,7 @@ let percentMap = {
 
 window.addEventListener("load", () => {
   getViewPort();
-  localStorage.clear();
+ 
   console.log(`viewport: ${viewport}`);
   currBgBubblePercent = "11%";
   moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
@@ -81,7 +81,7 @@ function giveMenuIdClickEvent(bgBubble) {
 function move(id, position, bgBubble) {
   currBgBubblePercent = position;
   
-  localStorage.setItem("currBgBubblePercent", currBgBubblePercent);
+  //localStorage.setItem("currBgBubblePercent", currBgBubblePercent);
 
   timeLine
     .to(
