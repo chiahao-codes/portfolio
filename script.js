@@ -345,7 +345,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       bgB,
       {
         duration: 0.219,
-        left: `calc(${position} - 1.8vw)`,
+        left: `calc(${position} - 1.7vw)`,
         ease: "ease-in-out",
       },
       0
