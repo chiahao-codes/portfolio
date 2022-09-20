@@ -388,7 +388,18 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       0
     );
   }
-  if (view >= 700 && view <= 799.99) {
+  if (view >= 750 && view <= 799.99) {
+    timeLine.to(
+      bgB,
+      {
+        duration: 0.219,
+        left: `calc(${position} - 2.7vw)`,
+        ease: "ease-in-out",
+      },
+      0
+    );
+  }
+  if (view >= 700 && view <= 749.99) {
     timeLine.to(
       bgB,
       {
