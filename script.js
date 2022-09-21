@@ -52,8 +52,7 @@ function giveMenuIdClickEvent(bgBubble, bgBubbLeft) {
           bg.style.backgroundImage = "url(./assets/brilliant.png)";
           bgBubble.style.backgroundColor = "black";
           bgBubble.style.backgroundImage = "url(./assets/brilliant.png)";
-          bgBubbLeft = bgBubble.style.left;
-          console.log(bgBubbLeft);
+          
           
           break;
         case 1:
@@ -63,21 +62,18 @@ function giveMenuIdClickEvent(bgBubble, bgBubbLeft) {
           bgWrapper.style.backgroundColor = "white";
           bg.style.backgroundColor = "white";
           bgBubble.style.backgroundColor = "white";
-          bgBubbLeft = bgBubble.style.left;
-          console.log(bgBubbLeft);
+          
           
           break;
         case 2:
           moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
           body.style.backgroundColor = "navy";
-          bgBubbLeft = bgBubble.style.left;
-          console.log(bgBubbLeft);
+          
           break;
         case 3:
           moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
           body.style.backgroundColor = "darkgreen";
-          bgBubbLeft = bgBubble.style.left;
-          console.log(bgBubbLeft);
+          
           break;
       }
     });
