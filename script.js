@@ -79,8 +79,6 @@ function giveMenuIdClickEvent(bgBubble) {
 
 function move(id, position, bgBubble) {
   currBgBubblePercent = position;
-  
-  //localStorage.setItem("currBgBubblePercent", currBgBubblePercent);
 
   timeLine
     .to(
@@ -494,7 +492,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
 
 function onResize() {
   console.log("on resize running...")
-  gsapAnimationResizeBgbLeft(bgBubble, viewport, currBgBubblePercent, timeLine);
+  console.log(bgBubble)
 }
 
 function resizeBgbLeft(bgB = bgBubble, view = viewport, position = currBgBubblePercent) {
