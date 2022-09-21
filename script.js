@@ -486,14 +486,14 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       0
     );
   }
-  console.log(bgB.style.left);
-  console.log(bgB.style.transform);
   /** */
   timeLine.to(
     bgB,
     { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
     0
   );
+   console.log(bgB.style.left);
+   console.log(bgB.style.transform);
 }
 
 function resizeBgbLeft(bgB = bgBubble, view = viewport, position = currBgBubblePercent) {
