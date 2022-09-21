@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
   console.log(`viewport: ${viewport}`);
   //currBgBubblePercent = "11%";
   //moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
-  giveMenuIdClickEvent(bgBubble);
+  giveMenuIdClickEvent(bgBubble, bgBubbLeft);
 });
 
 
@@ -33,7 +33,7 @@ function moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble) {
 }
 
 
-function giveMenuIdClickEvent(bgBubble) {
+function giveMenuIdClickEvent(bgBubble, bgBubbLeft) {
  
   for (let i = 0; i < menuElements.length; i++) {
     menuElements[i].firstChild.addEventListener("click", () => {
@@ -499,7 +499,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
 
 function onResize() {
   console.log("on resize running...");
-  //bgBubble.style.left = bgBubbLeft;
+  bgBubble.style.left = bgBubbLeft;
 }
 
 function resizeBgbLeft(bgB = bgBubble, view = viewport, position = currBgBubblePercent) {
