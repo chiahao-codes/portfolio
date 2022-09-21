@@ -105,6 +105,7 @@ body > .main {
         color: white;
         font-size: calc(1.7em + .25vmin);
         filter: contrast(150%), brightness(100%);
+        z-index: 1;
     }
 
 /*  */
@@ -148,7 +149,7 @@ body > .main {
     width: calc(70px + 0.025vmin);
     height: calc(70px + .025vmin);
     border-radius: 50%;
-    bottom: calc(20px + .025vmin);
+    bottom: calc(-20px + .025vmin);
     /*transform: translateX(-.26vw);*/
    
 }
