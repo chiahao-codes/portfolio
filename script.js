@@ -16,10 +16,9 @@ let percentMap = {
 
 window.addEventListener("load", () => {
   getViewPort();
- 
   console.log(`viewport: ${viewport}`);
-  currBgBubblePercent = "11%";
-  moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
+  //currBgBubblePercent = "11%";
+  //moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
   giveMenuIdClickEvent(bgBubble);
 });
 
@@ -494,8 +493,8 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
 }
 
 function onResize() {
-  console.log("on resize running...")
-  
+  console.log("on resize running...");
+  bgBubble.style.left = bgBubbLeft;
 }
 
 function resizeBgbLeft(bgB = bgBubble, view = viewport, position = currBgBubblePercent) {
