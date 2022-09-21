@@ -22,8 +22,7 @@ window.addEventListener("load", () => {
   moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
   giveMenuIdClickEvent(bgBubble);
 });
-//resizeBgbLeft(bgBubble, viewport, currBgBubblePercent);
-//window.addEventListener("resize", resizeBgbLeft);
+
 
 function getViewPort() {
   return (viewport = window.innerWidth);
@@ -145,9 +144,12 @@ function move(id, position, bgBubble) {
     );
 }
 
+function resize() {
+  
+}
+
 function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   console.log(`viewport: ${view}`);
-
   if (view >= 1700 && view <= 1749.99) {
     positionNumber = parseInt(position);
     positionNumber = (positionNumber + 0.1).toString();
@@ -341,7 +343,6 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
     );
   }
   if (view >= 950 && view <= 999.99) {
-
     timeLine.to(
       bgB,
       {
@@ -485,11 +486,12 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       0
     );
   }
-  timeLine.to(
+  console.log(bgB.style.left);
+  /** timeLine.to(
     bgB,
     { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
     0
-  );
+  );*/
 }
 
 function resizeBgbLeft(bgB = bgBubble, view = viewport, position = currBgBubblePercent) {
