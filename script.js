@@ -5,7 +5,7 @@ let bgBubble = document.getElementById("bgBubble");
 let bgWrapper = document.getElementById("bgWrapper");
 let bg = document.getElementById("bg");
 let menuElements = document.getElementsByClassName("menuElement");
-let viewport, currBgBubblePercent, id, positionNumber;
+let viewport, currBgBubblePercent, id, positionNumber, bgBubbLeft;
 
 let percentMap = {
   0: "11%",
@@ -487,6 +487,9 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
     { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
     0
   );
+
+  bgBubbLeft = bgB.style.left;
+  console.log(bgBubbLeft);
    
 }
 
