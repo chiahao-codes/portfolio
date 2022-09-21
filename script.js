@@ -144,9 +144,6 @@ function move(id, position, bgBubble) {
     );
 }
 
-function resize() {
-  
-}
 
 function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   console.log(`viewport: ${view}`);
@@ -492,8 +489,12 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
     { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
     0
   );
-   console.log(bgB.style.left);
-   console.log(bgB.style.transform);
+   
+}
+
+function onResize() {
+  console.log("on resize running...")
+  gsapAnimationResizeBgbLeft(bgBubble, viewport, currBgBubblePercent, timeLine);
 }
 
 function resizeBgbLeft(bgB = bgBubble, view = viewport, position = currBgBubblePercent) {
