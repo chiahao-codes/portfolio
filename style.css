@@ -87,8 +87,6 @@ body > .main {
 
 
 .bubble {
-    filter: url(#goo);
-    -webkit-filter: url(#goo);
     background-color: #000000;
     background-image: url("./assets/45-degree-fabric-light.png");
     width: calc(53px + .025vmin);
@@ -107,7 +105,6 @@ body > .main {
         color: white;
         font-size: calc(1.7em + .25vmin);
         filter: contrast(150%), brightness(100%);
-        z-index: 1;
     }
 
 /*  */
@@ -125,7 +122,8 @@ body > .main {
   
 
 .navBar > #bgWrapper {
-    
+    filter:url(#goo);
+    -webkit-filter: url(#goo);
     background-color: black;
     background-image: url("./assets/brilliant.png");
     width: 100%;
@@ -150,8 +148,11 @@ body > .main {
     width: calc(70px + 0.025vmin);
     height: calc(70px + .025vmin);
     border-radius: 50%;
-    bottom: calc(-10px + .025vmin);
-    /*transform: translateX(-.26vw);*/
+    bottom: calc(-60px + .025vmin);
+    transform: translateX(-.26vw);
+
+    
+    /**/
    
 }
 
