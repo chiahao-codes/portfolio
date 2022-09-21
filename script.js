@@ -499,7 +499,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
 
 function onResize() {
   console.log("on resize running...");
-  bgBubble.style.left = bgBubbLeft;
+  
 }
 
 function resizeBgbLeft(bgB = bgBubble, view = viewport, position = currBgBubblePercent) {
