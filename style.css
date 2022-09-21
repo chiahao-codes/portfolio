@@ -87,6 +87,8 @@ body > .main {
 
 
 .bubble {
+    filter: url(#goo);
+    -webkit-filter: url(#goo);
     background-color: #000000;
     background-image: url("./assets/45-degree-fabric-light.png");
     width: calc(53px + .025vmin);
@@ -123,8 +125,7 @@ body > .main {
   
 
 .navBar > #bgWrapper {
-    filter:url(#goo);
-    -webkit-filter: url(#goo);
+    
     background-color: black;
     background-image: url("./assets/brilliant.png");
     width: 100%;
