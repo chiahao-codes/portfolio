@@ -42,7 +42,7 @@ body > .main {
         grid-template-rows: auto;
         justify-content: center;
         align-content: center;
-        z-index: 2;
+        
     }
 
     .main>h2,
@@ -53,7 +53,7 @@ body > .main {
     
  body > .navContainer{
         width: 35vw;
-        height: calc(5em + .025vmin);
+        height: 10vh;
         background-color: inherit;
         border-radius: none;
         overflow: hidden;
@@ -71,7 +71,7 @@ body > .main {
      background-color: #000000;
      background-image:url("./assets/45-degree-fabric-light.png");
      height:100% ;
-     z-index: 1;
+     
  }
 
 
