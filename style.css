@@ -98,7 +98,7 @@ body > .main {
     justify-content: center;
     align-items: center;
     z-index: 1;
-    transform: translateY(155%);
+    transform: translateY(5%);
 }
 
  .icon {
