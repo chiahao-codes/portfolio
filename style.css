@@ -56,10 +56,9 @@ body > .main {
         flex-direction:column;
         justify-content: flex-end;
         width: 475px;
-        height: 12vh;
+        height: 11vh;
         background-color: inherit;
         border-radius: none;
-        overflow: hidden;
         position: fixed;
         left: 50%;
         transform: translateX(-50%);
@@ -93,7 +92,7 @@ body > .main {
     background-image: url("./assets/45-degree-fabric-light.png");
     width: calc(53px + .025vmin);
     height: calc(53px + .025vmin);
-    bottom:calc(85px + .025vmin);
+    bottom:60%;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -161,7 +160,7 @@ body > .main {
 #menuWrapper {
         position: absolute;
         width: 100%;
-        bottom: 25%;
+        bottom: 27%;
         display: flex;
         justify-content: space-around;
         align-items: center;
