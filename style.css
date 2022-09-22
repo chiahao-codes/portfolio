@@ -161,7 +161,7 @@ body > .main {
 #menuWrapper {
         position: absolute;
         width: 100%;
-        bottom: calc(63px + .025vmin);
+        bottom: 10%;
         display: flex;
         justify-content: space-around;
         align-items: center;
