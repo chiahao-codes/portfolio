@@ -52,7 +52,7 @@ body > .main {
 
     
  body > .navContainer{
-        width: fit-content;
+        width: 30vw;
         height: fit-content;
         background-color: inherit;
         border-radius: none;
@@ -67,10 +67,10 @@ body > .main {
 
  .navContainer>.navBar {
      visibility: visible;
-     width: 15vw;
+     width: 100%;
      background-color: #000000;
      background-image:url("./assets/45-degree-fabric-light.png");
-     height: calc(4em + .025vmin);
+     height: 100%;
      z-index: 1;
  }
 
