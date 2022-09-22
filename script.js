@@ -95,22 +95,22 @@ function move(id, position, bgBubble) {
     )
     .to(
       "#bubble1",
-      { duration: 0.1, y: "175%", boxShadow: "none", ease: "ease-out" },
+      { duration: 0.1, y: "15%", boxShadow: "none", ease: "ease-out" },
       0
     )
     .to(
       "#bubble2",
-      { duration: 0.1, y: "175%", boxShadow: "none", ease: "ease-out" },
+      { duration: 0.1, y: "15%", boxShadow: "none", ease: "ease-out" },
       0
     )
     .to(
       "#bubble3",
-      { duration: 0.1, y: "175%", boxShadow: "none", ease: "ease-out" },
+      { duration: 0.1, y: "15%", boxShadow: "none", ease: "ease-out" },
       0
     )
     .to(
       "#bubble4",
-      { duration: 0.1, y: "175%", boxShadow: "none", ease: "ease-out" },
+      { duration: 0.1, y: "15%", boxShadow: "none", ease: "ease-out" },
       0
     )
     .to(
