@@ -55,15 +55,15 @@ body > .main {
         display: flex;
         flex-direction:column;
         justify-content: flex-end;
-        width: 500px;
-        height: 20vh;
+        width: 350px;
+        height: 17vh;
         background-color: inherit;
         border-radius: none;
         overflow: hidden;
         position: fixed;
         left: 50%;
         transform: translateX(-50%);
-        bottom:50px;
+        bottom:20%;
         
 }
 
