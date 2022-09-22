@@ -52,6 +52,9 @@ body > .main {
 
     
  body > .navContainer{
+        display: flex;
+        flex-direction:column;
+        justify-content: flex-end;
         width: 500px;
         height: 20vh;
         background-color: inherit;
