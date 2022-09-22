@@ -53,13 +53,13 @@ body > .main {
     
  body > .navContainer{
         width: 35vw;
-        height: 15vh;
+        height: 20vh;
         background-color: inherit;
         border-radius: none;
         overflow: hidden;
         position: fixed;
-        left: auto;
-        right:auto;
+        left: 50%;
+        transform: translateX(-50%);
         bottom:50px;
         
 }
