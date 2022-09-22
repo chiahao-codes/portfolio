@@ -92,13 +92,13 @@ body > .main {
     background-image: url("./assets/45-degree-fabric-light.png");
     width: calc(53px + .025vmin);
     height: calc(53px + .025vmin);
-    bottom:-10%;
+    bottom:calc(85px + .025vmin);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
-    transform: translateY(155%);
+    transform: translateY(15%);
 }
 
  .icon {
