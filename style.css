@@ -55,8 +55,8 @@ body > .main {
         display: flex;
         flex-direction:column;
         justify-content: flex-end;
-        width: 475px;
-        height: 11vh;
+        width: 477px;
+        height: 9vh;
         background-color: inherit;
         border-radius: none;
         position: fixed;
@@ -160,7 +160,7 @@ body > .main {
 #menuWrapper {
         position: absolute;
         width: 100%;
-        bottom: 27%;
+        bottom: 32%;
         display: flex;
         justify-content: space-around;
         align-items: center;
