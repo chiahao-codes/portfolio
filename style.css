@@ -103,7 +103,7 @@ body > .main {
  .icon {
         opacity: 0;
         color: white;
-        font-size: calc(1.7em + .25vmin);
+        font-size: calc(1.3em + .25vmin);
         filter: contrast(150%), brightness(100%);
     }
 
