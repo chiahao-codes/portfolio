@@ -67,13 +67,10 @@ body > .main {
 
  .navContainer>.navBar {
      visibility: visible;
-     width: 100%;
-     left: 0;
+     width: 15vw;
      background-color: #000000;
      background-image:url("./assets/45-degree-fabric-light.png");
      height: calc(4em + .025vmin);
-     position: fixed;
-     bottom: 0;
      z-index: 1;
  }
 
