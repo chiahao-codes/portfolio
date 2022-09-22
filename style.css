@@ -56,7 +56,7 @@ body > .main {
         flex-direction:column;
         justify-content: flex-end;
         width: 475px;
-        height: 15vh;
+        height: 12vh;
         background-color: inherit;
         border-radius: none;
         overflow: hidden;
