@@ -17,8 +17,8 @@ let percentMap = {
 window.addEventListener("load", () => {
   getViewPort();
   console.log(`viewport: ${viewport}`);
-  //currBgBubblePercent = "11%";
-  //moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
+  currBgBubblePercent = "11%";
+  moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
   giveMenuIdClickEvent(bgBubble, bgBubbLeft);
 });
 
