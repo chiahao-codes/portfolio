@@ -97,7 +97,7 @@ body > .main {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(28%);
+    transform: translateY(30%);
 }
 
  .icon {
@@ -167,8 +167,8 @@ body > .main {
     }
 
 #menuWrapper > .menuElement {
-        transform: translateY(25%);
-        font-size: calc(1.5em + .25vmin);
+        transform: translateY(21%);
+        font-size: calc(1em + .25vmin);
         visibility: visible;
         display: flex;
         justify-content: center;
@@ -180,7 +180,7 @@ body > .main {
     .menuElement :hover{
         cursor:pointer;
         opacity:1;
-        filter:brightness(120%) contrast(120%);
+        filter:brightness(120%), contrast(120%);
     }
 
 }
