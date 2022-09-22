@@ -52,13 +52,15 @@ body > .main {
 
     
  body > .navContainer{
-    width: 100%;
-        min-width: 100%;
+        width: fit-content;
         height: fit-content;
         background-color: inherit;
         border-radius: none;
         overflow: hidden;
-        position: relative;
+        position: fixed;
+        left: auto;
+        right:auto;
+        bottom:50px;
         
 }
 
