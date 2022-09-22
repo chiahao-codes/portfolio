@@ -91,7 +91,7 @@ body > .main {
     background-color: #000000;
     background-image: url("./assets/45-degree-fabric-light.png");
     shape-outside: 50%;
-    clip-path: circle(10%);
+    clip-path: circle(80%);
     bottom:calc(85px + .025vmin);
     
     display: flex;
