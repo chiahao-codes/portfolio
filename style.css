@@ -162,14 +162,14 @@ body > .main {
 #menuWrapper {
         position: absolute;
         width: 100%;
-        bottom: 32%;
+        bottom: 30%;
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
 
 #menuWrapper > .menuElement {
-        transform: translateY(21%);
+        transform: translateY(20%);
         font-size: calc(1em + .25vmin);
         visibility: visible;
         display: flex;
