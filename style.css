@@ -92,8 +92,8 @@ body > .main {
     background-image: url("./assets/45-degree-fabric-light.png");
     bottom:calc(85px + .025vmin);
     border-radius: 50%;
-    width: 2.6em;
-    height: 2.6em;
+    width: calc(2.6em - .025vmin);
+    height: calc(2.6em - .025vmin);
     display: flex;
     justify-content: center;
     align-items: center;
