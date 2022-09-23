@@ -97,8 +97,8 @@ body > .main {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
-    transform: translateY(33%);
+
+    transform: translateY(35%);
 }
 
  .icon {
@@ -114,6 +114,7 @@ body > .main {
     background-color: #000000;
     background-image: url("./assets/45-degree-fabric-light.png");
     transform: translateY(0%);
+    z-index:1;
  
     
 }
