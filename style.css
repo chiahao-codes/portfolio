@@ -90,9 +90,10 @@ body > .main {
 .bubble {
     background-color: #000000;
     background-image: url("./assets/45-degree-fabric-light.png");
-    clip-path: circle(100%);
     bottom:calc(85px + .025vmin);
-    
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
