@@ -53,11 +53,11 @@ body > .main {
     }
 
     .main > h1 {
-        font-size: calc(2em + 2vh );
+        font-size: calc(1.8em + 1vh );
     }
 
         .main > h2 {
-            font-size: calc(1.5em + 2vh );
+            font-size: calc(1.3em + 1vh );
         }
 
     
