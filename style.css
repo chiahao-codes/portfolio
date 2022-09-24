@@ -151,7 +151,7 @@ body > .main {
     width: calc(3.95em - .025vmin);
     height: calc(3.95em - .025vmin);
     border-radius: 50%;
-    bottom: calc(-2.55em + .025vmin);
+    bottom: calc(-2em);
     left: 55px;
     transform: translateX(-50%) ;
 }
