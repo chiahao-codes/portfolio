@@ -57,7 +57,7 @@ body > .main {
         flex-direction:column;
         justify-content: flex-end;
         width: 477px;
-        height: 60px;
+        height: calc(3.1em - .025vmin);
         background-color: inherit;
         border-radius: none;
         position: fixed;
