@@ -34,6 +34,7 @@ body > .main {
             40%);
         filter: contrast(150%), brightness(150%);
         position: absolute;
+        height: fit-content;
         top: 50%;
         left: 50%;
         bottom:10%;
