@@ -42,6 +42,7 @@ body > .main {
         grid-template-rows: auto;
         justify-content: center;
         align-content: center;
+        z-index:1;
         
     }
 
@@ -90,7 +91,7 @@ body > .main {
 .bubble {
     background-color: #000000;
     background-image: url("./assets/45-degree-fabric-light.png");
-    bottom:calc(85px + .025vmin);
+
     border-radius: 50%;
     width: calc(2.6em - .025vmin);
     height: calc(2.6em - .025vmin);
