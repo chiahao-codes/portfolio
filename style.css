@@ -84,7 +84,7 @@ body > .main {
     align-items: center;
     width: 100%;
     position: absolute;
-    bottom: calc(25px + .25vmin);
+    bottom: calc(25px);
 }
 
 
@@ -93,8 +93,8 @@ body > .main {
     background-image: url("./assets/45-degree-fabric-light.png");
     transform:translateY(45%);
     border-radius: 50%;
-    width: calc(2.1em - .025vmin);
-    height: calc(2.1em - .025vmin);
+    width: calc(53px);
+    height: calc(53px);
     display: flex;
     justify-content: center;
     align-items: center;
