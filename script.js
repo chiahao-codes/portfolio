@@ -5,20 +5,18 @@ let bgBubble = document.getElementById("bgBubble");
 let bgWrapper = document.getElementById("bgWrapper");
 let bg = document.getElementById("bg");
 let menuElements = document.getElementsByClassName("menuElement");
-let viewport, currBgBubblePercent, id, positionNumber, bgBubbLeft;
+let viewport, currBgBubblePosition, id, positionNumber, bgBubbLeft;
 
-let percentMap = {
-  0: "11%",
-  1: "36%",
-  2: "61%",
-  3: "86%",
+let bgBubbPosMap = {
+  0: "60px",
+  1: "90px",
+  2: "",
+  3: "",
 };
 
 window.addEventListener("load", () => {
   getViewPort();
   console.log(`viewport: ${viewport}`);
-  //currBgBubblePercent = "11%";
-  //moveBgBubbleAndTurnOffElem(1, currBgBubblePercent, bgBubble);
   giveMenuIdClickEvent(bgBubble, bgBubbLeft);
 });
 
@@ -27,11 +25,11 @@ function getViewPort() {
   return (viewport = window.innerWidth);
 }
 
-function moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble) {
+function moveBgBubbleAndTurnOffElem(id, currBgBubblePosition, bgBubble) {
   let moveId = id.slice(1);
   moveId = parseInt(moveId);
-  move(moveId, currBgBubblePercent, bgBubble);
-  turnOffClickedMenuElem(currBgBubblePercent);
+  move(moveId, currBgBubblePosition, bgBubble);
+  turnOffClickedMenuElem(currBgBubblePosition);
 }
 
 
@@ -41,11 +39,11 @@ function giveMenuIdClickEvent(bgBubble, bgBubbLeft) {
     menuElements[i].firstChild.addEventListener("click", () => {
       let menuNumber = (i + 1);
       id = `m${menuNumber}`
-        currBgBubblePercent = percentMap[i];
+        currBgBubblePosition = bgBubbPosMap[i];
       /** */
       switch (i) {
         case 0:
-          moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
+          moveBgBubbleAndTurnOffElem(id, currBgBubblePosition, bgBubble);
           body.style.backgroundColor = "black";
           body.style.backgroundImage = "url(./assets/brilliant.png)";
           mainH1.style.display = "block";
@@ -60,7 +58,7 @@ function giveMenuIdClickEvent(bgBubble, bgBubbLeft) {
           
           break;
         case 1:
-          moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
+          moveBgBubbleAndTurnOffElem(id, currBgBubblePosition, bgBubble);
           body.style.backgroundColor = "white";
           mainH1.style.display = "none";
           bgWrapper.style.backgroundColor = "white";
@@ -71,13 +69,13 @@ function giveMenuIdClickEvent(bgBubble, bgBubbLeft) {
           
           break;
         case 2:
-          moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
+          moveBgBubbleAndTurnOffElem(id, currBgBubblePosition, bgBubble);
           body.style.backgroundColor = "navy";
           bgBubbLeft = bgBubble.style.left;
           console.log(bgBubbLeft);
           break;
         case 3:
-          moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble);
+          moveBgBubbleAndTurnOffElem(id, currBgBubblePosition, bgBubble);
           body.style.backgroundColor = "darkgreen";
           bgBubbLeft = bgBubble.style.left;
           console.log(bgBubbLeft);
@@ -88,32 +86,32 @@ function giveMenuIdClickEvent(bgBubble, bgBubbLeft) {
 }
 
 function move(id, position, bgBubble) {
-  currBgBubblePercent = position;
+  currBgBubblePosition = position;
 
   timeLine
     .to(
       bgBubble,
-      { duration: 0.1, bottom: "calc(-40px + .025vmin)", ease: "ease-out" },
+      { duration: 0.1, bottom: "calc(-4em)", ease: "ease-out" },
       0
     )
     .to(
       "#bubble1",
-      { duration: 0.1, y: "175%", boxShadow: "none", ease: "ease-out" },
+      { duration: 0.1, y: "45%", boxShadow: "none", ease: "ease-out" },
       0
     )
     .to(
       "#bubble2",
-      { duration: 0.1, y: "175%", boxShadow: "none", ease: "ease-out" },
+      { duration: 0.1, y: "45%", boxShadow: "none", ease: "ease-out" },
       0
     )
     .to(
       "#bubble3",
-      { duration: 0.1, y: "175%", boxShadow: "none", ease: "ease-out" },
+      { duration: 0.1, y: "45%", boxShadow: "none", ease: "ease-out" },
       0
     )
     .to(
       "#bubble4",
-      { duration: 0.1, y: "175%", boxShadow: "none", ease: "ease-out" },
+      { duration: 0.1, y: "45%", boxShadow: "none", ease: "ease-out" },
       0
     )
     .to(
@@ -125,7 +123,7 @@ function move(id, position, bgBubble) {
       },
       0
     );
-  gsapAnimationResizeBgbLeft(bgBubble, viewport, currBgBubblePercent, timeLine);
+  gsapAnimationResizeBgbLeft(bgBubble, viewport, currBgBubblePosition, timeLine);
 
   timeLine
     .to(
@@ -141,7 +139,7 @@ function move(id, position, bgBubble) {
       "-=0.1"
     )
     .to(
-      `#bubble${id}> span`,
+      `#bubble${id} > span`,
       {
         duration: 0.15,
         y: "0%",
@@ -155,7 +153,59 @@ function move(id, position, bgBubble) {
 
 function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
   console.log(`viewport: ${view}`);
-  if (view >= 1700 && view <= 1749.99) {
+   timeLine.to(
+     bgB,
+     {
+       duration: 0.219,
+       left: `calc(${position} - .40vw)`,
+       ease: "ease-in-out",
+     },
+     0
+   );
+ 
+  timeLine.to(
+    bgB,
+    { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
+    0
+  );
+}
+
+function turnOffClickedMenuElem(currBgBubblePosition) {
+  for (let i = 0; i < menuElements.length; i++) {
+    if (bgBubbPosMap[i] === currBgBubblePosition) {
+      menuElements[i].firstChild.style.opacity = "0";
+    } else {
+      menuElements[i].firstChild.style.opacity = ".55";
+      menuElements[i].firstChild.style.color = "white";
+      menuElements[i].firstChild.addEventListener("mouseenter", () => {
+        mouseEnter(i);
+      });
+      menuElements[i].firstChild.addEventListener("mouseleave", () => {
+        mouseLeave(i);
+      });
+    }
+  }
+}
+
+function mouseEnter(num) {
+  for (let i = 0; i < menuElements.length; i++) {
+    if (i === num) {
+      menuElements[i].firstChild.style.opacity = "1";
+      menuElements[i].firstChild.style.cursor = "pointer";
+    }
+  }
+}
+
+function mouseLeave(num) {
+  for (let i = 0; i < menuElements.length; i++) {
+    if (i === num) {
+      menuElements[i].firstChild.style.opacity = ".55";
+    }
+  }
+}
+
+
+/**if (view >= 1700 && view <= 1749.99) {
     positionNumber = parseInt(position);
     positionNumber = (positionNumber + 0.1).toString();
     position = `${positionNumber}%`;
@@ -490,150 +540,4 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
       },
       0
     );
-  }
-  /** */
-  timeLine.to(
-    bgB,
-    { duration: 0.15, bottom: "calc(-60px + .025vmin)", ease: "ease-out" },
-    0
-  );
-   
-}
-
-function onResize() {
-  console.log("on resize running...");
-  
-}
-
-function resizeBgbLeft(bgB = bgBubble, view = viewport, position = currBgBubblePercent) {
-  console.log("resize running...")
-   if (view >= 1700 && view <= 1749.99) {
-     positionNumber = parseInt(position);
-     positionNumber = (positionNumber + .1).toString();
-     position = `${positionNumber}%`;
-     bgB.style.left = `calc(${position} - .40vw)`;
-   
-   }
-   else if (view >= 1650 && view <= 1699.99) {
-positionNumber = parseInt(position);
-     positionNumber = (positionNumber + .12).toString();
-     position = `${positionNumber}%`;
-      bgB.style.left = `calc(${position} - .43vw)`;
-     
-   }
-   else if (view >= 1600 && view <= 1649.99) {
-     
-     positionNumber = parseInt(position);
-     positionNumber = (positionNumber + .25).toString();
-     position = `${positionNumber}%`;
-     bgB.style.left = `calc(${position} - .56vw)`;
-   }
-  else if (view >= 1550 && view <= 1599.99) {
-     positionNumber = parseInt(position);
-     positionNumber = (positionNumber + 0.25).toString();
-     position = `${positionNumber}%`;
-    bgB.style.left = `calc(${position} - .58vw)`;
-     
-  }
-  else if (view >= 1500 && view <= 1549.99) {
-   
-      positionNumber = parseInt(position);
-      positionNumber = (positionNumber + .1).toString();
-      position = `${positionNumber}%`;
-      bgB.style.left = `calc(${position} - .6vw)`;
-   
-  }
-
-  else if (view >= 1450 && view <= 1499.99) {
-    positionNumber = parseInt(position);
-    if (position === "86.2%") {
-      positionNumber = (positionNumber - 0.02).toString();
-    } else {
-      positionNumber = (positionNumber - 0.009).toString();
-    }
-    position = `${positionNumber}%`;
-    bgB.style.left = `calc(${position} - .7vw)`;
- 
-  }
-  else if (view >= 1400 && view <= 1449.99) {
-   positionNumber = parseInt(position);
-   positionNumber = (positionNumber + 0.2).toString();
-   position = `${positionNumber}%`;
-    bgB.style.left = `calc(${position} - .85vw)`;
-  }
-  
-  else if (view >= 1350 && view <= 1399.99) {
-bgB.style.left = `calc(${position} - .90vw)`;
-  
-  }
-
-  else if (view >= 1300 && view <= 1349.99) {
-bgB.style.left = `calc(${position} - .93vw)`;
-  
-  }
- 
-  else if (view >= 1200 && view <= 1299.99) {
-    bgB.style.left = `calc(${position} - 1vw)`;
-  }
- else if (view >= 1100 && view <= 1199.99) {
-    bgB.style.left = `calc(${position} - 1.3vw)`;
-  }
-  else if (view >= 1000 && view <= 1099.99) {
-    bgB.style.left = `calc(${position} - 1.6vw)`;
-  }
-  else if (view >= 900 && view <= 999.99) {
-    bgB.style.left = `calc(${position} - 2vw)`;
-  }
-  else if (view >= 800 && view <= 899.99) {
-    bgB.style.left = `calc(${position} - 2.4vw)`;
-  }
-  else if (view >= 700 && view <= 799.99) {
-    bgB.style.left = `calc(${position} - 2.9vw)`;
-  }
-  else if (view >= 600 && view <= 699.99) {
-    bgB.style.left = `calc(${position} - 3.7vw)`;
-  }
-  else if (view >= 500 && view <= 599.99) {
-    bgB.style.left = `calc(${position} - 5vw)`;
-  }
-  else if (view >= 400 && view <= 499.99) {
-    bgB.style.left = `calc(${position} - 6.1vw)`;
-  }
-  else if (view >= 320 && view <= 399.99) {
-    bgB.style.left = `calc(${position} - 6.5vw)`;
-  }
-}
-
-function turnOffClickedMenuElem(currBgBubblePercent) {
-  for (let i = 0; i < menuElements.length; i++) {
-    if (percentMap[i] === currBgBubblePercent) {
-      menuElements[i].firstChild.style.opacity = "0";
-    } else {
-      menuElements[i].firstChild.style.opacity = ".55";
-      menuElements[i].firstChild.style.color = "white";
-      menuElements[i].firstChild.addEventListener("mouseenter", () => {
-        mouseEnter(i);
-      });
-      menuElements[i].firstChild.addEventListener("mouseleave", () => {
-        mouseLeave(i);
-      });
-    }
-  }
-}
-
-function mouseEnter(num) {
-  for (let i = 0; i < menuElements.length; i++) {
-    if (i === num) {
-      menuElements[i].firstChild.style.opacity = "1";
-      menuElements[i].firstChild.style.cursor = "pointer";
-    }
-  }
-}
-
-function mouseLeave(num) {
-  for (let i = 0; i < menuElements.length; i++) {
-    if (i === num) {
-      menuElements[i].firstChild.style.opacity = ".55";
-    }
-  }
-}
+  } */
