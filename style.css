@@ -187,5 +187,11 @@ body > .main {
         filter:brightness(120%), contrast(120%);
     }
 
+    #menuWrapper > #m1 {
+        opacity: 0;
+    }
+
+    
+
 }
 

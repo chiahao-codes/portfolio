@@ -28,7 +28,9 @@ function getViewPort() {
 }
 
 function moveBgBubbleAndTurnOffElem(id, currBgBubblePercent, bgBubble) {
-  move(id, currBgBubblePercent, bgBubble);
+  let moveId = id.slice(1);
+  moveId = parseInt(moveId);
+  move(moveId, currBgBubblePercent, bgBubble);
   turnOffClickedMenuElem(currBgBubblePercent);
 }
 
@@ -37,7 +39,8 @@ function giveMenuIdClickEvent(bgBubble, bgBubbLeft) {
  
   for (let i = 0; i < menuElements.length; i++) {
     menuElements[i].firstChild.addEventListener("click", () => {
-      id = (i + 1).toString(),
+      let menuNumber = (i + 1);
+      id = `m${menuNumber}`
         currBgBubblePercent = percentMap[i];
       /** */
       switch (i) {
