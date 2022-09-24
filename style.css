@@ -65,8 +65,8 @@ body > .main {
         display: flex;
         flex-direction:column;
         justify-content: flex-end;
-        width: calc(30em - .025vmin);
-        height: calc(3.1em - .025vmin);
+        width: calc(20% - .025vmin);
+        height: calc(15% - .025vmin);
         background-color: inherit;
         border-radius: none;
         position: fixed;
