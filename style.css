@@ -52,6 +52,10 @@ body > .main {
         text-align: center;
     }
 
+    .main > h1 {
+        font-size: calc(2em -.015vh);
+    }
+
     
  body > .navContainer{
         display: flex;
