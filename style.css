@@ -56,6 +56,10 @@ body > .main {
         font-size: calc(2em -.015vh);
     }
 
+        .main > h2 {
+            font-size: calc(1.5em -.015vh);
+        }
+
     
  body > .navContainer{
         display: flex;
