@@ -57,7 +57,7 @@ body > .main {
         flex-direction:column;
         justify-content: flex-end;
         width: 477px;
-        height: 9vh;
+        height: 60px;
         background-color: inherit;
         border-radius: none;
         position: fixed;
@@ -91,14 +91,14 @@ body > .main {
 .bubble {
     background-color: #000000;
     background-image: url("./assets/45-degree-fabric-light.png");
-
+    transform:translateY(45%);
     border-radius: 50%;
     width: calc(2.1em - .025vmin);
     height: calc(2.1em - .025vmin);
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom:-95%;
+
 }
 
  .icon {
@@ -113,7 +113,7 @@ body > .main {
 #bubble1 {
     background-color: #000000;
     background-image: url("./assets/45-degree-fabric-light.png");
-    bottom:0%;
+    transform: translateY(0%);
     z-index:1;
  
     
