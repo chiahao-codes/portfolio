@@ -148,8 +148,8 @@ body > .main {
     position: absolute;
     background-color: black;
     background-image: url("./assets/brilliant.png");
-    width: calc(2.95em - .025vmin);
-    height: calc(2.95em - .025vmin);
+    width: calc(3.95em - .025vmin);
+    height: calc(3.95em - .025vmin);
     border-radius: 50%;
     bottom: calc(-60px + .025vmin);
     left: 50px;
