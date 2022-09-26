@@ -28,7 +28,6 @@ function getViewPort() {
 function moveBgBubbleAndTurnOffElem(id, currBgBubblePosition, bgBubble) {
   let moveId = id.slice(1);
   moveId = parseInt(moveId);
-  console.log(`moveId: ${moveId}`);
   move(moveId, currBgBubblePosition, bgBubble);
   turnOffClickedMenuElem(currBgBubblePosition);
 }
@@ -37,13 +36,13 @@ function moveBgBubbleAndTurnOffElem(id, currBgBubblePosition, bgBubble) {
 function giveMenuIdClickEvent(bgBubble, bgBubbLeft) {
   for (let i = 0; i < menuElements.length; i++) {
     menuElements[i].firstChild.addEventListener("click", () => {
-      let menuNumber = (i + 1);
-      id = `m${menuNumber}`
-        currBgBubblePosition = bgBubbPosMap[i];
+      id = i + 1;
+      currBgBubblePosition = bgBubbPosMap[i];
       /** */
       switch (i) {
         case 0:
-          moveBgBubbleAndTurnOffElem(id, currBgBubblePosition, bgBubble);
+           move(id, currBgBubblePosition, bgBubble);
+           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "black";
           body.style.backgroundImage = "url(./assets/brilliant.png)";
           mainH1.style.display = "block";
@@ -58,7 +57,8 @@ function giveMenuIdClickEvent(bgBubble, bgBubbLeft) {
           
           break;
         case 1:
-          moveBgBubbleAndTurnOffElem(id, currBgBubblePosition, bgBubble);
+          move(id, currBgBubblePosition, bgBubble);
+          turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "white";
           mainH1.style.display = "none";
           bgWrapper.style.backgroundColor = "white";
@@ -69,13 +69,13 @@ function giveMenuIdClickEvent(bgBubble, bgBubbLeft) {
           
           break;
         case 2:
-          moveBgBubbleAndTurnOffElem(id, currBgBubblePosition, bgBubble);
+          
           body.style.backgroundColor = "navy";
           bgBubbLeft = bgBubble.style.left;
           console.log(bgBubbLeft);
           break;
         case 3:
-          moveBgBubbleAndTurnOffElem(id, currBgBubblePosition, bgBubble);
+          
           body.style.backgroundColor = "darkgreen";
           bgBubbLeft = bgBubble.style.left;
           console.log(bgBubbLeft);
