@@ -32,6 +32,7 @@ function giveMenuIdClickEvent(bgBubble) {
     menuElements[i].firstChild.addEventListener("click", () => {
       id = i + 1;
       currBgBubblePosition = bgBubbPosMap[i];
+      
       /** */
       switch (i) {
         case 0:
@@ -159,7 +160,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
 }
 
 function turnOffClickedMenuElem(currBgBubblePosition) {
-  console.log(`TurnOffClickedMenuElem running...`);
+  console.log(`TurnOffClickedMenuElem running...`, currBgBubblePosition);
   for (let i = 0; i < menuElements.length; i++) {
     if (bgBubbPosMap[i] === currBgBubblePosition) {
       menuElements[i].firstChild.style.opacity = "0";
