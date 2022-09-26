@@ -28,13 +28,13 @@ function getViewPort() {
 function moveBgBubbleAndTurnOffElem(id, currBgBubblePosition, bgBubble) {
   let moveId = id.slice(1);
   moveId = parseInt(moveId);
+  console.log(`moveId: ${moveId}`);
   move(moveId, currBgBubblePosition, bgBubble);
   turnOffClickedMenuElem(currBgBubblePosition);
 }
 
 
 function giveMenuIdClickEvent(bgBubble, bgBubbLeft) {
- 
   for (let i = 0; i < menuElements.length; i++) {
     menuElements[i].firstChild.addEventListener("click", () => {
       let menuNumber = (i + 1);
