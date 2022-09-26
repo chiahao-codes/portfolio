@@ -117,6 +117,7 @@ function move(id, position, bgBubble) {
       `#bubble${id}`,
       {
         duration: 0.15,
+        zIndex:1,
         y: "0%",
         backgroundColor: "hsl(0, 0%, 12%)",
         opacity: 1,
