@@ -9,7 +9,7 @@ let viewport, currBgBubblePosition, id, positionNumber, bgBubbLeft;
 
 let bgBubbPosMap = {
   0: "60px",
-  1: "170px",
+  1: "180px",
   2: "",
   3: "",
 };
