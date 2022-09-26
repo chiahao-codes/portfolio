@@ -17,7 +17,7 @@ let bgBubbPosMap = {
 window.addEventListener("load", () => {
   getViewPort();
   console.log(`viewport: ${viewport}`);
-  giveMenuIdClickEvent(bgBubble, bgBubbLeft);
+  giveMenuIdClickEvent(bgBubble);
 });
 
 
@@ -25,15 +25,9 @@ function getViewPort() {
   return (viewport = window.innerWidth);
 }
 
-function moveBgBubbleAndTurnOffElem(id, currBgBubblePosition, bgBubble) {
-  let moveId = id.slice(1);
-  moveId = parseInt(moveId);
-  move(moveId, currBgBubblePosition, bgBubble);
-  turnOffClickedMenuElem(currBgBubblePosition);
-}
 
 
-function giveMenuIdClickEvent(bgBubble, bgBubbLeft) {
+function giveMenuIdClickEvent(bgBubble) {
   for (let i = 0; i < menuElements.length; i++) {
     menuElements[i].firstChild.addEventListener("click", () => {
       id = i + 1;
@@ -52,8 +46,6 @@ function giveMenuIdClickEvent(bgBubble, bgBubbLeft) {
           bg.style.backgroundImage = "url(./assets/brilliant.png)";
           bgBubble.style.backgroundColor = "black";
           bgBubble.style.backgroundImage = "url(./assets/brilliant.png)";
-          bgBubbLeft = bgBubble.style.left;
-          console.log(bgBubbLeft);
           
           break;
         case 1:
@@ -64,21 +56,15 @@ function giveMenuIdClickEvent(bgBubble, bgBubbLeft) {
           bgWrapper.style.backgroundColor = "white";
           bg.style.backgroundColor = "white";
           bgBubble.style.backgroundColor = "white";
-          bgBubbLeft = bgBubble.style.left;
-          console.log(bgBubbLeft);
           
           break;
         case 2:
           
           body.style.backgroundColor = "navy";
-          bgBubbLeft = bgBubble.style.left;
-          console.log(bgBubbLeft);
           break;
         case 3:
           
           body.style.backgroundColor = "darkgreen";
-          bgBubbLeft = bgBubble.style.left;
-          console.log(bgBubbLeft);
           break;
       }
     });
@@ -87,6 +73,7 @@ function giveMenuIdClickEvent(bgBubble, bgBubbLeft) {
 
 function move(id, position, bgBubble) {
   currBgBubblePosition = position;
+  console.log(id, currBgBubblePosition)
 
   timeLine
     .to(
@@ -171,6 +158,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
 }
 
 function turnOffClickedMenuElem(currBgBubblePosition) {
+  console.log(`TurnOffClickedMenuElem running...`);
   for (let i = 0; i < menuElements.length; i++) {
     if (bgBubbPosMap[i] === currBgBubblePosition) {
       menuElements[i].firstChild.style.opacity = "0";
