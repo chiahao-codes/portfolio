@@ -16,8 +16,6 @@ let bgBubbPosMap = {
 };
 
 window.addEventListener("load", () => {
-  getViewPort();
-  console.log(`viewport: ${viewport}`);
   giveMenuIdClickEvent(bgBubble);
 });
 
@@ -54,6 +52,7 @@ function giveMenuIdClickEvent(bgBubble) {
           move(id, currBgBubblePosition, bgBubble);
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "white";
+          menuElements[0].firstChild.style.display = "block";
           mainH1.style.display = "none";
           bgWrapper.style.backgroundColor = "white";
           bg.style.backgroundColor = "white";
@@ -169,7 +168,6 @@ function turnOffClickedMenuElem(currBgBubblePosition) {
      
       menuElements[i].firstChild.style.opacity = ".7";
       menuElements[i].firstChild.style.color = "white";
-      menuElements[i].style.zIndex = "1";
      
       menuElements[i].firstChild.addEventListener("mouseenter", () => {
         mouseEnter(i);
