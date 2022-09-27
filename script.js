@@ -70,11 +70,11 @@ function giveMenuIdClickEvent(bgBubble) {
         case 3:
           move(id, currBgBubblePosition, bgBubble);
           turnOffClickedMenuElem(currBgBubblePosition);
-          body.style.backgroundColor = "hsl(110°, 91%, 14%)";
+          body.style.backgroundColor = "#044f12";
            mainH1.style.display = "none";
-           bgWrapper.style.backgroundColor = "hsl(110°, 91%, 14%)";
-           bg.style.backgroundColor = "hsl(110°, 91%, 14%)";
-           bgBubble.style.backgroundColor = "hsl(110°, 91%, 14%)";
+           bgWrapper.style.backgroundColor = "#044f12";
+           bg.style.backgroundColor = "#044f12";
+           bgBubble.style.backgroundColor = "#044f12";
           break;
       }
     });
