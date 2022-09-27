@@ -122,11 +122,9 @@ body > .main {
     background-color: #000000;
     background-image: url("./assets/45-degree-fabric-light.png");
     transform: translateY(0%);
-}
-
-#bubble1 > span {
     opacity: 1;
 }
+
   
 
 .navBar > #bgWrapper {
