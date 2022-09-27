@@ -36,7 +36,7 @@ function giveMenuIdClickEvent(bgBubble) {
       switch (i) {
         case 0:
           move(id, currBgBubblePosition, bgBubble);
-          turnOffClickedMenuElem(currBgBubblePosition);
+          //turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "black";
           body.style.backgroundImage = "url(./assets/brilliant.png)";
           mainH1.style.display = "block";
@@ -50,7 +50,7 @@ function giveMenuIdClickEvent(bgBubble) {
           break;
         case 1:
           move(id, currBgBubblePosition, bgBubble);
-          turnOffClickedMenuElem(currBgBubblePosition);
+          //turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "white";
           mainH1.style.display = "none";
           bgWrapper.style.backgroundColor = "white";
