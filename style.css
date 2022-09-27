@@ -11,6 +11,7 @@ html {
 body{
     background-color: black;
     background-image:url("./assets/brilliant.png");
+    visibility: hidden;
 
 }
 
@@ -24,6 +25,7 @@ body{
             overflow: hidden;
             position: relative;
             margin: 0;
+            visibility: visible;
         }
 
 body > .main {
