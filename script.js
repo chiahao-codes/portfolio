@@ -75,12 +75,12 @@ function move(id, position, bgBubble) {
   currBgBubblePosition = position;
   console.log(id, currBgBubblePosition);
   timeLine
-    .to(bgBubble, { duration: 0.1, bottom: "calc(-4em)", ease: "ease-out" }, 0)
+    .to(bgBubble, { duration: .21, bottom: "calc(-4em)", ease: "ease-out" }, 0)
     .to(
       "#bubble1",
       {
-        duration: 0.1,
-       
+        duration: 0.21,
+
         y: "145%",
         opacity: 0,
         boxShadow: "none",
@@ -91,7 +91,7 @@ function move(id, position, bgBubble) {
     .to(
       "#bubble2",
       {
-        duration: 0.1,
+        duration: 0.21,
         y: "145%",
         opacity: 0,
         boxShadow: "none",
@@ -102,7 +102,7 @@ function move(id, position, bgBubble) {
     .to(
       "#bubble3",
       {
-        duration: 0.1,
+        duration: 0.21,
         y: "145%",
         opacity: 0,
         boxShadow: "none",
@@ -113,24 +113,25 @@ function move(id, position, bgBubble) {
     .to(
       "#bubble4",
       {
-        duration: 0.1,
+        duration: 0.21,
         y: "145%",
         opacity: 0,
         boxShadow: "none",
         ease: "ease-out",
       },
       0
-    );
-  /**
-   * .to(
+    )
+    .to(
       ".icon",
       {
-        duration: 0.05,
+        duration: 0.21,
         opacity: 0,
         ease: "ease-out",
       },
       0
-    )
+    );
+  /**
+   * 
    */
   gsapAnimationResizeBgbLeft(
     bgBubble,
@@ -143,7 +144,7 @@ function move(id, position, bgBubble) {
     .to(
       `#bubble${id}`,
       {
-        duration: 0.15,
+        duration: 0.215,
         zIndex: 1,
        
         y: "0%",
@@ -157,7 +158,7 @@ function move(id, position, bgBubble) {
     .to(
       `#bubble${id} > span`,
       {
-        duration: 0.15,
+        duration: 0.215,
        
         y: "0%",
         opacity: 1,
@@ -182,7 +183,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
  
   timeLine.to(
     bgB,
-    { duration: 0.17, bottom: "calc(-3em)", ease: "ease-out" },
+    { duration: 0.217, bottom: "calc(-3em)", ease: "ease-out" },
     0
   );
 }
