@@ -59,12 +59,22 @@ function giveMenuIdClickEvent(bgBubble) {
           
           break;
         case 2:
-          
-          body.style.backgroundColor = "navy";
+          move(id, currBgBubblePosition, bgBubble);
+          turnOffClickedMenuElem(currBgBubblePosition);
+          body.style.backgroundColor = "#04124f";
+           mainH1.style.display = "none";
+           bgWrapper.style.backgroundColor = "#04124f";
+           bg.style.backgroundColor = "#04124f";
+           bgBubble.style.backgroundColor = "#04124f";
           break;
         case 3:
-          
-          body.style.backgroundColor = "darkgreen";
+          move(id, currBgBubblePosition, bgBubble);
+          turnOffClickedMenuElem(currBgBubblePosition);
+          body.style.backgroundColor = "hsl(110°, 91%, 14%)";
+           mainH1.style.display = "none";
+           bgWrapper.style.backgroundColor = "hsl(110°, 91%, 14%)";
+           bg.style.backgroundColor = "hsl(110°, 91%, 14%)";
+           bgBubble.style.backgroundColor = "hsl(110°, 91%, 14%)";
           break;
       }
     });
