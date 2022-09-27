@@ -174,7 +174,6 @@ body > .main {
 
 #menuWrapper > .menuElement {
         font-size: calc(1em + .25vmin);
-      
         display: flex;
         justify-content: center;
         align-items: center;

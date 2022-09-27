@@ -165,7 +165,6 @@ function turnOffClickedMenuElem(currBgBubblePosition) {
   for (let i = 0; i < menuElements.length; i++) {
     if (bgBubbPosMap[i] === currBgBubblePosition) {
       menuElements[i].firstChild.style.opacity = "0";
-    
     } else {
      
       menuElements[i].firstChild.style.opacity = ".55";
