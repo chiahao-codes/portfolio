@@ -108,10 +108,11 @@ body > .main {
     justify-content: center;
     align-items: center;
     z-index:1;
+    opacity: 0;
 }
 
  .icon {
-        opacity: 0;
+        
         color: white;
         font-size: calc(1.2em);
         filter: contrast(150%), brightness(100%);
