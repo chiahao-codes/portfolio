@@ -170,7 +170,7 @@ function turnOffClickedMenuElem(currBgBubblePosition) {
      
       menuElements[i].firstChild.style.opacity = ".55";
       menuElements[i].firstChild.style.color = "white";
-      menuElements[i].firstChild.style.visibility = "visible";
+      menuElements[i].firstChild.ariaHidden = "false";
       menuElements[i].firstChild.addEventListener("mouseenter", () => {
         mouseEnter(i);
       });
