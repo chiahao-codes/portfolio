@@ -179,7 +179,14 @@ body > .main {
         align-items: center;
         opacity:.7;
         color:white;
+        visibility: visible;
     }
+
+#menuWrapper>.menuElement > i {
+    visibility: visible;
+}
+
+
 
     #menuWrapper > .menuElement:hover{
         color:white;
