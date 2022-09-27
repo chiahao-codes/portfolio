@@ -75,11 +75,11 @@ function move(id, position, bgBubble) {
   currBgBubblePosition = position;
   console.log(id, currBgBubblePosition);
   timeLine
-    .to(bgBubble, { duration: .21, bottom: "calc(-4em)", ease: "ease-out" }, 0)
+    .to(bgBubble, { duration: .15, bottom: "calc(-4em)", ease: "ease-out" }, 0)
     .to(
       "#bubble1",
       {
-        duration: 0.21,
+        duration: 0.1,
 
         y: "145%",
         opacity: 0,
@@ -91,7 +91,7 @@ function move(id, position, bgBubble) {
     .to(
       "#bubble2",
       {
-        duration: 0.21,
+        duration: 0.15,
         y: "145%",
         opacity: 0,
         boxShadow: "none",
@@ -102,7 +102,7 @@ function move(id, position, bgBubble) {
     .to(
       "#bubble3",
       {
-        duration: 0.21,
+        duration: 0.15,
         y: "145%",
         opacity: 0,
         boxShadow: "none",
@@ -113,7 +113,7 @@ function move(id, position, bgBubble) {
     .to(
       "#bubble4",
       {
-        duration: 0.21,
+        duration: 0.15,
         y: "145%",
         opacity: 0,
         boxShadow: "none",
@@ -124,7 +124,7 @@ function move(id, position, bgBubble) {
     .to(
       ".icon",
       {
-        duration: 0.21,
+        duration: 0.1,
         opacity: 0,
         ease: "ease-out",
       },
