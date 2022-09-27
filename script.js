@@ -80,7 +80,8 @@ function move(id, position, bgBubble) {
       "#bubble1",
       {
         duration: 0.1,
-        y: "145%",
+        transform: "translateY(145%)",
+        //y: "145%",
         opacity: 0,
         boxShadow: "none",
         ease: "ease-out",
@@ -91,7 +92,8 @@ function move(id, position, bgBubble) {
       "#bubble2",
       {
         duration: 0.1,
-        y: "145%",
+        transform: "translateY(145%)",
+        //y: "145%",
         opacity: 0,
         boxShadow: "none",
         ease: "ease-out",
@@ -144,7 +146,8 @@ function move(id, position, bgBubble) {
       {
         duration: 0.15,
         zIndex: 1,
-        y: "0%",
+        transform: "translateY(0%)",
+        //y: "0%",
         backgroundColor: "hsl(0, 0%, 12%)",
         opacity: 1,
         boxShadow: "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.2194)",
@@ -156,7 +159,8 @@ function move(id, position, bgBubble) {
       `#bubble${id} > span`,
       {
         duration: 0.15,
-        y: "0%",
+        transform: "translateY(145%)",
+        //y: "0%",
         opacity: 1,
         ease: "ease-out",
       },
@@ -170,7 +174,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
    timeLine.to(
      bgB,
      {
-       duration: 0.219,
+       duration: 0.22,
        left: `calc(${position})`,
        ease: "ease-in-out",
      },
@@ -179,7 +183,7 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
  
   timeLine.to(
     bgB,
-    { duration: 0.15, bottom: "calc(-3em)", ease: "ease-out" },
+    { duration: 0.17, bottom: "calc(-3em)", ease: "ease-out" },
     0
   );
 }
