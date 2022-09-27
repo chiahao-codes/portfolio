@@ -162,13 +162,15 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
 
 function turnOffClickedMenuElem(currBgBubblePosition) {
  
+  // this for loop will not make prior icons visible, since it loops forward;
   for (let i = 0; i < menuElements.length; i++) {
     if (bgBubbPosMap[i] === currBgBubblePosition) {
       menuElements[i].firstChild.style.opacity = "0";
     } else {
      
-      menuElements[i].firstChild.style.opacity = ".55";
+      menuElements[i].firstChild.style.opacity = ".7";
       menuElements[i].firstChild.style.color = "white";
+      menuElements[i].style.zIndex = "1";
      
       menuElements[i].firstChild.addEventListener("mouseenter", () => {
         mouseEnter(i);
