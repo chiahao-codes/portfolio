@@ -5,6 +5,7 @@ let bgBubble = document.getElementById("bgBubble");
 let bgWrapper = document.getElementById("bgWrapper");
 let bg = document.getElementById("bg");
 let menuElements = document.getElementsByClassName("menuElement");
+console.log(menuElements);
 let viewport, currBgBubblePosition, id, positionNumber, bgBubbLeft;
 
 let bgBubbPosMap = {
@@ -36,8 +37,8 @@ function giveMenuIdClickEvent(bgBubble) {
       /** */
       switch (i) {
         case 0:
-           move(id, currBgBubblePosition, bgBubble);
-           turnOffClickedMenuElem(currBgBubblePosition);
+          move(id, currBgBubblePosition, bgBubble);
+          turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "black";
           body.style.backgroundImage = "url(./assets/brilliant.png)";
           mainH1.style.display = "block";
@@ -160,13 +161,16 @@ function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
 }
 
 function turnOffClickedMenuElem(currBgBubblePosition) {
-  console.log(`TurnOffClickedMenuElem running...`, currBgBubblePosition);
+ 
   for (let i = 0; i < menuElements.length; i++) {
     if (bgBubbPosMap[i] === currBgBubblePosition) {
       menuElements[i].firstChild.style.opacity = "0";
+    
     } else {
+     
       menuElements[i].firstChild.style.opacity = ".55";
       menuElements[i].firstChild.style.color = "white";
+      menuElements[i].firstChild.style.visibility = "visible";
       menuElements[i].firstChild.addEventListener("mouseenter", () => {
         mouseEnter(i);
       });
