@@ -16,7 +16,7 @@ let bgBubbPosMap = {
 };
 
 window.addEventListener("load", () => {
-  giveMenuIdClickEvent(bgBubble);
+  //giveMenuIdClickEvent(bgBubble);
 });
 
 
@@ -52,7 +52,6 @@ function giveMenuIdClickEvent(bgBubble) {
           move(id, currBgBubblePosition, bgBubble);
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "white";
-          menuElements[0].firstChild.style.display = "block";
           mainH1.style.display = "none";
           bgWrapper.style.backgroundColor = "white";
           bg.style.backgroundColor = "white";
