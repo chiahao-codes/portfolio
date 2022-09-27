@@ -53,11 +53,11 @@ body > .main {
     }
 
     .main > h1 {
-        font-size: calc( 1.2em + 1.7vh );
+        font-size: calc( 1em + 1.7vh );
     }
 
         .main > h2 {
-            font-size: calc( .8em + 1.5vh );
+            font-size: calc( .7em + 1.5vh );
         }
 
     
@@ -196,10 +196,6 @@ body > .main {
         opacity:1;
         filter:brightness(120%), contrast(120%);
     }
-
-   
-
-    
 
 }
 
