@@ -71,6 +71,8 @@ function giveMenuIdClickEvent(bgBubble) {
            mainH1.style.display = "none";
            bgWrapper.style.backgroundColor = "#04124f";
           bgWrapper.style.backgroundImage = "url(./assets/classy-fabric.png)";
+          bg.style.backgroundColor = "04124f";
+          bg.style.backgroundImage = "url(./assets/classy-fabric.png)";
           bgBubble.style.backgroundColor = "#04124f";
           bgBubble.style.backgroundImage = "url(./assets/classy-fabric.png)";
      
@@ -84,6 +86,8 @@ function giveMenuIdClickEvent(bgBubble) {
            mainH1.style.display = "none";
            bgWrapper.style.backgroundColor = "#044f12";
           bgWrapper.style.backgroundImage = "url(./assets/classy-fabric.png)";
+           bg.style.backgroundColor = "044f12";
+           bg.style.backgroundImage = "url(./assets/classy-fabric.png)";
            bgBubble.style.backgroundColor = "#044f12";
            bgBubble.style.backgroundImage = "url(./assets/classy-fabric.png)";
      
