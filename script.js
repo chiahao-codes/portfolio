@@ -73,34 +73,55 @@ function giveMenuIdClickEvent(bgBubble) {
 
 function move(id, position, bgBubble) {
   currBgBubblePosition = position;
-  console.log(id, currBgBubblePosition)
+  console.log(id, currBgBubblePosition);
   timeLine
-    .to(
-      bgBubble,
-      { duration: 0.1, bottom: "calc(-4em)", ease: "ease-out" },
-      0
-    )
+    .to(bgBubble, { duration: 0.1, bottom: "calc(-4em)", ease: "ease-out" }, 0)
     .to(
       "#bubble1",
-      { duration: 0.1, y: "145%", boxShadow: "none", ease: "ease-out" },
+      {
+        duration: 0.1,
+        y: "145%",
+        opacity: 0,
+        boxShadow: "none",
+        ease: "ease-out",
+      },
       0
     )
     .to(
       "#bubble2",
-      { duration: 0.1, y: "145%", boxShadow: "none", ease: "ease-out" },
+      {
+        duration: 0.1,
+        y: "145%",
+        opacity: 0,
+        boxShadow: "none",
+        ease: "ease-out",
+      },
       0
     )
     .to(
       "#bubble3",
-      { duration: 0.1, y: "145%", boxShadow: "none", ease: "ease-out" },
+      {
+        duration: 0.1,
+        y: "145%",
+        opacity: 0,
+        boxShadow: "none",
+        ease: "ease-out",
+      },
       0
     )
     .to(
       "#bubble4",
-      { duration: 0.1, y: "145%", boxShadow: "none", ease: "ease-out" },
+      {
+        duration: 0.1,
+        y: "145%",
+        opacity: 0,
+        boxShadow: "none",
+        ease: "ease-out",
+      },
       0
-    )
-    .to(
+    );
+  /**
+   * .to(
       ".icon",
       {
         duration: 0.05,
@@ -108,15 +129,21 @@ function move(id, position, bgBubble) {
         ease: "ease-out",
       },
       0
-    );
-  gsapAnimationResizeBgbLeft(bgBubble, viewport, currBgBubblePosition, timeLine);
+    )
+   */
+  gsapAnimationResizeBgbLeft(
+    bgBubble,
+    viewport,
+    currBgBubblePosition,
+    timeLine
+  );
 
   timeLine
     .to(
       `#bubble${id}`,
       {
         duration: 0.15,
-        zIndex:1,
+        zIndex: 1,
         y: "0%",
         backgroundColor: "hsl(0, 0%, 12%)",
         opacity: 1,
