@@ -184,10 +184,6 @@ body > .main {
         visibility: visible;
     }
 
-#menuWrapper>.menuElement > i {
-    visibility: visible;
-}
-
 
 
     #menuWrapper > .menuElement:hover{
