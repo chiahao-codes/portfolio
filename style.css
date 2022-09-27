@@ -100,7 +100,7 @@ body > .main {
 .bubble {
     background-color: #000000;
     background-image: url("./assets/45-degree-fabric-light.png");
-    transform:translateY(45%);
+    transform:translateY(145%);
     border-radius: 50%;
     width: calc(2.4em - .025vmin);
     height: calc(2.4em - .025vmin);
@@ -117,15 +117,10 @@ body > .main {
         filter: contrast(150%), brightness(100%);
     }
 
-/*  */
-
 #bubble1 {
     background-color: #000000;
     background-image: url("./assets/45-degree-fabric-light.png");
     transform: translateY(0%);
-    /*z-index: 1;*/
-    
- 
 }
 
 #bubble1 > span {
