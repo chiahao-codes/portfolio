@@ -56,9 +56,7 @@ function giveMenuIdClickEvent(bgBubble) {
           mainH1.style.display = "none";
           bgWrapper.style.backgroundColor = "white";
           bgWrapper.style.backgroundImage = "url(./assets/classy-fabric.png)"; 
-          bg.style.backgroundColor = "white";
-          bgBubble.style.backgroundColor = "white";
-          bgBubble.style.backgroundImage = "url(./assets/classy-fabric.png)";
+      
           
           break;
         case 2:
@@ -69,9 +67,8 @@ function giveMenuIdClickEvent(bgBubble) {
            mainH1.style.display = "none";
            bgWrapper.style.backgroundColor = "#04124f";
            bgWrapper.style.backgroundImage ="url(./assets/classy-fabric.png)" 
-           bg.style.backgroundColor = "#04124f";
-           bgBubble.style.backgroundColor = "#04124f";
-           bgBubble.style.backgroundImage = "url(./assets/classy-fabric.png)";
+     
+       
           break;
         case 3:
           move(id, currBgBubblePosition, bgBubble);
@@ -81,9 +78,7 @@ function giveMenuIdClickEvent(bgBubble) {
            mainH1.style.display = "none";
            bgWrapper.style.backgroundColor = "#044f12";
            bgWrapper.style.backgroundImage ="url(./assets/classy-fabric.png)" 
-           bg.style.backgroundColor = "#044f12";
-           bgBubble.style.backgroundColor = "#044f12";
-           bgBubble.style.backgroundImage = "url(./assets/classy-fabric.png)";
+     
           break;
       }
     });
