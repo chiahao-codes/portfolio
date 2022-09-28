@@ -96,7 +96,6 @@ function move(id, position, bgBubble) {
       "#bubble1",
       {
         duration: 0.1,
-
         yPercent: "145",
         opacity: 0,
         boxShadow: "none",
@@ -165,7 +164,6 @@ function move(id, position, bgBubble) {
       {
         duration: 0.215,
         zIndex: 1,
-
         yPercent: "0",
         backgroundColor: "hsl(0, 0%, 12%)",
         opacity: 1,
@@ -178,7 +176,6 @@ function move(id, position, bgBubble) {
       `#bubble${id} > span`,
       {
         duration: 0.215,
-
         yPercent: "0",
         opacity: 1,
         ease: "ease-out",
