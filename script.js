@@ -15,7 +15,7 @@ let bgBubbPosMap = {
 };
 
 window.addEventListener("load", () => {
-  //giveMenuIdClickEvent(bgBubble1);
+  giveMenuIdClickEvent(bgBubble1);
 });
 
 function giveMenuIdClickEvent(bgBubble = bgBubble1) {
