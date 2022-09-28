@@ -1,12 +1,11 @@
 let timeLine = gsap.timeline();
 let body = document.getElementsByTagName("body")[0];
 let mainH1 = document.getElementById("main");
-let bgBubble = document.getElementById("bgBubble");
+let bgBubble1 = document.getElementById("bgBubble");
 let bgWrapper = document.getElementById("bgWrapper");
 let bg = document.getElementById("bg");
 let menuElements = document.getElementsByClassName("menuElement");
-console.log(menuElements);
-let viewport, currBgBubblePosition, id, positionNumber, bgBubbLeft;
+let currBgBubblePosition, id;
 
 let bgBubbPosMap = {
   0: "60px",
@@ -16,17 +15,10 @@ let bgBubbPosMap = {
 };
 
 window.addEventListener("load", () => {
-  giveMenuIdClickEvent(bgBubble);
+  //giveMenuIdClickEvent(bgBubble);
 });
 
-
-function getViewPort() {
-  return (viewport = window.innerWidth);
-}
-
-
-
-function giveMenuIdClickEvent(bgBubble) {
+function giveMenuIdClickEvent(bgBubble = bgBubble1) {
   for (let i = 0; i < menuElements.length; i++) {
     menuElements[i].firstChild.addEventListener("click", () => {
       id = i + 1;
