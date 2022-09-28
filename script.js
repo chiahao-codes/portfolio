@@ -1,4 +1,4 @@
-let timeLine = gsap.timeline();
+
 let body = document.getElementsByTagName("body")[0];
 let mainH1 = document.getElementById("main");
 let bgBubble1 = document.getElementById("bgBubble");
@@ -23,8 +23,6 @@ function giveMenuIdClickEvent(bgBubble = bgBubble1) {
     menuElements[i].firstChild.addEventListener("click", () => {
       id = i + 1;
       currBgBubblePosition = bgBubbPosMap[i];
-      
-      /** */
       switch (i) {
         case 0:
           move(id, currBgBubblePosition, bgBubble);
@@ -90,10 +88,10 @@ function giveMenuIdClickEvent(bgBubble = bgBubble1) {
 }
 
 function move(id, position, bgBubble) {
+  let moveTimeline = gsap.timeline();
   currBgBubblePosition = position;
-  console.log(id, currBgBubblePosition);
-  timeLine
-    .to(bgBubble, { duration: .15, bottom: "calc(-4em)", ease: "ease-out" }, 0)
+  moveTimeline
+    .to(bgBubble, { duration: 0.15, bottom: "calc(-4em)", ease: "ease-out" }, 0)
     .to(
       "#bubble1",
       {
@@ -147,23 +145,27 @@ function move(id, position, bgBubble) {
         ease: "ease-out",
       },
       0
-    );
-  /**
-   * 
-   */
-  gsapAnimationResizeBgbLeft(
-    bgBubble,
-    currBgBubblePosition,
-    timeLine
-  );
-
-  timeLine
+    )
+    .to(
+      bgBubble,
+      {
+        duration: 0.22,
+        left: `calc(${position})`,
+        ease: "ease-in-out",
+      },
+      0
+    )
+    .to(
+      bgBubble,
+      { duration: 0.217, bottom: "calc(-3em)", ease: "ease-out" },
+      0
+    )
     .to(
       `#bubble${id}`,
       {
         duration: 0.215,
         zIndex: 1,
-       
+
         y: "0%",
         backgroundColor: "hsl(0, 0%, 12%)",
         opacity: 1,
@@ -176,7 +178,7 @@ function move(id, position, bgBubble) {
       `#bubble${id} > span`,
       {
         duration: 0.215,
-       
+
         y: "0%",
         opacity: 1,
         ease: "ease-out",
@@ -185,43 +187,40 @@ function move(id, position, bgBubble) {
     );
 }
 
+/*function gsapAnimationResizeBgbLeft(bgB, position, timeLine) {
+  timeLine.to(
+    bgB,
+    {
+      duration: 0.22,
+      left: `calc(${position})`,
+      ease: "ease-in-out",
+    },
+    0
+  );
 
-function gsapAnimationResizeBgbLeft(bgB,position, timeLine) {
- 
-   timeLine.to(
-     bgB,
-     {
-       duration: 0.22,
-       left: `calc(${position})`,
-       ease: "ease-in-out",
-     },
-     0
-   );
- 
   timeLine.to(
     bgB,
     { duration: 0.217, bottom: "calc(-3em)", ease: "ease-out" },
     0
   );
-}
+}* */
+
 
 function turnOffClickedMenuElem(currBgBubblePosition) {
- 
   for (let i = 0; i < menuElements.length; i++) {
     if (bgBubbPosMap[i] === currBgBubblePosition) {
       menuElements[i].firstChild.style.opacity = "0";
-    } 
-     
-      menuElements[i].firstChild.style.opacity = ".7";
-      menuElements[i].firstChild.style.color = "white";
-     
-      menuElements[i].firstChild.addEventListener("mouseenter", () => {
-        mouseEnter(i);
-      });
-      menuElements[i].firstChild.addEventListener("mouseleave", () => {
-        mouseLeave(i);
-      });
-    
+    }
+
+    menuElements[i].firstChild.style.opacity = ".7";
+    menuElements[i].firstChild.style.color = "white";
+
+    menuElements[i].firstChild.addEventListener("mouseenter", () => {
+      mouseEnter(i);
+    });
+    menuElements[i].firstChild.addEventListener("mouseleave", () => {
+      mouseLeave(i);
+    });
   }
 }
 
