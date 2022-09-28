@@ -99,7 +99,7 @@ function move(id, position, bgBubble) {
       {
         duration: 0.1,
 
-        y: "145%",
+        yPercent: "145",
         opacity: 0,
         boxShadow: "none",
         ease: "ease-out",
@@ -110,7 +110,7 @@ function move(id, position, bgBubble) {
       "#bubble2",
       {
         duration: 0.15,
-        y: "145%",
+        yPercent: "145",
         opacity: 0,
         boxShadow: "none",
         ease: "ease-out",
@@ -121,7 +121,7 @@ function move(id, position, bgBubble) {
       "#bubble3",
       {
         duration: 0.15,
-        y: "145%",
+        yPercent: "145",
         opacity: 0,
         boxShadow: "none",
         ease: "ease-out",
@@ -132,7 +132,7 @@ function move(id, position, bgBubble) {
       "#bubble4",
       {
         duration: 0.15,
-        y: "145%",
+        yPercent: "145",
         opacity: 0,
         boxShadow: "none",
         ease: "ease-out",
