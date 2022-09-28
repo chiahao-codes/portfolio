@@ -15,7 +15,7 @@ let bgBubbPosMap = {
 };
 
 window.addEventListener("load", () => {
-  giveMenuIdClickEvent(bgBubble1);
+  //giveMenuIdClickEvent(bgBubble1);
 });
 
 function giveMenuIdClickEvent(bgBubble = bgBubble1) {
@@ -153,7 +153,6 @@ function move(id, position, bgBubble) {
    */
   gsapAnimationResizeBgbLeft(
     bgBubble,
-    viewport,
     currBgBubblePosition,
     timeLine
   );
@@ -187,8 +186,8 @@ function move(id, position, bgBubble) {
 }
 
 
-function gsapAnimationResizeBgbLeft(bgB, view, position, timeLine) {
-  console.log(`viewport: ${view}`);
+function gsapAnimationResizeBgbLeft(bgB,position, timeLine) {
+ 
    timeLine.to(
      bgB,
      {
