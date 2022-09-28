@@ -150,7 +150,7 @@ function move(id, position, bgBubble) {
       bgBubble,
       {
         duration: 0.22,
-        left: `calc(${position})`,
+        left: `calc(${currBgBubblePosition})`,
         ease: "ease-in-out",
       },
       0
@@ -166,7 +166,7 @@ function move(id, position, bgBubble) {
         duration: 0.215,
         zIndex: 1,
 
-        y: "0%",
+        yPercent: "0",
         backgroundColor: "hsl(0, 0%, 12%)",
         opacity: 1,
         boxShadow: "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.2194)",
@@ -179,7 +179,7 @@ function move(id, position, bgBubble) {
       {
         duration: 0.215,
 
-        y: "0%",
+        yPercent: "0",
         opacity: 1,
         ease: "ease-out",
       },
