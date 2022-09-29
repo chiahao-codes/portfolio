@@ -1,11 +1,11 @@
 
 let body = document.getElementsByTagName("body")[0];
-let mainH1 = document.getElementById("main");
-let bgBubble1 = document.getElementById("bgBubble");
-let bgWrapper = document.getElementById("bgWrapper");
-let bg = document.getElementById("bg");
+let mainH1 = document.getElementBymoveId("main");
+let bgBubble1 = document.getElementBymoveId("bgBubble");
+let bgWrapper = document.getElementBymoveId("bgWrapper");
+let bg = document.getElementBymoveId("bg");
 let menuElements = document.getElementsByClassName("menuElement");
-let currBgBubblePosition, id;
+let currBgBubblePosition, moveId;
 
 let bgBubbPosMap = {
   0: "60px",
@@ -15,17 +15,17 @@ let bgBubbPosMap = {
 };
 
 window.addEventListener("load", () => {
-  giveMenuIdClickEvent(bgBubble1);
+  giveMenumoveIdClickEvent(bgBubble1);
 });
 
-function giveMenuIdClickEvent(bgBubble = bgBubble1) {
+function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
   for (let i = 0; i < menuElements.length; i++) {
     menuElements[i].firstChild.addEventListener("click", () => {
-      id = i + 1;
+      moveId = i + 1;
       currBgBubblePosition = bgBubbPosMap[i];
       switch (i) {
         case 0:
-          move(id, currBgBubblePosition, bgBubble);
+          move(moveId, currBgBubblePosition, bgBubble);
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "black";
           body.style.backgroundImage = "url(./assets/brilliant.png)";
@@ -39,7 +39,7 @@ function giveMenuIdClickEvent(bgBubble = bgBubble1) {
           
           break;
         case 1:
-          move(id, currBgBubblePosition, bgBubble);
+          move(moveId, currBgBubblePosition, bgBubble);
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "white";
           body.style.backgroundImage = "url(./assets/brilliant.png)";
@@ -54,7 +54,7 @@ function giveMenuIdClickEvent(bgBubble = bgBubble1) {
           
           break;
         case 2:
-          move(id, currBgBubblePosition, bgBubble);
+          move(moveId, currBgBubblePosition, bgBubble);
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "#04124f";
           body.style.backgroundImage = "url(./assets/classy-fabric.png)";
@@ -69,7 +69,7 @@ function giveMenuIdClickEvent(bgBubble = bgBubble1) {
        
           break;
         case 3:
-          move(id, currBgBubblePosition, bgBubble);
+          move(moveId, currBgBubblePosition, bgBubble);
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "#044f12";
           body.style.backgroundImage = "url(./assets/classy-fabric.png)";
@@ -89,7 +89,7 @@ function giveMenuIdClickEvent(bgBubble = bgBubble1) {
 
 function move(id, position, bgBubble) {
   let moveTimeline = gsap.timeline();
-  console.log(id, typeof id);
+  id = id.toString();
   currBgBubblePosition = position;
   moveTimeline
     .to(bgBubble, { duration: 0.15, bottom: "calc(-4em)", ease: "ease-out" }, 0)
@@ -165,23 +165,23 @@ function move(id, position, bgBubble) {
       {
         duration: 0.215,
         zIndex: 1,
-        y: "0%",
+        yPercent: 0,
         backgroundColor: "hsl(0, 0%, 12%)",
         opacity: 1,
         boxShadow: "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.2194)",
         ease: "ease-out",
       },
-      "-=0.1"
+      "-=1"
     )
     .to(
       `#bubble${id} > span`,
       {
         duration: 0.215,
-        y: "0%",
+        yPercent: 0,
         opacity: 1,
         ease: "ease-out",
       },
-      "-=0.1"
+      "-=1"
     );
 }
 
