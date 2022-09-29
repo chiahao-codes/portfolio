@@ -118,12 +118,13 @@ body > .main {
         filter: contrast(150%), brightness(100%);
     }
 
-#bubble1 {
-    background-color: #000000;
-    background-image: url("./assets/45-degree-fabric-light.png");
-    transform: translateY(0%);
-    opacity: 1;
-}
+    /*#bubble1 {
+        background-color: #000000;
+        background-image: url("./assets/45-degree-fabric-light.png");
+        transform: translateY(0%);
+        opacity: 1;
+    }*/
+
 
   
 

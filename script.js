@@ -15,6 +15,7 @@ let bgBubbPosMap = {
 };
 
 window.addEventListener("load", () => {
+  move(1, bgBubbPosMap[0], bgBubble1);
   giveMenumoveIdClickEvent(bgBubble1);
 });
 
@@ -164,7 +165,7 @@ function move(id, position, bgBubble) {
       {
         duration: 0.215,
         zIndex: 1,
-        y: "0%",
+        yPercent:0,
         backgroundColor: "hsl(0, 0%, 12%)",
         opacity: 1,
         boxShadow: "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.2194)",
@@ -176,7 +177,7 @@ function move(id, position, bgBubble) {
       `#bubble${id} > span`,
       {
         duration: 0.215,
-        y: "0%",
+        yPercent:0,
         opacity: 1,
         ease: "ease-out",
       },
