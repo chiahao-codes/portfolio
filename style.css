@@ -100,7 +100,9 @@ body > .main {
 .bubble {
     background-color: #000000;
     background-image: url("./assets/45-degree-fabric-light.png");
-    transform:translateY(145%);
+    /*transform: translateY(145%);
+    opacity: 0;
+    */
     border-radius: 50%;
     width: calc(2.4em - .025vmin);
     height: calc(2.4em - .025vmin);
@@ -108,7 +110,6 @@ body > .main {
     justify-content: center;
     align-items: center;
     z-index:1;
-    opacity: 0;
 }
 
  .icon {
