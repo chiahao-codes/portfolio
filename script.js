@@ -89,6 +89,7 @@ function giveMenuIdClickEvent(bgBubble = bgBubble1) {
 
 function move(id, position, bgBubble) {
   let moveTimeline = gsap.timeline();
+  console.log(id, typeof id);
   currBgBubblePosition = position;
   moveTimeline
     .to(bgBubble, { duration: 0.15, bottom: "calc(-4em)", ease: "ease-out" }, 0)
@@ -170,7 +171,7 @@ function move(id, position, bgBubble) {
         boxShadow: "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.2194)",
         ease: "ease-out",
       },
-      "+=0.1"
+      "-=0.1"
     )
     .to(
       `#bubble${id} > span`,
@@ -180,7 +181,7 @@ function move(id, position, bgBubble) {
         opacity: 1,
         ease: "ease-out",
       },
-      "+=0.1"
+      "-=0.1"
     );
 }
 
