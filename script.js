@@ -89,7 +89,7 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
 
 function move(id, position, bgBubble) {
   let moveTimeline = gsap.timeline();
-  id = id.toString();
+  
   currBgBubblePosition = position;
   moveTimeline
     .to(bgBubble, { duration: 0.15, bottom: "calc(-4em)", ease: "ease-out" }, 0)
