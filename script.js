@@ -153,12 +153,12 @@ function move(id, position, bgBubble) {
         left: `calc(${currBgBubblePosition})`,
         ease: "ease-in-out",
       },
-      0
+      .1
     )
     .to(
       bgBubble,
       { duration: 0.217, bottom: "calc(-3em)", ease: "ease-out" },
-      0
+      "-=.2"
     )
     .to(
       `#bubble${id}`,
