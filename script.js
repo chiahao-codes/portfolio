@@ -171,7 +171,7 @@ function move(id, position, bgBubble) {
         boxShadow: "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.2194)",
         ease: "ease-out",
       },
-      "-=1"
+      "-=.1"
     )
     .to(
       `#bubble${id} > span`,
@@ -181,7 +181,7 @@ function move(id, position, bgBubble) {
         opacity: 1,
         ease: "ease-out",
       },
-      "-=1"
+      "-=.1"
     );
 }
 
