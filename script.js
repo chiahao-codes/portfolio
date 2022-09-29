@@ -96,7 +96,7 @@ function move(id, position, bgBubble) {
       "#bubble1",
       {
         duration: 0.1,
-        yPercent: "145",
+        yPercent: 145,
         opacity: 0,
         boxShadow: "none",
         ease: "ease-out",
@@ -107,7 +107,7 @@ function move(id, position, bgBubble) {
       "#bubble2",
       {
         duration: 0.15,
-        yPercent: "145",
+        yPercent: 145,
         opacity: 0,
         boxShadow: "none",
         ease: "ease-out",
@@ -118,7 +118,7 @@ function move(id, position, bgBubble) {
       "#bubble3",
       {
         duration: 0.15,
-        yPercent: "145",
+        yPercent: 145,
         opacity: 0,
         boxShadow: "none",
         ease: "ease-out",
@@ -129,7 +129,7 @@ function move(id, position, bgBubble) {
       "#bubble4",
       {
         duration: 0.15,
-        yPercent: "145",
+        yPercent: 145,
         opacity: 0,
         boxShadow: "none",
         ease: "ease-out",
@@ -164,7 +164,7 @@ function move(id, position, bgBubble) {
       {
         duration: 0.215,
         zIndex: 1,
-        yPercent: "0",
+        yPercent: 0,
         backgroundColor: "hsl(0, 0%, 12%)",
         opacity: 1,
         boxShadow: "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.2194)",
@@ -176,7 +176,7 @@ function move(id, position, bgBubble) {
       `#bubble${id} > span`,
       {
         duration: 0.215,
-        yPercent: "0",
+        yPercent: 0,
         opacity: 1,
         ease: "ease-out",
       },
