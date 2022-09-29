@@ -1,9 +1,9 @@
 
 let body = document.getElementsByTagName("body")[0];
-let mainH1 = document.getElementBymoveId("main");
-let bgBubble1 = document.getElementBymoveId("bgBubble");
-let bgWrapper = document.getElementBymoveId("bgWrapper");
-let bg = document.getElementBymoveId("bg");
+let mainH1 = document.getElementById("main");
+let bgBubble1 = document.getElementById("bgBubble");
+let bgWrapper = document.getElementById("bgWrapper");
+let bg = document.getElementById("bg");
 let menuElements = document.getElementsByClassName("menuElement");
 let currBgBubblePosition, moveId;
 
