@@ -21,11 +21,11 @@ window.addEventListener("load", () => {
 function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
   for (let i = 0; i < menuElements.length; i++) {
     menuElements[i].firstChild.addEventListener("click", () => {
-      moveId = i + 1;
+    
       currBgBubblePosition = bgBubbPosMap[i];
       switch (i) {
         case 0:
-          move(moveId, currBgBubblePosition, bgBubble);
+          move(1, currBgBubblePosition, bgBubble);
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "black";
           body.style.backgroundImage = "url(./assets/brilliant.png)";
@@ -39,7 +39,7 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
           
           break;
         case 1:
-          move(moveId, currBgBubblePosition, bgBubble);
+          move(2, currBgBubblePosition, bgBubble);
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "white";
           body.style.backgroundImage = "url(./assets/brilliant.png)";
@@ -54,7 +54,7 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
           
           break;
         case 2:
-          move(moveId, currBgBubblePosition, bgBubble);
+          move(3, currBgBubblePosition, bgBubble);
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "#04124f";
           body.style.backgroundImage = "url(./assets/classy-fabric.png)";
@@ -69,7 +69,7 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
        
           break;
         case 3:
-          move(moveId, currBgBubblePosition, bgBubble);
+          move(4, currBgBubblePosition, bgBubble);
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "#044f12";
           body.style.backgroundImage = "url(./assets/classy-fabric.png)";
@@ -80,7 +80,6 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
            bg.style.backgroundImage = "url(./assets/classy-fabric.png)";
            bgBubble.style.backgroundColor = "#044f12";
            bgBubble.style.backgroundImage = "url(./assets/classy-fabric.png)";
-     
           break;
       }
     });
@@ -182,7 +181,7 @@ function move(id, position, bgBubble) {
         ease: "ease-out",
       },
       "-=.1"
-    );
+    )
 }
 
 /*function gsapAnimationResizeBgbLeft(bgB, position, timeLine) {
