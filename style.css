@@ -96,7 +96,7 @@ body{
 
    #portfolio > #chess {
     width:200px;
-    height:150px;
+ 
     font-size: calc(.5em + 1.7vh);
     border-color:black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -104,7 +104,7 @@ body{
 
    #portfolio>#calculator {
     width:200px;
-    height: 150px;
+   
     font-size: calc(.5em + 1.7vh);
        border-color: black;
        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
