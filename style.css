@@ -92,11 +92,15 @@ body{
    }
 
    #portfolio > #chess {
+    width:50%;
+    font-size: calc(.5em + 1.7vh);
     border-color:black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    }
 
    #portfolio>#calculator {
+    width:50%;
+    font-size: calc(.5em + 1.7vh);
        border-color: black;
        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    }
