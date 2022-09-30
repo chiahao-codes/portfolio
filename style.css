@@ -92,12 +92,12 @@ body{
    }
 
    #portfolio > #chess {
-    
+    border-color:black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    }
 
    #portfolio>#calculator {
-      
+       border-color: black;
        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    }
 
