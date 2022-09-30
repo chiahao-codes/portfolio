@@ -39,7 +39,6 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
           bg.style.backgroundImage = "url(./assets/brilliant.png)";
           bgBubble.style.backgroundColor = "black";
           bgBubble.style.backgroundImage = "url(./assets/brilliant.png)";
-          
           break;
         case 1:
           move(2, currBgBubblePosition, bgBubble);
@@ -68,8 +67,6 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
           bg.style.backgroundImage = "url(./assets/classy-fabric.png)";
           bgBubble.style.backgroundColor = "#04124f";
           bgBubble.style.backgroundImage = "url(./assets/classy-fabric.png)";
-     
-       
           break;
         case 3:
           move(4, currBgBubblePosition, bgBubble);
@@ -92,8 +89,7 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
 
 function move(id, position, bgBubble) {
   let moveTimeline = gsap.timeline();
-  
-  currBgBubblePosition = position;
+  //currBgBubblePosition = position;
   moveTimeline
     .to(bgBubble, { duration: 0.15, bottom: "calc(-4em)", ease: "ease-out" }, 0)
     .to(
@@ -153,7 +149,7 @@ function move(id, position, bgBubble) {
       bgBubble,
       {
         duration: 0.22,
-        left: `calc(${currBgBubblePosition})`,
+        left: `calc(${position})`,
         ease: "ease-in-out",
       },
       0.1
@@ -188,8 +184,6 @@ function move(id, position, bgBubble) {
     );
 }
 
-
-     
 function turnOffClickedMenuElem(currBgBubblePosition) {
   for (let i = 0; i < menuElements.length; i++) {
     if (bgBubbPosMap[i] === currBgBubblePosition) {
