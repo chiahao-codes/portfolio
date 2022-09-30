@@ -81,10 +81,11 @@ body{
   }
 
    #portfolio {
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    align-items:center;
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    row-gap: 50px;
+
    } 
 
    #portfolio > h1{
