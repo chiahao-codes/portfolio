@@ -22,6 +22,7 @@ body{
             height: 100vh;
             width: 100vw;
             font-family: "Cormorant SC", sans-serif;
+            background-image:"url(./assets/brilliant.png)";
             overflow: hidden;
             position: relative;
             margin: 0;
@@ -140,20 +141,9 @@ body{
         filter: contrast(150%), brightness(100%);
     }
 
-    /*#bubble1 {
-        background-color: #000000;
-        background-image: url("./assets/45-degree-fabric-light.png");
-        transform: translateY(0%);
-        opacity: 1;
-    }*/
-
-
-  
-
 .navBar > #bgWrapper {
     filter:url(#goo);
     -webkit-filter: url(#goo);
-    background-color: black;
     background-image: url("./assets/brilliant.png");
     width: 100%;
     height:70px ;
@@ -163,8 +153,8 @@ body{
 
 
 #bg {
-    background-color: black;
-    background-image: url("./assets/brilliant.png");
+    background-color: inherit;
+    background-image: inherit;
     width:120%;
     height:100%;
     margin-left:-10%;
@@ -172,8 +162,8 @@ body{
 
 #bgBubble {
     position: absolute;
-    background-color: black;
-    background-image: url("./assets/brilliant.png");
+    background-color: inherit;
+    background-image: inherit;
     width: calc(3.95em - .025vmin);
     height: calc(3.95em - .025vmin);
     border-radius: 50%;
