@@ -60,7 +60,8 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "#04124f";
           body.style.backgroundImage = "url(./assets/classy-fabric.png)";
-           homeContainer.style.display = "none";
+          homeContainer.style.display = "none";
+          portfolioContainer.style.display = "none";
            bgWrapper.style.backgroundColor = "#04124f";
           bgWrapper.style.backgroundImage = "url(./assets/classy-fabric.png)";
           bg.style.backgroundColor = "#04124f";
@@ -75,7 +76,8 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "#044f12";
           body.style.backgroundImage = "url(./assets/classy-fabric.png)";
-           homeContainer.style.display = "none";
+          homeContainer.style.display = "none";
+          portfolioContainer.style.display = "none";
            bgWrapper.style.backgroundColor = "#044f12";
           bgWrapper.style.backgroundImage = "url(./assets/classy-fabric.png)";
            bg.style.backgroundColor = "#044f12";
