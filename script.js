@@ -1,6 +1,7 @@
-
 let body = document.getElementsByTagName("body")[0];
-let mainH1 = document.getElementById("main");
+let homeContainer = document.getElementById("homeContainer");
+let portfolioContainer = document.getElementById("portfolioContainer");
+
 let bgBubble1 = document.getElementById("bgBubble");
 let bgWrapper = document.getElementById("bgWrapper");
 let bg = document.getElementById("bg");
@@ -30,7 +31,8 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "black";
           body.style.backgroundImage = "url(./assets/brilliant.png)";
-          mainH1.style.display = "block";
+          homeContainer.style.display = "block";
+          portfolioContainer.style.display = "none";
           bgWrapper.style.backgroundColor = "black";
           bgWrapper.style.backgroundImage = "url(./assets/brilliant.png)";
           bg.style.backgroundColor = "black";
@@ -44,22 +46,21 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "white";
           body.style.backgroundImage = "url(./assets/brilliant.png)";
-          mainH1.style.display = "none";
+          homeContainer.style.display = "none";
+          portfolioContainer.style.display = "block";
           bgWrapper.style.backgroundColor = "white";
           bgWrapper.style.backgroundImage = "url(./assets/brilliant.png)"; 
           bg.style.backgroundColor = "white";
           bg.style.backgroundImage = "url(./assets/brilliant.png)";
           bgBubble.style.backgroundColor = "white";
           bgBubble.style.backgroundImage = "url(./assets/brilliant.png)";
-      
-          
           break;
         case 2:
           move(3, currBgBubblePosition, bgBubble);
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "#04124f";
           body.style.backgroundImage = "url(./assets/classy-fabric.png)";
-           mainH1.style.display = "none";
+           homeContainer.style.display = "none";
            bgWrapper.style.backgroundColor = "#04124f";
           bgWrapper.style.backgroundImage = "url(./assets/classy-fabric.png)";
           bg.style.backgroundColor = "#04124f";
@@ -74,7 +75,7 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "#044f12";
           body.style.backgroundImage = "url(./assets/classy-fabric.png)";
-           mainH1.style.display = "none";
+           homeContainer.style.display = "none";
            bgWrapper.style.backgroundColor = "#044f12";
           bgWrapper.style.backgroundImage = "url(./assets/classy-fabric.png)";
            bg.style.backgroundColor = "#044f12";
@@ -185,25 +186,8 @@ function move(id, position, bgBubble) {
     );
 }
 
-/*function gsapAnimationResizeBgbLeft(bgB, position, timeLine) {
-  timeLine.to(
-    bgB,
-    {
-      duration: 0.22,
-      left: `calc(${position})`,
-      ease: "ease-in-out",
-    },
-    0
-  );
 
-  timeLine.to(
-    bgB,
-    { duration: 0.217, bottom: "calc(-3em)", ease: "ease-out" },
-    0
-  );
-}* */
-
-
+     
 function turnOffClickedMenuElem(currBgBubblePosition) {
   for (let i = 0; i < menuElements.length; i++) {
     if (bgBubbPosMap[i] === currBgBubblePosition) {

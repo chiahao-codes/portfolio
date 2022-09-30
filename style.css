@@ -28,7 +28,15 @@ body{
             visibility: visible;
         }
 
-body > .main {
+.homeContainer{
+    width:fit-content;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    bottom: 10%;
+}
+
+.home {
         color: hsl(58,
             98%,
             40%);
@@ -44,22 +52,35 @@ body > .main {
         grid-template-rows: auto;
         justify-content: center;
         align-content: center;
-        z-index:1;
     }
 
-    .main>h2,
-    .main>h1 {
+    .home>h2,
+    .home>h1 {
         text-align: center;
     }
 
-    .main > h1 {
+    .home > h1 {
         font-size: calc( 1em + 1.7vh );
     }
 
-        .main > h2 {
+        .home > h2 {
             font-size: calc( .7em + 1.5vh );
         }
 
+  .portfolioContainer {
+      width: fit-content;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+  }
+
+   #portfolio {
+    color:#000000;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+   } 
     
  body > .navContainer{
         display: flex;
