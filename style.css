@@ -74,6 +74,7 @@ body{
       position: absolute;
       top: 13%;
       left: 50%;
+    transform: translateX(-50%);
   }
 
    #portfolio {
