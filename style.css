@@ -29,6 +29,7 @@ body{
             visibility: visible;
         }
 
+/*Home Page*/
 .homeContainer{
     width:fit-content;
     position:absolute;
@@ -70,7 +71,6 @@ body{
         }
 
 /*Portfolio Page*/
-
   .portfolioContainer {
       width: fit-content;
       position: absolute;
@@ -95,20 +95,28 @@ body{
     text-align:center;
    }
 
-   #portfolio > #chess {
+   #chess_article {
     width:200px;
- 
-    font-size: calc(.5em + 1.7vh);
     border-color:black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    }
 
-   #portfolio>#calculator {
+   #chess_link{
+    align-content: center;
+    display: flex;
+    justify-content: space-around;
+   }
+
+   #calculator_article {
     width:200px;
-   
-    font-size: calc(.5em + 1.7vh);
        border-color: black;
        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   }
+
+   #calculator_link {
+       align-content: center;
+       display: flex;
+       justify-content: space-around;
    }
 
 
