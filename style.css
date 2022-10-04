@@ -72,15 +72,16 @@ body{
 
 /*Portfolio Page*/
 .portfolioContainer {
-      width: 10vw;
+      width: 100%;
+      height:fit-content;
       position: relative;
-      left:auto;
-      right: auto;
+      left:0;
+      right: 0;
       color: #000000;
   }
 
   #portfolioContainer> h1 {
-      font-size: calc(1em + 1.7vh);
+      font-size: calc(2vh);
       text-align: center;
       position: absolute;
       top: 1%;
@@ -90,19 +91,19 @@ body{
     display:grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    row-gap: 50px;
+    row-gap: 9vh;
     justify-content: center;
     align-items: center;
     position:absolute;
     width:100%;
     color:#000000;
-    top:15%;
+    top:5vh;
    } 
 
    #chess_article {
     color: black;
     height:9vh;
-    width:fit-content;
+    width:40vw;
     border-color:black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    }
@@ -113,17 +114,20 @@ body{
     display: flex;
     justify-content: space-between;
     text-decoration:none;
-    width: 12%;
-    height: fit-content;
+    width: 100%;
+    height: 100%;
+    position:relative;
    }
 
+
+
    .chess_proj_desc{
-    font-size: .7em;
+    font-size: 10%;
    }
 
    .chess_img_wrapper {
        border-color: black;
-        height: 50%;
+        height: 40%;
         width: 30%;
    }
 
@@ -137,8 +141,8 @@ body{
 
    #calculator_article {
     color:black;
-    height:9vh;
-    width:fit-content;
+    height: 9vh;
+    width: 40vw;
        border-color: black;
        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    }
@@ -149,17 +153,18 @@ body{
        display: flex;
        justify-content: space-between;
        text-decoration:none;
-       width:12%;
-       height:fit-content;
+        width: 100%;
+        height: 100%;
+        position: relative;
    }
 
    .calculator_proj_desc{
-    font-size:.7em;
+    font-size: 10%;
    }
 
    .calculator_img_wrapper {
     border-color:#000000;
-    height: 50%;
+    height: 40%;
     width: 30%;
    }
 
