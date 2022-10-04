@@ -125,11 +125,11 @@ body{
     object-fit: contain;
     border-radius: rem(2);
         display: block;
-        height: 100%;
+       
         filter: grayscale(1);
         object-fit: cover;
         transition: filter 0.3s ease-in;
-        width: 100%;
+    
    }
 
    #calculator_article {
@@ -161,14 +161,13 @@ body{
     object-fit:contain;
     border-radius: rem(2);
         display: block;
-        height: 100%;
+       
         filter: grayscale(1);
         object-fit: cover;
         transition: filter 0.3s ease-in;
-        width: 100%;
    }
 
-   
+
 
 
 /*Navigation*/
