@@ -71,7 +71,7 @@ body{
         }
 
 /*Portfolio Page*/
-  .portfolioContainer {
+  body > .portfolioContainer {
       width: fit-content;
       position: absolute;
       top: 13%;
