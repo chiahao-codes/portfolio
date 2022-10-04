@@ -100,6 +100,7 @@ body{
    } 
 
    #chess_article {
+    color: black;
     height:fit-content;
     width:fit-content;
     border-color:black;
@@ -135,6 +136,7 @@ body{
    }
 
    #calculator_article {
+    color:black;
     height:fit-content;
     width:fit-content;
        border-color: black;
