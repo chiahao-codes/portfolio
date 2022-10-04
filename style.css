@@ -108,7 +108,7 @@ body{
    }
 
    #chess_link{
-       color:black;
+    color:black;
     align-content: center;
     display: flex;
     justify-content: space-between;
