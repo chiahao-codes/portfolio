@@ -34,26 +34,32 @@ body{
         }
 
 /*Home Page
-position:absolute;
+
 top: 50%;
-left: 50%;
+
 bottom: 10%;*/
 .homeContainer{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     width:fit-content;
     height: fit-content;
 }
-/*z-index: 1;*/
+/*z-index: 1;
+  position: absolute;
+top: 50%;
+left: 50%;
+bottom:10%;
+transform: translate(-50%, -50%);
+*/
 .home {
         color: hsl(58,
             98%,
             40%);
         filter: contrast(150%), brightness(150%);
-        position: absolute;
+      
         height: fit-content;
-        top: 50%;
-        left: 50%;
-        bottom:10%;
-        transform: translate(-50%, -50%);
+        
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto;
@@ -207,9 +213,7 @@ bottom: 10%;*/
 
 
 /*Navigation
-position: fixed;
-left: 50%;
-transform: translateX(-50%);
+
 bottom:6%;
 */
 
@@ -221,6 +225,9 @@ bottom:6%;
         height: calc(3.1em + .025vmin);
         background-color: inherit;
         border-radius: none;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
 }
 
 
