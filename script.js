@@ -44,7 +44,8 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
      
           homeContainer.style.display = "none";
           portfolioContainer.style.display = "flex";
-          portfolioContainer.style.justifyContent = "center";
+          portfolioContainer.style.flexDirection = "column";
+          portfolioContainer.style.justifyContent = "space-around";
           portfolioContainer.style.alignItems = "center";
           bgWrapper.style.backgroundColor = "white";
          
