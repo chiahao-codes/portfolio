@@ -108,6 +108,7 @@ body{
    }
 
    #chess_link{
+       color:black;
     align-content: center;
     display: flex;
     justify-content: space-between;
@@ -143,6 +144,7 @@ body{
    }
 
    #calculator_link {
+       color:black;
        align-content: center;
        display: flex;
        justify-content: space-between;
