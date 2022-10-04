@@ -117,12 +117,12 @@ body{
    }
 
    .chess_proj_desc{
-    font-size: 40%;
+    font-size: .7em;
    }
 
    .chess_img_wrapper {
        border-color: black;
-        height: 100%;
+        height: 50%;
         width: 30%;
    }
 
@@ -131,7 +131,6 @@ body{
     border-radius: rem(2);
         display: block;
         filter: grayscale(1);
-        object-fit: cover;
         transition: filter 0.3s ease-in;
    }
 
@@ -153,12 +152,12 @@ body{
    }
 
    .calculator_proj_desc{
-    font-size:40%;
+    font-size:.7em;
    }
 
    .calculator_img_wrapper {
     border-color:#000000;
-    height: 100%;
+    height: 50%;
     width: 30%;
    }
 
@@ -166,9 +165,7 @@ body{
     object-fit:contain;
     border-radius: rem(2);
         display: block;
-       
         filter: grayscale(1);
-        object-fit: cover;
         transition: filter 0.3s ease-in;
    }
 
