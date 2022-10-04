@@ -31,59 +31,43 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
           move(1, currBgBubblePosition, bgBubble);
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "black";
-          //body.style.backgroundImage = "url(./assets/brilliant.png)";
+         
           homeContainer.style.display = "block";
           portfolioContainer.style.display = "none";
           bgWrapper.style.backgroundColor = "black";
-          //bgWrapper.style.backgroundImage = "url(./assets/brilliant.png)";
-          //bg.style.backgroundColor = "black";
-          //bg.style.backgroundImage = "url(./assets/brilliant.png)";
-          //bgBubble.style.backgroundColor = "black";
-          //bgBubble.style.backgroundImage = "url(./assets/brilliant.png)";
+        
           break;
         case 1:
           move(2, currBgBubblePosition, bgBubble);
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "white";
-          //body.style.backgroundImage = "url(./assets/brilliant.png)";
+     
           homeContainer.style.display = "none";
           portfolioContainer.style.display = "flex";
           portfolioContainer.style.justifyContent = "center";
           portfolioContainer.style.alignItems = "center";
           bgWrapper.style.backgroundColor = "white";
-          //bgWrapper.style.backgroundImage = "url(./assets/brilliant.png)"; 
-          //bg.style.backgroundColor = "white";
-          //bg.style.backgroundImage = "url(./assets/brilliant.png)";
-          //bgBubble.style.backgroundColor = "white";
-          //bgBubble.style.backgroundImage = "url(./assets/brilliant.png)";
+         
           break;
         case 2:
           move(3, currBgBubblePosition, bgBubble);
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "#04124f";
-          //body.style.backgroundImage = "url(./assets/classy-fabric.png)";
+         
           homeContainer.style.display = "none";
           portfolioContainer.style.display = "none";
           bgWrapper.style.backgroundColor = "#04124f";
-          //bgWrapper.style.backgroundImage = "url(./assets/classy-fabric.png)";
-          //bg.style.backgroundColor = "#04124f";
-          //bg.style.backgroundImage = "url(./assets/classy-fabric.png)";
-          //bgBubble.style.backgroundColor = "#04124f";
-          //bgBubble.style.backgroundImage = "url(./assets/classy-fabric.png)";
+      
           break;
         case 3:
           move(4, currBgBubblePosition, bgBubble);
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "#044f12";
-          //body.style.backgroundImage = "url(./assets/classy-fabric.png)";
+ 
           homeContainer.style.display = "none";
           portfolioContainer.style.display = "none";
            bgWrapper.style.backgroundColor = "#044f12";
-          //bgWrapper.style.backgroundImage = "url(./assets/classy-fabric.png)";
-           //bg.style.backgroundColor = "#044f12";
-           //bg.style.backgroundImage = "url(./assets/classy-fabric.png)";
-           //bgBubble.style.backgroundColor = "#044f12";
-           //bgBubble.style.backgroundImage = "url(./assets/classy-fabric.png)";
+     
           break;
       }
     });
@@ -92,7 +76,7 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
 
 function move(id, position, bgBubble) {
   let moveTimeline = gsap.timeline();
-  //currBgBubblePosition = position;
+
   moveTimeline
     .to(bgBubble, { duration: 0.15, bottom: "calc(-4em)", ease: "ease-out" }, 0)
     .to(
@@ -151,7 +135,7 @@ function move(id, position, bgBubble) {
     .to(
       bgBubble,
       {
-        duration: 0.22,
+        duration: 0.12,
         left: `calc(${position})`,
         ease: "ease-in-out",
       },
@@ -159,13 +143,13 @@ function move(id, position, bgBubble) {
     )
     .to(
       bgBubble,
-      { duration: 0.217, bottom: "calc(-3em)", ease: "ease-out" },
+      { duration: 0.12, bottom: "calc(-3em)", ease: "ease-out" },
       "-=.2"
     )
     .to(
       `#bubble${id}`,
       {
-        duration: 0.215,
+        duration: 0.15,
         zIndex: 1,
         yPercent:0,
         backgroundColor: "hsl(0, 0%, 12%)",
@@ -178,7 +162,7 @@ function move(id, position, bgBubble) {
     .to(
       `#bubble${id} > span`,
       {
-        duration: 0.215,
+        duration: 0.15,
         yPercent:0,
         opacity: 1,
         ease: "ease-out",
