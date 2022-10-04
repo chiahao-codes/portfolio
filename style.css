@@ -100,8 +100,8 @@ body{
    } 
 
    #chess_article {
-    height:20%;
-    width:80%;
+    height:fit-content;
+    width:fit-content;
     border-color:black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    }
@@ -133,8 +133,8 @@ body{
    }
 
    #calculator_article {
-    height:20%;
-    width:80%;
+    height:fit-content;
+    width:fit-content;
        border-color: black;
        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    }
