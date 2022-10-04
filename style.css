@@ -112,11 +112,11 @@ body{
     justify-content: space-between;
     text-decoration:none;
     width: 450px;
-    height: 131px;
+    height: fit-content;
    }
 
    .chess_proj_desc{
-    font-size: 10%;
+    font-size: 40%;
    }
 
    .chess_img_wrapper {
@@ -147,11 +147,11 @@ body{
        justify-content: space-between;
        text-decoration:none;
        width:450px;
-       height:131px;
+       height:fit-content;
    }
 
    .calculator_proj_desc{
-    font-size:10%;
+    font-size:40%;
    }
 
    .calculator_img_wrapper {
