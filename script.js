@@ -135,7 +135,7 @@ function move(id, position, bgBubble) {
     .to(
       bgBubble,
       {
-        duration: 0.12,
+        duration: 0.22,
         left: `calc(${position})`,
         ease: "ease-in-out",
       },
@@ -143,13 +143,13 @@ function move(id, position, bgBubble) {
     )
     .to(
       bgBubble,
-      { duration: 0.12, bottom: "calc(-3em)", ease: "ease-out" },
+      { duration: 0.217, bottom: "calc(-3em)", ease: "ease-out" },
       "-=.2"
     )
     .to(
       `#bubble${id}`,
       {
-        duration: 0.15,
+        duration: 0.215,
         zIndex: 1,
         yPercent:0,
         backgroundColor: "hsl(0, 0%, 12%)",
@@ -162,7 +162,7 @@ function move(id, position, bgBubble) {
     .to(
       `#bubble${id} > span`,
       {
-        duration: 0.15,
+        duration: 0.215,
         yPercent:0,
         opacity: 1,
         ease: "ease-out",
