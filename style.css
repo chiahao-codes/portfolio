@@ -111,6 +111,8 @@ body{
     display: flex;
     justify-content: space-between;
     text-decoration:none;
+    width: 350px;
+    height: 131px;
    }
 
    .chess_proj_desc{
@@ -144,6 +146,8 @@ body{
        display: flex;
        justify-content: space-between;
        text-decoration:none;
+       width:350px;
+       height:131px;
    }
 
    .calculator_proj_desc{
