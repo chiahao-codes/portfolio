@@ -21,7 +21,7 @@ body{
     body {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-evenly;
             align-content:center;
             height: 100vh;
             width: 100vw;
@@ -33,15 +33,16 @@ body{
             visibility: visible;
         }
 
-/*Home Page*/
+/*Home Page
+position:absolute;
+top: 50%;
+left: 50%;
+bottom: 10%;*/
 .homeContainer{
     width:fit-content;
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    bottom: 10%;
+    height: fit-content;
 }
-
+/*z-index: 1;*/
 .home {
         color: hsl(58,
             98%,
@@ -58,7 +59,7 @@ body{
         grid-template-rows: auto;
         justify-content: center;
         align-content: center;
-        z-index: 1;
+        
     }
 
     .home>h2,
@@ -205,7 +206,12 @@ body{
 
 
 
-/*Navigation*/
+/*Navigation
+position: fixed;
+left: 50%;
+transform: translateX(-50%);
+bottom:6%;
+*/
 
  body > .navContainer{
         display: flex;
@@ -215,11 +221,6 @@ body{
         height: calc(3.1em + .025vmin);
         background-color: inherit;
         border-radius: none;
-        position: fixed;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom:6%;
-        
 }
 
 
@@ -229,6 +230,7 @@ body{
      background-color: #000000;
      background-image:url("./assets/45-degree-fabric-light.png");
      height:100% ;
+     position: relative;
      
  }
 
