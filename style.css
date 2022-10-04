@@ -101,7 +101,7 @@ body{
 
    #chess_article {
     color: black;
-    height:fit-content;
+    height:5vh;
     width:fit-content;
     border-color:black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -113,7 +113,7 @@ body{
     display: flex;
     justify-content: space-between;
     text-decoration:none;
-    width: 450px;
+    width: 12%;
     height: fit-content;
    }
 
@@ -137,7 +137,7 @@ body{
 
    #calculator_article {
     color:black;
-    height:fit-content;
+    height:5vh;
     width:fit-content;
        border-color: black;
        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -149,7 +149,7 @@ body{
        display: flex;
        justify-content: space-between;
        text-decoration:none;
-       width:450px;
+       width:12%;
        height:fit-content;
    }
 
