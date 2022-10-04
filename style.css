@@ -73,12 +73,10 @@ body{
 /*Portfolio Page*/
 .portfolioContainer {
       width: 10vw;
-      position: absolute;
+      position: relative;
       left:auto;
       right: auto;
       color: #000000;
-      display:flex;
-      justify-content:center;
   }
 
   #portfolioContainer> h1 {
