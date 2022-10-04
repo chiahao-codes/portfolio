@@ -111,12 +111,12 @@ body{
     display: flex;
     justify-content: space-between;
     text-decoration:none;
-    width: 350px;
+    width: 450px;
     height: 131px;
    }
 
    .chess_proj_desc{
-    font-size: .8em;
+    font-size: 10%;
    }
 
    .chess_img_wrapper {
@@ -146,12 +146,12 @@ body{
        display: flex;
        justify-content: space-between;
        text-decoration:none;
-       width:350px;
+       width:450px;
        height:131px;
    }
 
    .calculator_proj_desc{
-    font-size:.8em;
+    font-size:10%;
    }
 
    .calculator_img_wrapper {
