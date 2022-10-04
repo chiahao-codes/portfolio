@@ -16,6 +16,7 @@ let bgBubbPosMap = {
 };
 
 window.addEventListener("load", () => {
+  portfolioContainer.style.display = "none";
   move(1, bgBubbPosMap[0], bgBubble1);
   giveMenumoveIdClickEvent(bgBubble1);
 });

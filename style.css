@@ -71,14 +71,20 @@ body{
         }
 
 /*Portfolio Page*/
-  body > .portfolioContainer {
+.portfolioContainer {
       width: fit-content;
       position: absolute;
       top: 13%;
       left: 50%;
     transform: translateX(-50%);
     color: #000000;
-    display:none;
+  }
+
+  #portfolioContainer>h1 {
+      font-size: calc(1em + 1.7vh);
+      text-align: center;
+      position: absolute;
+      top: 5%;
   }
 
    #portfolio {
@@ -88,16 +94,13 @@ body{
     row-gap: 50px;
     justify-content: center;
     align-items: center;
-
+    position:relative;
    } 
 
-   #portfolio > h1{
-    font-size: calc(1em + 1.7vh);
-    text-align:center;
-   }
+   
 
    #chess_article {
-    width:200px;
+    width:120%;
     border-color:black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    }
@@ -133,7 +136,7 @@ body{
    }
 
    #calculator_article {
-    width:200px;
+    width:120%;
        border-color: black;
        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    }
