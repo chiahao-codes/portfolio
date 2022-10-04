@@ -72,7 +72,7 @@ body{
 
 /*Portfolio Page*/
 .portfolioContainer {
-      width: fit-content;
+      width: 20vw;
       position: absolute;
       top: 13%;
       left: 50%;
@@ -95,12 +95,13 @@ body{
     justify-content: center;
     align-items: center;
     position:relative;
+    width:100%;
    } 
 
    
 
    #chess_article {
-    width:120%;
+    width:80%;
     border-color:black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    }
@@ -108,7 +109,7 @@ body{
    #chess_link{
     align-content: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-decoration:none;
    }
 
@@ -118,25 +119,21 @@ body{
 
    .chess_img_wrapper {
        border-color: black;
-        height: rem(100);
-            margin-left: rem(20);
-            min-width: rem(160);
-            width: rem(160);
+        height: 100%;
+        width: 30%;
    }
 
    #chess_proj_img{
     object-fit: contain;
     border-radius: rem(2);
         display: block;
-       
         filter: grayscale(1);
         object-fit: cover;
         transition: filter 0.3s ease-in;
-    
    }
 
    #calculator_article {
-    width:120%;
+    width:80%;
        border-color: black;
        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    }
@@ -144,7 +141,7 @@ body{
    #calculator_link {
        align-content: center;
        display: flex;
-       justify-content: space-around;
+       justify-content: space-between;
        text-decoration:none;
    }
 
@@ -154,10 +151,8 @@ body{
 
    .calculator_img_wrapper {
     border-color:#000000;
-    height: rem(100);
-        margin-left: rem(20);
-        min-width: rem(160);
-        width: rem(160);
+    height: 100%;
+    width: 30%;
    }
 
    #calculator_proj_img{
