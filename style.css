@@ -37,8 +37,6 @@ body{
     display: grid;
     position: absolute;
     top:45%;
-    left: auto;
-    right: auto;
     width:fit-content;
     height: fit-content;
 }
