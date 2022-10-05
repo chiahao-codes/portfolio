@@ -151,7 +151,7 @@ function move(id, position, bgBubble) {
     )
     .to(
       bgBubble,
-      { duration: 0.217, bottom: "calc(-3em)", ease: "ease-out" },
+      { duration: 0.217, bottom: "calc(-2.6em)", ease: "ease-out" },
       "-=.2"
     )
     .to(
