@@ -291,8 +291,8 @@ body{
     position: absolute;
     background-color: inherit;
     background-image: inherit;
-    width: calc(3.2em - .025vmin);
-    height: calc(3.2em - .025vmin);
+    width: calc(3.6em - .025vmin);
+    height: calc(3.6em - .025vmin);
     border-radius: 50%;
     bottom: calc(-2.6em);
     left: 60px;
