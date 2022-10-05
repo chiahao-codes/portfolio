@@ -34,8 +34,11 @@ body{
 
 
 .homeContainer{
-    display: block;
+    display: grid;
     position: relative;
+    top:45%;
+    left: auto;
+    right: auto;
     width:fit-content;
     height: fit-content;
 }
@@ -53,10 +56,7 @@ body{
         grid-template-rows: auto;
         justify-content: center;
         align-content: center;
-        position: absolute;
-        top:45%;
-        left: 50%;
-        transform:translate(-50%);
+        margin: auto;
     }
 
     .home>h2,
