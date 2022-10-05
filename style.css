@@ -34,7 +34,11 @@ top: 50%;
 
 bottom: 10%;*/
 .homeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    top:30vh;
     width:fit-content;
     height: fit-content;
     z-index: 1;
