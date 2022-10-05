@@ -16,7 +16,7 @@ body{
 }
 
 
-@media screen and (min-width:500px) and (max-width:2400px) and (min-height:179.99px) {
+@media screen and (min-width:500px) and (max-width:2400px) and (min-height:229.99px) {
 
     body {
             height: 100vh;
@@ -40,6 +40,7 @@ body{
     top:30vh;
     width:100%;
     height: fit-content;
+    
 }
 /*
 */

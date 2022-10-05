@@ -15,7 +15,7 @@ let bgBubbPosMap = {
   3: "420px",
 };
 
-function setHomeContainer() {
+function setHomePage() {
   homeContainer.style.width = "100%";
   homeContainer.style.display = "flex";
   homeContainer.style.justifyContent = "center";
@@ -23,10 +23,12 @@ function setHomeContainer() {
   homeContainer.style.position = "absolute";
   homeContainer.style.top = "30vh";
   portfolioContainer.style.display = "none";
+  bgWrapper.style.backgroundColor = "black";
+  body.style.backgroundColor = "black";
 }
 
 window.addEventListener("load", () => {
-  setHomeContainer();
+  setHomePage();
   move(1, bgBubbPosMap[0], bgBubble1);
   giveMenumoveIdClickEvent(bgBubble1);
 });
@@ -40,15 +42,7 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
         case 0:
           move(1, currBgBubblePosition, bgBubble);
           turnOffClickedMenuElem(currBgBubblePosition);
-          body.style.backgroundColor = "black";
-          
-          homeContainer.style.display = "flex"; 
-          homeContainer.style.justifyContent = "center";
-          homeContainer.style.alignContent = "center";
-         
-          portfolioContainer.style.display = "none";
-          bgWrapper.style.backgroundColor = "black";
-        
+          setHomePage();
           break;
         case 1:
           move(2, currBgBubblePosition, bgBubble);
