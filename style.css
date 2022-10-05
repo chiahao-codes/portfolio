@@ -19,10 +19,6 @@ body{
 @media screen and (min-width:500px) and (max-width:2400px) and (min-height:179.99px) {
 
     body {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-content:center;
             height: 100vh;
             width: 100vw;
             font-family: "Cormorant SC", sans-serif;
@@ -39,33 +35,29 @@ top: 50%;
 
 bottom: 10%;*/
 .homeContainer{
-    position: relative;
+    position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 10%;
     width:fit-content;
     height: fit-content;
+    z-index: 1;
 }
-/*z-index: 1;
-  position: absolute;
-top: 50%;
-left: 50%;
-bottom:10%;
-transform: translate(-50%, -50%);
+/*
 */
 .home {
         color: hsl(58,
             98%,
             40%);
         filter: contrast(150%), brightness(150%);
-      
-        height: fit-content;
-        
+        height: 100%;
+        width: 100;
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto;
         justify-content: center;
         align-content: center;
-        
     }
 
     .home>h2,
@@ -106,7 +98,6 @@ transform: translate(-50%, -50%);
     row-gap: 10vh;
     justify-content: center;
     align-items: center;
-    
     width:100%;
     height: fit-content;
     color:#000000;
@@ -115,7 +106,7 @@ transform: translate(-50%, -50%);
    #chess_article {
     color: black;
     height:20vh;
-    width:40vw;
+    width:50vw;
     border-color:black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    }
@@ -128,21 +119,28 @@ transform: translate(-50%, -50%);
     text-decoration:none;
     width: 100%;
     height: 100%;
-    
+    overflow:hidden;
    }
 
    .chess_copy_wrapper{
     width:fit-content;
     height:100%;
+    position:relative;
+   }
+
+   .chess_copy_wrapper > header{
+    position:relative;
+    top:-2%;
    }
 
    .chess_h3{
-    font-size:5vh;
+    font-size:4vmin;
     width:fit-content;
+    height: fit-content;
    }
 
    .chess_proj_desc{
-    font-size: 3vh;
+    font-size: 1vmin;
     width: fit-content;
    }
 
@@ -164,7 +162,7 @@ transform: translate(-50%, -50%);
    #calculator_article {
     color:black;
     height: 20vh;
-    width: 40vw;
+    width: 50vw;
        border-color: black;
        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    }
@@ -185,12 +183,12 @@ transform: translate(-50%, -50%);
             height: 100%;
         }
    .calculator_h3 {
-       font-size: 5vh;
+       font-size: 4vmin;
        width:fit-content;
-       
+       height: fit-content;
    }
    .calculator_proj_desc{
-    font-size: 3vh;
+    font-size: 1vmin;
     width: fit-content;
    }
 
@@ -214,7 +212,7 @@ transform: translate(-50%, -50%);
 
 /*Navigation
 
-bottom:6%;
+;
 */
 
  body > .navContainer{
@@ -225,9 +223,10 @@ bottom:6%;
         height: calc(3.1em + .025vmin);
         background-color: inherit;
         border-radius: none;
-        position: relative;
+        position: fixed;
         left: 50%;
         transform: translateX(-50%);
+        bottom: 8vh;
 }
 
 
@@ -238,7 +237,6 @@ bottom:6%;
      background-image:url("./assets/45-degree-fabric-light.png");
      height:100% ;
      position: relative;
-     
  }
 
 
