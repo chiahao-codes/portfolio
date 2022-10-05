@@ -33,8 +33,8 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
           body.style.backgroundColor = "black";
           homeContainer.style.position = "relative";
           homeContainer.style.top = "50%";
-          homeContainer.style.textAlign = "center";
-          homeContainer.style.display = "block";
+          homeContainer.style.display = "flex";
+          homeContainer.style.justifyContent = "center";
           portfolioContainer.style.display = "none";
           bgWrapper.style.backgroundColor = "black";
         
