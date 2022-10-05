@@ -26,6 +26,7 @@ body{
             overflow: hidden;
             margin: 0;
             visibility: visible;
+            position: relative;
         }
 
 /*Home Page
