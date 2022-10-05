@@ -30,17 +30,13 @@ body{
         }
 
 /*Home Page
-
 */
+
+
 .homeContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top:22vh;
+    display: block;
     width:fit-content;
     height: fit-content;
-    z-index: 1;
 }
 /*
 */
@@ -56,6 +52,10 @@ body{
         grid-template-rows: auto;
         justify-content: center;
         align-content: center;
+        position: absolute;
+        top:40%;
+        left: 50%;
+        transform: translateX("-50%");
     }
 
     .home>h2,

@@ -32,7 +32,7 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "black";
           
-          homeContainer.style.display = "flex";
+          homeContainer.style.display = "block";
          
           portfolioContainer.style.display = "none";
           bgWrapper.style.backgroundColor = "black";
