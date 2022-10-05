@@ -49,7 +49,7 @@ body{
             40%);
         filter: contrast(150%), brightness(150%);
         height: fit-content;
-        width: fit-content;
+        width: 100%;
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto;
