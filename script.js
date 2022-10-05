@@ -16,7 +16,13 @@ let bgBubbPosMap = {
 };
 
 window.addEventListener("load", () => {
+  homeContainer.style.display = "flex";
+  homeContainer.style.justifyContent = "center";
+  homeContainer.style.alignContent = "center";
+  homeContainer.style.position = "absolute";
+  homeContainer.style.top = "30vh";
   portfolioContainer.style.display = "none";
+
   move(1, bgBubbPosMap[0], bgBubble1);
   giveMenumoveIdClickEvent(bgBubble1);
 });
