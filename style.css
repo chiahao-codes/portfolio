@@ -35,7 +35,7 @@ body{
 
 .homeContainer{
     display: grid;
-    position: relative;
+    position: absolute;
     top:45%;
     left: auto;
     right: auto;
