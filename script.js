@@ -16,6 +16,7 @@ let bgBubbPosMap = {
 };
 
 window.addEventListener("load", () => {
+  homeContainer.style.width = "100%";
   homeContainer.style.display = "flex";
   homeContainer.style.justifyContent = "center";
   homeContainer.style.alignContent = "center";
