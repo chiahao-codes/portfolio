@@ -31,7 +31,9 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
           move(1, currBgBubblePosition, bgBubble);
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "black";
-          
+          homeContainer.style.position = "relative";
+          homeContainer.style.top = "50%";
+          homeContainer.style.textAlign = "center";
           homeContainer.style.display = "block";
           portfolioContainer.style.display = "none";
           bgWrapper.style.backgroundColor = "black";

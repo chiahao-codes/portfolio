@@ -35,10 +35,6 @@ top: 50%;
 bottom: 10%;*/
 .homeContainer{
     position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    bottom: 10%;
     width:fit-content;
     height: fit-content;
     z-index: 1;
