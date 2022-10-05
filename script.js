@@ -15,7 +15,7 @@ let bgBubbPosMap = {
   3: "420px",
 };
 
-window.addEventListener("load", () => {
+function setHomeContainer() {
   homeContainer.style.width = "100%";
   homeContainer.style.display = "flex";
   homeContainer.style.justifyContent = "center";
@@ -23,7 +23,10 @@ window.addEventListener("load", () => {
   homeContainer.style.position = "absolute";
   homeContainer.style.top = "30vh";
   portfolioContainer.style.display = "none";
+}
 
+window.addEventListener("load", () => {
+  setHomeContainer();
   move(1, bgBubbPosMap[0], bgBubble1);
   giveMenumoveIdClickEvent(bgBubble1);
 });
