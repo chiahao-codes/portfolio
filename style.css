@@ -32,12 +32,12 @@ body{
 /*Home Page
 */
 
-
 .homeContainer{
-    display: grid;
-    position: absolute;
-    top:45%;
-    width:fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:10vh;
+    width:100%;
     height: fit-content;
 }
 /*
@@ -54,7 +54,7 @@ body{
         grid-template-rows: auto;
         justify-content: center;
         align-content: center;
-        margin: auto;
+      
     }
 
     .home>h2,
