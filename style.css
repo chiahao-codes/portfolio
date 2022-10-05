@@ -40,7 +40,6 @@ body{
     top:30vh;
     width:100%;
     height: fit-content;
-    z-index:2;
 }
 /*
 */
@@ -56,6 +55,7 @@ body{
         grid-template-rows: auto;
         justify-content: center;
         align-content: center;
+        z-index: 2;
     }
 
     .home>h2,
