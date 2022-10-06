@@ -146,6 +146,7 @@ body{
    .chess_proj_desc{
     font-size: 3vmin;
     width: fit-content;
+    top: -8%;
    }
 
    .chess_img_wrapper {
@@ -189,7 +190,6 @@ body{
             position: relative;
             overflow: hidden;
             width: fit-content;
-           
         }
     
         .calculator_copy_wrapper>header {
@@ -199,7 +199,6 @@ body{
 
    .calculator_h3 {
     position:relative;
-   
        font-size: 4vmin;
        width:fit-content;
        height: fit-content;
@@ -207,6 +206,7 @@ body{
    .calculator_proj_desc{
     font-size: 3vmin;
     width: fit-content;
+    top:-8%;
    }
 
    .calculator_img_wrapper {
