@@ -133,7 +133,7 @@ body{
 
    .chess_copy_wrapper > header {
     position: relative;
-    top: -5%;
+    top: -8%;
    }
 
    .chess_h3{
@@ -192,9 +192,9 @@ body{
            
         }
     
-        .chess_copy_wrapper>header {
+        .calculator_copy_wrapper>header {
             position: relative;
-            top: -5%;
+            top: -8%;
         }
 
    .calculator_h3 {
