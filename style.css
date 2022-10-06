@@ -89,7 +89,6 @@ body{
       text-align: center;
       height:fit-content;
       width:fit-content;
-      
   }
 
    #portfolio {
@@ -108,7 +107,7 @@ body{
    #chess_article {
     color: black;
     height:20vh;
-    width:50vw;
+    width:54vw;
     border-color:black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    }
@@ -164,7 +163,7 @@ body{
    #calculator_article {
     color:black;
     height: 20vh;
-    width: 50vw;
+    width: 54vw;
        border-color: black;
        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    }
