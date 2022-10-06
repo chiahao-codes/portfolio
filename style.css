@@ -130,6 +130,7 @@ body{
     height:100%;
     position:relative;
     overflow: hidden;
+    padding-bottom:1%;
    }
 
    .chess_copy_wrapper > header {
@@ -195,6 +196,7 @@ body{
             position: relative;
             overflow: hidden;
             width: fit-content;
+            padding-bottom: 1%;
         }
     
         .calculator_copy_wrapper>header {
