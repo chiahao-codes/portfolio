@@ -130,10 +130,13 @@ body{
     overflow: hidden;
    }
 
+   .chess_copy_wrapper > header {
+    position: relative;
+    top: -5%;
+   }
 
    .chess_h3{
     position:relative;
-    top: -5%;
     font-size:4vmin;
     width:fit-content;
     height: fit-content;
@@ -186,9 +189,15 @@ body{
             width: fit-content;
            
         }
+    
+        .chess_copy_wrapper>header {
+            position: relative;
+            top: -5%;
+        }
+
    .calculator_h3 {
     position:relative;
-    top: -5%;
+   
        font-size: 4vmin;
        width:fit-content;
        height: fit-content;
