@@ -105,7 +105,7 @@ body{
    } 
 
    #chess_article {
-    padding-left: 5%;
+    padding-left: 2%;
     color: black;
     height:20vh;
     width:55vw;
@@ -147,7 +147,7 @@ body{
    .chess_proj_desc{
     font-size: 3vmin;
     width: fit-content;
-    top: -8%;
+    top: -10%;
    }
 
    .chess_img_wrapper {
@@ -166,7 +166,7 @@ body{
    }
 
    #calculator_article {
-    padding-left: 5%;
+    padding-left: 2%;
     color:black;
     height: 20vh;
     width: 55vw;
@@ -196,7 +196,7 @@ body{
     
         .calculator_copy_wrapper>header {
             position: relative;
-            top: -8%;
+            top: -10%;
         }
 
    .calculator_h3 {
