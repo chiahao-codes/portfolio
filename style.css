@@ -149,7 +149,7 @@ body{
     height:fit-content;
     font-size: 3.8vmin;
     width: fit-content;
-    top: -10%;
+    top: -30%;
    }
 
    .chess_img_wrapper {
@@ -198,7 +198,7 @@ body{
     
         .calculator_copy_wrapper>header {
             position: relative;
-            top: -10%;
+            top: -30%;
         }
 
    .calculator_h3 {
@@ -212,7 +212,7 @@ body{
     height:fit-content;
     font-size: 3.8vmin;
     width: fit-content;
-    top:-10%;
+    top:-30%;
    }
 
    .calculator_img_wrapper {
@@ -309,7 +309,7 @@ body{
     background-image: inherit;
     width:120%;
     height:100%;
-    margin-left:-10%;
+    margin-left:-30%;
 }
 
 #bgBubble {
