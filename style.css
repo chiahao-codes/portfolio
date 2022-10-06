@@ -127,12 +127,10 @@ body{
     width:fit-content;
     height:100%;
     position:relative;
+    top: -5%;
+    overflow: hidden;
    }
 
-   .chess_copy_wrapper > header{
-    position:relative;
-    top:-2%;
-   }
 
    .chess_h3{
     font-size:4vmin;
@@ -180,8 +178,13 @@ body{
    }
 
     .calculator_copy_wrapper {
-            width: fit-content;
+        width: fit-content;
             height: 100%;
+            position: relative;
+            top: -5%;
+            overflow: hidden;
+            width: fit-content;
+           
         }
    .calculator_h3 {
        font-size: 4vmin;
