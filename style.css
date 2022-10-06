@@ -105,6 +105,7 @@ body{
    } 
 
    #chess_article {
+    padding-left: 5%;
     color: black;
     height:20vh;
     width:55vw;
@@ -165,6 +166,7 @@ body{
    }
 
    #calculator_article {
+    padding-left: 5%;
     color:black;
     height: 20vh;
     width: 55vw;
