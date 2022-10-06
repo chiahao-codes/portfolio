@@ -145,6 +145,8 @@ body{
    }
 
    .chess_proj_desc{
+    padding-right:1%;
+    height:fit-content;
     font-size: 3vmin;
     width: fit-content;
     top: -10%;
@@ -206,6 +208,8 @@ body{
        height: fit-content;
    }
    .calculator_proj_desc{
+    padding-right:1%;
+    height:fit-content;
     font-size: 3vmin;
     width: fit-content;
     top:-8%;
