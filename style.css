@@ -132,7 +132,7 @@ body{
 
 
    .chess_h3{
-    position: absolute;
+    position:relative;
     top: -5%;
     font-size:4vmin;
     width:fit-content;
@@ -182,13 +182,12 @@ body{
         width: fit-content;
             height: 100%;
             position: relative;
-    
             overflow: hidden;
             width: fit-content;
            
         }
    .calculator_h3 {
-    position:absolute;
+    position:relative;
     top: -5%;
        font-size: 4vmin;
        width:fit-content;
