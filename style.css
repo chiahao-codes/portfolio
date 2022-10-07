@@ -108,7 +108,8 @@ body{
     padding-left: 2%;
     color: black;
     height:20vh;
-    width:55vw;
+    width: 624px;
+    min-width: 624px;
     max-width: 624px;
     border-color:black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -173,7 +174,8 @@ body{
     padding-left: 2%;
     color:black;
     height: 20vh;
-    width: 55vw;
+    width: 624px;
+    min-width: 624px;
     max-width: 624px;
        border-color: black;
        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
