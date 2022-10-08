@@ -25,8 +25,9 @@ function setHomePage() {
   portfolioContainer.style.display = "none";
   bgWrapper.style.backgroundColor = "black";
   bg.style.backgroundColor = "black";
-  bgBubble1.style.backgroundColor = "black";
+  //bgBubble1.style.backgroundColor = "black";
   body.style.backgroundColor = "black";
+  body.style.backgroundImage = "url(./assets/brilliant.png)";
 }
 
 window.addEventListener("load", () => {
@@ -50,7 +51,7 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
           move(2, currBgBubblePosition, bgBubble);
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "white";
-     
+          body.style.backgroundImage = "url(./assets/brilliant.png)";
           homeContainer.style.display = "none";
           portfolioContainer.style.display = "flex";
           portfolioContainer.style.flexDirection = "column";
@@ -58,32 +59,31 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
           portfolioContainer.style.alignItems = "center";
           bgWrapper.style.backgroundColor = "white";
           bg.style.backgroundColor = "white";
-          bgBubble1.style.backgroundColor = "white";
+          //bgBubble1.style.backgroundColor = "white";
          
           break;
         case 2:
           move(3, currBgBubblePosition, bgBubble);
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "#04124f";
-         
+         body.style.backgroundImage = "url(./assets/brilliant.png)";
           homeContainer.style.display = "none";
           portfolioContainer.style.display = "none";
           bgWrapper.style.backgroundColor = "#04124f";
           bg.style.backgroundColor = "#04124f";
-          bgBubble1.style.backgroundColor = "#04124f";
+          //bgBubble1.style.backgroundColor = "#04124f";
       
           break;
         case 3:
           move(4, currBgBubblePosition, bgBubble);
           turnOffClickedMenuElem(currBgBubblePosition);
           body.style.backgroundColor = "#044f12";
- 
+          body.style.backgroundImage = "url(./assets/brilliant.png)";
           homeContainer.style.display = "none";
           portfolioContainer.style.display = "none";
            bgWrapper.style.backgroundColor = "#044f12";
            bg.style.backgroundColor = "#044f12";
-           bgBubble1.style.backgroundColor = "#044f12";
-     
+           //bgBubble1.style.backgroundColor = "#044f12";
           break;
       }
     });
