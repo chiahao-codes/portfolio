@@ -56,11 +56,11 @@ html {
  }
 
  .home>h1 {
-     font-size: calc(2em);
+     font-size: calc(1.8em);
  }
 
  .home>h2 {
-     font-size: calc(1.5em);
+     font-size: calc(1.2em);
  }
 
  /*Portfolio Page*/
@@ -249,7 +249,7 @@ body>.navContainer{
         position: fixed;
         left: 50%;
         transform: translateX(-50%);
-        bottom: 50px;
+        bottom: 42px;
 }
 
 
