@@ -306,7 +306,7 @@ body>.navContainer{
 
 #bg {
     background-color: inherit;
-    background-image: inherit;
+    background-image: url("./assets/brilliant.png");
     width:120%;
     height:100%;
     margin-left:-10%;
