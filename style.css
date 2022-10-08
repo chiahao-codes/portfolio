@@ -8,254 +8,250 @@ html {
     box-sizing: inherit;
 }
 
-body{
+ body {
     background-color: black;
-    background-image:url("./assets/brilliant.png");
-    visibility: hidden;
-    position: relative;
-}
+     height: 100vh;
+     width: 100vw;
+     font-family: "Cormorant SC", sans-serif;
+     background-image: "url(./assets/brilliant.png)";
+     overflow: hidden;
+     margin: 0;
+     visibility: visible;
+     position: relative;
+ }
+
+ /*Home Page
+*/
+
+ .homeContainer {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     top: 30vh;
+     width: 100%;
+     height: fit-content;
+ }
+
+ /*
+*/
+ .home {
+     color: hsl(58,
+             98%,
+             40%);
+     filter: contrast(150%), brightness(150%);
+     height: fit-content;
+     width: 100%;
+     display: grid;
+     grid-template-columns: auto;
+     grid-template-rows: auto;
+     justify-content: center;
+     align-content: center;
+     z-index: 2;
+ }
+
+ .home>h2,
+ .home>h1 {
+     text-align: center;
+ }
+
+ .home>h1 {
+     font-size: calc(2em);
+ }
+
+ .home>h2 {
+     font-size: calc(1.5em);
+ }
+
+ /*Portfolio Page*/
+ .portfolioContainer {
+     width: 100%;
+     height: fit-content;
+     position: relative;
+     left: 0;
+     right: 0;
+     color: #000000;
+ }
+
+ #portfolioContainer>h1 {
+     font-size: calc(7vh);
+     text-align: center;
+     height: fit-content;
+     width: 100%;
+ }
+
+ #portfolio {
+     display: grid;
+     grid-template-columns: auto;
+     grid-template-rows: auto;
+     row-gap: 9vh;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: fit-content;
+     color: #000000;
+     z-index: 2;
+ }
+
+ #chess_article {
+     padding-left: 2%;
+     color: black;
+     height: 20vh;
+     width: 624px;
+     min-width: 624px;
+     max-width: 624px;
+     border-color: black;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+
+ #chess_link {
+     color: black;
+     align-content: center;
+     display: flex;
+     justify-content: space-between;
+     text-decoration: none;
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+ }
+
+ .chess_copy_wrapper {
+     width: fit-content;
+     height: 100%;
+     position: relative;
+     overflow: hidden;
+     padding-bottom: 1.5%;
+ }
+
+ .chess_copy_wrapper>header {
+     position: relative;
+     top: -10%;
+ }
+
+ .chess_h3 {
+     position: relative;
+     font-size: 4vmin;
+     width: fit-content;
+     height: fit-content;
+ }
+
+ .chess_proj_desc {
+     padding-right: 1%;
+     height: fit-content;
+     font-size: 3.8vmin;
+     width: fit-content;
+     position: relative;
+     top: -10%;
+ }
+
+ .chess_img_wrapper {
+     border-color: black;
+     height: 80%;
+     width: 30%;
+ }
+
+ #chess_proj_img {
+     height: 100%;
+     width: 100%;
+     border-radius: rem(2);
+     display: block;
+     filter: grayscale(1);
+     transition: filter 0.3s ease-in;
+ }
+
+ #calculator_article {
+     padding-left: 2%;
+     color: black;
+     height: 20vh;
+     width: 624px;
+     min-width: 624px;
+     max-width: 624px;
+     border-color: black;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+
+ #calculator_link {
+     color: black;
+     align-content: center;
+     display: flex;
+     justify-content: space-between;
+     text-decoration: none;
+     width: 100%;
+     height: 100%;
+
+ }
+
+ .calculator_copy_wrapper {
+     width: fit-content;
+     height: 100%;
+     position: relative;
+     overflow: hidden;
+     width: fit-content;
+     padding-bottom: 1.5%;
+ }
+
+ .calculator_copy_wrapper>header {
+     position: relative;
+     top: -10%;
+ }
+
+ .calculator_h3 {
+     position: relative;
+     font-size: 4vmin;
+     width: fit-content;
+     height: fit-content;
+ }
+
+ .calculator_proj_desc {
+     padding-right: 1%;
+     height: fit-content;
+     font-size: 3.8vmin;
+     width: fit-content;
+     position: relative;
+     top: -10%;
+ }
+
+ .calculator_img_wrapper {
+     border-color: #000000;
+     height: 80%;
+     width: 30%;
+ }
+
+ #calculator_proj_img {
+     height: 100%;
+     width: 100%;
+     border-radius: rem(2);
+     display: block;
+     filter: grayscale(1);
+     transition: filter 0.3s ease-in;
+ }
 
 @media screen and (min-width:320px) and (max-width:831.99px) {
-    
+
+body>.navContainer{
+    display: hidden;
 }
 
-@media screen and (min-width:832px) and (max-width:2400px) {
-
-    body {
-            height: 100vh;
-            width: 100vw;
-            font-family: "Cormorant SC", sans-serif;
-            background-image:"url(./assets/brilliant.png)";
-            overflow: hidden;
-            margin: 0;
-            visibility: visible;
-            position: relative;
-        }
-
-/*Home Page
-*/
-
-.homeContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position:absolute;
-    top:30vh;
-    width:100%;
-    height: fit-content;
 }
-/*
-*/
-.home {
-        color: hsl(58,
-            98%,
-            40%);
-        filter: contrast(150%), brightness(150%);
-        height: fit-content;
-        width: 100%;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        justify-content: center;
-        align-content: center;
-        z-index: 2;
-    }
-
-    .home>h2,
-    .home>h1 {
-        text-align: center;
-    }
-
-    .home > h1 {
-        font-size: calc( 1em + 1.7vh );
-    }
-
-        .home > h2 {
-            font-size: calc( .7em + 1.5vh );
-        }
-
-/*Portfolio Page*/
-.portfolioContainer {
-      width: 100%;
-      height:fit-content;
-      position: relative;
-      left:0;
-      right: 0;
-      color: #000000;
-  }
-
-  #portfolioContainer> h1 {
-      font-size: calc(7vh);
-      text-align: center;
-      height:fit-content;
-      width:100%; 
-  }
-
-   #portfolio {
-    display:grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    row-gap: 9vh;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    height: fit-content;
-    color:#000000;
-    z-index:2;
-   } 
-
-   #chess_article {
-    padding-left: 2%;
-    color: black;
-    height:20vh;
-    width: 624px;
-    min-width: 624px;
-    max-width: 624px;
-    border-color:black;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-   }
-
-   #chess_link{
-    color:black;
-    align-content: center;
-    display: flex;
-    justify-content: space-between;
-    text-decoration:none;
-    width: 100%;
-    height: 100%;
-    overflow:hidden;
-   }
-
-   .chess_copy_wrapper{
-    width:fit-content;
-    height:100%;
-    position:relative;
-    overflow: hidden;
-    padding-bottom:1.5%;
-   }
-
-   .chess_copy_wrapper > header {
-    position: relative;
-    top: -10%;
-   }
-
-   .chess_h3{
-    position:relative;
-    font-size:4vmin;
-    width:fit-content;
-    height: fit-content;
-   }
-
-   .chess_proj_desc{
-    padding-right:1%;
-    height:fit-content;
-    font-size: 3.8vmin;
-    width: fit-content;
-    position: relative;
-    top: -10%;
-   }
-
-   .chess_img_wrapper {
-       border-color: black;
-        height: 80%;
-        width: 30%;
-   }
-
-   #chess_proj_img{
-    height:100%;
-    width:100%;
-    border-radius: rem(2);
-        display: block;
-        filter: grayscale(1);
-        transition: filter 0.3s ease-in;
-   }
-
-   #calculator_article {
-    padding-left: 2%;
-    color:black;
-    height: 20vh;
-    width: 624px;
-    min-width: 624px;
-    max-width: 624px;
-       border-color: black;
-       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-   }
-
-   #calculator_link {
-       color:black;
-       align-content: center;
-       display: flex;
-       justify-content: space-between;
-       text-decoration:none;
-        width: 100%;
-        height: 100%;
-       
-   }
-
-    .calculator_copy_wrapper {
-        width: fit-content;
-            height: 100%;
-            position: relative;
-            overflow: hidden;
-            width: fit-content;
-            padding-bottom: 1.5%;
-        }
-    
-        .calculator_copy_wrapper>header {
-            position: relative;
-            top: -10%;
-        }
-
-   .calculator_h3 {
-    position:relative;
-       font-size: 4vmin;
-       width:fit-content;
-       height: fit-content;
-   }
-   .calculator_proj_desc{
-    padding-right:1%;
-    height:fit-content;
-    font-size: 3.8vmin;
-    width: fit-content;
-    position: relative;
-    top:-10%;
-   }
-
-   .calculator_img_wrapper {
-    border-color:#000000;
-    height: 80%;
-    width: 30%;
-   }
-
-   #calculator_proj_img{
-    height: 100%;
-    width: 100%;
-    border-radius: rem(2);
-        display: block;
-        filter: grayscale(1);
-        transition: filter 0.3s ease-in;
-   }
 
 
-
-
+@media screen and (min-width:832px) {
 /*Navigation
 
 ;
 */
-
  body > .navContainer{
         display: flex;
         flex-direction:column;
         justify-content: flex-end;
-        width: calc(30em + .025vmin);
-        height: calc(2.7em + .025vmin);
+        width: calc(31em);
+        height: calc(2.8em);
         background-color: inherit;
         border-radius: none;
         position: fixed;
         left: 50%;
         transform: translateX(-50%);
-        bottom: 5vh;
+        bottom: 55px;
 }
 
 
@@ -348,9 +344,6 @@ body{
         color:white;
         visibility: visible;
     }
-
-
-
 
     #menuWrapper > .menuElement:hover{
         color:white;
