@@ -23,7 +23,7 @@ function setHomePage() {
   homeContainer.style.position = "absolute";
   homeContainer.style.top = "30vh";
   portfolioContainer.style.display = "none";
-  bgWrapper.style.backgroundColor = "black";
+  //bgWrapper.style.backgroundColor = "black";
   bg.style.backgroundColor = "black";
   body.style.backgroundColor = "black";
 }
@@ -55,7 +55,7 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
           portfolioContainer.style.flexDirection = "column";
           portfolioContainer.style.justifyContent = "space-around";
           portfolioContainer.style.alignItems = "center";
-          bgWrapper.style.backgroundColor = "white";
+          //bgWrapper.style.backgroundColor = "white";
           bg.style.backgroundColor = "white";
          
           break;
@@ -66,7 +66,7 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
          
           homeContainer.style.display = "none";
           portfolioContainer.style.display = "none";
-          bgWrapper.style.backgroundColor = "#04124f";
+          //bgWrapper.style.backgroundColor = "#04124f";
           bg.style.backgroundColor = "#04124f";
       
           break;
@@ -77,7 +77,7 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
  
           homeContainer.style.display = "none";
           portfolioContainer.style.display = "none";
-           bgWrapper.style.backgroundColor = "#044f12";
+           //bgWrapper.style.backgroundColor = "#044f12";
            bg.style.backgroundColor = "#044f12";
      
           break;
