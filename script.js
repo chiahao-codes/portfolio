@@ -25,6 +25,7 @@ function setHomePage() {
   portfolioContainer.style.display = "none";
   bgWrapper.style.backgroundColor = "black";
   bg.style.backgroundColor = "black";
+  bgBubble1.style.backgroundColor = "black";
   body.style.backgroundColor = "black";
 }
 
@@ -55,8 +56,9 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
           portfolioContainer.style.flexDirection = "column";
           portfolioContainer.style.justifyContent = "space-around";
           portfolioContainer.style.alignItems = "center";
-          //bgWrapper.style.backgroundColor = "white";
+          bgWrapper.style.backgroundColor = "white";
           bg.style.backgroundColor = "white";
+          bgBubble1.style.backgroundColor = "white";
          
           break;
         case 2:
@@ -66,8 +68,9 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
          
           homeContainer.style.display = "none";
           portfolioContainer.style.display = "none";
-          //bgWrapper.style.backgroundColor = "#04124f";
+          bgWrapper.style.backgroundColor = "#04124f";
           bg.style.backgroundColor = "#04124f";
+          bgBubble1.style.backgroundColor = "#04124f";
       
           break;
         case 3:
@@ -77,8 +80,9 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
  
           homeContainer.style.display = "none";
           portfolioContainer.style.display = "none";
-           //bgWrapper.style.backgroundColor = "#044f12";
+           bgWrapper.style.backgroundColor = "#044f12";
            bg.style.backgroundColor = "#044f12";
+           bgBubble1.style.backgroundColor = "#044f12";
      
           break;
       }

@@ -295,18 +295,17 @@ body>.navContainer{
 .navBar > #bgWrapper {
     filter:url(#goo);
     -webkit-filter: url(#goo);
-    /*background-color: inherit;
-    background-image: url("./assets/brilliant.png");*/
     
     width: 100%;
     height:58px ;
     position: absolute;
     bottom:calc(45px) ;
+    opacity: 1;
 }
 
 
 #bg {
-    background-color: inherit;
+    background-color: black;
     background-image: url("./assets/brilliant.png");
     width:120%;
     height:100%;
@@ -316,7 +315,7 @@ body>.navContainer{
 #bgBubble {
     position: absolute;
     background-color: inherit;
-    background-image: inherit;
+    background-image: url("./assets/brilliant.png");
     width: calc(3.6em - .025vmin);
     height: calc(3.6em - .025vmin);
     border-radius: 50%;
