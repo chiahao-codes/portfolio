@@ -242,8 +242,8 @@ body>.navContainer{
         display: flex;
         flex-direction:column;
         justify-content: flex-end;
-        width: calc(31em);
-        height: calc(2.8em);
+        width: calc(30em);
+        height: calc(2.7em);
         background-color: inherit;
         border-radius: none;
         position: fixed;
