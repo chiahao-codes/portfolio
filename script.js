@@ -24,6 +24,7 @@ function setHomePage() {
   homeContainer.style.top = "30vh";
   portfolioContainer.style.display = "none";
   bgWrapper.style.backgroundColor = "black";
+  bg.style.backgroundColor = "black";
   body.style.backgroundColor = "black";
 }
 
