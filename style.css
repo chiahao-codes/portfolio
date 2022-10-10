@@ -226,7 +226,7 @@ html {
      transition: filter 0.3s ease-in;
  }
 
-@media screen and (max-width:831.99px), (min-height:399.99px) {
+@media screen and (max-width:831.99px) and (max-height:0px), (max-height:399.99px) and (min-width:0px) {
 
 body > .navContainer{
     display: none;
@@ -234,8 +234,7 @@ body > .navContainer{
 
 }
 
-@media screen and (min-width:832px),
-(min-height:400px) {
+@media screen and (min-width:832px) {
 /*Navigation Bar; desktop view;
 */
  body > .navContainer{
