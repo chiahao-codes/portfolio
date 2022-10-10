@@ -228,8 +228,8 @@ html {
 
 @media screen and (min-width:320px) and (max-width:831.99px) {
 
-body>.navContainer{
-    display: hidden;
+body > .navContainer{
+    display: none;
 }
 
 }
