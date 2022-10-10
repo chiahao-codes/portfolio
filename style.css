@@ -254,7 +254,7 @@ body > .navContainer{
 
 
  .navContainer>.navBar {
-     visibility: visible;
+   
      width: 100%;
      background-color: #000000;
      background-image:url("./assets/45-degree-fabric-light.png");
