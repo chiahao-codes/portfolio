@@ -234,7 +234,8 @@ body > .navContainer{
 
 }
 
-@media screen and (min-width:832px) {
+@media screen and (min-width:832px),
+(min-height:400px) {
 /*Navigation Bar; desktop view;
 */
  body > .navContainer{
