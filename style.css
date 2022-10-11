@@ -22,7 +22,7 @@ html {
 
  /*Home Page
 */
- #homeContainer {
+ body > #homeContainer {
      display: flex;
      justify-content: center;
      align-items: center;
