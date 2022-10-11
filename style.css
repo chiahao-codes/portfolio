@@ -89,11 +89,11 @@ html {
      width: 100%;
      height: fit-content;
      color: #000000;
-     
  }
 
  #chess_article {
      padding-left: 2%;
+     padding-right:2%;
      color: black;
      height: 108px;
      width: 640px;
@@ -142,7 +142,7 @@ html {
      font-size: 16px;
      width: 100%;
      position: relative;
-     top: -2%;
+
  }
 
  .chess_img_wrapper {
@@ -163,6 +163,7 @@ html {
 
  #calculator_article {
      padding-left: 2%;
+    padding-right: 2%;
      color: black;
      height: 108px;
      width: 640px;
@@ -206,7 +207,7 @@ html {
      font-size: 16px;
      width: 100%;
      position: relative;
-     top: -2%;
+     
  }
 
  .calculator_img_wrapper {
