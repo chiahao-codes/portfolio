@@ -94,7 +94,7 @@ function move(id, position, bgBubble) {
   let moveTimeline = gsap.timeline();
 
   moveTimeline
-    .to(bgBubble, { duration: 0.15, bottom: "calc(-4em)", ease: "ease-out" }, 0)
+    .to(bgBubble, { duration: 0.15, bottom: "calc(-3.3em)", ease: "ease-out" }, 0)
     .to(
       "#bubble1",
       {
