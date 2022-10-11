@@ -59,6 +59,8 @@ html {
      font-size: calc(1.2em);
  }
 
+
+
  /*Portfolio Page*/
  .portfolioContainer {
      width: 100%;
@@ -70,7 +72,7 @@ html {
  }
 
  #portfolioContainer>h1 {
-     font-size: calc(7vh);
+     font-size: calc(55px);
      text-align: center;
      height: fit-content;
      width: 100%;
@@ -80,13 +82,13 @@ html {
      display: grid;
      grid-template-columns: auto;
      grid-template-rows: auto;
-     row-gap: 9vh;
+     row-gap: 45px;
      justify-content: center;
      align-items: center;
      width: 100%;
      height: fit-content;
      color: #000000;
-     z-index: 2;
+     overflow-y:hidden;
  }
 
  #chess_article {
@@ -336,7 +338,7 @@ html {
      filter: brightness(120%), contrast(120%);
  }
 
-@media screen and (max-width:830.99px), (max-height:399.99px) {
+@media screen and (max-width:831.99px), (max-height:399.99px) {
 
 body > .navContainer{
     display: none;
