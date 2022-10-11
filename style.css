@@ -340,7 +340,7 @@ html {
      filter: brightness(120%), contrast(120%);
  }
 
-@media screen and (max-width:831.99px), (max-height:399.99px) {
+@media screen and (max-width:831.99px), (max-height:469.99px) {
 
 body > .navContainer{
     display: none;
