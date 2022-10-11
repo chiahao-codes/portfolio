@@ -152,11 +152,9 @@ html {
  }
 
  #chess_proj_img {
-    margin: auto, 0;
-    max-height: 100%;
-     max-width: 100%;
-     border-radius: rem(2);
-     display: block;
+    border-radius: rem(2);
+    display: block;
+    margin: auto;
     filter: brightness(150%), contrast(150%);
  }
 
@@ -216,13 +214,10 @@ html {
  }
 
  #calculator_proj_img {
-     max-height: 100%;
-     max-width: 100%;
      border-radius: rem(2);
-     margin:auto, 0;
+     margin:auto;
      display: block;
     filter: brightness(150%), contrast(150%);
-    
  }
 
  /*Navigation Bar; desktop view;
