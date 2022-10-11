@@ -88,19 +88,19 @@ html {
      width: 100%;
      height: fit-content;
      color: #000000;
-     overflow-y:hidden;
+     
  }
 
  #chess_article {
      padding-left: 2%;
      color: black;
-     height: 110px;
-     width: 635px;
-     min-width: 635px;
-     max-width: 635px;
+     height: 108px;
+     width: 640px;
+     min-width: 640px;
+     max-width: 640px;
      border-color: black;
      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-     overflow:hidden;
+    
  }
 
  #chess_link {
@@ -111,7 +111,7 @@ html {
      text-decoration: none;
      width: 100%;
      height: 100%;
-     overflow: hidden;
+    
  }
 
  .chess_copy_wrapper {
@@ -161,13 +161,13 @@ html {
  #calculator_article {
      padding-left: 2%;
      color: black;
-     height: 110px;
-     width: 635px;
-     min-width: 635px;
-     max-width: 635px;
+     height: 108px;
+     width: 640px;
+     min-width: 640px;
+     max-width: 640px;
      border-color: black;
      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-     overflow: hidden;
+   
  }
 
  #calculator_link {
