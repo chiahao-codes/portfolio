@@ -116,11 +116,11 @@ html {
  }
 
  .chess_copy_wrapper {
-     width: fit-content;
+     width: 500px;
      height: 100%;
      position: relative;
      overflow: hidden;
-     padding-bottom: 1.5%;
+     
  }
 
  .chess_copy_wrapper>header {
@@ -131,8 +131,8 @@ html {
  .chess_h3 {
      position: relative;
      font-size: 18px;
-     width: fit-content;
-     height: fit-content;
+    
+     
  }
 
  .chess_proj_desc {
@@ -146,13 +146,12 @@ html {
 
  .chess_img_wrapper {
      border-color: black;
-     height: 80%;
+     height: 100%;
      width: 30%;
  }
 
  #chess_proj_img {
-     height: 100%;
-     width: 100%;
+     max-width: 100%;
      border-radius: rem(2);
      display: block;
      filter: grayscale(1);
@@ -183,12 +182,12 @@ html {
  }
 
  .calculator_copy_wrapper {
-     width: fit-content;
+     width: 500px;
      height: 100%;
      position: relative;
      overflow: hidden;
      width: fit-content;
-     padding-bottom: 1.5%;
+     
  }
 
  .calculator_copy_wrapper>header {
@@ -199,8 +198,8 @@ html {
  .calculator_h3 {
      position: relative;
      font-size: 18px;
-     width: fit-content;
-     height: fit-content;
+    
+     
  }
 
  .calculator_proj_desc {
@@ -214,7 +213,7 @@ html {
 
  .calculator_img_wrapper {
      border-color: #000000;
-     height: 80%;
+     height: 100%;
      width: 30%;
  }
 
