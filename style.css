@@ -160,7 +160,7 @@ html {
  }
 
  #chess_article:hover {
-      filter: grayscale(0), brightness(120%), contrast(120%);
+      filter: grayscale(0), brightness(150%), contrast(150%);
   }
 
  #calculator_article {
@@ -172,11 +172,13 @@ html {
      max-width: 640px;
      border-color: black;
      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     filter: grayscale(1);
+     transition: filter 0.3s ease-in;
    
  }
 
  #calculator_article:hover{
-    filter: grayscale(0), brightness(120%),contrast(120%);
+    filter: grayscale(0), brightness(150%),contrast(150%);
  }
 
  #calculator_link {
