@@ -137,9 +137,9 @@ html {
 
  .chess_proj_desc {
      padding-right: 1%;
-     height: fit-content;
+     height: 100%;
      font-size: 16px;
-     width: fit-content;
+     width: 100%;
      position: relative;
      top: -10%;
  }
@@ -147,10 +147,11 @@ html {
  .chess_img_wrapper {
      border-color: black;
      height: 100%;
-     width: 30%;
+     width: fit-content;
  }
 
  #chess_proj_img {
+    max-height: 100%;
      max-width: 100%;
      border-radius: rem(2);
      display: block;
@@ -200,9 +201,9 @@ html {
 
  .calculator_proj_desc {
      padding-right: 1%;
-     height: fit-content;
+     height: 100%;
      font-size: 16px;
-     width: fit-content;
+     width: 100%;
      position: relative;
      top: -10%;
  }
@@ -210,12 +211,12 @@ html {
  .calculator_img_wrapper {
      border-color: #000000;
      height: 100%;
-     width: 30%;
+     width: 100px;
  }
 
  #calculator_proj_img {
-     height: 100%;
-     width: 100%;
+     max-height: 100%;
+     max-width: 100%;
      border-radius: rem(2);
      display: block;
      filter: grayscale(1);
