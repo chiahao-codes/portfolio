@@ -151,12 +151,12 @@ html {
  }
 
  #chess_proj_img {
-    margin: auto;
+    margin: auto, 0;
     max-height: 100%;
      max-width: 100%;
      border-radius: rem(2);
      display: block;
-     filter: grayscale(1);
+     filter: grayscale(0);
      transition: filter 0.3s ease-in;
  }
 
@@ -219,9 +219,9 @@ html {
      max-height: 100%;
      max-width: 100%;
      border-radius: rem(2);
-     margin:auto;
+     margin:auto, 0;
      display: block;
-     filter: grayscale(1);
+     filter: grayscale(0);
      transition: filter 0.3s ease-in;
  }
 
