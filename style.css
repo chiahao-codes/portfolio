@@ -338,7 +338,7 @@ html {
      filter: brightness(120%), contrast(120%);
  }
 
-@media screen and (min-height:454.99px) and (min-width:830.99px) {
+@media screen and (min-width:830.99px), (min-height:400px) {
 
 body > .navContainer{
     display: none;
