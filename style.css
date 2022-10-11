@@ -229,8 +229,7 @@ html {
      border-radius: rem(2);
      margin:auto, 0;
      display: block;
-     filter: grayscale(1);
-     transition: filter 0.3s ease-in;
+    
  }
 
  /*Navigation Bar; desktop view;
