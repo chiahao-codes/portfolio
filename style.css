@@ -147,7 +147,7 @@ html {
  .chess_img_wrapper {
      border-color: black;
      height: 100%;
-     width: fit-content;
+     width: 100px;
  }
 
  #chess_proj_img {
