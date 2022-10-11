@@ -72,7 +72,7 @@ html {
  }
 
  #portfolioContainer>h1 {
-     font-size: calc(55px);
+     font-size: calc(35px);
      text-align: center;
      height: fit-content;
      width: 100%;
@@ -82,7 +82,7 @@ html {
      display: grid;
      grid-template-columns: auto;
      grid-template-rows: auto;
-     row-gap: 45px;
+     row-gap: 25px;
      justify-content: center;
      align-items: center;
      width: 100%;
@@ -94,7 +94,7 @@ html {
  #chess_article {
      padding-left: 2%;
      color: black;
-     height: 20vh;
+     height: 150px;
      width: 624px;
      min-width: 624px;
      max-width: 624px;
@@ -128,7 +128,7 @@ html {
 
  .chess_h3 {
      position: relative;
-     font-size: 4vmin;
+     font-size: 20px;
      width: fit-content;
      height: fit-content;
  }
@@ -136,7 +136,7 @@ html {
  .chess_proj_desc {
      padding-right: 1%;
      height: fit-content;
-     font-size: 3.8vmin;
+     font-size: 17px;
      width: fit-content;
      position: relative;
      top: -10%;
@@ -160,7 +160,7 @@ html {
  #calculator_article {
      padding-left: 2%;
      color: black;
-     height: 20vh;
+     height: 150px;
      width: 624px;
      min-width: 624px;
      max-width: 624px;
@@ -195,7 +195,7 @@ html {
 
  .calculator_h3 {
      position: relative;
-     font-size: 4vmin;
+     font-size: 20px;
      width: fit-content;
      height: fit-content;
  }
@@ -203,7 +203,7 @@ html {
  .calculator_proj_desc {
      padding-right: 1%;
      height: fit-content;
-     font-size: 3.8vmin;
+     font-size: 17px;
      width: fit-content;
      position: relative;
      top: -10%;
