@@ -101,12 +101,10 @@ html {
      max-width: 640px;
      border-color: black;
      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
+     filter: grayscale(1);
+     transition: filter 0.3s ease-in;
  }
 
-  #chess_article:hover {
-      filter: grayscale(0), brightness(120%), contrast(120%);
-  }
 
  #chess_link {
      color: black;
@@ -159,9 +157,11 @@ html {
      max-width: 100%;
      border-radius: rem(2);
      display: block;
-     filter: grayscale(1);
-     transition: filter 0.3s ease-in;
  }
+
+ #chess_article:hover {
+      filter: grayscale(0), brightness(120%), contrast(120%);
+  }
 
  #calculator_article {
      padding-left: 2%;
