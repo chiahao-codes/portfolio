@@ -313,7 +313,7 @@ html {
  #menuWrapper {
      position: absolute;
      width: 100%;
-     bottom: 37%;
+     bottom: 34%;
      display: flex;
      justify-content: space-around;
      align-items: center;
