@@ -320,7 +320,7 @@ html {
  }
 
  #menuWrapper>.menuElement {
-     font-size: calc(1em + .25vmin);
+     font-size: calc(1.2);
      display: flex;
      justify-content: center;
      align-items: center;
