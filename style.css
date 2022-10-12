@@ -354,6 +354,7 @@ body > .navContainer{
 
 body>.mobileNavBar {
     display: block;
+    position: relative;
     width: 100%;
         height: 75px;
         position: fixed;
@@ -364,9 +365,30 @@ body>.mobileNavBar {
         box-shadow: 0 0 10px #000;
 }
 
-body > nav {
-display: block;
-position: absolute;
+.menuIconWrapper {
+    background-color: inherit;
+    border-color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position:relative;
+    left:2px;
+    top:auto;
+    bottom:auto;
+    height: 45px;
+    width:45px;
+}
+
+body > .mobileNavBar > .menuIcon {
+    background-color: white;
+    width: 35px;
+    height: 6px;
+}
+
+body>nav {
+    display: block;
+    position: absolute;
     background: inherit;
     width: 100%;
     left: 0;
@@ -374,15 +396,6 @@ position: absolute;
     z-index: 999;
     box-shadow: 0 0 10px #000;
 }
-
-body > .mobileNavBar > .menuIcon {
-    background-color: white;
-    width: 35px;
-    height: 5px;
-    margin: 6px 0 6px 3px;
-    position: relative;
-}
-
 nav>ul,
 nav>ul>li {
     padding: 0;
