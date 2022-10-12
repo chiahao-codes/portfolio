@@ -1,5 +1,5 @@
 let body = document.getElementsByTagName("body")[0];
-let mobileNavList = document.getElementsByClassName("navbar");
+//let mobileNavList = document.getElementsByClassName("navbar");
 let mobileNavBar = document.getElementsByClassName("navbar")[0];
   
 let homeContainer = document.getElementById("homeContainer");
@@ -30,9 +30,8 @@ function setHomePage() {
   bg.style.backgroundColor = "black";
   body.style.backgroundColor = "black";
   body.style.backgroundImage = "url(./assets/brilliant.png)";
-  mobileNavBar.style.display = "block";
-  console.log(mobileNavList);
-  console.log(mobileNavBar.firstChild);
+
+  
 
 }
 
