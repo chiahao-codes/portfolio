@@ -378,6 +378,7 @@ body >.mobileNavBar > .menuIconWrapper {
     bottom:auto;
     height: 45px;
     width:45px;
+    z-index: 2;
   
 }
 
@@ -385,6 +386,7 @@ body >.mobileNavBar >.menuIconWrapper > .menuIcon {
     background-color: white;
     width: 35px;
     height: 6px;
+    z-index: 2;
 }
 
 body>nav {
