@@ -365,7 +365,7 @@ body>.mobileNavBar {
         box-shadow: 0 0 10px #000;
 }
 
-.menuIconWrapper {
+body >.mobileNavBar > .menuIconWrapper {
     background-color: inherit;
     border-color:white;
     display:flex;
@@ -380,7 +380,7 @@ body>.mobileNavBar {
     width:45px;
 }
 
-body > .mobileNavBar > .menuIcon {
+body >.mobileNavBar >.menuIconWrapper > .menuIcon {
     background-color: white;
     width: 35px;
     height: 6px;
