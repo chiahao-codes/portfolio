@@ -30,9 +30,6 @@ function setHomePage() {
   bg.style.backgroundColor = "black";
   body.style.backgroundColor = "black";
   body.style.backgroundImage = "url(./assets/brilliant.png)";
-
-  
-
 }
 
 window.addEventListener("load", () => {

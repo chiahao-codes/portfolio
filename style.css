@@ -365,7 +365,7 @@ body>.navbar {
 }
 
 body > nav {
-    display: block;
+display: block;
 position: absolute;
     background: inherit;
     width: 100%;
@@ -375,13 +375,12 @@ position: absolute;
     box-shadow: 0 0 10px #000;
 }
 
-.navbar>.menu {
+.navbar >.icon-menu {
     color: white;
     position: absolute;
-    left: 0;
     display: inline-block;
-    margin: 16px;
-    margin-top: 10px;
+    margin: 10px 16px 16px 16px;
+    
     font-size: 24px;
     text-align: center;
     font-size: 3em;
