@@ -30,7 +30,7 @@ function setHomePage() {
   body.style.backgroundColor = "black";
   body.style.backgroundImage = "url(./assets/brilliant.png)";
   mobileNavBar.style.display = "block";
-  console.log(mobileNavBar);
+  console.log(mobileNavBar.firstChild);
   //mobileNavBar.firstChild.style.color = "white";
 }
 
