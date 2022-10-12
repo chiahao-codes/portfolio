@@ -21,7 +21,7 @@ html {
  }
 
 /*mobile menu nav bar*/
-body > .navbar{
+body > .mobileNavBar{
     display: none;
 }
 
@@ -352,7 +352,7 @@ body > .navContainer{
     display: none;
 }
 
-body>.navbar {
+body>.mobileNavBar {
     display: block;
     width: 100%;
         height: 75px;
@@ -375,7 +375,7 @@ position: absolute;
     box-shadow: 0 0 10px #000;
 }
 
-body > .navbar > .menu-icon {
+body > .mobileNavBar > .menuIcon {
     color: white;
     position: absolute;
     display: inline-block;
