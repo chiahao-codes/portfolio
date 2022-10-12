@@ -30,6 +30,7 @@ body > .navbar{
     background-color: inherit;
     opacity:.6;
     box-shadow:0 0 10px #000;
+    display: none;
 }
 
 .navbar > .menu {
@@ -371,6 +372,10 @@ nav > ul, nav > ul > li {
 
 body > .navContainer{
     display: none;
+}
+
+body>.navbar {
+    display: block;
 }
 
 
