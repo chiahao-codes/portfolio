@@ -33,6 +33,17 @@ body > .navbar{
     display: none;
 }
 
+body > nav {
+    display:none;
+    position: absolute;
+        background: inherit;
+        width: 100%;
+        left: 0;
+        top: -100%;
+        z-index: 999;
+        box-shadow: 0 0 10px #000;
+}
+
 .navbar > .menu {
     color: white;
     position: absolute;
@@ -50,6 +61,24 @@ nav > ul, nav > ul > li {
     padding: 0;
     margin: 0 auto;
 }
+
+ ul > li {
+     list-style: none;
+     text-align: center;
+ }
+
+ ul > li > a {
+     display: block;
+     padding: 15px;
+     color: #fff;
+     text-decoration: none;
+     font-size: 24pt;
+ }
+
+ul > li > a:hover {
+    background: darken(5%);
+    text-decoration: underline;
+ }
 
  /*Home Page
 */
