@@ -362,7 +362,6 @@ body>.mobileNavBar {
         top: 0%;
         z-index: 2;
         background-color: inherit;
-    
         box-shadow: 0 0 10px #000;
 }
 
@@ -387,7 +386,7 @@ body >.mobileNavBar >.menuIconWrapper > .menuIcon {
     filter: brightness(120%), contrast(120%);
     width: 35px;
     height: 5px;
-    
+    border-radius:3px;
 }
 
 body>nav {
