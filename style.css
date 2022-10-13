@@ -363,6 +363,8 @@ body>.mobileNavBar {
         z-index: 2;
         background-color: inherit;
         box-shadow: 0 0 10px #000;
+        backdrop-filter: saturate(180%) blur(20px);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
 }
 
 body >.mobileNavBar > .menuIconWrapper {
