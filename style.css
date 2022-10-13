@@ -378,7 +378,7 @@ body >.mobileNavBar > .menuIconWrapper {
     height: 45px;
     width:45px;
     cursor: pointer; 
-    z-index: 2;   
+ 
   
 }
 
@@ -388,7 +388,7 @@ body >.mobileNavBar >.menuIconWrapper > .menuIcon {
     filter: brightness(120%), contrast(120%);
     width: 35px;
     height: 5px;
-    z-index: 2;
+    
 }
 
 body>nav {
