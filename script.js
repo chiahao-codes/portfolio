@@ -31,7 +31,8 @@ function setHomePage() {
   bg.style.backgroundColor = "black";
   body.style.backgroundColor = "black";
   body.style.backgroundImage = "url(./assets/brilliant.png)";
-  
+  console.log(mobileNavBar);
+  //mobileNavBar.firstElementChild.style.backgroundColor = "#2d2e2e";
 }
 
 window.addEventListener("load", () => {
