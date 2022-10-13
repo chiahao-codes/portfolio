@@ -1,7 +1,7 @@
 let body = document.getElementsByTagName("body")[0];
 //let mobileNavList = document.getElementsByClassName("navbar");
-let mobileNavBar = document.getElementsByClassName("navbar")[0];
-console.log(mobileNavBar);
+let mobileNavBar = document.getElementById("mobileNavBar");
+
   
 let homeContainer = document.getElementById("homeContainer");
 let portfolioContainer = document.getElementById("portfolioContainer");
@@ -32,7 +32,7 @@ function setHomePage() {
   body.style.backgroundColor = "black";
   body.style.backgroundImage = "url(./assets/brilliant.png)";
   console.log(mobileNavBar);
-  //mobileNavBar.firstElementChild.style.backgroundColor = "#2d2e2e";
+  //mobileNavBar.style.backgroundColor = "#2d2e2e";
 }
 
 window.addEventListener("load", () => {

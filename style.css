@@ -21,7 +21,7 @@ html {
  }
 
 /*mobile menu nav bar*/
-body > .mobileNavBar{
+body > #mobileNavBar{
     display: none;
 }
 
@@ -352,7 +352,7 @@ body > .navContainer{
     display: none;
 }
 
-body>.mobileNavBar {
+body>#mobileNavBar {
     background-image:"url(./assets/black-linen.png)";
     display: block;
     position: relative;
@@ -366,7 +366,7 @@ body>.mobileNavBar {
         -webkit-backdrop-filter: saturate(50%) blur(25px);
 }
 
-body >.mobileNavBar > .menuIconWrapper {
+body >#mobileNavBar > .menuIconWrapper {
     background-color: inherit;
     display:flex;
     flex-direction: column;
@@ -380,7 +380,7 @@ body >.mobileNavBar > .menuIconWrapper {
     cursor: pointer; 
 }
 
-body >.mobileNavBar >.menuIconWrapper > .menuIcon {
+body >#mobileNavBar >.menuIconWrapper > .menuIcon {
     background-color: white;
     opacity:1;
     background-image: "url(./assets/brilliant.png)";
