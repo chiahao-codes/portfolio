@@ -32,7 +32,7 @@ function setHomePage() {
   body.style.backgroundColor = "black";
   body.style.backgroundImage = "url(./assets/brilliant.png)";
   console.log(mobileNavBar);
-  mobileNavBar.style.backgroundColor = "#2d2e2e";
+  mobileNavBar.style.backgroundColor = "#1a1a1a";
 }
 
 window.addEventListener("load", () => {
