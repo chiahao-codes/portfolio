@@ -396,7 +396,7 @@ body>nav {
     background: inherit;
     width: 100%;
     left: 0;
-    top: -100%;
+    top: -150%;
     z-index: 1;
     box-shadow: 0 0 10px #000;
 }
