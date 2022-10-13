@@ -1,6 +1,7 @@
 let body = document.getElementsByTagName("body")[0];
 //let mobileNavList = document.getElementsByClassName("navbar");
 let mobileNavBar = document.getElementsByClassName("navbar")[0];
+console.log(mobileNavBar);
   
 let homeContainer = document.getElementById("homeContainer");
 let portfolioContainer = document.getElementById("portfolioContainer");
@@ -30,7 +31,7 @@ function setHomePage() {
   bg.style.backgroundColor = "black";
   body.style.backgroundColor = "black";
   body.style.backgroundImage = "url(./assets/brilliant.png)";
-  mobileNavBar.style.backgroundColor = "#2d2e2e";
+  
 }
 
 window.addEventListener("load", () => {
