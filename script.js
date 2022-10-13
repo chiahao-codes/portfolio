@@ -1,5 +1,4 @@
 let body = document.getElementsByTagName("body")[0];
-//let mobileNavList = document.getElementsByClassName("navbar");
 let mobileNavBar = document.getElementsByClassName("navbar")[0];
   
 let homeContainer = document.getElementById("homeContainer");
@@ -74,9 +73,7 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
           portfolioContainer.style.display = "none";
           bgWrapper.style.backgroundColor = "#04124f";
           bg.style.backgroundColor = "#04124f";
-          
           mobileNavBar.style.backgroundColor = "inherit";
-      
           break;
         case 3:
           move(4, currBgBubblePosition, bgBubble);
