@@ -61,8 +61,7 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
           portfolioContainer.style.alignItems = "center";
           bgWrapper.style.backgroundColor = "white";
           bg.style.backgroundColor = "white";
-          //bgBubble1.style.backgroundColor = "white";
-         
+          mobileNavBar.style.backgroundColor = "inherit";
           break;
         case 2:
           move(3, currBgBubblePosition, bgBubble);
@@ -73,7 +72,7 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
           portfolioContainer.style.display = "none";
           bgWrapper.style.backgroundColor = "#04124f";
           bg.style.backgroundColor = "#04124f";
-          //bgBubble1.style.backgroundColor = "#04124f";
+          mobileNavBar.style.backgroundColor = "inherit";
       
           break;
         case 3:
@@ -85,7 +84,7 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
           portfolioContainer.style.display = "none";
            bgWrapper.style.backgroundColor = "#044f12";
            bg.style.backgroundColor = "#044f12";
-           //bgBubble1.style.backgroundColor = "#044f12";
+           mobileNavBar.style.backgroundColor = "inherit";
           break;
       }
     });
