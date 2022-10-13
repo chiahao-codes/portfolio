@@ -1,4 +1,5 @@
 let body = document.getElementsByTagName("body")[0];
+//let mobileNavList = document.getElementsByClassName("navbar");
 let mobileNavBar = document.getElementsByClassName("navbar")[0];
   
 let homeContainer = document.getElementById("homeContainer");
@@ -29,7 +30,10 @@ function setHomePage() {
   bg.style.backgroundColor = "black";
   body.style.backgroundColor = "black";
   body.style.backgroundImage = "url(./assets/brilliant.png)";
-  mobileNavBar.style.backgroundColor = "#585858";
+  mobileNavBar.style.display = "block";
+  console.log(mobileNavList);
+  
+
 }
 
 window.addEventListener("load", () => {
@@ -61,7 +65,7 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
           portfolioContainer.style.alignItems = "center";
           bgWrapper.style.backgroundColor = "white";
           bg.style.backgroundColor = "white";
-          mobileNavBar.style.backgroundColor = "inherit";
+          //bgBubble1.style.backgroundColor = "white";
          
           break;
         case 2:
@@ -73,7 +77,8 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
           portfolioContainer.style.display = "none";
           bgWrapper.style.backgroundColor = "#04124f";
           bg.style.backgroundColor = "#04124f";
-          mobileNavBar.style.backgroundColor = "inherit";
+          //bgBubble1.style.backgroundColor = "#04124f";
+      
           break;
         case 3:
           move(4, currBgBubblePosition, bgBubble);
@@ -84,7 +89,7 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
           portfolioContainer.style.display = "none";
            bgWrapper.style.backgroundColor = "#044f12";
            bg.style.backgroundColor = "#044f12";
-           mobileNavBar.style.backgroundColor = "inherit";
+           //bgBubble1.style.backgroundColor = "#044f12";
           break;
       }
     });
