@@ -353,6 +353,7 @@ body > .navContainer{
 }
 
 body>.mobileNavBar {
+    background-image:"url(./assets/brilliant.png)";
     display: block;
     position: relative;
     width: 100%;
@@ -360,8 +361,8 @@ body>.mobileNavBar {
         position: fixed;
         top: 0%;
         z-index: 2;
-        background-color: white;
-        opacity: .6;
+        background-color: inherit;
+        opacity: .3;
         box-shadow: 0 0 10px #000;
 }
 
@@ -382,6 +383,7 @@ body >.mobileNavBar > .menuIconWrapper {
 
 body >.mobileNavBar >.menuIconWrapper > .menuIcon {
     background-color: white;
+    background-image: "url(./assets/brilliant.png)";
     width: 35px;
     height: 5px;
 }
