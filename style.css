@@ -353,7 +353,7 @@ body > .navContainer{
 }
 
 body>.mobileNavBar {
-    background-image:"url(./assets/brilliant.png)";
+    background-image:"url(./assets/black-linen.png)";
     display: block;
     position: relative;
     width: 100%;
@@ -377,7 +377,8 @@ body >.mobileNavBar > .menuIconWrapper {
     top:6px;
     height: 45px;
     width:45px;
-    cursor: pointer;    
+    cursor: pointer; 
+    z-index: 2;   
   
 }
 
@@ -387,6 +388,7 @@ body >.mobileNavBar >.menuIconWrapper > .menuIcon {
     filter: brightness(120%), contrast(120%);
     width: 35px;
     height: 5px;
+    z-index: 2;
 }
 
 body>nav {
