@@ -9,7 +9,7 @@ html {
 }
 
  body {
-    background-color: black;
+    background-color: #121212;
      height: 100vh;
      width: 100vw;
      font-family: "Cormorant SC", sans-serif;
@@ -272,7 +272,7 @@ body > nav {
 
 
  .bubble {
-     background-color: #000000;
+     background-color: #121212;
      background-image: url("./assets/45-degree-fabric-light.png");
      border-radius: 50%;
      width: calc(2.4em - .025vmin);
@@ -301,7 +301,7 @@ body > nav {
 
 
  #bg {
-     background-color: black;
+     background-color: #121212;
      background-image: url("./assets/brilliant.png");
      width: 120%;
      height: 100%;
