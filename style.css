@@ -384,6 +384,7 @@ body >.mobileNavBar > .menuIconWrapper {
 body >.mobileNavBar >.menuIconWrapper > .menuIcon {
     background-color: white;
     background-image: "url(./assets/brilliant.png)";
+    filter: brightness(120%), contrast(120%);
     width: 35px;
     height: 5px;
 }
