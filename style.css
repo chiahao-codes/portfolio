@@ -361,7 +361,6 @@ body>.mobileNavBar {
         position: relative;
         top: 0%;
         z-index: 2;
-        background-color: #585858;
         box-shadow: 0 0 10px #000;
         backdrop-filter: saturate(50%) blur(25px);
         -webkit-backdrop-filter: saturate(50%) blur(25px);
