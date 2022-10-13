@@ -102,7 +102,7 @@ function move(id, position, bgBubble) {
       0
     )
     .to(
-      ".navBar > #bubbleWrapper > #bubble1",
+      "body > .navContainer > .navBar > #bubbleWrapper > #bubble1",
       {
         duration: 0.1,
         yPercent: 145,
@@ -113,7 +113,7 @@ function move(id, position, bgBubble) {
       0
     )
     .to(
-      ".navBar > #bubbleWrapper > #bubble2",
+      "body > .navContainer > .navBar > #bubbleWrapper > #bubble2",
       {
         duration: 0.15,
         yPercent: 145,
@@ -124,7 +124,7 @@ function move(id, position, bgBubble) {
       0
     )
     .to(
-      ".navBar > #bubbleWrapper > #bubble3",
+      "body > .navContainer > .navBar > #bubbleWrapper > #bubble3",
       {
         duration: 0.15,
         yPercent: 145,
@@ -135,7 +135,7 @@ function move(id, position, bgBubble) {
       0
     )
     .to(
-      ".navBar > #bubbleWrapper > #bubble4",
+      "body > .navContainer > .navBar > #bubbleWrapper > #bubble4",
       {
         duration: 0.15,
         yPercent: 145,
@@ -146,7 +146,7 @@ function move(id, position, bgBubble) {
       0
     )
     .to(
-      ".navBar > #bubbleWrapper > .bubble > .icon",
+      "body > .navContainer > .navBar > #bubbleWrapper > .bubble > .icon",
       {
         duration: 0.1,
         opacity: 0,
@@ -169,7 +169,7 @@ function move(id, position, bgBubble) {
       "-=.2"
     )
     .to(
-      `.navBar > #bubbleWrapper >#bubble${id}`,
+      `body > .navContainer > .navBar > #bubbleWrapper >#bubble${id}`,
       {
         duration: 0.215,
         zIndex: 1,
@@ -182,7 +182,7 @@ function move(id, position, bgBubble) {
       "-=.1"
     )
     .to(
-      `.navBar > #bubbleWrapper >#bubble${id} > span`,
+      `body > .navContainer > .navBar > #bubbleWrapper >#bubble${id} > span`,
       {
         duration: 0.215,
         yPercent: 0,
