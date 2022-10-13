@@ -30,10 +30,6 @@ function setHomePage() {
   bg.style.backgroundColor = "black";
   body.style.backgroundColor = "black";
   body.style.backgroundImage = "url(./assets/brilliant.png)";
-  mobileNavBar.style.display = "block";
-  console.log(mobileNavList);
-  
-
 }
 
 window.addEventListener("load", () => {
@@ -98,11 +94,15 @@ function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
 
 function move(id, position, bgBubble) {
   let moveTimeline = gsap.timeline();
-
+  console.log("move() running...")
   moveTimeline
-    .to(bgBubble, { duration: 0.15, bottom: "calc(-3.3em)", ease: "ease-out" }, 0)
     .to(
-      "#bubble1",
+      bgBubble,
+      { duration: 0.15, bottom: "calc(-3.3em)", ease: "ease-out" },
+      0
+    )
+    .to(
+      ".navBar > #bubbleWrapper > #bubble1",
       {
         duration: 0.1,
         yPercent: 145,
@@ -113,7 +113,7 @@ function move(id, position, bgBubble) {
       0
     )
     .to(
-      "#bubble2",
+      ".navBar > #bubbleWrapper > #bubble2",
       {
         duration: 0.15,
         yPercent: 145,
@@ -124,7 +124,7 @@ function move(id, position, bgBubble) {
       0
     )
     .to(
-      "#bubble3",
+      ".navBar > #bubbleWrapper > #bubble3",
       {
         duration: 0.15,
         yPercent: 145,
@@ -135,7 +135,7 @@ function move(id, position, bgBubble) {
       0
     )
     .to(
-      "#bubble4",
+      ".navBar > #bubbleWrapper > #bubble4",
       {
         duration: 0.15,
         yPercent: 145,
@@ -146,7 +146,7 @@ function move(id, position, bgBubble) {
       0
     )
     .to(
-      ".icon",
+      ".navBar > #bubbleWrapper > .bubble > .icon",
       {
         duration: 0.1,
         opacity: 0,
@@ -169,11 +169,11 @@ function move(id, position, bgBubble) {
       "-=.2"
     )
     .to(
-      `#bubble${id}`,
+      `.navBar > #bubbleWrapper >#bubble${id}`,
       {
         duration: 0.215,
         zIndex: 1,
-        yPercent:0,
+        yPercent: 0,
         backgroundColor: "hsl(0, 0%, 12%)",
         opacity: 1,
         boxShadow: "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.2194)",
@@ -182,10 +182,10 @@ function move(id, position, bgBubble) {
       "-=.1"
     )
     .to(
-      `#bubble${id} > span`,
+      `.navBar > #bubbleWrapper >#bubble${id} > span`,
       {
         duration: 0.215,
-        yPercent:0,
+        yPercent: 0,
         opacity: 1,
         ease: "ease-out",
       },
