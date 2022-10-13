@@ -27,9 +27,9 @@ function setHomePage() {
   homeContainer.style.position = "absolute";
   homeContainer.style.top = "30vh";
   portfolioContainer.style.display = "none";
-  bgWrapper.style.backgroundColor = "#121212";
-  bg.style.backgroundColor = "#121212";
-  body.style.backgroundColor = "#121212";
+  bgWrapper.style.backgroundColor = "##0f0f0f";
+  bg.style.backgroundColor = "##0f0f0f";
+  body.style.backgroundColor = "##0f0f0f";
   body.style.backgroundImage = "url(./assets/brilliant.png)";
   console.log(mobileNavBar);
   mobileNavBar.style.backgroundColor = "#1a1a1a";
