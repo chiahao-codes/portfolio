@@ -13,8 +13,7 @@ function setHomePage() {
   homeContainer.style.position = "absolute";
   homeContainer.style.top = "30vh";
   portfolioContainer.style.display = "none";
-  
-  body.style.backgroundColor = "#0f0f0f";
+  body.style.backgroundColor = "#161617";
   mobileNavBar.style.backgroundColor = "#1a1a1a";
 }
 
