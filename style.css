@@ -243,6 +243,7 @@ body > nav {
      width: calc(30em);
      height: calc(2.7em);
     background-color: #0f0f0f;
+    background-image: url("./assets/brilliant.png");
      border-radius: 18px;
      position: fixed;
      left: 50%;
