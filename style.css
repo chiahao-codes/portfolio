@@ -53,7 +53,7 @@ body > nav {
      height: fit-content;
  }
 
- .home {
+ #homeHeading {
      color: rgb(255, 255, 255);
      filter: contrast(150%), brightness(150%);
      height: fit-content;
@@ -65,16 +65,16 @@ body > nav {
      align-content: center;
  }
 
- .home>h2,
- .home>h1 {
+ .homeHeading>h2,
+ .homeHeading>h1 {
      text-align: center;
  }
 
- .home>h1 {
+ .homeHeading>h1 {
      font-size: calc(1.8em);
  }
 
- .home>h2 {
+ .homeHeading>h2 {
      font-size: calc(1.2em);
  }
 
