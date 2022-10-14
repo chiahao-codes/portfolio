@@ -289,9 +289,7 @@ body > nav {
      filter: contrast(150%), brightness(100%);
  }
 
- .navBar>#bgWrapper {
-    /*background-color: #0f0f0f;*/
-    
+ .navBar>#bgWrapper { 
      filter: url(#goo);
      -webkit-filter: url(#goo);
      background-image: url("./assets/brilliant.png");
