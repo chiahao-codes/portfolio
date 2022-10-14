@@ -1,23 +1,9 @@
 let body = document.getElementsByTagName("body")[0];
-//let mobileNavList = document.getElementsByClassName("navbar");
 let mobileNavBar = document.getElementById("mobileNavBar");
-
-  
 let homeContainer = document.getElementById("homeContainer");
 let portfolioContainer = document.getElementById("portfolioContainer");
 
-let bgBubble1 = document.getElementById("bgBubble");
-let bgWrapper = document.getElementById("bgWrapper");
-let bg = document.getElementById("bg");
-let menuElements = document.getElementsByClassName("menuElement");
-let currBgBubblePosition, moveId;
 
-let bgBubbPosMap = {
-  0: "60px",
-  1: "180px",
-  2: "300px",
-  3: "420px",
-};
 
 function setHomePage() {
   homeContainer.style.width = "100%";
@@ -27,19 +13,25 @@ function setHomePage() {
   homeContainer.style.position = "absolute";
   homeContainer.style.top = "30vh";
   portfolioContainer.style.display = "none";
-  bgWrapper.style.backgroundColor = "#0f0f0f";
-  bg.style.backgroundColor = "#0f0f0f";
+  
   body.style.backgroundColor = "#0f0f0f";
   mobileNavBar.style.backgroundColor = "#1a1a1a";
 }
 
 window.addEventListener("load", () => {
   setHomePage();
-  move(1, bgBubbPosMap[0], bgBubble1);
-  giveMenumoveIdClickEvent(bgBubble1);
 });
 
-function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
+
+/**
+ * 
+ * let bgBubbPosMap = {
+  0: "60px",
+  1: "180px",
+  2: "300px",
+  3: "420px",
+};
+ * function giveMenumoveIdClickEvent(bgBubble = bgBubble1) {
   for (let i = 0; i < menuElements.length; i++) {
     menuElements[i].firstChild.addEventListener("click", () => {
     
@@ -227,4 +219,8 @@ function mouseLeave(num) {
     }
   }
 }
+ *
+ */
+
+
 
