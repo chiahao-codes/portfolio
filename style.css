@@ -243,7 +243,7 @@ body > nav {
      width: calc(30em);
      height: calc(2.7em);
     background-color: #242424;
-     border-radius: 5px;
+     border-radius: 18px;
      position: fixed;
      left: 50%;
      transform: translateX(-50%);
