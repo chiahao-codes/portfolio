@@ -254,7 +254,7 @@ body > nav {
  .navContainer>.navBar {
 
      width: 100%;
-     background-color: #000000;
+     background-color: inherit;
      background-image: url("./assets/45-degree-fabric-light.png");
      height: 100%;
      position: relative;
