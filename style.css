@@ -9,6 +9,7 @@ html {
 }
 
  body {
+    background-color:#161617;
      height: 100vh;
      width: 100vw;
      font-family: "Cormorant SC", sans-serif;
@@ -65,16 +66,16 @@ body > nav {
      align-content: center;
  }
 
- .homeHeading>h2,
- .homeHeading>h1 {
+ #homeHeading>h2,
+ #homeHeading>h1 {
      text-align: center;
  }
 
- .homeHeading>h1 {
+ #homeHeading>h1 {
      font-size: calc(1.8em);
  }
 
- .homeHeading>h2 {
+ #homeHeading>h2 {
      font-size: calc(1.2em);
  }
 
