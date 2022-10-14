@@ -290,7 +290,8 @@ body > nav {
  }
 
  .navBar>#bgWrapper {
-    background-color: #0f0f0f;
+    /*background-color: #0f0f0f;*/
+    
      filter: url(#goo);
      -webkit-filter: url(#goo);
      background-image: url("./assets/brilliant.png");
@@ -302,7 +303,7 @@ body > nav {
 
 
  #bg {
-     background-color: #0f0f0f;
+     
      background-image: url("./assets/brilliant.png");
      width: 120%;
      height: 100%;
