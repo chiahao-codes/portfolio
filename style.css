@@ -242,7 +242,7 @@ body > nav {
      justify-content: flex-end;
      width: calc(30em);
      height: calc(2.7em);
-    background-color: #242424;
+    background-color: #0f0f0f;
      border-radius: 18px;
      position: fixed;
      left: 50%;
