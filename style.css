@@ -304,7 +304,7 @@ body > nav {
 
 
  #bg {
-    visibility: hidden;
+  
      width: 120%;
      height: 100%;
      margin-left: -10%;
@@ -313,7 +313,7 @@ body > nav {
  #bgBubble {
      position: absolute;
      background-color: inherit;
-     visibility: visible;
+   
      width: calc(3.6em - .025vmin);
      height: calc(3.6em - .025vmin);
      border-radius: 50%;
