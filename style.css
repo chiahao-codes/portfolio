@@ -8,6 +8,11 @@ html {
     box-sizing: inherit;
 }
 
+.lightMode{
+    --light-bg-color:white;
+    color:black;
+}
+
  body {
     background-color:#161617;
      height: 100vh;
@@ -33,7 +38,7 @@ body>#navBar {
     -webkit-backdrop-filter: saturate(50%) blur(25px);
 }
 
-body > #navBar > #desktopNavWrapper {
+body > #navBar > #desktop_nav_wrapper {
 width:100%;
 height: 100%;
 position:relative;
@@ -41,6 +46,57 @@ display:flex;
 justify-content: space-between;
 }
 
+#desktop_nav_wrapper > #desktop_left_header{
+    position:relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:300px;
+}
+
+#desktop_left_header > .mode_switch_wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width:140px;
+}
+
+.mode_switch_wrapper> input[type="checkbox"]{
+    height: 0;
+    width:0;
+    visibility: hidden;
+}
+
+.mode_switch_wrapper>input[type="checkbox"]:checked + label {
+background-color:black;
+}
+
+.mode_switch_wrapper>input[type="checkbox"]:checked+label:after{
+left: calc(100% - 2px);
+transform: translateX(-100%);
+}
+
+.mode_switch_wrapper> input > label {
+    cursor: pointer;
+    background-color:black;
+    width: 75px;
+    height: 34px;
+    display: block;
+    border-radius: 40px;
+    position: relative;
+}
+
+.mode_switch_wrapper>input>label::after{
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 30px;
+        height: 30px;
+        background: #fff;
+        border-radius: 40px;
+        transition: 0.3s;
+}
 
 /*mobile menu nav bar*/
 body>#navBar>#menuIconWrapper{
