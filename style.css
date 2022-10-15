@@ -39,10 +39,12 @@ body>#navBar {
 }
 
 #navBar > #mode_switch_wrapper{
-    width:175px;
+    width:fit-content;
+    border-radius:40px;
     display: flex;
     justify-content: center;
     background-color: white;
+    position:relative;
 }
 
 /*mobile menu nav bar*/
