@@ -33,14 +33,17 @@ body>#navBar {
     -webkit-backdrop-filter: saturate(50%) blur(25px);
 }
 
-#desktopNavWrapper {
+body > #navBar > #desktopNavWrapper {
 width:100%;
-
+height: 100%;
+position:relative;
+display:flex;
+justify-content: space-between;
 }
 
 
 /*mobile menu nav bar*/
-body>#navBar>.menuIconWrapper{
+body>#navBar>#menuIconWrapper{
     display:none;
 }
 
@@ -252,7 +255,7 @@ body > nav {
 
 @media screen and (max-width:831.99px) {
 
-body >#navBar > .menuIconWrapper {
+body >#navBar > #menuIconWrapper {
     background-color: inherit;
     display:flex;
     flex-direction: column;
@@ -266,7 +269,7 @@ body >#navBar > .menuIconWrapper {
     cursor: pointer; 
 }
 
-body >#navBar >.menuIconWrapper > .menuIcon {
+body >#navBar >#menuIconWrapper > .menuIcon {
     background-color: white;
     opacity:1;
     background-image: "url(./assets/brilliant.png)";
