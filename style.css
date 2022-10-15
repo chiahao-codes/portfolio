@@ -19,7 +19,6 @@ html {
      position: relative;
  }
 
-/*mobile menu nav bar*/
 body>#navBar {
     background-image: "url(./assets/black-linen.png)";
     display: block;
@@ -34,6 +33,13 @@ body>#navBar {
     -webkit-backdrop-filter: saturate(50%) blur(25px);
 }
 
+#desktopNavWrapper {
+width:100%;
+
+}
+
+
+/*mobile menu nav bar*/
 body>#navBar>.menuIconWrapper{
     display:none;
 }
