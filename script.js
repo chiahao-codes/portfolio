@@ -1,5 +1,5 @@
 let body = document.getElementsByTagName("body")[0];
-let mobileNavBar = document.getElementById("mobileNavBar");
+let navBar = document.getElementById("navBar");
 let homeContainer = document.getElementById("homeContainer");
 let portfolioContainer = document.getElementById("portfolioContainer");
 
@@ -14,7 +14,7 @@ function setHomePage() {
   homeContainer.style.top = "30vh";
   portfolioContainer.style.display = "none";
   body.style.backgroundColor = "#161617";
-  mobileNavBar.style.backgroundColor = "#1a1a1a";
+  navBar.style.backgroundColor = "#1a1a1a";
 }
 
 window.addEventListener("load", () => {
