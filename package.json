@@ -8,5 +8,8 @@
     "main": "script.js"
   },
   "author": "Chiahao Chou",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gsap": "^3.11.3"
+  }
 }

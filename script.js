@@ -2,6 +2,7 @@ let body = document.getElementsByTagName("body")[0];
 let navBar = document.getElementById("navBar");
 let homeContainer = document.getElementById("homeContainer");
 let portfolioContainer = document.getElementById("portfolioContainer");
+let tl = gsap.timeline();
 
 
 
