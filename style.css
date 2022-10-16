@@ -64,6 +64,7 @@ body>#navBar {
     justify-content: space-around;
     background-color: inherit;
     position:relative;
+    z-index: 2;
     
 }
 
