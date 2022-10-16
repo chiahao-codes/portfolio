@@ -50,6 +50,7 @@ body>#navBar {
     transform: translateY(-50%);
     left: 24px;
     cursor: pointer;
+    z-index: 2;
 }
 
 #navBar>#mode_switch_wrapper>img>.switch_circle {
