@@ -55,7 +55,7 @@ body>#navBar {
 
 #navBar>#mode_switch_wrapper>img>.switch_circle {
 
-    position:relative;
+    position:absolute;
     right:0px;
     z-index:3;
 }
