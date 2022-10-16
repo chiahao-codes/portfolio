@@ -68,8 +68,7 @@ body>#navBar {
 }
 
 #switch_icon_wrapper>.moon{
-  opacity:1;
-  color:yellow;
+  fill: gold;
 }
 
 #switch_icon_wrapper>.sun{
