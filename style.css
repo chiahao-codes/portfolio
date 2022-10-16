@@ -55,7 +55,8 @@ body>#navBar {
 
 #mode_switch_container > .switch_circle {
     z-index: 3;
-    position: relative;
+    position: absolute;
+    left:0%;
 }
 
  #switch_bulb_wrapper{
