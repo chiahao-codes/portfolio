@@ -1,6 +1,3 @@
-window.addEventListener("load", () => {
-  setHomePage();
-});
 
 let body = document.getElementsByTagName("body")[0];
 let navBar = document.getElementById("navBar");
@@ -17,8 +14,8 @@ function setHomePage() {
   homeContainer.style.width = "100%";
   homeContainer.style.display = "flex";
   homeContainer.style.justifyContent = "center";
-  homeContainer.style.alignContent = "center";
-  homeContainer.style.position = "absolute";
+  homeContainer.style.alignItems = "center";
+  
   homeContainer.style.top = "30vh";
   portfolioContainer.style.display = "none";
   //body.style.backgroundColor = "white";
