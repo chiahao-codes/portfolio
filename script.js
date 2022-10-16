@@ -5,7 +5,6 @@ let homeContainer = document.getElementById("homeContainer");
 let portfolioContainer = document.querySelector("body > section");
 let switchBulbWrap = document.getElementById("switch_bulb_wrapper");
 let darkBulbIcon = document.querySelector("div > .darkbulb");
-console.log(darkBulbIcon);
 let lightBulbIcon = document.querySelector("div > .lightbulb");
 let modeSwitchWrapper = document.getElementById("switch_bulb_wrapper");
 let tl = gsap.timeline();
