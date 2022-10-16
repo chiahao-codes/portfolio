@@ -43,7 +43,7 @@ body>#navBar {
     height: 30px;
     border-radius: 40px;
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
     background-color: white;
     position: relative;
     top: 50%;
@@ -56,7 +56,6 @@ body>#navBar {
 #mode_switch_container > .switch_circle {
     z-index: 3;
     position: relative;
-    left: 50%;
 }
 
  #switch_bulb_wrapper{
@@ -65,7 +64,7 @@ body>#navBar {
     justify-content: space-around;
     background-color: inherit;
     position:relative;
-    left:-5%;
+    
 }
 
 #switch_bulb_wrapper>.darkbulb{
