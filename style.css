@@ -51,7 +51,6 @@ body>#navBar {
     transform: translateY(-50%);
     left: 24px;
     cursor: pointer;
-
     overflow: hidden;
 }
 
@@ -316,6 +315,7 @@ body>nav {
     z-index: 1;
     box-shadow: 0 0 10px #000;
 }
+
 nav>ul,
 nav>ul>li {
     padding: 0;
