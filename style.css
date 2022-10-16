@@ -260,6 +260,10 @@ body > nav {
 
 @media screen and (max-width:831.99px) {
 
+#navBar>#mode_switch_wrapper {
+    display: none;
+}
+
 body >#navBar > #menuIconWrapper {
     background-color: inherit;
     display:flex;
