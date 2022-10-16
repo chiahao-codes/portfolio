@@ -50,8 +50,15 @@ body>#navBar {
     left: 24px;
     cursor: pointer;
 }
-#navBar>#mode_switch_wrapper>switch_bulb_img{
 
+#navBar>#mode_switch_wrapper>.darkbulb::after {
+    width: 31px;
+    height:31px;
+    border-radius: 50px;
+    background-color:black;
+    position:relative;
+    right:0px;
+    z-index:3;
 }
 
 /*mobile menu nav bar*/
