@@ -55,6 +55,9 @@ body>#navBar {
     overflow: hidden;
 }
 
+#navBar>#mode_switch_wrapper>.darkbulb{
+    opacity:.4;
+}
 
 #navBar>#mode_switch_wrapper>.lightbulb{
     display:none;
