@@ -38,15 +38,15 @@ body>#navBar {
     -webkit-backdrop-filter: saturate(50%) blur(25px);
 }
 
- #switch_bulb_wrapper{
-    width:70px;
+#mode_switch_container {
+    width: 70px;
     height: 30px;
     max-width: 70px;
-    border-radius:40px;
+    border-radius: 40px;
     display: flex;
     justify-content: space-around;
     background-color: white;
-    position:relative;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
     left: 24px;
@@ -54,12 +54,27 @@ body>#navBar {
     overflow: hidden;
 }
 
+#mode_switch_container > .switch_circle {
+    z-index: 3;
+    position: relative;
+    left: 50%;
+}
+
+ #switch_bulb_wrapper{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: inherit;
+    position:relative;
+}
+
 #switch_bulb_wrapper>.darkbulb{
     opacity:.4;
+    z-index: 2;
 }
 
 #switch_bulb_wrapper>.lightbulb{
-    display:none;
+    z-index: 2;
 }
 
 /*mobile menu nav bar*/
