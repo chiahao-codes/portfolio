@@ -29,7 +29,7 @@ function darkMode() {
   body.style.backgroundColor = "#161617";
   navBar.style.backgroundColor = "#1a1a1a";
   modeSwitchContainer.style.backgroundColor = "black";
-  switchCircle.style.marginRight = "2%";
+  switchCircle.style.right = "2%";
   switchCircle.style.filter = "invert(1)";
   menuIcon.forEach((m) => {
     m.style.backgroundColor = "white";
