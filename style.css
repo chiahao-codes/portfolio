@@ -54,7 +54,6 @@ body>#navBar {
 }
 
 #mode_switch_container > .switch_circle {
-    z-index: 3;
     position: absolute;
     right:0%;
 }
@@ -64,13 +63,12 @@ body>#navBar {
     display: flex;
     justify-content: space-around;
     background-color: inherit;
-    position:relative;
-    z-index: 2;
-    
+    position:relative;   
 }
 
 #switch_icon_wrapper>.moon{
-  
+  opacity:1;
+  background-color:yellow;
   
 }
 
