@@ -51,7 +51,7 @@ body>#navBar {
     cursor: pointer;
 }
 
-#navBar>#mode_switch_wrapper>.darkbulb::after {
+#navBar>#mode_switch_wrapper>img>.switch_circle {
     width: 31px;
     height:31px;
     border-radius: 50px;
