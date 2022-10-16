@@ -291,7 +291,7 @@ body > nav {
 
 @media screen and (max-width:831.99px) {
 
-#switch_icon_wrapper {
+#mode_switch_container {
     display: none;
 }
 
