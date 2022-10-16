@@ -44,10 +44,14 @@ body>#navBar {
     display: flex;
     justify-content: center;
     background-color: black;
+    opacity: .75;
     position:relative;
     top: 50%;
     transform: translateY(-50%);
     left: 20px;
+}
+#navBar>#mode_switch_wrapper>switch_bulb_img{
+    z-index: 3;
 }
 
 /*mobile menu nav bar*/
