@@ -9,10 +9,6 @@ html {
 }
 
  body {
-    /*
-    
-    */
-   
      height: 100vh;
      width: 100vw;
      font-family: "Cormorant SC", sans-serif;
@@ -72,10 +68,6 @@ body>#navBar {
 #switch_icon_wrapper>.moon{
 filter: invert(.99) sepia(100%) saturate(9) brightness(120%) contrast(120%);
 border-color:2px solid;
-}
-
-#switch_icon_wrapper>.sun{
-    
 }
 
 /*mobile menu nav bar*/

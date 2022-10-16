@@ -1,6 +1,7 @@
 window.addEventListener("load", () => {
   setHomePage();
-  darkMode();
+  lightMode();
+  //darkMode();
 })
 let body = document.getElementsByTagName("body")[0];
 let navBar = document.getElementById("navBar");
@@ -22,7 +23,7 @@ function setHomePage() {
   portfolioContainer.style.display = "none";
 }
 
-//#ebeded 
+//
 
 function darkMode() {
   homeContainer.style.color = "white";
@@ -33,6 +34,18 @@ function darkMode() {
   switchCircle.style.filter = "invert(1)";
   menuIcon.forEach((m) => {
     m.style.backgroundColor = "white";
+  });
+}
+
+function lightMode() {
+  homeContainer.style.color = "black";
+  body.style.backgroundColor = "white";
+  navBar.style.backgroundColor = "#ebeded";
+  modeSwitchContainer.style.backgroundColor = "#dcdcde";
+  switchCircle.style.left = "2%";
+  switchCircle.style.filter = "invert(0)";
+  menuIcon.forEach((m) => {
+    m.style.backgroundColor = "black";
   });
 }
 
