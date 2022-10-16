@@ -68,7 +68,8 @@ body>#navBar {
 }
 
 #switch_icon_wrapper>.moon{
-filter: invert(.9) sepia(100%) saturate(5);
+filter: invert(100%) sepia(100%) saturate(9);
+border-color:2px solid black;
 }
 
 #switch_icon_wrapper>.sun{
