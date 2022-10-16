@@ -59,7 +59,7 @@ body>#navBar {
     right:0%;
 }
 
- #switch_bulb_wrapper{
+ #switch_icon_wrapper{
     width:100%;
     display: flex;
     justify-content: space-around;
@@ -69,12 +69,12 @@ body>#navBar {
     
 }
 
-#switch_bulb_wrapper>.darkbulb{
-    opacity:.4;
+#switch_icon_wrapper>.moon{
+  
   
 }
 
-#switch_bulb_wrapper>.lightbulb{
+#switch_icon_wrapper>.sun{
     
 }
 
@@ -292,7 +292,7 @@ body > nav {
 
 @media screen and (max-width:831.99px) {
 
-#switch_bulb_wrapper {
+#switch_icon_wrapper {
     display: none;
 }
 
