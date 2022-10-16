@@ -68,7 +68,7 @@ body>#navBar {
 }
 
 #switch_icon_wrapper>.moon{
-  fill: gold;
+  filter: invert(.8);
 }
 
 #switch_icon_wrapper>.sun{
