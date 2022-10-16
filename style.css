@@ -38,7 +38,7 @@ body>#navBar {
     -webkit-backdrop-filter: saturate(50%) blur(25px);
 }
 
-#navBar > #mode_switch_wrapper{
+ #switch_bulb_wrapper{
     width:70px;
     height: 30px;
     max-width: 70px;
@@ -54,11 +54,11 @@ body>#navBar {
     overflow: hidden;
 }
 
-#navBar>#mode_switch_wrapper>.darkbulb{
+#switch_bulb_wrapper>.darkbulb{
     opacity:.4;
 }
 
-#navBar>#mode_switch_wrapper>.lightbulb{
+#switch_bulb_wrapper>.lightbulb{
     display:none;
 }
 
@@ -276,7 +276,7 @@ body > nav {
 
 @media screen and (max-width:831.99px) {
 
-#navBar>#mode_switch_wrapper {
+#switch_bulb_wrapper {
     display: none;
 }
 
