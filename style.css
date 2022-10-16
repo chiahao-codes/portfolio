@@ -55,6 +55,8 @@ body>#navBar {
 
 #mode_switch_container > .switch_circle {
     position: absolute;
+    top:auto;
+    bottom:auto;
     right:0%;
     z-index: 3;
     filter:invert(1);
