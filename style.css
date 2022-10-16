@@ -12,7 +12,7 @@ html {
     /*#161617
     
     */
-    background-color:#ebeded ;
+    background-color:white ;
      height: 100vh;
      width: 100vw;
      font-family: "Cormorant SC", sans-serif;
@@ -127,7 +127,7 @@ body > nav {
 
  /*Portfolio Page*/
  .portfolioContainer {
-  
+    display: none;
      width: 100%;
      height: fit-content;
      position: relative;
