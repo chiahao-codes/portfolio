@@ -1,7 +1,7 @@
 window.addEventListener("load", () => {
   setHomePage();
-  lightMode();
-  //darkMode();
+  //lightMode();
+  darkMode();
 })
 let body = document.getElementsByTagName("body")[0];
 let navBar = document.getElementById("navBar");
