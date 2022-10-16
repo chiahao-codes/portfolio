@@ -1,7 +1,8 @@
 let body = document.getElementsByTagName("body")[0];
 let navBar = document.getElementById("navBar");
 let homeContainer = document.getElementById("homeContainer");
-let portfolioContainer = document.getElementById("portfolioContainer");
+let portfolioContainer = document.querySelector("body > section");
+let modeSwitchWrapper = document.getElementById("mode_switch_wrapper");
 let tl = gsap.timeline();
 
 
