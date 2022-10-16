@@ -52,15 +52,13 @@ body>#navBar {
     left: 24px;
     cursor: pointer;
     z-index: 2;
+    overflow: hidden;
 }
 
-#navBar>#mode_switch_wrapper>img>.switch_circle {
 
-    position:absolute;
-    right:0px;
-    z-index:3;
+#navBar>#mode_switch_wrapper>.lightbulb{
+    display:none;
 }
-
 /*mobile menu nav bar*/
 body>#navBar>#menuIconWrapper{
     display:none;
