@@ -39,7 +39,8 @@ body>#navBar {
 }
 
 #navBar > #mode_switch_wrapper{
-    width:fit-content;
+    width:60px;
+    max-width: 60px;
     border-radius:40px;
     display: flex;
     justify-content: center;
