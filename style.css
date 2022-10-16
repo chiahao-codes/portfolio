@@ -58,7 +58,7 @@ body>#navBar {
     position: absolute;
     top:auto;
     bottom:auto;
-    left:2%;
+    right:2%;
     z-index: 3;
     filter:invert(1);
 }
