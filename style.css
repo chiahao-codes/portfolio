@@ -52,10 +52,7 @@ body>#navBar {
 }
 
 #navBar>#mode_switch_wrapper>img>.switch_circle {
-    width: 31px;
-    height:31px;
-    border-radius: 50px;
-    background-color:black;
+
     position:relative;
     right:0px;
     z-index:3;
