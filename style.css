@@ -49,6 +49,7 @@ body>#navBar {
     top: 50%;
     transform: translateY(-50%);
     left: 24px;
+    cursor: pointer;
 }
 #navBar>#mode_switch_wrapper>switch_bulb_img{
 
