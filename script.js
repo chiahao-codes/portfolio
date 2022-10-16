@@ -21,9 +21,9 @@ function setHomePage() {
   homeContainer.style.position = "absolute";
   homeContainer.style.top = "30vh";
   portfolioContainer.style.display = "none";
-  body.style.backgroundColor = "white";
-  navBar.style.backgroundColor = "#ebeded";
-  //#1a1a1a
+  //body.style.backgroundColor = "white";
+
+  //#1a1a1a#ebeded navBar.style.backgroundColor = "";
 }
 
 
