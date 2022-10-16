@@ -43,7 +43,7 @@ body>#navBar {
     border-radius:40px;
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: #1a1a1a;
     position:relative;
     top: auto;
     bottom: auto;
