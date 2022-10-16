@@ -18,9 +18,9 @@ html {
      height: 100vh;
      width: 100vw;
      font-family: "Cormorant SC", sans-serif;
-     overflow: hidden;
+     overflow-x: hidden;
+     overflow-y: scroll;
      margin: 0;
-     visibility: visible;
      position: relative;
  }
 
@@ -51,7 +51,7 @@ body>#navBar {
     transform: translateY(-50%);
     left: 24px;
     cursor: pointer;
-    z-index: 2;
+
     overflow: hidden;
 }
 
@@ -111,7 +111,7 @@ body > nav {
 
  /*Portfolio Page*/
  .portfolioContainer {
-    display: none;
+  
      width: 100%;
      height: fit-content;
      position: relative;

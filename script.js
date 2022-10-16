@@ -3,6 +3,7 @@ let navBar = document.getElementById("navBar");
 let homeContainer = document.getElementById("homeContainer");
 let portfolioContainer = document.querySelector("body > section");
 let modeSwitchWrapper = document.getElementById("mode_switch_wrapper");
+let gsap = require("gsap");
 let tl = gsap.timeline();
 
 
@@ -14,7 +15,7 @@ function setHomePage() {
   homeContainer.style.alignContent = "center";
   homeContainer.style.position = "absolute";
   homeContainer.style.top = "30vh";
-  
+  portfolioContainer.style.display = "none";
   body.style.backgroundColor = "#161617";
   navBar.style.backgroundColor = "#1a1a1a";
 }
