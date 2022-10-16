@@ -45,9 +45,9 @@ body>#navBar {
     justify-content: center;
     background-color: #1a1a1a;
     position:relative;
-    top: auto;
-    bottom: auto;
-    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
 }
 
 /*mobile menu nav bar*/
