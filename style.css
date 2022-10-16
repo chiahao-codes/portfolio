@@ -68,7 +68,7 @@ body>#navBar {
 }
 
 #switch_icon_wrapper>.moon{
-  filter: invert(.5) sepia(2) saturate(10) rotate(10deg);
+  filter: invert(.5) sepia(2) saturate(10) hue-rotate(175deg);
 }
 
 #switch_icon_wrapper>.sun{
