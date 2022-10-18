@@ -25,15 +25,14 @@ function setHomePage() {
   portfolioContainer.style.display = "none";
 }
 
-modeSwitchContainer.addEventListener("click", (switchCircle) => {
-  console.log(switchCircle);
+modeSwitchContainer.addEventListener("click", (e) => {
+  console.log(e);
   alert("modeSwitch");
-  
-  if (switchCircle.style.left === "2%") {
+  /** if (switchCircle.style.left === "2%") {
     darkMode();
   } else {
     lightMode()
-   }
+   } */
 })
 
 
