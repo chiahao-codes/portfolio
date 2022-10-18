@@ -1,7 +1,7 @@
 window.addEventListener("load", () => {
   setHomePage();
-  //lightMode();
-  darkMode();
+  lightMode();
+  //darkMode();
 })
 
 
@@ -27,18 +27,9 @@ function setHomePage() {
   portfolioContainer.style.display = "none";
 }
 
-for (let i of switchImgs) {
-  i.addEventListener("click", () => {
-      mode = localStorage.getItem("mode");
-    if (mode === "light") {
-      darkMode();
-    } else {
-      lightMode();
-    }
-  })
-}
-
-
+homeContainer.addEventListener("click", () => {
+  darkMode();
+})
 
 
   /**
