@@ -27,13 +27,14 @@ function setHomePage() {
 
 modeSwitchContainer.addEventListener("click", () => {
   console.log(switchCircle);
-  
+  if (switchCircle.style.left === "2%") {
+    darkMode();
+  } else {
+    lightMode();
+  }
+
   /**
- * if (switchCircle.style.left === "2%") {
-  darkMode();
-} else {
-  lightMode();
-}
+ * 
  */
 })
 
