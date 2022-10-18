@@ -32,6 +32,7 @@ function darkMode() {
   modeSwitchContainer.style.backgroundColor = "black";
   switchCircle.style.right = "2%";
   switchCircle.style.filter = "invert(1)";
+  switchCircle.style.boxShadow = " 0 0 10px #fff;";
   menuIcon.forEach((m) => {
     m.style.backgroundColor = "white";
   });
@@ -44,6 +45,7 @@ function lightMode() {
   modeSwitchContainer.style.backgroundColor = "#dcdcde";
   switchCircle.style.left = "2%";
   switchCircle.style.filter = "invert(0)";
+  switchCircle.style.boxShadow = " 0 0 10px #000;";
   menuIcon.forEach((m) => {
     m.style.backgroundColor = "black";
   });
