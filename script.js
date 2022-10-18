@@ -24,7 +24,8 @@ function setHomePage() {
   portfolioContainer.style.display = "none";
 }
 
-modeSwitchContainer.addEventListener("click", () => {
+modeSwitchContainer.addEventListener("click", (switchCircle) => {
+  alert("modeSwitch")
   if (switchCircle.style.left === "2%") {
     darkMode();
   } else {
@@ -35,34 +36,29 @@ modeSwitchContainer.addEventListener("click", () => {
 
 function darkMode() {
   tl.to(
-    switchCircle,
+    ".switch_circle",
     { duration: 0.12, right: "2%", filter: "invert(1)", ease: "ease-in" },
     0
   )
     .to(
-      switchCircle,
-      { duration: 0.1, boxShadow: "0 0 10px #fff", ease: "ease-in" },
-      0
-    )
-    .to(
-      homeContainer,
+      "#homeContainer",
       { duration: 0.1, color: "white", ease: "ease-in" },
-      ">.75"
+      ">.15"
     )
     .to(
-      body,
+      ".body",
       { duration: 0.1, backgroundColor: "#161617", ease: "ease-in" },
-      ">.75"
+      ">.15"
     )
     .to(
-      navBar,
+      "#navBar",
       { duration: 0.1, backgroundColor: "#1a1a1a", ease: "ease-in" },
-      ">.75"
+      ">.15"
     )
     .to(
-      modeSwitchContainer,
+      "#mode_switch_container",
       { duration: 0.1, backgroundColor: "black", ease: "ease-in" },
-      ">.75"
+      ">.15"
     );
   menuIcon.forEach((m) => {
     m.style.backgroundColor = "white";
@@ -71,34 +67,29 @@ function darkMode() {
 
 function lightMode() {
   tl.to(
-    switchCircle,
+    ".switch_circle",
     { duration: 0.12, left: "2%", filter: "invert(0)", ease: "ease-in" },
     0
   )
     .to(
-      switchCircle,
-      { duration: 0.1, boxShadow: "0 0 10px #000", ease: "ease-in" },
-      0
-    )
-    .to(
-      homeContainer,
+      "#homeContainer",
       { duration: 0.1, color: "black", ease: "ease-in" },
-      ">.75"
+      ">.15"
     )
     .to(
-      body,
+      ".body",
       { duration: 0.1, backgroundColor: "white", ease: "ease-in" },
-      ">.75"
+      ">.15"
     )
     .to(
-      navBar,
+      "#navBar",
       { duration: 0.1, backgroundColor: "#ebeded", ease: "ease-in" },
-      ">.75"
+      ">.15"
     )
     .to(
-      modeSwitchContainer,
+      "#mode_switch_container",
       { duration: 0.1, backgroundColor: "#dcdcde", ease: "ease-in" },
-      ">.75"
+      ">.15"
     );
   //homeContainer.style.color = "black";
   //body.style.backgroundColor = "white";

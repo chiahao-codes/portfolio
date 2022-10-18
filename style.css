@@ -39,7 +39,6 @@ body>#navBar {
     display: flex;
     justify-content: left;
     align-items: center;
-   
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -53,8 +52,6 @@ body>#navBar {
     top:auto;
     bottom:auto;
     z-index: 3;
-    
- 
 }
 
  #switch_icon_wrapper{
