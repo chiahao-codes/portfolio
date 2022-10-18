@@ -1,18 +1,19 @@
 window.addEventListener("load", () => {
   setHomePage();
   lightMode();
-  //darkMode();
 })
+
+
 let body = document.getElementsByTagName("body")[0];
 let navBar = document.getElementById("navBar");
 let homeContainer = document.getElementById("homeContainer");
 let portfolioContainer = document.querySelector("body > section");
 let switchBulbWrap = document.getElementById("switch_bulb_wrapper");
 let switchCircle = document.querySelector(".switch_circle");
-console.log(switchCircle);
 let modeSwitchContainer = document.getElementById("mode_switch_container");
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
 let tl = gsap.timeline();
+let mode;
 
 //set this via css***
 function setHomePage() {
@@ -25,15 +26,16 @@ function setHomePage() {
 }
 
 modeSwitchContainer.addEventListener("click", () => {
-  console.log(switchCircle);
-  if (switchCircle.style.left === "2%") {
+  mode = localStorage.getItem("mode");
+  if (mode === "light") {
     darkMode();
   } else {
     lightMode();
   }
 
   /**
- * 
+ * console.log(switchCircle);
+  
  */
 })
 
@@ -67,6 +69,7 @@ function darkMode() {
   menuIcon.forEach((m) => {
     m.style.backgroundColor = "white";
   });
+  localStorage.setItem("mode", "dark");
 }
 
 function lightMode() {
@@ -95,18 +98,11 @@ function lightMode() {
       { duration: 0.1, backgroundColor: "#dcdcde", ease: "ease-in" },
       ">.15"
     );
-  //homeContainer.style.color = "black";
-  //body.style.backgroundColor = "white";
-  //navBar.style.backgroundColor = "#ebeded";
-  //modeSwitchContainer.style.backgroundColor = "#dcdcde";
-  //switchCircle.style.left = "2%";
-  //switchCircle.style.filter = "invert(0)";
-  //switchCircle.style.boxShadow = " 0 0 10px #000;";
+
   menuIcon.forEach((m) => {
     m.style.backgroundColor = "black";
   });
+
+  localStorage.setItem("mode", "light");
 }
 
-/**
- 
- */
