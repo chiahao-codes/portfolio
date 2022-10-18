@@ -12,6 +12,7 @@ let homeContainer = document.getElementById("homeContainer");
 let portfolioContainer = document.querySelector("body > section");
 let switchBulbWrap = document.getElementById("switch_bulb_wrapper");
 let switchCircle = document.querySelector(".switch_circle");
+let switchImgs = document.getElementsByClassName("switch_icon_img");
 let modeSwitchContainer = document.getElementById("mode_switch_container");
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
 let tl = gsap.timeline();
@@ -27,20 +28,33 @@ function setHomePage() {
   portfolioContainer.style.display = "none";
 }
 
-modeSwitchContainer.addEventListener("click", () => {
+for (let i of switchImgs) {
+  i.addEventListener("click", () => {
+      mode = localStorage.getItem("mode");
+    if (mode === "light") {
+      darkMode();
+    } else {
+      lightMode();
+    }
+  })
+}
+
+
+
+
+  /**
+   * 
+   * modeSwitchContainer.addEventListener("click", () => {
   mode = localStorage.getItem("mode");
   if (mode === "light") {
     darkMode();
   } else {
     lightMode();
   }
-
-  /**
+})
  * console.log(switchCircle);
   
  */
-})
-
 
 function darkMode() {
   tl.to(
