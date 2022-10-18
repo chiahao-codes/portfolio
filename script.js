@@ -25,7 +25,7 @@ function setHomePage() {
 }
 
 modeSwitchContainer.addEventListener("click", (e) => {
-  console.log(e);
+  console.log(e.style.left);
   alert("modeSwitch");
   /** if (switchCircle.style.left === "2%") {
     darkMode();
