@@ -24,14 +24,16 @@ function setHomePage() {
   portfolioContainer.style.display = "none";
 }
 
-modeSwitchContainer.addEventListener("click", (e) => {
-  console.log(e.style.left);
-  alert("modeSwitch");
-  /** if (switchCircle.style.left === "2%") {
-    darkMode();
-  } else {
-    lightMode()
-   } */
+modeSwitchContainer.addEventListener("click", () => {
+  console.log(switchCircle);
+  
+  /**
+ * if (switchCircle.style.left === "2%") {
+  darkMode();
+} else {
+  lightMode();
+}
+ */
 })
 
 
