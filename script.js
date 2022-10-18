@@ -1,6 +1,7 @@
 window.addEventListener("load", () => {
   setHomePage();
-  lightMode();
+  //lightMode();
+  darkMode();
 })
 
 
