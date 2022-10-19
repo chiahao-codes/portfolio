@@ -85,10 +85,11 @@ function lightMode() {
     modeSwitchContainer.style.transitionDuration = "100ms";
     modeSwitchContainer.style.transitionTimingFunction = "ease-in";
    
-  switchCircle.style.left = "2%";
+  //switchCircle.style.left = "2%";
+  switchCircle.style.transform = "translateX(-10%)"
   switchCircle.style.right = "0%";
     switchCircle.style.filter = "invert(0)";
-    switchCircle.style.transitionProperty = "left, filter";
+    switchCircle.style.transitionProperty = "transform, filter";
     switchCircle.style.transitionDuration = "100ms";
     switchCircle.style.transitionTimingFunction = "ease-in";
 
