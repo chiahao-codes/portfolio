@@ -9,6 +9,7 @@ html {
 }
 
  body {
+    background-color: #161617;
      height: 100vh;
      width: 100vw;
      font-family: "Cormorant SC", sans-serif;
@@ -19,6 +20,7 @@ html {
  }
 
 body>#navBar {
+    background-color: #1a1a1a;
     background-image: "url(./assets/black-linen.png)";
     display: block;
     position: relative;
@@ -33,6 +35,7 @@ body>#navBar {
 }
 
 #mode_switch_container {
+    background-color: black;
     width: 65px;
     height: 30px;
     border-radius: 40px;
@@ -49,6 +52,8 @@ body>#navBar {
 
 #mode_switch_container > .switch_circle {
     position: absolute;
+    right: 2%;
+    filter: invert(1);
     top:auto;
     bottom:auto;
     z-index: 3;
@@ -80,6 +85,8 @@ body > nav {
  /*Home Page
 */
  body > #homeContainer {
+    color: white;
+    width: 100%;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -116,7 +123,7 @@ body > nav {
 
  /*Portfolio Page*/
  #portfolioContainer {
-   
+   display: none;
      width: 100%;
      height: fit-content;
      position: relative;
@@ -279,6 +286,84 @@ body > nav {
     filter: brightness(150%), contrast(150%);
  }
 
+/*Dark Mode Transitions*/
+
+.dark_mode_body{
+    background-color: #161617;
+    transition-property:background-color;
+    transition-timing-function:ease-in;
+    transition-duration:100ms;
+}
+
+.dark_mode_navbar {
+    background-color: #1a1a1a;
+    transition: background-color, 100ms, ease-in;
+}
+
+.dark_mode_mode_switch_container{
+    background-color: black;
+    transition:background-color, 100ms, ease-in;
+}
+
+.dark_mode_switch_circle {
+    right: 2%;
+    filter: invert(1);
+    transition-property: right, filter;
+    transition-timing-function: ease-in;
+    transition-duration: 100ms;
+}
+
+.dark_mode_home_container {
+    color:white;
+    transition-property: color;
+    transition-timing-function: ease-in;
+    transition-duration: 100ms;
+}
+
+.dark_mode_menu_icon{
+    background-color:white;
+    transition:background-color, 100ms, ease-in;
+}
+
+
+/*Light Mode Transitions*/
+.light_mode_body {
+    background-color: white;
+    transition-property: background-color;
+    transition-timing-function: ease-in;
+    transition-duration: 100ms;
+}
+
+.light_mode_navbar {
+    background-color: #ebeded;
+    transition: background-color, 100ms, ease-in;
+}
+
+.light_mode_mode_switch_container {
+    background-color: #dcdcde;
+    transition: background-color, 100ms, ease-in;
+}
+
+.light_mode_switch_circle {
+    left: 2%;
+    filter: invert(0);
+    transition-property: right, filter;
+    transition-timing-function: ease-in;
+    transition-duration: 100ms;
+}
+
+.light_mode_home_container {
+    color: white;
+    transition-property: color;
+    transition-timing-function: ease-in;
+    transition-duration: 100ms;
+}
+
+.light_mode_menu_icon {
+    background-color: black;
+    transition: background-color, 100ms, ease-in;
+}
+
 
 @media screen and (max-width:831.99px) {
 
@@ -302,7 +387,7 @@ body >#navBar > #menuIconWrapper {
 }
 
 body >#navBar >#menuIconWrapper > .menuIcon {
-  
+    background-color: white;
     background-image: "url(./assets/brilliant.png)";
     filter: brightness(120%), contrast(120%);
     width: 35px;

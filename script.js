@@ -1,9 +1,3 @@
-window.addEventListener("load", () => {
-  setHomePage();
-  lightMode();
-  //darkMode();
-})
-
 
 let body = document.getElementsByTagName("body")[0];
 let navBar = document.getElementById("navBar");
@@ -17,64 +11,25 @@ let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
 let tl = gsap.timeline();
 let mode;
 
-//set this via css***
-function setHomePage() {
-  homeContainer.style.width = "100%";
-  homeContainer.style.display = "flex";
-  homeContainer.style.justifyContent = "center";
-  homeContainer.style.alignItems = "center";
-  homeContainer.style.top = "30vh";
-  portfolioContainer.style.display = "none";
-}
-
-homeContainer.addEventListener("click", () => {
-  darkMode();
-})
-
-
-  /**
-   * 
-   * modeSwitchContainer.addEventListener("click", () => {
-  mode = localStorage.getItem("mode");
-  if (mode === "light") {
-    darkMode();
-  } else {
-    lightMode();
-  }
-})
- * console.log(switchCircle);
-  
- */
+  /***/
 
 function darkMode() {
-  tl.to(
-    ".switch_circle",
-    { duration: 0.12, right: "2%", filter: "invert(1)", ease: "ease-in" },
-    0
-  )
-    .to(
-      "#homeContainer",
-      { duration: 0.1, color: "white", ease: "ease-in" },
-      ">.15"
-    )
-    .to(
-      ".body",
-      { duration: 0.1, backgroundColor: "#161617", ease: "ease-in" },
-      ">.15"
-    )
-    .to(
-      "#navBar",
-      { duration: 0.1, backgroundColor: "#1a1a1a", ease: "ease-in" },
-      ">.15"
-    )
-    .to(
-      "#mode_switch_container",
-      { duration: 0.1, backgroundColor: "black", ease: "ease-in" },
-      ">.15"
-    );
-  menuIcon.forEach((m) => {
-    m.style.backgroundColor = "white";
-  });
+  body.classList.replace("light_mode_body","dark_mode_body");
+  navBar.classList.replace("light_mode_navbar","dark_mode_navbar");
+  modeSwitchContainer.classList.replace(
+    "light_mode_mode_switch_container",
+    "dark_mode_mode_switch_container"
+  );
+  switchCircle.classList.replace(
+    "light_mode_switch_circle",
+    "dark_mode_switch_circle"
+  );
+  homeContainer.classList.replace(
+    "light_mode_home_container",
+    "dark_mode_home_container"
+  );
+  menuIcon.classList.replace("light_mode_menu_icon", "dark_mode_menu_icon");
+
   localStorage.setItem("mode", "dark");
 }
 
