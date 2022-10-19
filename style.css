@@ -361,7 +361,7 @@ body > nav {
 }
 
 .light_mode_home_container {
-    color: white;
+    color: black;
     transition-property: color;
     transition-timing-function: ease-in;
     transition-duration: 100ms;
