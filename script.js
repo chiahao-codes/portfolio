@@ -1,12 +1,12 @@
 
 let body = document.getElementsByTagName("body")[0];
-let navBar = document.getElementById("navBar");
-let homeContainer = document.getElementById("homeContainer");
+let navBar = document.getElementsByClassName("nav_bar")[0];
+let homeContainer = document.getElementsByClassName("home_heading_container")[0];
 let portfolioContainer = document.querySelector("body > section");
 let switchBulbWrap = document.getElementById("switch_bulb_wrapper");
 let switchCircle = document.querySelector(".switch_circle");
 let switchImgs = document.getElementsByClassName("switch_icon_img");
-let modeSwitchContainer = document.getElementById("mode_switch_container");
+let modeSwitchContainer = document.getElementsByClassName("mode_switch_container");
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
 /***/
 
@@ -84,9 +84,11 @@ function lightMode() {
     });
  
   } else {
-     body.classList.add("light_mode_body");
-    navBar.style.backgroundColor = "#ebeded";
-     modeSwitchContainer.style.backgroundColor = "#dcdcde";
+    body.classList.add("light_mode_body");
+    navBar.classList.add("light_mode_navbar");
+    modeSwitchContainer.classList.add("light_mode_mode_switch_container");
+    //navBar.style.backgroundColor = "#ebeded";
+    // modeSwitchContainer.style.backgroundColor = "#dcdcde";
      switchCircle.classList.add("light_mode_switch_circle");
     homeContainer.classList.add("light_mode_home_container");
      menuIcon.forEach((m) => {
