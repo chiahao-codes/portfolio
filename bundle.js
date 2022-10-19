@@ -90,18 +90,28 @@ function lightMode() {
     navBar.style.transitionDuration = "100ms";
     navBar.style.transitionTimingFunction = "ease-in";
     navBar.style.backgroundColor = "#ebeded";
+    
     modeSwitchContainer.style.backgroundColor = "#dcdcde";
     modeSwitchContainer.style.transitionProperty = "background-color";
     modeSwitchContainer.style.transitionDuration = "100ms";
     modeSwitchContainer.style.transitionTimingFunction = "ease-in";
-     switchCircle.classList.add("light_mode_switch_circle");
-    homeContainer.classList.add("light_mode_home_container");
+   
+    switchCircle.style.left = "2%";
+    switchCircle.style.filter = "invert(0)";
+    switchCircle.style.transitionProperty = "left, filter";
+    switchCircle.style.transitionDuration = "100ms";
+    switchCircle.style.transitionTimingFunction = "ease-in";
+
     homeContainer.style.color = "black";
     homeContainer.style.transitionProperty = "color";
     homeContainer.style.transitionDuration = "100ms";
     homeContainer.style.transitionTimingFunction = "ease-in";
-     menuIcon.forEach((m) => {
-       m.classList.add( "light_mode_menu_icon");
+
+    menuIcon.forEach((m) => {
+      m.style.backgroundColor = "black";
+      m.style.transitionProperty = "background-color"
+      m.style.transitionDuration = "100ms";
+      m.style.transitionTimingFunction = "ease-in";
      });
     
 }

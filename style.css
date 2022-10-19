@@ -352,20 +352,9 @@ body > nav {
     transition-timing-function: ease-in;
 }
 
-.light_mode_switch_circle {
-    left: 2%;
-    filter: none;
-    transition-property: right, filter;
-    transition-timing-function: ease-in;
-    transition-duration: 100ms;
-}
 
-.light_mode_home_container {
-    color: black;
-    transition-property: color;
-    transition-timing-function: ease-in;
-    transition-duration: 100ms;
-}
+
+
 
 .light_mode_menu_icon {
     background-color: black;
