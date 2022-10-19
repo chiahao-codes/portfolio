@@ -5,7 +5,8 @@ let navBar = document.getElementsByClassName("nav_bar")[0];
 let homeContainer = document.getElementsByClassName("home_heading_container")[0];
 let portfolioContainer = document.querySelector("body > section");
 let switchBulbWrap = document.getElementById("switch_bulb_wrapper");
-let switchCircle = document.querySelector(".switch_circle");
+let switchCircle = document.querySelector("#navBar > #mode_switch_container > .switch_circle");
+console.log(switchCircle);
 let switchImgs = document.getElementsByClassName("switch_icon_img");
 let modeSwitchContainer = document.getElementsByClassName("mode_switch_container")[0];
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
@@ -13,7 +14,8 @@ let mode;
 /***/
 
 window.addEventListener("load", () => {
- localStorage.setItem("mode", "dark");
+  localStorage.setItem("mode", "dark");
+
 })
 
 modeSwitchContainer.addEventListener("click", () => {
@@ -46,7 +48,7 @@ function darkMode() {
 
   switchCircle.style.right = "2%";
   switchCircle.style.filter = "invert(1)";
-  switchCircle.style.transitionProperty = "left, filter";
+  switchCircle.style.transitionProperty = "right, filter";
   switchCircle.style.transitionDuration = "100ms";
   switchCircle.style.transitionTimingFunction = "ease-in";
 
