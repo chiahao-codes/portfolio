@@ -91,7 +91,7 @@ body > nav {
      justify-content: center;
      align-items: center;
      position: relative;
-     margin: auto;
+     top:30vh;
      width: 100%;
      height: fit-content;
  }
