@@ -46,8 +46,9 @@ function darkMode() {
   modeSwitchContainer.style.transitionTimingFunction = "ease-in";
 
   switchCircle.style.right = "2%";
+  switchCircle.style.left = "0%";
   switchCircle.style.filter = "invert(1)";
-  switchCircle.style.transitionProperty = "right, filter";
+  switchCircle.style.transitionProperty = "right, left, filter";
   switchCircle.style.transitionDuration = "100ms";
   switchCircle.style.transitionTimingFunction = "ease-in";
 
@@ -83,9 +84,10 @@ function lightMode() {
     modeSwitchContainer.style.transitionDuration = "100ms";
     modeSwitchContainer.style.transitionTimingFunction = "ease-in";
    
-    switchCircle.style.left = "2%";
+  switchCircle.style.left = "2%";
+  switchCircle.style.right = "0%";
     switchCircle.style.filter = "invert(0)";
-    switchCircle.style.transitionProperty = "left, filter";
+    switchCircle.style.transitionProperty = "left, right, filter";
     switchCircle.style.transitionDuration = "100ms";
     switchCircle.style.transitionTimingFunction = "ease-in";
 
