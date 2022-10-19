@@ -86,12 +86,20 @@ function lightMode() {
  
   } else {
     body.classList.add("light_mode_body");
-    navBar.classList.add("light_mode_navbar");
-    modeSwitchContainer.classList.add("light_mode_mode_switch_container");
-    //navBar.style.backgroundColor = "#ebeded";
-    // modeSwitchContainer.style.backgroundColor = "#dcdcde";
+    navBar.style.transitionProperty = "background-color";
+    navBar.style.transitionDuration = "100ms";
+    navBar.style.transitionTimingFunction = "ease-in";
+    navBar.style.backgroundColor = "#ebeded";
+    modeSwitchContainer.style.backgroundColor = "#dcdcde";
+    modeSwitchContainer.style.transitionProperty = "background-color";
+    modeSwitchContainer.style.transitionDuration = "100ms";
+    modeSwitchContainer.style.transitionTimingFunction = "ease-in";
      switchCircle.classList.add("light_mode_switch_circle");
     homeContainer.classList.add("light_mode_home_container");
+    homeContainer.style.color = "black";
+    homeContainer.style.transitionProperty = "color";
+    homeContainer.style.transitionDuration = "100ms";
+    homeContainer.style.transitionTimingFunction = "ease-in";
      menuIcon.forEach((m) => {
        m.classList.add( "light_mode_menu_icon");
      });
