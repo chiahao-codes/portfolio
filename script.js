@@ -46,7 +46,7 @@ function darkMode() {
   modeSwitchContainer.style.transitionTimingFunction = "ease-in";
 
   
-  switchCircle.style.transform = "translateX(28px)";
+  switchCircle.style.transform = "translateX(20px)";
   switchCircle.style.filter = "invert(1)";
   switchCircle.style.transitionProperty = "transform,filter";
   switchCircle.style.transitionDuration = "100ms";
