@@ -322,7 +322,10 @@ body > nav {
 
 .dark_mode_menu_icon{
     background-color:white;
-    transition:background-color, 100ms, ease-in;
+    transition-property: background-color;
+        transition-duration: 100ms;
+        transition-timing-function: ease-in;
+    
 }
 
 
@@ -336,12 +339,17 @@ body > nav {
 
 .light_mode_navbar {
     background-color: #ebeded;
-    transition: background-color, 100ms, ease-in;
+    transition-property:background-color;
+    transition-duration:100ms;
+    transition-timing-function: ease-in;
+    
 }
 
 .light_mode_mode_switch_container {
     background-color: #dcdcde;
-    transition: background-color, 100ms, ease-in;
+    transition-property: background-color;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in;
 }
 
 .light_mode_switch_circle {
@@ -361,7 +369,10 @@ body > nav {
 
 .light_mode_menu_icon {
     background-color: black;
-    transition: background-color, 100ms, ease-in;
+    transition-property: background-color;
+        transition-duration: 100ms;
+        transition-timing-function: ease-in;
+    
 }
 
 
