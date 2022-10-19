@@ -52,7 +52,7 @@ body>#navBar {
 
 #mode_switch_container > .switch_circle {
     position: absolute;
-    transform:translateX(110%);
+    transform:translateX(62px);
     filter: invert(1);
     top:auto;
     bottom:auto;
