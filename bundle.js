@@ -7,7 +7,7 @@ let portfolioContainer = document.querySelector("body > section");
 let switchBulbWrap = document.getElementById("switch_bulb_wrapper");
 let switchCircle = document.querySelector(".switch_circle");
 let switchImgs = document.getElementsByClassName("switch_icon_img");
-let modeSwitchContainer = document.getElementsByClassName("mode_switch_container");
+let modeSwitchContainer = document.getElementsByClassName("mode_switch_container")[0];
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
 /***/
 
