@@ -9,13 +9,21 @@ let switchCircle = document.querySelector(".switch_circle");
 let switchImgs = document.getElementsByClassName("switch_icon_img");
 let modeSwitchContainer = document.getElementsByClassName("mode_switch_container")[0];
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
+let mode;
 /***/
 
+window.addEventListener("load", () => {
+ localStorage.setItem("mode", "dark");
+})
+
 modeSwitchContainer.addEventListener("click", () => {
-  if (body.style.backgroundColor !== "#161617") {
+  mode = localStorage.getItem("mode");
+  if (mode !== "dark") {
     darkMode();
+    localStorage.setItem("mode", "dark");
   } else {
-      lightMode();
+    lightMode();
+    localStorage.setItem("mode", "light");
   }
   /***/
 })
