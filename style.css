@@ -52,7 +52,7 @@ body>#navBar {
 
 #mode_switch_container > .switch_circle {
     position: absolute;
-    margin-right: 2%;
+    right: 2%;
     filter: invert(1);
     top:auto;
     bottom:auto;
