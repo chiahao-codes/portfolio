@@ -12,11 +12,14 @@ let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
 
 modeSwitchContainer.addEventListener("click", () => {
   console.log("modeSwitchContainer clicked");
-  if (body.style.backgroundColor !== "#161617") {
+  lightMode();
+
+  /**
+   * if (body.style.backgroundColor !== "#161617") {
     darkMode();
   } else {
-    lightMode();
   }
+   */
 })
 
 function darkMode() {
