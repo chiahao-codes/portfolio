@@ -11,13 +11,13 @@ let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
 /***/
 
 modeSwitchContainer.addEventListener("click", () => {
+  console.log("modeSwitchContainer clicked");
   if (body.style.backgroundColor !== "#161617") {
     darkMode();
   } else {
     lightMode();
   }
-});
-
+})
 
 function darkMode() {
   if (body.classList.contains("light_mode_body")) {
@@ -37,31 +37,6 @@ function darkMode() {
      );
      menuIcon.classList.replace("light_mode_menu_icon", "dark_mode_menu_icon");
   } else {
-    return
-  }
- 
-}
-
-function lightMode() {
- body.classList.replace("dark_mode_body","light_mode_body");
- navBar.classList.replace("dark_mode_navbar", "light_mode_navbar");
- modeSwitchContainer.classList.replace(
-   "dark_mode_mode_switch_container" ,"light_mode_mode_switch_container"
-  
- );
- switchCircle.classList.replace(
-      "dark_mode_switch_circle","light_mode_switch_circle"
-
- );
- homeContainer.classList.replace(
-    "dark_mode_home_container","light_mode_home_container"
-  
- );
- menuIcon.classList.replace("dark_mode_menu_icon", "light_mode_menu_icon");
-}
-
-/**
- * else {
      body.classList.add("dark_mode_body");
      navBar.classList.add("dark_mode_navbar");
      modeSwitchContainer.classList.add(
@@ -77,4 +52,34 @@ function lightMode() {
      );
      menuIcon.classList.add( "dark_mode_menu_icon");
   }
- */
+ 
+}
+
+function lightMode() {
+  if (body.classList.contains("dark_mode_body")) {
+     body.classList.replace("dark_mode_body","light_mode_body");
+ navBar.classList.replace("dark_mode_navbar", "light_mode_navbar");
+ modeSwitchContainer.classList.replace(
+   "dark_mode_mode_switch_container" ,"light_mode_mode_switch_container"
+  
+ );
+ switchCircle.classList.replace(
+      "dark_mode_switch_circle","light_mode_switch_circle"
+
+ );
+ homeContainer.classList.replace(
+    "dark_mode_home_container","light_mode_home_container"
+  
+ );
+ menuIcon.classList.replace("dark_mode_menu_icon", "light_mode_menu_icon");
+  } else {
+     body.classList.add("light_mode_body");
+     navBar.classList.add("light_mode_navbar");
+     modeSwitchContainer.classList.add("light_mode_mode_switch_container");
+     switchCircle.classList.add("light_mode_switch_circle");
+     homeContainer.classList.add("light_mode_home_container");
+     menuIcon.classList.add("light_mode_menu_icon");
+}
+
+}
+
