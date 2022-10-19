@@ -37,8 +37,11 @@ function darkMode() {
      homeContainer.classList.replace(
        "light_mode_home_container",
        "dark_mode_home_container"
-     );
-     menuIcon.classList.replace("light_mode_menu_icon", "dark_mode_menu_icon");
+    );
+     menuIcon.forEach((m) => {
+       m.classList.replace("light_mode_menu_icon", "dark_mode_menu_icon");
+     });
+     
   } else {
      body.classList.add("dark_mode_body");
      navBar.classList.add("dark_mode_navbar");
@@ -53,7 +56,9 @@ function darkMode() {
    
        "dark_mode_home_container"
      );
-     menuIcon.classList.add( "dark_mode_menu_icon");
+      menuIcon.forEach((m) => {
+        m.classList.add("dark_mode_menu_icon");
+      });
   }
  
 }
