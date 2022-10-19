@@ -85,9 +85,8 @@ function lightMode() {
  
   } else {
      body.classList.add("light_mode_body");
-    navBar.classList.add("light_mode_navbar");
-    console.log(navBar.style.backgroundColor);
-     modeSwitchContainer.classList.add("light_mode_mode_switch_container");
+    navBar.style.backgroundColor = "#ebeded";
+     modeSwitchContainer.style.backgroundColor = "#dcdcde";
      switchCircle.classList.add("light_mode_switch_circle");
     homeContainer.classList.add("light_mode_home_container");
      menuIcon.forEach((m) => {
