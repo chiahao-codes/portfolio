@@ -86,7 +86,8 @@ function lightMode() {
  
   } else {
      body.classList.add("light_mode_body");
-     navBar.classList.add("light_mode_navbar");
+    navBar.classList.add("light_mode_navbar");
+    console.log(navBar.style.backgroundColor);
      modeSwitchContainer.classList.add("light_mode_mode_switch_container");
      switchCircle.classList.add("light_mode_switch_circle");
     homeContainer.classList.add("light_mode_home_container");
