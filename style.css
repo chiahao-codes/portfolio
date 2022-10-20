@@ -57,13 +57,7 @@ body>#navBar {
     display: flex;
     justify-content: left;
     align-items: center;
-    position: relative;
-    /*
-    top: 50%;
-        transform: translateY(-50%);
-        left: 24px;
-    */
-   
+    position: relative; 
     cursor: pointer;
     overflow: hidden;
 }
@@ -107,7 +101,7 @@ position:relative;
 
 /*Desk Top Navigation Links*/
 #navigation_links_wrapper{
-    width:100px;
+    width:200px;
     display:flex;
     justify-content: space-around;
     align-items: center;
@@ -336,6 +330,10 @@ body > nav {
 
 #mode_switch_social_wrapper{
 display: none;
+}
+
+#navigation_links_wrapper {
+    display:none;
 }
 
 body >#navBar > .menu_icon_wrapper {
