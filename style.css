@@ -74,7 +74,7 @@ border-color:2px solid;
 }
 
 /*mobile menu nav bar*/
-body>#navBar>#menuIconWrapper{
+body>#navBar>.menu_icon_wrapper{
     display:none;
 }
 
@@ -294,7 +294,7 @@ body > nav {
     display: none;
 }
 
-body >#navBar > #menuIconWrapper {
+body >#navBar > .menu_icon_wrapper {
     background-color: inherit;
     display:flex;
     flex-direction: column;
@@ -309,7 +309,7 @@ body >#navBar > #menuIconWrapper {
    
 }
 
-body >#navBar >#menuIconWrapper > .menuIcon {
+body >#navBar >.menu_icon_wrapper > .menuIcon {
     background-color: white;
     background-image: "url(./assets/brilliant.png)";
     filter: brightness(120%), contrast(120%);
