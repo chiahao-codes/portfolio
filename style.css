@@ -19,7 +19,7 @@ html {
      position: relative;
  }
 
- 
+
 /*nav bar*/
 body>#navBar {
     background-color: #1a1a1a;
@@ -332,8 +332,8 @@ body >#navBar > .menu_icon_wrapper {
     justify-content: space-around;
     align-items: center;
     position:relative;
-    left:5px;
-    top:6px;
+ 
+   
     height: 45px;
     width:45px;
     cursor: pointer; 
@@ -346,7 +346,6 @@ body >#navBar >.menu_icon_wrapper > .menuIcon {
     width: 35px;
     height: 5px;
     border-radius:3px;
-
 }
 
 body>nav {
