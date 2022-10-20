@@ -4,7 +4,8 @@ let homeContainer = document.getElementsByClassName("home_heading_container")[0]
 let portfolioContainer = document.querySelector("body > section");
 let switchCircle = document.querySelector("#navBar > #mode_switch_social_wrapper > #mode_switch_container > .switch_circle");
 let modeSwitchContainer = document.getElementsByClassName("mode_switch_container")[0];
-let socialIcons = document.querySelectorAll(".social_icon_parent > .social_icon");
+let socialIcons = document.querySelectorAll(".social_icon_parent > a > .social_icon");
+let navLinksWrapper = document.querySelectorAll("#navBar > #navigation_links_wrapper")[0];
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
 let mode;
 /***/
@@ -42,17 +43,18 @@ function darkMode() {
   modeSwitchContainer.style.transitionDuration = "100ms";
   modeSwitchContainer.style.transitionTimingFunction = "ease-in";
 
-  
   switchCircle.style.transform = "translateX(1.5px)";
   switchCircle.style.filter = "invert(1)";
   switchCircle.style.transitionProperty = "transform,filter";
   switchCircle.style.transitionDuration = "100ms";
   switchCircle.style.transitionTimingFunction = "ease-in";
 
+  navLinksWrapper.style.color = "white";
+
    homeContainer.style.color = "white";
    homeContainer.style.transitionProperty = "color";
    homeContainer.style.transitionDuration = "100ms";
-  homeContainer.style.transitionTimingFunction = "ease-in";
+   homeContainer.style.transitionTimingFunction = "ease-in";
   
   for (let s of socialIcons) {
     s.style.filter = "invert(1)";
@@ -95,6 +97,8 @@ function lightMode() {
     switchCircle.style.transitionDuration = "100ms";
     switchCircle.style.transitionTimingFunction = "ease-in";
 
+  navLinksWrapper.style.color = "black";
+  
     homeContainer.style.color = "black";
     homeContainer.style.transitionProperty = "color";
     homeContainer.style.transitionDuration = "100ms";
