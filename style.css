@@ -44,7 +44,7 @@ body>#navBar {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 10px;
+    column-gap: 13px;
 }
 
 #mode_switch_container {
@@ -319,8 +319,8 @@ body > nav {
 
 @media screen and (max-width:831.99px) {
 
-#mode_switch_container {
-    display: none;
+#mode_switch_social_wrapper{
+display: none;
 }
 
 body >#navBar > .menu_icon_wrapper {
@@ -335,7 +335,6 @@ body >#navBar > .menu_icon_wrapper {
     height: 45px;
     width:45px;
     cursor: pointer; 
-   
 }
 
 body >#navBar >.menu_icon_wrapper > .menuIcon {
