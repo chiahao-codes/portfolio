@@ -41,9 +41,9 @@ body>#navBar {
     position: relative;
     width: 200px;
     height: 100%;
-    left: 8px;
+ 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -93,7 +93,7 @@ border-color:2px solid;
 display: flex;
 justify-content: center;
 align-items: center;
-width:85px;
+width:100px;
 position:relative;
 }
 
