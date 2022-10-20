@@ -101,11 +101,11 @@ position:relative;
 
 /*Desk Top Navigation Links*/
 #navigation_links_wrapper{
-    width:350px;
+    width:300px;
     display:flex;
     justify-content: left;
     align-items: center;
-    column-gap: 5px;
+    column-gap: 9px;
     position:relative;
     color:white;
     font-family:inherit;
