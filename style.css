@@ -94,7 +94,12 @@ width:100px;
 position:relative;
 }
 
-.social_icon_parent > .social_icon{
+.social_icon_parent > a {
+    text-decoration: none;
+    width:fit-content;
+}
+
+.social_icon_parent > a > .social_icon{
     filter: invert(1);
     cursor:pointer;
 }
@@ -116,6 +121,7 @@ position:relative;
     width:fit-content;
     filter:brightness(110%), contrast(110%);
     font-weight: 600;
+    cursor:pointer;
 }
 
 /*hamburger menu bars*/
