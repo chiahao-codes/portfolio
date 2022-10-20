@@ -124,7 +124,11 @@ position:relative;
     width:fit-content;
     filter:brightness(110%), contrast(110%);
     font-weight: 600;
-    cursor:pointer;
+    
+}
+
+#navigation_links_wrapper> .nav_links:hover {
+    cursor: pointer;
 }
 
 /*hamburger menu bars*/
