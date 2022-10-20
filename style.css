@@ -97,6 +97,13 @@ width:100px;
 position:relative;
 }
 
+#social_icon_parent > .social_icon{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    filter: invert(1);
+}
+
 /*hamburger menu bars*/
 body>#navBar>.menu_icon_wrapper{
     display:none;
