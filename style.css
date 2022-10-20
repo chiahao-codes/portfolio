@@ -332,7 +332,7 @@ body >#navBar > .menu_icon_wrapper {
     justify-content: space-around;
     align-items: center;
     position:relative;
- 
+    left:5px;
    
     height: 45px;
     width:45px;
