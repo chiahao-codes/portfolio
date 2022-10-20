@@ -41,10 +41,10 @@ body>#navBar {
     position: relative;
     width: 200px;
     height: 100%;
- 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    column-gap: 5px;
 }
 
 #mode_switch_container {
@@ -91,7 +91,7 @@ border-color:2px solid;
 
 .social_icon_parent {
 display: flex;
-justify-content: center;
+justify-content: space-around;
 align-items: center;
 width:100px;
 position:relative;
