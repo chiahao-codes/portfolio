@@ -105,6 +105,19 @@ position:relative;
     cursor:pointer;
 }
 
+/*Desk Top Navigation Links*/
+#navigation_links_wrapper{
+    width:100px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 3px;
+    position:relative;
+    color:white;
+    font-family:inherit;
+    font-size:1em;
+}
+
 /*hamburger menu bars*/
 body>#navBar>.menu_icon_wrapper{
     display:none;
