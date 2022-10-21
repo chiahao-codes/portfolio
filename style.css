@@ -414,7 +414,33 @@ body>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(4){
     top:34px;
 }
 
+/*mobile menu animation*/
+body>#navBar>.menu_icon_wrapper.open .menuIcon:nth-child(1){
+    top: 19px;
+    width:0%;
+    left:50%;
+}
 
+body>#navBar>.menu_icon_wrapper.open .menuIcon:nth-child(2)
+ {
+      -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+}
+
+body>#navBar>.menu_icon_wrapper.open .menuIcon:nth-child(3){
+    -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+}
+
+body>#navBar>.menu_icon_wrapper.open .menuIcon:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+}
 
 
 body>nav {
