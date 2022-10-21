@@ -392,10 +392,10 @@ body >#navBar >.menu_icon_wrapper > .menuIcon {
     height: 4.5px;
     border-radius:3px;
     position:absolute;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg) translateX();
+    -moz-transform: rotate(0deg) translateX();
+    -o-transform: rotate(0deg) translateX();
+    transform: rotate(0deg) translateX();
     -webkit-transition: .25s ease-in-out;
     -moz-transition: .25s ease-in-out;
     -o-transition: .25s ease-in-out;
@@ -418,7 +418,7 @@ body>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(4){
 body>#navBar>.menu_icon_wrapper.open> .menuIcon:nth-child(1){
     top: 19px;
     width:0%;
-   
+    transform:translateX(50%);
 }
 
 body>#navBar>.menu_icon_wrapper.open> .menuIcon:nth-child(2)
@@ -439,6 +439,7 @@ body>#navBar>.menu_icon_wrapper.open> .menuIcon:nth-child(3){
 body>#navBar>.menu_icon_wrapper.open> .menuIcon:nth-child(4) {
         top: 18px;
         width: 0%;
+        transform:translateX(50%);
        
 }
 
