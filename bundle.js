@@ -8,14 +8,13 @@ let modeSwitchContainer = document.getElementsByClassName("mode_switch_container
 let socialIcons = document.querySelectorAll(".social_icon_parent > a > .social_icon");
 let navLinksWrapper = document.querySelectorAll("#navBar > #navigation_links_wrapper")[0];
 let navLinks = navLinksWrapper.children;
-
+let mobileMenuIconWrapper = document.getElementById("#menuIconWrapper");
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
 let mode;
 /***/
 
 window.addEventListener("load", () => {
   localStorage.setItem("mode", "dark");
-
 });
 
 
@@ -28,7 +27,11 @@ modeSwitchContainer.addEventListener("click", () => {
     lightMode();
     localStorage.setItem("mode", "light");
   }
-  /***/
+
+})
+
+mobileMenuIconWrapper.addEventListener("click", function(){
+  this.classList.toggle("open");
 })
 
 function darkMode() {
@@ -71,15 +74,6 @@ function darkMode() {
     n.style.filter = "brightness(110%), contrast(110%)";
     n.style.fontWeight = "600";
   }
-  /**
-   * for (let s of socialIcons) {
-    s.style.filter = "invert(1)";
-    s.style.transitionProperty = "filter";
-    s.style.transitionDuration = "100ms";
-    s.style.transitionTimingFunction = "ease-in";
-  }
-   * 
-   */
 
   for (let m of menuIcon) {
     m.style.backgroundColor = "white";
@@ -129,15 +123,6 @@ function lightMode() {
     n.style.filter = "brightness(110%), contrast(110%)";
     n.style.fontWeight = "600";
   }
-
-  /**
-   * for (let s of socialIcons) {
-     s.style.filter = "invert(0)";
-    s.style.transitionProperty = "filter";
-    s.style.transitionDuration = "100ms";
-    s.style.transitionTimingFunction = "ease-in";
-   }
-   */
 
   for (let m of menuIcon) {
     m.style.backgroundColor = "black";
