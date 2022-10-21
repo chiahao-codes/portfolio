@@ -15,7 +15,8 @@ let mode;
 window.addEventListener("load", () => {
   localStorage.setItem("mode", "dark");
 
-})
+});
+
 
 modeSwitchContainer.addEventListener("click", () => {
   mode = localStorage.getItem("mode");

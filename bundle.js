@@ -7,6 +7,8 @@ let switchCircle = document.querySelector("#navBar > #mode_switch_social_wrapper
 let modeSwitchContainer = document.getElementsByClassName("mode_switch_container")[0];
 let socialIcons = document.querySelectorAll(".social_icon_parent > a > .social_icon");
 let navLinksWrapper = document.querySelectorAll("#navBar > #navigation_links_wrapper")[0];
+let navLinks = navLinksWrapper.children;
+
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
 let mode;
 /***/
@@ -14,7 +16,8 @@ let mode;
 window.addEventListener("load", () => {
   localStorage.setItem("mode", "dark");
 
-})
+});
+
 
 modeSwitchContainer.addEventListener("click", () => {
   mode = localStorage.getItem("mode");
@@ -51,11 +54,19 @@ function darkMode() {
   switchCircle.style.transitionTimingFunction = "ease-in";
 
   navLinksWrapper.style.color = "white";
+  navLinksWrapper.style.transitionProperty = "color";
+  navLinksWrapper.style.transitionDuration = "100ms";
+  navLinksWrapper.style.transitionTimingFunction = "ease-in";
 
    homeContainer.style.color = "white";
    homeContainer.style.transitionProperty = "color";
    homeContainer.style.transitionDuration = "100ms";
-   homeContainer.style.transitionTimingFunction = "ease-in";
+  homeContainer.style.transitionTimingFunction = "ease-in";
+  
+  for (let n of navLinks) {
+    n.style.filter = "brightness(110%), contrast(110%)";
+    n.style.fontWeight = "600";
+  }
   
   for (let s of socialIcons) {
     s.style.filter = "invert(1)";
@@ -99,11 +110,19 @@ function lightMode() {
     switchCircle.style.transitionTimingFunction = "ease-in";
 
   navLinksWrapper.style.color = "black";
+  navLinksWrapper.style.transitionProperty = "color";
+  navLinksWrapper.style.transitionDuration = "100ms";
+  navLinksWrapper.style.transitionTimingFunction = "ease-in";
   
     homeContainer.style.color = "black";
     homeContainer.style.transitionProperty = "color";
     homeContainer.style.transitionDuration = "100ms";
   homeContainer.style.transitionTimingFunction = "ease-in";
+
+   for (let n of navLinks) {
+     n.style.filter = "brightness(110%), contrast(110%)";
+     n.style.fontWeight = "600";
+   }
   
    for (let s of socialIcons) {
      s.style.filter = "invert(0)";
