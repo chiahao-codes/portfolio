@@ -360,6 +360,7 @@ display: none;
 
 body >#navBar > .menu_icon_wrapper {
     background-color: inherit;
+    display: block;
     /*
     display: flex;
         flex-direction: column;
@@ -382,6 +383,7 @@ body >#navBar > .menu_icon_wrapper {
 }
 
 body >#navBar >.menu_icon_wrapper > .menuIcon {
+    display: block;
     background-color: white;
     background-image: "url(./assets/brilliant.png)";
     filter: brightness(120%), contrast(120%);
