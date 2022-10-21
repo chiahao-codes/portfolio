@@ -369,9 +369,8 @@ body >#navBar > .menu_icon_wrapper {
     */
     position:relative;
     left:9px;
-  
     height: 45px;
-    width:45px;
+    width:35px;
     cursor: pointer; 
     -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
@@ -388,8 +387,9 @@ body >#navBar >.menu_icon_wrapper > .menuIcon {
     background-color: white;
     background-image: "url(./assets/brilliant.png)";
     filter: brightness(120%), contrast(120%);
-    width: 35px;
+    width: 100%;
     height: 4.5px;
+    left: 0px;
     border-radius:3px;
     position:absolute;
     -webkit-transform: rotate(0deg) translateX();
