@@ -419,7 +419,7 @@ body>#navBar>.menu_icon_wrapper.open> .menuIcon:nth-child(1){
     top: 19px;
     width:0%;
     left: 50%;
-    transform:translateX(-50%);
+    
 }
 
 body>#navBar>.menu_icon_wrapper.open> .menuIcon:nth-child(2)
@@ -440,7 +440,7 @@ body>#navBar>.menu_icon_wrapper.open> .menuIcon:nth-child(3){
 body>#navBar>.menu_icon_wrapper.open> .menuIcon:nth-child(4) {
         top: 18px;
         width: 0%;
-        transform:translateX(-50%);
+        left: 50%;
        
 }
 
