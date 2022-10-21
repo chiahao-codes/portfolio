@@ -122,15 +122,16 @@ position:relative;
     font-size:1em;
     overflow: hidden;
 }
+
 #navigation_links_wrapper > .nav_links{
     width:fit-content;
     filter:brightness(110%), contrast(110%);
     font-weight: 600;
-    
 }
 
 #navigation_links_wrapper> .nav_links:hover {
     cursor: pointer;
+    text-decoration: underline;
 }
 
 /*hamburger menu bars*/
