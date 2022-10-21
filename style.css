@@ -369,6 +369,7 @@ body >#navBar > .menu_icon_wrapper {
     */
     position:relative;
     left:9px;
+    padding-top:2px;
     height: 45px;
     width:45px;
     cursor: pointer; 
