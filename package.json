@@ -5,8 +5,7 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "main": "script.js",
-    "browser":" browserify script.js > bundle.js "
+    "main": "script.js"
   },
   "author": "Chiahao Chou",
   "license": "ISC",
