@@ -29,8 +29,8 @@ modeSwitchContainer.addEventListener("click", () => {
 
 })
 
-mobileMenuIconWrapper.addEventListener("click", function(){
-  this.classList.toggle("open");
+mobileMenuIconWrapper.addEventListener("click", function(e){
+  e.classList.toggle("open");
 })
 
 function darkMode() {
