@@ -47,6 +47,7 @@ body>#navBar {
     justify-content: center;
     align-items: center;
     column-gap: 15px;
+    left: 10px;
 }
 
 #mode_switch_container {
@@ -113,7 +114,8 @@ position:relative;
     display:flex;
     justify-content: left;
     align-items: center;
-    column-gap: 13px;
+    column-gap: 15px;
+    right:10px;
     position:relative;
     color:white;
     font-family:inherit;
