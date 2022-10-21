@@ -369,7 +369,7 @@ body >#navBar > .menu_icon_wrapper {
     */
     position:relative;
     left:9px;
-    padding-top:2px;
+  
     height: 45px;
     width:45px;
     cursor: pointer; 
@@ -389,7 +389,7 @@ body >#navBar >.menu_icon_wrapper > .menuIcon {
     background-image: "url(./assets/brilliant.png)";
     filter: brightness(120%), contrast(120%);
     width: 35px;
-    height: 5px;
+    height: 4.5px;
     border-radius:3px;
     position:absolute;
     -webkit-transform: rotate(0deg);
@@ -403,15 +403,15 @@ body >#navBar >.menu_icon_wrapper > .menuIcon {
 }
 
 body>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(1) {
-    top:0px;
+    top:4px;
 }
 
 body>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(2), body>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(3) {
-    top: 15px;
+    top: 19px;
 }
 
 body>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(4){
-    top:30px;
+    top:34px;
 }
 
 
