@@ -58,6 +58,10 @@ function darkMode() {
   navLinksWrapper.style.transitionDuration = "100ms";
   navLinksWrapper.style.transitionTimingFunction = "ease-in";
 
+  socialIcons[0].style.filter = "invert(1)";
+  socialIcons[1].style.filter = "invert(1)";
+  socialIcons[2].style.filter = "invert(1)";
+
   homeContainer.style.color = "white";
   homeContainer.style.transitionProperty = "color";
   homeContainer.style.transitionDuration = "100ms";
@@ -111,6 +115,10 @@ function lightMode() {
   navLinksWrapper.style.transitionProperty = "color";
   navLinksWrapper.style.transitionDuration = "100ms";
   navLinksWrapper.style.transitionTimingFunction = "ease-in";
+
+   socialIcons[0].style.filter = "invert(0)";
+   socialIcons[1].style.filter = "invert(0)";
+   socialIcons[2].style.filter = "invert(0)";
 
   homeContainer.style.color = "black";
   homeContainer.style.transitionProperty = "color";
