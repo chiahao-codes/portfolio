@@ -368,7 +368,7 @@ body >#navBar > .menu_icon_wrapper {
         align-items: center;
     */
     position:relative;
-    left:5px;
+    left:9px;
     height: 45px;
     width:45px;
     cursor: pointer; 
@@ -406,11 +406,11 @@ body>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(1) {
 }
 
 body>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(2), body>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(3) {
-    top: 18px;
+    top: 15px;
 }
 
 body>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(4){
-    top:36px;
+    top:30px;
 }
 
 
