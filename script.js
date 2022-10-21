@@ -29,11 +29,9 @@ modeSwitchContainer.addEventListener("click", () => {
 
 })
 
-do {
-  mobileMenuIconWrapper.addEventListener("click", function () {
-    this.classList.toggle("open");
-  });
-} while (mobileMenuIconWrapper !== null);
+ mobileMenuIconWrapper.addEventListener("click", function () {
+   this.classList.toggle("open");
+ });
 
 
 function darkMode() {
