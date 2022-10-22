@@ -14,18 +14,18 @@ let mode;
 
 window.addEventListener("load", () => {
   localStorage.setItem("mode", "dark");
-  modeSwitchContainer.addEventListener("click", () => {
-    this.classList.toggle("open");
-    mode = localStorage.getItem("mode");
-    if (mode !== "dark") {
-      darkMode();
-      localStorage.setItem("mode", "dark");
-      
-    } else {
-      lightMode();
-      localStorage.setItem("mode", "light");
-    }
-  });
+});
+
+modeSwitchContainer.addEventListener("click", function() {
+  this.classList.toggle("open");
+  mode = localStorage.getItem("mode");
+  if (mode !== "dark") {
+    darkMode();
+    localStorage.setItem("mode", "dark");
+  } else {
+    lightMode();
+    localStorage.setItem("mode", "light");
+  }
 });
 
 function darkMode() {
