@@ -7,7 +7,8 @@ let modeSwitchContainer = document.getElementsByClassName("mode_switch_container
 let socialIcons = document.querySelectorAll(".social_icon_parent > a > .social_icon");
 let navLinksWrapper = document.querySelectorAll("#navBar > #navigation_links_wrapper")[0];
 let navLinks = navLinksWrapper.children;
-let mobileMenuIconWrapper = document.querySelector("#navBar > .menu_icon_wrapper")
+let mobileMenuIconWrapper = document.querySelector("#navBar > .menu_icon_wrapper");
+let mobileDropMenu = document.querySelector("body > nav");
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
 let mode;
 /***/
@@ -36,6 +37,11 @@ modeSwitchContainer.addEventListener("click", function() {
 
 modeSwitchContainer.addEventListener("click", function () {
   this.classList.toggle("open");
+  if (this.classList.contains("open")) {
+    mobileDropMenu.classList.add("down");
+  } else {
+    mobileDropMenu.classList.remove ("down");
+  }
 });
 
 function darkMode() {

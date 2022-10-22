@@ -438,7 +438,7 @@ body>#navBar>.menu_icon_wrapper.open> .menuIcon:nth-child(4) {
 }
 
 
-body>nav {
+body>.mobile_navigation_links {
     display: block;
     position: absolute;
     background: inherit;
@@ -449,28 +449,31 @@ body>nav {
     box-shadow: 0 0 10px #000;
 }
 
-nav>ul,
-nav>ul>li {
+body>.mobile_navigation_links >ul,
+body>.mobile_navigation_links >ul>li {
     padding: 0;
     margin: 0 auto;
 }
 
-ul>li {
+body>.mobile_navigation_links >ul>li {
     list-style: none;
     text-align: center;
-}
-
-ul>li>a {
     display: block;
     padding: 15px;
     color: #fff;
     text-decoration: none;
-    font-size: 24pt;
+    font-size: 20pt;
 }
+
+
 
 ul>li>a:hover {
     background: darken(5%);
     text-decoration: underline;
+}
+
+.down {
+    top: 74px;
 }
 
 }
