@@ -14,31 +14,19 @@ let mode;
 
 window.addEventListener("load", () => {
   localStorage.setItem("mode", "dark");
+  modeSwitchContainer.addEventListener("click", () => {
+    this.classList.toggle("open");
+    mode = localStorage.getItem("mode");
+    if (mode !== "dark") {
+      darkMode();
+      localStorage.setItem("mode", "dark");
+      
+    } else {
+      lightMode();
+      localStorage.setItem("mode", "light");
+    }
+  });
 });
-
-
-modeSwitchContainer.addEventListener("click", () => {
-  mode = localStorage.getItem("mode");
-  if (mode !== "dark") {
-    darkMode();
-    localStorage.setItem("mode", "dark");
-    mobileMenuIconWrapper.addEventListener("click", function () {
-   this.classList.toggle("open");
- });
-  } else {
-    lightMode();
-    localStorage.setItem("mode", "light");
-    mobileMenuIconWrapper.addEventListener("click", function () {
-   this.classList.toggle("open");
- });
-  }
-
-})
-
- mobileMenuIconWrapper.addEventListener("click", function () {
-   this.classList.toggle("open");
- });
-
 
 function darkMode() {
   body.style.backgroundColor = "#161617";
