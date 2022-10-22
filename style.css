@@ -386,10 +386,10 @@ body >#navBar >.menu_icon_wrapper > .menuIcon {
     left: 0px;
     border-radius:3px;
     position:absolute;
-    -webkit-transform: rotate(0deg) translateX();
-    -moz-transform: rotate(0deg) translateX();
-    -o-transform: rotate(0deg) translateX();
-    transform: rotate(0deg) translateX();
+    -webkit-transform: rotate(0deg) translateX() left width top;
+    -moz-transform: rotate(0deg) translateX() left width top;
+    -o-transform: rotate(0deg) translateX() left width top;
+    transform: rotate(0deg) translateX() left width top;
     -webkit-transition: .35s ease-in-out;
     -moz-transition: .35s ease-in-out;
     -o-transition: .35s ease-in-out;
@@ -435,7 +435,6 @@ body>#navBar>.menu_icon_wrapper.open> .menuIcon:nth-child(4) {
         top: 18px;
         width: 0%;
         left: 50%;
-       
 }
 
 
