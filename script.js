@@ -7,7 +7,7 @@ let modeSwitchContainer = document.getElementsByClassName("mode_switch_container
 let socialIcons = document.querySelectorAll(".social_icon_parent > a > .social_icon");
 let navLinksWrapper = document.querySelectorAll("#navBar > #navigation_links_wrapper")[0];
 let navLinks = navLinksWrapper.children;
-let mobileMenuIconWrapper = document.querySelector("#navBar > .menu_icon_wrapper");
+let hamburgerMenuWrapper = document.querySelector("#navBar > .menu_icon_wrapper");
 let mobileDropMenu = document.querySelector("body > nav");
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
 let mode;
@@ -17,6 +17,13 @@ window.addEventListener("load", () => {
   localStorage.setItem("mode", "dark");
 });
 
+//mobile hamburger menu
+hamburgerMenuWrapper.addEventListener("click", () => {
+  hamburgerMenuWrapper.classList.toggle("open");
+  navigationDropDown();
+});
+
+//mode switch
 modeSwitchContainer.addEventListener("click", function() {
   mode = localStorage.getItem("mode");
   if (mode !== "dark") {
@@ -26,20 +33,22 @@ modeSwitchContainer.addEventListener("click", function() {
     lightMode();
     localStorage.setItem("mode", "light");
   }
+  hamburgerMenuWrapper.addEventListener("click", () => {
+    hamburgerMenuWrapper.classList.toggle("open");
+    navigationDropDown();
+  });
 });
 
-mobileMenuIconWrapper.addEventListener("click", ()=>{
-  mobileMenuIconWrapper.classList.toggle("open");
-  mobileNavDropDown(mobileMenuIconWrapper);
-})
-
-function mobileNavDropDown(m) {
-  if (m.classList.contains("open")) {
+function navigationDropDown() {
+  if (hamburgerMenuWrapper.classList.contains("open")) {
     mobileDropMenu.classList.add("down");
   } else {
     mobileDropMenu.classList.remove("down");
   }
 }
+
+
+
 
 function darkMode() {
   body.style.backgroundColor = "#161617";
