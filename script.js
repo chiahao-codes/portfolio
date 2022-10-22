@@ -20,7 +20,7 @@ window.addEventListener("load", () => {
 //mobile hamburger menu
 hamburgerMenuWrapper.addEventListener("click", () => {
   hamburgerMenuWrapper.classList.toggle("open");
-  navigationDropDown();
+ 
 });
 
 //mode switch
@@ -29,14 +29,17 @@ modeSwitchContainer.addEventListener("click", function() {
   if (mode !== "dark") {
     darkMode();
     localStorage.setItem("mode", "dark");
+    hamburgerMenuWrapper.addEventListener("click", () => {
+      hamburgerMenuWrapper.classList.toggle("open");
+    });
   } else {
     lightMode();
     localStorage.setItem("mode", "light");
+    hamburgerMenuWrapper.addEventListener("click", () => {
+      hamburgerMenuWrapper.classList.toggle("open");
+    });
   }
-  hamburgerMenuWrapper.addEventListener("click", () => {
-    hamburgerMenuWrapper.classList.toggle("open");
-    navigationDropDown();
-  });
+  
 });
 
 function navigationDropDown() {
