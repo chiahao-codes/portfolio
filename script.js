@@ -17,10 +17,6 @@ window.addEventListener("load", () => {
   localStorage.setItem("mode", "dark");
 });
 
- modeSwitchContainer.addEventListener("click", function () {
-   this.classList.toggle("open");
- });
-
 modeSwitchContainer.addEventListener("click", function() {
   mode = localStorage.getItem("mode");
   if (mode !== "dark") {
@@ -30,19 +26,20 @@ modeSwitchContainer.addEventListener("click", function() {
     lightMode();
     localStorage.setItem("mode", "light");
   }
-  this.classList.toggle("open");
 });
 
+mobileMenuIconWrapper.addEventListener("click", (EventTarget)=>{
+  EventTarget.classList.toggle("open");
+  mobileNavDropDown(mobileMenuIconWrapper);
+})
 
-
-function mobileNavDropDown(msc) {
-  if (msc.classList.contains("open")) {
+function mobileNavDropDown(m) {
+  if (m.classList.contains("open")) {
     mobileDropMenu.classList.add("down");
   } else {
     mobileDropMenu.classList.remove("down");
   }
 }
-
 
 function darkMode() {
   body.style.backgroundColor = "#161617";
