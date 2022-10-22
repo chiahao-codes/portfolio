@@ -37,12 +37,17 @@ modeSwitchContainer.addEventListener("click", function() {
 
 modeSwitchContainer.addEventListener("click", function () {
   this.classList.toggle("open");
-  if (this.classList.contains("open")) {
+  mobileDropMenu(this);
+});
+
+function mobileNavDropDown(msc) {
+  if (msc.classList.contains("open")) {
     mobileDropMenu.classList.add("down");
   } else {
-    mobileDropMenu.classList.remove ("down");
+    mobileDropMenu.classList.remove("down");
   }
-});
+}
+
 
 function darkMode() {
   body.style.backgroundColor = "#161617";
