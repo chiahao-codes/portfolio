@@ -28,8 +28,8 @@ modeSwitchContainer.addEventListener("click", function() {
   }
 });
 
-mobileMenuIconWrapper.addEventListener("click", (EventTarget)=>{
-  EventTarget.classList.toggle("open");
+mobileMenuIconWrapper.addEventListener("click", ()=>{
+  mobileMenuIconWrapper.classList.toggle("open");
   mobileNavDropDown(mobileMenuIconWrapper);
 })
 
