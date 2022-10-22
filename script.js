@@ -22,9 +22,15 @@ modeSwitchContainer.addEventListener("click", () => {
   if (mode !== "dark") {
     darkMode();
     localStorage.setItem("mode", "dark");
+    mobileMenuIconWrapper.addEventListener("click", function () {
+   this.classList.toggle("open");
+ });
   } else {
     lightMode();
     localStorage.setItem("mode", "light");
+    mobileMenuIconWrapper.addEventListener("click", function () {
+   this.classList.toggle("open");
+ });
   }
 
 })
