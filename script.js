@@ -21,11 +21,21 @@ modeSwitchContainer.addEventListener("click", function() {
   mode = localStorage.getItem("mode");
   if (mode !== "dark") {
     darkMode();
+    modeSwitchContainer.addEventListener("click", function () {
+      this.classList.toggle("open");
+    });
     localStorage.setItem("mode", "dark");
   } else {
     lightMode();
+    modeSwitchContainer.addEventListener("click", function () {
+      this.classList.toggle("open");
+    });
     localStorage.setItem("mode", "light");
   }
+});
+
+modeSwitchContainer.addEventListener("click", function () {
+  this.classList.toggle("open");
 });
 
 function darkMode() {
