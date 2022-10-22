@@ -366,10 +366,10 @@ body >#navBar > .menu_icon_wrapper {
     height: 45px;
     width:35px;
     cursor: pointer; 
-    -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
+    -webkit-transform: rotate(0deg) translateX() left width top;
+        -moz-transform: rotate(0deg)  translateX() left width top;
+        -o-transform: rotate(0deg) translateX() left width top;
+        transform: rotate(0deg) translateX() left width top;
         -webkit-transition: .35s ease-in-out;
         -moz-transition: .35s ease-in-out;
          -o-transition: .35s ease-in-out;
