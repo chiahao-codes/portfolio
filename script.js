@@ -37,7 +37,7 @@ modeSwitchContainer.addEventListener("click", function() {
 
 modeSwitchContainer.addEventListener("click", function () {
   this.classList.toggle("open");
-  mobileDropMenu(this);
+
 });
 
 function mobileNavDropDown(msc) {
