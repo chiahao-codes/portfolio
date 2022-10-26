@@ -18,22 +18,39 @@ window.addEventListener("load", () => {
 });
 
 //mobile hamburger menu
-hamburgerMenuWrapper.addEventListener("click", () => {
+/**
+ * hamburgerMenuWrapper.addEventListener("click", () => {
   hamburgerMenuWrapper.classList.toggle("open");
 });
+ */
+
+
+function hamburgerMenu() {
+  this.classList.toggle("open");
+}
 
 //mode switch
-modeSwitchContainer.addEventListener("click", function() {
+//modeSwitchContainer.addEventListener("click", function() {
   mode = localStorage.getItem("mode");
   if (mode !== "dark") {
     darkMode();
     localStorage.setItem("mode", "dark");
-    
   } else {
     lightMode();
     localStorage.setItem("mode", "light");
   }
-});
+//});
+
+function modeSwitch() {
+  mode = localStorage.getItem("mode");
+  if (mode !== "dark") {
+    darkMode();
+    localStorage.setItem("mode", "dark");
+  } else {
+    lightMode();
+    localStorage.setItem("mode", "light");
+  }
+}
 
 function navigationDropDown() {
   if (hamburgerMenuWrapper.classList.contains("open")) {
@@ -42,9 +59,6 @@ function navigationDropDown() {
     mobileDropMenu.classList.remove("down");
   }
 }
-
-
-
 
 function darkMode() {
   body.style.backgroundColor = "#161617";
@@ -89,7 +103,8 @@ function darkMode() {
 
   for (let m of menuIcon) {
     m.style.backgroundColor = "white";
-    m.style.transitionProperty = "background-color";
+    m.style.transitionProperty =
+      "background-color transform left width top";
     m.style.transitionDuration = "100ms";
     m.style.transitionTimingFunction = "ease-in";
   }
