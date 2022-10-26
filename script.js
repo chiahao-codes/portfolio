@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
 
 //mobile hamburger menu
 hamburgerMenuWrapper.addEventListener("click", () => {
-  this.classList.toggle("open");
+  hamburgerMenuWrapper.classList.toggle("open");
 });
 
 //mode switch
