@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
 
 //mobile hamburger menu
 hamburgerMenuWrapper.addEventListener("click", () => {
-  hamburgerMenuWrapper.classList.toggle("open");
+  alert("Hamburger")
 });
 
 //mode switch
@@ -83,15 +83,15 @@ function darkMode() {
     n.style.filter = "brightness(110%), contrast(110%)";
     n.style.fontWeight = "600";
   }
-  /**
- *  for (let m of menuIcon) {
+
+   for (let m of menuIcon) {
     m.style.backgroundColor = "white";
     m.style.transitionProperty =
       "background-color transform left width top";
     m.style.transitionDuration = "100ms";
     m.style.transitionTimingFunction = "ease-in";
   }
- */
+
 }
 
 function lightMode() {
@@ -135,15 +135,15 @@ function lightMode() {
     n.style.fontWeight = "600";
   }
 
-  /**
-   *  for (let m of menuIcon) {
+  
+ for (let m of menuIcon) {
     m.style.backgroundColor = "black";
     m.style.transitionProperty = "background-color";
     m.style.transitionDuration = "100ms";
     m.style.transitionTimingFunction = "ease-in";
   }
-   * 
-   */
+  
+
 }
 
 
