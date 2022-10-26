@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
 
 //mobile hamburger menu
 hamburgerMenuWrapper.addEventListener("click", () => {
-  hamburgerMenuWrapper.classList.toggle("open");
+  console.log("ham");
 });
 
 //mode switch
@@ -32,6 +32,9 @@ modeSwitchContainer.addEventListener("click", function() {
     lightMode();
     localStorage.setItem("mode", "light");
   }
+  hamburgerMenuWrapper.addEventListener("click", () => {
+    console.log("ham");
+  });
 });
 
 function modeSwitch() {
