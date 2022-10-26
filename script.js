@@ -19,7 +19,8 @@ window.addEventListener("load", () => {
 
 //mobile hamburger menu
 hamburgerMenuWrapper.addEventListener("click", () => {
-  alert("Hamburger")
+  alert("Hamburger");
+  console.log(hamburgerMenuWrapper);
 });
 
 //mode switch
