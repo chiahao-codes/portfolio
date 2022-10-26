@@ -18,19 +18,12 @@ window.addEventListener("load", () => {
 });
 
 //mobile hamburger menu
-/**
- * hamburgerMenuWrapper.addEventListener("click", () => {
+hamburgerMenuWrapper.addEventListener("click", () => {
   hamburgerMenuWrapper.classList.toggle("open");
 });
- */
-
-
-function hamburgerMenu() {
-  this.classList.toggle("open");
-}
 
 //mode switch
-//modeSwitchContainer.addEventListener("click", function() {
+modeSwitchContainer.addEventListener("click", function() {
   mode = localStorage.getItem("mode");
   if (mode !== "dark") {
     darkMode();
@@ -39,7 +32,7 @@ function hamburgerMenu() {
     lightMode();
     localStorage.setItem("mode", "light");
   }
-//});
+});
 
 function modeSwitch() {
   mode = localStorage.getItem("mode");
