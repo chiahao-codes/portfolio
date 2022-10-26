@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
 
 //mobile hamburger menu
 hamburgerMenuWrapper.addEventListener("click", () => {
-  console.log("ham");
+  this.classList.toggle("open");
 });
 
 //mode switch
@@ -32,21 +32,8 @@ modeSwitchContainer.addEventListener("click", function() {
     lightMode();
     localStorage.setItem("mode", "light");
   }
-  hamburgerMenuWrapper.addEventListener("click", () => {
-    console.log("ham");
-  });
 });
 
-function modeSwitch() {
-  mode = localStorage.getItem("mode");
-  if (mode !== "dark") {
-    darkMode();
-    localStorage.setItem("mode", "dark");
-  } else {
-    lightMode();
-    localStorage.setItem("mode", "light");
-  }
-}
 
 function navigationDropDown() {
   if (hamburgerMenuWrapper.classList.contains("open")) {
@@ -96,14 +83,15 @@ function darkMode() {
     n.style.filter = "brightness(110%), contrast(110%)";
     n.style.fontWeight = "600";
   }
-
-  for (let m of menuIcon) {
+  /**
+ *  for (let m of menuIcon) {
     m.style.backgroundColor = "white";
     m.style.transitionProperty =
       "background-color transform left width top";
     m.style.transitionDuration = "100ms";
     m.style.transitionTimingFunction = "ease-in";
   }
+ */
 }
 
 function lightMode() {
@@ -133,9 +121,9 @@ function lightMode() {
   navLinksWrapper.style.transitionDuration = "100ms";
   navLinksWrapper.style.transitionTimingFunction = "ease-in";
 
-   socialIcons[0].style.filter = "invert(0)";
-   socialIcons[1].style.filter = "invert(0)";
-   socialIcons[2].style.filter = "invert(0)";
+  socialIcons[0].style.filter = "invert(0)";
+  socialIcons[1].style.filter = "invert(0)";
+  socialIcons[2].style.filter = "invert(0)";
 
   homeContainer.style.color = "black";
   homeContainer.style.transitionProperty = "color";
@@ -147,12 +135,15 @@ function lightMode() {
     n.style.fontWeight = "600";
   }
 
-  for (let m of menuIcon) {
+  /**
+   *  for (let m of menuIcon) {
     m.style.backgroundColor = "black";
     m.style.transitionProperty = "background-color";
     m.style.transitionDuration = "100ms";
     m.style.transitionTimingFunction = "ease-in";
   }
+   * 
+   */
 }
 
 
