@@ -147,7 +147,9 @@ body > nav {
         position: absolute;
         background: inherit;
         width: 100%;
-        height: fit-content;
+        height: max-content;
+        row-gap: 10px;
+        padding-bottom:10px;
         left: 0;
         top: -150%;
         z-index: 1;
