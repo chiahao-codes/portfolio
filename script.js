@@ -12,7 +12,7 @@ let mobileDropMenu = document.querySelector("body > nav");
 let mobileNavLinks = mobileDropMenu.children[0].children;
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
  let mobileMoonIcon = document.querySelector(
-   "body > nav > .mobile_mode_switch_container > .mobile_switch_icon_wrapper > div + img"
+   "body > nav > .mobile_mode_switch_container > .mobile_switch_icon_wrapper  #mobile_moon"
  );
 let mode;
 console.log(mobileMoonIcon);
