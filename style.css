@@ -189,6 +189,7 @@ body>.mobile_navigation_links>ul>li {
     list-style: none;
     display: block;
     text-decoration: none;
+    width:100%;
 }
 
 body>.mobile_navigation_links>ul>li>h3 {
