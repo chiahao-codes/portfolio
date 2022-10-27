@@ -424,7 +424,10 @@ body>.mobile_navigation_links >ul>li {
     display: block;
     padding: 15px;
     text-decoration: none;
-    font-size: 20pt;
+}
+
+body>.mobile_navigation_links>ul>li>h3{
+    font-size: 20px;
 }
 
 body>.mobile_navigation_links>ul>li>h3:hover {
