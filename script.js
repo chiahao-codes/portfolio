@@ -18,6 +18,7 @@ let mode;
 window.addEventListener("load", () => {
   localStorage.setItem("mode", "dark");
   localStorage.setItem("hamburger", "closed");
+  
 });
 
 //mobile hamburger menu
@@ -39,6 +40,11 @@ hamburgerMenuWrapper.addEventListener("click", () => {
       hamburgerMenuWrapper.children[3].style.left = "50%";
     localStorage.setItem("hamburger", "open");
     mobileDropMenu.style.top = "74px";
+    if (localStorage.getItem("mode") === "dark") {
+       for (let mn of mobileNavLinks) {
+         mn.style.color = "white";
+       }
+    }
     
   } else {
     hamburgerMenuWrapper.children[0].style.top = "4px";
@@ -55,6 +61,12 @@ hamburgerMenuWrapper.addEventListener("click", () => {
     hamburgerMenuWrapper.children[3].style.left = "0px";
     localStorage.setItem("hamburger", "closed");
     mobileDropMenu.style.top = "-150%";
+
+      if (localStorage.getItem("mode") === "dark") {
+        for (let mn of mobileNavLinks) {
+          mn.style.color = "black";
+        }
+      }
   }
 });
 
