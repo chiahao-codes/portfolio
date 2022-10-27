@@ -7,9 +7,9 @@ let modeSwitchContainer = document.getElementsByClassName("mode_switch_container
 let socialIcons = document.querySelectorAll(".social_icon_parent > a > .social_icon");
 let navLinksWrapper = document.querySelectorAll("#navBar > #navigation_links_wrapper")[0];
 let navLinks = navLinksWrapper.children;
-let hamburgerMenuWrapper = document.querySelector("#navBar > .menu_icon_wrapper");
-let mobileDropMenu = document.querySelector("body > .mobile_navigation_link");
-let mobileNavLinks = document.querySelectorAll("body > .mobile_navigation_link > div > h3");
+let hamburgerMenuWrapper = document.querySelector("body > #navBar > .menu_icon_wrapper");
+let mobileDropMenu = document.querySelector("body > .mobile_navigation_links");
+let mobileNavLinks = document.querySelectorAll("body > .mobile_navigation_links > div > h3");
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
  
 let mode;
