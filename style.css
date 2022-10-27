@@ -139,7 +139,18 @@ body>#navBar>.menu_icon_wrapper{
 }
 
 body > nav {
-    display:none;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background: inherit;
+        width: 100%;
+        left: 0;
+        top: -150%;
+        z-index: 1;
+        box-shadow: 0 0 10px #000;
+        opacity: .99;
 }
 
  /*Home Page Headers*/
@@ -407,21 +418,6 @@ body>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(4){
     top:34px;
 }
 
-/**/
-body> nav {
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    background: inherit;
-    width: 100%;
-    left: 0;
-    top: -150%;
-    z-index: 1;
-    box-shadow: 0 0 10px #000;
-    opacity: .99;
-}
 /*
 */
 
