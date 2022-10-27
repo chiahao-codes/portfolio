@@ -22,13 +22,14 @@ window.addEventListener("load", () => {
 hamburgerMenuWrapper.addEventListener("click", () => {
   console.log("hamburgerMenuWrapper children:", hamburgerMenuWrapper.children);
   let localStorageHamburgerMenu = localStorage.getItem("hamburger");
+
   if (localStorageHamburgerMenu === "closed") {
       hamburgerMenuWrapper.children[0].style.top = "19px";
       hamburgerMenuWrapper.children[0].style.width = "0%";
       hamburgerMenuWrapper.children[0].style.left = "50%";
 
-      hamburgerMenuWrapper.children[1].style.rotate = "rotate(45deg)";
-      hamburgerMenuWrapper.children[2].style.rotate = "rotate(-45deg)";
+      hamburgerMenuWrapper.children[1].style.transform = "rotate(45deg)";
+      hamburgerMenuWrapper.children[2].style.transform = "rotate(-45deg)";
 
       hamburgerMenuWrapper.children[3].style.top = "18px";
       hamburgerMenuWrapper.children[3].style.width = "0%";
@@ -40,10 +41,10 @@ hamburgerMenuWrapper.addEventListener("click", () => {
     hamburgerMenuWrapper.children[0].style.width = "100%";
     hamburgerMenuWrapper.children[0].style.left = "0px";
     
-    hamburgerMenuWrapper.children[1].style.rotate = "rotate(0deg)";
+    hamburgerMenuWrapper.children[1].style.transform = "rotate(0deg)";
     hamburgerMenuWrapper.children[1].style.top = "19px";
     hamburgerMenuWrapper.children[2].style.top = "19px";
-    hamburgerMenuWrapper.children[2].style.rotate = "rotate(0deg)";
+    hamburgerMenuWrapper.children[2].style.transform = "rotate(0deg)";
 
      hamburgerMenuWrapper.children[3].style.top = "34px";
      hamburgerMenuWrapper.children[3].style.width = "100%";
@@ -51,9 +52,6 @@ hamburgerMenuWrapper.addEventListener("click", () => {
     
     localStorage.setItem("hamburger", "closed");
   }
-
-  
-
 });
 
 //mode switch
