@@ -22,12 +22,7 @@ window.addEventListener("load", () => {
 hamburgerMenuWrapper.addEventListener("click", () => {
   console.log("hamburgerMenuWrapper children:", hamburgerMenuWrapper.children);
   let localStorageHamburgerMenu = localStorage.getItem("hamburger");
-
-  for (let hmi of hamburgerMenuWrapper.children) {
-    hmi.style.transform = "rotate(0deg) translateX() left width top";
-    hmi.style.transition = ".35s ease-in-out";
-  }
-
+  setTransformProperty();
 
   if (localStorageHamburgerMenu === "closed") {
       hamburgerMenuWrapper.children[0].style.top = "19px";
@@ -40,8 +35,8 @@ hamburgerMenuWrapper.addEventListener("click", () => {
       hamburgerMenuWrapper.children[3].style.top = "18px";
       hamburgerMenuWrapper.children[3].style.width = "0%";
       hamburgerMenuWrapper.children[3].style.left = "50%";
-
     localStorage.setItem("hamburger", "open");
+    mobileDropMenu.style.top = "74px";
   } else {
     hamburgerMenuWrapper.children[0].style.top = "4px";
     hamburgerMenuWrapper.children[0].style.width = "100%";
@@ -55,9 +50,10 @@ hamburgerMenuWrapper.addEventListener("click", () => {
      hamburgerMenuWrapper.children[3].style.top = "34px";
      hamburgerMenuWrapper.children[3].style.width = "100%";
     hamburgerMenuWrapper.children[3].style.left = "0px";
-    
     localStorage.setItem("hamburger", "closed");
+    mobileDropMenu.style.top = "-150%";
   }
+
 });
 
 //mode switch
@@ -72,12 +68,15 @@ modeSwitchContainer.addEventListener("click", function() {
   }
 });
 
-function navigationDropDown() {
-  if (hamburgerMenuWrapper.classList.contains("open")) {
-    mobileDropMenu.classList.add("down");
-  } else {
-    mobileDropMenu.classList.remove("down");
+function setTransformProperty() {
+
+  for (let hmi of hamburgerMenuWrapper.children) {
+    hmi.style.transform = "rotate(0deg) translateX() left width top";
+    hmi.style.transition = ".35s ease-in-out";
   }
+
+  mobileDropMenu.style.transform = "top";
+  mobileDropMenu.style.transition = ".35s ease-in-out";
 }
 
 function darkMode() {
@@ -110,6 +109,8 @@ function darkMode() {
   socialIcons[0].style.filter = "invert(1)";
   socialIcons[1].style.filter = "invert(1)";
   socialIcons[2].style.filter = "invert(1)";
+
+  mobileDropMenu.style.color = "white";
 
   homeContainer.style.color = "white";
   homeContainer.style.transitionProperty = "color";
@@ -161,6 +162,8 @@ function lightMode() {
   socialIcons[0].style.filter = "invert(0)";
   socialIcons[1].style.filter = "invert(0)";
   socialIcons[2].style.filter = "invert(0)";
+
+  mobileDropMenu.style.color = "black";
 
   homeContainer.style.color = "black";
   homeContainer.style.transitionProperty = "color";

@@ -379,17 +379,13 @@ body >#navBar >.menu_icon_wrapper > .menuIcon {
     border-radius:3px;
     position:absolute;
     -webkit-transform: rotate(0deg) translateX() left width top;
-        -moz-transform: rotate(0deg) translateX() left width top;
-        -o-transform: rotate(0deg) translateX() left width top;
-        transform: rotate(0deg) translateX() left width top;
-        -webkit-transition: .35s ease-in-out;
-        -moz-transition: .35s ease-in-out;
-        -o-transition: .35s ease-in-out;
-        transition: .35s ease-in-out;
-    /*
-   
-    */
-    
+    -moz-transform: rotate(0deg) translateX() left width top;
+    -o-transform: rotate(0deg) translateX() left width top;
+    transform: rotate(0deg) translateX() left width top;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    -o-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
 }
 
 body>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(1) {
@@ -404,36 +400,7 @@ body>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(4){
     top:34px;
 }
 
-/*mobile menu animation
-body>#navBar>.menu_icon_wrapper.open>.menuIcon:nth-child(1) {
-    top: 19px;
-    width: 0%;
-    left: 50%;
-}
-
-body>#navBar>.menu_icon_wrapper.open>.menuIcon:nth-child(2) {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-body>#navBar>.menu_icon_wrapper.open>.menuIcon:nth-child(3) {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-
-body>#navBar>.menu_icon_wrapper.open>.menuIcon:nth-child(4) {
-    top: 18px;
-    width: 0%;
-    left: 50%;
-}
-*/
-
-
-
+/**/
 body>.mobile_navigation_links {
     display: block;
     position: absolute;
@@ -443,6 +410,7 @@ body>.mobile_navigation_links {
     top: -150%;
     z-index: 1;
     box-shadow: 0 0 10px #000;
+    opacity: .7;
 }
 
 body>.mobile_navigation_links >ul,
@@ -461,15 +429,8 @@ body>.mobile_navigation_links >ul>li {
     font-size: 20pt;
 }
 
-
-
 ul>li>a:hover {
-    background: darken(5%);
-    text-decoration: underline;
-}
-
-.down {
-    top: 74px;
+    background: darken(8%);
 }
 
 }
