@@ -18,14 +18,19 @@ let mode;
 window.addEventListener("load", () => {
   localStorage.setItem("mode", "dark");
   localStorage.setItem("hamburger", "closed");
-  
 });
+
+window.addEventListener("resize", () => {
+  setTransformProperty();
+  if (window.innerWidth >= 832) {
+    hamburgerClose();
+  }
+})
 
 
 //mobile hamburger menu
 hamburgerMenuWrapper.addEventListener("click", () => {
   setTransformProperty();
-
   if (localStorage.getItem("hamburger") === "closed") {
     hamburgerOpen();
    

@@ -401,7 +401,10 @@ body>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(4){
 
 /**/
 body>.mobile_navigation_links {
-    display: block;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-content: center;
     position: absolute;
     background: inherit;
     width: 100%;
@@ -411,28 +414,58 @@ body>.mobile_navigation_links {
     box-shadow: 0 0 10px #000;
     opacity: .99;
 }
-
-body>.mobile_navigation_links >ul,
-body>.mobile_navigation_links >ul>li {
-    padding: 0;
-    margin: 0 auto;
-}
+/*
+*/
 
 body>.mobile_navigation_links >ul>li {
     list-style: none;
-    text-align: center;
     display: block;
-    padding: 15px;
     text-decoration: none;
 }
 
 body>.mobile_navigation_links>ul>li>h3{
     font-size: 20px;
+    text-align: center;
 }
 
 body>.mobile_navigation_links>ul>li>h3:hover {
-    background: darken(20%);
     cursor:pointer;
+}
+
+body>.mobile_navigation_links>#mobile_mode_switch_container{
+    background-color: inherit;
+    width: 60px;
+    height: 28px;
+        border-radius: 40px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+}
+
+.mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_circle{
+position: absolute;
+right: 1px;
+filter: invert(1);
+top: auto;
+bottom: auto;
+z-index: 2;
+}
+
+.mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_circle>.mobile_switch_icon_wrapper{
+    width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: inherit;
+        position: relative;
+}
+
+.mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_circle>.mobile_switch_icon_wrapper>.mobile_moon{
+filter: invert(.99) sepia(100%) saturate(9) brightness(120%) contrast(120%);
+    border-color: 2px solid;
 }
 
 }
