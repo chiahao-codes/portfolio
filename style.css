@@ -431,7 +431,7 @@ body>.mobile_navigation_links>ul>li>h3{
 }
 
 body>.mobile_navigation_links>ul>li>h3:hover {
-    background: darken(10%);
+    background: darken(20%);
     cursor:pointer;
 }
 

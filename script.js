@@ -21,12 +21,6 @@ window.addEventListener("load", () => {
   
 });
 
-window.addEventListener("resize", () => {
-  setTransformProperty();
-  if (window.innerWidth >= "832px") {
-    hamburgerClose();
-  }
-})
 
 //mobile hamburger menu
 hamburgerMenuWrapper.addEventListener("click", () => {
