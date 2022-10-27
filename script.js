@@ -9,7 +9,7 @@ let navLinksWrapper = document.querySelectorAll("#navBar > #navigation_links_wra
 let navLinks = navLinksWrapper.children;
 let hamburgerMenuWrapper = document.querySelector("#navBar > .menu_icon_wrapper");
 let mobileDropMenu = document.querySelector("body > nav");
-let mobileNavLinks = mobileDropMenu.children[0].children;
+let mobileNavLinks = document.querySelectorAll("body > nav > h3");
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
  
 let mode;
