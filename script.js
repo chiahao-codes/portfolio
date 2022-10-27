@@ -9,7 +9,9 @@ let navLinksWrapper = document.querySelectorAll("#navBar > #navigation_links_wra
 let navLinks = navLinksWrapper.children;
 let hamburgerMenuWrapper = document.querySelector("#navBar > .menu_icon_wrapper");
 let mobileDropMenu = document.querySelector("body > nav");
-console.log(mobileDropMenu);
+let mobileNavLinks = mobileDropMenu.children;
+console.log(mobileNavLinks);
+
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
 let mode;
 /***/
@@ -38,6 +40,10 @@ hamburgerMenuWrapper.addEventListener("click", () => {
       hamburgerMenuWrapper.children[3].style.left = "50%";
     localStorage.setItem("hamburger", "open");
     mobileDropMenu.style.top = "74px";
+    for (let mn of mobileNavLinks) {
+      
+    }
+    
   } else {
     hamburgerMenuWrapper.children[0].style.top = "4px";
     hamburgerMenuWrapper.children[0].style.width = "100%";
