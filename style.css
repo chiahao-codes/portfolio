@@ -471,8 +471,8 @@ z-index: 2;
         position: relative;
 }
 
-.mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_circle>.mobile_switch_icon_wrapper > .mobile_moon{
-filter:invert(1) sepia(90%) contrast(100%) saturate(100%) brightness(100%);
+.mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_circle>.mobile_switch_icon_wrapper + img{
+filter:invert(1);
 
 }
 
