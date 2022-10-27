@@ -345,7 +345,15 @@ body > nav {
     filter: brightness(150%), contrast(150%);
  }
 
-
+body > .icon8_link {
+    position:absolute;
+    bottom:1%;
+    font-size:small;
+    color:darkgrey;
+    text-decoration: none;
+    background-color: inherit;
+    z-index: 1;
+}
 
 @media screen and (max-width:831.99px) {
 
@@ -445,7 +453,7 @@ body>.mobile_navigation_links>#mobile_mode_switch_container{
         overflow: hidden;
 }
 
-.mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_circle{
+.mobile_navigation_links>#mobile_mode_switch_container > .mobile_switch_circle{
 position: absolute;
 right: 1px;
 filter: invert(1);
