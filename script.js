@@ -24,49 +24,47 @@ window.addEventListener("load", () => {
 //mobile hamburger menu
 hamburgerMenuWrapper.addEventListener("click", () => {
   console.log("hamburgerMenuWrapper children:", hamburgerMenuWrapper.children);
-  let localStorageHamburgerMenu = localStorage.getItem("hamburger");
   setTransformProperty();
 
-  if (localStorageHamburgerMenu === "closed") {
-      hamburgerMenuWrapper.children[0].style.top = "19px";
-      hamburgerMenuWrapper.children[0].style.width = "0%";
-      hamburgerMenuWrapper.children[0].style.left = "50%";
+  if (localStorage.getItem("hamburger") === "closed") {
+    hamburgerMenuWrapper.children[0].style.top = "19px";
+    hamburgerMenuWrapper.children[0].style.width = "0%";
+    hamburgerMenuWrapper.children[0].style.left = "50%";
 
-      hamburgerMenuWrapper.children[1].style.transform = "rotate(45deg)";
-      hamburgerMenuWrapper.children[2].style.transform = "rotate(-45deg)";
+    hamburgerMenuWrapper.children[1].style.transform = "rotate(45deg)";
+    hamburgerMenuWrapper.children[2].style.transform = "rotate(-45deg)";
 
-      hamburgerMenuWrapper.children[3].style.top = "18px";
-      hamburgerMenuWrapper.children[3].style.width = "0%";
-      hamburgerMenuWrapper.children[3].style.left = "50%";
+    hamburgerMenuWrapper.children[3].style.top = "18px";
+    hamburgerMenuWrapper.children[3].style.width = "0%";
+    hamburgerMenuWrapper.children[3].style.left = "50%";
     localStorage.setItem("hamburger", "open");
     mobileDropMenu.style.top = "74px";
     if (localStorage.getItem("mode") === "dark") {
-       for (let mn of mobileNavLinks) {
-         mn.style.color = "white";
-       }
+      for (let mn of mobileNavLinks) {
+        mn.style.color = "white";
+      }
     }
-    
   } else {
     hamburgerMenuWrapper.children[0].style.top = "4px";
     hamburgerMenuWrapper.children[0].style.width = "100%";
     hamburgerMenuWrapper.children[0].style.left = "0px";
-    
+
     hamburgerMenuWrapper.children[1].style.transform = "rotate(0deg)";
     hamburgerMenuWrapper.children[1].style.top = "19px";
     hamburgerMenuWrapper.children[2].style.top = "19px";
     hamburgerMenuWrapper.children[2].style.transform = "rotate(0deg)";
 
-     hamburgerMenuWrapper.children[3].style.top = "34px";
-     hamburgerMenuWrapper.children[3].style.width = "100%";
+    hamburgerMenuWrapper.children[3].style.top = "34px";
+    hamburgerMenuWrapper.children[3].style.width = "100%";
     hamburgerMenuWrapper.children[3].style.left = "0px";
     localStorage.setItem("hamburger", "closed");
     mobileDropMenu.style.top = "-150%";
 
-      if (localStorage.getItem("mode") === "dark") {
-        for (let mn of mobileNavLinks) {
-          mn.style.color = "black";
-        }
+    if (localStorage.getItem("mode") === "dark") {
+      for (let mn of mobileNavLinks) {
+        mn.style.color = "black";
       }
+    }
   }
 });
 
