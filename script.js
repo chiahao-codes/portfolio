@@ -9,8 +9,7 @@ let navLinksWrapper = document.querySelectorAll("#navBar > #navigation_links_wra
 let navLinks = navLinksWrapper.children;
 let hamburgerMenuWrapper = document.querySelector("#navBar > .menu_icon_wrapper");
 let mobileDropMenu = document.querySelector("body > nav");
-let mobileNavLinks = mobileDropMenu.children;
-console.log(mobileNavLinks);
+let mobileNavLinks = mobileDropMenu.children[0].children;
 
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
 let mode;
@@ -40,9 +39,6 @@ hamburgerMenuWrapper.addEventListener("click", () => {
       hamburgerMenuWrapper.children[3].style.left = "50%";
     localStorage.setItem("hamburger", "open");
     mobileDropMenu.style.top = "74px";
-    for (let mn of mobileNavLinks) {
-      
-    }
     
   } else {
     hamburgerMenuWrapper.children[0].style.top = "4px";
@@ -116,7 +112,9 @@ function darkMode() {
   socialIcons[1].style.filter = "invert(1)";
   socialIcons[2].style.filter = "invert(1)";
 
-  mobileDropMenu.style.color = "white";
+   for (let mn of mobileNavLinks) {
+     mn.style.color = "white";
+   }
 
   homeContainer.style.color = "white";
   homeContainer.style.transitionProperty = "color";
@@ -169,7 +167,9 @@ function lightMode() {
   socialIcons[1].style.filter = "invert(0)";
   socialIcons[2].style.filter = "invert(0)";
 
-  mobileDropMenu.style.color = "black";
+   for (let mn of mobileNavLinks) {
+     mn.style.color = "black";
+   }
 
   homeContainer.style.color = "black";
   homeContainer.style.transitionProperty = "color";
