@@ -70,7 +70,7 @@ function hamburgerOpen() {
   }
 
   let mobileMoonIcon = document.querySelector(
-    "body > nav > .mobile_mode_switch_container > div + img"
+    "body > nav > .mobile_mode_switch_container > .mobile_switch_icon_wrapper > div + img"
   );
   console.log(mobileMoonIcon);
   mobileMoonIcon.style.filter =
