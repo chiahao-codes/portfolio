@@ -422,11 +422,11 @@ body > .icon8_link {
 
 @media screen and (max-width:831.99px) {
 
-#mode_switch_social_wrapper{
+body>nav>#mode_switch_social_wrapper{
 display: none;
 }
 
-#navigation_links_wrapper {
+body>#navigation_links_wrapper {
     display:none;
 }
 
