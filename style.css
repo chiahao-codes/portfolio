@@ -408,7 +408,7 @@ body>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(4){
 }
 
 /**/
-body>.mobile_navigation_links {
+body> nav {
     display: flex;
     flex-direction:column;
     justify-content: center;

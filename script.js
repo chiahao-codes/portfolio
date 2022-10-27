@@ -32,6 +32,7 @@ hamburgerMenuWrapper.addEventListener("click", () => {
   setTransformProperty();
   if (localStorage.getItem("hamburger") === "closed") {
     hamburgerOpen();
+    mobileDropMenu.style.display = "block";
     let mobileMoonIcon = document.querySelector(
       "body > nav > .mobile_mode_switch_container > .mobile_switch_icon_wrapper > div + img"
     );
