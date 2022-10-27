@@ -8,6 +8,7 @@ let socialIcons = document.querySelectorAll(".social_icon_parent > a > .social_i
 let navLinksWrapper = document.querySelectorAll("#navBar > #navigation_links_wrapper")[0];
 let navLinks = navLinksWrapper.children;
 let hamburgerMenuWrapper = document.querySelector("#navBar > .menu_icon_wrapper");
+console.log(hamburgerMenuWrapper)
 let mobileDropMenu = document.querySelector("body > nav");
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
 let mode;
@@ -23,6 +24,9 @@ hamburgerMenuWrapper.addEventListener("click", () => {
   console.log("hamburgerMenuWrapper children:", hamburgerMenuWrapper.children);
   let localStorageHamburgerMenu = localStorage.getItem("hamburger");
 
+
+
+
   if (localStorageHamburgerMenu === "closed") {
       hamburgerMenuWrapper.children[0].style.top = "19px";
       hamburgerMenuWrapper.children[0].style.width = "0%";
@@ -33,7 +37,7 @@ hamburgerMenuWrapper.addEventListener("click", () => {
 
       hamburgerMenuWrapper.children[3].style.top = "18px";
       hamburgerMenuWrapper.children[3].style.width = "0%";
-    hamburgerMenuWrapper.children[3].style.left = "50%";
+      hamburgerMenuWrapper.children[3].style.left = "50%";
 
     localStorage.setItem("hamburger", "open");
   } else {
@@ -65,7 +69,6 @@ modeSwitchContainer.addEventListener("click", function() {
     localStorage.setItem("mode", "light");
   }
 });
-
 
 function navigationDropDown() {
   if (hamburgerMenuWrapper.classList.contains("open")) {
