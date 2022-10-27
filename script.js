@@ -9,8 +9,8 @@ let navLinksWrapper = document.querySelectorAll("#navBar > #navigation_links_wra
 let navLinks = navLinksWrapper.children;
 let hamburgerMenuWrapper = document.querySelector("#navBar > .menu_icon_wrapper");
 let mobileDropMenu = document.querySelector("body > nav");
-let mobileMoonIcon = document.querySelector("body > nav > .mobile_mode_switch_container > div + img");
-console.log(mobileMoonIcon);
+
+
 let mobileNavLinks = mobileDropMenu.children[0].children;
 
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
@@ -72,9 +72,10 @@ function hamburgerOpen() {
     }
   }
 
-  /**
-   *  
-   */
+  let mobileMoonIcon = document.querySelector(
+    "body > nav > .mobile_mode_switch_container > div + img"
+  );
+
   mobileMoonIcon.style.filter =
     "invert(.99) sepia(100%) saturate(9) brightness(120%) contrast(120%)";
 }
@@ -95,11 +96,6 @@ function hamburgerClose() {
    localStorage.setItem("hamburger", "closed");
    mobileDropMenu.style.top = "-150%";
 
-   if (localStorage.getItem("mode") === "dark") {
-     for (let mn of mobileNavLinks) {
-       mn.style.color = "black";
-     }
-   }
 }
 
 function setTransformProperty() {
