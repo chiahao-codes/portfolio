@@ -11,12 +11,13 @@ let hamburgerMenuWrapper = document.querySelector("#navBar > .menu_icon_wrapper"
 let mobileDropMenu = document.querySelector("body > nav");
 let mobileNavLinks = mobileDropMenu.children[0].children;
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
-let mode;
-
-/*
  let mobileMoonIcon = document.querySelector(
-      "body > nav > .mobile_mode_switch_container > .mobile_switch_icon_wrapper > div + img"
-    );
+   "body > nav > .mobile_mode_switch_container > .mobile_switch_icon_wrapper > div + img"
+ );
+let mode;
+console.log(mobileMoonIcon);
+/*
+
     console.log(mobileMoonIcon);
     mobileMoonIcon.style.filter =
       "invert(.99) sepia(100%) saturate(9) brightness(120%) contrast(120%)";
@@ -70,6 +71,8 @@ function hamburgerOpen() {
   localStorage.setItem("hamburger", "open");
 
   mobileDropMenu.style.top = "74px";
+  mobileDropMenu.style.transform = "top";
+  mobileDropMenu.style.transition = ".33 ease-in-out";
 
   if (localStorage.getItem("mode") === "dark") {
     for (let mn of mobileNavLinks) {
@@ -93,7 +96,9 @@ function hamburgerClose() {
    hamburgerMenuWrapper.children[3].style.width = "100%";
    hamburgerMenuWrapper.children[3].style.left = "0px";
    localStorage.setItem("hamburger", "closed");
-   mobileDropMenu.style.top = "-150%";
+  mobileDropMenu.style.top = "-150%";
+  mobileDropMenu.style.transform = "top";
+  mobileDropMenu.style.transition = ".33 ease-in-out";
 
 }
 
