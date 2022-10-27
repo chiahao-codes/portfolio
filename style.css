@@ -147,11 +147,23 @@ body > nav {
         position: absolute;
         background: inherit;
         width: 100%;
+        height: fit-content;
         left: 0;
         top: -150%;
         z-index: 1;
         box-shadow: 0 0 10px #000;
         opacity: .99;
+}
+
+body>.mobile_navigation_links>h3 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+body>.mobile_navigation_links>h3:hover {
+    cursor: pointer;
 }
 
 body>.mobile_navigation_links>#mobile_mode_switch_container {
@@ -165,10 +177,11 @@ body>.mobile_navigation_links>#mobile_mode_switch_container {
     position: relative;
     cursor: pointer;
     overflow: hidden;
-    bottom: 5px;
+    top:10px;
+    bottom: 10px;
 }
 
-body > .mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_circle {
+body>.mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_circle {
     position: absolute;
     right: 1.5px;
     filter: invert(1);
@@ -176,17 +189,6 @@ body > .mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_cir
     bottom: auto;
     z-index: 2;
 }
-body>.mobile_navigation_links>h3{
-    display: block;
-    width:100%;
-    text-align: center;
-    font-size: 20px;
-}
-
-body>.mobile_navigation_links>h3:hover {
-    cursor: pointer;
-}
-
 body>.mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_icon_wrapper {
     width: 100%;
     display: flex;
