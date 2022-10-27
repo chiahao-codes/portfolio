@@ -9,7 +9,7 @@ let navLinksWrapper = document.querySelectorAll("#navBar > #navigation_links_wra
 let navLinks = navLinksWrapper.children;
 let hamburgerMenuWrapper = document.querySelector("#navBar > .menu_icon_wrapper");
 let mobileDropMenu = document.querySelector("body > nav");
-let mobileMoonIcon = document.querySelector("body > nav > .mobile_mode_switch_container > div > .mobile_moon");
+let mobileMoonIcon = document.querySelector("body > nav > .mobile_mode_switch_container > div + img");
 console.log(mobileMoonIcon);
 let mobileNavLinks = mobileDropMenu.children[0].children;
 
@@ -73,9 +73,10 @@ function hamburgerOpen() {
   }
 
   /**
-   *  mobileMoonIcon.style.filter =
-    "invert(.99) sepia(100%) saturate(9) brightness(120%) contrast(120%)";
+   *  
    */
+  mobileMoonIcon.style.filter =
+    "invert(.99) sepia(100%) saturate(9) brightness(120%) contrast(120%)";
 }
 
 function hamburgerClose() {

@@ -464,11 +464,11 @@ z-index: 2;
 
 .mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_circle>.mobile_switch_icon_wrapper{
     width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: inherit;
-        position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: inherit;
+    position: relative;
 }
 }
 
