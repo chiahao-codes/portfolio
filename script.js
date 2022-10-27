@@ -9,6 +9,7 @@ let navLinksWrapper = document.querySelectorAll("#navBar > #navigation_links_wra
 let navLinks = navLinksWrapper.children;
 let hamburgerMenuWrapper = document.querySelector("#navBar > .menu_icon_wrapper");
 let mobileDropMenu = document.querySelector("body > nav");
+console.log(mobileDropMenu);
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
 let mode;
 /***/
@@ -53,7 +54,6 @@ hamburgerMenuWrapper.addEventListener("click", () => {
     localStorage.setItem("hamburger", "closed");
     mobileDropMenu.style.top = "-150%";
   }
-
 });
 
 //mode switch
@@ -175,15 +175,12 @@ function lightMode() {
     n.style.fontWeight = "600";
   }
 
-  
  for (let m of menuIcon) {
     m.style.backgroundColor = "black";
     m.style.transitionProperty = "background-color";
     m.style.transitionDuration = "100ms";
     m.style.transitionTimingFunction = "ease-in";
   }
-  
-
 }
 
 

@@ -19,7 +19,6 @@ html {
      position: relative;
  }
 
-
 /*nav bar*/
 body>#navBar {
     background-color: #1a1a1a;
@@ -410,7 +409,7 @@ body>.mobile_navigation_links {
     top: -150%;
     z-index: 1;
     box-shadow: 0 0 10px #000;
-    opacity: .7;
+    opacity: .99;
 }
 
 body>.mobile_navigation_links >ul,
@@ -424,13 +423,14 @@ body>.mobile_navigation_links >ul>li {
     text-align: center;
     display: block;
     padding: 15px;
-    color: #fff;
+    
     text-decoration: none;
     font-size: 20pt;
 }
 
-ul>li>a:hover {
-    background: darken(8%);
+ul>li:hover {
+    background: darken(10%);
+    cursor:pointer;
 }
 
 }
