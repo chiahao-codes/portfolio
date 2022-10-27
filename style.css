@@ -426,7 +426,7 @@ body>nav>#mode_switch_social_wrapper{
 display: none;
 }
 
-body>nav>#navigation_links_wrapper {
+body>#navBar #navigation_links_wrapper {
     display:none;
 }
 
