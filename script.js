@@ -119,8 +119,8 @@ function setTransitionProperty() {
     hmi.style.transitionTimingFunction = "ease-in-out";
   }
 
+  mobileSwitchContainer.style.transition = "background-color .35s ease-in";
   mobileDropMenu.style.transition = "top .35s ease-in-out";
-
   mobileSwitchCircle.style.transition = "transform 100ms, filter 100ms, ease-in-out";
  
 }
@@ -180,6 +180,7 @@ function darkMode() {
    }
 
  //mobile mode switch;
+  mobileSwitchContainer.style.backgroundColor = "black";
   mobileSwitchCircle.style.transform = "translateX(1.5px)";
   mobileSwitchCircle.style.filter = "invert(1)";
   
@@ -242,7 +243,8 @@ function lightMode() {
   }
   
   //mobile mode switch;
-  mobileSwitchCircle.style.transform = "translateX(-28.5px)";
+  mobileSwitchContainer.style.backgroundColor = "#dcdcde";
+  mobileSwitchCircle.style.transform = "translateX(-29.5px)";
   mobileSwitchCircle.style.filter = "invert(0)";
 
 
