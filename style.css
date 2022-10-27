@@ -444,13 +444,13 @@ body>.mobile_navigation_links>#mobile_mode_switch_container{
     background-color: inherit;
     width: 60px;
     height: 28px;
-        border-radius: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        cursor: pointer;
-        overflow: hidden;
+    border-radius: 40px;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    position: relative;
+     cursor: pointer;
+    overflow: hidden;
 }
 
 .mobile_navigation_links>#mobile_mode_switch_container > .mobile_switch_circle{
@@ -472,8 +472,8 @@ z-index: 2;
 }
 
 .mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_circle>.mobile_switch_icon_wrapper + img{
-filter:invert(1);
-
+filter: invert(.99) sepia(100%) saturate(9) brightness(120%) contrast(120%);
+border-color: 2px solid;
 }
 
 }
