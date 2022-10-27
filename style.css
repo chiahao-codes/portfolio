@@ -38,7 +38,7 @@ body>#navBar {
 }
 
 /*mode switch*/
-#mode_switch_social_wrapper{
+nav>#mode_switch_social_wrapper{
     position: relative;
     width: 200px;
     height: 100%;
@@ -49,7 +49,7 @@ body>#navBar {
     left: 16px;
 }
 
-#mode_switch_container {
+nav>#mode_switch_social_wrapper>#mode_switch_container {
     background-color: black;
     width: 65px;
     height: 30px;
@@ -62,7 +62,7 @@ body>#navBar {
     overflow: hidden;
 }
 
-#mode_switch_container > .switch_circle {
+nav>#mode_switch_social_wrapper>#mode_switch_container > .switch_circle {
     position: absolute;
     right:1px;
     filter: invert(1);
@@ -71,7 +71,7 @@ body>#navBar {
     z-index: 3;
 }
 
- #switch_icon_wrapper{
+nav>#mode_switch_social_wrapper>#mode_switch_container > #switch_icon_wrapper{
     width:100%;
     display: flex;
     justify-content: space-around;
@@ -80,12 +80,12 @@ body>#navBar {
     position:relative;   
 }
 
-#switch_icon_wrapper>.moon{
+nav>#mode_switch_social_wrapper>#mode_switch_container >#switch_icon_wrapper>.moon{
 filter: invert(.99) sepia(100%) saturate(9) brightness(120%) contrast(120%);
 border-color:2px solid;
 }
 
-.social_icon_parent {
+nav>#mode_switch_social_wrapper>.social_icon_parent {
 display: flex;
 justify-content: center;
 align-items: center;
@@ -94,7 +94,7 @@ width:100px;
 position:relative;
 }
 
-.social_icon_parent > a {
+nav>#mode_switch_social_wrapper>.social_icon_parent > a {
     text-decoration: none;
     width:fit-content;
     display: flex;
@@ -102,13 +102,13 @@ position:relative;
     align-items: center;
 }
 
-.social_icon_parent > a > .social_icon{
+nav>#mode_switch_social_wrapper>.social_icon_parent > a > .social_icon{
     filter: invert(1);
     cursor:pointer;
 }
 
 /*Desk Top Navigation Links*/
-#navigation_links_wrapper{
+#navBar>#navigation_links_wrapper{
     width:300px;
     display:flex;
     justify-content: left;
@@ -122,13 +122,13 @@ position:relative;
     overflow: hidden;
 }
 
-#navigation_links_wrapper > .nav_links{
+#navBar>#navigation_links_wrapper > .nav_links{
     width:fit-content;
     filter:brightness(110%), contrast(110%);
     font-weight: 600;
 }
 
-#navigation_links_wrapper> .nav_links:hover {
+#navBar>#navigation_links_wrapper> .nav_links:hover {
     cursor: pointer;
     text-decoration: underline;
 }
@@ -139,7 +139,7 @@ body>#navBar>.menu_icon_wrapper{
 }
 
 /*mobile navigation links*/
-body > nav {
+body > .mobile_navigation_links {
     display: flex;
         flex-direction: column;
         justify-content: space-between;

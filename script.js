@@ -8,8 +8,8 @@ let socialIcons = document.querySelectorAll(".social_icon_parent > a > .social_i
 let navLinksWrapper = document.querySelectorAll("#navBar > #navigation_links_wrapper")[0];
 let navLinks = navLinksWrapper.children;
 let hamburgerMenuWrapper = document.querySelector("#navBar > .menu_icon_wrapper");
-let mobileDropMenu = document.querySelector("body > nav");
-let mobileNavLinks = document.querySelectorAll("body > nav > div > h3");
+let mobileDropMenu = document.querySelector("body > .mobile_navigation_link");
+let mobileNavLinks = document.querySelectorAll("body > .mobile_navigation_link > div > h3");
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
  
 let mode;
