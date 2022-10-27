@@ -60,6 +60,8 @@ mobileSwitchContainer.addEventListener("click", () => {
   setTransitionProperty();
   if (localStorage.getItem("mode") === "light") {
     darkMode();
+  } else {
+    lightMode()
   }
   
 })
