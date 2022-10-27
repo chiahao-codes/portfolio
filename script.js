@@ -8,7 +8,6 @@ let socialIcons = document.querySelectorAll(".social_icon_parent > a > .social_i
 let navLinksWrapper = document.querySelectorAll("#navBar > #navigation_links_wrapper")[0];
 let navLinks = navLinksWrapper.children;
 let hamburgerMenuWrapper = document.querySelector("#navBar > .menu_icon_wrapper");
-console.log(hamburgerMenuWrapper)
 let mobileDropMenu = document.querySelector("body > nav");
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
 let mode;
@@ -24,7 +23,10 @@ hamburgerMenuWrapper.addEventListener("click", () => {
   console.log("hamburgerMenuWrapper children:", hamburgerMenuWrapper.children);
   let localStorageHamburgerMenu = localStorage.getItem("hamburger");
 
-
+  for (let hmi of hamburgerMenuWrapper) {
+    hmi.style.transform = "rotate(0deg) translateX() left width top";
+    hmi.style.transition = ".35s ease-in-out";
+  }
 
 
   if (localStorageHamburgerMenu === "closed") {
