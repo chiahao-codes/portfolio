@@ -23,7 +23,7 @@ hamburgerMenuWrapper.addEventListener("click", () => {
   console.log("hamburgerMenuWrapper children:", hamburgerMenuWrapper.children);
   let localStorageHamburgerMenu = localStorage.getItem("hamburger");
 
-  for (let hmi of hamburgerMenuWrapper) {
+  for (let hmi of hamburgerMenuWrapper.children) {
     hmi.style.transform = "rotate(0deg) translateX() left width top";
     hmi.style.transition = ".35s ease-in-out";
   }
