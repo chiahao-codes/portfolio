@@ -21,64 +21,76 @@ window.addEventListener("load", () => {
   
 });
 
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= "832px") {
+    hamburgerClose();
+  }
+})
+
 //mobile hamburger menu
 hamburgerMenuWrapper.addEventListener("click", () => {
-  console.log("hamburgerMenuWrapper children:", hamburgerMenuWrapper.children);
   setTransformProperty();
 
   if (localStorage.getItem("hamburger") === "closed") {
-    hamburgerMenuWrapper.children[0].style.top = "19px";
-    hamburgerMenuWrapper.children[0].style.width = "0%";
-    hamburgerMenuWrapper.children[0].style.left = "50%";
-
-    hamburgerMenuWrapper.children[1].style.transform = "rotate(45deg)";
-    hamburgerMenuWrapper.children[2].style.transform = "rotate(-45deg)";
-
-    hamburgerMenuWrapper.children[3].style.top = "18px";
-    hamburgerMenuWrapper.children[3].style.width = "0%";
-    hamburgerMenuWrapper.children[3].style.left = "50%";
-    localStorage.setItem("hamburger", "open");
-    mobileDropMenu.style.top = "74px";
-    if (localStorage.getItem("mode") === "dark") {
-      for (let mn of mobileNavLinks) {
-        mn.style.color = "white";
-      }
-    }
+    hamburgerOpen();
+   
   } else {
-    hamburgerMenuWrapper.children[0].style.top = "4px";
-    hamburgerMenuWrapper.children[0].style.width = "100%";
-    hamburgerMenuWrapper.children[0].style.left = "0px";
-
-    hamburgerMenuWrapper.children[1].style.transform = "rotate(0deg)";
-    hamburgerMenuWrapper.children[1].style.top = "19px";
-    hamburgerMenuWrapper.children[2].style.top = "19px";
-    hamburgerMenuWrapper.children[2].style.transform = "rotate(0deg)";
-
-    hamburgerMenuWrapper.children[3].style.top = "34px";
-    hamburgerMenuWrapper.children[3].style.width = "100%";
-    hamburgerMenuWrapper.children[3].style.left = "0px";
-    localStorage.setItem("hamburger", "closed");
-    mobileDropMenu.style.top = "-150%";
-
-    if (localStorage.getItem("mode") === "dark") {
-      for (let mn of mobileNavLinks) {
-        mn.style.color = "black";
-      }
-    }
+    hamburgerClose();
   }
 });
 
 //mode switch
 modeSwitchContainer.addEventListener("click", function() {
-  mode = localStorage.getItem("mode");
-  if (mode !== "dark") {
+
+  if (localStorage.getItem("mode") !== "dark") {
     darkMode();
-    localStorage.setItem("mode", "dark");
   } else {
     lightMode();
-    localStorage.setItem("mode", "light");
   }
 });
+
+function hamburgerOpen() {
+   hamburgerMenuWrapper.children[0].style.top = "19px";
+   hamburgerMenuWrapper.children[0].style.width = "0%";
+   hamburgerMenuWrapper.children[0].style.left = "50%";
+
+   hamburgerMenuWrapper.children[1].style.transform = "rotate(45deg)";
+   hamburgerMenuWrapper.children[2].style.transform = "rotate(-45deg)";
+
+   hamburgerMenuWrapper.children[3].style.top = "18px";
+   hamburgerMenuWrapper.children[3].style.width = "0%";
+   hamburgerMenuWrapper.children[3].style.left = "50%";
+   localStorage.setItem("hamburger", "open");
+   mobileDropMenu.style.top = "74px";
+   if (localStorage.getItem("mode") === "dark") {
+     for (let mn of mobileNavLinks) {
+       mn.style.color = "white";
+     }
+   }
+}
+
+function hamburgerClose() {
+   hamburgerMenuWrapper.children[0].style.top = "4px";
+   hamburgerMenuWrapper.children[0].style.width = "100%";
+   hamburgerMenuWrapper.children[0].style.left = "0px";
+
+   hamburgerMenuWrapper.children[1].style.transform = "rotate(0deg)";
+   hamburgerMenuWrapper.children[1].style.top = "19px";
+   hamburgerMenuWrapper.children[2].style.top = "19px";
+   hamburgerMenuWrapper.children[2].style.transform = "rotate(0deg)";
+
+   hamburgerMenuWrapper.children[3].style.top = "34px";
+   hamburgerMenuWrapper.children[3].style.width = "100%";
+   hamburgerMenuWrapper.children[3].style.left = "0px";
+   localStorage.setItem("hamburger", "closed");
+   mobileDropMenu.style.top = "-150%";
+
+   if (localStorage.getItem("mode") === "dark") {
+     for (let mn of mobileNavLinks) {
+       mn.style.color = "black";
+     }
+   }
+}
 
 function setTransformProperty() {
 
@@ -144,6 +156,8 @@ function darkMode() {
     m.style.transitionTimingFunction = "ease-in";
   }
 
+  localStorage.setItem("mode", "dark");
+
 }
 
 function lightMode() {
@@ -197,6 +211,8 @@ function lightMode() {
     m.style.transitionDuration = "100ms";
     m.style.transitionTimingFunction = "ease-in";
   }
+
+  localStorage.setItem("mode", "light");
 }
 
 
