@@ -10,6 +10,7 @@ let navLinks = navLinksWrapper.children;
 let hamburgerMenuWrapper = document.querySelector("#navBar > .menu_icon_wrapper");
 let mobileDropMenu = document.querySelector("body > nav");
 let mobileMoonIcon = document.querySelector("body > nav > .mobile_mode_switch_container > div > .mobile_moon");
+console.log(mobileMoonIcon);
 let mobileNavLinks = mobileDropMenu.children[0].children;
 
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
@@ -51,28 +52,30 @@ modeSwitchContainer.addEventListener("click", function() {
 });
 
 function hamburgerOpen() {
-   hamburgerMenuWrapper.children[0].style.top = "19px";
-   hamburgerMenuWrapper.children[0].style.width = "0%";
-   hamburgerMenuWrapper.children[0].style.left = "50%";
+  hamburgerMenuWrapper.children[0].style.top = "19px";
+  hamburgerMenuWrapper.children[0].style.width = "0%";
+  hamburgerMenuWrapper.children[0].style.left = "50%";
 
-   hamburgerMenuWrapper.children[1].style.transform = "rotate(45deg)";
-   hamburgerMenuWrapper.children[2].style.transform = "rotate(-45deg)";
+  hamburgerMenuWrapper.children[1].style.transform = "rotate(45deg)";
+  hamburgerMenuWrapper.children[2].style.transform = "rotate(-45deg)";
 
-   hamburgerMenuWrapper.children[3].style.top = "18px";
-   hamburgerMenuWrapper.children[3].style.width = "0%";
-   hamburgerMenuWrapper.children[3].style.left = "50%";
+  hamburgerMenuWrapper.children[3].style.top = "18px";
+  hamburgerMenuWrapper.children[3].style.width = "0%";
+  hamburgerMenuWrapper.children[3].style.left = "50%";
   localStorage.setItem("hamburger", "open");
-  
+
   mobileDropMenu.style.top = "74px";
-  
-   if (localStorage.getItem("mode") === "dark") {
-     for (let mn of mobileNavLinks) {
-       mn.style.color = "white";
-     }
+
+  if (localStorage.getItem("mode") === "dark") {
+    for (let mn of mobileNavLinks) {
+      mn.style.color = "white";
+    }
   }
-  
-  mobileMoonIcon.style.filter =
+
+  /**
+   *  mobileMoonIcon.style.filter =
     "invert(.99) sepia(100%) saturate(9) brightness(120%) contrast(120%)";
+   */
 }
 
 function hamburgerClose() {
