@@ -176,7 +176,7 @@ body > .mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_cir
     z-index: 2;
 }
 
-body > .mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_circle>.mobile_switch_icon_wrapper {
+body > .mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_icon_wrapper {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -184,11 +184,6 @@ body > .mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_cir
     background-color: inherit;
     position: relative;
 }
-
-/*body nav div>#mobile_switch_icon_wrapper+#mobile_moon {
-    filter: invert(1) sepia(100%) saturate(90%);
-    z-index: 1;
-}*/
 
 
  /*Home Page Headers*/
