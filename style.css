@@ -348,7 +348,7 @@ body > nav {
 body > .icon8_link {
     position:absolute;
     bottom:1%;
-    font: size 8px;;
+    font-size: 2em;
     color:darkgrey;
     text-decoration: none;
     background-color: inherit;
