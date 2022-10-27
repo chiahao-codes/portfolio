@@ -11,16 +11,10 @@ let hamburgerMenuWrapper = document.querySelector("#navBar > .menu_icon_wrapper"
 let mobileDropMenu = document.querySelector("body > nav");
 let mobileNavLinks = mobileDropMenu.children[0].children;
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
- let mobileMoonIcon = document.querySelector(
-   "body > nav > .mobile_mode_switch_container > .mobile_switch_icon_wrapper  #mobile_moon"
- );
+ 
 let mode;
-console.log(mobileMoonIcon);
-/*
 
-    console.log(mobileMoonIcon);
-    mobileMoonIcon.style.filter =
-      "invert(.99) sepia(100%) saturate(9) brightness(120%) contrast(120%)";
+/*
 **/
 
 window.addEventListener("load", () => {
