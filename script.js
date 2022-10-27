@@ -61,13 +61,18 @@ function hamburgerOpen() {
    hamburgerMenuWrapper.children[3].style.top = "18px";
    hamburgerMenuWrapper.children[3].style.width = "0%";
    hamburgerMenuWrapper.children[3].style.left = "50%";
-   localStorage.setItem("hamburger", "open");
-   mobileDropMenu.style.top = "74px";
+  localStorage.setItem("hamburger", "open");
+  
+  mobileDropMenu.style.top = "74px";
+  
    if (localStorage.getItem("mode") === "dark") {
      for (let mn of mobileNavLinks) {
        mn.style.color = "white";
      }
-   }
+  }
+  
+  mobileMoonIcon.style.filter =
+    "invert(.99) sepia(100%) saturate(9) brightness(120%) contrast(120%)";
 }
 
 function hamburgerClose() {
