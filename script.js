@@ -32,7 +32,12 @@ hamburgerMenuWrapper.addEventListener("click", () => {
   setTransformProperty();
   if (localStorage.getItem("hamburger") === "closed") {
     hamburgerOpen();
-   
+    let mobileMoonIcon = document.querySelector(
+      "body > nav > .mobile_mode_switch_container > .mobile_switch_icon_wrapper > div + img"
+    );
+    console.log(mobileMoonIcon);
+    mobileMoonIcon.style.filter =
+      "invert(.99) sepia(100%) saturate(9) brightness(120%) contrast(120%)";
   } else {
     hamburgerClose();
   }
@@ -69,12 +74,6 @@ function hamburgerOpen() {
     }
   }
 
-  let mobileMoonIcon = document.querySelector(
-    "body > nav > .mobile_mode_switch_container > .mobile_switch_icon_wrapper > div + img"
-  );
-  console.log(mobileMoonIcon);
-  mobileMoonIcon.style.filter =
-    "invert(.99) sepia(100%) saturate(9) brightness(120%) contrast(120%)";
 }
 
 function hamburgerClose() {
