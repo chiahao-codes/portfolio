@@ -185,10 +185,11 @@ body > .mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_cir
     position: relative;
 }
 
-body nav div >#mobile_switch_icon_wrapper + #mobile_moon {
-filter:invert(1) sepia(100%) saturate(90%);
-z-index: 1;
-}
+/*body nav div>#mobile_switch_icon_wrapper+#mobile_moon {
+    filter: invert(1) sepia(100%) saturate(90%);
+    z-index: 1;
+}*/
+
 
  /*Home Page Headers*/
  body > #homeContainer {
