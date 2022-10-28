@@ -175,7 +175,7 @@ function darkMode() {
 
  //mobile mode switch;
   mobileSwitchContainer.style.backgroundColor = "black";
-  mobileSwitchCircle.style.transform = "translateX(.15px)";
+  mobileSwitchCircle.style.transform = "translateX(.14px)";
   mobileSwitchCircle.style.filter = "invert(1)";
   
   
