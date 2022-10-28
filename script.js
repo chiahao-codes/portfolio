@@ -79,12 +79,11 @@ function hamburgerOpen() {
   hamburgerMenuWrapper.children[3].style.top = "18px";
   hamburgerMenuWrapper.children[3].style.width = "0%";
   hamburgerMenuWrapper.children[3].style.left = "50%";
+
   localStorage.setItem("hamburger", "open");
 
   mobileDropMenu.style.top = "74px";
  
-  
-
   if (localStorage.getItem("mode") === "dark") {
     for (let mn of mobileNavLinks) {
       mn.style.color = "white";
@@ -125,16 +124,15 @@ function setTransitionProperty() {
 
 
   for (let hmi of hamburgerMenuWrapper.children) {
-    hmi.style.transitionProperty =
-      "transform background-color left width top";
-    hmi.style.transitionDuration = ".35s";
+    hmi.style.transitionProperty = "transform left width top";
+    hmi.style.transitionDuration = ".1s";
     hmi.style.transitionTimingFunction = "ease-in-out";
   }
 
   mobileDropMenu.style.transition = "top .40s ease-in-out";
 
   mobileSwitchCircle.style.transitionProperty = "transform filter ";
-  mobileSwitchCircle.style.transitionDuration = "1s 0s ";
+  mobileSwitchCircle.style.transitionDuration = ".5s 0s ";
   mobileSwitchCircle.style.transitionTimingFunction = "ease-in-out";
 }
 
