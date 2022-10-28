@@ -120,8 +120,8 @@ function setTransitionProperty() {
   }
 
   mobileSwitchContainer.style.transition = "background-color ease-in";
-  mobileDropMenu.style.transition = "top .35s ease-in-out";
-  mobileSwitchCircle.style.transition = "transform 100ms, filter, ease-in-out";
+  mobileDropMenu.style.transition = "top .35ms ease-in-out";
+  mobileSwitchCircle.style.transition = "transform 150ms, filter, ease-in-out";
  
 }
 
@@ -181,7 +181,7 @@ function darkMode() {
 
  //mobile mode switch;
   mobileSwitchContainer.style.backgroundColor = "black";
-  mobileSwitchCircle.style.transform = "translateX(1px)";
+  mobileSwitchCircle.style.transform = "translateX(.9px)";
   mobileSwitchCircle.style.filter = "invert(1)";
   
   
