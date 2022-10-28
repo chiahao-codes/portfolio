@@ -125,7 +125,7 @@ function setTransitionProperty() {
 
   for (let hmi of hamburgerMenuWrapper.children) {
     hmi.style.transitionProperty = "transform left width top";
-    hmi.style.transitionDuration = ".1s";
+    hmi.style.transitionDuration = ".25s";
     hmi.style.transitionTimingFunction = "ease-in-out";
   }
 
