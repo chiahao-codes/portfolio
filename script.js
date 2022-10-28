@@ -116,12 +116,12 @@ function hamburgerClose() {
 function setTransitionProperty() {
 
   body.style.transition = "background-color .1s ease-in";
-  navBar.style.transitionDuration = "background-color .1s ease-in";
-  modeSwitchContainer.style.transitionProperty = "background-color .1s ease-in";
+  navBar.style.transition = "background-color .1s ease-in";
+  modeSwitchContainer.style.transition = "background-color .1s ease-in";
   
-  switchCircle.style.transitionProperty = "transform .5s, filter .1s, ease-in";
+  switchCircle.style.transition = "transform .5s, filter .1s, ease-in";
   navLinksWrapper.style.transition = "color .1s ease-in";
-  homeContainer.style.transitionProperty = "color .1s ease-in";
+  homeContainer.style.transition = "color .1s ease-in";
 
 
   for (let hmi of hamburgerMenuWrapper.children) {
