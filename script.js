@@ -133,8 +133,9 @@ function setTransitionProperty() {
 
   mobileDropMenu.style.transition = "top .40s ease-in-out";
 
-  mobileSwitchCircle.style.transition = "transform 1.5s, filter 0s, ease-in-out";
- 
+  mobileSwitchCircle.style.transitionProperty = "transform filter ";
+  mobileSwitchCircle.style.transitionDuration = "1s 0s ";
+  mobileSwitchCircle.style.transitionTimingFunction = "ease-in-out";
 }
 
 function darkMode() {
