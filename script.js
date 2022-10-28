@@ -121,7 +121,7 @@ function setTransitionProperty() {
 
   mobileSwitchContainer.style.transition = "background-color ease-in";
   mobileDropMenu.style.transition = "top .35s ease-in-out";
-  mobileSwitchCircle.style.transition = "transform 100ms, filter 100ms, ease-in-out";
+  mobileSwitchCircle.style.transition = "transform 100ms, filter, ease-in-out";
  
 }
 
@@ -181,7 +181,7 @@ function darkMode() {
 
  //mobile mode switch;
   mobileSwitchContainer.style.backgroundColor = "black";
-  mobileSwitchCircle.style.transform = "translateX(1.5px)";
+  mobileSwitchCircle.style.transform = "translateX(1px)";
   mobileSwitchCircle.style.filter = "invert(1)";
   
   
