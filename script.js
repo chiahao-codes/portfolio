@@ -80,8 +80,8 @@ function hamburgerOpen() {
   localStorage.setItem("hamburger", "open");
 
   mobileDropMenu.style.top = "74px";
-  mobileDropMenu.style.transform = "top";
-  mobileDropMenu.style.transition = ".33 ease-in-out";
+ 
+  
 
   if (localStorage.getItem("mode") === "dark") {
     for (let mn of mobileNavLinks) {
@@ -103,11 +103,11 @@ function hamburgerClose() {
 
    hamburgerMenuWrapper.children[3].style.top = "34px";
    hamburgerMenuWrapper.children[3].style.width = "100%";
-   hamburgerMenuWrapper.children[3].style.left = "0px";
-   localStorage.setItem("hamburger", "closed");
-  mobileDropMenu.style.top = "-150%";
-  mobileDropMenu.style.transform = "top";
-  mobileDropMenu.style.transition = ".33 ease-in-out";
+  hamburgerMenuWrapper.children[3].style.left = "0px";
+  
+  localStorage.setItem("hamburger", "closed");
+  
+   mobileDropMenu.style.top = "-150%";
 
 }
 
@@ -116,6 +116,7 @@ function setTransitionProperty() {
   body.style.transition = "background-color 100ms ease-in";
   navBar.style.transitionDuration = "background-color 100ms ease-in";
   modeSwitchContainer.style.transitionProperty = "background-color 100ms ease-in";
+  mobileDropMenu.style.transition = "top .33 ease-in-out";
   switchCircle.style.transitionProperty = "transform 100ms, filter 100ms, ease-in";
   navLinksWrapper.style.transition = "color 100ms ease-in";
   homeContainer.style.transitionProperty = "color 100ms ease-in";
@@ -123,7 +124,7 @@ function setTransitionProperty() {
 
   for (let hmi of hamburgerMenuWrapper.children) {
     hmi.style.transitionProperty =
-      "rotate(0deg) transform background-color left width top";
+      "transform background-color left width top";
     hmi.style.transitionDuration = ".35s";
     hmi.style.transitionTimingFunction = "ease-in-out";
   }
