@@ -119,7 +119,7 @@ function setTransitionProperty() {
     hmi.style.transitionTimingFunction = "ease-in-out";
   }
 
-  mobileSwitchContainer.style.transition = "background-color .35s ease-in";
+  mobileSwitchContainer.style.transition = "background-color ease-in";
   mobileDropMenu.style.transition = "top .35s ease-in-out";
   mobileSwitchCircle.style.transition = "transform 100ms, filter 100ms, ease-in-out";
  
