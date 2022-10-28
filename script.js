@@ -113,8 +113,17 @@ function hamburgerClose() {
 
 function setTransitionProperty() {
 
+  body.style.transition = "background-color 100ms ease-in";
+  navBar.style.transitionDuration = "background-color 100ms ease-in";
+  modeSwitchContainer.style.transitionProperty = "background-color 100ms ease-in";
+  switchCircle.style.transitionProperty = "transform 100ms, filter 100ms, ease-in";
+  navLinksWrapper.style.transition = "color 100ms ease-in";
+  homeContainer.style.transitionProperty = "color 100ms ease-in";
+
+
   for (let hmi of hamburgerMenuWrapper.children) {
-    hmi.style.transitionProperty = "rotate(0deg) translateX() left width top";
+    hmi.style.transitionProperty =
+      "rotate(0deg) transform background-color left width top";
     hmi.style.transitionDuration = ".35s";
     hmi.style.transitionTimingFunction = "ease-in-out";
   }
@@ -127,39 +136,24 @@ function setTransitionProperty() {
 
 function darkMode() {
   body.style.backgroundColor = "#161617";
-  body.style.transitionProperty = "background-color";
-  body.style.transitionDuration = "100ms";
-  body.style.transitionTimingFunction = "ease-in";
 
-  navBar.style.transitionProperty = "background-color";
-  navBar.style.transitionDuration = "100ms";
-  navBar.style.transitionTimingFunction = "ease-in";
   navBar.style.backgroundColor = "#1a1a1a";
 
   modeSwitchContainer.style.backgroundColor = "black";
-  modeSwitchContainer.style.transitionProperty = "background-color";
-  modeSwitchContainer.style.transitionDuration = "100ms";
-  modeSwitchContainer.style.transitionTimingFunction = "ease-in";
-
+ 
   switchCircle.style.transform = "translateX(1.5px)";
   switchCircle.style.filter = "invert(1)";
-  switchCircle.style.transitionProperty = "transform,filter";
-  switchCircle.style.transitionDuration = "100ms";
-  switchCircle.style.transitionTimingFunction = "ease-in";
+ 
 
   navLinksWrapper.style.color = "white";
-  navLinksWrapper.style.transitionProperty = "color";
-  navLinksWrapper.style.transitionDuration = "100ms";
-  navLinksWrapper.style.transitionTimingFunction = "ease-in";
+  
 
   socialIcons[0].style.filter = "invert(1)";
   socialIcons[1].style.filter = "invert(1)";
   socialIcons[2].style.filter = "invert(1)";
 
   homeContainer.style.color = "white";
-  homeContainer.style.transitionProperty = "color";
-  homeContainer.style.transitionDuration = "100ms";
-  homeContainer.style.transitionTimingFunction = "ease-in";
+ 
 
   for (let n of navLinks) {
     n.style.filter = "brightness(110%), contrast(110%)";
@@ -168,10 +162,7 @@ function darkMode() {
 
    for (let m of menuIcon) {
     m.style.backgroundColor = "white";
-    m.style.transitionProperty =
-      "background-color transform left width top";
-    m.style.transitionDuration = "100ms";
-    m.style.transitionTimingFunction = "ease-in";
+ 
   }
 
 //mobile navigation links  
@@ -191,39 +182,25 @@ function darkMode() {
 
 function lightMode() {
   body.style.backgroundColor = "white";
-  body.style.transitionProperty = "background-color";
-  body.style.transitionDuration = "100ms";
-  body.style.transitionTimingFunction = "ease-in";
 
-  navBar.style.transitionProperty = "background-color";
-  navBar.style.transitionDuration = "100ms";
-  navBar.style.transitionTimingFunction = "ease-in";
   navBar.style.backgroundColor = "#ebeded";
 
   modeSwitchContainer.style.backgroundColor = "#dcdcde";
-  modeSwitchContainer.style.transitionProperty = "background-color";
-  modeSwitchContainer.style.transitionDuration = "100ms";
-  modeSwitchContainer.style.transitionTimingFunction = "ease-in";
+ 
 
   switchCircle.style.transform = "translateX(-28.5px)";
   switchCircle.style.filter = "invert(0)";
-  switchCircle.style.transitionProperty = "transform, filter";
-  switchCircle.style.transitionDuration = "100ms";
-  switchCircle.style.transitionTimingFunction = "ease-in";
+
 
   navLinksWrapper.style.color = "black";
-  navLinksWrapper.style.transitionProperty = "color";
-  navLinksWrapper.style.transitionDuration = "100ms";
-  navLinksWrapper.style.transitionTimingFunction = "ease-in";
+  
 
   socialIcons[0].style.filter = "invert(0)";
   socialIcons[1].style.filter = "invert(0)";
   socialIcons[2].style.filter = "invert(0)";
 
   homeContainer.style.color = "black";
-  homeContainer.style.transitionProperty = "color";
-  homeContainer.style.transitionDuration = "100ms";
-  homeContainer.style.transitionTimingFunction = "ease-in";
+ 
 
   for (let n of navLinks) {
     n.style.filter = "brightness(110%), contrast(110%)";
@@ -232,9 +209,6 @@ function lightMode() {
 
   for (let m of menuIcon) {
     m.style.backgroundColor = "black";
-    m.style.transitionProperty = "background-color";
-    m.style.transitionDuration = "100ms";
-    m.style.transitionTimingFunction = "ease-in";
   }
 
   //mobile navigation links
