@@ -12,7 +12,9 @@ let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
 let mobileDropMenu = document.querySelector("body > .mobile_navigation_links");
 let mobileNavLinks = document.querySelectorAll("body > .mobile_navigation_links > div > h3");
 let mobileSwitchContainer = document.querySelector("body > .mobile_navigation_links > #mobile_mode_switch_container");
-let mobileSwitchCircle = document.querySelector("body > .mobile_navigation_links > #mobile_mode_switch_container > img");
+let mobileSwitchCircle = document.querySelector(
+  "body > .mobile_navigation_links > #mobile_mode_switch_container > .mobile_switch_circle"
+);
 
 let homeContainer = document.getElementsByClassName("home_heading_container")[0];
 
@@ -61,7 +63,7 @@ mobileSwitchContainer.addEventListener("click", () => {
   if (localStorage.getItem("mode") === "light") {
     darkMode();
   } else {
-    lightMode()
+    lightMode();
   }
   
 })
@@ -129,7 +131,7 @@ function setTransitionProperty() {
     hmi.style.transitionTimingFunction = "ease-in-out";
   }
 
-  mobileDropMenu.style.transition = "top 1.5s ease-in-out";
+  mobileDropMenu.style.transition = "top .40s ease-in-out";
 
   mobileSwitchCircle.style.transition = "transform 1.5s, filter 0s, ease-in-out";
  
@@ -173,7 +175,7 @@ function darkMode() {
 
  //mobile mode switch;
   mobileSwitchContainer.style.backgroundColor = "black";
-  mobileSwitchCircle.style.transform = "translateX(.7px)";
+  mobileSwitchCircle.style.transform = "translateX(.5px)";
   mobileSwitchCircle.style.filter = "invert(1)";
   
   
