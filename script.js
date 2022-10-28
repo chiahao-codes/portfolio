@@ -113,13 +113,13 @@ function hamburgerClose() {
 
 function setTransitionProperty() {
 
-  body.style.transition = "background-color 100ms ease-in";
-  navBar.style.transitionDuration = "background-color 100ms ease-in";
-  modeSwitchContainer.style.transitionProperty = "background-color 100ms ease-in";
-  mobileDropMenu.style.transition = "top .33 ease-in-out";
-  switchCircle.style.transitionProperty = "transform 100ms, filter 100ms, ease-in";
-  navLinksWrapper.style.transition = "color 100ms ease-in";
-  homeContainer.style.transitionProperty = "color 100ms ease-in";
+  body.style.transition = "background-color .1s ease-in";
+  navBar.style.transitionDuration = "background-color .1s ease-in";
+  modeSwitchContainer.style.transitionProperty = "background-color .1s ease-in";
+  
+  switchCircle.style.transitionProperty = "transform .5s, filter .1s, ease-in";
+  navLinksWrapper.style.transition = "color .1s ease-in";
+  homeContainer.style.transitionProperty = "color .1s ease-in";
 
 
   for (let hmi of hamburgerMenuWrapper.children) {
@@ -129,11 +129,9 @@ function setTransitionProperty() {
     hmi.style.transitionTimingFunction = "ease-in-out";
   }
 
-  mobileDropMenu.style.transitionProperty = "top background-color ease-in";
-  mobileDropMenu.style.transitionDuration = "150ms";
-  mobileDropMenu.style.transitionTimingFunction = "ease-in-out";
+  mobileDropMenu.style.transitionProperty = "top .1s ease-in";
 
-  mobileSwitchCircle.style.transition = "transform 250ms, filter 0s, ease-in-out";
+  mobileSwitchCircle.style.transition = "transform .1s, filter 0s, ease-in-out";
  
 }
 
@@ -175,7 +173,7 @@ function darkMode() {
 
  //mobile mode switch;
   mobileSwitchContainer.style.backgroundColor = "black";
-  mobileSwitchCircle.style.transform = "translateX(.75px)";
+  mobileSwitchCircle.style.transform = "translateX(.7px)";
   mobileSwitchCircle.style.filter = "invert(1)";
   
   
