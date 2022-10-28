@@ -174,7 +174,7 @@ function darkMode() {
 
  //mobile mode switch;
   mobileSwitchContainer.style.backgroundColor = "black";
-  mobileSwitchCircle.style.transform = "translateX(.13px)";
+  mobileSwitchCircle.style.transform = "translateX(.1px)";
   mobileSwitchCircle.style.filter = "invert(1)";
   
   localStorage.setItem("mode", "dark");
