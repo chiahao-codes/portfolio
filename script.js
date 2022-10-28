@@ -131,11 +131,11 @@ function setTransitionProperty() {
 
   mobileSwitchContainer.style.transition = "background-color ease-in";
   mobileDropMenu.style.transitionProperty = "top";
-  mobileDropMenu.style.transitionDuration = ".35ms";
+  mobileDropMenu.style.transitionDuration = "100ms";
   mobileDropMenu.style.transitionTimingFunction = "ease-in-out";
 
    
-  mobileSwitchCircle.style.transition = "transform 150ms, filter 0s, ease-in-out";
+  mobileSwitchCircle.style.transition = "transform 250ms, filter 0s, ease-in-out";
  
 }
 
