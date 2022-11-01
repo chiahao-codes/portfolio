@@ -18,6 +18,7 @@ html {
      margin: 0;
      position: relative;
      scroll-snap-type: y mandatory;
+     scroll-padding-bottom: 30vh;
  }
 
 /*nav bar*/
@@ -219,8 +220,6 @@ body>.mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_icon_
      align-items: center;
      position: relative;
      scroll-snap-align: start;
-     scroll-margin-top: 40vh;
-    
      width: 100%;
      height: fit-content;
  }
