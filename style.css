@@ -17,6 +17,7 @@ html {
      overflow-y: scroll;
      margin: 0;
      position: relative;
+     scroll-snap-type: y mandatory;
  }
 
 /*nav bar*/
