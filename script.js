@@ -82,7 +82,7 @@ function hamburgerOpen() {
 
   localStorage.setItem("hamburger", "open");
 
-  mobileDropMenu.style.top = "74px";
+  mobileDropMenu.style.top = "94px";
  
   if (localStorage.getItem("mode") === "dark") {
     for (let mn of mobileNavLinks) {
