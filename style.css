@@ -18,7 +18,7 @@ html {
      margin: 0;
      position: relative;
      scroll-snap-type: y mandatory;
-     scroll-padding-bottom: 30vh;
+     scroll-padding-top: 30vh;
  }
 
 /*nav bar*/
