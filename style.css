@@ -455,6 +455,7 @@ body > .icon8_link {
     color:white;
     text-decoration: none;
     background-color: inherit;
+    bottom:5%;
 }
 
 @media screen and (max-width:831.99px) {
