@@ -13,7 +13,7 @@ html {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    row-gap: 20vh;
+    row-gap: 8vh;
     background-color: #161617;
      height: 100vh;
      width: 100vw;
