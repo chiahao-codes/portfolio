@@ -36,6 +36,7 @@ body>#navBar {
     height: 60px;
     position: fixed;
     top: 0%;
+    left:0%;
     z-index: 1;
     box-shadow: 0 0 10px #000;
     backdrop-filter: saturate(50%) blur(25px);
