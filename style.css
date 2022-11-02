@@ -32,7 +32,7 @@ body>#navBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 101%;
     height: 60px;
     position: fixed;
     top: 0%;
@@ -446,13 +446,12 @@ body>.mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_icon_
  }
 
 body > .icon8_link {
-    position:relative;
+    position:fixed;
     bottom:1%;
     font-size: .5vmin;
     color:white;
     text-decoration: none;
     background-color: inherit;
-    
 }
 
 @media screen and (max-width:831.99px) {
