@@ -149,11 +149,10 @@ function darkMode() {
  
 
   navLinksWrapper.style.color = "white";
-  
 
-  socialIcons[0].style.filter = "invert(1)";
-  socialIcons[1].style.filter = "invert(1)";
-  socialIcons[2].style.filter = "invert(1)";
+  for (let i = 0; i < socialIcons.length; i++) {
+    socialIcons[i].style.filter = "invert(1)";
+  }
 
   homeContainer.style.color = "white";
  
@@ -198,9 +197,9 @@ function lightMode() {
 
   navLinksWrapper.style.color = "black";
 
-  socialIcons[0].style.filter = "invert(0)";
-  socialIcons[1].style.filter = "invert(0)";
-  socialIcons[2].style.filter = "invert(0)";
+   for (let i = 0; i < socialIcons.length; i++) {
+     socialIcons[i].style.filter = "invert(0)";
+   }
 
   homeContainer.style.color = "black";
 
@@ -212,6 +211,7 @@ function lightMode() {
   for (let m of menuIcon) {
     m.style.backgroundColor = "black";
   }
+
 
   //mobile navigation links
   for (let mn of mobileNavLinks) {
