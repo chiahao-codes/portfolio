@@ -8,7 +8,8 @@ let navLinksWrapper = document.querySelectorAll("#navBar > #navigation_links_wra
 let navLinks = navLinksWrapper.children;
 let hamburgerMenuWrapper = document.querySelector("body > #navBar > .menu_icon_wrapper");
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
-let moonIconLink = document.querySelector("body > a.icon8_link")
+let moonIconLink = document.querySelector("body > a.icon8_link");
+
 
 let mobileDropMenu = document.querySelector("body > .mobile_navigation_links");
 let mobileNavLinks = document.querySelectorAll("body > .mobile_navigation_links > div > h3");
@@ -19,8 +20,7 @@ let mobileSwitchCircle = document.querySelector(
 );
 
 let homeContainer = document.getElementsByClassName("home_heading_container")[0];
-
-let portfolioContainer = document.querySelector("body > section");
+let portfolioContainer = document.querySelector("body section.portfolioContainer");
 
 /*
 **/
@@ -36,7 +36,6 @@ window.addEventListener("resize", () => {
     hamburgerClose();
   }
 })
-
 
 //mobile hamburger menu
 hamburgerMenuWrapper.addEventListener("click", () => {
@@ -123,6 +122,7 @@ function setTransitionProperty() {
   switchCircle.style.transition = "transform .5s, filter .1s, ease-in";
   navLinksWrapper.style.transition = "color .1s ease-in";
   homeContainer.style.transition = "color .1s ease-in";
+  portfolioContainer.style.transition = "color .1s ease-in";
 
 
   for (let hmi of hamburgerMenuWrapper.children) {
@@ -155,9 +155,6 @@ function darkMode() {
     n.style.fontWeight = "600";
   }
 
-  homeContainer.style.color = "white";
-  moonIconLink.style.color = "white";
-
   for (let m of menuIcon) {
     m.style.backgroundColor = "white";
   }
@@ -176,6 +173,12 @@ function darkMode() {
   mobileSwitchContainer.style.backgroundColor = "black";
   mobileSwitchCircle.style.transform = "translateX(.1px)";
   mobileSwitchCircle.style.filter = "invert(1)";
+
+
+  //page body
+  homeContainer.style.color = "white";
+  portfolioContainer.style.color = "white";
+  moonIconLink.style.color = "white";
   
   localStorage.setItem("mode", "dark");
 }
@@ -191,9 +194,6 @@ function lightMode() {
    for (let i = 0; i < socialIcons.length; i++) {
      socialIcons[i].style.filter = "invert(0)";
   }
-  
-  homeContainer.style.color = "black";
-  moonIconLink.style.color = "black";
 
   for (let n of navLinks) {
     n.style.filter = "brightness(110%), contrast(110%)";
@@ -218,6 +218,11 @@ function lightMode() {
   mobileSwitchContainer.style.backgroundColor = "#dcdcde";
   mobileSwitchCircle.style.transform = "translateX(-29.5px)";
   mobileSwitchCircle.style.filter = "invert(0)";
+
+//page body;
+  homeContainer.style.color = "black";
+  portfolioContainer.style.color = "black";
+  moonIconLink.style.color = "black";
 
   localStorage.setItem("mode", "light");
 }
