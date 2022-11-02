@@ -150,7 +150,7 @@ body > .mobile_navigation_links {
         background: inherit;
         width: 100%;
         height: max-content;
-        row-gap: 10px;
+        row-gap: 15px;
         padding-bottom:10px;
         left: 0;
         top: -150%;
