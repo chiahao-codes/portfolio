@@ -172,6 +172,7 @@ body>.mobile_navigation_links>#mobile_social_icon_parent{
     justify-content: space-around;
     align-items:center;
     width:max-content;
+    top:-10px;
 }
 
 body>.mobile_navigation_links>#mobile_social_icon_parent > a {
