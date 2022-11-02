@@ -11,6 +11,7 @@ let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
 
 let mobileDropMenu = document.querySelector("body > .mobile_navigation_links");
 let mobileNavLinks = document.querySelectorAll("body > .mobile_navigation_links > div > h3");
+let mobileSocialIcons = document.querySelectorAll("body > .mobile_navigation_links > #mobile_social_icon_parent > a > .mobile_social_icon");
 let mobileSwitchContainer = document.querySelector("body > .mobile_navigation_links > #mobile_mode_switch_container");
 let mobileSwitchCircle = document.querySelector(
   "body > .mobile_navigation_links > #mobile_mode_switch_container > .mobile_switch_circle"
@@ -82,7 +83,7 @@ function hamburgerOpen() {
 
   localStorage.setItem("hamburger", "open");
 
-  mobileDropMenu.style.top = "94px";
+  mobileDropMenu.style.top = "92px";
  
   if (localStorage.getItem("mode") === "dark") {
     for (let mn of mobileNavLinks) {
@@ -170,7 +171,12 @@ function darkMode() {
 //mobile navigation links  
    for (let mn of mobileNavLinks) {
      mn.style.color = "white";
-   }
+  }
+
+  //mobile social media icons;
+  for (let i = 0; i < mobileSocialIcons.length; i++) {
+    mobileSocialIcons[i].style.filter = "invert(1)";
+  }
 
  //mobile mode switch;
   mobileSwitchContainer.style.backgroundColor = "black";
@@ -186,21 +192,17 @@ function lightMode() {
   navBar.style.backgroundColor = "#ebeded";
 
   modeSwitchContainer.style.backgroundColor = "#dcdcde";
- 
 
   switchCircle.style.transform = "translateX(-28.5px)";
   switchCircle.style.filter = "invert(0)";
 
-
   navLinksWrapper.style.color = "black";
-  
 
   socialIcons[0].style.filter = "invert(0)";
   socialIcons[1].style.filter = "invert(0)";
   socialIcons[2].style.filter = "invert(0)";
 
   homeContainer.style.color = "black";
- 
 
   for (let n of navLinks) {
     n.style.filter = "brightness(110%), contrast(110%)";
@@ -212,15 +214,19 @@ function lightMode() {
   }
 
   //mobile navigation links
-    for (let mn of mobileNavLinks) {
-      mn.style.color = "black";
+  for (let mn of mobileNavLinks) {
+    mn.style.color = "black";
   }
-  
+
+  //mobile social media icons;
+  for (let i = 0; i < mobileSocialIcons.length; i++) {
+    mobileSocialIcons[i].style.filter = "invert(0)";
+  }
+
   //mobile mode switch;
   mobileSwitchContainer.style.backgroundColor = "#dcdcde";
   mobileSwitchCircle.style.transform = "translateX(-29.5px)";
   mobileSwitchCircle.style.filter = "invert(0)";
-
 
   localStorage.setItem("mode", "light");
 }
