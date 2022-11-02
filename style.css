@@ -38,7 +38,7 @@ body>#navBar {
     position: fixed;
     top: 0%;
     left:0%;
-    z-index: 1;
+    z-index: 2;
     box-shadow: 0 0 10px #000;
     backdrop-filter: saturate(50%) blur(25px);
     -webkit-backdrop-filter: saturate(50%) blur(25px);
@@ -75,7 +75,7 @@ nav>#mode_switch_social_wrapper>#mode_switch_container > .switch_circle {
     filter: invert(1);
     top:auto;
     bottom:auto;
-    z-index: 2;
+    z-index: 1;
 }
 
 nav>#mode_switch_social_wrapper>#mode_switch_container > #switch_icon_wrapper{
@@ -160,7 +160,7 @@ body > .mobile_navigation_links {
         padding-bottom:17px;
         left: 0;
         top: -150%;
-        z-index: 2;
+        z-index: 1;
         box-shadow: 0 0 10px #000;
         opacity: .99;
 }
