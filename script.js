@@ -8,6 +8,7 @@ let navLinksWrapper = document.querySelectorAll("#navBar > #navigation_links_wra
 let navLinks = navLinksWrapper.children;
 let hamburgerMenuWrapper = document.querySelector("body > #navBar > .menu_icon_wrapper");
 let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
+let moonIconLink = document.querySelector("body > a.icon8_link")
 
 let mobileDropMenu = document.querySelector("body > .mobile_navigation_links");
 let mobileNavLinks = document.querySelectorAll("body > .mobile_navigation_links > div > h3");
@@ -139,32 +140,26 @@ function setTransitionProperty() {
 
 function darkMode() {
   body.style.backgroundColor = "#161617";
-
   navBar.style.backgroundColor = "#1a1a1a";
-
   modeSwitchContainer.style.backgroundColor = "black";
- 
   switchCircle.style.transform = "translateX(1.5px)";
-  switchCircle.style.filter = "invert(1)";
- 
-
+  switchCircle.style.filter = "invert(1)"; 
   navLinksWrapper.style.color = "white";
 
   for (let i = 0; i < socialIcons.length; i++) {
     socialIcons[i].style.filter = "invert(1)";
   }
 
-  homeContainer.style.color = "white";
- 
-
   for (let n of navLinks) {
     n.style.filter = "brightness(110%), contrast(110%)";
     n.style.fontWeight = "600";
   }
 
-   for (let m of menuIcon) {
+  homeContainer.style.color = "white";
+  moonIconLink.style.color = "white";
+
+  for (let m of menuIcon) {
     m.style.backgroundColor = "white";
- 
   }
 
 //mobile navigation links  
@@ -187,21 +182,18 @@ function darkMode() {
 
 function lightMode() {
   body.style.backgroundColor = "white";
-
   navBar.style.backgroundColor = "#ebeded";
-
   modeSwitchContainer.style.backgroundColor = "#dcdcde";
-
   switchCircle.style.transform = "translateX(-28.5px)";
   switchCircle.style.filter = "invert(0)";
-
   navLinksWrapper.style.color = "black";
 
    for (let i = 0; i < socialIcons.length; i++) {
      socialIcons[i].style.filter = "invert(0)";
-   }
-
+  }
+  
   homeContainer.style.color = "black";
+  moonIconLink.style.color = "black";
 
   for (let n of navLinks) {
     n.style.filter = "brightness(110%), contrast(110%)";
@@ -211,7 +203,6 @@ function lightMode() {
   for (let m of menuIcon) {
     m.style.backgroundColor = "black";
   }
-
 
   //mobile navigation links
   for (let mn of mobileNavLinks) {
