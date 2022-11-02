@@ -296,6 +296,7 @@ body>.mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_icon_
      text-align: center;
      height: max-content;
      width: 100%;
+     color:inherit;
  }
 
  section.portfolio_container>#portfolio {
@@ -307,13 +308,13 @@ body>.mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_icon_
      align-items: center;
      width: 100%;
      height: max-content;
-     color: white;
+     color: inherit;
  }
 
  #chess_article {
      padding-left: 1.5%;
      padding-right:.7%;
-     color: white;
+     color: inherit;
      height: 108px;
      width: 670px;
      min-width: 670px;
@@ -326,7 +327,7 @@ body>.mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_icon_
 
 
  #chess_link {
-     color: white;
+     color: inherit;
      align-content: center;
      display: flex;
      justify-content: space-between;
@@ -380,7 +381,7 @@ body>.mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_icon_
  #calculator_article {
      padding-left: 1.5%;
      padding-right: 1%;
-     color:white;;
+     color:inherit;
      height: 108px;
      width: 670px;
      min-width: 670px;
@@ -391,7 +392,7 @@ body>.mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_icon_
  }
 
  #calculator_link {
-     color:white;;
+     color:inherit;
      align-content: center;
      display: flex;
      justify-content: space-between;
@@ -445,7 +446,7 @@ body > .icon8_link {
     display: inline-block;
     position: relative;
     font-size: .5vmin;
-    color:white;
+    color:inherit;
     text-decoration: none;
     background-color: inherit;
 }
