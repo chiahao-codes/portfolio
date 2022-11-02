@@ -20,7 +20,7 @@ let mobileSwitchCircle = document.querySelector(
 );
 
 let homeContainer = document.getElementsByClassName("home_heading_container")[0];
-let portfolioContainer = document.querySelector("body section.portfolioContainer");
+let portfolioContainer = document.querySelector("body section.portfolio_container");
 
 /*
 **/
