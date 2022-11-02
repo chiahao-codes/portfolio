@@ -23,7 +23,7 @@ html {
      margin: 0;
      position: relative;
      scroll-snap-type: y mandatory;
-     padding-top:80px;
+     padding-top:180px;
  }
 
 /*nav bar*/
