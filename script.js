@@ -37,7 +37,14 @@ window.addEventListener("resize", () => {
   if (window.innerWidth >= 832) {
     hamburgerClose();
   }
-})
+});
+
+window.addEventListener("scroll", () => {
+  if (localStorage.getItem("hamburger") === "open") {
+    hamburgerClose();
+  }
+});
+
 
 //mobile hamburger menu
 hamburgerMenuWrapper.addEventListener("click", () => {
