@@ -21,8 +21,6 @@ let mobileSwitchCircle = document.querySelector(
 
 let homeContainer = document.getElementsByClassName("home_heading_container")[0];
 let portfolioContainer = document.querySelector("body section.portfolio_container");
-//let portfolioHeading = document.querySelector("body section.portfolio_container h1");
-//let portfolioArticles = document.querySelectorAll("body section.portfolio_container #portfolio article");
 /*
 **/
 
