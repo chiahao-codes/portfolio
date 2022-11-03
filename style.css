@@ -18,6 +18,7 @@ body{
     position:relative;
     height: 100%;
     width: 100%;
+    margin:0;
 }
 
 
@@ -31,6 +32,7 @@ body{
             background-color: #161617;
             height: 100%;
             width: 100%;
+            margin:auto;
             font-family: "Cormorant SC", sans-serif;
             overflow-x: hidden;
             overflow-y: scroll;
