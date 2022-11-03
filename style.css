@@ -10,6 +10,8 @@ html {
 
 :root{
     --navbar-height:60px;
+    --darkMode-background-color: #161617;
+    --darkMode-lighter-background-color: #222324;
 }
 
 @media screen and (min-width:320px) {
@@ -293,8 +295,9 @@ html {
             left: 0;
             right: 0;
             color: white;
+            background-color:var(--darkMode-lighter-background-color);
             z-index: 0;
-            top: calc(var(--navbar-height) * 4);
+            top: calc(var(--navbar-height) * 5);
         }
     
         section.portfolio_container>h1 {
@@ -329,7 +332,7 @@ html {
             border-color: white;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             filter: brightness(150%), contrast(150%);
-    
+            background-color: var(--darkMode-background-color);
         }
     
     
@@ -398,6 +401,7 @@ html {
             ;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             filter: brightness(150%), contrast(150%);
+            background-color: var(--darkMode-background-color);
         }
     
         #calculator_link {

@@ -21,6 +21,7 @@ let mobileSwitchCircle = document.querySelector(
 
 let homeContainer = document.getElementsByClassName("home_heading_container")[0];
 let portfolioContainer = document.querySelector("body section.portfolio_container");
+let portfolioArticles = document.querySelectorAll("body section.portfolio_container #portfolio article");
 /*
 **/
 
@@ -121,8 +122,12 @@ function setTransitionProperty() {
   switchCircle.style.transition = "transform .5s, filter .1s, ease-in";
   navLinksWrapper.style.transition = "color .1s ease-in";
   homeContainer.style.transition = "color .1s ease-in";
-  portfolioContainer.style.transition = "color .1s ease-in";
-  //portfolioHeading.style.transition = "color .1s ease-in";
+  portfolioContainer.style.transition = "color .1s, background-color .1s, ease-in";
+  
+   for (let p of portfolioArticles) {
+     p.style.transition = "background-color .1s ease-in";
+   }
+
   
 
   for (let hmi of hamburgerMenuWrapper.children) {
@@ -178,7 +183,12 @@ function darkMode() {
   //page body
   homeContainer.style.color = "white";
   portfolioContainer.style.color = "white";
-  //portfolioHeading.style.color = "white";
+  portfolioContainer.style.backgroundColor = "#222324";
+
+  for (let p of portfolioArticles) {
+    p.style.backgroundColor = "#161617";
+  }
+
   moonIconLink.style.color = "white";
   
   localStorage.setItem("mode", "dark");
@@ -223,7 +233,12 @@ function lightMode() {
 //page body;
   homeContainer.style.color = "black";
   portfolioContainer.style.color = "black";
-  //portfolioHeading.style.color = "black";
+  portfolioContainer.style.backgroundColor = "#ebeded";
+
+  for (let p of portfolioArticles) {
+    p.style.backgroundColor = "white";
+  }
+
   moonIconLink.style.color = "black";
 
   localStorage.setItem("mode", "light");
