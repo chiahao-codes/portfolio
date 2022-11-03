@@ -1,27 +1,27 @@
-let body = document.getElementsByTagName("body")[0];
+let mainDiv = document.querySelector("body > main");
 
 let navBar = document.getElementsByClassName("nav_bar")[0];
-let switchCircle = document.querySelector("#navBar > #mode_switch_social_wrapper > #mode_switch_container > .switch_circle");
+let switchCircle = document.querySelector("body main #navBar > #mode_switch_social_wrapper > #mode_switch_container > .switch_circle");
 let modeSwitchContainer = document.getElementsByClassName("mode_switch_container")[0];
 let socialIcons = document.querySelectorAll(".social_icon_parent > a > .social_icon");
-let navLinksWrapper = document.querySelectorAll("#navBar > #navigation_links_wrapper")[0];
+let navLinksWrapper = document.querySelectorAll("main #navBar > #navigation_links_wrapper")[0];
 let navLinks = navLinksWrapper.children;
-let hamburgerMenuWrapper = document.querySelector("body > #navBar > .menu_icon_wrapper");
-let menuIcon = document.querySelectorAll("#menuIconWrapper > .menuIcon");
-let moonIconLink = document.querySelector("body > a.icon8_link");
+let hamburgerMenuWrapper = document.querySelector("body > main #navBar > .menu_icon_wrapper");
+let menuIcon = document.querySelectorAll(" body main nav #menuIconWrapper > .menuIcon");
+let moonIconLink = document.querySelector("body main a.icon8_link");
 
 
-let mobileDropMenu = document.querySelector("body > .mobile_navigation_links");
-let mobileNavLinks = document.querySelectorAll("body > .mobile_navigation_links > div > h3");
-let mobileSocialIcons = document.querySelectorAll("body > .mobile_navigation_links > #mobile_social_icon_parent > a > .mobile_social_icon");
-let mobileSwitchContainer = document.querySelector("body > .mobile_navigation_links > #mobile_mode_switch_container");
+let mobileDropMenu = document.querySelector("body main > .mobile_navigation_links");
+let mobileNavLinks = document.querySelectorAll("body main > .mobile_navigation_links > div > h3");
+let mobileSocialIcons = document.querySelectorAll("body main > .mobile_navigation_links > #mobile_social_icon_parent > a > .mobile_social_icon");
+let mobileSwitchContainer = document.querySelector("body main > .mobile_navigation_links > #mobile_mode_switch_container");
 let mobileSwitchCircle = document.querySelector(
-  "body > .mobile_navigation_links > #mobile_mode_switch_container > .mobile_switch_circle"
+  "body main > .mobile_navigation_links > #mobile_mode_switch_container > .mobile_switch_circle"
 );
 
 let homeContainer = document.getElementsByClassName("home_heading_container")[0];
-let portfolioContainer = document.querySelector("body section.portfolio_container");
-let portfolioArticles = document.querySelectorAll("body section.portfolio_container #portfolio article");
+let portfolioContainer = document.querySelector("body main section.portfolio_container");
+let portfolioArticles = document.querySelectorAll("body main section.portfolio_container #portfolio article");
 /*
 **/
 
@@ -115,7 +115,7 @@ function hamburgerClose() {
 
 function setTransitionProperty() {
 
-  body.style.transition = "background-color .1s ease-in";
+  mainDiv.style.transition = "background-color .1s ease-in";
   navBar.style.transition = "background-color .1s ease-in";
   modeSwitchContainer.style.transition = "background-color .1s ease-in";
   
@@ -144,7 +144,7 @@ function setTransitionProperty() {
 }
 
 function darkMode() {
-  body.style.backgroundColor = "#161617";
+  mainDiv.style.backgroundColor = "#161617";
   navBar.style.backgroundColor = "#1a1a1a";
   modeSwitchContainer.style.backgroundColor = "black";
   switchCircle.style.transform = "translateX(1.5px)";
@@ -195,7 +195,7 @@ function darkMode() {
 }
 
 function lightMode() {
-  body.style.backgroundColor = "white";
+  mainDiv.style.backgroundColor = "white";
   navBar.style.backgroundColor = "#ebeded";
   modeSwitchContainer.style.backgroundColor = "#dcdcde";
   switchCircle.style.transform = "translateX(-28.5px)";
