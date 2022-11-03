@@ -44,7 +44,7 @@ body > #main {
             margin: 0;
             position: relative;
             scroll-snap-type: y mandatory;
-            
+            scroll-padding: 60px 0px 0px 0px;
         }
     
         /*nav bar*/
@@ -273,6 +273,7 @@ body > #main {
             justify-content: center;
             align-items: center;
             position: relative;
+            scroll-snap-align: start;
         }
     
         #homeHeading {
