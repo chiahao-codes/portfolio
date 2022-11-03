@@ -83,7 +83,7 @@ function hamburgerOpen() {
   hamburgerMenuWrapper.children[3].style.width = "0%";
   hamburgerMenuWrapper.children[3].style.left = "50%";
 
-  localStorage.setItem("hamburger", "open");
+  window.scrollTo(0, 0);
 
   mobileDropMenu.style.top = "92px";
  
@@ -92,6 +92,8 @@ function hamburgerOpen() {
       mn.style.color = "white";
     }
   }
+
+  localStorage.setItem("hamburger", "open");
 
 }
 
