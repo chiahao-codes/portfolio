@@ -290,14 +290,15 @@ html {
         section.portfolio_container {
             display: block;
             width: 100%;
-            height: 400px;
+            height: 500px;
             position: relative;
             left: 0;
             right: 0;
             color: white;
             background-color:var(--darkMode-lighter-background-color);
             z-index: 0;
-            top: calc(var(--navbar-height) * 5);
+            top: calc(var(--navbar-height) * 6);
+            padding:10px, 0;
         }
     
         section.portfolio_container>h1 {
@@ -313,7 +314,7 @@ html {
             display: grid;
             grid-template-columns: auto;
             grid-template-rows: auto;
-            row-gap: 30px;
+            row-gap: 35px;
             justify-content: center;
             align-items: center;
             width: 100%;
