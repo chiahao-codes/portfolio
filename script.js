@@ -125,10 +125,6 @@ function setTransitionProperty() {
   homeContainer.style.transition = "color .1s ease-in";
   portfolioContainer.style.transition = "color .1s ease-in";
   //portfolioHeading.style.transition = "color .1s ease-in";
-
-  for (let a of portfolioArticles) {
-    
-  }
   
 
   for (let hmi of hamburgerMenuWrapper.children) {
