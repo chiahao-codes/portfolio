@@ -305,7 +305,7 @@ body{
             background-color:var(--darkMode-lighter-background-color);
             z-index: 0;
             top: calc(var(--navbar-height) * 6);
-            padding:15px 0px 25px;
+            padding: 20px 0px;
         }
     
         section.portfolio_container>h1 {
