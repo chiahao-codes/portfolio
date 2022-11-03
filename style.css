@@ -8,6 +8,10 @@ html {
     box-sizing: inherit;
 }
 
+:root{
+    --navbar-height:60px;
+}
+
 @media screen and (min-width:320px) {
     body {
             display: flex;
@@ -248,11 +252,11 @@ html {
             color: white;
             width: 100%;
             height: 400px;
+            top: calc(var(--navbar-height) * 2);
             display: flex;
             justify-content: center;
             align-items: center;
             position: relative;
-    
         }
     
         #homeHeading {
