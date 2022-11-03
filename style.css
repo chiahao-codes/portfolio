@@ -19,6 +19,7 @@ body{
     height: 100%;
     width: 100%;
     margin:0;
+    overflow-y: scroll;
 }
 
 
@@ -136,7 +137,7 @@ body{
             display: flex;
             justify-content: left;
             align-items: center;
-            column-gap: 15px;
+            column-gap: 18px;
             right: 20px;
             position: relative;
             color: white;
