@@ -72,6 +72,7 @@ mobileSwitchContainer.addEventListener("click", () => {
 })
 
 function hamburgerOpen() {
+  window.scrollTo(0, 0);
   hamburgerMenuWrapper.children[0].style.top = "19px";
   hamburgerMenuWrapper.children[0].style.width = "0%";
   hamburgerMenuWrapper.children[0].style.left = "50%";
@@ -82,8 +83,6 @@ function hamburgerOpen() {
   hamburgerMenuWrapper.children[3].style.top = "18px";
   hamburgerMenuWrapper.children[3].style.width = "0%";
   hamburgerMenuWrapper.children[3].style.left = "50%";
-
-  window.scrollTo(0, 0);
 
   mobileDropMenu.style.top = "92px";
  
