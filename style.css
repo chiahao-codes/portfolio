@@ -22,6 +22,10 @@ body{
     overflow-y: scroll;
 }
 
+body > #main {
+    display: none;
+}
+
 
 @media screen and (min-width:320px) {
     body > #main {
