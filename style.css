@@ -20,6 +20,7 @@ body{
     width: 100%;
     margin:0;
     overflow-y: scroll;
+    
 }
 
 body > #main {
@@ -43,6 +44,7 @@ body > #main {
             margin: 0;
             position: relative;
             scroll-snap-type: y mandatory;
+            scroll-padding: 60px 0px 0px 0px;
         }
     
         /*nav bar*/
