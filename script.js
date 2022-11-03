@@ -3,7 +3,9 @@ let mainDiv = document.querySelector("body > main");
 let navBar = document.getElementsByClassName("nav_bar")[0];
 let switchCircle = document.querySelector("body main #navBar > #mode_switch_social_wrapper > #mode_switch_container > .switch_circle");
 let modeSwitchContainer = document.getElementsByClassName("mode_switch_container")[0];
-let socialIcons = document.querySelectorAll(".social_icon_parent > a > .social_icon");
+let socialIcons = document.querySelectorAll(
+  "body main nav #mode_switch_social_wrapper .social_icon_parent > a > .social_icon"
+);
 let navLinksWrapper = document.querySelectorAll("main #navBar > #navigation_links_wrapper")[0];
 let navLinks = navLinksWrapper.children;
 let hamburgerMenuWrapper = document.querySelector("body > main #navBar > .menu_icon_wrapper");
