@@ -294,6 +294,7 @@ html {
             right: 0;
             color: white;
             z-index: 0;
+            top: calc(var(--navbar-height) * 2);
         }
     
         section.portfolio_container>h1 {
