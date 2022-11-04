@@ -44,7 +44,7 @@ window.addEventListener("scroll", windowScroll);
 
 function windowScroll(evt) {
   console.log(evt.target);
-  if (localStorage.getItem("hamburger") === "open" && evt.target === "#document") {
+  if (localStorage.getItem("hamburger") === "open" && evt.target === document) {
     hamburgerClose();
   }
   
