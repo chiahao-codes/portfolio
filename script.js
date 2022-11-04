@@ -51,8 +51,8 @@ function windowScroll() {
 }
 
 //mobile hamburger menu
-hamburgerMenuWrapper.addEventListener("click", () => {
-  console.log(EventTarget);
+hamburgerMenuWrapper.addEventListener("click", (evt) => {
+  console.log(evt.target);
   setTransitionProperty();
   if (localStorage.getItem("hamburger") === "closed") {
     hamburgerOpen();
