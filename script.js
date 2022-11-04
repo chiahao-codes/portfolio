@@ -38,16 +38,8 @@ window.addEventListener("resize", () => {
   }
 });
 
-function windowScroll() {
-  if (localStorage.getItem("hamburger") === "open") {
-    hamburgerClose();
-    localStorage.setItem("hamburger", "closed");
-  }
-}
-
 //mobile hamburger menu
 hamburgerMenuWrapper.addEventListener("click", () => {
-  window.removeEventListener("scroll", windowScroll);
   setTransitionProperty();
   if ((localStorage.getItem("hamburger") === "closed")) {
     hamburgerOpen();
@@ -56,7 +48,6 @@ hamburgerMenuWrapper.addEventListener("click", () => {
     hamburgerClose();
     localStorage.setItem("hamburger", "closed");
   }
-  window.addEventListener("scroll", windowScroll);
 });
 
 //mode switch
@@ -81,7 +72,7 @@ mobileSwitchContainer.addEventListener("click", () => {
 })
 
 function hamburgerOpen() {
-  
+  window.removeEventListener("scroll", hamburgerClose);
   window.scrollTo(0, 0);
   hamburgerMenuWrapper.children[0].style.top = "19px";
   hamburgerMenuWrapper.children[0].style.width = "0%";
@@ -101,6 +92,11 @@ function hamburgerOpen() {
       mn.style.color = "white";
     }
   }
+
+  if (window.scrollY == 0) {
+    window.addEventListener("scroll", hamburgerClose);
+  }
+  
 }
 
 function hamburgerClose() {
