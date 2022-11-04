@@ -38,11 +38,11 @@ window.addEventListener("resize", () => {
   }
 });
 
+
 //mobile hamburger menu
 hamburgerMenuWrapper.addEventListener("click", () => {
   setTransitionProperty();
   if ((localStorage.getItem("hamburger") === "closed")) {
-    window.removeEventListener("scroll", hamburgerClose);
     hamburgerOpen();
     localStorage.setItem("hamburger", "open");
   } else {
@@ -73,7 +73,6 @@ mobileSwitchContainer.addEventListener("click", () => {
 })
 
 function hamburgerOpen() {
-  
   window.scrollTo(0, 0);
   hamburgerMenuWrapper.children[0].style.top = "19px";
   hamburgerMenuWrapper.children[0].style.width = "0%";
@@ -92,10 +91,6 @@ function hamburgerOpen() {
     for (let mn of mobileNavLinks) {
       mn.style.color = "white";
     }
-  }
-
-  if (window.scrollY === 0) {
-    window.addEventListener("scroll", hamburgerClose);
   }
   
 }
