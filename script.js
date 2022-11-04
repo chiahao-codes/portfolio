@@ -43,16 +43,20 @@ hamburgerMenuWrapper.addEventListener("click", () => {
   setTransitionProperty();
   if (localStorage.getItem("hamburger") === "closed") {
     hamburgerOpen();
-    if (localStorage.getItem("hamburger") === "open" && window.scrollY === 0) {
-      window.addEventListener("scroll", () => {
-        hamburgerClose();
-      });
-    }
   } else {
     hamburgerClose();
   }
 });
 
+/**
+ *   if (localStorage.getItem("hamburger") === "open" && window.scrollY === 0) {
+      window.addEventListener("scroll", () => {
+        hamburgerClose();
+      });
+    }
+ */
+
+    
 //mode switch
 modeSwitchContainer.addEventListener("click", function() {
 
