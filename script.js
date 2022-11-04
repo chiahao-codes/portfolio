@@ -42,6 +42,7 @@ window.addEventListener("resize", () => {
 hamburgerMenuWrapper.addEventListener("click", () => {
   setTransitionProperty();
   if ((localStorage.getItem("hamburger") === "closed")) {
+    window.removeEventListener("scroll", hamburgerClose);
     hamburgerOpen();
     localStorage.setItem("hamburger", "open");
   } else {
@@ -72,7 +73,7 @@ mobileSwitchContainer.addEventListener("click", () => {
 })
 
 function hamburgerOpen() {
-  window.removeEventListener("scroll", hamburgerClose);
+  
   window.scrollTo(0, 0);
   hamburgerMenuWrapper.children[0].style.top = "19px";
   hamburgerMenuWrapper.children[0].style.width = "0%";
@@ -93,7 +94,7 @@ function hamburgerOpen() {
     }
   }
 
-  if (window.scrollY == 0) {
+  if (window.scrollY === 0) {
     window.addEventListener("scroll", hamburgerClose);
   }
   
