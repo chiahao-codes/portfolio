@@ -25,7 +25,6 @@ let homeContainer = document.getElementsByClassName("home_heading_container")[0]
 let portfolioContainer = document.querySelector("body main section.portfolio_container");
 let portfolioArticles = document.querySelectorAll("body main section.portfolio_container #portfolio article");
 
-
 window.addEventListener("load", (evt) => {
   console.log(evt.target);
   localStorage.setItem("mode", "dark");
@@ -39,24 +38,27 @@ window.addEventListener("resize", () => {
   }
 });
 
-
 window.addEventListener("scroll", windowScroll);
 
 function windowScroll(evt) {
-  console.log(evt.target);
   if (localStorage.getItem("hamburger") === "open" && evt.target === document) {
     hamburgerClose();
+    localStorage.setItem("hamburger", "closed");
   }
-  
 }
 
 //mobile hamburger menu
 hamburgerMenuWrapper.addEventListener("click", () => {
   setTransitionProperty();
-  if (localStorage.getItem("hamburger") === "closed") {
+  if (
+    (localStorage.getItem("hamburger") === "closed" && window.scrollY == 0) ||
+    (localStorage.getItem("hamburger") === "closed" && window.scrollY > 0)
+  ) {
     hamburgerOpen();
+    localStorage.setItem("hamburger", "open");
   } else {
     hamburgerClose();
+    localStorage.setItem("hamburger", "closed");
   }
 });
 
@@ -82,7 +84,7 @@ mobileSwitchContainer.addEventListener("click", () => {
 })
 
 function hamburgerOpen() {
-  localStorage.setItem("hamburger", "open");
+  
   window.scrollTo(0, 0);
   hamburgerMenuWrapper.children[0].style.top = "19px";
   hamburgerMenuWrapper.children[0].style.width = "0%";
@@ -117,8 +119,6 @@ function hamburgerClose() {
    hamburgerMenuWrapper.children[3].style.top = "34px";
    hamburgerMenuWrapper.children[3].style.width = "100%";
   hamburgerMenuWrapper.children[3].style.left = "0px";
-  
-  localStorage.setItem("hamburger", "closed");
   
    mobileDropMenu.style.top = "-150%";
 
