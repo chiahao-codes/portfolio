@@ -39,13 +39,6 @@ window.addEventListener("resize", () => {
   }
 });
 
-window.addEventListener("scroll", () => {
-  if (localStorage.getItem("hamburger") === "open") {
-    hamburgerClose();
-  }
-});
-
-
 //mobile hamburger menu
 hamburgerMenuWrapper.addEventListener("click", () => {
   setTransitionProperty();
@@ -100,6 +93,12 @@ function hamburgerOpen() {
   }
 
   localStorage.setItem("hamburger", "open");
+
+  window.addEventListener("scroll", () => {
+    if (localStorage.getItem("hamburger") === "open" && window.scrollY === 0) {
+      hamburgerClose();
+    }
+  });
 
 }
 
