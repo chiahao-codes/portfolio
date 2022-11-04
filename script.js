@@ -6,12 +6,12 @@ let modeSwitchContainer = document.getElementsByClassName("mode_switch_container
 let socialIcons = document.querySelectorAll(
   "body main nav #mode_switch_social_wrapper .social_icon_parent > a > .social_icon"
 );
+
 let navLinksWrapper = document.querySelectorAll("main #navBar > #navigation_links_wrapper")[0];
 let navLinks = navLinksWrapper.children;
 let hamburgerMenuWrapper = document.querySelector("body > main #navBar > .menu_icon_wrapper");
 let menuIcon = document.querySelectorAll(" body main nav #menuIconWrapper > .menuIcon");
 let moonIconLink = document.querySelector("body main a.icon8_link");
-
 
 let mobileDropMenu = document.querySelector("body main > .mobile_navigation_links");
 let mobileNavLinks = document.querySelectorAll("body main > .mobile_navigation_links > div > h3");
@@ -38,9 +38,21 @@ window.addEventListener("resize", () => {
   }
 });
 
+window.addEventListener("scroll", () => {
+ if (localStorage.getItem("hamburger") === "open" && window.scrollY === 0) {
+      hamburgerClose();
+    } 
+  });
+
 //mobile hamburger menu
 hamburgerMenuWrapper.addEventListener("click", () => {
   setTransitionProperty();
+  window.removeEventListener("scroll", () => {
+    if (localStorage.getItem("hamburger") === "open" && window.scrollY === 0) {
+      hamburgerClose();
+    }
+  });
+
   if (localStorage.getItem("hamburger") === "closed") {
     hamburgerOpen();
   } else {
@@ -49,14 +61,14 @@ hamburgerMenuWrapper.addEventListener("click", () => {
 });
 
 /**
- *   if (localStorage.getItem("hamburger") === "open" && window.scrollY === 0) {
-      window.addEventListener("scroll", () => {
-        hamburgerClose();
-      });
-    }
+ * 
+ * 
+ *  
+ * 
+ *  
  */
 
-    
+
 //mode switch
 modeSwitchContainer.addEventListener("click", function() {
 
