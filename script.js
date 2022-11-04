@@ -25,6 +25,8 @@ let homeContainer = document.getElementsByClassName("home_heading_container")[0]
 let portfolioContainer = document.querySelector("body main section.portfolio_container");
 let portfolioArticles = document.querySelectorAll("body main section.portfolio_container #portfolio article");
 /*
+if (localStorage.getItem("hamburger") === "open" && window.scrollY === 0) {
+    }
 **/
 
 window.addEventListener("load", () => {
@@ -95,9 +97,8 @@ function hamburgerOpen() {
   localStorage.setItem("hamburger", "open");
 
   window.addEventListener("scroll", () => {
-    if (localStorage.getItem("hamburger") === "open" && window.scrollY === 0) {
-      hamburgerClose();
-    }
+     hamburgerClose();
+    
   });
 
 }
