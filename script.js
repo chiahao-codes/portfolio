@@ -26,6 +26,10 @@ let portfolioContainer = document.querySelector("body main section.portfolio_con
 let portfolioArticles = document.querySelectorAll("body main section.portfolio_container #portfolio article");
 /*
 if (localStorage.getItem("hamburger") === "open" && window.scrollY === 0) {
+   window.addEventListener("scroll", () => {
+     hamburgerClose();
+  });
+
     }
 **/
 
@@ -95,11 +99,6 @@ function hamburgerOpen() {
   }
 
   localStorage.setItem("hamburger", "open");
-
-  window.addEventListener("scroll", () => {
-     hamburgerClose();
-    
-  });
 
 }
 
