@@ -40,11 +40,11 @@ window.addEventListener("resize", () => {
 });
 
 
-//window.addEventListener("scroll", windowScroll);
+window.addEventListener("scroll", windowScroll);
 
 function windowScroll(evt) {
   console.log(evt.target);
-  if (localStorage.getItem("hamburger") === "open") {
+  if (localStorage.getItem("hamburger") === "open" && evt.target === "#document") {
     hamburgerClose();
   }
   
