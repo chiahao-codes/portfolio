@@ -24,14 +24,7 @@ let mobileSwitchCircle = document.querySelector(
 let homeContainer = document.getElementsByClassName("home_heading_container")[0];
 let portfolioContainer = document.querySelector("body main section.portfolio_container");
 let portfolioArticles = document.querySelectorAll("body main section.portfolio_container #portfolio article");
-/*
-if (localStorage.getItem("hamburger") === "open" && window.scrollY === 0) {
-   window.addEventListener("scroll", () => {
-     hamburgerClose();
-  });
 
-    }
-**/
 
 window.addEventListener("load", () => {
   localStorage.setItem("mode", "dark");
@@ -50,7 +43,11 @@ hamburgerMenuWrapper.addEventListener("click", () => {
   setTransitionProperty();
   if (localStorage.getItem("hamburger") === "closed") {
     hamburgerOpen();
-   
+    if (localStorage.getItem("hamburger") === "open" && window.scrollY === 0) {
+      window.addEventListener("scroll", () => {
+        hamburgerClose();
+      });
+    }
   } else {
     hamburgerClose();
   }
