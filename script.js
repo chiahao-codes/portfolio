@@ -38,10 +38,8 @@ window.addEventListener("resize", () => {
   }
 });
 
-window.addEventListener("scroll", windowScroll);
-
-function windowScroll(evt) {
-  if (localStorage.getItem("hamburger") === "open" && evt.target === document) {
+function windowScroll() {
+  if (localStorage.getItem("hamburger") === "open") {
     hamburgerClose();
     localStorage.setItem("hamburger", "closed");
   }
@@ -49,17 +47,16 @@ function windowScroll(evt) {
 
 //mobile hamburger menu
 hamburgerMenuWrapper.addEventListener("click", () => {
+  window.removeEventListener("scroll", windowScroll);
   setTransitionProperty();
-  if (
-    (localStorage.getItem("hamburger") === "closed" && window.scrollY == 0) ||
-    (localStorage.getItem("hamburger") === "closed" && window.scrollY > 0)
-  ) {
+  if ((localStorage.getItem("hamburger") === "closed")) {
     hamburgerOpen();
     localStorage.setItem("hamburger", "open");
   } else {
     hamburgerClose();
     localStorage.setItem("hamburger", "closed");
   }
+  window.addEventListener("scroll", windowScroll);
 });
 
 //mode switch
