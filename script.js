@@ -28,6 +28,7 @@ let portfolioArticles = document.querySelectorAll("body main section.portfolio_c
 window.addEventListener("load", () => {
   localStorage.setItem("mode", "dark");
   localStorage.setItem("hamburger", "closed");
+  window.scrollTo(0, 0);
 });
 
 window.addEventListener("resize", () => {
