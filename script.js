@@ -26,7 +26,8 @@ let portfolioContainer = document.querySelector("body main section.portfolio_con
 let portfolioArticles = document.querySelectorAll("body main section.portfolio_container #portfolio article");
 
 
-window.addEventListener("load", () => {
+window.addEventListener("load", (evt) => {
+  console.log(evt.target);
   localStorage.setItem("mode", "dark");
   localStorage.setItem("hamburger", "closed");
 });
@@ -38,12 +39,11 @@ window.addEventListener("resize", () => {
   }
 });
 
+
 //window.addEventListener("scroll", windowScroll);
 
-/**
- */
-
-function windowScroll() {
+function windowScroll(evt) {
+  console.log(evt.target);
   if (localStorage.getItem("hamburger") === "open") {
     hamburgerClose();
   }
@@ -51,8 +51,7 @@ function windowScroll() {
 }
 
 //mobile hamburger menu
-hamburgerMenuWrapper.addEventListener("click", (evt) => {
-  console.log(evt.target);
+hamburgerMenuWrapper.addEventListener("click", () => {
   setTransitionProperty();
   if (localStorage.getItem("hamburger") === "closed") {
     hamburgerOpen();
