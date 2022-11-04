@@ -38,36 +38,26 @@ window.addEventListener("resize", () => {
   }
 });
 
-window.addEventListener("scroll", () => {
+
+/**
+ * window.addEventListener("scroll", () => {
  if (localStorage.getItem("hamburger") === "open" && window.scrollY === 0) {
       hamburgerClose();
     } 
   });
 
+ */
+
+
 //mobile hamburger menu
 hamburgerMenuWrapper.addEventListener("click", () => {
   setTransitionProperty();
-  window.removeEventListener("scroll", () => {
-    if (localStorage.getItem("hamburger") === "open" && window.scrollY === 0) {
-      hamburgerClose();
-    }
-  });
-
   if (localStorage.getItem("hamburger") === "closed") {
     hamburgerOpen();
   } else {
     hamburgerClose();
   }
 });
-
-/**
- * 
- * 
- *  
- * 
- *  
- */
-
 
 //mode switch
 modeSwitchContainer.addEventListener("click", function() {
