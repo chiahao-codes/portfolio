@@ -220,7 +220,7 @@ function darkMode() {
   //page body
   homeContainer.style.color = "white";
   portfolioContainer.style.color = "white";
-  portfolioContainer.style.backgroundColor = "#222324";
+  portfolioContainer.style.backgroundColor = "#1e1e1f";
 
   for (let p of portfolioArticles) {
     p.style.backgroundColor = "#161617";
