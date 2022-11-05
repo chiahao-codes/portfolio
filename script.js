@@ -49,7 +49,7 @@ function setHamburgerInLocalStorage(setting) {
 }
 
 function mobileNavShutter(hamburgerFunc) {
-  return new Promise(() => {
+  return new Promise((resolve) => {
     resolve(hamburgerFunc());
   })
 }
