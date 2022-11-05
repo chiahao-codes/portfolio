@@ -38,16 +38,30 @@ window.addEventListener("resize", () => {
   }
 });
 
+window.addEventListener("scroll", () => {
+  if (localStorage.getItem("hamburger") === "open" && window.scrollY === 0) {
+    hamburgerClose();
+  }
+})
 
+function setHamburgerInLocalStorage(setting) {
+  localStorage.setItem("hamburger", setting)
+}
+
+function mobileNavShutter(hamburgerFunc) {
+  return new Promise(() => {
+    resolve(hamburgerFunc());
+  })
+}
 //mobile hamburger menu
-hamburgerMenuWrapper.addEventListener("click", () => {
+hamburgerMenuWrapper.addEventListener("click", async () => {
   setTransitionProperty();
   if ((localStorage.getItem("hamburger") === "closed")) {
-    hamburgerOpen();
-    localStorage.setItem("hamburger", "open");
+    await mobileNavShutter(hamburgerOpen);
+    setHamburgerInLocalStorage("open")
   } else {
-    hamburgerClose();
-    localStorage.setItem("hamburger", "closed");
+    await mobileNavShutter(hamburgerClose);
+    setHamburgerInLocalStorage("closed");
   }
 });
 
