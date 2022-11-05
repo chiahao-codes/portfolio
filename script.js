@@ -92,7 +92,7 @@ modeSwitchContainer.addEventListener("click", function() {
   } else {
     lightMode();
   }
-}, {useCapture:true});
+});
 
 //mobile nav bar mode switch
 mobileSwitchContainer.addEventListener("click", () => {
@@ -103,7 +103,7 @@ mobileSwitchContainer.addEventListener("click", () => {
     lightMode();
   }
   
-}, {useCapture:true})
+})
 
 function hamburgerOpen() {
   window.scrollTo(0, 0);
