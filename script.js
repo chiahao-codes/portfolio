@@ -54,7 +54,7 @@ function windowScrollSet() {
     hamburgerClose();
   }
   },
-    {useCapture:false, signal: abortSignal.signal }
+    {useCapture:false, signal: abortSignal.signal, passive:false}
   );
  
 }
@@ -79,6 +79,7 @@ hamburgerMenuWrapper.addEventListener("click", async (evt) => {
        setHamburgerInLocalStorage("closed");
      }
   }).then(() => {
+    console.log("windowScrollSet");
     windowScrollSet();
   }).catch(() => {
     console.log("Promise error");
