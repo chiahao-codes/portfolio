@@ -82,7 +82,7 @@ hamburgerMenuWrapper.addEventListener("click", async (evt) => {
     windowScrollSet();
   })
  
-}, {useCapture:true});
+});
 
 //mode switch
 modeSwitchContainer.addEventListener("click", function() {
