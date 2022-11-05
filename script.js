@@ -49,8 +49,9 @@ function setHamburgerInLocalStorage(setting) {
 }
 
 function mobileNavShutter(hamburgerFunc) {
-  return new Promise((resolve) => {
-    resolve(hamburgerFunc());
+  return new Promise(resolve => {
+    hamburgerFunc();
+    resolve("done");
   })
 }
 //mobile hamburger menu
