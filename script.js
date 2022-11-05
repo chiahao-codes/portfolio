@@ -48,10 +48,11 @@ function mobileNavShutter(hamburgerFunc) {
 }
 
 function windowScrollSet() {
-  window.addEventListener("scroll", () =>
+  window.addEventListener("scroll", (evt) =>
   {
     if (localStorage.getItem("hamburger") === "open" && window.scrollY > 0) {
-    hamburgerClose();
+      hamburgerClose();
+      evt.stopPropagation();
   }
   },
     {useCapture:false, signal: abortSignal.signal, passive:false}
