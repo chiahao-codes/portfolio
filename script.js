@@ -38,11 +38,6 @@ window.addEventListener("resize", () => {
   }
 });
 
-window.addEventListener("scroll", () => {
-  if (localStorage.getItem("hamburger") === "open" && window.scrollY === 0) {
-    hamburgerClose();
-  }
-})
 
 function setHamburgerInLocalStorage(setting) {
   localStorage.setItem("hamburger", setting)
@@ -54,6 +49,8 @@ function mobileNavShutter(hamburgerFunc) {
     resolve("done");
   })
 }
+
+
 //mobile hamburger menu
 hamburgerMenuWrapper.addEventListener("click", async () => {
   setTransitionProperty();
@@ -64,7 +61,7 @@ hamburgerMenuWrapper.addEventListener("click", async () => {
     await mobileNavShutter(hamburgerClose);
     setHamburgerInLocalStorage("closed");
   }
-});
+}, true);
 
 //mode switch
 modeSwitchContainer.addEventListener("click", function() {
