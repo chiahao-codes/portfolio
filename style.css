@@ -314,7 +314,7 @@ body > #main {
             color: white;
             background-color:var(--darkMode-lighter-background-color);
             z-index: 0;
-            top: calc(var(--navbar-height) * 6);
+            top: calc(var(--navbar-height) * 4);
             scroll-snap-align: start;
             
         }
