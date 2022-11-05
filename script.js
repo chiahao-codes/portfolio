@@ -67,7 +67,8 @@ function abortSignal(ab) {
 }
 
 //mobile hamburger menu
-hamburgerMenuWrapper.addEventListener("click", async () => {
+hamburgerMenuWrapper.addEventListener("click", async (evt) => {
+  console.log("event click:", evt.target);
   await abortSignal(abortController).then(() => {
      setTransitionProperty();
      if (localStorage.getItem("hamburger") === "closed") {
