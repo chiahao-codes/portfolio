@@ -54,7 +54,7 @@ function windowScrollSet() {
     hamburgerClose();
   }
   },
-    {signal: abortSignal.signal }
+    {useCapture:false, signal: abortSignal.signal }
   );
  
 }
