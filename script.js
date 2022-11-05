@@ -49,11 +49,11 @@ function mobileNavShutter(hamburgerFunc) {
 function windowScrollSet() {
   window.addEventListener("scroll", () =>
   {
-    if (localStorage.getItem("hamburger") === "open" && window.scrollY === 0) {
+    if (localStorage.getItem("hamburger") === "open") {
     hamburgerClose();
   }
   },
-    { useCapture: false, signal: abortSignal.signal }
+    {signal: abortSignal.signal }
   );
  
 }
