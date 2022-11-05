@@ -61,7 +61,7 @@ hamburgerMenuWrapper.addEventListener("click", async () => {
     await mobileNavShutter(hamburgerClose);
     setHamburgerInLocalStorage("closed");
   }
-}, true);
+}, {useCapture:true});
 
 //mode switch
 modeSwitchContainer.addEventListener("click", function() {
