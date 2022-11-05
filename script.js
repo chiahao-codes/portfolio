@@ -52,7 +52,7 @@ function windowScrollSet() {
   {
     if (localStorage.getItem("hamburger") === "open" && window.scrollY > 0) {
       hamburgerClose();
-      evt.stopPropagation();
+     setHamburgerInLocalStorage("closed");
   }
   },
     {useCapture:false, signal: abortSignal.signal, passive:false}
