@@ -46,10 +46,11 @@ function setHamburgerInLocalStorage(setting) {
 function mobileNavShutter(hamburgerFunc) {
   hamburgerFunc();
 }
+
 function windowScrollSet() {
   window.addEventListener("scroll", () =>
   {
-    if (localStorage.getItem("hamburger") === "open") {
+    if (localStorage.getItem("hamburger") === "open" && window.scrollY > 0) {
     hamburgerClose();
   }
   },
