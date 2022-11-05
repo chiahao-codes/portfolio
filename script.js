@@ -80,6 +80,8 @@ hamburgerMenuWrapper.addEventListener("click", async (evt) => {
      }
   }).then(() => {
     windowScrollSet();
+  }).catch(() => {
+    console.log("Promise error");
   })
  
 });
