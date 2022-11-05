@@ -1,5 +1,5 @@
 let mainDiv = document.querySelector("body > main");
-
+let abortController = new AbortController();
 let navBar = document.getElementsByClassName("nav_bar")[0];
 let switchCircle = document.querySelector("body main #navBar > #mode_switch_social_wrapper > #mode_switch_container > .switch_circle");
 let modeSwitchContainer = document.getElementsByClassName("mode_switch_container")[0];
@@ -44,23 +44,42 @@ function setHamburgerInLocalStorage(setting) {
 }
 
 function mobileNavShutter(hamburgerFunc) {
+  hamburgerFunc();
+}
+function windowScrollSet() {
+  window.addEventListener("scroll", () =>
+  {
+    if (localStorage.getItem("hamburger") === "open" && window.scrollY === 0) {
+    hamburgerClose();
+  }
+  },
+    { useCapture: false, signal: abortSignal.signal }
+  );
+ 
+}
+
+function abortSignal(ab) {
   return new Promise(resolve => {
-    hamburgerFunc();
-    resolve("done");
+    ab.abort();
+    resolve("aborted event handler");
   })
 }
 
-
 //mobile hamburger menu
 hamburgerMenuWrapper.addEventListener("click", async () => {
-  setTransitionProperty();
-  if ((localStorage.getItem("hamburger") === "closed")) {
-    await mobileNavShutter(hamburgerOpen);
-    setHamburgerInLocalStorage("open")
-  } else {
-    await mobileNavShutter(hamburgerClose);
-    setHamburgerInLocalStorage("closed");
-  }
+  await abortSignal(abortController).then(() => {
+     setTransitionProperty();
+     if (localStorage.getItem("hamburger") === "closed") {
+       mobileNavShutter(hamburgerOpen);
+       setHamburgerInLocalStorage("open");
+     } else {
+       mobileNavShutter(hamburgerClose);
+       setHamburgerInLocalStorage("closed");
+     }
+  }).then(() => {
+    windowScrollSet();
+  })
+ 
 }, {useCapture:true});
 
 //mode switch
@@ -71,7 +90,7 @@ modeSwitchContainer.addEventListener("click", function() {
   } else {
     lightMode();
   }
-});
+}, {useCapture:true});
 
 //mobile nav bar mode switch
 mobileSwitchContainer.addEventListener("click", () => {
@@ -82,7 +101,7 @@ mobileSwitchContainer.addEventListener("click", () => {
     lightMode();
   }
   
-})
+}, {useCapture:true})
 
 function hamburgerOpen() {
   window.scrollTo(0, 0);
