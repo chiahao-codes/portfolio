@@ -85,7 +85,7 @@ hamburgerMenuWrapper.addEventListener("click", async (evt) => {
     console.log("Promise error");
   })
  
-});
+}, {passive:true});
 
 //mode switch
 modeSwitchContainer.addEventListener("click", function() {
