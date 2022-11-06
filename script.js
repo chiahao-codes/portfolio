@@ -55,7 +55,7 @@ function windowScrollSet() {
      setHamburgerInLocalStorage("closed");
   }
   },
-    {useCapture:false, signal: abortSignal.signal, passive:false}
+    {signal: abortSignal.signal, passive:false}
   );
  
 }
