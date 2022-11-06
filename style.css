@@ -272,7 +272,6 @@ body > #main {
             justify-content: center;
             align-items: center;
             position: relative;
-            scroll-snap-align: start;
         }
     
         #homeHeading {
@@ -315,9 +314,7 @@ body > #main {
             color: white;
             background-color:var(--darkMode-lighter-background-color);
             z-index: 0;
-            top: calc(var(--navbar-height) * 4);
-            scroll-snap-align: start;
-            
+            top: calc(var(--navbar-height) * 4);   
         }
     
         section.portfolio_container>h1 {
