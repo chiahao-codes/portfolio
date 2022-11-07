@@ -329,9 +329,8 @@ body > #main {
         }
     
         section.portfolio_container>#portfolio {
-            display: grid;
-            grid-template-columns: auto;
-            grid-template-rows: auto;
+            display: flex;
+            flex-direction: column;
             row-gap: 35px;
             justify-content: center;
             align-items: center;
