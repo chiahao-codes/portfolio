@@ -338,19 +338,17 @@ body > #main {
             width: 100%;
             height: max-content;
             color: inherit;
-            overflow-x: hidden;
         }
     
         #chess_article {
-            left:auto;
-            right:auto;
+           
             padding-left: 1.5%;
             padding-right: .7%;
             color: inherit;
             height: 108px;
-            width: 85%;
-            min-width: 85%;
-            max-width: 85%;
+            width: 90%;
+            min-width: 90%;
+            max-width: 90%;
             border-color: white;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             filter: brightness(150%), contrast(150%);
@@ -411,15 +409,13 @@ body > #main {
     
     
         #calculator_article {
-            left: auto;
-            right: auto;
             padding-left: 1.5%;
             padding-right: 1%;
             color: inherit;
             height: 108px;
-            width: 85%;
-            min-width: 85%;
-            max-width: 85%;
+            width: 90%;
+            min-width: 90%;
+            max-width: 90%;
             border-color: white;
             ;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
