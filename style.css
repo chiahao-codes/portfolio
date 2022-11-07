@@ -44,7 +44,7 @@ body > #main {
             padding-bottom: 10px;
             margin: 0;
             position: relative; 
-            overflow-x: inherit;
+            
         }
     
         /*nav bar*/
@@ -60,7 +60,7 @@ body > #main {
             top: 0%;
             left: 0%;
             z-index: 2;
-            overflow-y: hidden;
+            
             box-shadow: 0 0 10px #000;
             backdrop-filter: saturate(50%) blur(25px);
             -webkit-backdrop-filter: saturate(50%) blur(25px);
@@ -273,7 +273,7 @@ body > #main {
             justify-content: center;
             align-items: center;
             position: relative;
-            overflow-x: inherit;
+            
         }
     
         #homeHeading {
