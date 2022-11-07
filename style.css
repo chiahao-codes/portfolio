@@ -273,7 +273,6 @@ body > #main {
             justify-content: center;
             align-items: center;
             position: relative;
-            
         }
     
         #homeHeading {
@@ -317,7 +316,7 @@ body > #main {
             background-color:var(--darkMode-lighter-background-color);
             z-index: 0;
             top: calc(var(--navbar-height) * 4);   
-            overflow-x: inherit;
+            overflow-x: hidden;
         }
     
         section.portfolio_container>h1 {
@@ -339,6 +338,7 @@ body > #main {
             width: 100%;
             height: max-content;
             color: inherit;
+            overflow-x: hidden;
         }
     
         #chess_article {
@@ -346,9 +346,9 @@ body > #main {
             padding-right: .7%;
             color: inherit;
             height: 108px;
-            width: 670px;
-            min-width: 670px;
-            max-width: 670px;
+            width: 80%;
+            min-width: 80%;
+            max-width: 80%;
             border-color: white;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             filter: brightness(150%), contrast(150%);
@@ -413,9 +413,9 @@ body > #main {
             padding-right: 1%;
             color: inherit;
             height: 108px;
-            width: 670px;
-            min-width: 670px;
-            max-width: 670px;
+            width: 80%;
+            min-width: 80%;
+            max-width: 80%;
             border-color: white;
             ;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
