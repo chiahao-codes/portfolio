@@ -1,29 +1,54 @@
-let mainDiv = document.querySelector("body > main");
+let body = document.querySelector("body");
+
 let abortController = new AbortController();
 let navBar = document.getElementsByClassName("nav_bar")[0];
-let switchCircle = document.querySelector("body main #navBar > #mode_switch_social_wrapper > #mode_switch_container > .switch_circle");
-let modeSwitchContainer = document.getElementsByClassName("mode_switch_container")[0];
+let switchCircle = document.querySelector(
+  "body main #navBar > #mode_switch_social_wrapper > #mode_switch_container > .switch_circle"
+);
+let modeSwitchContainer = document.getElementsByClassName(
+  "mode_switch_container"
+)[0];
 let socialIcons = document.querySelectorAll(
   "body main nav #mode_switch_social_wrapper .social_icon_parent > a > .social_icon"
 );
 
-let navLinksWrapper = document.querySelectorAll("main #navBar > #navigation_links_wrapper")[0];
+let navLinksWrapper = document.querySelectorAll(
+  "main #navBar > #navigation_links_wrapper"
+)[0];
 let navLinks = navLinksWrapper.children;
-let hamburgerMenuWrapper = document.querySelector("body > main #navBar > .menu_icon_wrapper");
-let menuIcon = document.querySelectorAll(" body main nav #menuIconWrapper > .menuIcon");
+let hamburgerMenuWrapper = document.querySelector(
+  "body > main #navBar > .menu_icon_wrapper"
+);
+let menuIcon = document.querySelectorAll(
+  " body main nav #menuIconWrapper > .menuIcon"
+);
 let moonIconLink = document.querySelector("body main a.icon8_link");
 
-let mobileDropMenu = document.querySelector("body main > .mobile_navigation_links");
-let mobileNavLinks = document.querySelectorAll("body main > .mobile_navigation_links > div > h3");
-let mobileSocialIcons = document.querySelectorAll("body main > .mobile_navigation_links > #mobile_social_icon_parent > a > .mobile_social_icon");
-let mobileSwitchContainer = document.querySelector("body main > .mobile_navigation_links > #mobile_mode_switch_container");
+let mobileDropMenu = document.querySelector(
+  "body main > .mobile_navigation_links"
+);
+let mobileNavLinks = document.querySelectorAll(
+  "body main > .mobile_navigation_links > div > h3"
+);
+let mobileSocialIcons = document.querySelectorAll(
+  "body main > .mobile_navigation_links > #mobile_social_icon_parent > a > .mobile_social_icon"
+);
+let mobileSwitchContainer = document.querySelector(
+  "body main > .mobile_navigation_links > #mobile_mode_switch_container"
+);
 let mobileSwitchCircle = document.querySelector(
   "body main > .mobile_navigation_links > #mobile_mode_switch_container > .mobile_switch_circle"
 );
 
-let homeContainer = document.getElementsByClassName("home_heading_container")[0];
-let portfolioContainer = document.querySelector("body main section.portfolio_container");
-let portfolioArticles = document.querySelectorAll("body main section.portfolio_container #portfolio article");
+let homeContainer = document.getElementsByClassName(
+  "home_heading_container"
+)[0];
+let portfolioContainer = document.querySelector(
+  "body main section.portfolio_container"
+);
+let portfolioArticles = document.querySelectorAll(
+  "body main section.portfolio_container #portfolio article"
+);
 
 window.addEventListener("load", () => {
   localStorage.setItem("mode", "dark");
@@ -38,9 +63,8 @@ window.addEventListener("resize", () => {
   }
 });
 
-
 function setHamburgerInLocalStorage(setting) {
-  localStorage.setItem("hamburger", setting)
+  localStorage.setItem("hamburger", setting);
 }
 
 function mobileNavShutter(hamburgerFunc) {
@@ -48,49 +72,54 @@ function mobileNavShutter(hamburgerFunc) {
 }
 
 function windowScrollSet() {
-  window.addEventListener("scroll", () =>
-  {
-    if (localStorage.getItem("hamburger") === "open" && window.scrollY > 0) {
-      hamburgerClose();
-     setHamburgerInLocalStorage("closed");
-  }
-  },
-    {useCapture: true, signal: abortSignal.signal, passive:false}
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (localStorage.getItem("hamburger") === "open" && window.scrollY > 0) {
+        hamburgerClose();
+        setHamburgerInLocalStorage("closed");
+      }
+    },
+    { useCapture: true, signal: abortSignal.signal, passive: false }
   );
- 
 }
 
 function abortSignal(ab) {
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     ab.abort();
     resolve("aborted event handler");
-  })
+  });
 }
 
 //mobile hamburger menu
-hamburgerMenuWrapper.addEventListener("click", async (evt) => {
-  console.log("event click:", evt.target);
-  await abortSignal(abortController).then(() => {
-     setTransitionProperty();
-     if (localStorage.getItem("hamburger") === "closed") {
-       mobileNavShutter(hamburgerOpen);
-       setHamburgerInLocalStorage("open");
-     } else {
-       mobileNavShutter(hamburgerClose);
-       setHamburgerInLocalStorage("closed");
-     }
-  }).then(() => {
-    console.log("windowScrollSet");
-    windowScrollSet();
-  }).catch(() => {
-    console.log("Promise error");
-  })
- 
-}, {passive:true});
+hamburgerMenuWrapper.addEventListener(
+  "click",
+  async (evt) => {
+    console.log("event click:", evt.target);
+    await abortSignal(abortController)
+      .then(() => {
+        setTransitionProperty();
+        if (localStorage.getItem("hamburger") === "closed") {
+          mobileNavShutter(hamburgerOpen);
+          setHamburgerInLocalStorage("open");
+        } else {
+          mobileNavShutter(hamburgerClose);
+          setHamburgerInLocalStorage("closed");
+        }
+      })
+      .then(() => {
+        console.log("windowScrollSet");
+        windowScrollSet();
+      })
+      .catch(() => {
+        console.log("Promise error");
+      });
+  },
+  { passive: true }
+);
 
 //mode switch
-modeSwitchContainer.addEventListener("click", function() {
-
+modeSwitchContainer.addEventListener("click", function () {
   if (localStorage.getItem("mode") !== "dark") {
     darkMode();
   } else {
@@ -106,8 +135,7 @@ mobileSwitchContainer.addEventListener("click", () => {
   } else {
     lightMode();
   }
-  
-})
+});
 
 function hamburgerOpen() {
   window.scrollTo(0, 0);
@@ -123,49 +151,45 @@ function hamburgerOpen() {
   hamburgerMenuWrapper.children[3].style.left = "50%";
 
   mobileDropMenu.style.top = "92px";
- 
+
   if (localStorage.getItem("mode") === "dark") {
     for (let mn of mobileNavLinks) {
       mn.style.color = "white";
     }
   }
-  
 }
 
 function hamburgerClose() {
-   hamburgerMenuWrapper.children[0].style.top = "4px";
-   hamburgerMenuWrapper.children[0].style.width = "100%";
-   hamburgerMenuWrapper.children[0].style.left = "0px";
+  hamburgerMenuWrapper.children[0].style.top = "4px";
+  hamburgerMenuWrapper.children[0].style.width = "100%";
+  hamburgerMenuWrapper.children[0].style.left = "0px";
 
-   hamburgerMenuWrapper.children[1].style.transform = "rotate(0deg)";
-   hamburgerMenuWrapper.children[1].style.top = "19px";
-   hamburgerMenuWrapper.children[2].style.top = "19px";
-   hamburgerMenuWrapper.children[2].style.transform = "rotate(0deg)";
+  hamburgerMenuWrapper.children[1].style.transform = "rotate(0deg)";
+  hamburgerMenuWrapper.children[1].style.top = "19px";
+  hamburgerMenuWrapper.children[2].style.top = "19px";
+  hamburgerMenuWrapper.children[2].style.transform = "rotate(0deg)";
 
-   hamburgerMenuWrapper.children[3].style.top = "34px";
-   hamburgerMenuWrapper.children[3].style.width = "100%";
+  hamburgerMenuWrapper.children[3].style.top = "34px";
+  hamburgerMenuWrapper.children[3].style.width = "100%";
   hamburgerMenuWrapper.children[3].style.left = "0px";
-  
-   mobileDropMenu.style.top = "-150%";
 
+  mobileDropMenu.style.top = "-150%";
 }
 
 function setTransitionProperty() {
-
-  mainDiv.style.transition = "background-color .1s ease-in";
+  body.style.transition = "background-color .1s ease-in";
   navBar.style.transition = "background-color .1s ease-in";
   modeSwitchContainer.style.transition = "background-color .1s ease-in";
-  
+
   switchCircle.style.transition = "transform .5s, filter .1s, ease-in";
   navLinksWrapper.style.transition = "color .1s ease-in";
   homeContainer.style.transition = "color .1s ease-in";
-  portfolioContainer.style.transition = "color .1s, background-color .1s, ease-in";
-  
-   for (let p of portfolioArticles) {
-     p.style.transition = "background-color .1s ease-in";
-   }
+  portfolioContainer.style.transition =
+    "color .1s, background-color .1s, ease-in";
 
-  
+  for (let p of portfolioArticles) {
+    p.style.transition = "background-color .1s ease-in";
+  }
 
   for (let hmi of hamburgerMenuWrapper.children) {
     hmi.style.transitionProperty = "transform left width top";
@@ -181,11 +205,11 @@ function setTransitionProperty() {
 }
 
 function darkMode() {
-  mainDiv.style.backgroundColor = "#161617";
+  body.style.backgroundColor = "#161617";
   navBar.style.backgroundColor = "#1a1a1a";
   modeSwitchContainer.style.backgroundColor = "black";
   switchCircle.style.transform = "translateX(1.5px)";
-  switchCircle.style.filter = "invert(1)"; 
+  switchCircle.style.filter = "invert(1)";
   navLinksWrapper.style.color = "white";
 
   for (let i = 0; i < socialIcons.length; i++) {
@@ -201,9 +225,9 @@ function darkMode() {
     m.style.backgroundColor = "white";
   }
 
-//mobile navigation links  
-   for (let mn of mobileNavLinks) {
-     mn.style.color = "white";
+  //mobile navigation links
+  for (let mn of mobileNavLinks) {
+    mn.style.color = "white";
   }
 
   //mobile social media icons;
@@ -211,11 +235,10 @@ function darkMode() {
     mobileSocialIcons[i].style.filter = "invert(1)";
   }
 
- //mobile mode switch;
+  //mobile mode switch;
   mobileSwitchContainer.style.backgroundColor = "black";
   mobileSwitchCircle.style.transform = "translateX(.1px)";
   mobileSwitchCircle.style.filter = "invert(1)";
-
 
   //page body
   homeContainer.style.color = "white";
@@ -227,20 +250,20 @@ function darkMode() {
   }
 
   moonIconLink.style.color = "white";
-  
+
   localStorage.setItem("mode", "dark");
 }
 
 function lightMode() {
-  mainDiv.style.backgroundColor = "white";
+  body.style.backgroundColor = "white";
   navBar.style.backgroundColor = "#ebeded";
   modeSwitchContainer.style.backgroundColor = "#dcdcde";
   switchCircle.style.transform = "translateX(-28.5px)";
   switchCircle.style.filter = "invert(0)";
   navLinksWrapper.style.color = "black";
 
-   for (let i = 0; i < socialIcons.length; i++) {
-     socialIcons[i].style.filter = "invert(0)";
+  for (let i = 0; i < socialIcons.length; i++) {
+    socialIcons[i].style.filter = "invert(0)";
   }
 
   for (let n of navLinks) {
@@ -267,7 +290,7 @@ function lightMode() {
   mobileSwitchCircle.style.transform = "translateX(-29.5px)";
   mobileSwitchCircle.style.filter = "invert(0)";
 
-//page body;
+  //page body;
   homeContainer.style.color = "black";
   portfolioContainer.style.color = "black";
   portfolioContainer.style.backgroundColor = "#ebeded";
@@ -280,6 +303,3 @@ function lightMode() {
 
   localStorage.setItem("mode", "light");
 }
-
-
-
