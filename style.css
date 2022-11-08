@@ -302,7 +302,7 @@ body>#main {
     }
 
     /*Portfolio Page*/
-    section.portfolio_container {
+    section #portfolio_container {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -320,7 +320,7 @@ body>#main {
         overflow-x: hidden;
     }
 
-    section.portfolio_container>h1 {
+    section #portfolio_container>h1 {
         font-size: calc(28px);
         filter: brightness(120%), contrast(120%);
         text-align: center;
@@ -329,7 +329,7 @@ body>#main {
         color: inherit;
     }
 
-    section.portfolio_container>#portfolio {
+    section #portfolio_container>#portfolio {
         display: flex;
         flex-direction: column;
         row-gap: 35px;
@@ -464,7 +464,7 @@ body>#main {
     }
 
 
-    section.portfolio_container>#portfolio article a div img {
+    section #portfolio_container>#portfolio article a div img {
         width: 100px;
         height: 100px;
         border-radius: rem(2);
@@ -493,17 +493,17 @@ body>#main {
                 font-size: calc(17px);
             }
 
-        section.portfolio_container>h1 {
+        section #portfolio_container>h1 {
                 font-size: calc(26.5px);
         }
 
-        section.portfolio_container > #portfolio > article {
+        section #portfolio_container > #portfolio > article {
             width: 410px;
             min-width: 410px;
             max-width: 410px;
         }
 
-        section.portfolio_container>#portfolio article a div img {
+        section #portfolio_container>#portfolio article a div img {
             width: 75px;
             height: 75px;
         }
@@ -545,16 +545,16 @@ body>#main {
                     font-size: calc(14px);
                 }
 
-        section.portfolio_container>h1 {
+        section #portfolio_container>h1 {
                 font-size: calc(23px);
             }
-        section.portfolio_container>#portfolio>article {
+        section #portfolio_container>#portfolio>article {
                 width: 315px;
                 min-width: 315px;
                 max-width: 315px;
             }
         
-            section.portfolio_container>#portfolio article a div img {
+            section #portfolio_container>#portfolio article a div img {
                 width: 65px;
                 height: 65px;           }
         
