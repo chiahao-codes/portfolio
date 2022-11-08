@@ -460,92 +460,92 @@ body > #main {
     
         }
     
-        .calculator_img_wrapper {
-            border-color: white;
-            height: 100%;
-            width: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    
-        #calculator_proj_img {
-            border-radius: rem(2);
-            display: block;
-            filter: brightness(150%), contrast(150%);
-        }
-
-        @media screen and (max-width:650.99px) {
-            section.portfolio_container>#portfolio>article{
-                width:300px;
-                max-width: 300px;
-            }
-        }
-    
-        body>#main>.icon8_link {
-            display: inline-block;
-            position: relative;
-            font-size: .5vmin;
-            color: inherit;
-            text-decoration: none;
-            background-color: inherit;
-            top: calc(var(--navbar-height) * 8);
-        }
-    
-        @media screen and (max-width:831.99px) {
-    
-            body>#main>nav>#mode_switch_social_wrapper {
-                display: none;
-            }
-    
-            body>#main>#navBar #navigation_links_wrapper {
-                display: none;
-            }
-    
-            body>#main>#navBar>.menu_icon_wrapper {
-                background-color: inherit;
-                display: block;
-                position: relative;
-                left: 9px;
-                height: 45px;
-                width: 35px;
-                cursor: pointer;
-            }
-    
-            body>#main>#navBar>.menu_icon_wrapper>.menuIcon {
-                display: block;
-                background-color: white;
-                background-image: "url(./assets/brilliant.png)";
-                filter: brightness(120%), contrast(120%);
-                width: 100%;
-                height: 4.5px;
-                left: 0px;
-                border-radius: 3px;
-                position: absolute;
-                -webkit-transform: rotate(0deg) translateX() left width top;
-                -moz-transform: rotate(0deg) translateX() left width top;
-                -o-transform: rotate(0deg) translateX() left width top;
-                transform: rotate(0deg) translateX() left width top;
-                -webkit-transition: .35s ease-in-out;
-                -moz-transition: .35s ease-in-out;
-                -o-transition: .35s ease-in-out;
-                transition: .35s ease-in-out;
-            }
-    
-            body>#main>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(1) {
-                top: 4px;
-            }
-    
-            body>#main>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(2),
-            body>#main>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(3) {
-                top: 19px;
-            }
-    
-            body>#main>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(4) {
-                top: 34px;
-            }
-    
-        }
+                .calculator_img_wrapper {
+                    border-color: white;
+                    height: 100%;
+                    width: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+        
+                #calculator_proj_img {
+                    border-radius: rem(2);
+                    display: block;
+                    filter: brightness(150%), contrast(150%);
+                }
+        
+                body>#main>.icon8_link {
+                    display: inline-block;
+                    position: relative;
+                    font-size: .5vmin;
+                    color: inherit;
+                    text-decoration: none;
+                    background-color: inherit;
+                    top: calc(var(--navbar-height) * 8);
+                }
+        
+                @media screen and (max-width:650.99px) {
+                    section.portfolio_container #portfolio article {
+                        width: 300px;
+                        max-width: 300px;
+                    }
+                }
+        
+                @media screen and (max-width:831.99px) {
+        
+                    body>#main>nav>#mode_switch_social_wrapper {
+                        display: none;
+                    }
+        
+                    body>#main>#navBar #navigation_links_wrapper {
+                        display: none;
+                    }
+        
+                    body>#main>#navBar>.menu_icon_wrapper {
+                        background-color: inherit;
+                        display: block;
+                        position: relative;
+                        left: 9px;
+                        height: 45px;
+                        width: 35px;
+                        cursor: pointer;
+                    }
+        
+                    body>#main>#navBar>.menu_icon_wrapper>.menuIcon {
+                        display: block;
+                        background-color: white;
+                        background-image: "url(./assets/brilliant.png)";
+                        filter: brightness(120%), contrast(120%);
+                        width: 100%;
+                        height: 4.5px;
+                        left: 0px;
+                        border-radius: 3px;
+                        position: absolute;
+                        -webkit-transform: rotate(0deg) translateX() left width top;
+                        -moz-transform: rotate(0deg) translateX() left width top;
+                        -o-transform: rotate(0deg) translateX() left width top;
+                        transform: rotate(0deg) translateX() left width top;
+                        -webkit-transition: .35s ease-in-out;
+                        -moz-transition: .35s ease-in-out;
+                        -o-transition: .35s ease-in-out;
+                        transition: .35s ease-in-out;
+                    }
+        
+                    body>#main>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(1) {
+                        top: 4px;
+                    }
+        
+                    body>#main>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(2),
+                    body>#main>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(3) {
+                        top: 19px;
+                    }
+        
+                    body>#main>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(4) {
+                        top: 34px;
+                    }
+        
+                }
 }
 
 
