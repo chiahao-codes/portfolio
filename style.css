@@ -483,7 +483,7 @@ body>#main {
         top: calc(var(--navbar-height) * 8);
     }
 
-    @media screen and (max-width:650.99px) {
+    @media screen and (min-width:449.99px) and (max-width:650.99px) {
 
         section.portfolio_container > #portfolio > article {
             width: 410px;
@@ -520,8 +520,45 @@ body>#main {
         
                   .calculator_proj_desc {
                       font-size: 14px;
-                  
                   }
+    }
+
+    @media screen and (max-width:449.99px){
+        section.portfolio_container>#portfolio>article {
+                width: 315px;
+                min-width: 315px;
+                max-width: 315px;
+            }
+        
+            section.portfolio_container>#portfolio article a div img {
+                width: 65px;
+                height: 65px;           }
+        
+            .chess_copy_wrapper {
+                width: 250px;
+                max-width: 250px;
+            }
+        
+            .chess_h3 {
+                font-size: 13px;
+            }
+        
+            .chess_proj_desc {
+                font-size: 10px;
+            }
+        
+            .calculator_copy_wrapper {
+                width: 250px;
+                max-width: 250px;
+            }
+        
+            .calculator_h3 {
+                font-size: 13px;
+            }
+        
+            .calculator_proj_desc {
+                font-size: 10px;
+            }
     }
 
     @media screen and (max-width:831.99px) {
