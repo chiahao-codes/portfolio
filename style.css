@@ -475,10 +475,10 @@ body > #main {
             filter: brightness(150%), contrast(150%);
         }
 
-        @media screen and (max-width:654.99px) {
+        @media screen and (max-width:650.99px) {
             section.portfolio_container>#portfolio>article{
-                width:400px;
-                max-width: 400px;
+                width:300px;
+                max-width: 300px;
             }
         }
     
