@@ -341,7 +341,6 @@ body > #main {
         }
     
         #chess_article {
-           
             padding-left: 1.5%;
             padding-right: .7%;
             color: inherit;
@@ -472,6 +471,12 @@ body > #main {
             border-radius: rem(2);
             display: block;
             filter: brightness(150%), contrast(150%);
+        }
+
+        @media screen and (max-width:654.99px) {
+            section.portfolio_container>#portfolio>article{
+                width:400px;
+            }
         }
     
         body>#main>.icon8_link {
