@@ -485,8 +485,9 @@ body>#main {
 
     @media screen and (max-width:650.99px) {
 
-        body > section.portfolio_container > #portfolio > #chess_article,body>section.portfolio_container>#portfolio>#calculator_article  {
+        section.portfolio_container > #portfolio > article {
             width: 315px;
+            min-width: 315px;
             max-width: 315px;
         }
 
@@ -496,13 +497,13 @@ body>#main {
         }
 
         .chess_copy_wrapper {
-            width: 250px;
-            max-width: 250px;
+            width: 225px;
+            max-width: 225px;
         }
 
         .calculator_copy_wrapper {
-            width: 250px;
-            max-width: 250px;
+            width: 225px;
+            max-width: 225px;
         }
     }
 
