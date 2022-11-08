@@ -294,11 +294,11 @@ body>#main {
     }
 
     #homeHeading>h1 {
-        font-size: calc(1.8em);
+        font-size: 28px;
     }
 
     #homeHeading>h2 {
-        font-size: calc(1.2em);
+        font-size: 19px;
     }
 
     /*Portfolio Page*/
@@ -490,7 +490,7 @@ body>#main {
             }
         
             #homeHeading>h2 {
-                font-size: calc(22px);
+                font-size: calc(15px);
             }
 
         section.portfolio_container>h1 {
@@ -542,7 +542,7 @@ body>#main {
                 }
             
         #homeHeading>h2 {
-                    font-size: calc(18px);
+                    font-size: calc(12px);
                 }
 
         section.portfolio_container>h1 {
