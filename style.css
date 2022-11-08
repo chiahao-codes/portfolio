@@ -388,7 +388,7 @@ body>#main {
         font-size: 14px;
         width: 100%;
         position: relative;
-
+        padding-bottom: 3px;
     }
 
     .chess_img_wrapper {
@@ -451,7 +451,7 @@ body>#main {
         font-size: 14px;
         width: 100%;
         position: relative;
-
+        padding-bottom: 3px;
     }
 
     .calculator_img_wrapper {
@@ -497,13 +497,13 @@ body>#main {
         }
 
         .chess_copy_wrapper {
-            width: 225px;
-            max-width: 225px;
+            width: 315px;
+            max-width: 315px;
         }
 
         .calculator_copy_wrapper {
-            width: 225px;
-            max-width: 225px;
+            width: 315px;
+            max-width: 315px;
         }
     }
 
