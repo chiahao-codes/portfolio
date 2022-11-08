@@ -500,11 +500,28 @@ body>#main {
             width: 315px;
             max-width: 315px;
         }
+        
+        .chess_h3 {
+                      font-size: 15px;
+                  }
+        
+                  .chess_proj_desc {
+                      font-size: 12px;
+                  }
 
         .calculator_copy_wrapper {
             width: 315px;
             max-width: 315px;
         }
+
+                  .calculator_h3 {
+                      font-size: 18px;
+                  }
+        
+                  .calculator_proj_desc {
+                      font-size: 14px;
+                  
+                  }
     }
 
     @media screen and (max-width:831.99px) {
