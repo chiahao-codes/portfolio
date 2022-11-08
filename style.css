@@ -486,9 +486,9 @@ body>#main {
     @media screen and (max-width:650.99px) {
 
         section.portfolio_container > #portfolio > article {
-            width: 315px;
-            min-width: 315px;
-            max-width: 315px;
+            width: 410px;
+            min-width: 410px;
+            max-width: 410px;
         }
 
         section.portfolio_container>#portfolio article a div img {
