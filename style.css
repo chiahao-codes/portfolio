@@ -367,6 +367,7 @@ body > #main {
     
         .chess_copy_wrapper {
             width: 400px;
+            max-width:400px;
             height: 100%;
             position: relative;
             overflow: hidden;
@@ -435,6 +436,7 @@ body > #main {
     
         .calculator_copy_wrapper {
             width: 400px;
+            max-width:400px;
             height: 100%;
             position: relative;
             overflow: hidden;
