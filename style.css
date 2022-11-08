@@ -485,8 +485,16 @@ body>#main {
 
     @media screen and (min-width:449.99px) and (max-width:650.99px) {
 
+        #homeHeading>h1 {
+                font-size: calc(24.5px);
+            }
+        
+            #homeHeading>h2 {
+                font-size: calc(22px);
+            }
+
         section.portfolio_container>h1 {
-                font-size: calc(23.5px);
+                font-size: calc(24.5px);
         }
 
         section.portfolio_container > #portfolio > article {
@@ -506,11 +514,11 @@ body>#main {
         }
         
         .chess_h3 {
-                      font-size: 15px;
+                      font-size: 16px;
                   }
         
                   .chess_proj_desc {
-                      font-size: 12px;
+                      font-size: 13px;
                   }
 
         .calculator_copy_wrapper {
@@ -519,18 +527,26 @@ body>#main {
         }
 
         .calculator_h3 {
-            font-size: 15px;
+            font-size: 16px;
         }
         
                   .calculator_proj_desc {
-                      font-size: 12px;
+                      font-size: 13px;
                   }
     }
 
     @media screen and (max-width:449.99px){
 
+    #homeHeading>h1 {
+                    font-size: calc(21px);
+                }
+            
+        #homeHeading>h2 {
+                    font-size: calc(18px);
+                }
+
         section.portfolio_container>h1 {
-                font-size: calc(20px);
+                font-size: calc(21px);
             }
         section.portfolio_container>#portfolio>article {
                 width: 315px;
@@ -548,11 +564,11 @@ body>#main {
             }
         
             .chess_h3 {
-                font-size: 13px;
+                font-size: 14px;
             }
         
             .chess_proj_desc {
-                font-size: 10px;
+                font-size: 11px;
             }
         
             .calculator_copy_wrapper {
@@ -561,11 +577,11 @@ body>#main {
             }
         
             .calculator_h3 {
-                font-size: 13px;
+                font-size: 14px;
             }
         
             .calculator_proj_desc {
-                font-size: 10px;
+                font-size: 11px;
             }
     }
 
