@@ -321,7 +321,7 @@ body>#main {
     }
 
      #portfolio_container>h1 {
-        font-size: calc(28px);
+        font-size: calc(20px);
         filter: brightness(120%), contrast(120%);
         text-align: center;
         height: max-content;
@@ -494,12 +494,12 @@ body>#main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 19px;
+    row-gap: 9px;
     color:white;
 }
 
 #main #about_container div #about_header {
-    font-size: calc(28px);
+    font-size: calc(20px);
     filter: brightness(120%), contrast(120%);
     text-align: center;
     height: max-content;
@@ -509,7 +509,7 @@ body>#main {
 }
 
 #main #about_container div #about_intro_header {
-    font-size: calc(32px);
+    font-size: calc(28px);
     filter: brightness(120%), contrast(120%);
     text-align: center;
     height: max-content;
@@ -519,7 +519,7 @@ body>#main {
 }
 
 #main #about_container > #about_article_wrapper {
-color:inherit;
+color:white;
 position:relative;
 width: 100%;
 display: flex;
@@ -535,6 +535,8 @@ column-gap: 35px;
 }
 #main #about_container>#about_article_wrapper p {
     color:inherit;
+    width:300px;
+    max-width: 300px;
 }
 
 #main #about_container>#my_career_and_tech_stack_wrapper {
