@@ -498,7 +498,7 @@ body>#main {
 }
 
 #main #about_container div #about_header {
-    font-size: calc(20px);
+    font-size: calc(28px);
     filter: brightness(120%), contrast(120%);
     text-align: center;
     height: max-content;
@@ -508,7 +508,7 @@ body>#main {
 }
 
 #main #about_container div #about_intro_header {
-    font-size: calc(28px);
+    font-size: calc(19px);
     filter: brightness(120%), contrast(120%);
     text-align: center;
     height: max-content;
@@ -569,6 +569,8 @@ column-gap: 18px;
         top: calc(var(--navbar-height) * 8);
     }
 
+
+/*Break Points*/
     @media screen and (min-width:449.99px) and (max-width:650.99px) {
 
         #homeHeading>h1 {
