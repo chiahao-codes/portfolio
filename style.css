@@ -287,7 +287,7 @@ body>#main {
         align-content: center;
     }
 
-    #homeHeading>h2,
+    #homeHeading>h3,
     #homeHeading>h1 {
         text-align: center;
         filter: contrast(150%), brightness(150%);
