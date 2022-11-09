@@ -493,7 +493,7 @@ body>#main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: -1px;
+    row-gap: -6px;
     color:white;
 }
 
@@ -524,7 +524,7 @@ width: 100%;
 display: flex;
 justify-content:center;
 align-items: center;
-column-gap: 10px;
+column-gap: 18px;
 }
 
 #main #about_container>#about_article_wrapper img {
