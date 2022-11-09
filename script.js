@@ -44,10 +44,10 @@ let homeContainer = document.getElementsByClassName(
   "home_heading_container"
 )[0];
 let portfolioContainer = document.querySelector(
-  "body main section.portfolio_container"
+  "body main #portfolio_container"
 );
 let portfolioArticles = document.querySelectorAll(
-  "body main section.portfolio_container #portfolio article"
+  "body main #portfolio_container #portfolio article"
 );
 
 window.addEventListener("load", () => {
