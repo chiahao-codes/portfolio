@@ -480,7 +480,7 @@ body>#main {
     display: flex;
     flex-direction:column;
     justify-content: space-evenly;
-    row-gap: 50px;
+    row-gap: 55px;
     align-content: center;
     background-color: var(--darkMode-lighter-background-color);
     padding:15px 10px;
