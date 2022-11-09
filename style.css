@@ -522,8 +522,9 @@ color:white;
 position:relative;
 width: 100%;
 display: flex;
-justify-content:space-evenly;
+justify-content:center;
 align-items: center;
+column-gap: 10px;
 }
 
 #main #about_container>#about_article_wrapper img {
