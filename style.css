@@ -480,6 +480,7 @@ body>#main {
     display: flex;
     flex-direction:column;
     justify-content: space-evenly;
+    row-gap: 20px;
     align-content: center;
     background-color: var(--darkMode-lighter-background-color);
     padding-left: 10px;
@@ -547,6 +548,11 @@ column-gap: 35px;
     justify-content: center;
     align-content: center;
     column-gap: 35px;
+}
+
+#main #about_container>#my_career_and_tech_stack_wrapper div {
+    width:300px;
+    max-width: 300px;
 }
 
 
