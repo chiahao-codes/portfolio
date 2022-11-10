@@ -1,5 +1,4 @@
 let body = document.querySelector("body");
-
 let abortController = new AbortController();
 let navBar = document.getElementsByClassName("nav_bar")[0];
 let switchCircle = document.querySelector(
@@ -237,7 +236,7 @@ function darkMode() {
   }
 
   //mobile mode switch;
-  mobileSwitchContainer.style.backgroundColor = "black";
+  mobileSwitchContainer.style.backgroundColor = "#161617";
   mobileSwitchCircle.style.transform = "translateX(.1px)";
   mobileSwitchCircle.style.filter = "invert(1)";
 

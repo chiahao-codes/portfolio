@@ -175,7 +175,7 @@ body>#main {
         justify-content: space-between;
         align-items: center;
         position: absolute;
-        background-color: var(--darkMode-background-color);
+        background-color: inherit;
         width: 100%;
         height: max-content;
         row-gap: 17px;
@@ -193,6 +193,7 @@ body>#main {
         justify-content: center;
         align-items: center;
         width: 100%;
+        background-color: inherit;
     }
 
     body>#main>.mobile_navigation_links>#mobile_social_icon_parent {
@@ -230,7 +231,7 @@ body>#main {
     }
 
     body>#main>.mobile_navigation_links>#mobile_mode_switch_container {
-        background-color: black;
+        background-color: inherit;
         width: 60px;
         height: 28px;
         border-radius: 40px;
@@ -554,6 +555,7 @@ column-gap: 18px;
     min-width: 400px;
     color:white;
     background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 #main #about_container>#my_career_and_tech_stack_wrapper div p {
