@@ -268,7 +268,7 @@ function darkMode() {
   portfolioContainer.style.color = "white";
   portfolioContainer.style.backgroundColor = "#161617";
   for (let p of portfolioArticles) {
-    p.style.backgroundColor = "#black";
+    p.style.backgroundColor = "black";
   }
 
   //about
