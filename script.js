@@ -4,9 +4,13 @@ let navBar = document.getElementsByClassName("nav_bar")[0];
 let switchCircle = document.querySelector(
   "body main #navBar > #mode_switch_social_wrapper > #mode_switch_container > .switch_circle"
 );
-let modeSwitchContainer = document.getElementsByClassName(
-  "mode_switch_container"
-)[0];
+let modeSwitchContainer = document.querySelector(
+  "main #navBar #mode_switch_social_wrapper #mode_switch_container"
+);
+
+let switchIconWrapper = document.querySelector(
+  "main #navBar #mode_switch_social_wrapper #mode_switch_container #switch_icon_wrapper"
+);
 let socialIcons = document.querySelectorAll(
   "body main nav #mode_switch_social_wrapper .social_icon_parent > a > .social_icon"
 );
@@ -179,6 +183,7 @@ function setTransitionProperty() {
   body.style.transition = "background-color .1s ease-in";
   navBar.style.transition = "background-color .1s ease-in";
   modeSwitchContainer.style.transition = "background-color .1s ease-in";
+  switchIconWrapper.style.transition = "background-color .1s ease-in";
 
   switchCircle.style.transition = "transform .5s, filter .1s, ease-in";
   navLinksWrapper.style.transition = "color .1s ease-in";
@@ -208,6 +213,7 @@ function darkMode() {
     "#161617";
   navBar.style.backgroundColor = "#1a1a1a";
   modeSwitchContainer.style.backgroundColor = "black";
+  switchIconWrapper.style.backgroundColor = "black";
   switchCircle.style.transform = "translateX(1.5px)";
   switchCircle.style.filter = "invert(1)";
   navLinksWrapper.style.color = "white";
@@ -236,7 +242,7 @@ function darkMode() {
   }
 
   //mobile mode switch;
-  mobileSwitchContainer.style.backgroundColor = "#161617";
+  mobileSwitchContainer.style.backgroundColor = "black";
   mobileSwitchCircle.style.transform = "translateX(.1px)";
   mobileSwitchCircle.style.filter = "invert(1)";
 
@@ -258,6 +264,7 @@ function lightMode() {
   body.style.backgroundColor = "white";
   navBar.style.backgroundColor = "#ebeded";
   modeSwitchContainer.style.backgroundColor = "#dcdcde";
+  switchIconWrapper.style.backgroundColor = "#dcdcde";
   switchCircle.style.transform = "translateX(-28.5px)";
   switchCircle.style.filter = "invert(0)";
   navLinksWrapper.style.color = "black";

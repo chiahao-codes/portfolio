@@ -231,7 +231,7 @@ body>#main {
     }
 
     body>#main>.mobile_navigation_links>#mobile_mode_switch_container {
-        background-color: inherit;
+        background-color: black;
         width: 60px;
         height: 28px;
         border-radius: 40px;
@@ -258,8 +258,8 @@ body>#main {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background-color: black;
         position: relative;
+        background-color: inherit;
     }
 
 
