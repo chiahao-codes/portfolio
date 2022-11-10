@@ -205,7 +205,8 @@ function setTransitionProperty() {
 }
 
 function darkMode() {
-  body.style.backgroundColor = "#161617";
+  body.style.backgroundImage =
+    "linear-gradient(180deg, #161617,#202020, #3e3e3e)";
   navBar.style.backgroundColor = "#1a1a1a";
   modeSwitchContainer.style.backgroundColor = "black";
   switchCircle.style.transform = "translateX(1.5px)";
