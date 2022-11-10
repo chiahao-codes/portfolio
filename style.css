@@ -10,12 +10,10 @@ html {
 
 :root {
     --navbar-height: 60px;
-    --darkMode-background-color: #161617;
-    --darkMode-lighter-background-color: #222324;
 }
 
 body {
-    background-color: #161617;
+    background-image: linear-gradient(180deg, #161617,#202020, #3e3e3e);
     position: relative;
     height: 100vh;
     width: 100vw;
@@ -37,7 +35,7 @@ body>#main {
         justify-content: flex-end;
         align-items: center;
         row-gap: 50px;
-        background-color: inherit;
+        background-image: inherit;
         width: 100%;
         margin: 0;
         font-family: "Cormorant SC", sans-serif;
@@ -106,7 +104,7 @@ body>#main {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background-color: inherit;
+        background-color: black;
         position: relative;
     }
 
@@ -176,7 +174,7 @@ body>#main {
         justify-content: space-between;
         align-items: center;
         position: absolute;
-        background: inherit;
+        background-image: inherit;
         width: 100%;
         height: max-content;
         row-gap: 17px;
@@ -258,7 +256,7 @@ body>#main {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background-color: inherit;
+        background-color: black;
         position: relative;
     }
 
@@ -314,7 +312,6 @@ body>#main {
         left: 0;
         right: 0;
         color: white;
-        background-color: var(--darkMode-lighter-background-color);
         z-index: 0;
         top: calc(var(--navbar-height) * 4);
         overflow-x: hidden;
@@ -351,7 +348,7 @@ body>#main {
         border-color: white;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         filter: brightness(150%), contrast(150%);
-        background-color: var(--darkMode-background-color);
+        background-color: black;
     }
 
     #chess_link {
@@ -411,10 +408,9 @@ body>#main {
         min-width: 600px;
         max-width: 600px;
         border-color: white;
-        ;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         filter: brightness(150%), contrast(150%);
-        background-color: var(--darkMode-background-color);
+        background-color: black;
     }
 
     #calculator_link {
@@ -482,7 +478,7 @@ body>#main {
     justify-content: space-evenly;
     row-gap: 55px;
     align-content: center;
-    background-color: var(--darkMode-lighter-background-color);
+
     padding:15px 10px;
     overflow-x: hidden;
 }
@@ -557,6 +553,7 @@ column-gap: 18px;
     max-width: 400px;
     min-width: 400px;
     color:white;
+    background-color: black;
 }
 
 #main #about_container>#my_career_and_tech_stack_wrapper div p {
@@ -730,6 +727,15 @@ font-size: smaller;
         body>#main>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(4) {
             top: 34px;
         }
+
+    }
+
+    @media  screen and (max-width:850px) {
+    #main #about_container>#my_career_and_tech_stack_wrapper div {
+    width: 300px;
+    max-width: 300px;
+    min-width: 300px;
+    }
 
     }
 }
