@@ -43,15 +43,24 @@ let mobileSwitchCircle = document.querySelector(
   "body main > .mobile_navigation_links > #mobile_mode_switch_container > .mobile_switch_circle"
 );
 
+//home 
 let homeContainer = document.getElementsByClassName(
   "home_heading_container"
 )[0];
+
+//portfolio
 let portfolioContainer = document.querySelector(
   "body main #portfolio_container"
 );
 let portfolioArticles = document.querySelectorAll(
   "body main #portfolio_container #portfolio article"
 );
+
+//about
+let aboutHeaderWrapper = document.querySelector("main > #about_container #about_header_wrapper");
+let aboutIntro = document.querySelector("main > #about_container #about_article_wrapper p");
+let myCareerObjAndTechStackWrappers = document.querySelector("main > #about_container #my_career_and_tech_stack_wrapper > div");
+
 
 window.addEventListener("load", () => {
   localStorage.setItem("mode", "dark");
@@ -195,6 +204,10 @@ function setTransitionProperty() {
     p.style.transition = "background-color .1s ease-in";
   }
 
+  aboutHeaderWrapper.style.transition = "color .1s ease-in";
+  aboutIntro.style.transition = "color .1s ease-in";
+  myCareerObjAndTechStackWrappers.style.transition = "color .1s, background-color .1s, ease-in";
+
   for (let hmi of hamburgerMenuWrapper.children) {
     hmi.style.transitionProperty = "transform left width top";
     hmi.style.transitionDuration = ".1s";
@@ -248,12 +261,17 @@ function darkMode() {
 
   //page body
   homeContainer.style.color = "white";
+
   portfolioContainer.style.color = "white";
   portfolioContainer.style.backgroundColor = "#1e1e1f";
-
   for (let p of portfolioArticles) {
     p.style.backgroundColor = "#161617";
   }
+
+   aboutHeaderWrapper.style.color = "white";
+   aboutIntro.style.color = "white";
+   myCareerObjAndTechStackWrappers.style.color = "white";
+   myCareerObjAndTechStackWrappers.style.backgroundColor = "black";
 
   moonIconLink.style.color = "white";
 
@@ -261,7 +279,7 @@ function darkMode() {
 }
 
 function lightMode() {
-  body.style.backgroundColor = "white";
+  body.style.backgroundColor = "#f5f5f5";
   navBar.style.backgroundColor = "#ebeded";
   modeSwitchContainer.style.backgroundColor = "#dcdcde";
   switchIconWrapper.style.backgroundColor = "#dcdcde";
@@ -293,18 +311,27 @@ function lightMode() {
   }
 
   //mobile mode switch;
-  mobileSwitchContainer.style.backgroundColor = "#dcdcde";
+  mobileSwitchContainer.style.backgroundColor = "#f5f5f5";
   mobileSwitchCircle.style.transform = "translateX(-29.5px)";
   mobileSwitchCircle.style.filter = "invert(0)";
 
   //page body;
   homeContainer.style.color = "black";
+
   portfolioContainer.style.color = "black";
-  portfolioContainer.style.backgroundColor = "#ebeded";
+  portfolioContainer.style.backgroundColor = "#f5f5f5";
+
+  aboutHeaderWrapper.style.color = "black";
+  aboutIntro.style.color = "black";
+  myCareerObjAndTechStackWrappers.style.color = "black"
+  myCareerObjAndTechStackWrappers.style.backgroundColor = "white";
 
   for (let p of portfolioArticles) {
     p.style.backgroundColor = "white";
   }
+
+  //about 
+
 
   moonIconLink.style.color = "black";
 
