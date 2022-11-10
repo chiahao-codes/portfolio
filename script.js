@@ -53,7 +53,7 @@ let portfolioContainer = document.querySelector(
   "body main #portfolio_container"
 );
 let portfolioArticles = document.querySelectorAll(
-  "body main #portfolio_container #portfolio article > a"
+  "body main #portfolio_container #portfolio > article"
 );
 
 //about
@@ -325,17 +325,16 @@ function lightMode() {
 
   portfolioContainer.style.color = "black";
   portfolioContainer.style.backgroundColor = "#f5f5f5";
+  for (let p of portfolioArticles) {
+      p.style.backgroundColor = "white";
+    }
+
 
   aboutHeaderWrapper.style.color = "black";
   aboutIntro.style.color = "black";
    for (let m of myCareerObjAndTechStackWrappers) {
      m.style.color = "black";
    }
-  
-
-  for (let p of portfolioArticles) {
-    p.style.backgroundColor = "white";
-  }
 
   //about 
  aboutHeaderWrapper.style.color = "black";
