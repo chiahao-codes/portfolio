@@ -59,7 +59,7 @@ let portfolioArticles = document.querySelectorAll(
 //about
 let aboutHeaderWrapper = document.querySelector("main > #about_container #about_header_wrapper");
 let aboutIntro = document.querySelector("main > #about_container #about_article_wrapper p");
-let myCareerObjAndTechStackWrappers = document.querySelector("main > #about_container #my_career_and_tech_stack_wrapper > div");
+let myCareerObjAndTechStackWrappers = document.querySelectorAll("main > #about_container #my_career_and_tech_stack_wrapper > div");
 
 
 window.addEventListener("load", () => {
@@ -206,7 +206,9 @@ function setTransitionProperty() {
 
   aboutHeaderWrapper.style.transition = "color .1s ease-in";
   aboutIntro.style.transition = "color .1s ease-in";
-  myCareerObjAndTechStackWrappers.style.transition = "color .1s, background-color .1s, ease-in";
+  for (let m of myCareerObjAndTechStackWrappers) {
+    m.style.transition = "color .1s ease-in";
+  }
 
   for (let hmi of hamburgerMenuWrapper.children) {
     hmi.style.transitionProperty = "transform left width top";
@@ -262,16 +264,19 @@ function darkMode() {
   //page body
   homeContainer.style.color = "white";
 
+  //portfolio
   portfolioContainer.style.color = "white";
   portfolioContainer.style.backgroundColor = "#1e1e1f";
   for (let p of portfolioArticles) {
     p.style.backgroundColor = "#161617";
   }
 
-   aboutHeaderWrapper.style.color = "white";
-   aboutIntro.style.color = "white";
-   myCareerObjAndTechStackWrappers.style.color = "white";
-   myCareerObjAndTechStackWrappers.style.backgroundColor = "black";
+  //about
+  aboutHeaderWrapper.style.color = "white";
+  aboutIntro.style.color = "white";
+  for (let m of myCareerObjAndTechStackWrappers) {
+     m.style.color = "white";
+   }
 
   moonIconLink.style.color = "white";
 
@@ -331,7 +336,11 @@ function lightMode() {
   }
 
   //about 
-
+ aboutHeaderWrapper.style.color = "black";
+ aboutIntro.style.color = "black";
+ for (let m of myCareerObjAndTechStackWrappers) {
+   m.style.color = "black";
+ }
 
   moonIconLink.style.color = "black";
 

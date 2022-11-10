@@ -555,8 +555,8 @@ column-gap: 18px;
     min-width: 400px;
     padding:1% 1%;
     color:white;
-    background-color: black;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: inherit;
+   
 }
 
 #main #about_container>#my_career_and_tech_stack_wrapper div p {
