@@ -53,7 +53,7 @@ let portfolioContainer = document.querySelector(
   "body main #portfolio_container"
 );
 let portfolioArticles = document.querySelectorAll(
-  "body main #portfolio_container #portfolio article"
+  "body main #portfolio_container #portfolio article > a"
 );
 
 //about
