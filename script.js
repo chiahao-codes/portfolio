@@ -328,8 +328,10 @@ function lightMode() {
 
   aboutHeaderWrapper.style.color = "black";
   aboutIntro.style.color = "black";
-  myCareerObjAndTechStackWrappers.style.color = "black"
-  myCareerObjAndTechStackWrappers.style.backgroundColor = "white";
+   for (let m of myCareerObjAndTechStackWrappers) {
+     m.style.color = "black";
+   }
+  
 
   for (let p of portfolioArticles) {
     p.style.backgroundColor = "white";
