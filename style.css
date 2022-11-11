@@ -566,7 +566,7 @@ font-size: smaller;
 
 #main #about_container>#resumeButtonContainer  {
     position: relative;
-    margin:0px 50%;
+    margin:auto;
 }
 
 #main #about_container>#resumeButtonContainer button {
