@@ -574,6 +574,7 @@ margin:0 auto;
 
 #main #about_container > div > button {
 color:white;
+border:none;
     width: 200px;
     max-width: 200px;
     min-width: 200px;
