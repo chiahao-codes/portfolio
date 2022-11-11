@@ -66,6 +66,7 @@ let resumeButton = document.querySelector("#main > about_container > #resumeButt
 
 let moonIconLink = document.querySelector("body main a.icon8_link");
 
+console.log(resumeButtonContainer);
 
 function setHamburgerInLocalStorage(setting) {
   localStorage.setItem("hamburger", setting);
@@ -355,8 +356,10 @@ mobileSwitchContainer.addEventListener("click", () => {
   }
 });
 
-resumeButtonContainer.addEventListener("click", (evt) => {
+/**
+ * resumeButtonContainer.addEventListener("click", (evt) => {
   console.log(evt.target);
   resumeButtonContainer.style.boxShadow = "0px 1px 11px rgba(0, 0, 0, 0.35)";
   resumeButton.style.transform = "scale(.98)";
 }, {useCapture:true})
+ */
