@@ -564,15 +564,13 @@ column-gap: 18px;
 font-size: smaller;
 }
 
-#main #about_container>span{
+#main #about_container>#button_container{
 position: relative;
-display: flex;
-justify-content: center;
 box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
 background-color: #34c0eb;
 }
 
-#main #about_container> span > button {
+#main #about_container> div > button {
     
     color:white;
   
@@ -587,14 +585,16 @@ background-color: #34c0eb;
     opacity: .95;
 }
 
-#main #about_container> span button:hover {
+#main #about_container> #button_container > button:hover {
     cursor: pointer;
     opacity: 1;
 }
+#main #about_container>div>#button_container:active{
+box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.35);
+}
 
-#main #about_container>span > span button:active{
+#main #about_container>div > #button_container > button:active{
     transform:scale(.99);
-    box-shadow:0px 1px 11px rgba(0, 0, 0, 0.35);
 }
 
 /*icon link*/
