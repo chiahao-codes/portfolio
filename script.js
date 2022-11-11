@@ -1,20 +1,20 @@
 let body = document.querySelector("body");
 let abortController = new AbortController();
 let navBar = document.getElementsByClassName("nav_bar")[0];
+
+//Nav: Desktop mode
 let switchCircle = document.querySelector(
   "body main #navBar > #mode_switch_social_wrapper > #mode_switch_container > .switch_circle"
 );
 let modeSwitchContainer = document.querySelector(
   "main #navBar #mode_switch_social_wrapper #mode_switch_container"
 );
-
 let switchIconWrapper = document.querySelector(
   "main #navBar #mode_switch_social_wrapper #mode_switch_container #switch_icon_wrapper"
 );
 let socialIcons = document.querySelectorAll(
   "body main nav #mode_switch_social_wrapper .social_icon_parent > a > .social_icon"
 );
-
 let navLinksWrapper = document.querySelectorAll(
   "main #navBar > #navigation_links_wrapper"
 )[0];
@@ -25,8 +25,9 @@ let hamburgerMenuWrapper = document.querySelector(
 let menuIcon = document.querySelectorAll(
   " body main nav #menuIconWrapper > .menuIcon"
 );
-let moonIconLink = document.querySelector("body main a.icon8_link");
 
+
+//Nav: Mobile mode
 let mobileDropMenu = document.querySelector(
   "body main > .mobile_navigation_links"
 );
@@ -60,6 +61,10 @@ let portfolioArticles = document.querySelectorAll(
 let aboutHeaderWrapper = document.querySelector("main > #about_container #about_header_wrapper");
 let aboutIntro = document.querySelector("main > #about_container #about_article_wrapper p");
 let myCareerObjAndTechStackWrappers = document.querySelectorAll("main > #about_container #my_career_and_tech_stack_wrapper > div");
+let resumeButtonContainer = document.querySelector("#main > about_container > #resumeButtonContainer");
+
+
+let moonIconLink = document.querySelector("body main a.icon8_link");
 
 
 window.addEventListener("load", () => {

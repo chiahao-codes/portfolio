@@ -568,7 +568,7 @@ font-size: smaller;
     position: relative;
     margin:auto;
     width: fit-content;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.85);
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.35);
 }
 
 #main #about_container>#resumeButtonContainer button {
