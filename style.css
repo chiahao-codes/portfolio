@@ -571,6 +571,11 @@ font-size: smaller;
     min-width: 200px;
     height: 50px;
     margin:auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#main #about_container>#resumeButtonContainer:hover{
+cursor:pointer;
 }
 
 
