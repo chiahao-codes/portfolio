@@ -564,7 +564,7 @@ column-gap: 18px;
 font-size: smaller;
 }
 
-#main #about_container> div > button {
+#main #about_container > button {
 transform:translateX(50%);
 color:white;
 box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
@@ -579,12 +579,12 @@ box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
     opacity: .9;
 }
 
-#main #about_container> #button_container > button:hover {
+#main #about_container > button:hover {
     cursor: pointer;
     opacity: 1;
 }
 
-#main #about_container>div > button:active{
+#main #about_container > button:active{
     transform:scale(.9);
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.35);
 }
