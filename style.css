@@ -567,7 +567,7 @@ font-size: smaller;
 #main #about_container>#button_container{
 position: relative;
 box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
-background-color: #34c0eb;
+
 }
 
 #main #about_container> div > button {
@@ -578,7 +578,7 @@ background-color: #34c0eb;
     max-width: 200px;
     min-width: 200px;
     height: 50px;
-    background-color: inherit;
+    background-color: #34c0eb;
     text-align: center;
     font-size: large;
     font-family:"Cormorant SC",sans-serif; 
@@ -594,7 +594,7 @@ box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.35);
 }
 
 #main #about_container>div > #button_container > button:active{
-    transform:scale(.99);
+    transform:scale(.9);
 }
 
 /*icon link*/
