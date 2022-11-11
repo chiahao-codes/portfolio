@@ -583,7 +583,7 @@ border:none;
     text-align: center;
     font-size: large;
     font-family:"Cormorant SC",sans-serif; 
-    opacity: .9;
+    opacity: .75;
 }
 
 #main #about_container > div > button:hover {
