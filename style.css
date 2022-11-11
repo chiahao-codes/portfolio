@@ -566,8 +566,7 @@ font-size: smaller;
 
 #main #about_container> button {
     position: relative;
-    left:auto;
-    right:auto;
+    transform:translateX(50%);
     color:white;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
     width: 200px;
@@ -578,10 +577,12 @@ font-size: smaller;
     text-align: center;
     font-size: large;
     font-family:"Cormorant SC",sans-serif; 
+    opacity: .8;
 }
 
-#main #about_container>#resumeButtonContainer button:hover {
+#main #about_container> button:hover {
     cursor: pointer;
+    opacity: 1;
 }
 
 /*icon link*/

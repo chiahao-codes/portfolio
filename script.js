@@ -358,7 +358,8 @@ mobileSwitchContainer.addEventListener("click", () => {
  * 
  */
 
-function resumeButtonClick() {
+function resumeButtonClick(evt) {
+  console.log(evt.target)
     resumeButton.style.transform = "scale(.9)";
     resumeButton.style.boxShadow = "0px 1px 11px rgba(0, 0, 0, 0.35)";
 }
