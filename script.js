@@ -61,8 +61,8 @@ let portfolioArticles = document.querySelectorAll(
 let aboutHeaderWrapper = document.querySelector("main > #about_container #about_header_wrapper");
 let aboutIntro = document.querySelector("main > #about_container #about_article_wrapper p");
 let myCareerObjAndTechStackWrappers = document.querySelectorAll("main > #about_container #my_career_and_tech_stack_wrapper > div");
-let resumeButtonContainer = document.querySelector("#main > #about_container > #resumeButtonContainer");
-let resumeButton = document.querySelector("#main > #about_container > #resumeButtonContainer>button");
+
+let resumeButton = document.querySelector("#main > #about_container > button");
 
 let moonIconLink = document.querySelector("body main a.icon8_link");
 
@@ -360,7 +360,7 @@ mobileSwitchContainer.addEventListener("click", () => {
 
 function resumeButtonClick() {
     resumeButton.style.transform = "scale(.9)";
-    resumeButtonContainer.style.boxShadow = "0px 1px 11px rgba(0, 0, 0, 0.35)";
+    resumeButton.style.boxShadow = "0px 1px 11px rgba(0, 0, 0, 0.35)";
 }
 
-resumeButton.addEventListener("click", resumeButtonClick, { useCapture: true });
+resumeButton.addEventListener("click", resumeButtonClick);
