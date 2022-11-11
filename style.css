@@ -592,10 +592,11 @@ color:white;
 
 #main #about_container>#buttonContainer:active {
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.35);
+    transform: scale(.9);
 }
 
 #main #about_container > div > button:active{
-    transform:scale(.9); 
+    
 }
 
 /*icon link*/

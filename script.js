@@ -359,7 +359,7 @@ mobileSwitchContainer.addEventListener("click", () => {
  */
 
 function resumeButtonClick(evt) {
-  console.log(evt)
+  console.log(evt);
 }
 
 resumeButton.addEventListener("click", resumeButtonClick, true);
