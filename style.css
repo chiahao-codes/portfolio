@@ -570,11 +570,6 @@ font-size: smaller;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-#main #about_container>#resumeButtonContainer:hover{
-cursor:pointer;
-}
-
-
 #main #about_container>#resumeButtonContainer button {
     color:white;
     width: 200px;
@@ -585,6 +580,10 @@ cursor:pointer;
     text-align: center;
     font-size: large;
     font-family:"Cormorant SC",sans-serif; 
+}
+
+#main #about_container>#resumeButtonContainer button:hover {
+    cursor: pointer;
 }
 
 /*icon link*/
