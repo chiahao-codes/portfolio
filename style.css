@@ -583,17 +583,18 @@ border:none;
     text-align: center;
     font-size: large;
     font-family:"Cormorant SC",sans-serif; 
-    opacity: .75;
+    opacity: .85;
 }
 
 #main #about_container > div > button:hover {
     cursor: pointer;
     opacity: 1;
+    filter:brightness(110%) contrast(110%);
 }
 
 #main #about_container>#buttonContainer:active {
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.35);
-    transform: scale(.9);
+    transform: scale(.95);
 }
 
 #main #about_container > div > button:active{
@@ -613,7 +614,59 @@ border:none;
 
 
 /*Break Points*/
-    @media screen and (min-width:449.99px) and (max-width:650.99px) {
+  @media screen and (max-width:449.99px) {
+
+      #homeHeading>h1 {
+          font-size: calc(23px);
+      }
+
+      #homeHeading>h2 {
+          font-size: calc(14px);
+      }
+
+      #portfolio_container>h1 {
+          font-size: calc(23px);
+      }
+
+      #portfolio_container>#portfolio>article {
+          width: 315px;
+          min-width: 315px;
+          max-width: 315px;
+      }
+
+      #portfolio_container>#portfolio article a div img {
+          width: 65px;
+          height: 65px;
+      }
+
+      .chess_copy_wrapper {
+          width: 250px;
+          max-width: 250px;
+      }
+
+      .chess_h3 {
+          font-size: 17px;
+      }
+
+      .chess_proj_desc {
+          font-size: 14px;
+      }
+
+      .calculator_copy_wrapper {
+          width: 250px;
+          max-width: 250px;
+      }
+
+      .calculator_h3 {
+          font-size: 17px;
+      }
+
+      .calculator_proj_desc {
+          font-size: 14px;
+      }
+  }
+
+  @media screen and (min-width:449.99px) and (max-width:650.99px) {
 
         #homeHeading>h1 {
                 font-size: calc(26.5px);
@@ -663,56 +716,6 @@ border:none;
         .calculator_proj_desc {
           font-size: 17px;
                   }
-    }
-
-    @media screen and (max-width:449.99px){
-
-    #homeHeading>h1 {
-                    font-size: calc(23px);
-                }
-            
-        #homeHeading>h2 {
-                    font-size: calc(14px);
-                }
-
-         #portfolio_container>h1 {
-                font-size: calc(23px);
-            }
-         #portfolio_container>#portfolio>article {
-                width: 315px;
-                min-width: 315px;
-                max-width: 315px;
-            }
-        
-             #portfolio_container>#portfolio article a div img {
-                width: 65px;
-                height: 65px;           }
-        
-            .chess_copy_wrapper {
-                width: 250px;
-                max-width: 250px;
-            }
-        
-            .chess_h3 {
-                font-size: 17px;
-            }
-        
-            .chess_proj_desc {
-                font-size: 14px;
-            }
-        
-            .calculator_copy_wrapper {
-                width: 250px;
-                max-width: 250px;
-            }
-        
-            .calculator_h3 {
-                font-size: 17px;
-            }
-        
-            .calculator_proj_desc {
-                font-size: 14px;
-            }
     }
 
     @media screen and (max-width:831.99px) {
