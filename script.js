@@ -355,7 +355,8 @@ mobileSwitchContainer.addEventListener("click", () => {
   }
 });
 
-resumeButtonContainer.addEventListener("click", () => {
-  this.style.boxShadow = "0px 1px 11px rgba(0, 0, 0, 0.35)";
+resumeButtonContainer.addEventListener("click", (evt) => {
+  console.log(evt.target);
+  resumeButtonContainer.style.boxShadow = "0px 1px 11px rgba(0, 0, 0, 0.35)";
   resumeButton.style.transform = "scale(.98)";
 }, {useCapture:true})
