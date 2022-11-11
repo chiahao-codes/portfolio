@@ -576,12 +576,17 @@ font-size: smaller;
     text-align: center;
     font-size: large;
     font-family:"Cormorant SC",sans-serif; 
-    opacity: .9;
+    opacity: .95;
 }
 
 #main #about_container> button:hover {
     cursor: pointer;
     opacity: 1;
+}
+
+#main #about_container>button:active{
+    transform:scale(.99);
+    box-shadow:0px 1px 11px rgba(0, 0, 0, 0.35);
 }
 
 /*icon link*/
