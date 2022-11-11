@@ -358,8 +358,8 @@ mobileSwitchContainer.addEventListener("click", () => {
  * 
  */
 
-resumeButtonContainer.addEventListener("click", (evt) => {
-  evt.target.style.transform = "scale(.98)";
+resumeButtonContainer.addEventListener("click", () => {
+  resumeButtonContainer.style.transform = "scale(.98)";
   resumeButtonContainer.style.boxShadow = "0px 1px 11px rgba(0, 0, 0, 0.35)";
   },
   { useCapture: true }
