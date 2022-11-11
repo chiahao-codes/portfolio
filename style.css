@@ -564,6 +564,11 @@ column-gap: 18px;
 font-size: smaller;
 }
 
+#main #about_container>#resumeButtonContainer  {
+    position: relative;
+    margin:0px 50%;
+}
+
 #main #about_container>#resumeButtonContainer button {
     color:white;
     width:200px;
@@ -571,9 +576,7 @@ font-size: smaller;
     background-color: #34c0eb;
     text-align: center;
     font-size: large;
-    font-family:"Cormorant SC",
-        sans-serif; 
-    position: relative;
+    font-family:"Cormorant SC",sans-serif; 
 }
 
 /*icon link*/
