@@ -571,6 +571,10 @@ font-size: smaller;
     background-color: #34c0eb;
     text-align: center;
     font-size: large;
+    font-family:"Cormorant SC",
+        sans-serif; 
+    position: relative;
+    margin: 0;
 }
 
 /*icon link*/
