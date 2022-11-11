@@ -567,7 +567,7 @@ font-size: smaller;
 #main #about_container>#resumeButtonContainer  {
     position: relative;
     margin:auto;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
 }
 
 #main #about_container>#resumeButtonContainer button {
@@ -580,7 +580,7 @@ font-size: smaller;
     text-align: center;
     font-size: large;
     font-family:"Cormorant SC",sans-serif; 
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
 }
 
 #main #about_container>#resumeButtonContainer button:hover {
