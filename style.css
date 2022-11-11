@@ -548,6 +548,7 @@ column-gap: 18px;
     justify-content: space-evenly;
     align-content: center;
     column-gap: 20px;
+    color:white;
 }
 
 #main #about_container>#my_career_and_tech_stack_wrapper div {
@@ -562,6 +563,25 @@ column-gap: 18px;
 
 #main #about_container>#my_career_and_tech_stack_wrapper div p {
 font-size: smaller;
+}
+
+#main #about_container>#my_career_and_tech_stack_wrapper > #tech_stack_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    row-gap: 10px;
+    position: relative;
+}
+
+#main #about_container>#my_career_and_tech_stack_wrapper>#tech_stack_wrapper>#tech_stack_bar_wrapper {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    row-gap: 10px;
+
 }
 
 #main #about_container> #buttonContainer{
@@ -597,9 +617,6 @@ border:none;
     transform: scale(.95);
 }
 
-#main #about_container > div > button:active{
-    
-}
 
 /*icon link*/
     body>#main>.icon8_link {
