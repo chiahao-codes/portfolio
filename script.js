@@ -364,4 +364,4 @@ function resumeButtonClick(evt) {
     resumeButton.style.boxShadow = "0px 1px 11px rgba(0, 0, 0, 0.35)";
 }
 
-resumeButton.addEventListener("click", resumeButtonClick);
+resumeButton.addEventListener("click", resumeButtonClick, false);
