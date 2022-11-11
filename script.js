@@ -62,23 +62,10 @@ let aboutHeaderWrapper = document.querySelector("main > #about_container #about_
 let aboutIntro = document.querySelector("main > #about_container #about_article_wrapper p");
 let myCareerObjAndTechStackWrappers = document.querySelectorAll("main > #about_container #my_career_and_tech_stack_wrapper > div");
 let resumeButtonContainer = document.querySelector("#main > about_container > #resumeButtonContainer");
-
+let resumeButton = document.querySelector("#main > about_container > #resumeButtonContainer>button");
 
 let moonIconLink = document.querySelector("body main a.icon8_link");
 
-
-window.addEventListener("load", () => {
-  localStorage.setItem("mode", "dark");
-  localStorage.setItem("hamburger", "closed");
-  window.scrollTo(0, 0);
-});
-
-window.addEventListener("resize", () => {
-  setTransitionProperty();
-  if (window.innerWidth >= 832) {
-    hamburgerClose();
-  }
-});
 
 function setHamburgerInLocalStorage(setting) {
   localStorage.setItem("hamburger", setting);
@@ -108,51 +95,6 @@ function abortSignal(ab) {
   });
 }
 
-//mobile hamburger menu
-hamburgerMenuWrapper.addEventListener(
-  "click",
-  async (evt) => {
-    console.log("event click:", evt.target);
-    await abortSignal(abortController)
-      .then(() => {
-        setTransitionProperty();
-        if (localStorage.getItem("hamburger") === "closed") {
-          mobileNavShutter(hamburgerOpen);
-          setHamburgerInLocalStorage("open");
-        } else {
-          mobileNavShutter(hamburgerClose);
-          setHamburgerInLocalStorage("closed");
-        }
-      })
-      .then(() => {
-        console.log("windowScrollSet");
-        windowScrollSet();
-      })
-      .catch(() => {
-        console.log("Promise error");
-      });
-  },
-  { passive: true }
-);
-
-//mode switch
-modeSwitchContainer.addEventListener("click", function () {
-  if (localStorage.getItem("mode") !== "dark") {
-    darkMode();
-  } else {
-    lightMode();
-  }
-});
-
-//mobile nav bar mode switch
-mobileSwitchContainer.addEventListener("click", () => {
-  setTransitionProperty();
-  if (localStorage.getItem("mode") === "light") {
-    darkMode();
-  } else {
-    lightMode();
-  }
-});
 
 function hamburgerOpen() {
   window.scrollTo(0, 0);
@@ -352,3 +294,68 @@ function lightMode() {
 
   localStorage.setItem("mode", "light");
 }
+
+
+window.addEventListener("load", () => {
+  localStorage.setItem("mode", "dark");
+  localStorage.setItem("hamburger", "closed");
+  window.scrollTo(0, 0);
+});
+
+window.addEventListener("resize", () => {
+  setTransitionProperty();
+  if (window.innerWidth >= 832) {
+    hamburgerClose();
+  }
+});
+
+//mobile hamburger menu
+hamburgerMenuWrapper.addEventListener(
+  "click",
+  async (evt) => {
+    console.log("event click:", evt.target);
+    await abortSignal(abortController)
+      .then(() => {
+        setTransitionProperty();
+        if (localStorage.getItem("hamburger") === "closed") {
+          mobileNavShutter(hamburgerOpen);
+          setHamburgerInLocalStorage("open");
+        } else {
+          mobileNavShutter(hamburgerClose);
+          setHamburgerInLocalStorage("closed");
+        }
+      })
+      .then(() => {
+        console.log("windowScrollSet");
+        windowScrollSet();
+      })
+      .catch(() => {
+        console.log("Promise error");
+      });
+  },
+  { passive: true }
+);
+
+//mode switch
+modeSwitchContainer.addEventListener("click", function () {
+  if (localStorage.getItem("mode") !== "dark") {
+    darkMode();
+  } else {
+    lightMode();
+  }
+});
+
+//mobile nav bar mode switch
+mobileSwitchContainer.addEventListener("click", () => {
+  setTransitionProperty();
+  if (localStorage.getItem("mode") === "light") {
+    darkMode();
+  } else {
+    lightMode();
+  }
+});
+
+resumeButtonContainer.addEventListener("click", (evt) => {
+  evt.target.style.boxShadow = "0px 1px 11px rgba(0, 0, 0, 0.35)";
+  resumeButton.style.transform = "scale(.98)";
+}, {useCapture:true})
