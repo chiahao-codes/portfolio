@@ -62,7 +62,7 @@ let aboutHeaderWrapper = document.querySelector("main > #about_container #about_
 let aboutIntro = document.querySelector("main > #about_container #about_article_wrapper p");
 let myCareerObjAndTechStackWrappers = document.querySelectorAll("main > #about_container #my_career_and_tech_stack_wrapper > div");
 
-let resumeButton = document.querySelector("#main > #about_container > button");
+let resumeButton = document.querySelector("#main > #about_container > span > button");
 
 let moonIconLink = document.querySelector("body main a.icon8_link");
 
