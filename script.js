@@ -359,8 +359,7 @@ mobileSwitchContainer.addEventListener("click", () => {
  */
 
 resumeButtonContainer.addEventListener("click", () => {
-  resumeButtonContainer.style.transform = "scale(.98)";
+  resumeButtonContainer.style.transform = "scale(.9)";
   resumeButtonContainer.style.boxShadow = "0px 1px 11px rgba(0, 0, 0, 0.35)";
   },
-  { useCapture: true }
 );
