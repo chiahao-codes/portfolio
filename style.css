@@ -550,7 +550,7 @@ column-gap: 18px;
     flex-direction: column;
     justify-content: space-evenly;
     align-content: flex-start;
-    column-gap: 30px;
+    column-gap: 50px;
     color:white;
 }
 
