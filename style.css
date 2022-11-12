@@ -558,6 +558,7 @@ column-gap: 18px;
     width:100%;
     max-width: 100%;
     min-width: 100%;
+    left:10%;
     padding:1% 1%;
     color:white;
     background-color: inherit;
