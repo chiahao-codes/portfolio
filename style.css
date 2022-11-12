@@ -548,17 +548,16 @@ column-gap: 18px;
     width:100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-content: flex-start;
-    column-gap: 100px;
     color:white;
 }
 
-#main #about_container>#my_career_and_tech_stack_wrapper >  div {
+#main #about_container>#my_career_and_tech_stack_wrapper  .career_tech_stack {
     width:100%;
     max-width: 100%;
     min-width: 100%;
-    left:10%;
+    left:8%;
     padding:1% 1%;
     color:white;
     background-color: inherit;
@@ -739,7 +738,7 @@ border:none;
                   }
     }
 
-    @media screen and (max-width:831.99px) {
+  @media screen and (max-width:831.99px) {
 
         body>#main>nav>#mode_switch_social_wrapper {
             display: none;
@@ -791,15 +790,6 @@ border:none;
         body>#main>#navBar>.menu_icon_wrapper>.menuIcon:nth-child(4) {
             top: 34px;
         }
-
-    }
-
-    @media  screen and (max-width:850px) {
-    #main #about_container>#my_career_and_tech_stack_wrapper div {
-    width: 100%;
-    max-width: 100%;
-    min-width: 100%;
-    }
 
     }
 }
