@@ -552,7 +552,7 @@ column-gap: 18px;
     color:white;
 }
 
-#main #about_container>#my_career_and_tech_stack_wrapper div {
+#main #about_container>#my_career_and_tech_stack_wrapper >  div {
     width:100%;
     max-width: 100%;
     min-width: 100%;
