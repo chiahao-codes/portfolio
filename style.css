@@ -543,6 +543,8 @@ column-gap: 18px;
 
 #main #about_container>#my_career_and_tech_stack_wrapper {
     position:relative;
+    padding-left: 2%;
+    padding-right: 2%;
     width:100%;
     display: flex;
     flex-direction: column;
