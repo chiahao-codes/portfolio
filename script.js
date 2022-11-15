@@ -200,7 +200,9 @@ function darkMode() {
   //mobile social media icons;
   for (let i = 0; i < mobileSocialIcons.length; i++) {
     mobileSocialIcons[i].style.filter = "invert(100%)";
+    console.log("dark mode -- mobile social icons");
   }
+  
 
   //mobile mode switch;
   mobileSwitchContainer.style.backgroundColor = "black";
@@ -259,6 +261,7 @@ function lightMode() {
   //mobile social media icons;
   for (let i = 0; i < mobileSocialIcons.length; i++) {
     mobileSocialIcons[i].style.filter = "invert(0%)";
+    console.log("light mode -- mobile social icons");
   }
 
   //mobile mode switch;
