@@ -552,8 +552,8 @@ column-gap: 18px;
 }
 
 #main #about_container>#my_career_and_tech_stack_wrapper> .career_tech_stack {
-    width:400px;
-    max-width: 400px;
+    width:200px;
+    max-width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -567,6 +567,7 @@ column-gap: 18px;
 #main #about_container>#my_career_and_tech_stack_wrapper>.career_tech_stack >  p {
 font-size: 18;
 overflow-wrap: normal;
+
 }
 
 
