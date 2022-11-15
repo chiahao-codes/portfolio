@@ -730,6 +730,20 @@ border:none;
                   }
     }
 
+    @media screen and (max-width:570px) {
+    #main #about_container>#about_article_wrapper img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #main #about_container>#about_article_wrapper p {
+        width: 300px;
+        max-width: 300px;
+        min-width: 300px;
+    }
+
+    }
+
   @media screen and (max-width:831.99px) {
 
         body>#main>nav>#mode_switch_social_wrapper {
@@ -784,6 +798,7 @@ border:none;
         }
 
     }
+
 }
 
 
