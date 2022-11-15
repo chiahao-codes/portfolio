@@ -624,7 +624,7 @@ border:none;
 
 /*Break Points*/
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:425.99px) {
         #main #about_container>#about_article_wrapper> img {
                 width: 60px;
                 height: 60px;
@@ -740,7 +740,7 @@ border:none;
                   }
     }
 
- @media screen and (max-width:570px) {
+ @media screen and (min-width:426px) and (max-width:570px) {
     #main #about_container>#about_article_wrapper img {
         width: 80px;
         height: 80px;
