@@ -524,7 +524,7 @@ width: 100%;
 display: flex;
 justify-content:center;
 align-items: center;
-column-gap: 18px;
+column-gap: 20px;
 }
 
 #main #about_container>#about_article_wrapper img {
