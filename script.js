@@ -176,7 +176,7 @@ function darkMode() {
   modeSwitchContainer.style.backgroundColor = "black";
   switchIconWrapper.style.backgroundColor = "black";
   switchCircle.style.transform = "translateX(1.5px)";
-  switchCircle.style.filter = "invert(1)";
+  switchCircle.style.filter = "invert(100%)";
   navLinksWrapper.style.color = "white";
 
   for (let i = 0; i < socialIcons.length; i++) {
@@ -258,13 +258,13 @@ function lightMode() {
 
   //mobile social media icons;
   for (let i = 0; i < mobileSocialIcons.length; i++) {
-    mobileSocialIcons[i].style.filter = "invert(0)";
+    mobileSocialIcons[i].style.filter = "invert(0%)";
   }
 
   //mobile mode switch;
   mobileSwitchContainer.style.backgroundColor = "#dcdcde";
   mobileSwitchCircle.style.transform = "translateX(-29.5px)";
-  mobileSwitchCircle.style.filter = "invert(0)";
+  mobileSwitchCircle.style.filter = "invert(0%)";
 
   //page body;
   homeContainer.style.color = "black";
