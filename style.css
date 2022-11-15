@@ -287,6 +287,9 @@ body>#main {
         align-content: center;
     }
 
+    #homeHeading>h1 {
+    font-size: calc(28px);
+    }
     #homeHeading>h3,
     #homeHeading>h1 {
         text-align: center;
