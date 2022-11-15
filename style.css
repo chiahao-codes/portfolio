@@ -551,12 +551,12 @@ column-gap: 18px;
     color:white;
 }
 
-#main #about_container>#my_career_and_tech_stack_wrapper  .career_tech_stack {
+#main #about_container>#my_career_and_tech_stack_wrapper> .career_tech_stack {
     width:400px;
     max-width: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: flex-start;
     row-gap: 10px;
     padding:1%;
@@ -564,7 +564,7 @@ column-gap: 18px;
     background-color: inherit;
 }
 
-#main #about_container>#my_career_and_tech_stack_wrapper div p {
+#main #about_container>#my_career_and_tech_stack_wrapper>.career_tech_stack >  p {
 font-size: 18;
 overflow-wrap: normal;
 }
