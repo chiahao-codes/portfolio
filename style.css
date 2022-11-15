@@ -543,46 +543,33 @@ column-gap: 18px;
 
 #main #about_container>#my_career_and_tech_stack_wrapper {
     position:relative;
-    padding-left: 8%;
-    padding-right: 5%;
     width:100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-content: flex-start;
-    row-gap: 50px;
+    column-gap: 30px;
     color:white;
 }
 
 #main #about_container>#my_career_and_tech_stack_wrapper  .career_tech_stack {
-    width:100%;
+    width:400px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    row-gap: 40px;
     padding:1%;
     color:white;
     background-color: inherit;
 }
 
 #main #about_container>#my_career_and_tech_stack_wrapper div p {
-font-size: smaller;
+font-size: 18;
+overflow-wrap: normal;
 }
 
-#main #about_container>#my_career_and_tech_stack_wrapper > #tech_stack_wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    row-gap: 10px;
-    position: relative;
-}
 
-#main #about_container>#my_career_and_tech_stack_wrapper>#tech_stack_wrapper>#tech_stack_bar_wrapper {
-    position:relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    row-gap: 10px;
-
-}
 
 #main #about_container> #buttonContainer{
 position: relative;
