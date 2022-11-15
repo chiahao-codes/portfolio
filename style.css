@@ -214,7 +214,7 @@ body>#main {
     }
 
     body>#main>.mobile_navigation_links>#mobile_social_icon_parent>a>.mobile_social_icon {
-        filter: invert(1);
+        filter: invert(100%);
         cursor: pointer;
     }
 
@@ -247,7 +247,7 @@ body>#main {
     body>#main>.mobile_navigation_links>#mobile_mode_switch_container>.mobile_switch_circle {
         position: absolute;
         right: 1.9px;
-        filter: invert(1);
+        filter: invert(100%);
         top: auto;
         bottom: auto;
         z-index: 3;
