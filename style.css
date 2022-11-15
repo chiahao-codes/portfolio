@@ -525,6 +525,7 @@ display: flex;
 justify-content:center;
 align-items: center;
 column-gap: 20px;
+padding:0 1%;
 }
 
 #main #about_container>#about_article_wrapper img {
@@ -549,6 +550,7 @@ column-gap: 20px;
     align-content: flex-start;
     column-gap: 30px;
     color:white;
+    padding: 0 1%;
 }
 
 #main #about_container>#my_career_and_tech_stack_wrapper> .career_tech_stack {
