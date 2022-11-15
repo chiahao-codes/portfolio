@@ -180,7 +180,7 @@ function darkMode() {
   navLinksWrapper.style.color = "white";
 
   for (let i = 0; i < socialIcons.length; i++) {
-    socialIcons[i].style.filter = "invert(1)";
+    socialIcons[i].style.filter = "invert(100%)";
   }
 
   for (let n of navLinks) {
