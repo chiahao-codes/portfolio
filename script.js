@@ -35,13 +35,13 @@ let mobileNavLinks = document.querySelectorAll(
   "body main > .mobile_navigation_links > div > h3"
 );
 let mobileSocialIcons = document.querySelectorAll(
-  "body main > .mobile_navigation_links > #mobile_social_icon_parent > a > .mobile_social_icon"
+  "body > #main > .mobile_navigation_links > #mobile_social_icon_parent > a > img"
 );
 let mobileSwitchContainer = document.querySelector(
   "body main > .mobile_navigation_links > #mobile_mode_switch_container"
 );
 let mobileSwitchCircle = document.querySelector(
-  "body main > .mobile_navigation_links > #mobile_mode_switch_container > .mobile_switch_circle"
+  "body > #main > .mobile_navigation_links > #mobile_mode_switch_container > .mobile_switch_circle"
 );
 
 //home 
@@ -199,13 +199,13 @@ function darkMode() {
 
   //mobile social media icons;
   for (let i = 0; i < mobileSocialIcons.length; i++) {
-    mobileSocialIcons[i].style.filter = "invert(1)";
+    mobileSocialIcons[i].style.filter = "invert(100%)";
   }
 
   //mobile mode switch;
   mobileSwitchContainer.style.backgroundColor = "black";
   mobileSwitchCircle.style.transform = "translateX(.1px)";
-  mobileSwitchCircle.style.filter = "invert(1)";
+  mobileSwitchCircle.style.filter = "invert(100%)";
 
   //page body
   homeContainer.style.color = "white";
@@ -235,11 +235,11 @@ function lightMode() {
   modeSwitchContainer.style.backgroundColor = "#dcdcde";
   switchIconWrapper.style.backgroundColor = "#dcdcde";
   switchCircle.style.transform = "translateX(-28.5px)";
-  switchCircle.style.filter = "invert(0)";
+  switchCircle.style.filter = "invert(0%)";
   navLinksWrapper.style.color = "black";
 
   for (let i = 0; i < socialIcons.length; i++) {
-    socialIcons[i].style.filter = "invert(0)";
+    socialIcons[i].style.filter = "invert(0%)";
   }
 
   for (let n of navLinks) {
@@ -353,10 +353,6 @@ mobileSwitchContainer.addEventListener("click", () => {
     lightMode();
   }
 });
-
-/**
- * 
- */
 
 function resumeButtonClick(evt) {
   console.log(evt);
