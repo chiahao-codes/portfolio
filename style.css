@@ -577,8 +577,6 @@ font-size: 18;
 overflow-wrap: normal;
 }
 
-
-
 #main #about_container> #buttonContainer{
 position: relative;
 box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
@@ -623,7 +621,6 @@ border:none;
         background-color: inherit;
         top: calc(var(--navbar-height) * 8);
     }
-
 
 /*Break Points*/
   @media screen and (max-width:449.99px) {
@@ -730,7 +727,19 @@ border:none;
                   }
     }
 
-    @media screen and (max-width:570px) {
+  @media screen and (max-width:570px) {
+    #main #about_container>#my_career_and_tech_stack_wrapper>#career_obj_wrapper {
+            width: 200px;
+            max-width: 200px;
+        }
+    
+        #main #about_container>#my_career_and_tech_stack_wrapper>#tech_stack_wrapper {
+            width: 150px;
+            max-width: 150px;
+        }
+  }
+
+ @media screen and (max-width:570px) {
     #main #about_container>#about_article_wrapper img {
         width: 80px;
         height: 80px;
