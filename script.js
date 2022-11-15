@@ -200,7 +200,7 @@ function darkMode() {
   //mobile social media icons;
   for (let i = 0; i < mobileSocialIcons.length; i++) {
     mobileSocialIcons[i].style.filter = "invert(100%)";
-    console.log("dark mode -- mobile social icons");
+
   }
   
 
