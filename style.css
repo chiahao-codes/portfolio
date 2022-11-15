@@ -625,12 +625,12 @@ border:none;
 /*Break Points*/
 
 @media screen and (max-width:425px) {
-        #main #about_container>#about_article_wrapper img {
+        #main #about_container>#about_article_wrapper> img {
                 width: 60px;
                 height: 60px;
             }
         
-            #main #about_container>#about_article_wrapper p {
+            #main #about_container>#about_article_wrapper> p {
                 width: 225px;
                 max-width: 225px;
                 min-width: 225px;
