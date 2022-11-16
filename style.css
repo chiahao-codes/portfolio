@@ -648,7 +648,7 @@ border:none;
     color:white;
     padding:3% 0;
     margin:0 auto;
-
+    position: relative;
 }
 
 #main>#contact_container>form>input, #main>#contact_container>form>textarea{
@@ -694,29 +694,36 @@ max-height: 225px;
     overflow:hidden;
     opacity:.85;
     transition: all .2s ease-in-out;
+    position: relative;
 }
 
 #main>#contact_container>form>button>.alt-send-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     width:100%;
     height:100%;
     transition: all .2s ease-in-out;
 }
 
-#main>#contact_container>form>button>.alt-send-button>span{
-    margin-top:25px;
+#main>#contact_container>form>button>.alt-send-button>p{
+    position: relative;
     font-size:large;
     font-weight: 500;
 }
 
 #main>#contact_container>form>button>div>img{
-    display: block;
-    margin-top: 50px;
+    position: relative;
     color:white;
+    
 }
-
+/*
 #main>#contact_container>form>button>.alt-send-button:hover {
     transform: translate3d(0px, -29px, 0px);
 }
+*/
 
 #main>#contact_container>form>button:hover{
     opacity:1;
