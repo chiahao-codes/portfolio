@@ -759,30 +759,6 @@ body>#main>.icon8_link {
 }
 
 /*Break Points*/
-@media screen and (max-width:425.99px) {
-    #main #about_container>#about_article_wrapper>img {
-        width: 70px;
-        height: 70px;
-    }
-
-    #main #about_container>#about_article_wrapper>p {
-        width: 225px;
-        max-width: 225px;
-        min-width: 225px;
-    }
-
-    #main #about_container>#my_career_and_tech_stack_wrapper>#career_obj_wrapper {
-        width: 150px;
-        max-width: 150px;
-    }
-
-    #main #about_container>#my_career_and_tech_stack_wrapper>#tech_stack_wrapper {
-        width: 100px;
-        max-width: 100px;
-    }
-
-
-}
   @media screen and (max-width:449.99px) {
 
       #homeHeading>h1 {
@@ -830,98 +806,135 @@ body>#main>.icon8_link {
           font-size: 15px;
       }
 
-      .calculator_proj_desc {
-          font-size: 12px;
-      }
-  }
- @media screen and (min-width:426px) and (max-width:570px) {
-     #main #about_container>#about_article_wrapper img {
-         width: 80px;
-         height: 80px;
-     }
-
-     #main #about_container>#about_article_wrapper p {
-         width: 275px;
-         max-width: 275px;
-         min-width: 275px;
-     }
-
-     #main #about_container>#my_career_and_tech_stack_wrapper>#career_obj_wrapper {
-         width: 200px;
-         max-width: 200px;
-     }
-
-     #main #about_container>#my_career_and_tech_stack_wrapper>#tech_stack_wrapper {
-         width: 150px;
-         max-width: 150px;
-     }
-
- }
-
-  @media screen and (min-width:449.99px) and (max-width:650.99px) {
-
-      #homeHeading>h1 {
-          font-size: calc(26.5px);
-      }
-
-      #homeHeading>h2 {
-          font-size: calc(17px);
-      }
-
-      #portfolio_container>h1 {
-          font-size: calc(26.5px);
-      }
-
-      #portfolio_container>#portfolio>article {
-          width: 410px;
-          min-width: 410px;
-          max-width: 410px;
-      }
-
-      #portfolio_container>#portfolio article a div img {
-          width: 75px;
-          height: 75px;
-      }
-
-      .chess_copy_wrapper {
-          width: 315px;
-          max-width: 315px;
-      }
-
-      .chess_h3 {
-          font-size: 17px;
-      }
-
-      .chess_proj_desc {
-          font-size: 14px;
-      }
-
-      .calculator_copy_wrapper {
-          width: 315px;
-          max-width: 315px;
-      }
-
-      .calculator_h3 {
-          font-size: 17px;
-      }
-
-      .calculator_proj_desc {
-          font-size: 14px;
-      }
-
-  }
-
-  @media screen and (min-width:549px) and (max-width:650.99px) {
-      #main>#contact_container>form {
-          width: 500px;
-          max-width: 500px;
-      }
+          .calculator_proj_desc {
+              font-size: 12px;
+          }
+    
+          #main #about_container>#about_article_wrapper>img {
+              width: 70px;
+              height: 70px;
+          }
+    
+          #main #about_container>#about_article_wrapper>p {
+              width: 225px;
+              max-width: 225px;
+          }
+    
+          #main #about_container>#my_career_and_tech_stack_wrapper>#career_obj_wrapper {
+              width: 150px;
+              max-width: 150px;
+          }
+    
+          #main #about_container>#my_career_and_tech_stack_wrapper>#tech_stack_wrapper {
+              width: 100px;
+              max-width: 100px;
+          }
+    
+          #main>#contact_container>form {
+              width: 310px;
+              max-width: 310px;
+          }
+    
+          #main>#contact_container>form>h1 {
+              font-size: calc(23px);
+          }
+    
           #main>#contact_container>form>input,
           #main>#contact_container>form>textarea {
-                width: 225px;
-                max-width: 225px;
+              width: 205px;
+              max-width: 205px;
           }
-  }
+          }
+    
+          @media screen and (min-width:426px) and (max-width:570px) {
+              #main #about_container>#about_article_wrapper img {
+                  width: 80px;
+                  height: 80px;
+              }
+    
+              #main #about_container>#about_article_wrapper p {
+                  width: 275px;
+                  max-width: 275px;
+                  min-width: 275px;
+              }
+    
+              #main #about_container>#my_career_and_tech_stack_wrapper>#career_obj_wrapper {
+                  width: 200px;
+                  max-width: 200px;
+              }
+    
+              #main #about_container>#my_career_and_tech_stack_wrapper>#tech_stack_wrapper {
+                  width: 150px;
+                  max-width: 150px;
+              }
+    
+          }
+    
+          @media screen and (min-width:449.99px) and (max-width:650.99px) {
+    
+              #homeHeading>h1 {
+                  font-size: calc(26.5px);
+              }
+    
+              #homeHeading>h2 {
+                  font-size: calc(17px);
+              }
+    
+              #portfolio_container>h1 {
+                  font-size: calc(26.5px);
+              }
+    
+              #portfolio_container>#portfolio>article {
+                  width: 410px;
+                  min-width: 410px;
+                  max-width: 410px;
+              }
+    
+              #portfolio_container>#portfolio article a div img {
+                  width: 75px;
+                  height: 75px;
+              }
+    
+              .chess_copy_wrapper {
+                  width: 315px;
+                  max-width: 315px;
+              }
+    
+              .chess_h3 {
+                  font-size: 17px;
+              }
+    
+              .chess_proj_desc {
+                  font-size: 14px;
+              }
+    
+              .calculator_copy_wrapper {
+                  width: 315px;
+                  max-width: 315px;
+              }
+    
+              .calculator_h3 {
+                  font-size: 17px;
+              }
+    
+              .calculator_proj_desc {
+                  font-size: 14px;
+              }
+    
+          }
+    
+          @media screen and (min-width:549px) and (max-width:650.99px) {
+              #main>#contact_container>form {
+                  width: 500px;
+                  max-width: 500px;
+              }
+    
+              #main>#contact_container>form>input,
+              #main>#contact_container>form>textarea {
+                  width: 225px;
+                  max-width: 225px;
+              }
+          }
 
   @media screen and (min-width:450px) and (max-width:548.99px) {
         #main>#contact_container>form {
