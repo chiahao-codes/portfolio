@@ -714,7 +714,6 @@ max-height: 225px;
 }
 
 #main>#contact_container>form>button>div>img{
-    display: block;
     filter: invert(100%);
     -webkit-filter: invert(100%);
     margin-top:30px;
