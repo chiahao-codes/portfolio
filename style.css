@@ -703,12 +703,14 @@ max-height: 225px;
 }
 
 #main>#contact_container>form>button>.alt-send-button>span{
-    margin:auto;
+    margin-top:50%;
+    font-size:large;
+    font-weight: 500;
 }
 
 #main>#contact_container>form>button>div>i{
     display: block;
-    margin-top: 20px;
+    margin-top: 100%;
     color:white;
     width:15px;
     height:15px;
