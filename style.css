@@ -635,6 +635,7 @@ overflow-wrap: normal;
 }
 
 #main #contact_container h1{
+    min-width: 100%;
     text-align: center;
     position:relative;
 }
@@ -964,6 +965,13 @@ body>#main>.icon8_link {
         }
 
     }
+
+  @media screen and (max-width:860px){
+    #main>#contact_container>form {
+        width: 600px;
+        max-width: 600px;
+    }
+  }
 
 }
 
