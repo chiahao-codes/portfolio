@@ -580,19 +580,19 @@ max-width: 200px;
 font-size: 18;
 overflow-wrap: normal;
 }
-
-#main #about_container> #buttonContainer{
-position: relative;
-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
-background-color: #34c0eb;
-border-radius:10px;
-width:fit-content;
-margin:0 auto;
+#main #about_container>#buttonContainer {
+    position: relative;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+    background-color: #34c0eb;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 0 auto;
 }
 
-#main #about_container > a > button {
-color:white;
-border:none;
+#main #about_container>a>button {
+    color: white;
+    border: none;
+    border-radius: 10px;
     width: 200px;
     max-width: 200px;
     min-width: 200px;
@@ -600,16 +600,16 @@ border:none;
     background-color: inherit;
     text-align: center;
     font-size: medium;
-    font-weight: 800;
-    font-family:"Cormorant SC",sans-serif; 
+    font-weight: 600;
+    font-family: "Cormorant SC", sans-serif;
     opacity: .85;
     transition: all .2s ease-in-out;
 }
 
-#main #about_container > a > button:hover {
+#main #about_container>a>button:hover {
     cursor: pointer;
     opacity: 1;
-    filter:brightness(110%) contrast(110%);
+    filter: brightness(110%) contrast(110%);
 }
 
 #main #about_container>#buttonContainer:active {
