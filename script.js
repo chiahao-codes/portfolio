@@ -64,6 +64,11 @@ let myCareerObjAndTechStackWrappers = document.querySelectorAll("main > #about_c
 let resumeButtonContainer = document.querySelector("#main > #about_container > #buttonContainer");
 let resumeButton = document.querySelector("#main > #about_container > a > button");
 
+//contact
+let contactHeader = document.querySelector("body> #main > #contact_container>h1");
+let contactForm = document.querySelector("body> #main > #contact_container>form");
+
+
 let moonIconLink = document.querySelector("body main a.icon8_link");
 
 function setHamburgerInLocalStorage(setting) {
@@ -167,6 +172,10 @@ function setTransitionProperty() {
   mobileSwitchCircle.style.transitionProperty = "transform filter ";
   mobileSwitchCircle.style.transitionDuration = ".5s 0s ";
   mobileSwitchCircle.style.transitionTimingFunction = "ease-in-out";
+
+  //contact
+  contactHeader.style.transition = "top .1s ease-in-out";
+  contactForm.style.transition = "top .1s ease-in-out";
 }
 
 function darkMode() {
@@ -224,7 +233,11 @@ function darkMode() {
   aboutIntro.style.color = "white";
   for (let m of myCareerObjAndTechStackWrappers) {
      m.style.color = "white";
-   }
+  }
+  
+  //contact
+  contactHeader.style.color = "white";
+  contactForm.style.borderColor = "white";
 
   moonIconLink.style.color = "white";
 
@@ -275,22 +288,25 @@ function lightMode() {
   portfolioContainer.style.color = "black";
   portfolioContainer.style.backgroundColor = "#f5f5f5";
   for (let p of portfolioArticles) {
-      p.style.backgroundColor = "white";
-    }
-
+    p.style.backgroundColor = "white";
+  }
 
   aboutHeaderWrapper.style.color = "black";
   aboutIntro.style.color = "black";
-   for (let m of myCareerObjAndTechStackWrappers) {
-     m.style.color = "black";
-   }
+  for (let m of myCareerObjAndTechStackWrappers) {
+    m.style.color = "black";
+  }
 
-  //about 
- aboutHeaderWrapper.style.color = "black";
- aboutIntro.style.color = "black";
- for (let m of myCareerObjAndTechStackWrappers) {
-   m.style.color = "black";
- }
+  //about
+  aboutHeaderWrapper.style.color = "black";
+  aboutIntro.style.color = "black";
+  for (let m of myCareerObjAndTechStackWrappers) {
+    m.style.color = "black";
+  }
+
+  //contact
+  contactHeader.style.color = "black";
+  contactForm.style.borderColor = "black";
 
   moonIconLink.style.color = "black";
 
