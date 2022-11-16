@@ -911,7 +911,7 @@ body>#main>.icon8_link {
 
   }
 
-  @media screen and (min-width:549.99px) and (max-width:650px) {
+  @media screen and (min-width:549.99px) and (max-width:650.99px) {
       #main>#contact_container>form {
           width: 500px;
           max-width: 500px;
@@ -978,7 +978,7 @@ body>#main>.icon8_link {
 
   }
 
-  @media screen and (max-width:860px){
+  @media screen and (min-width:651px) and (max-width:860px){
     #main>#contact_container>form {
         width: 600px;
         max-width: 600px;
