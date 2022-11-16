@@ -702,12 +702,12 @@ max-height: 225px;
     transition: all .2s ease-in-out;
 }
 
-#main>#contact_container>form>button>div>img{
+#main>#contact_container>form>button>div>i{
     display: block;
-    margin-top: 10px;
+    margin-top: 20px;
     color:white;
-    width:25px;
-    height:25px;
+    width:15px;
+    height:15px;
 }
 
 #main>#contact_container>form>button>.alt-send-button:hover {
