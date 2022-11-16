@@ -708,16 +708,15 @@ max-height: 225px;
     transition: all .2s ease-in-out;
 }
 
-#main>#contact_container>form>button>.alt-send-button>p{
+#main>#contact_container>form>button>.alt-send-button>span{
     position: relative;
-    font-size:large;
+    font-size:medium;
     font-weight: 500;
 }
 
 #main>#contact_container>form>button>div>img{
     position: relative;
     color:white;
-    
 }
 /*
 #main>#contact_container>form>button>.alt-send-button:hover {
