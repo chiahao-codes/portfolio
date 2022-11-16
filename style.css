@@ -628,7 +628,7 @@ overflow-wrap: normal;
         flex-direction: column;
         justify-content: center;
         row-gap: 65px;
-        align-content: center;
+        align-items: center;
         background-color: inherit;
         color:white;
         overflow-x: hidden;
