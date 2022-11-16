@@ -43,7 +43,7 @@ body>#main {
         padding-top: 60px;
         padding-bottom: 10px;
         position: relative;
-        overflow-x: hidden;
+       
 
     }
 
@@ -635,11 +635,10 @@ overflow-wrap: normal;
 }
 
 #main #contact_container h1{
+    font-size: calc(28px);
     width: 100%;
-    min-width: 100%;
-    overflow-x: hidden;
+    height: max-content;
     text-align: center;
-    position:relative;
 }
 
 #main>#contact_container > form{
