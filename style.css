@@ -836,6 +836,29 @@ body>#main>.icon8_link {
           font-size: 14px;
       }
   }
+ @media screen and (min-width:426px) and (max-width:570px) {
+     #main #about_container>#about_article_wrapper img {
+         width: 80px;
+         height: 80px;
+     }
+
+     #main #about_container>#about_article_wrapper p {
+         width: 275px;
+         max-width: 275px;
+         min-width: 275px;
+     }
+
+     #main #about_container>#my_career_and_tech_stack_wrapper>#career_obj_wrapper {
+         width: 200px;
+         max-width: 200px;
+     }
+
+     #main #about_container>#my_career_and_tech_stack_wrapper>#tech_stack_wrapper {
+         width: 150px;
+         max-width: 150px;
+     }
+
+ }
 
   @media screen and (min-width:449.99px) and (max-width:650.99px) {
 
@@ -887,31 +910,15 @@ body>#main>.icon8_link {
         .calculator_proj_desc {
           font-size: 17px;
                   }
-    }
-
- @media screen and (min-width:426px) and (max-width:570px) {
-    #main #about_container>#about_article_wrapper img {
-        width: 80px;
-        height: 80px;
-    }
-
-    #main #about_container>#about_article_wrapper p {
-        width: 275px;
-        max-width: 275px;
-        min-width: 275px;
-    }
-
-    #main #about_container>#my_career_and_tech_stack_wrapper>#career_obj_wrapper {
-               width: 200px;
-               max-width: 200px;
-           }
-    
-    #main #about_container>#my_career_and_tech_stack_wrapper>#tech_stack_wrapper {
-               width: 150px;
-               max-width: 150px;
-           }
 
     }
+
+         @media screen and (min-width:549.99px) and (max-width:650px){
+    #main>#contact_container>form {
+            width: 500px;
+            max-width: 500px;
+        }
+         }    
 
   @media screen and (max-width:831.99px) {
 
