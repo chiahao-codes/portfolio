@@ -694,7 +694,7 @@ max-height: 225px;
     text-align: center;
     overflow-wrap:normal;
     overflow:hidden;
-    opacity:.75;
+    opacity:.85;
     transition: all .2s ease-in-out;
     position: relative;
 }
@@ -723,16 +723,19 @@ max-height: 225px;
     margin-top:30px;
 }
 
-#main>#contact_container>form>button>.alt-send-button:hover {
-    transform: translate3d(0px, -48px, 0px);
-}
-
-#main>#contact_container>form>button:hover{
-    opacity:1;
-    cursor:pointer;
+#main>#contact_container>form>button:hover {
+    opacity: 1;
+    cursor: pointer;
     filter: brightness(110%);
     -webkit-filter: brightness(110%);
 }
+
+#main>#contact_container>form>button>.alt-send-button:hover {
+    transform: translate3d(0px, -48px, 0px);
+    filter: brightness(110%);
+   -webkit-filter: brightness(110%);
+}
+
 
 #main>#contact_container>form>button:active {
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.35);
