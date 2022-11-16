@@ -628,7 +628,6 @@ border:none;
         align-content: center;
         background-color: inherit;
         color:white;
-     
         overflow-x: hidden;
 }
 
@@ -660,8 +659,9 @@ border:none;
 }
 
 #main>#contact_container>form>textarea {
-height:275px;
-max-height: 275px;
+height:225px;
+min-height: 225px;
+max-height: 225px;
 }
 
 #main>#contact_container>form>input::placeholder{
