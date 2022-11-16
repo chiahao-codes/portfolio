@@ -705,7 +705,9 @@ max-height: 225px;
 }
 
 #main>#contact_container>form>button>.alt-send-button>.send-text{
-    top:50%;
+    position: relative;
+    display: block;
+    margin-top:10px;
     font-size:medium;
     font-weight: 500;
     filter: brightness(110%);
@@ -713,6 +715,7 @@ max-height: 225px;
 }
 
 #main>#contact_container>form>button>div>img{
+    position: relative;
     filter: invert(100%);
     -webkit-filter: invert(100%);
     margin-top:30px;
