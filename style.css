@@ -636,7 +636,7 @@ overflow-wrap: normal;
 
 #main #contact_container h1{
     font-size: calc(28px);
-    width: 100%;
+    width: max-content;
     height: max-content;
     text-align: center;
 }
