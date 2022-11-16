@@ -911,7 +911,7 @@ body>#main>.icon8_link {
 
   }
 
-  @media screen and (min-width:549.99px) and (max-width:650.99px) {
+  @media screen and (min-width:549px) and (max-width:650.99px) {
       #main>#contact_container>form {
           width: 500px;
           max-width: 500px;
@@ -921,6 +921,19 @@ body>#main>.icon8_link {
                 width: 225px;
                 max-width: 225px;
           }
+  }
+
+  @media screen and (min-width:450px) and (max-width:548.99px) {
+        #main>#contact_container>form {
+                width: 400px;
+                max-width: 400px;
+            }
+        
+            #main>#contact_container>form>input,
+            #main>#contact_container>form>textarea {
+                width: 205px;
+                max-width: 205px;
+            }
   }
 
   @media screen and (max-width:831.99px) {
