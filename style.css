@@ -614,6 +614,37 @@ border:none;
     transform: scale(.95);
 }
 
+/*Contact Section*/
+#main #contact_container{
+    position: relative;
+        width: 100%;
+        min-width: 100%;
+        top: calc(var(--navbar-height) * 8);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 65px;
+        align-content: center;
+        background-color: inherit;
+        color:white;
+        padding: 20px;
+        overflow-x: hidden;
+}
+
+#main #contact_container h1{
+    text-align: center;
+    position:relative;
+}
+
+#main>#contact_container > form{
+    width:800px;
+    max-width: 800px;
+    border: 2px solid white;
+}
+
+
+
+
 /*icon link*/
 body>#main>.icon8_link {
     display: inline-block;
