@@ -711,6 +711,7 @@ max-height: 225px;
     font-size:medium;
     font-weight: 500;
     filter: brightness(110%);
+    -webkit-filter:brightness(110%);
 }
 
 #main>#contact_container>form>button>div>img{
