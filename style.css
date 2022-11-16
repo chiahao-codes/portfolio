@@ -707,7 +707,7 @@ max-height: 225px;
 #main>#contact_container>form>button>.alt-send-button>span{
     display: block;
     position: relative;
-    margin:auto;
+    top:25px;
     font-size:medium;
     font-weight: 500;
     filter: brightness(110%);
