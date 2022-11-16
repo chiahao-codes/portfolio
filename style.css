@@ -707,6 +707,7 @@ max-height: 225px;
 #main>#contact_container>form>button>.alt-send-button>span{
     display: block;
     position: relative;
+    margin:auto;
     font-size:medium;
     font-weight: 500;
     filter: brightness(110%);
@@ -720,7 +721,7 @@ max-height: 225px;
 }
 
 #main>#contact_container>form>button>.alt-send-button:hover {
-    transform: translate3d(0px, -36px, 0px);
+    transform: translate3d(0px, -38px, 0px);
 }
 /*
 
