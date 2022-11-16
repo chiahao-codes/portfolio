@@ -643,7 +643,6 @@ overflow-wrap: normal;
 
 #main>#contact_container > form{
     width:800px;
-
     max-width: 800px;
     display: flex;
     flex-direction: column;
@@ -659,7 +658,6 @@ overflow-wrap: normal;
 
 #main>#contact_container>form>input, #main>#contact_container>form>textarea{
     width:300px;
-    min-width: 300px;
     max-width: 300px;
     color:white;
     background-color: black;
@@ -918,6 +916,11 @@ body>#main>.icon8_link {
           width: 500px;
           max-width: 500px;
       }
+          #main>#contact_container>form>input,
+          #main>#contact_container>form>textarea {
+                width: 225px;
+                max-width: 225px;
+          }
   }
 
   @media screen and (max-width:831.99px) {
