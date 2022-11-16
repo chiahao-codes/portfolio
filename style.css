@@ -642,10 +642,15 @@ border:none;
     max-width: 800px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-content: center;
     border: 2px solid white;
 
+}
+
+#main>#contact_container>form>input, #main>#contact_container>form>textarea{
+    width:500px;
+    max-width: 500px;
 }
 
 #main>#contact_container>form>input::placeholder{
@@ -662,6 +667,16 @@ border:none;
         background-color: black;
 }
 
+#main>#contact_container>form>button{
+    width:400px;
+    max-width: 400px;
+    height:300px;
+    color:white;
+    background-color:darkgreen ;
+    box-shadow: 0 0 15px black;
+    font-family: "Cormorant SC" sans-serif;
+    font-size: small;
+}
 
 /*icon link*/
 body>#main>.icon8_link {
