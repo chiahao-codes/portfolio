@@ -601,6 +601,7 @@ border:none;
     font-size: large;
     font-family:"Cormorant SC",sans-serif; 
     opacity: .85;
+    transition: all .2s ease-in-out;
 }
 
 #main #about_container > a > button:hover {
@@ -703,7 +704,7 @@ max-height: 225px;
     position: relative;
     width:100%;
     height:100%;
-    transition: all .2s ease-in-out;
+    
 }
 
 #main>#contact_container>form>button>.alt-send-button>.send-text{
