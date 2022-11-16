@@ -661,6 +661,7 @@ border:none;
 
 #main>#contact_container>form>textarea {
 height:275px;
+max-height: 275px;
 }
 
 #main>#contact_container>form>input::placeholder{
@@ -678,14 +679,16 @@ height:275px;
 }
 
 #main>#contact_container>form>button{
-    width:50px;
-    max-width: 50px;
-    height:20px;
+    width:100px;
+    max-width: 100px;
+    height:50px;
     color:white;
     background-color:darkgreen ;
     box-shadow: 0 0 15px black;
     font-family: "Cormorant SC", sans-serif;
     font-size: small;
+    text-align: center;
+    overflow-wrap:normal;
 }
 
 
