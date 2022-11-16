@@ -387,7 +387,7 @@ body>#main {
 
     .chess_proj_desc {
         height: 50px;
-        font-size: 14px;
+        font-size: 16px;
         width: 100%;
         position: relative;
         padding-bottom: 3px;
@@ -449,7 +449,7 @@ body>#main {
 
     .calculator_proj_desc {
         height: 50px;
-        font-size: 14px;
+        font-size: 16px;
         width: 100%;
         position: relative;
         padding-bottom: 3px;
@@ -814,11 +814,11 @@ body>#main>.icon8_link {
       }
 
       .chess_h3 {
-          font-size: 17px;
+          font-size: 15px;
       }
 
       .chess_proj_desc {
-          font-size: 14px;
+          font-size: 12px;
       }
 
       .calculator_copy_wrapper {
@@ -827,11 +827,11 @@ body>#main>.icon8_link {
       }
 
       .calculator_h3 {
-          font-size: 17px;
+          font-size: 15px;
       }
 
       .calculator_proj_desc {
-          font-size: 14px;
+          font-size: 12px;
       }
   }
  @media screen and (min-width:426px) and (max-width:570px) {
