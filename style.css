@@ -619,7 +619,8 @@ border:none;
     position: relative;
         width: 100%;
         min-width: 100%;
-        top: calc(var(--navbar-height) * 8);
+        height: 850px;
+        top: calc(var(--navbar-height) * 8.5);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -640,6 +641,9 @@ border:none;
     width:800px;
     max-width: 800px;
     border: 2px solid white;
+    color:white;
+    font-family: "Cormorant SC" sans-serif;
+    font-size: small;
 }
 
 
