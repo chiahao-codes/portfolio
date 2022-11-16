@@ -42,8 +42,8 @@ body>#main {
         font-family: "Cormorant SC", sans-serif;
         padding-top: 60px;
         padding-bottom: 10px;
-        margin: 0;
         position: relative;
+        overflow-x: hidden;
 
     }
 
@@ -657,7 +657,6 @@ overflow-wrap: normal;
     margin:0 auto;
     position: relative;
     overflow-x: hidden;
-
 }
 
 #main>#contact_container>form>input, #main>#contact_container>form>textarea{
