@@ -702,7 +702,7 @@ max-height: 225px;
     transition: all .2s ease-in-out;
 }
 
-#main>#contact_container>form>button>i{
+#main>#contact_container>form>button>img{
     display: block;
     margin-top: 25px;
     color:white;
