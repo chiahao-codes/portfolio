@@ -730,6 +730,8 @@ max-height: 225px;
 #main>#contact_container>form>button:hover{
     opacity:1;
     cursor:pointer;
+    filter: brightness(110%);
+    -webkit-filter: brightness(110%);
 }
 
 #main>#contact_container>form>button:active {
