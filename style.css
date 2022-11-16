@@ -702,6 +702,10 @@ max-height: 225px;
     transition: all .2s ease-in-out;
 }
 
+#main>#contact_container>form>button>.alt-send-button>span{
+    margin:auto;
+}
+
 #main>#contact_container>form>button>div>i{
     display: block;
     margin-top: 20px;
