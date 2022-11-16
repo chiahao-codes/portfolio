@@ -688,7 +688,7 @@ max-height: 225px;
     background-color:#0e5227;
     filter:contrast(110%);
     -webkit-filter: contrast(110%);
-    box-shadow: 0 0 15px black;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
     font-family: "Cormorant SC", sans-serif;
     font-size: small;
     text-align: center;
@@ -726,15 +726,16 @@ max-height: 225px;
 #main>#contact_container>form>button>.alt-send-button:hover {
     transform: translate3d(0px, -48px, 0px);
 }
-/*
-
-*/
 
 #main>#contact_container>form>button:hover{
     opacity:1;
     cursor:pointer;
 }
 
+#main>#contact_container>form>button:active {
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.35);
+    transform: scale(.95);
+}
 
 /*icon link*/
 body>#main>.icon8_link {
