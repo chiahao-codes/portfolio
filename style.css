@@ -689,6 +689,12 @@ max-height: 225px;
     font-size: small;
     text-align: center;
     overflow-wrap:normal;
+    opacity:.85;
+}
+
+#main>#contact_container>form>button:hover{
+    opacity:1;
+    cursor:pointer;
 }
 
 
