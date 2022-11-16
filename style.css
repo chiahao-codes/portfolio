@@ -644,14 +644,22 @@ border:none;
     flex-direction: column;
     justify-content: space-evenly;
     row-gap:25px ;
-    align-content: center;
+    align-items: center;
     border: 2px solid white;
+    color:white;
 
 }
 
 #main>#contact_container>form>input, #main>#contact_container>form>textarea{
     width:300px;
     max-width: 300px;
+    color:white;
+    background-color: black;
+    font-family: "Cormorant SC", sans-serif;
+}
+
+#main>#contact_container>form>textarea {
+height:275px;
 }
 
 #main>#contact_container>form>input::placeholder{
@@ -669,9 +677,9 @@ border:none;
 }
 
 #main>#contact_container>form>button{
-    width:100px;
-    max-width: 100px;
-    height:70px;
+    width:50px;
+    max-width: 50px;
+    height:20px;
     color:white;
     background-color:darkgreen ;
     box-shadow: 0 0 15px black;
