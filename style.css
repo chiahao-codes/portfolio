@@ -655,7 +655,6 @@ overflow-wrap: normal;
     padding:3% 0;
     margin:0 auto;
     position: relative;
-    overflow-x: hidden;
 }
 
 #main>#contact_container>form>input, #main>#contact_container>form>textarea{
