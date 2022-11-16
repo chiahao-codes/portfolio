@@ -706,6 +706,8 @@ max-height: 225px;
     display: block;
     margin-top: 25px;
     color:white;
+    width:25px;
+    height:25px;
 }
 
 #main>#contact_container>form>button>.alt-send-button:hover {
