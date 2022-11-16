@@ -717,6 +717,7 @@ max-height: 225px;
 #main>#contact_container>form>button>div>img{
     position: relative;
     filter: invert(100%);
+    -webkit-filter: invert(100%);
 }
 /*
 #main>#contact_container>form>button>.alt-send-button:hover {
