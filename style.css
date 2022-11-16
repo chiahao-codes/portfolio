@@ -702,9 +702,9 @@ max-height: 225px;
     transition: all .2s ease-in-out;
 }
 
-#main>#contact_container>form>button>.fa-sharp{
+#main>#contact_container>form>button>i{
     display: block;
-    margin-top: 10px;
+    margin-top: 25px;
     color:white;
 }
 
