@@ -645,12 +645,22 @@ border:none;
     justify-content: space-around;
     align-content: center;
     border: 2px solid white;
-    color:white;
-    font-family: "Cormorant SC" sans-serif;
-    font-size: small;
+
 }
 
+#main>#contact_container>form>input::placeholder{
+    color: white;
+    font-family: "Cormorant SC" sans-serif;
+    font-size: small;
+    background-color: black;
+}
 
+#main>#contact_container>form>textarea::placeholder{
+        color: white;
+        font-family: "Cormorant SC" sans-serif;
+        font-size: small;
+        background-color: black;
+}
 
 
 /*icon link*/
