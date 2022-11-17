@@ -627,7 +627,7 @@ filter: invert(100%) saturate(200%);
 }
 
 #main #about_container>a>div:hover {
-    transform: translate3d(0,-45px, 0 );
+    transform: translate3d(0,-46px, 0 );
 }
 
 #main #about_container>#res_button_container>div:active {
