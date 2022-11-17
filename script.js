@@ -73,7 +73,7 @@ let contactForm = document.querySelector("body> #main > #contact_container>form"
 let moonIconLink = document.querySelector("body main a.icon8_link");
 
 let sectionTop = document.getElementsByClassName("sectionTop");
-console.log("sectionTop element list:", sectionTop);
+console.log("sectionTop element list:", sectionTop[0]);
 
 function navLinkClick() {
 let eleScrollTop;
