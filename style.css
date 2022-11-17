@@ -619,11 +619,15 @@ filter: invert(100%);
 -webkit-filter: invert(100%);
 }
 
+#main #about_container>a:hover{
+        cursor: pointer;
+            opacity: 1;
+            filter: brightness(110%) contrast(110%);
+            -webkit-filter: brightness(110%) contrast(110%);
+}
+
+
 #main #about_container>a>div:hover {
-    cursor: pointer;
-    opacity: 1;
-    filter: brightness(110%) contrast(110%);
-    -webkit-filter: brightness(110%) contrast(110%);
     transform: translate3d(0,-30px, 0 );
 }
 
