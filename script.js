@@ -73,15 +73,16 @@ let contactForm = document.querySelector("body> #main > #contact_container>form"
 let moonIconLink = document.querySelector("body main a.icon8_link");
 
 let sectionTop = document.getElementsByClassName("sectionTop");
-console.log("sectionTop element list:", sectionTop[0]);
-console.log("navLinks:", navLinks);
 
 function navLinkClick() {
 let eleScrollTop;
   for (let i = 0; i < navLinks.length; i++) {
     navLinks[i].addEventListener("click", () => {
+      console.log("navLinks[i]", navLinks[i]);
+      console.log("sectionTop element:", sectionTop[i]);
       eleScrollTop = sectionTop[i].scrollTop;
       console.log("eleScrollTop:", eleScrollTop);
+      
       switch (i) {
         case 0:
           navLinkScrollTo(0);
