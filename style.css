@@ -383,11 +383,13 @@ body>#main {
     .chess_h3 {
         position: relative;
         font-size: 18px;
+        font-weight: 600;
     }
 
     .chess_proj_desc {
         height: 50px;
         font-size: 16px;
+        font-weight: 600;
         width: 100%;
         position: relative;
         padding-bottom: 3px;
@@ -445,11 +447,13 @@ body>#main {
     .calculator_h3 {
         position: relative;
         font-size: 18px;
+        font-weight: 600;
     }
 
     .calculator_proj_desc {
         height: 50px;
         font-size: 16px;
+        font-weight: 600;
         width: 100%;
         position: relative;
         padding-bottom: 3px;
@@ -540,6 +544,7 @@ padding:0 1%;
 }
 #main #about_container>#about_article_wrapper p {
     color:inherit;
+    font-weight: 600;
     width:400px;
     max-width: 400px;
     min-width: 400px;
