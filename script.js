@@ -70,15 +70,17 @@ let resumeButton = document.querySelector("#main > #about_container > a > div");
 let contactHeader = document.querySelector("body> #main > #contact_container>h1");
 let contactForm = document.querySelector("body> #main > #contact_container>form");
 
-
 let moonIconLink = document.querySelector("body main a.icon8_link");
 
+let sectionTop = document.getElementsByClassName("sectionTop");
+console.log("sectionTop element list:", sectionTop);
+
 function navLinkClick() {
-  let sectionTop = document.getElementsByClassName("sectionTop");
-  let eleScrollTop;
+let eleScrollTop;
   for (let i = 0; i < navLinks.length; i++) {
-    eleScrollTop = sectionTop[i].scrollTop;
     navLinks[i].addEventListener("click", () => {
+      eleScrollTop = sectionTop[i].scrollTop;
+      console.log("eleScrollTop:", eleScrollTop);
       switch (i) {
         case 0:
           navLinkScrollTo(0);
