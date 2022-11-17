@@ -588,6 +588,7 @@ overflow-wrap: normal;
     border-radius: 10px;
     width: fit-content;
     margin: 0 auto;
+    text-decoration: none;
 }
 
 #main #about_container>a>div {
@@ -607,14 +608,22 @@ overflow-wrap: normal;
 
 #main #about_container>a>div>.cv_download_text {
     display: block;
-    text-decoration: none;
     color: white;
+    margin-top:15px;
+}
+
+#main #about_container>a>div>img {
+margin-top:25px;
+filter: invert(100%);
+-webkit-filter: invert(100%);
 }
 
 #main #about_container>a>div:hover {
     cursor: pointer;
     opacity: 1;
     filter: brightness(110%) contrast(110%);
+    -webkit-filter: brightness(110%) contrast(110%);
+    transform: translate3d(0,-28px, 0 );
 }
 
 #main #about_container>#res_button_container>div:active {
