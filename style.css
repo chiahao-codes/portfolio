@@ -615,8 +615,8 @@ overflow-wrap: normal;
 
 #main #about_container>a>div>img {
 margin-top:27px;
-filter: invert(100%);
--webkit-filter: invert(100%);
+filter: invert(100%) saturate(200%);
+-webkit-filter: invert(100%) saturate(200%);
 }
 
 #main #about_container>a:hover {
@@ -627,7 +627,7 @@ filter: invert(100%);
 }
 
 #main #about_container>a>div:hover {
-    transform: translate3d(0,-44px, 0 );
+    transform: translate3d(0,-45px, 0 );
 }
 
 #main #about_container>#res_button_container>div:active {
