@@ -636,7 +636,7 @@ filter: invert(100%) saturate(200%);
     transform: translate3d(0,-46px, 0 );
 }
 
-#main #about_container>#res_button_container>div:active {
+#main #about_container>#res_button_container:active {
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.35);
     transform: scale(.95);
 }
