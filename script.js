@@ -75,26 +75,23 @@ let moonIconLink = document.querySelector("body main a.icon8_link");
 let sectionTop = document.getElementsByClassName("sectionTop");
 
 function navLinkClick() {
-let eleScrollTop;
   for (let i = 0; i < navLinks.length; i++) {
     navLinks[i].addEventListener("click", () => {
       console.log("navLinks[i]", navLinks[i]);
       console.log("sectionTop element:", sectionTop[i]);
-      eleScrollTop = sectionTop[i].scrollTop;
-      console.log("eleScrollTop:", eleScrollTop);
-      
+    
       switch (i) {
         case 0:
           navLinkScrollTo(0);
           break;
         case 1:
-          navLinkScrollTo(eleScrollTop);
+          navLinkScrollTo();
           break;
         case 2:
-          navLinkScrollTo(eleScrollTop);
+          navLinkScrollTo();
           break;
         case 3:
-          navLinkScrollTo(eleScrollTop);
+          navLinkScrollTo();
           break;
         default:
           console.log("Nav section not found...");
@@ -356,7 +353,6 @@ window.addEventListener("load", () => {
   localStorage.setItem("mode", "dark");
   localStorage.setItem("hamburger", "closed");
   window.scrollTo(0, 0);
-  navLinkClick();
 });
 
 window.addEventListener("resize", () => {
