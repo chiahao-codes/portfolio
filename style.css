@@ -579,7 +579,8 @@ max-width: 200px;
 #main #about_container>#my_career_and_tech_stack_wrapper>.career_tech_stack >  p {
 font-size: 18;
 overflow-wrap: normal;
-}
+} 
+
 #main #about_container>#res_button_container {
     position: relative;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
