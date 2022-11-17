@@ -605,7 +605,7 @@ overflow-wrap: normal;
     transition: all .2s ease-in-out;
 }
 
-#main #about_container>a>div>span {
+#main #about_container>a>div>.cv_download_text {
     display: block;
     text-decoration: none;
     color: white;
@@ -617,7 +617,7 @@ overflow-wrap: normal;
     filter: brightness(110%) contrast(110%);
 }
 
-#main #about_container>#div:active {
+#main #about_container>#res_button_container>div:active {
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.35);
     transform: scale(.95);
 }
