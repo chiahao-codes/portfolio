@@ -74,6 +74,7 @@ let moonIconLink = document.querySelector("body main a.icon8_link");
 
 let sectionTop = document.getElementsByClassName("sectionTop");
 console.log("sectionTop element list:", sectionTop[0]);
+console.log("navLinks:", navLinks);
 
 function navLinkClick() {
 let eleScrollTop;
