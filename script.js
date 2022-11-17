@@ -96,7 +96,7 @@ function navLinkClick() {
           console.log("Nav section not found...");
         break;
       }
-    });
+    }, {useCapture:true});
   }
 }
 
