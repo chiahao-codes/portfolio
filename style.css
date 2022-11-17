@@ -542,7 +542,7 @@ padding:0 1%;
     border-style: solid;
     border-color: white;
 }
-#main #about_container>#about_article_wrapper p {
+#main #about_container>#about_article_wrapper> p {
     color:inherit;
     font-weight: 600;
     width:400px;
@@ -583,6 +583,7 @@ max-width: 200px;
 
 #main #about_container>#my_career_and_tech_stack_wrapper>.career_tech_stack >  p {
 font-size: 18;
+font-weight: 600;
 overflow-wrap: normal;
 } 
 
