@@ -591,12 +591,10 @@ overflow-wrap: normal;
 }
 
 #main #about_container>a>div {
-    color: white;
     border: none;
     border-radius: 10px;
     width: 160px;
     max-width: 160px;
-    min-width: 160px;
     height: 45px;
     background-color: inherit;
     text-align: center;
@@ -610,6 +608,7 @@ overflow-wrap: normal;
 #main #about_container>a>div>span {
     display: block;
     text-decoration: none;
+    color: white;
 }
 
 #main #about_container>a>div:hover {

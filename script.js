@@ -64,7 +64,7 @@ let myCareerObjAndTechStackWrappers = document.querySelectorAll("main > #about_c
 let resumeButtonContainer = document.querySelector(
   "#main > #about_container > #res_button_container"
 );
-let resumeButton = document.querySelector("#main > #about_container > a > button");
+let resumeButton = document.querySelector("#main > #about_container > a > div");
 
 //contact
 let contactHeader = document.querySelector("body> #main > #contact_container>h1");
