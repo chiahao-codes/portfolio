@@ -580,7 +580,7 @@ max-width: 200px;
 font-size: 18;
 overflow-wrap: normal;
 }
-#main #about_container>#buttonContainer {
+#main #about_container>#res_button_container {
     position: relative;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
     background-color: #34c0eb;
@@ -589,7 +589,7 @@ overflow-wrap: normal;
     margin: 0 auto;
 }
 
-#main #about_container>a>button {
+#main #about_container>a>div {
     color: white;
     border: none;
     border-radius: 10px;
@@ -606,13 +606,13 @@ overflow-wrap: normal;
     transition: all .2s ease-in-out;
 }
 
-#main #about_container>a>button:hover {
+#main #about_container>a>div:hover {
     cursor: pointer;
     opacity: 1;
     filter: brightness(110%) contrast(110%);
 }
 
-#main #about_container>#buttonContainer:active {
+#main #about_container>#div:active {
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.35);
     transform: scale(.95);
 }

@@ -61,7 +61,9 @@ let portfolioArticles = document.querySelectorAll(
 let aboutHeaderWrapper = document.querySelector("main > #about_container #about_header_wrapper");
 let aboutIntro = document.querySelector("main > #about_container #about_article_wrapper p");
 let myCareerObjAndTechStackWrappers = document.querySelectorAll("main > #about_container #my_career_and_tech_stack_wrapper > div");
-let resumeButtonContainer = document.querySelector("#main > #about_container > #buttonContainer");
+let resumeButtonContainer = document.querySelector(
+  "#main > #about_container > #res_button_container"
+);
 let resumeButton = document.querySelector("#main > #about_container > a > button");
 
 //contact
