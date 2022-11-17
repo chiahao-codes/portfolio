@@ -21,7 +21,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     overflow-y: scroll;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
 }
 
 body>#main {
@@ -43,8 +43,10 @@ body>#main {
         padding-top: 60px;
         padding-bottom: 10px;
         position: relative;
-       
+    }
 
+    body>#main>#homeContainer, body>#main section {
+        scroll-snap-align: start;
     }
 
     /*nav bar*/
