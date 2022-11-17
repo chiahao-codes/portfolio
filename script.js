@@ -73,6 +73,37 @@ let contactForm = document.querySelector("body> #main > #contact_container>form"
 
 let moonIconLink = document.querySelector("body main a.icon8_link");
 
+function navLinkClick() {
+  let sectionTop = document.getElementsByClassName("sectionTop");
+  let eleScrollTop;
+  for (let i = 0; i < navLinks.length; i++) {
+    eleScrollTop = sectionTop[i].scrollTop;
+    navLinks[i].addEventListener("click", () => {
+      switch (i) {
+        case 0:
+          navLinkScrollTo(0);
+          break;
+        case 1:
+          navLinkScrollTo(eleScrollTop);
+          break;
+        case 2:
+          navLinkScrollTo(eleScrollTop);
+          break;
+        case 3:
+          navLinkScrollTo(eleScrollTop);
+          break;
+        default:
+          console.log("Nav section not found...");
+        break;
+      }
+    });
+  }
+}
+
+function navLinkScrollTo(p) {
+  window.scrollTo(0,p);
+}
+
 function setHamburgerInLocalStorage(setting) {
   localStorage.setItem("hamburger", setting);
 }
@@ -81,7 +112,7 @@ function mobileNavShutter(hamburgerFunc) {
   hamburgerFunc();
 }
 
-function windowScrollSet() {
+function windowScrollHamburgerClose() {
   window.addEventListener(
     "scroll",
     () => {
@@ -93,6 +124,7 @@ function windowScrollSet() {
     { useCapture: true, signal: abortSignal.signal, passive: false }
   );
 }
+
 
 function abortSignal(ab) {
   return new Promise((resolve) => {
@@ -320,6 +352,7 @@ window.addEventListener("load", () => {
   localStorage.setItem("mode", "dark");
   localStorage.setItem("hamburger", "closed");
   window.scrollTo(0, 0);
+  navLinkClick();
 });
 
 window.addEventListener("resize", () => {
@@ -346,8 +379,7 @@ hamburgerMenuWrapper.addEventListener(
         }
       })
       .then(() => {
-        console.log("windowScrollSet");
-        windowScrollSet();
+        windowScrollHamburgerClose();
       })
       .catch(() => {
         console.log("Promise error");
