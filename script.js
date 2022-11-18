@@ -74,12 +74,11 @@ let sectionElements = document.querySelectorAll("body>#main>section");
 
 function navLinkClick() {
   for (let i = 0; i < navLinks.length; i++) {
-    
     mobileNavLinks[i].addEventListener("click", () => {
       switch (i) {
         case 0:
-          hamburgerClose();
           navLinkScrollTo(body);
+          hamburgerClose();
           break;
         case 1:
           navLinkScrollTo(sectionElements[0]);
