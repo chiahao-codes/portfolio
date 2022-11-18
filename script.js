@@ -93,7 +93,7 @@ function navLinkClick() {
           console.log("Nav section not found...");
           break;
       }
-    });
+    }, {useCapture:true});
 
     navLinks[i].addEventListener("click", () => {
       switch (i) {
