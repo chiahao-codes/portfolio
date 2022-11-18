@@ -78,6 +78,7 @@ function navLinkClick() {
     mobileNavLinks[i].addEventListener("click", () => {
       switch (i) {
         case 0:
+          hamburgerClose();
           navLinkScrollTo(body);
           break;
         case 1:
