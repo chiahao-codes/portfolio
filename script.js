@@ -53,7 +53,7 @@ let homeContainer = document.getElementsByClassName(
 let portfolioContainer = document.querySelector(
   "body main #portfolio_container"
 );
-let portfolioHeading = portfolioContainer.firstElementChild;
+
 
 
 let portfolioArticles = document.querySelectorAll(
@@ -62,7 +62,7 @@ let portfolioArticles = document.querySelectorAll(
 
 //about
 let aboutHeaderWrapper = document.querySelector("main > #about_container #about_header_wrapper");
-let aboutHeading = aboutHeaderWrapper.firstElementChild;
+
 let aboutIntro = document.querySelector("main > #about_container #about_article_wrapper p");
 let myCareerObjAndTechStackWrappers = document.querySelectorAll("main > #about_container #my_career_and_tech_stack_wrapper > div");
 let resumeButtonContainer = document.querySelector(
@@ -77,6 +77,7 @@ let contactForm = document.querySelector("body> #main > #contact_container>form"
 let moonIconLink = document.querySelector("body main a.icon8_link");
 
 
+let sectionElements = document.querySelectorAll("body>#main>section");
 
 function navLinkClick() {
   for (let i = 0; i < navLinks.length; i++) {
@@ -87,13 +88,13 @@ function navLinkClick() {
           window.scrollTo(0, 0);
           break;
         case 1:
-          navLinkScrollTo(portfolioHeading);
+          navLinkScrollTo(sectionElements[1]);
           break;
         case 2:
-          navLinkScrollTo(aboutHeading);
+          navLinkScrollTo(sectionElements[2]);
           break;
         case 3:
-          navLinkScrollTo(contactHeader);
+          navLinkScrollTo(sectionElements[3]);
           break;
         default:
           console.log("Nav section not found...");
@@ -104,7 +105,7 @@ function navLinkClick() {
 }
 
 function navLinkScrollTo(ele) {
-  ele.scrollIntoView();
+  ele.scrollIntoView({block:"start", behavior:"smooth"});
 }
 
 function setHamburgerInLocalStorage(setting) {
