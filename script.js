@@ -79,6 +79,7 @@ function navLinkClick() {
         case 0:
           navLinkScrollTo(body);
           hamburgerClose();
+          setHamburgerInLocalStorage("closed");
           break;
         case 1:
           navLinkScrollTo(sectionElements[0]);
