@@ -74,7 +74,7 @@ let sectionElements = document.querySelectorAll("body>#main>section");
 
 function navLinkClick() {
   for (let i = 0; i < navLinks.length; i++) {
-    mobileNavLinks[i].addEventListener("click", () => {
+    mobileNavLinks[i].addEventListener("mousedown", () => {
       switch (i) {
         case 0:
           navLinkScrollTo(body);
@@ -93,7 +93,7 @@ function navLinkClick() {
           console.log("Nav section not found...");
           break;
       }
-    }, {useCapture:true});
+    });
 
     navLinks[i].addEventListener("click", () => {
       switch (i) {
