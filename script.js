@@ -78,6 +78,7 @@ let moonIconLink = document.querySelector("body main a.icon8_link");
 
 
 let sectionElements = document.querySelectorAll("body>#main>section");
+console.log(sectionElements);
 
 function navLinkClick() {
   for (let i = 0; i < navLinks.length; i++) {
@@ -94,7 +95,7 @@ function navLinkClick() {
           navLinkScrollTo(sectionElements[2]);
           break;
         case 3:
-          navLinkScrollTo(sectionElements[3]);
+          navLinkScrollTo();
           break;
         default:
           console.log("Nav section not found...");
