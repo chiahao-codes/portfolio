@@ -76,33 +76,35 @@ let sectionTop = document.getElementsByClassName("sectionTop");
 
 function navLinkClick() {
   for (let i = 0; i < navLinks.length; i++) {
+    
+    //add event listener to every nav link;
     navLinks[i].addEventListener("click", () => {
       console.log("navLinks[i]", navLinks[i]);
       console.log("sectionTop element:", sectionTop[i]);
     
       switch (i) {
         case 0:
-          navLinkScrollTo(0);
+          window.scrollTo(0, 0);
           break;
         case 1:
-          navLinkScrollTo();
+          navLinkScrollTo(sectionTop[1]);
           break;
         case 2:
-          navLinkScrollTo();
+          navLinkScrollTo(sectionTop[2]);
           break;
         case 3:
-          navLinkScrollTo();
+          navLinkScrollTo(sectionTop[3]);
           break;
         default:
           console.log("Nav section not found...");
         break;
       }
-    }, {useCapture:true});
+    });
   }
 }
 
-function navLinkScrollTo(p) {
-  window.scrollTo(0,p);
+function navLinkScrollTo(ele) {
+  ele.scrollIntoView();
 }
 
 function setHamburgerInLocalStorage(setting) {
