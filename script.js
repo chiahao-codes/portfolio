@@ -86,16 +86,16 @@ function navLinkClick() {
     
       switch (i) {
         case 0:
-          window.scrollTo(0, 0);
+          navLinkScrollTo(body);
           break;
         case 1:
-          navLinkScrollTo(sectionElements[1]);
+          navLinkScrollTo(sectionElements[0]);
           break;
         case 2:
-          navLinkScrollTo(sectionElements[2]);
+          navLinkScrollTo(sectionElements[1]);
           break;
         case 3:
-          navLinkScrollTo();
+          navLinkScrollTo(sectionElements[2]);
           break;
         default:
           console.log("Nav section not found...");
