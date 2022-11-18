@@ -494,17 +494,18 @@ body>#main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: -3px;
     color:white;
 }
 
 #main #about_container div #about_header {
     font-size: calc(28px);
     filter: brightness(120%), contrast(120%);
+    -webkit-filter: brightness(120%), contrast(120%);
     text-align: center;
     height: max-content;
     width: 100%;
     color: inherit;
+    bottom:-5px;
     position: relative;
 }
 
