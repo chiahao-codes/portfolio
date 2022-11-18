@@ -483,7 +483,7 @@ body>#main {
     row-gap: 65px;
     align-content: center;
     background-color: inherit;
-    padding:15px 10px 5px 10px;
+    padding:20px 10px 0px 10px;
     overflow-x: hidden;
 }
 
@@ -507,6 +507,7 @@ body>#main {
     color: inherit;
     bottom:-10px;
     position: relative;
+    top: 10px;
 }
 
 #main #about_container div #about_intro_header {
