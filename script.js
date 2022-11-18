@@ -79,7 +79,7 @@ function navLinkClick() {
         case 0:
           navLinkScrollTo(body);
           hamburgerClose();
-          setHamburgerInLocalStorage("closed");
+          //setHamburgerInLocalStorage("closed");
           break;
         case 1:
           navLinkScrollTo(sectionElements[0]);
@@ -170,6 +170,7 @@ function hamburgerOpen() {
       mn.style.color = "white";
     }
   }
+  setHamburgerInLocalStorage("open");
 }
 
 function hamburgerClose() {
@@ -187,6 +188,8 @@ function hamburgerClose() {
   hamburgerMenuWrapper.children[3].style.left = "0px";
 
   mobileDropMenu.style.top = "-150%";
+
+  setHamburgerInLocalStorage("closed");
 }
 
 function setTransitionProperty() {
@@ -386,10 +389,10 @@ hamburgerMenuWrapper.addEventListener(
         setTransitionProperty();
         if (localStorage.getItem("hamburger") === "closed") {
           mobileNavShutter(hamburgerOpen);
-          setHamburgerInLocalStorage("open");
+          //setHamburgerInLocalStorage("open");
         } else {
           mobileNavShutter(hamburgerClose);
-          setHamburgerInLocalStorage("closed");
+          //setHamburgerInLocalStorage("closed");
         }
       })
       .then(() => {
