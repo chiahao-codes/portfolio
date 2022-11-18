@@ -26,7 +26,6 @@ let menuIcon = document.querySelectorAll(
   " body main nav #menuIconWrapper > .menuIcon"
 );
 
-
 //Nav: Mobile mode
 let mobileDropMenu = document.querySelector(
   "body main > .mobile_navigation_links"
@@ -54,20 +53,15 @@ let portfolioContainer = document.querySelector(
   "body main #portfolio_container"
 );
 
-
-
 let portfolioArticles = document.querySelectorAll(
   "body main #portfolio_container #portfolio > article"
 );
 
 //about
 let aboutHeaderWrapper = document.querySelector("main > #about_container #about_header_wrapper");
-
 let aboutIntro = document.querySelector("main > #about_container #about_article_wrapper p");
 let myCareerObjAndTechStackWrappers = document.querySelectorAll("main > #about_container #my_career_and_tech_stack_wrapper > div");
-let resumeButtonContainer = document.querySelector(
-  "#main > #about_container > #res_button_container"
-);
+let resumeButtonContainer = document.querySelector("#main > #about_container > #res_button_container");
 let resumeButton = document.querySelector("#main > #about_container > a > div");
 
 //contact
@@ -76,14 +70,32 @@ let contactForm = document.querySelector("body> #main > #contact_container>form"
 
 let moonIconLink = document.querySelector("body main a.icon8_link");
 
-
 let sectionElements = document.querySelectorAll("body>#main>section");
-console.log(sectionElements);
 
 function navLinkClick() {
   for (let i = 0; i < navLinks.length; i++) {
-    navLinks[i].addEventListener("click", () => {
     
+    mobileNavLinks[i].addEventListener("click", () => {
+      switch (i) {
+        case 0:
+          navLinkScrollTo(body);
+          break;
+        case 1:
+          navLinkScrollTo(sectionElements[0]);
+          break;
+        case 2:
+          navLinkScrollTo(sectionElements[1]);
+          break;
+        case 3:
+          navLinkScrollTo(sectionElements[2]);
+          break;
+        default:
+          console.log("Nav section not found...");
+          break;
+      }
+    });
+
+    navLinks[i].addEventListener("click", () => {
       switch (i) {
         case 0:
           navLinkScrollTo(body);
@@ -130,14 +142,12 @@ function windowScrollHamburgerClose() {
   );
 }
 
-
 function abortSignal(ab) {
   return new Promise((resolve) => {
     ab.abort();
     resolve("aborted event handler");
   });
 }
-
 
 function hamburgerOpen() {
   window.scrollTo(0, 0);
@@ -352,7 +362,6 @@ function lightMode() {
   localStorage.setItem("mode", "light");
 }
 
-
 window.addEventListener("load", () => {
   localStorage.setItem("mode", "dark");
   localStorage.setItem("hamburger", "closed");
@@ -370,8 +379,7 @@ window.addEventListener("resize", () => {
 //mobile hamburger menu
 hamburgerMenuWrapper.addEventListener(
   "click",
-  async (evt) => {
-    console.log("event click:", evt.target);
+  async () => {
     await abortSignal(abortController)
       .then(() => {
         setTransitionProperty();
@@ -412,8 +420,3 @@ mobileSwitchContainer.addEventListener("click", () => {
   }
 });
 
-function resumeButtonClick(evt) {
-  console.log(evt);
-}
-
-resumeButton.addEventListener("click", resumeButtonClick, true);
