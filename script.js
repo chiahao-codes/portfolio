@@ -53,12 +53,16 @@ let homeContainer = document.getElementsByClassName(
 let portfolioContainer = document.querySelector(
   "body main #portfolio_container"
 );
+
+console.log(portfolioContainer.firstElementChild);
+
 let portfolioArticles = document.querySelectorAll(
   "body main #portfolio_container #portfolio > article"
 );
 
 //about
 let aboutHeaderWrapper = document.querySelector("main > #about_container #about_header_wrapper");
+console.log(aboutHeaderWrapper.firstElementChild);
 let aboutIntro = document.querySelector("main > #about_container #about_article_wrapper p");
 let myCareerObjAndTechStackWrappers = document.querySelectorAll("main > #about_container #my_career_and_tech_stack_wrapper > div");
 let resumeButtonContainer = document.querySelector(
@@ -72,28 +76,24 @@ let contactForm = document.querySelector("body> #main > #contact_container>form"
 
 let moonIconLink = document.querySelector("body main a.icon8_link");
 
-let sectionTop = document.querySelectorAll(".section_h1");
+
 
 function navLinkClick() {
   for (let i = 0; i < navLinks.length; i++) {
-
-    //add event listener to every nav link;
     navLinks[i].addEventListener("click", () => {
-      console.log("navLinks[i]", navLinks[i]);
-      console.log("sectionTop element:", sectionTop[i]);
     
       switch (i) {
         case 0:
           window.scrollTo(0, 0);
           break;
         case 1:
-          navLinkScrollTo(sectionTop[1]);
+          navLinkScrollTo();
           break;
         case 2:
-          navLinkScrollTo(sectionTop[2]);
+          navLinkScrollTo();
           break;
         case 3:
-          navLinkScrollTo(sectionTop[3]);
+          navLinkScrollTo();
           break;
         default:
           console.log("Nav section not found...");
