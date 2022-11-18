@@ -489,6 +489,7 @@ body>#main {
 
 #main #about_container #about_header_wrapper {
     position: relative;
+    padding-top:15px;
     width:100%;
     display: flex;
     flex-direction: column;
