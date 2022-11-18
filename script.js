@@ -53,8 +53,8 @@ let homeContainer = document.getElementsByClassName(
 let portfolioContainer = document.querySelector(
   "body main #portfolio_container"
 );
+let portfolioHeading = portfolioContainer.firstElementChild;
 
-console.log(portfolioContainer.firstElementChild);
 
 let portfolioArticles = document.querySelectorAll(
   "body main #portfolio_container #portfolio > article"
@@ -62,7 +62,7 @@ let portfolioArticles = document.querySelectorAll(
 
 //about
 let aboutHeaderWrapper = document.querySelector("main > #about_container #about_header_wrapper");
-console.log(aboutHeaderWrapper.firstElementChild);
+let aboutHeading = aboutHeaderWrapper.firstElementChild;
 let aboutIntro = document.querySelector("main > #about_container #about_article_wrapper p");
 let myCareerObjAndTechStackWrappers = document.querySelectorAll("main > #about_container #my_career_and_tech_stack_wrapper > div");
 let resumeButtonContainer = document.querySelector(
@@ -87,13 +87,13 @@ function navLinkClick() {
           window.scrollTo(0, 0);
           break;
         case 1:
-          navLinkScrollTo();
+          navLinkScrollTo(portfolioHeading);
           break;
         case 2:
-          navLinkScrollTo();
+          navLinkScrollTo(aboutHeading);
           break;
         case 3:
-          navLinkScrollTo();
+          navLinkScrollTo(contactHeader);
           break;
         default:
           console.log("Nav section not found...");
