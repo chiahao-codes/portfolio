@@ -76,7 +76,7 @@ let sectionTop = document.getElementsByClassName("sectionTop");
 
 function navLinkClick() {
   for (let i = 0; i < navLinks.length; i++) {
-    
+
     //add event listener to every nav link;
     navLinks[i].addEventListener("click", () => {
       console.log("navLinks[i]", navLinks[i]);
@@ -354,7 +354,8 @@ function lightMode() {
 window.addEventListener("load", () => {
   localStorage.setItem("mode", "dark");
   localStorage.setItem("hamburger", "closed");
-  window.scrollTo(0, 0);
+  navLinkScrollTo(body);
+  navLinkClick();
 });
 
 window.addEventListener("resize", () => {
