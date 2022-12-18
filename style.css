@@ -597,6 +597,7 @@ overflow-wrap: normal;
     margin: 0 auto;
     text-decoration: none;
     overflow: hidden;
+    overflow-wrap:normal;
     
   
 }
@@ -614,6 +615,7 @@ overflow-wrap: normal;
     font-family: "Cormorant SC", sans-serif;
     opacity: .85;
     transition: all .2s ease-in-out;
+    overflow-wrap: normal;
    
 }
 
