@@ -541,7 +541,7 @@ padding:0 1%;
     border-radius: 50px;
     border-style: solid;
     border-color: white;
-    box-shadow: 0 10px 10px black;
+    box-shadow: 0 5px 5px black;
 }
 #main #about_container>#about_article_wrapper> p {
     color:inherit;
