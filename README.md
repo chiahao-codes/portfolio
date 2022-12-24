@@ -1,4 +1,4 @@
-<h1 align="center">Portfolio Website</h1>
+<h1>Portfolio Website</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
@@ -22,17 +22,27 @@
 👤 **Chiahao Chou**
 
 
+## Built With
+* HTML5
+* CSS3
+* Javascript
+
+
 ## Features
 There is a mode switch to alternate between light and dark mode.
-[./assets/darkmode_screenshot.png]
+<picture><img alt="dark mode screenshot" src="darkmode_screenshot.png"></picture>
 
-[./assets/lightmode_screenshot.png]
+<picture><img alt="light mode screenshot" src="lightmode_screenshot.png"></picture>
 
 
 The mobile version has a drop-down menu.
-[./assets/mobile_menu_blk.png]
+<picture><img alt="mobile drop down menu" src="./assets/mobile_menu_blk.png"></picture>
 
 
+## Social Media
+* Github: (https://github.com/chiahao-codes)
+* IG: (https://instagram.com/chiahaocodes)
+* LinkedIn: (https://www.linkedin.com/in/chiahaocodes/)
 
 ## Show your support
 Give a ⭐️ if this project helped you!
