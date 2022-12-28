@@ -559,10 +559,6 @@ body>#main {
         }
     
         #main #about_container>a>div {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             border: none;
             border-radius: 10px;
             width: 100px;
@@ -583,6 +579,7 @@ body>#main {
             display: block;
             color: white;
             text-align: center;
+            margin-top:12% ;
         }
     
         #main #about_container>a>div>img {
