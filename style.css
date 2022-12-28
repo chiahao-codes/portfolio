@@ -727,7 +727,7 @@ body>#main {
         }
     
         #main>#contact_container>form>button>.alt-send-button:hover {
-            transform: translate3d(0px, -48px, 0px);
+            transform: translate3d(0px, -50%, 0px);
             filter: brightness(110%);
             -webkit-filter: brightness(110%);
         }
