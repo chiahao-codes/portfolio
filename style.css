@@ -542,6 +542,8 @@ body>#main {
             font-weight: 600;
             overflow-wrap: normal;
             text-align: center;
+            width: 80%;
+            max-width: 80%;
         }
     
         #main #about_container>#res_button_container {
