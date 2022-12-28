@@ -296,14 +296,14 @@ body>#main {
     }
 
     #portfolio_container>#portfolio>article {
+        padding:1%;
         width:18.80em ;
-        min-width:18.80em ;
         max-width:18.80em ;
     }
 
     #portfolio_container>#portfolio article a div img {
-        width: 65px;
-        height: 65px;
+        width: 4em;
+        height: 4em;
         border-radius: rem(2);
         display: block;
         filter: brightness(150%), contrast(150%);
@@ -331,8 +331,8 @@ body>#main {
     }
 
     .chess_copy_wrapper {
-        width: 250px;
-        max-width: 250px;
+        width: 15.625em;
+        max-width: 15.625em;
         height: 100%;
         position: relative;
         overflow: hidden;
@@ -345,13 +345,13 @@ body>#main {
 
     .chess_h3 {
         position: relative;
-        font-size: 15px;
+        font-size: 1em;
         font-weight: 600;
     }
 
     .chess_proj_desc {
         height: 50px;
-        font-size: 12px;
+        font-size: .8em;
         font-weight: 600;
         width: 100%;
         position: relative;
@@ -361,7 +361,7 @@ body>#main {
     .chess_img_wrapper {
         border-color: white;
         height: 100%;
-        width: 100px;
+        width: 6.25em;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -389,8 +389,8 @@ body>#main {
     }
 
     .calculator_copy_wrapper {
-        width: 250px;
-        max-width: 250px;
+        width: 15.625em;
+        max-width: 15.625em;
         height: 100%;
         position: relative;
         overflow: hidden;
@@ -403,13 +403,13 @@ body>#main {
 
     .calculator_h3 {
         position: relative;
-        font-size: 15px;
+        font-size: 1em;
         font-weight: 600;
     }
 
     .calculator_proj_desc {
         height: 50px;
-        font-size: 12px;
+        font-size: .8em;
         font-weight: 600;
         width: 100%;
         position: relative;
@@ -419,7 +419,7 @@ body>#main {
     .calculator_img_wrapper {
         border-color: white;
         height: 100%;
-        width: 100px;
+        width: 6.25em;
         display: flex;
         justify-content: center;
         align-items: center;
