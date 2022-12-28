@@ -433,10 +433,10 @@ body>#main {
             top: calc(var(--navbar-height) * 6);
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
-            /*row-gap: 3.125em;*/
-            
-            align-content: center;
+            justify-content: center;
+            /**/
+            row-gap: 3.125em;
+            align-items: center;
             background-color: inherit;
             overflow-x: hidden;
         }
