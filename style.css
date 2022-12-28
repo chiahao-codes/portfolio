@@ -521,8 +521,8 @@ body>#main {
         #main #about_container>#my_career_and_tech_stack_wrapper>.career_tech_stack {
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
-            align-content: flex-start;
+            justify-content: space-evenly;
+            align-content: center;
             padding: 1%;
             color: white;
             background-color: inherit;
