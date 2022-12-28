@@ -529,17 +529,17 @@ body>#main {
         }
     
         #main #about_container>#my_career_and_tech_stack_wrapper>#career_obj_wrapper {
-        width: 150px;
-        max-width: 150px;
+        width: 100%;
+        max-width: 100%;
         }
     
         #main #about_container>#my_career_and_tech_stack_wrapper>#tech_stack_wrapper {
-        width: 100px;
-        max-width: 100px;
+        width: 100%;
+        max-width: 100%;
         }
     
         #main #about_container>#my_career_and_tech_stack_wrapper>.career_tech_stack>p {
-            font-size: 18;
+            font-size: smaller;
             font-weight: 600;
             overflow-wrap: normal;
         }
