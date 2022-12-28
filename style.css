@@ -705,7 +705,7 @@ body>#main {
         #main>#contact_container>form>button>.alt-send-button>.send-text {
             position: relative;
             display: block;
-            margin-top: 10px;
+            margin-top: 10%;
             font-size: medium;
             font-weight: 800;
             filter: brightness(120%);
