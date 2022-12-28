@@ -58,6 +58,9 @@ let portfolioArticles = document.querySelectorAll(
 );
 
 //about
+let aboutContainer = document.querySelector(
+  "main > #about_container"
+);
 let aboutHeaderWrapper = document.querySelector("main > #about_container #about_header_wrapper");
 let aboutIntro = document.querySelector("main > #about_container #about_article_wrapper p");
 let aboutImg = document.querySelector(
@@ -209,7 +212,8 @@ function setTransitionProperty() {
   for (let p of portfolioArticles) {
     p.style.transition = "background-color .1s ease-in";
   }
-
+  
+  aboutContainer.style.transition = "color .1s ease-in";
   aboutHeaderWrapper.style.transition = "color .1s ease-in";
   aboutIntro.style.transition = "color .1s ease-in";
   for (let m of myCareerObjAndTechStackWrappers) {
