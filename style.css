@@ -310,8 +310,7 @@ body>#main {
     }
 
     #chess_article {
-        padding-left: 1.5%;
-        padding-right: .7%;
+      
         color: inherit;
         height: 108px;
         border-color: white;
@@ -369,8 +368,7 @@ body>#main {
     }
 
     #calculator_article {
-        padding-left: 1.5%;
-        padding-right: 1%;
+ 
         color: inherit;
         height: 108px;
         border-color: white;
