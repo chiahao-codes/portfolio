@@ -563,7 +563,7 @@ body>#main {
             border-radius: 10px;
             width: 90px;
             max-width: 90px;
-            height: 45px;
+            height: 35px;
             background-color: inherit;
             text-align: center;
             font-size: medium;
@@ -598,7 +598,7 @@ body>#main {
         }
     
         #main #about_container>a>div:hover {
-            transform: translate3d(0, -105%, 0);
+            transform: translate3d(0, -100%, 0);
         }
     
         #main #about_container>#res_button_container:active {
