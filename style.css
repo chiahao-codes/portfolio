@@ -617,7 +617,7 @@ body>#main {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            row-gap: 65px;
+            row-gap: 4.06em;
             align-items: center;
             background-color: inherit;
             color: white;
