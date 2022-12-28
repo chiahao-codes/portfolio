@@ -718,7 +718,7 @@ body>#main {
             position: relative;
             filter: invert(100%);
             -webkit-filter: invert(100%);
-            margin-top: 40%;
+            margin-top: 30%;
         }
     
         #main>#contact_container>form>button:hover {
@@ -729,7 +729,7 @@ body>#main {
         }
     
         #main>#contact_container>form>button>.alt-send-button:hover {
-            transform: translate3d(0px, -90%, 0px);
+            transform: translate3d(0px, -105%, 0px);
             filter: brightness(110%);
             -webkit-filter: brightness(110%);
         }
