@@ -578,7 +578,8 @@ body>#main {
         #main #about_container>a>div>.cv_download_text {
             display: block;
             color: white;
-            margin-top: 10%;
+            margin:auto;
+            text-align: center;
         }
     
         #main #about_container>a>div>img {
@@ -597,7 +598,7 @@ body>#main {
         }
     
         #main #about_container>a>div:hover {
-            transform: translate3d(0, -110%, 0);
+            transform: translate3d(0, -115%, 0);
         }
     
         #main #about_container>#res_button_container:active {
