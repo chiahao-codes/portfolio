@@ -442,7 +442,7 @@ body>#main {
     
         #main #about_container #about_header_wrapper {
             position: relative;
-            margin-top:25%;
+            margin-top:26%;
             width: 100%;
             display: flex;
             flex-direction: column;
