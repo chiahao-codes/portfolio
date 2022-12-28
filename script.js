@@ -74,7 +74,7 @@ let resumeButton = document.querySelector("#main > #about_container > a > div");
 let contactHeader = document.querySelector("body> #main > #contact_container>h1");
 let contactForm = document.querySelector("body> #main > #contact_container>form");
 
-let moonIconLink = document.querySelector("body main a.icon8_link");
+
 
 let sectionElements = document.querySelectorAll("body>#main>section");
 
@@ -298,7 +298,7 @@ function darkMode() {
   contactHeader.style.color = "white";
   contactForm.style.borderColor = "white";
 
-  moonIconLink.style.color = "white";
+  
 
   localStorage.setItem("mode", "dark");
 }
@@ -362,7 +362,7 @@ function lightMode() {
   contactHeader.style.color = "black";
   contactForm.style.borderColor = "black";
 
-  moonIconLink.style.color = "black";
+  
 
   localStorage.setItem("mode", "light");
 }
