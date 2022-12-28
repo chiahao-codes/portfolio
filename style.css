@@ -298,13 +298,13 @@ body>#main {
 
     #portfolio_container>#portfolio>article {
        padding:0 2%;
-        width:18.80em ;
-        max-width:18.80em ;
+        width: 290px; ;
+        max-width: 290px; ;
     }
 
     #portfolio_container>#portfolio article a div img {
-        width: 4em;
-        height: 4em;
+        width: 60px;
+        height: 60px;
         border-radius: rem(2);
         display: block;
         filter: brightness(150%), contrast(150%);
@@ -332,8 +332,8 @@ body>#main {
     }
 
     .chess_copy_wrapper {
-        width: 15.625em;
-        max-width: 15.625em;
+        width: 210px;
+        max-width: 210px;
         height: 100%;
         position: relative;
         overflow: hidden;
@@ -362,7 +362,7 @@ body>#main {
     .chess_img_wrapper {
         border-color: white;
         height: 100%;
-        width: 6.25em;
+        width: max-content;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -390,8 +390,8 @@ body>#main {
     }
 
     .calculator_copy_wrapper {
-        width: 15.625em;
-        max-width: 15.625em;
+        width: 210px;
+        max-width: 210px;
         height: 100%;
         position: relative;
         overflow: hidden;
@@ -420,7 +420,7 @@ body>#main {
     .calculator_img_wrapper {
         border-color: white;
         height: 100%;
-        width: 6.25em;
+        width: max-content;
         display: flex;
         justify-content: center;
         align-items: center;
