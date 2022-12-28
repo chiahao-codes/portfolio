@@ -58,179 +58,7 @@ body>#main {
 
     
 /*About content*/
-#main #about_container{
-    position:relative;
-    width:100%;
-    top:calc(var(--navbar-height) * 6);
-    display: flex;
-    flex-direction:column;
-    justify-content: space-evenly;
-    row-gap: 65px;
-    align-content: center;
-    background-color: inherit;
-    padding:50px 10px 0px 10px;
-    overflow-x: hidden;
-}
 
-#main #about_container #about_header_wrapper {
-    position: relative;
-    padding-top:15px;
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color:white;
-}
-
-#main #about_container div #about_header {
-    font-size: calc(28px);
-    filter: brightness(120%) contrast(120%);
-    -webkit-filter: brightness(120%) contrast(120%);
-    text-align: center;
-    height: fit-content;
-    width: 100%;
-    color: inherit;
-    bottom:-10px;
-    position: relative;
-    top: 10px;
-}
-
-#main #about_container div #about_intro_header {
-    font-size: calc(19px);
-    filter: brightness(120%) contrast(120%);
-    text-align: center;
-    height: fit-content;
-    width: 100%;
-    color: inherit;
-    position: relative;
-    top:-10px;
-}
-
-#main #about_container > #about_article_wrapper {
-color:white;
-position:relative;
-width: 100%;
-display: flex;
-justify-content:center;
-align-items: center;
-column-gap: 20px;
-padding:0 1%;
-}
-
-#main #about_container>#about_article_wrapper img {
-    width:100px;
-    height:100px;
-    max-width: 100px;
-    max-height: 100px;
-    border-radius: 50px;
-    border-style: solid;
-    border-color: white;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
-}
-#main #about_container>#about_article_wrapper> p {
-    color:inherit;
-    font-weight: 600;
-    width:400px;
-    max-width: 400px;
-    min-width: 400px;
-}
-
-#main #about_container>#my_career_and_tech_stack_wrapper {
-    position:relative;
-    width:100%;
-    display: flex;
-    justify-content: center;
-    align-content: flex-start;
-    column-gap: 30px;
-    color:white;
-    padding: 0 1%;
-}
-
-#main #about_container>#my_career_and_tech_stack_wrapper> .career_tech_stack {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: flex-start;
-    padding:1%;
-    color:white;
-    background-color: inherit;
-}
-
-#main #about_container>#my_career_and_tech_stack_wrapper> #career_obj_wrapper {
-width: 230px;
-max-width: 230px;
-}
-
-#main #about_container>#my_career_and_tech_stack_wrapper>#tech_stack_wrapper{
-width: 200px;
-max-width: 200px;
-}
-
-#main #about_container>#my_career_and_tech_stack_wrapper>.career_tech_stack >  p {
-font-size: 18;
-font-weight: 600;
-overflow-wrap: normal;
-} 
-
-#main #about_container>#res_button_container {
-    position: relative;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.35);
-    background-color: #34c0eb;
-    border-radius: 10px;
-    border-color: #34c0eb;
-    width: fit-content;
-    margin: 0 auto;
-    text-decoration: none;
-    overflow: hidden;
-    overflow-wrap:normal;
-  
-}
-
-#main #about_container>a>div {
-    border: none;
-    border-radius: 10px;
-    width: 160px;
-    max-width: 160px;
-    height: 45px;
-    background-color: inherit;
-    text-align: center;
-    font-size: medium;
-    font-weight: 800;
-    font-family: "Cormorant SC", sans-serif;
-    opacity: .85;
-    transition: all .2s ease-in-out;
-    overflow-wrap: normal;
-   
-}
-
-#main #about_container>a>div>.cv_download_text {
-    display: block;
-    color: white;
-    margin-top:21px;
-}
-
-#main #about_container>a>div>img {
-margin-top:27px;
-filter: invert(100%) saturate(200%);
--webkit-filter: invert(100%) saturate(200%);
-}
-
-#main #about_container>a:hover {
-    cursor: pointer;
-    opacity: 1;
-    filter: brightness(110%) contrast(110%);
-    -webkit-filter: brightness(110%) contrast(110%);
-}
-
-#main #about_container>a>div:hover {
-    transform: translate3d(0,-46px, 0 );
-}
-
-#main #about_container>#res_button_container:active {
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.35);
-    transform: scale(.95);
-}
 
 /*Contact Section*/
 #main #contact_container{
@@ -734,25 +562,180 @@ body>#main>.icon8_link {
     }
 
     /*about section*/
-    #main #about_container>#about_article_wrapper>img {
-        width: 70px;
-        height: 70px;
-    }
-
-    #main #about_container>#about_article_wrapper>p {
-        width: 225px;
-        max-width: 225px;
-    }
-
-    #main #about_container>#my_career_and_tech_stack_wrapper>#career_obj_wrapper {
+        #main #about_container {
+            position: relative;
+            width: 100%;
+            top: calc(var(--navbar-height) * 6);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            row-gap: 65px;
+            align-content: center;
+            background-color: inherit;
+            padding: 50px 10px 0px 10px;
+            overflow-x: hidden;
+        }
+    
+        #main #about_container #about_header_wrapper {
+            position: relative;
+            padding-top: 15px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+    
+        #main #about_container div #about_header {
+            font-size: calc(28px);
+            filter: brightness(120%) contrast(120%);
+            -webkit-filter: brightness(120%) contrast(120%);
+            text-align: center;
+            height: fit-content;
+            width: 100%;
+            color: inherit;
+            bottom: -10px;
+            position: relative;
+            top: 10px;
+        }
+    
+        #main #about_container div #about_intro_header {
+            font-size: calc(19px);
+            filter: brightness(120%) contrast(120%);
+            text-align: center;
+            height: fit-content;
+            width: 100%;
+            color: inherit;
+            position: relative;
+            top: -10px;
+        }
+    
+        #main #about_container>#about_article_wrapper {
+            color: white;
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 20px;
+            padding: 0 1%;
+        }
+    
+        #main #about_container>#about_article_wrapper img {
+            width: 3em;
+            height: 3em;
+            border-radius: 3.125em;
+            border-style: solid;
+            border-color: white;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+        }
+    
+        #main #about_container>#about_article_wrapper>p {
+            color: inherit;
+            font-weight: 600;
+            width: 225px;
+            max-width: 225px;
+        }
+    
+        #main #about_container>#my_career_and_tech_stack_wrapper {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: flex-start;
+            column-gap: 30px;
+            color: white;
+            padding: 0 1%;
+        }
+    
+        #main #about_container>#my_career_and_tech_stack_wrapper>.career_tech_stack {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: flex-start;
+            padding: 1%;
+            color: white;
+            background-color: inherit;
+        }
+    
+        #main #about_container>#my_career_and_tech_stack_wrapper>#career_obj_wrapper {
         width: 150px;
         max-width: 150px;
-    }
-
-    #main #about_container>#my_career_and_tech_stack_wrapper>#tech_stack_wrapper {
+        }
+    
+        #main #about_container>#my_career_and_tech_stack_wrapper>#tech_stack_wrapper {
         width: 100px;
         max-width: 100px;
-    }
+        }
+    
+        #main #about_container>#my_career_and_tech_stack_wrapper>.career_tech_stack>p {
+            font-size: 18;
+            font-weight: 600;
+            overflow-wrap: normal;
+        }
+    
+        #main #about_container>#res_button_container {
+            position: relative;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.35);
+            background-color: #34c0eb;
+            border-radius: 10px;
+            border-color: #34c0eb;
+            width: fit-content;
+            margin: 0 auto;
+            text-decoration: none;
+            overflow: hidden;
+            overflow-wrap: normal;
+    
+        }
+    
+        #main #about_container>a>div {
+            border: none;
+            border-radius: 10px;
+            width: 160px;
+            max-width: 160px;
+            height: 45px;
+            background-color: inherit;
+            text-align: center;
+            font-size: medium;
+            font-weight: 800;
+            font-family: "Cormorant SC", sans-serif;
+            opacity: .85;
+            transition: all .2s ease-in-out;
+            overflow-wrap: normal;
+    
+        }
+    
+        #main #about_container>a>div>.cv_download_text {
+            display: block;
+            color: white;
+            margin-top: 21px;
+        }
+    
+        #main #about_container>a>div>img {
+            margin-top: 27px;
+            filter: invert(100%) saturate(200%);
+            -webkit-filter: invert(100%) saturate(200%);
+        }
+    
+        #main #about_container>a:hover {
+            cursor: pointer;
+            opacity: 1;
+            filter: brightness(110%) contrast(110%);
+            -webkit-filter: brightness(110%) contrast(110%);
+        }
+    
+        #main #about_container>a>div:hover {
+            transform: translate3d(0, -46px, 0);
+        }
+    
+        #main #about_container>#res_button_container:active {
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.35);
+            transform: scale(.95);
+        }
+
+
+
 
     /*contact section*/
     #main>#contact_container>form {
@@ -817,8 +800,7 @@ body>#main>.icon8_link {
      position: relative;
  }
 
- nav>#mode_switch_social_wrapper>#mode_switch_container>#switch_icon_wrapper>.moon,
- .mobile_navigation_links #mobile_mode_switch_container #mobile_switch_icon_wrapper #mobile_moon {
+ nav>#mode_switch_social_wrapper>#mode_switch_container>#switch_icon_wrapper>.moon{
      filter: invert(.99) sepia(100%) saturate(9) brightness(120%) contrast(120%);
      border-color: 2px solid;
  }
@@ -876,25 +858,7 @@ body>#main>.icon8_link {
 @media screen and (max-width:449.99px) {
 
 
-    #main #about_container>#about_article_wrapper>img {
-        width: 70px;
-        height: 70px;
-    }
 
-    #main #about_container>#about_article_wrapper>p {
-        width: 225px;
-        max-width: 225px;
-    }
-
-    #main #about_container>#my_career_and_tech_stack_wrapper>#career_obj_wrapper {
-        width: 150px;
-        max-width: 150px;
-    }
-
-    #main #about_container>#my_career_and_tech_stack_wrapper>#tech_stack_wrapper {
-        width: 100px;
-        max-width: 100px;
-    }
 
     #main>#contact_container>form {
         width: 310px;
