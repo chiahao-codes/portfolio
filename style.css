@@ -430,7 +430,7 @@ body>#main {
         #main #about_container {
             position: relative;
             width: 100%;
-            top: calc(var(--navbar-height) * 9);
+            top: calc(var(--navbar-height) * 12);
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
