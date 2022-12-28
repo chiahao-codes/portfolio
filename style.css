@@ -449,6 +449,7 @@ body>#main {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            row-gap: -.5em;
             color: white;
         }
     
@@ -460,9 +461,9 @@ body>#main {
             height: fit-content;
             width: 100%;
             color: inherit;
-            bottom: -10px;
+            
             position: relative;
-            top: 10px;
+          
         }
     
         #main #about_container div #about_intro_header {
@@ -473,7 +474,7 @@ body>#main {
             width: 100%;
             color: inherit;
             position: relative;
-            top: -10px;
+            
         }
     
         #main #about_container>#about_article_wrapper {
