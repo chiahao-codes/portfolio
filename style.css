@@ -631,8 +631,8 @@ body>#main {
         }
     
         #main>#contact_container>form {
-            width: 800px;
-            max-width: 800px;
+            width: 295px;
+            max-width: 295px;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -647,8 +647,8 @@ body>#main {
     
         #main>#contact_container>form>input,
         #main>#contact_container>form>textarea {
-            width: 300px;
-            max-width: 300px;
+            width: 85%;
+            max-width: 85%;
             color: white;
             background-color: black;
             font-family: "Cormorant SC", sans-serif;
@@ -748,20 +748,12 @@ body>#main {
             background-color: inherit;
             top: calc(var(--navbar-height) * 8);
         }
-    #main>#contact_container>form {
-        width: 310px;
-        max-width: 310px;
-    }
+   
 
     #main>#contact_container>form>h1 {
         font-size: calc(23px);
     }
 
-    #main>#contact_container>form>input,
-    #main>#contact_container>form>textarea {
-        width: 205px;
-        max-width: 205px;
-    }
 }
 
 
