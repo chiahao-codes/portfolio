@@ -297,7 +297,7 @@ body>#main {
     }
 
     #portfolio_container>#portfolio>article {
-       
+       padding:0 1%;
         width:18.80em ;
         max-width:18.80em ;
     }
