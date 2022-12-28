@@ -597,7 +597,7 @@ body>#main {
         }
     
         #main #about_container>a>div:hover {
-            transform: translate3d(0, -46px, 0);
+            transform: translate3d(0, -100%, 0);
         }
     
         #main #about_container>#res_button_container:active {
