@@ -293,10 +293,11 @@ body>#main {
         width: 100%;
         height: max-content;
         color: inherit;
+        padding:0 5%;
     }
 
     #portfolio_container>#portfolio>article {
-        padding:5%;
+       
         width:18.80em ;
         max-width:18.80em ;
     }
