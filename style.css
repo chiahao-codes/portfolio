@@ -296,9 +296,9 @@ body>#main {
     }
 
     #portfolio_container>#portfolio>article {
-        width: 315px;
-        min-width: 315px;
-        max-width: 315px;
+        width:18.80em ;
+        min-width:18.80em ;
+        max-width:18.80em ;
     }
 
     #portfolio_container>#portfolio article a div img {
