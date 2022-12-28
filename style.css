@@ -559,6 +559,10 @@ body>#main {
         }
     
         #main #about_container>a>div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             border: none;
             border-radius: 10px;
             width: 100px;
@@ -566,7 +570,7 @@ body>#main {
             height: 35px;
             background-color: inherit;
             text-align: center;
-            font-size: medium;
+            font-size: smaller;
             font-weight: 800;
             font-family: "Cormorant SC", sans-serif;
             opacity: .85;
@@ -578,7 +582,6 @@ body>#main {
         #main #about_container>a>div>.cv_download_text {
             display: block;
             color: white;
-            margin:auto;
             text-align: center;
         }
     
