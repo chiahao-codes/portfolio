@@ -561,8 +561,8 @@ body>#main {
         #main #about_container>a>div {
             border: none;
             border-radius: 10px;
-            width: 100px;
-            max-width: 100px;
+            width: 900px;
+            max-width: 900px;
             height: 45px;
             background-color: inherit;
             text-align: center;
