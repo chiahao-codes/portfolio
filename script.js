@@ -214,7 +214,7 @@ function setTransitionProperty() {
   }
   
   aboutContainer.style.transition = "color .1s ease-in";
-  aboutHeaderWrapper.style.transition = "color .1s ease-in";
+  //aboutHeaderWrapper.style.transition = "color .1s ease-in";
   aboutIntro.style.transition = "color .1s ease-in";
   for (let m of myCareerObjAndTechStackWrappers) {
     m.style.transition = "color .1s ease-in";
