@@ -578,13 +578,13 @@ body>#main {
         #main #about_container>a>div>.cv_download_text {
             display: block;
             color: white;
-            margin-top: 21px;
+            margin-top: 10%;
         }
     
         #main #about_container>a>div>img {
             width: 22px;
             height: 22px;
-            margin-top: 27px;
+            margin-top: 25%;
             filter: invert(100%) saturate(200%);
             -webkit-filter: invert(100%) saturate(200%);
         }
