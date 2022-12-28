@@ -561,12 +561,12 @@ body>#main {
         #main #about_container>a>div {
             border: none;
             border-radius: 10px;
-            width: 100px;
-            max-width: 100px;
-            height: 35px;
+            width: 90px;
+            max-width: 90px;
+            height: 45px;
             background-color: inherit;
             text-align: center;
-            font-size: smaller;
+            font-size: medium;
             font-weight: 800;
             font-family: "Cormorant SC", sans-serif;
             opacity: .85;
@@ -579,13 +579,13 @@ body>#main {
             display: block;
             color: white;
             text-align: center;
-            margin-top:12% ;
+            margin-top:10% ;
         }
     
         #main #about_container>a>div>img {
             width: 22px;
             height: 22px;
-            margin-top: 25%;
+            margin-top: 30%;
             filter: invert(100%) saturate(200%);
             -webkit-filter: invert(100%) saturate(200%);
         }
@@ -598,7 +598,7 @@ body>#main {
         }
     
         #main #about_container>a>div:hover {
-            transform: translate3d(0, -115%, 0);
+            transform: translate3d(0, -105%, 0);
         }
     
         #main #about_container>#res_button_container:active {
