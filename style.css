@@ -443,13 +443,12 @@ body>#main {
     
         #main #about_container #about_header_wrapper {
             position: relative;
-            padding-top: 1.5em;
+            padding-top: 2em;
             width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            row-gap: -.5em;
             color: white;
         }
     
