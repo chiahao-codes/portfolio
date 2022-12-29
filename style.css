@@ -251,11 +251,11 @@ body>#main {
     }
 
     #homeHeading>h1 {
-        font-size: calc(23px);
+        font-size: 1.75em;
     }
 
     #homeHeading>h2 {
-        font-size: calc(14px);
+        font-size: 1.14em;
     }
 
     /*portfolio section*/
@@ -270,13 +270,11 @@ body>#main {
         left: 0;
         right: 0;
         color: white;
-        /*top: calc(var(--navbar-height) * 4);*/
-       
         overflow-x: hidden;
     }
 
     #portfolio_container>h1 {
-        font-size: calc(23px);
+        font-size: 1.75em;
         filter: brightness(120%) contrast(120%);
         text-align: center;
         height: fit-content;
@@ -430,8 +428,6 @@ body>#main {
         #main #about_container {
             position: relative;
             width: 100%;
-            /*top: calc(var(--navbar-height) * 6);*/
-            
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -460,7 +456,6 @@ body>#main {
             height: fit-content;
             width: 100%;
             color: inherit;
-            
             position: relative;
           
         }
@@ -859,7 +854,7 @@ body>#main {
     }
 
     #main>#contact_container>form>h1 {
-        font-size: calc(23px);
+        font-size: 1.75em;
     }
 
     #main>#contact_container>form>input,
