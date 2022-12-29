@@ -34,7 +34,7 @@ body>#main {
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
-        row-gap: 75px;
+        row-gap: 80px;
         background-color: inherit;
         width: 100%;
         margin: 0;
