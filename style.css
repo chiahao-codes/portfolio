@@ -508,7 +508,7 @@ body>#main {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            align-content: center;
+            align-items: center;
             color: white;
         }
     
