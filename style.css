@@ -251,11 +251,11 @@ body>#main {
     }
 
     #homeHeading>h1 {
-        font-size: .8em;
+        font-size: 1.75em;
     }
 
     #homeHeading>h2 {
-        font-size: 1.14em;
+        font-size: .8em;
     }
 
     /*portfolio section*/
