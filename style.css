@@ -516,7 +516,7 @@ body>#main {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-content: center;
+            align-items: center;
             padding: 1%;
             color: white;
             background-color: inherit;
