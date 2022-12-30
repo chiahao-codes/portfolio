@@ -768,9 +768,6 @@ body>#main {
     #main #about_container>#my_career_and_tech_stack_wrapper>.career_tech_stack>p {
                width: 280px;
                max-width: 280px;
-               font-size: smaller;
-               font-weight: 600;
-               text-align: center;
            }
 
 
@@ -802,41 +799,22 @@ body>#main {
     #portfolio_container>#portfolio article a div img {
         width: 80px;
         height: 80px;
-        border-radius: rem(2);
-        display: block;
-        filter: brightness(150%), contrast(150%);
     }
 
     .chess_copy_wrapper {
         width: 290px;
         max-width: 290px;
-        height: 100%;
-        position: relative;
-        overflow: hidden;
     }
 
     .calculator_copy_wrapper {
         width: 290px;
         max-width: 290px;
-        height: 100%;
-        position: relative;
-        overflow: hidden;
     }
 
 
     #main>#contact_container>form {
         width: 330px;
         max-width: 330px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        row-gap: 25px;
-        align-items: center;
-        border: 2px solid white;
-        color: white;
-        padding: 3% 0;
-        margin: 0 auto;
-        position: relative;
     }
 }
 
@@ -852,25 +830,16 @@ body>#main {
     #portfolio_container>#portfolio article a div img {
         width: 90px;
         height: 90px;
-        border-radius: rem(2);
-        display: block;
-        filter: brightness(150%), contrast(150%);
     }
 
     .chess_copy_wrapper {
         width: 295px;
         max-width: 295px;
-        height: 100%;
-        position: relative;
-        overflow: hidden;
     }
 
     .calculator_copy_wrapper {
         width: 295px;
         max-width: 295px;
-        height: 100%;
-        position: relative;
-        overflow: hidden;
     }
 
           .proj_heading {
@@ -884,16 +853,6 @@ body>#main {
     #main>#contact_container>form {
         width: 340px;
         max-width: 340px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        row-gap: 25px;
-        align-items: center;
-        border: 2px solid white;
-        color: white;
-        padding: 3% 0;
-        margin: 0 auto;
-        position: relative;
     }
 }
 
