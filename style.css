@@ -285,7 +285,7 @@ body>#main {
     }
 
     #portfolio_container>#portfolio>article {
-       padding:0 2%;
+       padding:0 5px;
         width: 290px; ;
         max-width: 290px; ;
     }
@@ -733,11 +733,8 @@ body>#main {
 
 @media screen and (min-width:480px) {
     #portfolio_container>#portfolio>article {
-            padding: 0 2%;
             width: 310px;
-            ;
             max-width: 310px;
-            ;
         }
 
  #portfolio_container>#portfolio article a div img {
@@ -788,11 +785,8 @@ body>#main {
 
 @media screen and (min-width:650px) {
     #portfolio_container>#portfolio>article {
-        padding: 0 2%;
         width: 390px;
-        ;
         max-width: 390px;
-        ;
     }
 
     #portfolio_container>#portfolio article a div img {
@@ -819,11 +813,8 @@ body>#main {
 
 @media screen and (min-width:840px) {
     #portfolio_container>#portfolio>article {
-        padding: 0 2%;
         width: 405px;
-        ;
         max-width: 405px;
-        ;
     }
 
     #portfolio_container>#portfolio article a div img {
@@ -857,7 +848,7 @@ body>#main {
 
 @media screen and (min-width:992px) {
 
-    /*mode switch*/
+    /*desktop mode switch*/
         body>#main>nav>#mode_switch_social_wrapper {
             position: relative;
             width: 200px;
@@ -905,6 +896,7 @@ body>#main {
             border-color: 2px solid;
         }
     
+        /*desktop social links*/
         nav>#mode_switch_social_wrapper>.social_icon_parent {
             display: flex;
             justify-content: center;
@@ -960,11 +952,9 @@ body>#main {
 
 
 
-
+/*portfolio section*/
     #portfolio_container>#portfolio>article {
-        padding: 0 2%;
         width: 415px;
-
         max-width: 415px;
         
     }
