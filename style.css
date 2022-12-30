@@ -780,3 +780,53 @@ body>#main {
        position: relative;
    }
 }
+
+@media screen and (min-width:650px) {
+    #portfolio_container>#portfolio>article {
+        padding: 0 2%;
+        width: 390px;
+        ;
+        max-width: 390px;
+        ;
+    }
+
+    #portfolio_container>#portfolio article a div img {
+        width: 80px;
+        height: 80px;
+        border-radius: rem(2);
+        display: block;
+        filter: brightness(150%), contrast(150%);
+    }
+
+    .chess_copy_wrapper {
+        width: 290px;
+        max-width: 290px;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .calculator_copy_wrapper {
+        width: 290px;
+        max-width: 290px;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    #main>#contact_container>form {
+        width: 330px;
+        max-width: 330px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        row-gap: 25px;
+        align-items: center;
+        border: 2px solid white;
+        color: white;
+        padding: 3% 0;
+        margin: 0 auto;
+        position: relative;
+    }
+}
