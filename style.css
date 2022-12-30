@@ -865,11 +865,11 @@ body>#main {
     }
 
           .proj_heading {
-              font-size: 1.1em;
+              font-size: 18px;
           }
     
           .proj_copy {
-              font-size: .9em;
+              font-size: 16px;
           }
 
     #main>#contact_container>form {
