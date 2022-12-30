@@ -309,7 +309,7 @@ body>#main {
 
     #chess_link {
         color: inherit;
-        align-content: center;
+        align-items: center;
         display: flex;
         justify-content: space-between;
         text-decoration: none;
@@ -368,7 +368,7 @@ body>#main {
     #calculator_link {
         color: inherit;
         background-color: inherit;
-        align-content: center;
+        align-items: center;
         display: flex;
         justify-content: space-between;
         text-decoration: none;
@@ -741,8 +741,8 @@ body>#main {
         }
 
  #portfolio_container>#portfolio article a div img {
-     width: 20px;
-     height: 20px;
+     width: 70px;
+     height: 70px;
      border-radius: rem(2);
      display: block;
      filter: brightness(150%), contrast(150%);
@@ -766,8 +766,8 @@ body>#main {
 
 
    #main>#contact_container>form {
-       width: 280px;
-       max-width: 280px;
+       width: 290px;
+       max-width: 290px;
        display: flex;
        flex-direction: column;
        justify-content: space-evenly;
