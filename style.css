@@ -483,7 +483,7 @@ body>#main {
             color: inherit;
             font-size: smaller;
             font-weight: 600;
-        
+            
             width: 225px;
             max-width: 225px;
         }
@@ -527,11 +527,9 @@ body>#main {
             max-width: 260px;
             font-size: smaller;
             font-weight: 600;
+            text-align: center;
         }
 
-                #main #about_container>#my_career_and_tech_stack_wrapper>.tech_stack_wrapper>p{
-                    text-align: center;
-                }
     
         #main #about_container>#res_button_container {
             position: relative;
@@ -860,9 +858,9 @@ body>#main {
     #portfolio_container>#portfolio>article {
         padding: 0 2%;
         width: 415px;
-        ;
+
         max-width: 415px;
-        ;
+        
     }
 
     #portfolio_container>#portfolio article a div img {
@@ -895,25 +893,15 @@ body>#main {
                  }
         
                  #main #about_container>#about_article_wrapper>p {
-                     font-size: medium;
+                     font-size: 15px;
                  }
 
    #main #about_container>#my_career_and_tech_stack_wrapper>.career_tech_stack>p {
-       font-size: medium;
+       font-size: 15px;
    }
 
     #main>#contact_container>form {
         width: 340px;
         max-width: 340px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        row-gap: 25px;
-        align-items: center;
-        border: 2px solid white;
-        color: white;
-        padding: 3% 0;
-        margin: 0 auto;
-        position: relative;
     }
 }
