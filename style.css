@@ -483,7 +483,7 @@ body>#main {
             color: inherit;
             font-size: smaller;
             font-weight: 600;
-            text-align: center;
+        
             width: 225px;
             max-width: 225px;
         }
@@ -527,7 +527,6 @@ body>#main {
             max-width: 260px;
             font-size: smaller;
             font-weight: 600;
-            text-align: center;
         }
     
         #main #about_container>#res_button_container {
