@@ -333,13 +333,13 @@ body>#main {
 
     .chess_h3 {
         position: relative;
-        font-size: 1em;
+        font-size: 5%;
         font-weight: 600;
     }
 
     .chess_proj_desc {
         height: 50px;
-        font-size: .8em;
+        font-size: 3%;
         font-weight: 600;
         width: 100%;
         position: relative;
