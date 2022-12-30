@@ -489,8 +489,7 @@ body>#main {
     
         #main #about_container>#my_career_and_tech_stack_wrapper {
             position: relative;
-            width: 70%;
-            max-width: 70%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -523,6 +522,8 @@ body>#main {
         }
 
         #main #about_container>#my_career_and_tech_stack_wrapper>.career_tech_stack>p {
+            width:250px;
+            max-width: 250px;
             font-size: smaller;
             font-weight: 600;
             overflow-wrap: break-word;
