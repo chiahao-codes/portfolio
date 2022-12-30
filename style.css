@@ -864,6 +864,13 @@ body>#main {
         overflow: hidden;
     }
 
+          .proj_heading {
+              font-size: 1.5em;
+          }
+    
+          .proj_copy {
+              font-size: 1em;
+          }
 
     #main>#contact_container>form {
         width: 340px;
