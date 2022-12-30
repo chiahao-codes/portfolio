@@ -522,12 +522,11 @@ body>#main {
         }
 
         #main #about_container>#my_career_and_tech_stack_wrapper>.career_tech_stack>p {
-            width:280px;
-            max-width: 280px;
+            width:260px;
+            max-width: 260px;
             font-size: smaller;
             font-weight: 600;
             text-align: center;
-           
         }
     
         #main #about_container>#res_button_container {
@@ -764,6 +763,14 @@ body>#main {
       position: relative;
       overflow: hidden;
   }
+
+    #main #about_container>#my_career_and_tech_stack_wrapper>.career_tech_stack>p {
+               width: 280px;
+               max-width: 280px;
+               font-size: smaller;
+               font-weight: 600;
+               text-align: center;
+           }
 
 
    #main>#contact_container>form {
