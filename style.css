@@ -528,6 +528,10 @@ body>#main {
             font-size: smaller;
             font-weight: 600;
         }
+
+                #main #about_container>#my_career_and_tech_stack_wrapper>.tech_stack_wrapper>p{
+                    text-align: center;
+                }
     
         #main #about_container>#res_button_container {
             position: relative;
