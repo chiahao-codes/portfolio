@@ -737,6 +737,7 @@ body>#main {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        row-gap: 3px;
         align-items: center;
         background-color: inherit;
         backdrop-filter: saturate(50%) blur(25px);
