@@ -424,6 +424,7 @@ body>#main {
         align-items: center;
         background-color: inherit;
         overflow-x: hidden;
+        padding-bottom: 10px;
     }
 
     #main #about_container #about_header_wrapper {
@@ -540,12 +541,8 @@ body>#main {
         border-radius: 10px;
         border-color: #34c0eb;
         width: fit-content;
-        /*margin: 0 auto;
-        overflow-wrap: normal;
-        */
         text-decoration: none;
         overflow: hidden;
-        z-index: 1;
     }
 
     #main #about_container>a>div {
