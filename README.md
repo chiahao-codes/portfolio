@@ -30,9 +30,9 @@
 
 ## Features
 There is a mode switch to alternate between light and dark mode.
-<picture><img alt="dark mode screenshot" src="darkmode_screenshot.png"></picture>
+<picture><img alt="dark mode screenshot" src="./assets/darkmode_screenshot.png"></picture>
 
-<picture><img alt="light mode screenshot" src="lightmode_screenshot.png"></picture>
+<picture><img alt="light mode screenshot" src="./assets/lightmode_screenshot.png"></picture>
 
 
 The mobile version has a drop-down menu.
