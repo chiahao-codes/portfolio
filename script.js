@@ -43,7 +43,7 @@ let mobileSwitchCircle = document.querySelector(
   "body > #main > .mobile_navigation_links > #mobile_mode_switch_container > .mobile_switch_circle"
 );
 
-//home 
+//home
 let homeContainer = document.getElementsByClassName(
   "home_heading_container"
 )[0];
@@ -58,21 +58,31 @@ let portfolioArticles = document.querySelectorAll(
 );
 
 //about
-let aboutContainer = document.querySelector(
-  "main > #about_container"
+let aboutContainer = document.querySelector("main > #about_container");
+let aboutHeaderWrapper = document.querySelector(
+  "main > #about_container #about_header_wrapper"
 );
-let aboutHeaderWrapper = document.querySelector("main > #about_container #about_header_wrapper");
-let aboutIntro = document.querySelector("main > #about_container #about_article_wrapper p");
+let aboutIntro = document.querySelector(
+  "main > #about_container #about_article_wrapper p"
+);
 let aboutImg = document.querySelector(
   "main > #about_container #about_article_wrapper img"
 );
-let myCareerObjAndTechStackWrappers = document.querySelectorAll("main > #about_container #my_career_and_tech_stack_wrapper > div");
-let resumeButtonContainer = document.querySelector("#main > #about_container > #res_button_container");
+let myCareerObjAndTechStackWrappers = document.querySelectorAll(
+  "main > #about_container #my_career_and_tech_stack_wrapper > div"
+);
+let resumeButtonContainer = document.querySelector(
+  "#main > #about_container > #res_button_container"
+);
 let resumeButton = document.querySelector("#main > #about_container > a > div");
 
 //contact
-let contactHeader = document.querySelector("body> #main > #contact_container>h1");
-let contactForm = document.querySelector("body> #main > #contact_container>form");
+let contactHeader = document.querySelector(
+  "body> #main > #contact_container>h1"
+);
+let contactForm = document.querySelector(
+  "body> #main > #contact_container>form"
+);
 
 //footer
 let footer = document.querySelector("body> #main > footer");
@@ -120,14 +130,14 @@ function navLinkClick() {
           break;
         default:
           console.log("Nav section not found...");
-        break;
+          break;
       }
     });
   }
 }
 
 function navLinkScrollTo(ele) {
-  ele.scrollIntoView({block:"start", behavior:"smooth"});
+  ele.scrollIntoView({ block: "start", behavior: "smooth" });
 }
 
 function setHamburgerInLocalStorage(setting) {
@@ -215,7 +225,7 @@ function setTransitionProperty() {
   for (let p of portfolioArticles) {
     p.style.transition = "background-color .1s ease-in";
   }
-  
+
   aboutContainer.style.transition = "color .1s ease-in";
   //aboutHeaderWrapper.style.transition = "color .1s ease-in";
   aboutIntro.style.transition = "color .1s ease-in";
@@ -247,8 +257,7 @@ function setTransitionProperty() {
 }
 
 function darkMode() {
-  body.style.backgroundColor =
-    "#161617";
+  body.style.backgroundColor = "#161617";
   navBar.style.backgroundColor = "#1a1a1a";
   modeSwitchContainer.style.backgroundColor = "black";
   switchIconWrapper.style.backgroundColor = "black";
@@ -277,9 +286,7 @@ function darkMode() {
   //mobile social media icons;
   for (let i = 0; i < mobileSocialIcons.length; i++) {
     mobileSocialIcons[i].style.filter = "invert(100%)";
-
   }
-  
 
   //mobile mode switch;
   mobileSwitchContainer.style.backgroundColor = "black";
@@ -300,9 +307,9 @@ function darkMode() {
   aboutHeaderWrapper.style.color = "white";
   aboutIntro.style.color = "white";
   for (let m of myCareerObjAndTechStackWrappers) {
-     m.style.color = "white";
+    m.style.color = "white";
   }
-  
+
   //contact
   contactHeader.style.color = "white";
   contactForm.style.borderColor = "white";
@@ -437,4 +444,3 @@ mobileSwitchContainer.addEventListener("click", () => {
     lightMode();
   }
 });
-
