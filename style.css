@@ -729,29 +729,40 @@ body>#main {
         }
     
     body>#main>footer{
+        position: relative;
+        bottom: 0%;
         width:100%;
-        height: 60px;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: inherit;
-        box-shadow: 0 0 10px #000;
         backdrop-filter: saturate(50%) blur(25px);
         -webkit-backdrop-filter: saturate(50%) blur(25px);
     }
 
-        body>#main>footer>a {
+    body>#main>footer>a {
         text-decoration: none;
         font-size: smaller;
-        color: inherit;  
+        color: white;  
+    }
+
+    body>#main>footer>div {
+                    display: flex;
+                    justify-content:space-evenly;
+                    align-items: center;
+                    width: fit-content;
+                    height: min-content;
+                }
+    
+        body>#main>footer>div>img{
+            filter:invert(1) contrast(100%) brightness(100%);
         }
 
-                body>#main>footer>div {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
+        body>#main>footer>div>h5 {
+            color:#f2e24e;
+        }
 
 }
 
