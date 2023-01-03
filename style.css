@@ -758,7 +758,6 @@ body>#main {
                 }
     
         body>#main>footer>div>img{
-            color: white;
             filter:contrast(100%) brightness(100%);
         }
 
