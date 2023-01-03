@@ -503,6 +503,7 @@ body>#main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        row-gap: 5px;
         padding: 1%;
         color: white;
         background-color: inherit;
@@ -520,6 +521,7 @@ body>#main {
 
     #main #about_container>#my_career_and_tech_stack_wrapper>.career_tech_stack>h3 {
         text-align: center;
+        margin:0px;
     }
 
     #main #about_container>#my_career_and_tech_stack_wrapper>.career_tech_stack>p {
