@@ -752,16 +752,18 @@ body>#main {
                     display: flex;
                     justify-content:space-evenly;
                     align-items: center;
-                    width: fit-content;
+                    width: 200px;
+                    column-gap: 10px;
                     height: min-content;
                 }
     
         body>#main>footer>div>img{
-            filter:invert(1) contrast(100%) brightness(100%);
+            color: white;
+            filter:contrast(100%) brightness(100%);
         }
 
         body>#main>footer>div>h5 {
-            color:#f2e24e;
+            color:#dbc91f;
         }
 
 }
