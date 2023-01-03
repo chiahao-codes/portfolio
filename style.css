@@ -750,8 +750,7 @@ body>#main {
     }
 
         body>#main>footer>h5 {
-            top:0;
-            bottom:0;
+           margin:0px;
         }
 
     body>#main>footer>img {
