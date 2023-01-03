@@ -74,7 +74,10 @@ let resumeButton = document.querySelector("#main > #about_container > a > div");
 let contactHeader = document.querySelector("body> #main > #contact_container>h1");
 let contactForm = document.querySelector("body> #main > #contact_container>form");
 
-
+//footer
+let footer = document.querySelector("body> #main > footer");
+let icons8Link = document.querySelector("body> #main > footer > a");
+let copyrightImg = document.querySelector("body> #main > footer > img");
 
 let sectionElements = document.querySelectorAll("body>#main>section");
 
@@ -235,6 +238,12 @@ function setTransitionProperty() {
   //contact
   contactHeader.style.transition = "top .1s ease-in-out";
   contactForm.style.transition = "top .1s ease-in-out";
+
+  //footer
+  footer.style.transition = "top .1s ease-in-out";
+  copyrightImg.style.transitionProperty = "transform filter ";
+  copyrightImg.style.transitionDuration = ".5s 0s ";
+  copyrightImg.style.transitionTimingFunction = "ease-in-out";
 }
 
 function darkMode() {
@@ -298,7 +307,9 @@ function darkMode() {
   contactHeader.style.color = "white";
   contactForm.style.borderColor = "white";
 
-  
+  //footer
+  footer.style.color = "white";
+  copyrightImg.style.filter = "invert(1)";
 
   localStorage.setItem("mode", "dark");
 }
@@ -362,7 +373,9 @@ function lightMode() {
   contactHeader.style.color = "black";
   contactForm.style.borderColor = "black";
 
-  
+  //footer
+  footer.style.color = "black";
+  copyrightImg.style.filter = "invert(0%)";
 
   localStorage.setItem("mode", "light");
 }
