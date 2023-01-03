@@ -906,6 +906,7 @@ body>#main {
 
     nav>#mode_switch_social_wrapper>#mode_switch_container>.switch_circle {
         position: absolute;
+        border-radius: 50%;
         right: 1px;
         filter: invert(1);
         top: auto;
