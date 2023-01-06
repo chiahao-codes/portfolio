@@ -909,6 +909,7 @@ body>#main {
         border-radius: 50%;
         right: 1px;
         filter: invert(1);
+        -webkit-filter: invert(1);
         top: auto;
         bottom: auto;
         z-index: 1;
@@ -948,6 +949,7 @@ body>#main {
 
     nav>#mode_switch_social_wrapper>.social_icon_parent>a>.social_icon {
         filter: invert(1);
+        -webkit-filter: invert(1);
         cursor: pointer;
     }
 

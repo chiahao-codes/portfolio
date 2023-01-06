@@ -263,14 +263,17 @@ function darkMode() {
   switchIconWrapper.style.backgroundColor = "black";
   switchCircle.style.transform = "translateX(1.5px)";
   switchCircle.style.filter = "invert(100%)";
+  switchCircle.style.webkitFilter = "invert(100%)";
   navLinksWrapper.style.color = "white";
 
   for (let i = 0; i < socialIcons.length; i++) {
     socialIcons[i].style.filter = "invert(100%)";
+    socialIcons[i].style.webkitFilter = "invert(100%)";
   }
 
   for (let n of navLinks) {
     n.style.filter = "brightness(110%), contrast(110%)";
+    n.style.webkitFilter = "brightness(110%), contrast(110%)";
     n.style.fontWeight = "600";
   }
 
@@ -286,12 +289,14 @@ function darkMode() {
   //mobile social media icons;
   for (let i = 0; i < mobileSocialIcons.length; i++) {
     mobileSocialIcons[i].style.filter = "invert(100%)";
+    mobileSocialIcons[i].style.webkitFilter = "invert(100%)";
   }
 
   //mobile mode switch;
   mobileSwitchContainer.style.backgroundColor = "black";
   mobileSwitchCircle.style.transform = "translateX(.1px)";
   mobileSwitchCircle.style.filter = "invert(100%)";
+  mobileSwitchCircle.style.webkitFilter = "invert(100%)";
 
   //page body
   homeContainer.style.color = "white";
@@ -317,6 +322,7 @@ function darkMode() {
   //footer
   footer.style.color = "white";
   copyrightImg.style.filter = "invert(1)";
+  copyrightImg.style.webkitFilter = "invert(1)";
 
   localStorage.setItem("mode", "dark");
 }
@@ -328,14 +334,17 @@ function lightMode() {
   switchIconWrapper.style.backgroundColor = "#dcdcde";
   switchCircle.style.transform = "translateX(-28.5px)";
   switchCircle.style.filter = "invert(0%)";
+  switchCircle.style.webkitFilter = "invert(0%)";
   navLinksWrapper.style.color = "black";
 
   for (let i = 0; i < socialIcons.length; i++) {
     socialIcons[i].style.filter = "invert(0%)";
+    socialIcons[i].style.webkitFilter = "invert(0%)";
   }
 
   for (let n of navLinks) {
     n.style.filter = "brightness(110%), contrast(110%)";
+    n.style.webkitFilter = "brightness(110%), contrast(110%)";
     n.style.fontWeight = "600";
   }
 
@@ -351,13 +360,14 @@ function lightMode() {
   //mobile social media icons;
   for (let i = 0; i < mobileSocialIcons.length; i++) {
     mobileSocialIcons[i].style.filter = "invert(0%)";
-    console.log("light mode -- mobile social icons");
+    mobileSocialIcons[i].style.webkitFilter = "invert(0%)";
   }
 
   //mobile mode switch;
   mobileSwitchContainer.style.backgroundColor = "#dcdcde";
   mobileSwitchCircle.style.transform = "translateX(-29.5px)";
   mobileSwitchCircle.style.filter = "invert(0%)";
+  mobileSwitchCircle.style.webkitFilter = "invert(0%)";
 
   //page body;
   homeContainer.style.color = "black";
@@ -383,6 +393,7 @@ function lightMode() {
   //footer
   footer.style.color = "black";
   copyrightImg.style.filter = "invert(0%)";
+  copyrightImg.style.webkitFilter = "invert(0%)";
 
   localStorage.setItem("mode", "light");
 }
