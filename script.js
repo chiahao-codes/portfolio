@@ -1,26 +1,26 @@
 let body = document.querySelector("body");
 let abortController = new AbortController();
-let navBar = document.getElementsByClassName("nav_bar")[0];
+let header = document.getElementsByClassName("header")[0];
 
 //Nav: Desktop mode
 let switchCircle = document.querySelector(
-  "body main #navBar > #mode_switch_social_wrapper > #mode_switch_container > .switch_circle"
+  "body main #header > #mode_switch_social_wrapper > #mode_switch_container > .switch_circle"
 );
 let modeSwitchContainer = document.querySelector(
-  "main #navBar #mode_switch_social_wrapper #mode_switch_container"
+  "main #header #mode_switch_social_wrapper #mode_switch_container"
 );
 let switchIconWrapper = document.querySelector(
-  "main #navBar #mode_switch_social_wrapper #mode_switch_container #switch_icon_wrapper"
+  "main #header #mode_switch_social_wrapper #mode_switch_container #switch_icon_wrapper"
 );
 let socialIcons = document.querySelectorAll(
   "body main nav #mode_switch_social_wrapper .social_icon_parent > a > .social_icon"
 );
 let navLinksWrapper = document.querySelectorAll(
-  "main #navBar > #navigation_links_wrapper"
+  "main #header > #navigation_links_wrapper"
 )[0];
 let navLinks = navLinksWrapper.children;
 let hamburgerMenuWrapper = document.querySelector(
-  "body > main #navBar > .menu_icon_wrapper"
+  "body > main #header > .menu_icon_wrapper"
 );
 let menuIcon = document.querySelectorAll(
   " body main nav #menuIconWrapper > .menuIcon"
@@ -212,7 +212,7 @@ function hamburgerClose() {
 
 function setTransitionProperty() {
   body.style.transition = "background-color .1s ease-in";
-  navBar.style.transition = "background-color .1s ease-in";
+  header.style.transition = "background-color .1s ease-in";
   modeSwitchContainer.style.transition = "background-color .1s ease-in";
   switchIconWrapper.style.transition = "background-color .1s ease-in";
 
@@ -258,7 +258,7 @@ function setTransitionProperty() {
 
 function darkMode() {
   body.style.backgroundColor = "#161617";
-  navBar.style.backgroundColor = "#1a1a1a";
+  header.style.backgroundColor = "#1a1a1a";
   modeSwitchContainer.style.backgroundColor = "black";
   switchIconWrapper.style.backgroundColor = "black";
   switchCircle.style.transform = "translateX(1.5px)";
@@ -329,7 +329,7 @@ function darkMode() {
 
 function lightMode() {
   body.style.backgroundColor = "#f5f5f5";
-  navBar.style.backgroundColor = "#ebeded";
+  header.style.backgroundColor = "#ebeded";
   modeSwitchContainer.style.backgroundColor = "#dcdcde";
   switchIconWrapper.style.backgroundColor = "#dcdcde";
   switchCircle.style.transform = "translateX(-28.5px)";
