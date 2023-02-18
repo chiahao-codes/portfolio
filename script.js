@@ -13,7 +13,7 @@ let switchIconWrapper = document.querySelector(
   "main #header #mode_switch_social_wrapper #mode_switch_container #switch_icon_wrapper"
 );
 let socialIcons = document.querySelectorAll(
-  "body main nav #mode_switch_social_wrapper .social_icon_parent > a > .social_icon"
+  "body main header #mode_switch_social_wrapper .social_icon_parent > a > .social_icon"
 );
 let navLinksWrapper = document.querySelectorAll(
   "main #header > #navigation_links_wrapper"
