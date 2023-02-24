@@ -163,7 +163,7 @@ body>#main {
 
     body>#main>.mobile_navigation_links>div>h3 {
         display: block;
-        width: 100%;
+        width: max-content;
         text-align: center;
         font-size: 20px;
     }
