@@ -399,7 +399,7 @@ function lightMode() {
 }
 
 window.addEventListener("load", () => {
-  localStorage.setItem("mode", "dark");
+  localStorage.setItem("mode", "light");
   localStorage.setItem("hamburger", "closed");
   navLinkScrollTo(body);
   navLinkClick();
