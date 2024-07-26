@@ -439,7 +439,7 @@ hamburgerMenuWrapper.addEventListener(
 
 //mode switch
 modeSwitchContainer.addEventListener("click", function () {
-  if (localStorage.getItem("mode") !== "dark") {
+  if (localStorage.getItem("mode") === "dark") {
     darkMode();
   } else {
     lightMode();
