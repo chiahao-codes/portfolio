@@ -312,7 +312,18 @@ body > #main {
     filter: brightness(150%), contrast(150%);
   }
 
-  #chess_article {
+  /*
+    #chess_article {
+    color: inherit;
+    height: 108px;
+    border-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    filter: brightness(150%), contrast(150%);
+    background-color: black;
+  }
+
+  */
+  .article-parent {
     color: inherit;
     height: 108px;
     border-color: white;
@@ -369,6 +380,8 @@ body > #main {
     align-items: center;
   }
 
+  /**
+
   #calculator_article {
     color: inherit;
     height: 108px;
@@ -378,7 +391,6 @@ body > #main {
     background-color: black;
   }
 
-  /**
   #calculator_link {
     color: inherit;
     background-color: inherit;
