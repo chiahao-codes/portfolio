@@ -321,6 +321,13 @@ body > #main {
     filter: brightness(150%), contrast(150%);
     background-color: black;
   }
+ .chess_copy_wrapper {
+    width: 210px;
+    max-width: 210px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
 
   */
   .article-parent {
@@ -342,8 +349,7 @@ body > #main {
     height: 100%;
     background-color: inherit;
   }
-
-  .chess_copy_wrapper {
+  .copy_wrapper {
     width: 210px;
     max-width: 210px;
     height: 100%;
@@ -351,26 +357,18 @@ body > #main {
     overflow: hidden;
   }
 
-  .chess_copy_wrapper > header {
+  .copy_wrapper > header {
     position: relative;
     top: -10%;
   }
 
-  .chess_h3 {
+  .proj_heading {
     position: relative;
     font-size: 16px;
     font-weight: 600;
   }
 
-  .chess_proj_desc {
-    height: 50px;
-    font-size: 13px;
-    font-weight: 600;
-    width: 100%;
-    position: relative;
-    padding-bottom: 3px;
-  }
-
+  /**
   .chess_img_wrapper {
     border-color: white;
     height: 100%;
@@ -379,8 +377,28 @@ body > #main {
     justify-content: center;
     align-items: center;
   }
-
-  /**
+    
+   .chess_proj_desc {
+    height: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    width: 100%;
+    position: relative;
+    padding-bottom: 3px;
+  }
+ .calculator_proj_desc {
+    height: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    width: 100%;
+    position: relative;
+    padding-bottom: 3px;
+  }
+  .calculator_h3 {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+  }
 
   #calculator_article {
     color: inherit;
@@ -401,27 +419,20 @@ body > #main {
     width: 100%;
     height: 100%;
   }
-*/
-  .calculator_copy_wrapper {
+    .calculator_copy_wrapper {
     width: 210px;
     max-width: 210px;
     height: 100%;
     position: relative;
     overflow: hidden;
   }
-
-  .calculator_copy_wrapper > header {
+      .calculator_copy_wrapper > header {
     position: relative;
     top: -10%;
   }
+*/
 
-  .calculator_h3 {
-    position: relative;
-    font-size: 16px;
-    font-weight: 600;
-  }
-
-  .calculator_proj_desc {
+  .proj_copy {
     height: 50px;
     font-size: 13px;
     font-weight: 600;
@@ -430,7 +441,7 @@ body > #main {
     padding-bottom: 3px;
   }
 
-  .calculator_img_wrapper {
+  .img_wrapper {
     border-color: white;
     height: 100%;
     width: max-content;
@@ -811,15 +822,7 @@ body > #main {
     filter: brightness(150%), contrast(150%);
   }
 
-  .chess_copy_wrapper {
-    width: 220px;
-    max-width: 220px;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .calculator_copy_wrapper {
+  .copy_wrapper {
     width: 220px;
     max-width: 220px;
     height: 100%;
@@ -863,12 +866,7 @@ body > #main {
     height: 80px;
   }
 
-  .chess_copy_wrapper {
-    width: 290px;
-    max-width: 290px;
-  }
-
-  .calculator_copy_wrapper {
+  .copy_wrapper {
     width: 290px;
     max-width: 290px;
   }
@@ -890,12 +888,7 @@ body > #main {
     height: 90px;
   }
 
-  .chess_copy_wrapper {
-    width: 295px;
-    max-width: 295px;
-  }
-
-  .calculator_copy_wrapper {
+  .copy_wrapper {
     width: 295px;
     max-width: 295px;
   }
@@ -1048,15 +1041,7 @@ body > #main {
     filter: brightness(150%), contrast(150%);
   }
 
-  .chess_copy_wrapper {
-    width: 300px;
-    max-width: 300px;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .calculator_copy_wrapper {
+  .copy_wrapper {
     width: 300px;
     max-width: 300px;
     height: 100%;
