@@ -304,12 +304,12 @@ body > #main {
     max-width: 290px;
   }
 
-  #portfolio_container > #portfolio article a div img {
+  .square {
     width: 60px;
     height: 60px;
     border-radius: rem(2);
     display: block;
-    filter: brightness(150%), contrast(150%);
+    filter: brightness(100%), contrast(100%);
   }
 
   /*
@@ -815,14 +815,20 @@ body > #main {
     max-width: 310px;
   }
 
-  #portfolio_container > #portfolio article a div img {
+  .square {
     width: 70px;
     height: 70px;
     border-radius: rem(2);
     display: block;
-    filter: brightness(150%), contrast(150%);
+    filter: brightness(100%) contrast(100%);
   }
-
+  .rect {
+    width: 65px;
+    height: 70px;
+    border-radius: rem(2);
+    display: block;
+    filter: brightness(100%) contrast(100%);
+  }
   .copy_wrapper {
     width: 220px;
     max-width: 220px;
@@ -862,11 +868,14 @@ body > #main {
     max-width: 390px;
   }
 
-  #portfolio_container > #portfolio article a div img {
+  .square {
     width: 80px;
     height: 80px;
   }
-
+  .rect {
+    width: 75px;
+    height: 80px;
+  }
   .copy_wrapper {
     width: 290px;
     max-width: 290px;
@@ -884,8 +893,13 @@ body > #main {
     max-width: 405px;
   }
 
-  #portfolio_container > #portfolio article a div img {
+  .square {
     width: 90px;
+    height: 90px;
+  }
+
+  .rect {
+    width: 85px;
     height: 90px;
   }
 
@@ -1034,12 +1048,20 @@ body > #main {
     max-width: 415px;
   }
 
-  #portfolio_container > #portfolio article a div img {
+  .square {
     width: 95px;
     height: 95px;
     border-radius: rem(2);
     display: block;
-    filter: brightness(150%), contrast(150%);
+    filter: brightness(100%), contrast(100%);
+  }
+
+  .rect {
+    width: 90px;
+    height: 95px;
+    border-radius: rem(2);
+    display: block;
+    filter: brightness(100%), contrast(100%);
   }
 
   .copy_wrapper {
