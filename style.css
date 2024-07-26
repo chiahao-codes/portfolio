@@ -335,12 +335,12 @@ body > #main {
     height: 108px;
     border-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    filter: brightness(150%) contrast(150%);
+    filter: brightness(50%) contrast(50%);
     background-color: black;
   }
 
   .article-parent:hover {
-    border-color: aqua;
+    border-color: navy;
   }
 
   .article-parent:active {
