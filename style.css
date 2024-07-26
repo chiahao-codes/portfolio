@@ -28,6 +28,7 @@ body > #main {
 }
 @media screen and (min-width: 320px) {
   body > #main {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -39,7 +40,6 @@ body > #main {
     font-family: "Cormorant SC", sans-serif;
     padding-top: 60px;
     padding-bottom: 10px;
-    position: relative;
   }
 
   body > #main > #header {
