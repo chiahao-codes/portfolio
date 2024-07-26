@@ -350,9 +350,6 @@ body > #main {
     background-color: inherit;
   }
 
-  .link:hover {
-    border-color: #013c8a;
-  }
   .copy_wrapper {
     width: 210px;
     max-width: 210px;
