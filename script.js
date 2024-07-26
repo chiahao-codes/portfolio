@@ -439,7 +439,7 @@ hamburgerMenuWrapper.addEventListener(
 
 //mode switch
 modeSwitchContainer.addEventListener("click", function () {
-  if (localStorage.getItem("mode") === "dark") {
+  if (localStorage.getItem("mode") !== "dark") {
     darkMode();
   } else {
     lightMode();
@@ -449,7 +449,7 @@ modeSwitchContainer.addEventListener("click", function () {
 //mobile nav bar mode switch
 mobileSwitchContainer.addEventListener("click", () => {
   setTransitionProperty();
-  if (localStorage.getItem("mode") === "dark") {
+  if (localStorage.getItem("mode") !== "dark") {
     darkMode();
   } else {
     lightMode();
