@@ -339,14 +339,6 @@ body > #main {
     background-color: black;
   }
 
-  .article-parent:hover {
-    border-color: navy;
-  }
-
-  .article-parent:active {
-    box-shadow: rgba(0, 0, 0, 0.35), 0px, 1px, 1px;
-  }
-
   .link {
     color: inherit;
     align-items: center;
@@ -356,6 +348,10 @@ body > #main {
     width: 100%;
     height: 100%;
     background-color: inherit;
+  }
+
+  .link:hover {
+    border-color: #013c8a;
   }
   .copy_wrapper {
     width: 210px;
