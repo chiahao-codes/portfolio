@@ -823,7 +823,7 @@ body > #main {
     filter: brightness(100%) contrast(100%);
   }
   .rect {
-    width: 65px;
+    width: 60px;
     height: 70px;
     border-radius: rem(2);
     display: block;
@@ -873,7 +873,7 @@ body > #main {
     height: 80px;
   }
   .rect {
-    width: 75px;
+    width: 70px;
     height: 80px;
   }
   .copy_wrapper {
@@ -899,7 +899,7 @@ body > #main {
   }
 
   .rect {
-    width: 85px;
+    width: 80px;
     height: 90px;
   }
 
@@ -1057,7 +1057,7 @@ body > #main {
   }
 
   .rect {
-    width: 90px;
+    width: 80px;
     height: 95px;
     border-radius: rem(2);
     display: block;
