@@ -955,8 +955,8 @@ body > #main {
     position: absolute;
     border-radius: 50%;
     right: 1px;
-    filter: invert(1);
-    -webkit-filter: invert(1);
+    filter: invert(0);
+    -webkit-filter: invert(0);
     top: auto;
     bottom: auto;
     z-index: 1;
