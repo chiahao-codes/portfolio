@@ -399,7 +399,7 @@ function lightMode() {
 }
 
 window.addEventListener("load", () => {
-  localStorage.setItem("mode", "light");
+  localStorage.setItem("mode", "dark");
   localStorage.setItem("hamburger", "closed");
   navLinkScrollTo(body);
   navLinkClick();
@@ -449,7 +449,7 @@ modeSwitchContainer.addEventListener("click", function () {
 //mobile nav bar mode switch
 mobileSwitchContainer.addEventListener("click", () => {
   setTransitionProperty();
-  if (localStorage.getItem("mode") !== "dark") {
+  if (localStorage.getItem("mode") === "light") {
     darkMode();
   } else {
     lightMode();
