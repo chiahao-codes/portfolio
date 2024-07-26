@@ -445,7 +445,7 @@ body > #main {
   .img_wrapper {
     border-color: white;
     height: 100%;
-    width: max-content;
+    width: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
