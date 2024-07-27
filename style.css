@@ -279,7 +279,7 @@ body > #main {
     left: 0;
     right: 0;
     color: black;
-    overflow-x: visible;
+    overflow-y: visible;
   }
 
   #portfolio_container > h1 {
