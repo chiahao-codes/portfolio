@@ -367,7 +367,7 @@ function lightMode() {
   }
 
   //mobile mode switch;
-  mobileSwitchContainer.style.backgroundColor = "#dcdcde";
+  mobileSwitchContainer.style.backgroundColor = "#f5f5f5";
   mobileSwitchCircle.style.transform = "translateX(-29.5px)";
   mobileSwitchCircle.style.filter = "invert(0%)";
   mobileSwitchCircle.style.webkitFilter = "invert(0%)";
