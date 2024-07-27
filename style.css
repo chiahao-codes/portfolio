@@ -162,8 +162,8 @@ body > #main {
     > #mobile_social_icon_parent
     > a
     > .mobile_social_icon {
-    filter: invert(100%);
-    -webkit-filter: invert(100%);
+    filter: invert(0);
+    -webkit-filter: invert(0);
     cursor: pointer;
   }
 
@@ -179,7 +179,7 @@ body > #main {
   }
 
   body > #main > .mobile_navigation_links > #mobile_mode_switch_container {
-    background-color: white;
+    background-color: var(--lightMode-back-white);
     width: 60px;
     height: 28px;
     border-radius: 40px;
@@ -200,8 +200,8 @@ body > #main {
     position: absolute;
     /*right: 1.9px;*/
     left: 1.9px;
-    filter: invert(0%);
-    -webkit-filter: invert(0%);
+    filter: invert(0);
+    -webkit-filter: invert(0);
     top: auto;
     bottom: auto;
     z-index: 3;
@@ -960,8 +960,8 @@ body > #main {
     border-radius: 50%;
     /*right: 1px;*/
     left: 1px;
-    filter: invert(1);
-    -webkit-filter: invert(1);
+    filter: invert(0);
+    -webkit-filter: invert(0);
     top: auto;
     bottom: auto;
     z-index: 1;
@@ -1011,8 +1011,8 @@ body > #main {
     > .social_icon_parent
     > a
     > .social_icon {
-    filter: invert(1);
-    -webkit-filter: invert(1);
+    filter: invert(0);
+    -webkit-filter: invert(0);
     cursor: pointer;
   }
 
