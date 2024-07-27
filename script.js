@@ -355,7 +355,7 @@ function lightMode() {
   }
 
   //mobile navigation links
-  navContainer.style.backgroundColor = "#dcdcde";
+  navContainer.style.backgroundColor = "#ebeded";
   for (let mn of mobileNavLinks) {
     mn.style.color = "black";
   }
