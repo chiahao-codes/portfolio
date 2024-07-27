@@ -401,6 +401,7 @@ function lightMode() {
 window.addEventListener("load", () => {
   localStorage.setItem("mode", "light");
   localStorage.setItem("hamburger", "closed");
+  lightMode();
   navLinkScrollTo(body);
   navLinkClick();
 });
