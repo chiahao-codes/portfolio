@@ -449,7 +449,7 @@ modeSwitchContainer.addEventListener("click", function () {
 //mobile nav bar mode switch
 mobileSwitchContainer.addEventListener("click", () => {
   setTransitionProperty();
-  if (localStorage.getItem("mode") === "light") {
+  if (localStorage.getItem("mode") !== "dark") {
     darkMode();
   } else {
     lightMode();
