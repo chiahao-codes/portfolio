@@ -27,6 +27,7 @@ let menuIcon = document.querySelectorAll(
 );
 
 //Nav: Mobile mode
+let navContainer = document.querySelector(".mobile_navigation_links");
 let mobileDropMenu = document.querySelector(
   "body main > .mobile_navigation_links"
 );
@@ -282,6 +283,7 @@ function darkMode() {
   }
 
   //mobile navigation links
+  navContainer.style.backgroundColor = "#161617";
   for (let mn of mobileNavLinks) {
     mn.style.color = "white";
   }
@@ -353,6 +355,7 @@ function lightMode() {
   }
 
   //mobile navigation links
+  navContainer.style.backgroundColor = "#dcdcde";
   for (let mn of mobileNavLinks) {
     mn.style.color = "black";
   }
