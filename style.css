@@ -183,6 +183,7 @@ body > #main {
     width: 60px;
     height: 28px;
     border-radius: 40px;
+    border-color: var(--darkMode-background-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -944,6 +945,7 @@ body > #main {
     width: 65px;
     height: 30px;
     border-radius: 40px;
+    border-color: var(--darkMode-background-color);
     display: flex;
     justify-content: left;
     align-items: center;
