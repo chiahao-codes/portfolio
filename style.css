@@ -118,7 +118,7 @@ body > #main {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    background-color: inherit;
+    background-color: var(--header-white);
     width: 100%;
     height: max-content;
     row-gap: 17px;
