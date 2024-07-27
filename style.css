@@ -316,7 +316,13 @@ body > #main {
     display: block;
     filter: brightness(100%), contrast(100%);
   }
-
+  .rect {
+    width: 50px;
+    height: 60px;
+    border-radius: rem(2);
+    display: block;
+    filter: brightness(100%) contrast(100%);
+  }
   /*
     #chess_article {
     color: inherit;
