@@ -965,13 +965,9 @@ body > #main {
     > .switch_circle {
     position: absolute;
     border-radius: 50%;
-
-    left: 1px;
-    /*
-      filter: invert(0);
+    right: 1px;
+    filter: invert(0);
     -webkit-filter: invert(0);
-    */
-
     top: auto;
     bottom: auto;
     z-index: 1;
