@@ -200,10 +200,10 @@ body > #main {
     > #mobile_mode_switch_container
     > .mobile_switch_circle {
     position: absolute;
-    /*right: 1.9px;
+
+    right: 1.9px;
     filter: invert(0);
     -webkit-filter: invert(0);
-    */
     top: auto;
     bottom: auto;
     z-index: 3;
