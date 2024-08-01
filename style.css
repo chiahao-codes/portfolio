@@ -968,10 +968,10 @@ body > #main {
 
     left: 1px;
     /*
-    
+      filter: invert(0);
+    -webkit-filter: invert(0);
     */
-    filter: invert(1);
-    -webkit-filter: invert(1);
+
     top: auto;
     bottom: auto;
     z-index: 1;
