@@ -420,17 +420,17 @@ window.addEventListener("resize", () => {
 hamburgerMenuWrapper.addEventListener(
   "click",
   async () => {
-    await abortSignal(abortController)
-      .then(() => {
-        setTransitionProperty();
-        if (localStorage.getItem("hamburger") === "closed") {
-          mobileNavShutter(hamburgerOpen);
-          //setHamburgerInLocalStorage("open");
-        } else {
-          mobileNavShutter(hamburgerClose);
-          //setHamburgerInLocalStorage("closed");
-        }
-      })
+    // await abortSignal(abortController) .then
+    await (() => {
+      setTransitionProperty();
+      if (localStorage.getItem("hamburger") === "closed") {
+        mobileNavShutter(hamburgerOpen);
+        //setHamburgerInLocalStorage("open");
+      } else {
+        mobileNavShutter(hamburgerClose);
+        //setHamburgerInLocalStorage("closed");
+      }
+    })
       .then(() => {
         windowScrollHamburgerClose();
       })
