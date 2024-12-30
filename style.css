@@ -353,9 +353,9 @@ body > #main {
     height: 50px;
     font-size: 13px;
     font-weight: 600;
-    width: 100%;
+    width: 80%;
     position: relative;
-    padding-bottom: 3px;
+    padding: 3px;
   }
 
   .img_wrapper {
