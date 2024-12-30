@@ -309,7 +309,13 @@ body > #main {
     width: 290px;
     max-width: 290px;
   }
-
+  .chineseflix-img {
+    width: 70px;
+    height: 50px;
+    border-radius: rem(2);
+    display: block;
+    filter: brightness(100%), contrast(100%);
+  }
   .square {
     width: 60px;
     height: 60px;
