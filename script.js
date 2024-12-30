@@ -419,24 +419,14 @@ window.addEventListener("resize", () => {
 //mobile hamburger menu
 hamburgerMenuWrapper.addEventListener(
   "click",
-  async () => {
-    // await abortSignal(abortController) .then
-    await (() => {
-      setTransitionProperty();
-      if (localStorage.getItem("hamburger") === "closed") {
-        mobileNavShutter(hamburgerOpen);
-        //setHamburgerInLocalStorage("open");
-      } else {
-        mobileNavShutter(hamburgerClose);
-        //setHamburgerInLocalStorage("closed");
-      }
-    })
-      .then(() => {
-        windowScrollHamburgerClose();
-      })
-      .catch(() => {
-        console.log("Promise error");
-      });
+  () => {
+    setTransitionProperty();
+    if (localStorage.getItem("hamburger") === "closed") {
+      mobileNavShutter(hamburgerOpen);
+    } else {
+      mobileNavShutter(hamburgerClose);
+    }
+    windowScrollHamburgerClose();
   },
   { passive: true }
 );
