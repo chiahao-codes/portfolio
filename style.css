@@ -367,14 +367,6 @@ body > #main {
     align-items: center;
   }
 
-  #chineseflix-img {
-    width: 80px;
-    max-width: 80px;
-    border-radius: rem(2);
-    display: block;
-    filter: brightness(100%), contrast(100%);
-  }
-
   .square {
     width: 60px;
     height: 60px;
