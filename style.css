@@ -368,8 +368,8 @@ body > #main {
   }
 
   .square {
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 60px;
     border-radius: rem(2);
     display: block;
     filter: brightness(100%), contrast(100%);
