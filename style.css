@@ -369,6 +369,7 @@ body > #main {
 
   .square {
     width: 60px;
+    max-width: 65;
     height: 60px;
     border-radius: rem(2);
     display: block;
