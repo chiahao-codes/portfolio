@@ -29,10 +29,10 @@ let menuIcon = document.querySelectorAll(
 //Nav: Mobile mode
 let navContainer = document.querySelector(".mobile_navigation_links");
 let mobileDropMenu = document.querySelector(
-  "body main > .mobile_navigation_links"
+  "body > main > .mobile_navigation_links"
 );
 let mobileNavLinks = document.querySelectorAll(
-  "body main > .mobile_navigation_links > div > h3"
+  "body > main > .mobile_navigation_links > div > h3"
 );
 let mobileSocialIcons = document.querySelectorAll(
   "body > #main > .mobile_navigation_links > #mobile_social_icon_parent > a > img"
