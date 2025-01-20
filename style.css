@@ -609,13 +609,22 @@ body > #main {
     align-items: center;
     row-gap: 5px;
   }
+
   #contact-paragraph-container > .contact-message {
+    color: black;
+    font-weight: 600;
+  }
+
+  .email-address {
+    text-decoration: none;
     color: black;
   }
 
-  #contact-paragraph-container > .email-address {
-    text-decoration: none;
+  .email-address:hover {
+    cursor: pointer;
+    font-size: larger;
   }
+
   /**
 
   #main > #contact_container > form {
