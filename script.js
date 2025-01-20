@@ -20,10 +20,10 @@ let navLinksWrapper = document.querySelectorAll(
 )[0];
 let navLinks = navLinksWrapper.children;
 let hamburgerMenuWrapper = document.querySelector(
-  "body > main #header > .menu_icon_wrapper"
+  "body > main > #header > .menu_icon_wrapper"
 );
 let menuIcon = document.querySelectorAll(
-  " body main header #menuIconWrapper > .menuIcon"
+  " body> main > #header > #menuIconWrapper > .menuIcon"
 );
 
 //Nav: Mobile mode
