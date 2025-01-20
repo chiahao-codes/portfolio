@@ -227,10 +227,10 @@
 
         <section id="contact_container">
             <h1 id="contact_header" class="section_h1">Contact</h1>
-            <form action="https://api.web3forms.com/submit" method="POST">
+            <form id="submission-form" action="https://api.web3forms.com/submit" method="POST">
+                <div class="h-captcha" data-captcha="true"></div>
 
-                <input type="hidden" name="access_key" value="">
-                <input type="text" name="hiddenField" style="display:none;" autocomplete="off">
+                <input type="hidden" name="access_key" value="0e253c78-ef00-4238-8cd3-90873e67eb3c">
 
                 <input type="text" name="name" placeholder="Name" required>
                 <input type="email" name="email" placeholder="Email" required>
@@ -252,6 +252,21 @@
     </main>
 
     <script src="script.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script>
+        const form = document.getElementById('submission-form');
+
+        form.addEventListener('submit', function (e) {
+
+            const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+            if (!hCaptcha) {
+                e.preventDefault();
+                alert("Please fill out captcha field")
+                return
+            }
+        });
+    </script>
 </body>
 
 </html>
