@@ -82,7 +82,7 @@ let contactHeader = document.querySelector(
   "body> #main > #contact_container>h1"
 );
 let contactMessage = document.querySelector(
-  "body> #main > #contact_container>#contact-paragraph-container >.contact-message "
+  "body> #main > #contact_container>#contact-paragraph-container .contact-message "
 );
 
 let contactEmail = document.querySelector(".email-address");
