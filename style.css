@@ -617,6 +617,7 @@ body > #main {
 
   .email-address {
     text-decoration: none;
+    font-weight: 600;
     color: black;
   }
 

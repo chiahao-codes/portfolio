@@ -81,8 +81,8 @@ let resumeButton = document.querySelector("#main > #about_container > a > div");
 let contactHeader = document.querySelector(
   "body> #main > #contact_container>h1"
 );
-let contactMessage = document.querySelector(".contact-message ");
-
+let contactMessage = document.querySelector(".contact-message");
+let endMessage = document.querySelector("#ending-contact-message");
 let contactEmail = document.querySelector(".email-address");
 
 //footer
@@ -249,6 +249,7 @@ function setTransitionProperty() {
   //contact
   contactHeader.style.transition = "top .1s ease-in-out";
   contactMessage.style.transition = "top .1s ease-in-out";
+  endMessage.style.transition = "top .1s ease-in-out";
   contactEmail.style.transition = "top .1s ease-in-out";
 
   //footer
@@ -322,7 +323,7 @@ function darkMode() {
   contactHeader.style.color = "white";
   contactMessage.style.color = "white";
   contactEmail.style.color = "white";
-
+  endMessage.style.color = "white";
   //footer
   footer.style.color = "white";
   copyrightImg.style.filter = "invert(1)";
@@ -395,6 +396,7 @@ function lightMode() {
   contactHeader.style.color = "black";
   contactMessage.style.color = "black";
   contactEmail.style.color = "black";
+  endMessage.style.color = "black";
 
   //footer
   footer.style.color = "black";
