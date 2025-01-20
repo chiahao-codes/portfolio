@@ -250,7 +250,7 @@ function setTransitionProperty() {
   contactHeader.style.transition = "top .1s ease-in-out";
   contactMessage.style.transition = "top .1s ease-in-out";
   endMessage.style.transition = "top .1s ease-in-out";
-  contactEmail.style.transition = "top .1s ease-in-out";
+  contactEmail.style.transition = "top .2s ease-in-out";
 
   //footer
   footer.style.transition = "top .1s ease-in-out";

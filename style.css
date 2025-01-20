@@ -617,7 +617,7 @@ body > #main {
 
   .email-address {
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 650;
     color: black;
   }
 
@@ -626,6 +626,10 @@ body > #main {
     font-size: larger;
   }
 
+  #ending-contact-message {
+    font-weight: 600;
+    color: black;
+  }
   /**
 
   #main > #contact_container > form {
