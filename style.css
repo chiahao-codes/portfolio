@@ -62,6 +62,7 @@ body > .main {
   body > .main > #construction-container > .text {
     text-align: center;
     color: navy;
+    font-family: "Times New Roman", Times, serif;
   }
 
   body > .main > #header {
